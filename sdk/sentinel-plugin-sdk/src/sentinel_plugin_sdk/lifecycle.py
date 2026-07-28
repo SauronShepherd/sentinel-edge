@@ -1,4 +1,6 @@
 from enum import StrEnum
+import re
+import hashlib
 
 class PluginState(StrEnum):
     DISCOVERED="discovered"; VERIFIED="verified"; SELF_TESTED="self-tested"; ACTIVE="active"; DEGRADED="degraded"; ROLLED_BACK="rolled-back"
@@ -10,8 +12,9 @@ class Lifecycle:
         if target not in self._allowed[self.state]: raise ValueError(f"illegal transition: {self.state} -> {target}")
         self.state = target
     def verify(self, digest: str, signature: str | None = None) -> None:
-        if not digest.startswith("sha256:") or len(digest) != 71: raise ValueError("invalid_digest")
-        if not signature: raise ValueError("missing_signature")
+        if not re.fullmatch(r"sha256:[0-9a-f]{64}", digest): raise ValueError("invalid_digest")
+        if not signature or not re.fullmatch(r"sig:[0-9a-f]{64}", signature): raise ValueError("invalid_signature")
+        if hashlib.sha256(digest.encode()).hexdigest() != signature[4:]: raise ValueError("invalid_signature")
         self.transition(PluginState.VERIFIED)
     def compatibility(self, supported: set[str], required: str) -> None:
         if required not in supported: raise ValueError("incompatible_api")

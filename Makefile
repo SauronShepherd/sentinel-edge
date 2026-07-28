@@ -1,6 +1,6 @@
 .PHONY: setup format-check lint type architecture governance gates test-all-modules contracts plugins
 setup:
-	python -m pip install -e contracts/sentinel-contracts -e sdk/sentinel-plugin-sdk -e sdk/sentinel-testkit
+	python -m pip install --no-build-isolation -e contracts/sentinel-contracts -e sdk/sentinel-plugin-sdk -e sdk/sentinel-testkit
 format-check:
 	python -m compileall -q scripts contracts sdk
 lint:
@@ -23,8 +23,8 @@ generate-contracts:
 	python scripts/generate_contracts.py
 gates: generate-contracts format-check lint type architecture governance contracts plugins test-all-modules
 inject-failure-proof:
-	python scripts/prove_gate_failures.py
+	python scripts/prove_gate_failures.py failure
 inject-skip-proof:
-	python scripts/check_no_silent_skips.py build/test-results/all.xml
+	python scripts/prove_gate_failures.py skip
 test-arm:
 	@echo "Arm gate planned: no hardware claim made"

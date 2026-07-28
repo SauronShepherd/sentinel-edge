@@ -16,6 +16,8 @@ class Manifest:
     contracts: frozenset[str]
     max_memory_mb: int
     max_cpu_ms: int
+    fixtures: frozenset[str] = frozenset()
+    dependencies: frozenset[str] = frozenset()
 
     def __post_init__(self) -> None:
         if not self.name or not re.fullmatch(r"sha256:[0-9a-f]{64}", self.digest): raise ValueError("invalid identity or digest")
@@ -25,7 +27,8 @@ class Manifest:
     @classmethod
     def from_dict(cls, value: dict) -> "Manifest":
         budget = value.get("budgets", {})
-        return cls(value["name"], value["version"], value["api_version"], value["digest"],
-                   PermissionSet(**{k: frozenset(v) for k,v in value.get("permissions", {}).items()}),
-                   frozenset(value.get("modes", [])), frozenset(value.get("contracts", [])),
-                   int(budget.get("max_memory_mb", 0)), int(budget.get("max_cpu_ms", 0)))
+        return cls(name=value["name"], version=value["version"], api_version=value["api_version"], digest=value["digest"],
+                   permissions=PermissionSet(**{k: frozenset(v) for k,v in value.get("permissions", {}).items()}),
+                   modes=frozenset(value.get("modes", [])), contracts=frozenset(value.get("contracts", [])),
+                   max_memory_mb=int(budget.get("max_memory_mb", 0)), max_cpu_ms=int(budget.get("max_cpu_ms", 0)),
+                   fixtures=frozenset(value.get("fixtures", [])), dependencies=frozenset(value.get("dependencies", [])))

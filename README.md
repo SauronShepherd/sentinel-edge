@@ -8,7 +8,7 @@ Sentinel Edge is an edge-first, multi-hazard research platform for collecting ob
 ## Iteration status
 
 - Baseline: modular architecture documentation v0.13.0
-- Active increment: **I00 — delivery governance, repository bootstrap, and uncompromising test gates**
+- Active increment: **I01 — shared contracts, plugin SDK, and deterministic testkit**
 - Completion discipline: an iteration is not complete until every mandatory gate passes with zero unexpected skips, expected failures, collection errors, or flaky reruns.
 
 ## Six bounded modules
@@ -28,7 +28,7 @@ make governance
 make gates
 ```
 
-The active I00 gate is intentionally small but real. Targets for future lanes already exist; they validate the capability registry and explicitly report `planned`, without counting absent suites as passing evidence.
+The active I01 gate is intentionally small but real. Targets for future lanes already exist; they validate the capability registry and explicitly report `planned`, without counting absent suites as passing evidence.
 
 ## Repository navigation
 

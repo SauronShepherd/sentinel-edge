@@ -1,1 +1,1 @@
-I01 full regression gate: PASS; 25 passed; 0 failed; 0 skipped; 0 xfailed; 0 rerun; 0 collection errors.
+I01 full regression gate: PASS; 28 passed; 0 failed; 0 skipped; 0 xfailed; 0 rerun; 0 collection errors.

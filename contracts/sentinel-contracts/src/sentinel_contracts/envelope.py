@@ -6,6 +6,12 @@ import re
 from types import MappingProxyType
 from collections.abc import Mapping
 
+def _freeze(value: object) -> object:
+    if isinstance(value, dict): return MappingProxyType({k: _freeze(v) for k, v in value.items()})
+    if isinstance(value, list): return tuple(_freeze(v) for v in value)
+    if isinstance(value, set): return frozenset(_freeze(v) for v in value)
+    return value
+
 _NAME = re.compile(r"^[a-z][a-z0-9_.-]{1,62}$")
 
 @dataclass(frozen=True, slots=True)
@@ -30,7 +36,7 @@ class Envelope:
             raise ValueError("time must be timezone-aware")
         if self.idempotency_key is not None and not self.idempotency_key.strip():
             raise ValueError("idempotency_key cannot be blank")
-        object.__setattr__(self, "data", MappingProxyType(dict(self.data)))
+        object.__setattr__(self, "data", _freeze(dict(self.data)))
 
     def to_dict(self) -> dict[str, object]:
         result = {"specversion": self.specversion, "type": self.type, "source": self.source,
@@ -48,6 +54,8 @@ class Envelope:
         if unknown: raise ValueError(f"unknown envelope fields: {sorted(unknown)}")
         required = {"type","source","id","time","data"}
         if not required <= value.keys(): raise ValueError("missing envelope fields")
+        if value.get("specversion", "1.0") != "1.0": raise ValueError("unsupported specversion")
+        if value.get("datacontenttype", "application/json") != "application/json": raise ValueError("unsupported content type")
         return cls(type=str(value["type"]), source=str(value["source"]), data=dict(value["data"]),
                    subject=value.get("subject"), producer=value.get("producer"), id=UUID(str(value["id"])), time=datetime.fromisoformat(str(value["time"])),
                    correlation_id=UUID(str(value["correlationid"])) if value.get("correlationid") else None,
