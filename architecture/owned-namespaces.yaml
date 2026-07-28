@@ -1,7 +1,9 @@
 schema_version: 1
 authorities:
   collector: streaming-source-collector
+  workload_execution: model-workload-runtime
   incident_lifecycle: incident-event-engine
+  client_mutation_boundary: rest-api-integration-gateway
 namespaces:
   - owner: streaming-source-collector
     path: runtime/collector
@@ -15,3 +17,22 @@ namespaces:
     path: runtime/api
   - owner: client-applications
     path: runtime/client
+resources:
+  databases:
+    collector: runtime/collector/collector.db
+    analyzer: runtime/analyzer/analyzer.db
+    runtime: runtime/runtime/runtime.db
+    incidents: runtime/incidents/incidents.db
+    api: runtime/api/api.db
+  artifacts:
+    collector: runtime/collector/artifacts
+    analyzer: runtime/analyzer/artifacts
+    runtime: runtime/runtime/artifacts
+    incidents: runtime/incidents/artifacts
+    api: runtime/api/artifacts
+  secrets:
+    collector: runtime/collector/secrets
+    analyzer: runtime/analyzer/secrets
+    runtime: runtime/runtime/secrets
+    incidents: runtime/incidents/secrets
+    api: runtime/api/secrets

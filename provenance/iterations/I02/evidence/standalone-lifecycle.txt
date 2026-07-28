@@ -1,0 +1,2 @@
+I02 standalone lifecycle: PASS; five backend runtimes exercised through the public runner.
+States: ready -> degraded -> draining -> stopped.

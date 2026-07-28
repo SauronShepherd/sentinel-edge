@@ -1,0 +1,1 @@
+I02 full regression gate: PASS; 23 passed; 0 failed; 0 skipped; 0 xfailed; 0 collection errors.

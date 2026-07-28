@@ -47,10 +47,14 @@
     {
       "id": "I02",
       "name": "Six module shells and architecture enforcement",
-      "state": "planned",
+      "state": "demonstrated",
       "owner": "architecture",
-      "acceptance_tests": [],
-      "evidence_paths": [],
+      "acceptance_tests": [
+        "tests/component/test_all_module_lifecycles.py",
+        "tests/architecture/test_authority_boundaries.py",
+        "scripts/check_architecture_boundaries.py"
+      ],
+      "evidence_paths": ["provenance/iterations/I02/acceptance.yaml", "provenance/iterations/I02/evidence"],
       "depends_on": [
         "I01"
       ]
