@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"runtime.v1","type":"object","required":["job_id","model_hash","profile_hash","deterministic","abstained"],"properties":{"job_id":{"type":"string"},"model_hash":{"type":"string"},"profile_hash":{"type":"string"},"deterministic":{"type":"boolean"},"abstained":{"type":"boolean"}},"additionalProperties":false}

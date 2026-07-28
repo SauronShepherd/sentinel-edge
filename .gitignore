@@ -1,0 +1,48 @@
+
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated/build outputs
+build/
+dist/
+*.egg-info/
+generated/
+benchmarks/results/
+
+# Module-owned runtime state
+runtime/
+state/
+*.sqlite
+*.sqlite3
+*.db
+*.wal
+*.shm
+artifacts/runtime/
+quarantine/
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Preserve fixtures and provenance definitions
+!fixtures/**
+!provenance/**/*.schema.json
+!provenance/iterations/**/acceptance.yaml

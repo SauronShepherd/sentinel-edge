@@ -1,0 +1,36 @@
+I00 gate state: gate-running
+verified development interpreter shim: .venv/bin/python -> /opt/pyvenv/bin/python
+make[1]: Entering directory '/mnt/data/sentinel-edge-i00-clean-repro-final'
+Resolved 1 package in 1ms
+make[1]: Leaving directory '/mnt/data/sentinel-edge-i00-clean-repro-final'
+format check: PASS
+source baseline: PASS (14 specifications, all hashes valid)
+CI workflow contract: PASS
+static annotation gate: PASS
+architecture boundary gate: PASS
+ADR validation: PASS
+workspace dependency graph: PASS (zero implementation edges)
+................                                                         [100%]
+16 passed in 4.08s
+no-silent-skip gate: PASS
+capability registry: PASS
+test-all-modules: PLANNED (I02); excluded by capability registry, not counted as passing evidence
+plugins: PLANNED (I01); excluded by capability registry, not counted as passing evidence
+contracts: PLANNED (I01); excluded by capability registry, not counted as passing evidence
+components: PLANNED (I02); excluded by capability registry, not counted as passing evidence
+consumer-provider: PLANNED (I03); excluded by capability registry, not counted as passing evidence
+pairwise: PLANNED (I03); excluded by capability registry, not counted as passing evidence
+slices: PLANNED (I08); excluded by capability registry, not counted as passing evidence
+scenario: PLANNED (I08); excluded by capability registry, not counted as passing evidence
+chaos: PLANNED (I16); excluded by capability registry, not counted as passing evidence
+security: PLANNED (I17); excluded by capability registry, not counted as passing evidence
+privacy: PLANNED (I17); excluded by capability registry, not counted as passing evidence
+accessibility: PLANNED (I07); excluded by capability registry, not counted as passing evidence
+test-arm: PLANNED (I18); excluded by capability registry, not counted as passing evidence
+benchmark: PLANNED (I18); excluded by capability registry, not counted as passing evidence
+capability registry: PASS
+acceptance record: PASS (I00 gate-running)
+source baseline: PASS (14 specifications, all hashes valid)
+markdown links: PASS
+I00 acceptance finalized: complete
+Iteration-00 active gate: PASS

@@ -1,0 +1,1 @@
+controlled failure proof: PASS (gate correctly rejected the result)

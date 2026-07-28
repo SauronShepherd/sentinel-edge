@@ -1,0 +1,1 @@
+controlled skip proof: PASS (gate correctly rejected the result)

@@ -1,0 +1,24 @@
+
+name: CI Arm
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  arm-planned:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Provision pinned test runner
+        run: python -m pip install pytest==9.0.2
+      - run: make setup
+      - name: Planned Arm lane guard
+        run: make test-arm
+      - name: State declaration
+        run: echo 'Arm benchmark capability is planned; this job is not benchmark evidence.'

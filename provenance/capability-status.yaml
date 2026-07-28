@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "allowed_states": [
+    "planned",
+    "active",
+    "demonstrated",
+    "retired"
+  ],
+  "capabilities": [
+    {
+      "id": "I00",
+      "name": "Delivery governance and repository bootstrap",
+      "state": "demonstrated",
+      "owner": "delivery-governance",
+      "acceptance_tests": [
+        "tests/governance/test_capability_registry.py",
+        "tests/governance/test_ci_contract.py",
+        "tests/governance/test_evidence_schema.py",
+        "tests/governance/test_no_silent_skips.py",
+        "tests/governance/test_source_baseline.py",
+        "tests/governance/test_workspace.py"
+      ],
+      "evidence_paths": [
+        "provenance/iterations/I00/acceptance.yaml",
+        "provenance/evidence"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "I01",
+      "name": "Shared contracts, plugin SDK, and deterministic testkit",
+      "state": "demonstrated",
+      "owner": "shared-foundation",
+      "acceptance_tests": [
+        "contracts/sentinel-contracts/tests/test_envelope.py",
+        "sdk/sentinel-plugin-sdk/tests/test_manifest_security.py",
+        "sdk/sentinel-testkit/tests/test_determinism.py",
+        "tests/contracts/test_schema_examples.py",
+        "tests/contracts/test_generated_bindings.py",
+        "tests/contracts/test_compatibility.py"
+      ],
+      "evidence_paths": ["provenance/iterations/I01/acceptance.yaml", "provenance/iterations/I01/evidence"],
+      "depends_on": [
+        "I00"
+      ]
+    },
+    {
+      "id": "I02",
+      "name": "Six module shells and architecture enforcement",
+      "state": "planned",
+      "owner": "architecture",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I01"
+      ]
+    },
+    {
+      "id": "I03",
+      "name": "Collector core and deterministic acquisition",
+      "state": "planned",
+      "owner": "module-01",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I02"
+      ]
+    },
+    {
+      "id": "I04",
+      "name": "Runtime scheduling, execution, and qualification",
+      "state": "planned",
+      "owner": "module-03",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I03"
+      ]
+    },
+    {
+      "id": "I05",
+      "name": "Incident authority and lifecycle",
+      "state": "planned",
+      "owner": "module-04",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I04"
+      ]
+    },
+    {
+      "id": "I06",
+      "name": "REST API and integration boundary",
+      "state": "planned",
+      "owner": "module-05",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I05"
+      ]
+    },
+    {
+      "id": "I07",
+      "name": "Accessible web/mobile client foundation",
+      "state": "planned",
+      "owner": "module-06",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I06"
+      ]
+    },
+    {
+      "id": "I08",
+      "name": "Compact composition and wildfire MVP",
+      "state": "planned",
+      "owner": "system-integration",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I07"
+      ]
+    },
+    {
+      "id": "I09",
+      "name": "Structured analysis, claims, lineage, and trust",
+      "state": "planned",
+      "owner": "module-02",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I08"
+      ]
+    },
+    {
+      "id": "I10",
+      "name": "External multimodal intelligence",
+      "state": "planned",
+      "owner": "multimodal",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I09"
+      ]
+    },
+    {
+      "id": "I11",
+      "name": "Flood hazard pack",
+      "state": "planned",
+      "owner": "hazard-flood",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I10"
+      ]
+    },
+    {
+      "id": "I12",
+      "name": "Earthquake post-onset pack",
+      "state": "planned",
+      "owner": "hazard-earthquake",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I11"
+      ]
+    },
+    {
+      "id": "I13",
+      "name": "Landslide pack",
+      "state": "planned",
+      "owner": "hazard-landslide",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I12"
+      ]
+    },
+    {
+      "id": "I14",
+      "name": "Governed source ecosystem",
+      "state": "planned",
+      "owner": "source-ecosystem",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I13"
+      ]
+    },
+    {
+      "id": "I15",
+      "name": "Plugin lifecycle and isolated deployment",
+      "state": "planned",
+      "owner": "deployment",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I14"
+      ]
+    },
+    {
+      "id": "I16",
+      "name": "Offline, chaos, and recovery",
+      "state": "planned",
+      "owner": "reliability",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I15"
+      ]
+    },
+    {
+      "id": "I17",
+      "name": "Security, privacy, accessibility, and supply chain",
+      "state": "planned",
+      "owner": "assurance",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I16"
+      ]
+    },
+    {
+      "id": "I18",
+      "name": "Arm qualification and release candidate",
+      "state": "planned",
+      "owner": "release",
+      "acceptance_tests": [],
+      "evidence_paths": [],
+      "depends_on": [
+        "I17"
+      ]
+    }
+  ]
+}

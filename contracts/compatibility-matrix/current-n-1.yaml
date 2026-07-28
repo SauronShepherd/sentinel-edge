@@ -1,0 +1,5 @@
+version: 1
+policy: additive-only
+current: 1
+previous: 0
+prohibited: [remove-required-field, change-field-identity, change-field-type]

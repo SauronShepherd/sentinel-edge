@@ -1,0 +1,46 @@
+{
+  "adrs": [
+    {
+      "file": "docs/adr/ADR-0001-modular-monolith-distributed-capable.md",
+      "required_tokens": [
+        "Status: Accepted",
+        "six bounded modules",
+        "Module 04",
+        "Module 05"
+      ],
+      "sha256": "142cca861d70eaab997d65a999f98a6cf3b750d5a2fe14b31f48a04afe11c624"
+    },
+    {
+      "file": "docs/adr/ADR-0002-task-stage-iteration-workflow.md",
+      "required_tokens": [
+        "Status: Accepted",
+        "one primary file",
+        "complete iteration gate"
+      ],
+      "sha256": "f3081fd5196b1e1182d2296a631208ed8767cdb093752778b1ebc3ca9affade9"
+    },
+    {
+      "file": "docs/adr/ADR-0003-no-silent-test-skips.md",
+      "required_tokens": [
+        "Status: Accepted",
+        "skipped",
+        "xfail",
+        "full gate"
+      ],
+      "sha256": "14667390941bb8a556af8a5fe0e2b0ba661cbc1ade693b963bd1896e22ed6f33"
+    },
+    {
+      "file": "docs/adr/ADR-0004-default-implementation-profile.md",
+      "required_tokens": [
+        "Status: Accepted",
+        "Linux Arm64",
+        "SQLite",
+        "PWA",
+        "mobile"
+      ],
+      "sha256": "8dee196f51803ecd2bffb44bda930913600ba8994bab177a132189f2f08fa19f"
+    }
+  ],
+  "schema_version": 1,
+  "status": "passed"
+}

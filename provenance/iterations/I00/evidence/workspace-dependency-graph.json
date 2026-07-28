@@ -1,0 +1,22 @@
+{
+  "active_nodes": [
+    "delivery-governance"
+  ],
+  "authority_note": "No domain module is active in I00; future edges must use public contracts and ports.",
+  "implementation_edges": [],
+  "planned_nodes": [
+    "contracts/sentinel-contracts",
+    "sdk/sentinel-plugin-sdk",
+    "sdk/sentinel-testkit",
+    "modules/streaming-source-collector",
+    "modules/analysis-enrichment-engine",
+    "modules/model-workload-runtime",
+    "modules/incident-event-engine",
+    "modules/rest-api-integration-gateway",
+    "modules/client-applications",
+    "apps/sentinel-node"
+  ],
+  "runtime_dependencies": [],
+  "schema_version": 1,
+  "workspace": "sentinel-edge"
+}

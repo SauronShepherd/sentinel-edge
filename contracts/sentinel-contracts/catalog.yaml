@@ -1,0 +1,27 @@
+version: 1
+contracts:
+  - id: collector
+    version: 1.0.0
+    owner: module-01
+    consumers: [module-02, module-03, module-04]
+    compatibility: current-and-n-1
+  - id: analyzer
+    version: 1.0.0
+    owner: module-02
+    consumers: [module-03, module-04]
+    compatibility: current-and-n-1
+  - id: runtime
+    version: 1.0.0
+    owner: module-03
+    consumers: [module-04, module-05]
+    compatibility: current-and-n-1
+  - id: incident
+    version: 1.0.0
+    owner: module-04
+    consumers: [module-05, module-06]
+    compatibility: current-and-n-1
+  - id: api
+    version: 1.0.0
+    owner: module-05
+    consumers: [module-06]
+    compatibility: current-and-n-1

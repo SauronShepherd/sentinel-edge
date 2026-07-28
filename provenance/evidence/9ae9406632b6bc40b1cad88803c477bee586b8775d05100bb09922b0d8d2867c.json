@@ -1,0 +1,50 @@
+{
+  "artifacts": [
+    {
+      "path": "build/test-results/governance.xml",
+      "sha256": "e6ba86b0be718891350d4181ddd1480202a903dcb7c71e18ad638bfb48067640"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/adr-validation.json",
+      "sha256": "a9f4512d88ea0536f83eba5343bceca36683660f52aabb16a04cf06c7ff6a6b8"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/workspace-dependency-graph.json",
+      "sha256": "a8c2d9201d3ce3c2fadbc7582f7c48bfbaf0055c0b8c088bfefec958b487db3b"
+    }
+  ],
+  "command": "make gates",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 16,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.0,
+  "environment": {
+    "name": "local",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "evidence_id": "9ae9406632b6bc40b1cad88803c477bee586b8775d05100bb09922b0d8d2867c",
+  "inputs": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "1205292225a8b5e88e3f1621a8ff42ced20a0b18731259d995fb107f907a1bf6"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "9b4dc27644dca6cc92ddbf0c4a4ef25b02283710e646fef08d2c509e2592ccbb"
+    },
+    {
+      "path": "provenance/capability-status.yaml",
+      "sha256": "fc81a5ab9caf36549e970679e993b5a4a861722a27d08be92bf33055b6d3e927"
+    }
+  ],
+  "recorded_at": "2026-07-26T09:00:34.949682Z",
+  "result": "passed",
+  "revision": "workspace-i00",
+  "schema_version": 1
+}

@@ -1,0 +1,43 @@
+
+name: CI Full
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  full-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Provision pinned test runner
+        run: python -m pip install pytest==9.0.2
+      - name: Install shared packages
+        run: python -m pip install -e contracts/sentinel-contracts -e sdk/sentinel-plugin-sdk -e sdk/sentinel-testkit
+      - run: make gates
+      - name: Upload gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: i00-gate-evidence
+          path: |
+            build/test-results
+            provenance/evidence
+          if-no-files-found: error
+
+  aggregate:
+    if: always()
+    needs: [full-gate]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require full gate
+        env:
+          RESULT: ${{ needs.full-gate.result }}
+        run: test "$RESULT" = success

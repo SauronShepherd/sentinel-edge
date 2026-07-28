@@ -1,0 +1,30 @@
+
+[project]
+name = "sentinel-edge"
+version = "0.0.0"
+description = "Sentinel Edge research platform workspace"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = []
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+testpaths = ["tests"]
+addopts = [
+  "--strict-config",
+  "--strict-markers",
+  "--disable-warnings",
+]
+
+[tool.sentinel-edge.toolchain]
+python = "3.12-3.13"
+uv = "0.10.0"
+pytest = "9.0.2"
+pyyaml = "6.0.3"
+jsonschema = "4.26.0"

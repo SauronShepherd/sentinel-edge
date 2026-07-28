@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "iteration": "I00",
+  "status": "complete",
+  "candidate_revision": "workspace-i00",
+  "baseline": "v0.13.0",
+  "stages": {
+    "I00-S01": "complete",
+    "I00-S02": "complete",
+    "I00-S03": "complete",
+    "I00-S04": "complete"
+  },
+  "mandatory_commands": [
+    "make setup",
+    "make format-check",
+    "make lint",
+    "make type",
+    "make architecture",
+    "make governance",
+    "make inject-failure-proof",
+    "make inject-skip-proof",
+    "make gates"
+  ],
+  "evidence": [
+    {
+      "path": "provenance/evidence/9ae9406632b6bc40b1cad88803c477bee586b8775d05100bb09922b0d8d2867c.json",
+      "sha256": "fb3e14caea9a376982de5c57484e1cd442ea19f125cd0329caaa74916d45e8b0"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/adr-validation.json",
+      "sha256": "a9f4512d88ea0536f83eba5343bceca36683660f52aabb16a04cf06c7ff6a6b8"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/workspace-dependency-graph.json",
+      "sha256": "a8c2d9201d3ce3c2fadbc7582f7c48bfbaf0055c0b8c088bfefec958b487db3b"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/controlled-failure-proof.txt",
+      "sha256": "d2b2efcfc6a1c775caebc5ed1d68616e5fa05a546585c14c5272ccbf7680b281"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/controlled-skip-proof.txt",
+      "sha256": "ef6326a9eaafa6b2e07ab96082de0d3a5190875d58af31d1cd158ebfa36d6c37"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/ci-workflow-validation.txt",
+      "sha256": "f93c567322a004c38203df66a33ec763462a9b1d61f16934a4e86f81a4778ccb"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/capability-registry-validation.txt",
+      "sha256": "ece6bc6f4b95fbc2a13123acd853c9348c16ba8c8f30debe647d32510c1c7c09"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/source-baseline-validation.txt",
+      "sha256": "2f74a35cb86ef9884b4b8ceebe47b9a9275206e8a78f051f092f3d18db43f273"
+    },
+    {
+      "path": "build/test-results/governance.xml",
+      "sha256": "e6ba86b0be718891350d4181ddd1480202a903dcb7c71e18ad638bfb48067640"
+    },
+    {
+      "path": "provenance/iterations/I00/evidence/clean-checkout-gate.txt",
+      "sha256": "1fe054e313faae9f60bca522f0f83af4fe4696e359d77826f4753f99f2a4f552"
+    }
+  ],
+  "test_counts": {
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "rerun": 0,
+    "collection_errors": 0
+  },
+  "limitations": [
+    "Only I00 is active; all later product capabilities remain planned.",
+    "This is a research system and not an official emergency-warning service."
+  ],
+  "accepted_at": "2026-07-26T09:00:35.455282Z"
+}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"api.v1","type":"object","required":["resource","audit_context"],"properties":{"resource":{"type":"string","pattern":"^[a-z][a-z0-9/-]*$","not":{"pattern":"(queue|internal|amqp|kafka)"}},"audit_context":{"type":"object"}},"additionalProperties":false}

@@ -1,0 +1,81 @@
+{
+  "version": "0.13.0",
+  "date": "2026-07-26",
+  "documents": [
+    {
+      "file": "README.md",
+      "sha256": "3b44f80bc8fedfa71f33e74cc2e319934939881ebd118ea244a2e469516a4667",
+      "bytes": 2748
+    },
+    {
+      "file": "sentinel-edge-module-01-streaming-source-collector-functional-v0.13.0.md",
+      "sha256": "f655e8bb252d90f5691bd98c6870c4443b31f0ee015147c4644009f356558f4d",
+      "bytes": 15459
+    },
+    {
+      "file": "sentinel-edge-module-01-streaming-source-collector-technical-v0.13.0.md",
+      "sha256": "fc854097459889767e799b09b5e68c72785b3a41f2e9eaf40020532d654e5631",
+      "bytes": 15934
+    },
+    {
+      "file": "sentinel-edge-module-02-analysis-enrichment-engine-functional-v0.13.0.md",
+      "sha256": "a14f00d07464ab77f2d3b0ffb2183226bb86988bbd7035a04a0f31a293e23d1e",
+      "bytes": 13072
+    },
+    {
+      "file": "sentinel-edge-module-02-analysis-enrichment-engine-technical-v0.13.0.md",
+      "sha256": "91e23ecb8d04bfb31db1db1fbfbc005f3276805058932a21bf3cdc4cfac2603b",
+      "bytes": 14477
+    },
+    {
+      "file": "sentinel-edge-module-03-model-workload-runtime-functional-v0.13.0.md",
+      "sha256": "d95031eb9815f767d67f396db4236792147f3f0a441c8207bd19baa35f2d1219",
+      "bytes": 12940
+    },
+    {
+      "file": "sentinel-edge-module-03-model-workload-runtime-technical-v0.13.0.md",
+      "sha256": "9b704c5cb4b78660bf1190c23944302c9b1cd536855a8c5bce09d6b176c3c655",
+      "bytes": 14379
+    },
+    {
+      "file": "sentinel-edge-module-04-incident-event-engine-functional-v0.13.0.md",
+      "sha256": "00c89c3864db1c0a1ee8db1904ceb83553bf37a2d30e6d99a20f61c61ba08bf6",
+      "bytes": 13107
+    },
+    {
+      "file": "sentinel-edge-module-04-incident-event-engine-technical-v0.13.0.md",
+      "sha256": "ff8b354935c1744fc6a320b6a533f6f284cab4643f2dd609f67ed49dfd54f1f9",
+      "bytes": 14506
+    },
+    {
+      "file": "sentinel-edge-module-05-rest-api-integration-gateway-functional-v0.13.0.md",
+      "sha256": "fdf7cd8b2c596ebeb46e45573eb94611e590a3ffbe10aa440ee33448ab0413a7",
+      "bytes": 13036
+    },
+    {
+      "file": "sentinel-edge-module-05-rest-api-integration-gateway-technical-v0.13.0.md",
+      "sha256": "36c74de9bfd3e3cb7909f3f0040a8b942b201e0143d23853bec113fc5d4fe9ff",
+      "bytes": 14347
+    },
+    {
+      "file": "sentinel-edge-module-06-client-applications-functional-v0.13.0.md",
+      "sha256": "4082990defe04b5cbbca73a73e83d424a72e9dbd76a5c2b6d1418c024e66a683",
+      "bytes": 13068
+    },
+    {
+      "file": "sentinel-edge-module-06-client-applications-technical-v0.13.0.md",
+      "sha256": "4835759f00033d0d932efcd0bef3a3c97aa2a52e53a36330918cb2a1270498aa",
+      "bytes": 14244
+    },
+    {
+      "file": "sentinel-edge-system-functional-architecture-v0.13.0.md",
+      "sha256": "f511694f4d205fb7891d17fd0d46bb8f7ca0278de27c86ebecba3e882f995e19",
+      "bytes": 15079
+    },
+    {
+      "file": "sentinel-edge-system-technical-architecture-integration-v0.13.0.md",
+      "sha256": "1ecdff76430bd09481a4917550df2d6694a20e2146445fdd45c1086dffeafb82",
+      "bytes": 19909
+    }
+  ]
+}
