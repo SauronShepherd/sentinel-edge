@@ -1,0 +1,17 @@
+schema_version: 1
+authorities:
+  collector: streaming-source-collector
+  incident_lifecycle: incident-event-engine
+namespaces:
+  - owner: streaming-source-collector
+    path: runtime/collector
+  - owner: analysis-enrichment-engine
+    path: runtime/analyzer
+  - owner: model-workload-runtime
+    path: runtime/runtime
+  - owner: incident-event-engine
+    path: runtime/incidents
+  - owner: rest-api-integration-gateway
+    path: runtime/api
+  - owner: client-applications
+    path: runtime/client

@@ -1,0 +1,1 @@
+{"name":"sentinel-client-applications","private":true,"scripts":{"test":"node --test"},"workspaces":["shared-domain","web","mobile-shell"]}

@@ -1,0 +1,3 @@
+[rules]
+shared_prefixes = ["contracts", "sdk"]
+forbidden_cross_module_imports = true
