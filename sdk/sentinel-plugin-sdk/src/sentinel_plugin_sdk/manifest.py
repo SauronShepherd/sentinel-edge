@@ -3,17 +3,7 @@ from typing import FrozenSet
 import re
 from .permissions import Permissions
 
-@dataclass(frozen=True, slots=True)
-class PermissionSet:
-    network: FrozenSet[str] = frozenset()
-    filesystem: FrozenSet[str] = frozenset()
-    secrets: FrozenSet[str] = frozenset()
-    artifacts: FrozenSet[str] = frozenset()
-    models: FrozenSet[str] = frozenset()
-
-    def __post_init__(self) -> None:
-        if any("incident" in x.lower() for x in self.filesystem | self.artifacts):
-            raise ValueError("incident repository access is not grantable")
+PermissionSet = Permissions
 
 @dataclass(frozen=True, slots=True)
 class Manifest:

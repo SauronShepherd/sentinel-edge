@@ -1,1 +1,3 @@
 I01 determinism: PASS
+clock.advance(2) => wall=2026-01-01T00:00:02+00:00 monotonic=2.0 event=2026-01-01T00:00:02+00:00
+scenario.reset => identical semantic hash; signed scenario verification path exercised.

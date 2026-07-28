@@ -1,1 +1,2 @@
 I01 plugin conformance: PASS
+Cases: malformed_digest=reject; wildcard_permission=reject; incident_authority=reject; missing_signature=reject; bounded_resources=accept.

@@ -15,3 +15,9 @@ def test_all_contract_schemas_are_valid_json():
         fixture = examples[family]
         Draft202012Validator(schema).validate(fixture["valid"])
         assert list(Draft202012Validator(schema).iter_errors(fixture["invalid"]))
+
+def test_catalog_references_every_schema_family():
+    catalog = Path("contracts/sentinel-contracts/catalog.yaml").read_text()
+    for family in ("collector", "analyzer", "runtime", "incident", "api"):
+        assert f"id: {family}" in catalog
+        assert (Path("contracts/sentinel-contracts/schemas") / f"{family}.v1.json").is_file()

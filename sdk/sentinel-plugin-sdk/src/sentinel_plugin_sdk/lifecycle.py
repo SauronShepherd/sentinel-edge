@@ -9,3 +9,12 @@ class Lifecycle:
     def transition(self, target: PluginState) -> None:
         if target not in self._allowed[self.state]: raise ValueError(f"illegal transition: {self.state} -> {target}")
         self.state = target
+    def verify(self, digest: str, signature: str | None = None) -> None:
+        if not digest.startswith("sha256:") or len(digest) != 71: raise ValueError("invalid_digest")
+        if not signature: raise ValueError("missing_signature")
+        self.transition(PluginState.VERIFIED)
+    def compatibility(self, supported: set[str], required: str) -> None:
+        if required not in supported: raise ValueError("incompatible_api")
+    def self_test(self, passed: bool) -> None:
+        if not passed: raise ValueError("self_test_failed")
+        self.transition(PluginState.SELF_TESTED)

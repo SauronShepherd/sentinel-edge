@@ -2,6 +2,6 @@ collector:
   valid: {observation_id: obs-1, observed_at: "2026-01-01T00:00:00Z", clock_quality: trusted, replay: false, units: "celsius", source_health: {}, acquisition_audit: {}, policy: {retention: ephemeral}}
   invalid: {observation_id: "", replay: false}
 analyzer: {valid: {bundle_id: b-1, inputs: [obs-1], limitations: [], source_spans: [], claims: [], media_records: [], derivation: {}, trust_factors: {}}, invalid: {bundle_id: b-1}}
-runtime: {valid: {job_id: j-1, model_hash: sha256:x, profile_hash: sha256:y, deterministic: true, abstained: false}, invalid: {job_id: j-1}}
-incident: {valid: {incident_id: i-1, expected_version: 0, projection_version: 0}, invalid: {incident_id: i-1}}
-api: {valid: {resource: incidents, audit_context: {}}, invalid: {resource: internal/queue, audit_context: {}}}
+runtime: {valid: {job_id: j-1, model_hash: sha256:x, profile_hash: sha256:y, deterministic: true, abstained: false, results: [], hazard_inference: {}, lifecycle: {}, health: {}, benchmark_samples: []}, invalid: {job_id: j-1}}
+incident: {valid: {incident_id: i-1, expected_version: 0, projection_version: 0, inputs: [], commands: [], transitions: [], reviews: [], effects: []}, invalid: {incident_id: i-1}}
+api: {valid: {resource: incidents, pagination: {limit: 10, total: 0}, cursor: null, audit_context: {}, errors: []}, invalid: {resource: internal/queue}}

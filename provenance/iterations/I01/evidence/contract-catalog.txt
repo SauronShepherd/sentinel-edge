@@ -1,1 +1,2 @@
 I01 contract catalog validation: PASS
+Families: collector, analyzer, runtime, incident, api; owners, consumers, versions, and current/N-1 compatibility metadata verified.
