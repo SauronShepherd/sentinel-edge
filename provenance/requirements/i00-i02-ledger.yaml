@@ -47,14 +47,14 @@ tasks:
     evidence_paths: []
     supersession: null
   - id: I00-S02-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: SUPERSEDED
     iteration: 00
     stage: S02
-    description: "I00-S02-T02: Makefile"
+    description: "I00-S02-T02: Makefile (superseded by scripts/dev.py)"
     implementation_paths: [Makefile]
     test_paths: []
     evidence_paths: []
-    supersession: null
+    supersession: scripts/dev.py
   - id: I00-S02-T03
     status: VERIFIED
     iteration: 00
@@ -146,50 +146,50 @@ tasks:
     evidence_paths: []
     supersession: null
   - id: I00-S05-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: SUPERSEDED
     iteration: 00
     stage: S05
-    description: "Cumulative task I00-S05-T01"
+    description: "Cumulative task I00-S05-T01 (legacy placeholder superseded by cumulative I01/I02 plan)"
     implementation_paths: []
     test_paths: []
     evidence_paths: []
-    supersession: null
+    supersession: cumulative-i01-i02-plan
   - id: I00-S05-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: SUPERSEDED
     iteration: 00
     stage: S05
-    description: "Cumulative task I00-S05-T02"
+    description: "Cumulative task I00-S05-T02 (legacy placeholder superseded by cumulative I01/I02 plan)"
     implementation_paths: []
     test_paths: []
     evidence_paths: []
-    supersession: null
+    supersession: cumulative-i01-i02-plan
   - id: I00-S05-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: SUPERSEDED
     iteration: 00
     stage: S05
-    description: "Cumulative task I00-S05-T03"
+    description: "Cumulative task I00-S05-T03 (legacy placeholder superseded by cumulative I01/I02 plan)"
     implementation_paths: []
     test_paths: []
     evidence_paths: []
-    supersession: null
+    supersession: cumulative-i01-i02-plan
   - id: I00-S05-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: SUPERSEDED
     iteration: 00
     stage: S05
-    description: "Cumulative task I00-S05-T04"
+    description: "Cumulative task I00-S05-T04 (legacy placeholder superseded by cumulative I01/I02 plan)"
     implementation_paths: []
     test_paths: []
     evidence_paths: []
-    supersession: null
+    supersession: cumulative-i01-i02-plan
   - id: I00-S05-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: SUPERSEDED
     iteration: 00
     stage: S05
-    description: "Cumulative task I00-S05-T05"
+    description: "Cumulative task I00-S05-T05 (legacy placeholder superseded by cumulative I01/I02 plan)"
     implementation_paths: []
     test_paths: []
     evidence_paths: []
-    supersession: null
+    supersession: cumulative-i01-i02-plan
   - id: I01-S01-T01
     status: VERIFIED
     iteration: 01
