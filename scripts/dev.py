@@ -23,6 +23,7 @@ COMMANDS: dict[str, list[list[str]]] = {
     "provenance": [[PY, "scripts/validate_capability_status.py"], [PY, "scripts/generate_architecture_evidence.py"], [PY, "scripts/record_package_evidence.py"]],
     "docs": [[PY, "scripts/check_markdown_links.py"]],
     "clients": [["npm.cmd", "--prefix", "modules/client-applications", "ci", "--ignore-scripts"], ["npm.cmd", "--prefix", "modules/client-applications", "run", "build"], ["npm.cmd", "--prefix", "modules/client-applications", "test"]],
+    "packages": [[PY, "-m", "pip", "wheel", "--no-deps", "--no-build-isolation", "--no-cache-dir", "-w", "build/i02-artifacts", "contracts/sentinel-contracts", "sdk/sentinel-plugin-sdk", "sdk/sentinel-testkit", "apps/sentinel-module-runner", "modules/streaming-source-collector", "modules/analysis-enrichment-engine", "modules/model-workload-runtime", "modules/incident-event-engine", "modules/rest-api-integration-gateway"]],
     "test-all": [[PY, "-m", "pytest", "-q", "contracts/sentinel-contracts/tests", "sdk/sentinel-plugin-sdk/tests", "sdk/sentinel-testkit/tests", "tests"]],
     "test-arm": [[PY, "-c", "print('Arm gate planned: no hardware claim made')"]],
 }
@@ -49,7 +50,7 @@ def main() -> int:
     parser.add_argument("command", choices=[*COMMANDS, "setup", "gates"])
     args = parser.parse_args()
     if args.command == "gates":
-        for name in ("format", "type", "governance", "architecture", "contracts", "plugins", "testkit", "components", "compatibility", "generated", "clients", "test-all", "provenance", "docs"):
+        for name in ("format", "type", "governance", "architecture", "contracts", "plugins", "testkit", "components", "compatibility", "generated", "clients", "packages", "test-all", "provenance", "docs"):
             code = run(name)
             if code: return code
         return 0
