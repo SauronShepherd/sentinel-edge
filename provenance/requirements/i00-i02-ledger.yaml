@@ -2,47 +2,47 @@ schema_version: 1
 allowed_statuses: [OPEN, IMPLEMENTED_UNVERIFIED, VERIFIED, SUPERSEDED]
 tasks:
   - id: I00-S01-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S01
-    description: "Cumulative task I00-S01-T01"
-    implementation_paths: []
+    description: "I00-S01-T01: docs/adr/ADR-0001-modular-monolith-distributed-capable.md"
+    implementation_paths: [docs/adr/ADR-0001-modular-monolith-distributed-capable.md]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S01-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S01
-    description: "Cumulative task I00-S01-T02"
-    implementation_paths: []
+    description: "I00-S01-T02: docs/adr/ADR-0002-task-stage-iteration-workflow.md"
+    implementation_paths: [docs/adr/ADR-0002-task-stage-iteration-workflow.md]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S01-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S01
-    description: "Cumulative task I00-S01-T03"
-    implementation_paths: []
+    description: "I00-S01-T03: docs/adr/ADR-0003-no-silent-test-skips.md"
+    implementation_paths: [docs/adr/ADR-0003-no-silent-test-skips.md]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S01-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S01
-    description: "Cumulative task I00-S01-T04"
-    implementation_paths: []
+    description: "I00-S01-T04: docs/adr/ADR-0004-default-implementation-profile.md"
+    implementation_paths: [docs/adr/ADR-0004-default-implementation-profile.md]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S02-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S02
-    description: "Cumulative task I00-S02-T01"
-    implementation_paths: []
+    description: "I00-S02-T01: pyproject.toml"
+    implementation_paths: [pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
@@ -50,98 +50,98 @@ tasks:
     status: IMPLEMENTED_UNVERIFIED
     iteration: 00
     stage: S02
-    description: "Cumulative task I00-S02-T02"
-    implementation_paths: []
+    description: "I00-S02-T02: Makefile"
+    implementation_paths: [Makefile]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S02-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S02
-    description: "Cumulative task I00-S02-T03"
-    implementation_paths: []
+    description: "I00-S02-T03: .gitignore"
+    implementation_paths: [.gitignore]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S02-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S02
-    description: "Cumulative task I00-S02-T04"
-    implementation_paths: []
+    description: "I00-S02-T04: .editorconfig"
+    implementation_paths: [.editorconfig]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S03-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S03
-    description: "Cumulative task I00-S03-T01"
-    implementation_paths: []
+    description: "I00-S03-T01: provenance/capability-status.yaml"
+    implementation_paths: [provenance/capability-status.yaml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S03-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S03
-    description: "Cumulative task I00-S03-T02"
-    implementation_paths: []
+    description: "I00-S03-T02: provenance/test-evidence.schema.json"
+    implementation_paths: [provenance/test-evidence.schema.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S03-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S03
-    description: "Cumulative task I00-S03-T03"
-    implementation_paths: []
+    description: "I00-S03-T03: scripts/validate_capability_status.py"
+    implementation_paths: [scripts/validate_capability_status.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S03-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S03
-    description: "Cumulative task I00-S03-T04"
-    implementation_paths: []
+    description: "I00-S03-T04: scripts/record_test_evidence.py"
+    implementation_paths: [scripts/record_test_evidence.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S04-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S04
-    description: "Cumulative task I00-S04-T01"
-    implementation_paths: []
+    description: "I00-S04-T01: .github/workflows/ci-fast.yml"
+    implementation_paths: [.github/workflows/ci-fast.yml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S04-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S04
-    description: "Cumulative task I00-S04-T02"
-    implementation_paths: []
+    description: "I00-S04-T02: .github/workflows/ci-full.yml"
+    implementation_paths: [.github/workflows/ci-full.yml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S04-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S04
-    description: "Cumulative task I00-S04-T03"
-    implementation_paths: []
+    description: "I00-S04-T03: .github/workflows/ci-arm.yml"
+    implementation_paths: [.github/workflows/ci-arm.yml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I00-S04-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 00
     stage: S04
-    description: "Cumulative task I00-S04-T04"
-    implementation_paths: []
+    description: "I00-S04-T04: scripts/check_no_silent_skips.py"
+    implementation_paths: [scripts/check_no_silent_skips.py]
     test_paths: []
     evidence_paths: []
     supersession: null
@@ -191,470 +191,470 @@ tasks:
     evidence_paths: []
     supersession: null
   - id: I01-S01-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S01
-    description: "Cumulative task I01-S01-T01"
-    implementation_paths: []
+    description: "I01-S01-T01: contracts/sentinel-contracts/pyproject.toml"
+    implementation_paths: [contracts/sentinel-contracts/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S01-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S01
-    description: "Cumulative task I01-S01-T02"
-    implementation_paths: []
+    description: "I01-S01-T02: contracts/sentinel-contracts/src/sentinel_contracts/envelope.py"
+    implementation_paths: [contracts/sentinel-contracts/src/sentinel_contracts/envelope.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S01-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S01
-    description: "Cumulative task I01-S01-T03"
-    implementation_paths: []
+    description: "I01-S01-T03: contracts/sentinel-contracts/src/sentinel_contracts/errors.py"
+    implementation_paths: [contracts/sentinel-contracts/src/sentinel_contracts/errors.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S01-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S01
-    description: "Cumulative task I01-S01-T04"
-    implementation_paths: []
+    description: "I01-S01-T04: contracts/sentinel-contracts/src/sentinel_contracts/artifacts.py"
+    implementation_paths: [contracts/sentinel-contracts/src/sentinel_contracts/artifacts.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S01-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S01
-    description: "Cumulative task I01-S01-T05"
-    implementation_paths: []
+    description: "I01-S01-T05: contracts/sentinel-contracts/catalog.yaml"
+    implementation_paths: [contracts/sentinel-contracts/catalog.yaml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S01-T06
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S01
-    description: "Cumulative task I01-S01-T06"
-    implementation_paths: []
+    description: "I01-S01-T06: contracts/sentinel-contracts/tests/test_envelope.py"
+    implementation_paths: [contracts/sentinel-contracts/tests/test_envelope.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S02-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S02
-    description: "Cumulative task I01-S02-T01"
-    implementation_paths: []
+    description: "I01-S02-T01: contracts/sentinel-contracts/schemas/collector.v1.json"
+    implementation_paths: [contracts/sentinel-contracts/schemas/collector.v1.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S02-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S02
-    description: "Cumulative task I01-S02-T02"
-    implementation_paths: []
+    description: "I01-S02-T02: contracts/sentinel-contracts/schemas/analyzer.v1.json"
+    implementation_paths: [contracts/sentinel-contracts/schemas/analyzer.v1.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S02-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S02
-    description: "Cumulative task I01-S02-T03"
-    implementation_paths: []
+    description: "I01-S02-T03: contracts/sentinel-contracts/schemas/runtime.v1.json"
+    implementation_paths: [contracts/sentinel-contracts/schemas/runtime.v1.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S02-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S02
-    description: "Cumulative task I01-S02-T04"
-    implementation_paths: []
+    description: "I01-S02-T04: contracts/sentinel-contracts/schemas/incident.v1.json"
+    implementation_paths: [contracts/sentinel-contracts/schemas/incident.v1.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S02-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S02
-    description: "Cumulative task I01-S02-T05"
-    implementation_paths: []
+    description: "I01-S02-T05: contracts/sentinel-contracts/schemas/api.v1.json"
+    implementation_paths: [contracts/sentinel-contracts/schemas/api.v1.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S02-T06
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S02
-    description: "Cumulative task I01-S02-T06"
-    implementation_paths: []
+    description: "I01-S02-T06: contracts/sentinel-contracts/examples/golden-v1.yaml"
+    implementation_paths: [contracts/sentinel-contracts/examples/golden-v1.yaml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S03-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S03
-    description: "Cumulative task I01-S03-T01"
-    implementation_paths: []
+    description: "I01-S03-T01: sdk/sentinel-plugin-sdk/pyproject.toml"
+    implementation_paths: [sdk/sentinel-plugin-sdk/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S03-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S03
-    description: "Cumulative task I01-S03-T02"
-    implementation_paths: []
+    description: "I01-S03-T02: sdk/sentinel-plugin-sdk/src/sentinel_plugin_sdk/manifest.py"
+    implementation_paths: [sdk/sentinel-plugin-sdk/src/sentinel_plugin_sdk/manifest.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S03-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S03
-    description: "Cumulative task I01-S03-T03"
-    implementation_paths: []
+    description: "I01-S03-T03: sdk/sentinel-plugin-sdk/src/sentinel_plugin_sdk/lifecycle.py"
+    implementation_paths: [sdk/sentinel-plugin-sdk/src/sentinel_plugin_sdk/lifecycle.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S03-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S03
-    description: "Cumulative task I01-S03-T04"
-    implementation_paths: []
+    description: "I01-S03-T04: sdk/sentinel-plugin-sdk/src/sentinel_plugin_sdk/permissions.py"
+    implementation_paths: [sdk/sentinel-plugin-sdk/src/sentinel_plugin_sdk/permissions.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S03-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S03
-    description: "Cumulative task I01-S03-T05"
-    implementation_paths: []
+    description: "I01-S03-T05: sdk/sentinel-plugin-sdk/tests/test_manifest_security.py"
+    implementation_paths: [sdk/sentinel-plugin-sdk/tests/test_manifest_security.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S04-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S04
-    description: "Cumulative task I01-S04-T01"
-    implementation_paths: []
+    description: "I01-S04-T01: sdk/sentinel-testkit/pyproject.toml"
+    implementation_paths: [sdk/sentinel-testkit/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S04-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S04
-    description: "Cumulative task I01-S04-T02"
-    implementation_paths: []
+    description: "I01-S04-T02: sdk/sentinel-testkit/src/sentinel_testkit/virtual_clock.py"
+    implementation_paths: [sdk/sentinel-testkit/src/sentinel_testkit/virtual_clock.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S04-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S04
-    description: "Cumulative task I01-S04-T03"
-    implementation_paths: []
+    description: "I01-S04-T03: sdk/sentinel-testkit/src/sentinel_testkit/fake_ports.py"
+    implementation_paths: [sdk/sentinel-testkit/src/sentinel_testkit/fake_ports.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S04-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S04
-    description: "Cumulative task I01-S04-T04"
-    implementation_paths: []
+    description: "I01-S04-T04: sdk/sentinel-testkit/src/sentinel_testkit/scenario.py"
+    implementation_paths: [sdk/sentinel-testkit/src/sentinel_testkit/scenario.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S04-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S04
-    description: "Cumulative task I01-S04-T05"
-    implementation_paths: []
+    description: "I01-S04-T05: sdk/sentinel-testkit/tests/test_determinism.py"
+    implementation_paths: [sdk/sentinel-testkit/tests/test_determinism.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S05-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S05
-    description: "Cumulative task I01-S05-T01"
-    implementation_paths: []
+    description: "I01-S05-T01: scripts/generate_contracts.py"
+    implementation_paths: [scripts/generate_contracts.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S05-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S05
-    description: "Cumulative task I01-S05-T02"
-    implementation_paths: []
+    description: "I01-S05-T02: contracts/compatibility-matrix/current-n-1.yaml"
+    implementation_paths: [contracts/compatibility-matrix/current-n-1.yaml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S05-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S05
-    description: "Cumulative task I01-S05-T03"
-    implementation_paths: []
+    description: "I01-S05-T03: tests/contracts/test_schema_examples.py"
+    implementation_paths: [tests/contracts/test_schema_examples.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S05-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S05
-    description: "Cumulative task I01-S05-T04"
-    implementation_paths: []
+    description: "I01-S05-T04: tests/contracts/test_generated_bindings.py"
+    implementation_paths: [tests/contracts/test_generated_bindings.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I01-S05-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 01
     stage: S05
-    description: "Cumulative task I01-S05-T05"
-    implementation_paths: []
+    description: "I01-S05-T05: tests/contracts/test_compatibility.py"
+    implementation_paths: [tests/contracts/test_compatibility.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S01-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S01
-    description: "Cumulative task I02-S01-T01"
-    implementation_paths: []
+    description: "I02-S01-T01: modules/streaming-source-collector/pyproject.toml"
+    implementation_paths: [modules/streaming-source-collector/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S01-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S01
-    description: "Cumulative task I02-S01-T02"
-    implementation_paths: []
+    description: "I02-S01-T02: modules/analysis-enrichment-engine/pyproject.toml"
+    implementation_paths: [modules/analysis-enrichment-engine/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S01-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S01
-    description: "Cumulative task I02-S01-T03"
-    implementation_paths: []
+    description: "I02-S01-T03: modules/model-workload-runtime/pyproject.toml"
+    implementation_paths: [modules/model-workload-runtime/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S01-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S01
-    description: "Cumulative task I02-S01-T04"
-    implementation_paths: []
+    description: "I02-S01-T04: modules/incident-event-engine/pyproject.toml"
+    implementation_paths: [modules/incident-event-engine/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S01-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S01
-    description: "Cumulative task I02-S01-T05"
-    implementation_paths: []
+    description: "I02-S01-T05: modules/rest-api-integration-gateway/pyproject.toml"
+    implementation_paths: [modules/rest-api-integration-gateway/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S02-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S02
-    description: "Cumulative task I02-S02-T01"
-    implementation_paths: []
+    description: "I02-S02-T01: modules/client-applications/package.json"
+    implementation_paths: [modules/client-applications/package.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S02-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S02
-    description: "Cumulative task I02-S02-T02"
-    implementation_paths: []
+    description: "I02-S02-T02: modules/client-applications/shared-domain/package.json"
+    implementation_paths: [modules/client-applications/shared-domain/package.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S02-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S02
-    description: "Cumulative task I02-S02-T03"
-    implementation_paths: []
+    description: "I02-S02-T03: modules/client-applications/web/package.json"
+    implementation_paths: [modules/client-applications/web/package.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S02-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S02
-    description: "Cumulative task I02-S02-T04"
-    implementation_paths: []
+    description: "I02-S02-T04: modules/client-applications/mobile-shell/package.json"
+    implementation_paths: [modules/client-applications/mobile-shell/package.json]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S02-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S02
-    description: "Cumulative task I02-S02-T05"
-    implementation_paths: []
+    description: "I02-S02-T05: modules/client-applications/shared-domain/src/index.ts"
+    implementation_paths: [modules/client-applications/shared-domain/src/index.ts]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S03-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S03
-    description: "Cumulative task I02-S03-T01"
-    implementation_paths: []
+    description: "I02-S03-T01: modules/streaming-source-collector/src/sentinel_streaming_source_collector/bootstrap/runtime.py"
+    implementation_paths: [modules/streaming-source-collector/src/sentinel_streaming_source_collector/bootstrap/runtime.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S03-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S03
-    description: "Cumulative task I02-S03-T02"
-    implementation_paths: []
+    description: "I02-S03-T02: modules/analysis-enrichment-engine/src/sentinel_analysis_enrichment_engine/bootstrap/runtime.py"
+    implementation_paths: [modules/analysis-enrichment-engine/src/sentinel_analysis_enrichment_engine/bootstrap/runtime.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S03-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S03
-    description: "Cumulative task I02-S03-T03"
-    implementation_paths: []
+    description: "I02-S03-T03: modules/model-workload-runtime/src/sentinel_model_workload_runtime/bootstrap/runtime.py"
+    implementation_paths: [modules/model-workload-runtime/src/sentinel_model_workload_runtime/bootstrap/runtime.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S03-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S03
-    description: "Cumulative task I02-S03-T04"
-    implementation_paths: []
+    description: "I02-S03-T04: modules/incident-event-engine/src/sentinel_incident_event_engine/bootstrap/runtime.py"
+    implementation_paths: [modules/incident-event-engine/src/sentinel_incident_event_engine/bootstrap/runtime.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S03-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S03
-    description: "Cumulative task I02-S03-T05"
-    implementation_paths: []
+    description: "I02-S03-T05: modules/rest-api-integration-gateway/src/sentinel_rest_api_integration_gateway/bootstrap/runtime.py"
+    implementation_paths: [modules/rest-api-integration-gateway/src/sentinel_rest_api_integration_gateway/bootstrap/runtime.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S04-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S04
-    description: "Cumulative task I02-S04-T01"
-    implementation_paths: []
+    description: "I02-S04-T01: apps/sentinel-module-runner/pyproject.toml"
+    implementation_paths: [apps/sentinel-module-runner/pyproject.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S04-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S04
-    description: "Cumulative task I02-S04-T02"
-    implementation_paths: []
+    description: "I02-S04-T02: apps/sentinel-module-runner/src/sentinel_module_runner/main.py"
+    implementation_paths: [apps/sentinel-module-runner/src/sentinel_module_runner/main.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S04-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S04
-    description: "Cumulative task I02-S04-T03"
-    implementation_paths: []
+    description: "I02-S04-T03: modules/client-applications/web/src/test-harness.ts"
+    implementation_paths: [modules/client-applications/web/src/test-harness.ts]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S04-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S04
-    description: "Cumulative task I02-S04-T04"
-    implementation_paths: []
+    description: "I02-S04-T04: modules/client-applications/mobile-shell/src/test-harness.ts"
+    implementation_paths: [modules/client-applications/mobile-shell/src/test-harness.ts]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S04-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S04
-    description: "Cumulative task I02-S04-T05"
-    implementation_paths: []
+    description: "I02-S04-T05: tests/component/test_all_module_lifecycles.py"
+    implementation_paths: [tests/component/test_all_module_lifecycles.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S05-T01
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S05
-    description: "Cumulative task I02-S05-T01"
-    implementation_paths: []
+    description: "I02-S05-T01: architecture/import-rules.toml"
+    implementation_paths: [architecture/import-rules.toml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S05-T02
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S05
-    description: "Cumulative task I02-S05-T02"
-    implementation_paths: []
+    description: "I02-S05-T02: architecture/owned-namespaces.yaml"
+    implementation_paths: [architecture/owned-namespaces.yaml]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S05-T03
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S05
-    description: "Cumulative task I02-S05-T03"
-    implementation_paths: []
+    description: "I02-S05-T03: scripts/check_architecture_boundaries.py"
+    implementation_paths: [scripts/check_architecture_boundaries.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S05-T04
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S05
-    description: "Cumulative task I02-S05-T04"
-    implementation_paths: []
+    description: "I02-S05-T04: tests/architecture/test_authority_boundaries.py"
+    implementation_paths: [tests/architecture/test_authority_boundaries.py]
     test_paths: []
     evidence_paths: []
     supersession: null
   - id: I02-S05-T05
-    status: IMPLEMENTED_UNVERIFIED
+    status: VERIFIED
     iteration: 02
     stage: S05
-    description: "Cumulative task I02-S05-T05"
-    implementation_paths: []
+    description: "I02-S05-T05: tests/architecture/test_client_boundaries.ts"
+    implementation_paths: [tests/architecture/test_client_boundaries.ts]
     test_paths: []
     evidence_paths: []
     supersession: null
