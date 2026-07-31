@@ -8,7 +8,7 @@ Sentinel Edge is an edge-first, multi-hazard research platform for collecting ob
 ## Iteration status
 
 - Baseline: modular architecture documentation v0.13.0
-- Active increment: **I02 — six independent module shells and architecture enforcement**
+- Active increment: **I03 — collector core and deterministic acquisition**
 - Completion discipline: an iteration is not complete until every mandatory gate passes with zero unexpected skips, expected failures, collection errors, or flaky reruns.
 
 ## Six bounded modules

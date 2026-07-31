@@ -1,0 +1,9 @@
+provider: streaming-source-collector
+version: 1.0.0
+cases:
+  - id: accepts-deterministic-observation
+    input: {source_id: fixture, sequence: 1, payload: observation}
+    expected: accepted
+  - id: rejects-duplicate
+    input: {source_id: fixture, sequence: 1, payload: observation}
+    expected: duplicate

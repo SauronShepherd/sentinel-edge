@@ -47,7 +47,7 @@
     {
       "id": "I02",
       "name": "Six module shells and architecture enforcement",
-      "state": "active",
+      "state": "demonstrated",
       "owner": "architecture",
       "acceptance_tests": [
         "tests/component/test_all_module_lifecycles.py",
@@ -62,10 +62,13 @@
     {
       "id": "I03",
       "name": "Collector core and deterministic acquisition",
-      "state": "planned",
+      "state": "active",
       "owner": "module-01",
-      "acceptance_tests": [],
-      "evidence_paths": [],
+      "acceptance_tests": [
+        "tests/component/test_collector_core.py",
+        "tests/component/test_all_module_lifecycles.py"
+      ],
+      "evidence_paths": ["provenance/iterations/I03/acceptance.yaml", "provenance/iterations/I03/evidence"],
       "depends_on": [
         "I02"
       ]

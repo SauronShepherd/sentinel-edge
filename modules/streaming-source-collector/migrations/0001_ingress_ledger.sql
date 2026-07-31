@@ -1,0 +1,5 @@
+CREATE TABLE source (source_id TEXT PRIMARY KEY, permitted_use INTEGER NOT NULL);
+CREATE TABLE cursor (source_id TEXT PRIMARY KEY, position TEXT NOT NULL);
+CREATE TABLE idempotency (identity TEXT PRIMARY KEY, first_seen TEXT NOT NULL);
+CREATE TABLE audit (id INTEGER PRIMARY KEY, identity TEXT NOT NULL, action TEXT NOT NULL, at TEXT NOT NULL);
+CREATE TABLE health (name TEXT PRIMARY KEY, value TEXT NOT NULL);

@@ -1,0 +1,8 @@
+asyncapi: 2.6.0
+info: {title: Sentinel Edge Collector, version: 1.0.0}
+channels:
+  observations: {publish: {message: {name: observation, payload: {$ref: '#/components/schemas/Observation'}}}}
+  audit: {publish: {message: {name: audit, payload: {type: object}}}}
+components:
+  schemas:
+    Observation: {type: object, required: [source_id, metric, value, unit, captured_at, quality]}
