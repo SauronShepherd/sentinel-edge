@@ -1,0 +1,45 @@
+{
+  "$id": "api.v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "audit_context": {
+      "type": "object"
+    },
+    "cursor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "errors": {
+      "type": "array"
+    },
+    "pagination": {
+      "properties": {
+        "limit": {
+          "type": "integer"
+        },
+        "total": {
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "resource": {
+      "not": {
+        "pattern": "(queue|internal|amqp|kafka)"
+      },
+      "pattern": "^[a-z][a-z0-9/-]*$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "resource",
+    "pagination",
+    "cursor",
+    "audit_context",
+    "errors"
+  ],
+  "type": "object"
+}

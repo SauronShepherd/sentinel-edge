@@ -1,0 +1,327 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Sentinel Edge API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/analyzer": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "$id": "analyzer.v1",
+                  "type": "object",
+                  "required": [
+                    "bundle_id",
+                    "inputs",
+                    "limitations",
+                    "source_spans",
+                    "claims",
+                    "media_records",
+                    "derivation",
+                    "trust_factors"
+                  ],
+                  "properties": {
+                    "bundle_id": {
+                      "type": "string"
+                    },
+                    "inputs": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "limitations": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "source_spans": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "claims": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "media_records": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "derivation": {
+                      "type": "object"
+                    },
+                    "trust_factors": {
+                      "type": "object"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "$id": "api.v1",
+                  "type": "object",
+                  "required": [
+                    "resource",
+                    "pagination",
+                    "cursor",
+                    "audit_context",
+                    "errors"
+                  ],
+                  "properties": {
+                    "resource": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9/-]*$",
+                      "not": {
+                        "pattern": "(queue|internal|amqp|kafka)"
+                      }
+                    },
+                    "pagination": {
+                      "type": "object",
+                      "properties": {
+                        "limit": {
+                          "type": "integer"
+                        },
+                        "total": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "cursor": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "audit_context": {
+                      "type": "object"
+                    },
+                    "errors": {
+                      "type": "array"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/collector": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "$id": "collector.v1",
+                  "type": "object",
+                  "required": [
+                    "observation_id",
+                    "observed_at",
+                    "clock_quality",
+                    "replay",
+                    "policy",
+                    "units",
+                    "source_health",
+                    "acquisition_audit"
+                  ],
+                  "properties": {
+                    "observation_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "observed_at": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "clock_quality": {
+                      "enum": [
+                        "trusted",
+                        "estimated",
+                        "unknown"
+                      ]
+                    },
+                    "replay": {
+                      "type": "boolean"
+                    },
+                    "units": {
+                      "type": "string"
+                    },
+                    "source_health": {
+                      "type": "object"
+                    },
+                    "acquisition_audit": {
+                      "type": "object"
+                    },
+                    "policy": {
+                      "type": "object",
+                      "required": [
+                        "retention"
+                      ],
+                      "properties": {
+                        "retention": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": false
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/incident": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "$id": "incident.v1",
+                  "type": "object",
+                  "required": [
+                    "incident_id",
+                    "expected_version",
+                    "projection_version",
+                    "inputs",
+                    "commands",
+                    "transitions",
+                    "reviews",
+                    "effects"
+                  ],
+                  "properties": {
+                    "incident_id": {
+                      "type": "string"
+                    },
+                    "expected_version": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "projection_version": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "inputs": {
+                      "type": "array"
+                    },
+                    "commands": {
+                      "type": "array"
+                    },
+                    "transitions": {
+                      "type": "array"
+                    },
+                    "reviews": {
+                      "type": "array"
+                    },
+                    "effects": {
+                      "type": "array"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/runtime": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "$id": "runtime.v1",
+                  "type": "object",
+                  "required": [
+                    "job_id",
+                    "model_hash",
+                    "profile_hash",
+                    "deterministic",
+                    "abstained",
+                    "results",
+                    "hazard_inference",
+                    "lifecycle",
+                    "health",
+                    "benchmark_samples"
+                  ],
+                  "properties": {
+                    "job_id": {
+                      "type": "string"
+                    },
+                    "model_hash": {
+                      "type": "string"
+                    },
+                    "profile_hash": {
+                      "type": "string"
+                    },
+                    "deterministic": {
+                      "type": "boolean"
+                    },
+                    "abstained": {
+                      "type": "boolean"
+                    },
+                    "results": {
+                      "type": "array"
+                    },
+                    "hazard_inference": {
+                      "type": "object"
+                    },
+                    "lifecycle": {
+                      "type": "object"
+                    },
+                    "health": {
+                      "type": "object"
+                    },
+                    "benchmark_samples": {
+                      "type": "array"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

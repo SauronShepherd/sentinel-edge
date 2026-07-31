@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "schemas": [
+    "analyzer",
+    "api",
+    "collector",
+    "incident",
+    "runtime"
+  ]
+}

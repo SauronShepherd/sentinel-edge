@@ -1,0 +1,50 @@
+{
+  "$id": "runtime.v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "abstained": {
+      "type": "boolean"
+    },
+    "benchmark_samples": {
+      "type": "array"
+    },
+    "deterministic": {
+      "type": "boolean"
+    },
+    "hazard_inference": {
+      "type": "object"
+    },
+    "health": {
+      "type": "object"
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "lifecycle": {
+      "type": "object"
+    },
+    "model_hash": {
+      "type": "string"
+    },
+    "profile_hash": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "job_id",
+    "model_hash",
+    "profile_hash",
+    "deterministic",
+    "abstained",
+    "results",
+    "hazard_inference",
+    "lifecycle",
+    "health",
+    "benchmark_samples"
+  ],
+  "type": "object"
+}

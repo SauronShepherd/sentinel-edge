@@ -1,0 +1,57 @@
+{
+  "$id": "analyzer.v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "bundle_id": {
+      "type": "string"
+    },
+    "claims": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "derivation": {
+      "type": "object"
+    },
+    "inputs": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "media_records": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "source_spans": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "trust_factors": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "bundle_id",
+    "inputs",
+    "limitations",
+    "source_spans",
+    "claims",
+    "media_records",
+    "derivation",
+    "trust_factors"
+  ],
+  "type": "object"
+}

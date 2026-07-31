@@ -1,0 +1,44 @@
+{
+  "$id": "incident.v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "commands": {
+      "type": "array"
+    },
+    "effects": {
+      "type": "array"
+    },
+    "expected_version": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "incident_id": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "array"
+    },
+    "projection_version": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "reviews": {
+      "type": "array"
+    },
+    "transitions": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "incident_id",
+    "expected_version",
+    "projection_version",
+    "inputs",
+    "commands",
+    "transitions",
+    "reviews",
+    "effects"
+  ],
+  "type": "object"
+}

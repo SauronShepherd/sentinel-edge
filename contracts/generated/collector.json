@@ -1,0 +1,57 @@
+{
+  "$id": "collector.v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "acquisition_audit": {
+      "type": "object"
+    },
+    "clock_quality": {
+      "enum": [
+        "trusted",
+        "estimated",
+        "unknown"
+      ]
+    },
+    "observation_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "policy": {
+      "additionalProperties": false,
+      "properties": {
+        "retention": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "retention"
+      ],
+      "type": "object"
+    },
+    "replay": {
+      "type": "boolean"
+    },
+    "source_health": {
+      "type": "object"
+    },
+    "units": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "observation_id",
+    "observed_at",
+    "clock_quality",
+    "replay",
+    "policy",
+    "units",
+    "source_health",
+    "acquisition_audit"
+  ],
+  "type": "object"
+}
