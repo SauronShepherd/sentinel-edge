@@ -13,9 +13,7 @@ def test_pyproject_and_lock_are_consistent() -> None:
     # The managed Windows image exposes uv as a WinGet shim that cannot be
     # spawned by child processes.  The locked development environment already
     # contains the same pinned uv release, so invoke it through this interpreter.
-    env = os.environ.copy()
-    env["UV_CACHE_DIR"] = str(ROOT / "build" / "uv-cache")
-    result = subprocess.run([sys.executable, "-m", "uv", "lock", "--check", "--offline"], cwd=ROOT, env=env, text=True, capture_output=True)
+    result = subprocess.run([sys.executable, "-m", "uv", "lock", "--check"], cwd=ROOT, text=True, capture_output=True)
     assert result.returncode == 0, result.stdout + result.stderr
 
 

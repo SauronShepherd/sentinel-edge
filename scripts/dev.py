@@ -29,6 +29,9 @@ COMMANDS: dict[str, list[list[str]]] = {
 
 def run(name: str) -> int:
     if name == "setup":
+        bootstrap = [PY, "-m", "pip", "install", "setuptools==75.8.0", "wheel==0.45.1", "uv==0.10.0", "pytest==9.0.2", "PyYAML==6.0.3", "jsonschema==4.26.0"]
+        result = subprocess.run(bootstrap, cwd=ROOT)
+        if result.returncode: return result.returncode
         return subprocess.run([PY, "-m", "pip", "install", "--no-build-isolation", "-e", "contracts/sentinel-contracts", "-e", "sdk/sentinel-plugin-sdk", "-e", "sdk/sentinel-testkit"], cwd=ROOT).returncode
     if name in {"test-all", "gates"}:
         setup_code = run("setup")
