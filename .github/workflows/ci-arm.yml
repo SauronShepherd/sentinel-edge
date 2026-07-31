@@ -17,8 +17,8 @@ jobs:
           python-version: '3.13'
       - name: Provision pinned test runner
         run: python -m pip install pytest==9.0.2
-      - run: make setup
+      - run: python scripts/dev.py setup
       - name: Planned Arm lane guard
-        run: make test-arm
+        run: python scripts/dev.py test-arm
       - name: State declaration
         run: echo 'Arm benchmark capability is planned; this job is not benchmark evidence.'

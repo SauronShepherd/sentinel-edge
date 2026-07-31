@@ -47,7 +47,7 @@
     {
       "id": "I02",
       "name": "Six module shells and architecture enforcement",
-      "state": "demonstrated",
+      "state": "active",
       "owner": "architecture",
       "acceptance_tests": [
         "tests/component/test_all_module_lifecycles.py",

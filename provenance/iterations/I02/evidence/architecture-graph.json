@@ -1,0 +1,59 @@
+{
+  "authorities": {
+    "client_mutation_boundary": "rest-api-integration-gateway",
+    "collector": "streaming-source-collector",
+    "incident_lifecycle": "incident-event-engine",
+    "workload_execution": "model-workload-runtime"
+  },
+  "modules": [
+    {
+      "dependencies": [
+        "sentinel-contracts>=1.0,<2.0"
+      ],
+      "name": "sentinel-analysis-enrichment-engine",
+      "path": "modules\\analysis-enrichment-engine"
+    },
+    {
+      "dependencies": [
+        "sentinel-contracts>=1.0,<2.0"
+      ],
+      "name": "sentinel-incident-event-engine",
+      "path": "modules\\incident-event-engine"
+    },
+    {
+      "dependencies": [
+        "sentinel-contracts>=1.0,<2.0"
+      ],
+      "name": "sentinel-model-workload-runtime",
+      "path": "modules\\model-workload-runtime"
+    },
+    {
+      "dependencies": [
+        "sentinel-contracts>=1.0,<2.0"
+      ],
+      "name": "sentinel-rest-api-integration-gateway",
+      "path": "modules\\rest-api-integration-gateway"
+    },
+    {
+      "dependencies": [
+        "sentinel-contracts>=1.0,<2.0"
+      ],
+      "name": "sentinel-streaming-source-collector",
+      "path": "modules\\streaming-source-collector"
+    }
+  ],
+  "policy": {
+    "rules": {
+      "forbidden_cross_module_imports": true,
+      "shared_prefixes": [
+        "contracts",
+        "sdk"
+      ]
+    }
+  },
+  "shared_packages": [
+    "contracts/sentinel-contracts",
+    "sdk/sentinel-plugin-sdk",
+    "sdk/sentinel-testkit"
+  ]
+}

@@ -1,16 +1,1 @@
-iteration: I02
-state: demonstrated
-candidate_branch: Iteration-02
-acceptance_tests:
-  - tests/component/test_all_module_lifecycles.py
-  - tests/architecture/test_authority_boundaries.py
-  - scripts/check_architecture_boundaries.py
-gate:
-  command: .venv/Scripts/python.exe -m pytest -q
-  result: pass
-  passed: 23
-  failed: 0
-  skipped: 0
-  xfailed: 0
-limitations:
-  - Client TypeScript shells are deterministic harness packages; production UI is a later iteration.
+{"schema_version":1,"iteration":"I02","status":"active","candidate_revision":"Iteration-02","baseline":"v0.13.0","stages":{"I02-S01":"complete","I02-S02":"in-progress","I02-S03":"complete","I02-S04":"in-progress","I02-S05":"in-progress"},"mandatory_commands":["python -m pytest -q","python scripts/check_architecture_boundaries.py","npm ci --ignore-scripts"],"evidence":[],"test_counts":{"passed":23,"failed":0,"skipped":0,"xfailed":0,"rerun":0,"collection_errors":0}}

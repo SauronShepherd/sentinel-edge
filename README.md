@@ -8,7 +8,7 @@ Sentinel Edge is an edge-first, multi-hazard research platform for collecting ob
 ## Iteration status
 
 - Baseline: modular architecture documentation v0.13.0
-- Active increment: **I01 — shared contracts, plugin SDK, and deterministic testkit**
+- Active increment: **I02 — six independent module shells and architecture enforcement**
 - Completion discipline: an iteration is not complete until every mandatory gate passes with zero unexpected skips, expected failures, collection errors, or flaky reruns.
 
 ## Six bounded modules
@@ -23,9 +23,9 @@ Sentinel Edge is an edge-first, multi-hazard research platform for collecting ob
 ## First commands
 
 ```bash
-make setup
-make governance
-make gates
+python scripts/dev.py setup
+python scripts/dev.py governance
+python scripts/dev.py gates
 ```
 
 The active I01 gate is intentionally small but real. Targets for future lanes already exist; they validate the capability registry and explicitly report `planned`, without counting absent suites as passing evidence.

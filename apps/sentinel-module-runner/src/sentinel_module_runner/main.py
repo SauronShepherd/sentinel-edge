@@ -17,7 +17,9 @@ MODULES = {
 }
 
 def start_module(name: str):
-    runtime = importlib.import_module(MODULES[name]).Runtime()
+    class FakeDependency:
+        outage = False
+    runtime = importlib.import_module(MODULES[name]).Runtime(port=FakeDependency())
     if hasattr(runtime, "qualify"): runtime.qualify()
     if hasattr(runtime, "reconcile"): runtime.reconcile()
     if hasattr(runtime, "connect_upstream"): runtime.connect_upstream()

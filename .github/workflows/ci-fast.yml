@@ -19,9 +19,9 @@ jobs:
           python-version: '3.13'
       - name: Provision pinned test runner
         run: python -m pip install pytest==9.0.2
-      - run: make setup
-      - run: make format-check
-      - run: make lint
-      - run: make type
-      - run: make architecture
-      - run: make governance
+      - run: python scripts/dev.py setup
+      - run: python scripts/dev.py format
+      - run: python scripts/dev.py lint
+      - run: python scripts/dev.py type
+      - run: python scripts/dev.py architecture
+      - run: python scripts/dev.py governance

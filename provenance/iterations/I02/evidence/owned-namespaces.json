@@ -1,0 +1,58 @@
+{
+  "authorities": {
+    "client_mutation_boundary": "rest-api-integration-gateway",
+    "collector": "streaming-source-collector",
+    "incident_lifecycle": "incident-event-engine",
+    "workload_execution": "model-workload-runtime"
+  },
+  "namespaces": [
+    {
+      "owner": "streaming-source-collector",
+      "path": "runtime/collector"
+    },
+    {
+      "owner": "analysis-enrichment-engine",
+      "path": "runtime/analyzer"
+    },
+    {
+      "owner": "model-workload-runtime",
+      "path": "runtime/runtime"
+    },
+    {
+      "owner": "incident-event-engine",
+      "path": "runtime/incidents"
+    },
+    {
+      "owner": "rest-api-integration-gateway",
+      "path": "runtime/api"
+    },
+    {
+      "owner": "client-applications",
+      "path": "runtime/client"
+    }
+  ],
+  "resources": {
+    "artifacts": {
+      "analyzer": "runtime/analyzer/artifacts",
+      "api": "runtime/api/artifacts",
+      "collector": "runtime/collector/artifacts",
+      "incidents": "runtime/incidents/artifacts",
+      "runtime": "runtime/runtime/artifacts"
+    },
+    "databases": {
+      "analyzer": "runtime/analyzer/analyzer.db",
+      "api": "runtime/api/api.db",
+      "collector": "runtime/collector/collector.db",
+      "incidents": "runtime/incidents/incidents.db",
+      "runtime": "runtime/runtime/runtime.db"
+    },
+    "secrets": {
+      "analyzer": "runtime/analyzer/secrets",
+      "api": "runtime/api/secrets",
+      "collector": "runtime/collector/secrets",
+      "incidents": "runtime/incidents/secrets",
+      "runtime": "runtime/runtime/secrets"
+    }
+  },
+  "undeclared_resources": []
+}

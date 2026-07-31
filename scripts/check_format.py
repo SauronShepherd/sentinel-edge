@@ -3,13 +3,13 @@ from __future__ import annotations
 from _repo import ROOT
 
 TEXT_SUFFIXES = {".py", ".pyi", ".md", ".toml", ".yaml", ".yml", ".json", ".jsonl", ".txt"}
-IGNORED = {".git", ".venv", ".idea", "build", "dist", ".pytest_cache"}
+IGNORED = {".git", ".venv", ".idea", "build", "dist", ".pytest_cache", "node_modules", ".egg-info"}
 
 
 def main() -> int:
     errors: list[str] = []
     for path in sorted(ROOT.rglob("*")):
-        if not path.is_file() or any(part in IGNORED for part in path.parts):
+        if not path.is_file() or any(part in IGNORED or part.endswith(".egg-info") for part in path.parts):
             continue
         if path.name not in {"Makefile", ".editorconfig", ".gitignore"} and path.suffix not in TEXT_SUFFIXES:
             continue

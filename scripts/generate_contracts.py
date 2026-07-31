@@ -18,11 +18,11 @@ def generate() -> None:
     models = {s.stem.split(".")[0]: json.loads(s.read_text(encoding="utf-8")) for s in sorted(SCHEMAS.glob("*.json"))}
     py = ["# generated; do not edit", "from dataclasses import dataclass", ""]
     ts = ["// generated; do not edit", ""]
-    def typ(spec):
+    def typ(spec: dict[str, object]) -> str:
         t=spec.get("type", "object")
         if isinstance(t, list): t = next((x for x in t if x != "null"), "object")
         return {"string":"str","integer":"int","number":"float","boolean":"bool","array":"tuple[object, ...]","object":"dict[str, object]"}.get(t,"object")
-    def tst(spec):
+    def tst(spec: dict[str, object]) -> str:
         t=spec.get("type", "unknown")
         if isinstance(t, list): t = " | ".join(t)
         return {"string":"string","integer":"number","number":"number","boolean":"boolean","array":"unknown[]","object":"Record<string, unknown>"}.get(t,"unknown")

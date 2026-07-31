@@ -1,0 +1,49 @@
+{
+  "artifacts": [
+    {
+      "filename": "sentinel_analysis_enrichment_engine-0.1.0-py3-none-any.whl",
+      "size": 1932,
+      "sha256": "5cb9cf293aa855c4555e25cf60cc1c1d6f17a757ad681269dcc8c3736c72128a"
+    },
+    {
+      "filename": "sentinel_contracts-1.0.0-py3-none-any.whl",
+      "size": 4008,
+      "sha256": "502c37ce52bd4aa30367af4e153212c3e04fd71f267597a8e21af02b26e73e97"
+    },
+    {
+      "filename": "sentinel_incident_event_engine-0.1.0-py3-none-any.whl",
+      "size": 1886,
+      "sha256": "ceb0a13139d57205777b184256db2801bdc61ebbc05e47f391e51b824a2f570e"
+    },
+    {
+      "filename": "sentinel_model_workload_runtime-0.1.0-py3-none-any.whl",
+      "size": 1887,
+      "sha256": "f65f97dbb3a20f5ae6d53c5ad671f794a9f43e8a91031233f4b4bd978f50b6c4"
+    },
+    {
+      "filename": "sentinel_module_runner-0.1.0-py3-none-any.whl",
+      "size": 1856,
+      "sha256": "93e2098ae6a7294a1f79bbfcaf525c5acf8f4d6f56d32384505a33c28065575c"
+    },
+    {
+      "filename": "sentinel_plugin_sdk-1.0.0-py3-none-any.whl",
+      "size": 3712,
+      "sha256": "08dd13cc69d380acf9c23e6eecc45d2b64b65696d8236ed98e195b72406175b5"
+    },
+    {
+      "filename": "sentinel_rest_api_integration_gateway-0.1.0-py3-none-any.whl",
+      "size": 1965,
+      "sha256": "1c563df5123c575148e6fde850ac32d8f6574f566c7a977e3b3b5b80ca88c85f"
+    },
+    {
+      "filename": "sentinel_streaming_source_collector-0.1.0-py3-none-any.whl",
+      "size": 1947,
+      "sha256": "87b07d051e5928841d881987f316ff44b6a46f5a2efd27bd07f7827ad35f0108"
+    },
+    {
+      "filename": "sentinel_testkit-1.0.0-py3-none-any.whl",
+      "size": 3173,
+      "sha256": "f5930de2a1c601faf3fbc6b0029c81cc71137e1a8e2b73952878133c1e09e1b1"
+    }
+  ]
+}

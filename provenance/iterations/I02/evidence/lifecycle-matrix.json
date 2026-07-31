@@ -1,0 +1,64 @@
+{
+  "scenarios": [
+    {
+      "crashed": true,
+      "degraded_on_outage": true,
+      "draining": true,
+      "malformed_config_rejected": true,
+      "module": "collector",
+      "post_crash_restart_ready": true,
+      "ready": true,
+      "recovered": true,
+      "restart_ready": true,
+      "stopped": true
+    },
+    {
+      "crashed": true,
+      "degraded_on_outage": true,
+      "draining": true,
+      "malformed_config_rejected": true,
+      "module": "analyzer",
+      "post_crash_restart_ready": true,
+      "ready": true,
+      "recovered": true,
+      "restart_ready": true,
+      "stopped": true
+    },
+    {
+      "crashed": true,
+      "degraded_on_outage": true,
+      "draining": true,
+      "malformed_config_rejected": true,
+      "module": "runtime",
+      "post_crash_restart_ready": true,
+      "ready": true,
+      "recovered": true,
+      "restart_ready": true,
+      "stopped": true
+    },
+    {
+      "crashed": true,
+      "degraded_on_outage": true,
+      "draining": true,
+      "malformed_config_rejected": true,
+      "module": "incident",
+      "post_crash_restart_ready": true,
+      "ready": true,
+      "recovered": true,
+      "restart_ready": true,
+      "stopped": true
+    },
+    {
+      "crashed": true,
+      "degraded_on_outage": true,
+      "draining": true,
+      "malformed_config_rejected": true,
+      "module": "api",
+      "post_crash_restart_ready": true,
+      "ready": true,
+      "recovered": true,
+      "restart_ready": true,
+      "stopped": true
+    }
+  ]
+}
