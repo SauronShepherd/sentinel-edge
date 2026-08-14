@@ -89,13 +89,13 @@
     "scheduler_overhead": {
       "decision_count": 800,
       "iterations": 50,
-      "max_per_decision_us": 3929.644,
+      "max_per_decision_us": 3836.445,
       "measurement_class": "measured_emulated_arm64",
-      "median_per_decision_us": 81.539,
+      "median_per_decision_us": 87.984,
       "note": "Measured in the emulated AArch64 guest; not Raspberry Pi 5 scheduler timing.",
-      "p95_per_decision_us": 978.989,
+      "p95_per_decision_us": 1011.764,
       "scope": "component_3_scheduler_python_control_plane",
-      "total_cpu_ms": 207.481853
+      "total_cpu_ms": 222.492043
     },
     "semantic_resource_policy": {
       "evidence_class": "simulated",
@@ -139,18 +139,18 @@
   "results": {
     "B0": {
       "emulator_execution": {
-        "cpu_median_ms": 2.782112,
+        "cpu_median_ms": 3.076569,
         "cpu_ms": [
-          3.569836,
-          2.57401,
-          2.782112
+          3.926552,
+          3.07034,
+          3.076569
         ],
-        "max_rss_kb": 204836,
-        "wall_median_ms": 2.799563,
+        "max_rss_kb": 204436,
+        "wall_median_ms": 3.107566,
         "wall_ms": [
-          3.906337,
-          2.603276,
-          2.799563
+          4.340351,
+          3.107566,
+          3.105291
         ]
       },
       "semantic": {
@@ -386,18 +386,18 @@
     },
     "B1": {
       "emulator_execution": {
-        "cpu_median_ms": 2.517173,
+        "cpu_median_ms": 3.168501,
         "cpu_ms": [
-          2.517173,
-          2.283138,
-          3.62881
+          5.411902,
+          3.168501,
+          2.546731
         ],
-        "max_rss_kb": 204836,
-        "wall_median_ms": 2.551152,
+        "max_rss_kb": 204436,
+        "wall_median_ms": 3.195393,
         "wall_ms": [
-          2.551152,
-          2.300471,
-          3.743821
+          5.485113,
+          3.195393,
+          2.569147
         ]
       },
       "semantic": {
@@ -633,18 +633,18 @@
     },
     "O1": {
       "emulator_execution": {
-        "cpu_median_ms": 8.855352,
+        "cpu_median_ms": 8.973349,
         "cpu_ms": [
-          8.855352,
-          9.759959,
-          8.497962
+          9.351792,
+          8.100719,
+          8.973349
         ],
-        "max_rss_kb": 204836,
-        "wall_median_ms": 8.891839,
+        "max_rss_kb": 204436,
+        "wall_median_ms": 9.015901,
         "wall_ms": [
-          8.891839,
-          9.785502,
-          8.548698
+          9.399972,
+          8.138519,
+          9.015901
         ]
       },
       "semantic": {
