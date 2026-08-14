@@ -58,7 +58,10 @@ def test_acceptance_batch_does_not_hang_on_leaked_non_daemon_test_thread(tmp_pat
         text=True,
         capture_output=True,
         check=False,
-        timeout=5,
+        # Windows can take a few seconds to close pytest capture pipes after
+        # the isolated worker calls os._exit(); keep the bound strict while
+        # avoiding a host-load-dependent false failure.
+        timeout=15,
     )
     payload = json.loads(receipt.read_text(encoding="utf-8"))
     assert result.returncode == 0

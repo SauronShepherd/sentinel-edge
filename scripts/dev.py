@@ -230,6 +230,8 @@ def main() -> None:
         if verify_result:
             raise SystemExit(verify_result)
         raise SystemExit(run([sys.executable, "scripts/verify_release_admission.py"]))
+    if args.command == "human-acceptance":
+        raise SystemExit(run([sys.executable, "scripts/human_acceptance.py"]))
     if args.command == "plugins":
         raise SystemExit(run([sys.executable, "scripts/run_capability_lane.py", "plugins"]))
     if args.command == "testkit":

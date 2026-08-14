@@ -74,6 +74,12 @@ commands:
     mutating: true
     execution_semantics: revalidate_before_commit
     empty_allowed: false
+  - name: human-acceptance
+    profile: release
+    purpose: Execute the deterministic acceptance document and emit a receipt for the exact candidate
+    mutating: true
+    execution_semantics: revalidate_before_commit
+    empty_allowed: false
   - name: setup
     profile: development
     purpose: Validate and install the offline development environment

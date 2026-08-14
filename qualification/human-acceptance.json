@@ -1,0 +1,113 @@
+{
+  "commands": {
+    "benchmark-replay": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/benchmark-replay.log",
+      "started_at": "2026-08-14T13:58:58.290680Z",
+      "status": "pass"
+    },
+    "candidate-cleanliness": {
+      "status": "pass"
+    },
+    "clients": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/clients.log",
+      "started_at": "2026-08-14T13:59:12.722513Z",
+      "status": "pass"
+    },
+    "collaboration-check": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/collaboration-check.log",
+      "started_at": "2026-08-14T13:59:00.422337Z",
+      "status": "pass"
+    },
+    "collaboration-demo": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/collaboration-demo.log",
+      "started_at": "2026-08-14T13:59:04.190668Z",
+      "status": "pass"
+    },
+    "collaboration-gmail-fixture": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/collaboration-gmail-fixture.log",
+      "started_at": "2026-08-14T13:59:05.134119Z",
+      "status": "pass"
+    },
+    "demo": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/demo.log",
+      "started_at": "2026-08-14T13:58:52.155646Z",
+      "status": "pass"
+    },
+    "doctor": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/doctor.log",
+      "started_at": "2026-08-14T13:58:27.088612Z",
+      "status": "pass"
+    },
+    "scenario": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/scenario.log",
+      "started_at": "2026-08-14T13:58:55.205258Z",
+      "status": "pass"
+    },
+    "setup": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/setup.log",
+      "started_at": "2026-08-14T13:58:12.889488Z",
+      "status": "pass"
+    },
+    "test-all": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/test-all.log",
+      "started_at": "2026-08-14T13:59:24.854012Z",
+      "status": "pass"
+    },
+    "uix": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/uix.log",
+      "started_at": "2026-08-14T13:59:06.226627Z",
+      "status": "pass"
+    },
+    "verify": {
+      "exit_code": 0,
+      "log": ".tmp/human-acceptance/verify.log",
+      "started_at": "2026-08-14T13:58:29.559993Z",
+      "status": "pass"
+    }
+  },
+  "generated_at": "2026-08-14T14:22:33.994251Z",
+  "git": {
+    "branch": "codex/20260814",
+    "clean": false,
+    "revision": "10ac0ec0411ad8028f161e3377e9275604b10977",
+    "status": [
+      " M architecture/command-catalog.yaml",
+      " M docker/requirements-arm64.lock.txt",
+      " M pyproject.toml",
+      " M qualification/uix-conformance.json",
+      " M requirements-dev.lock.txt",
+      " M requirements-release.lock.json",
+      " M scripts/dev.py",
+      " M tests/test_command_catalog.py",
+      " M tests/test_strict_test_all_runner.py",
+      " M uv.lock",
+      "?? docs/submission/HUMAN_ACCEPTANCE_AUTOMATION.md",
+      "?? qualification/human-acceptance.json",
+      "?? scripts/human_acceptance.py"
+    ]
+  },
+  "manual_remaining": [
+    "desktop/mobile visual comparison and keyboard-only UI walkthrough",
+    "optional live Gmail transport, inbox inspection and outage/retry demonstration",
+    "final screenshot/video capture, public repository publication and Devpost submission"
+  ],
+  "schema": "sentinel-edge.human-acceptance.v1",
+  "source_tree_digest": "1bd21b1f876fbfcd76f6dc1899f4801ee17721311188d6df6c769052d49638fb",
+  "static": {
+    "failures": [],
+    "route_count": 20,
+    "status": "pass"
+  },
+  "status": "pass"
+}
