@@ -1,10 +1,41 @@
 schema: sentinel-edge.collaboration-policy.v1
+policy_version: collab-demo-v1
 capability_id: CAP-COLLAB-001
 profile: H1
 default_enabled: false
 incident_writer: component-4
 acquisition_owner: component-1
 client_boundary: component-5
+hazards:
+  earthquake:
+    domain_kinds: [spatial_cell]
+    window_seconds: 10
+    min_independent_peers: 2
+    allowed_observations: [local_trigger, earthquake_like_signal]
+    require_clock_band_at_most: medium
+    email_unverified_action: create_review_incident
+    fixture_qualified_action: multi_node_trigger_simulated
+  wildfire:
+    domain_kinds: [observation_area, camera_sector]
+    window_seconds: 180
+    min_independent_peers: 2
+    allowed_observations: [possible_smoke, persistent_smoke]
+    email_unverified_action: create_review_incident
+    fixture_qualified_action: create_review_incident
+  flood:
+    domain_kinds: [river_reach, catchment]
+    window_seconds: 600
+    min_independent_peers: 2
+    allowed_observations: [water_rising, threshold_approaching, threshold_exceeded, flooding_observed]
+    email_unverified_action: create_review_incident
+    fixture_qualified_action: create_review_incident
+  landslide:
+    domain_kinds: [slope, monitored_site]
+    window_seconds: 600
+    min_independent_peers: 2
+    allowed_observations: [movement_anomaly, review_required]
+    email_unverified_action: create_review_incident
+    fixture_qualified_action: create_review_incident
 rules:
   - local_h0_must_not_depend_on_collaboration
   - research_consent_requires_operational_sharing

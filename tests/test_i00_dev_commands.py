@@ -40,6 +40,10 @@ def test_doctor_exposes_emulated_hackathon_profile() -> None:
     assert payload["hackathon_release_profile"] == "H0-EMULATED-AARCH64-20260813"
     assert payload["physical_sensors_required_for_hackathon_profile"] is False
     assert payload["sensor_input_mode"] == "deterministic_simulated_or_fixture"
+    assert payload["hackathon_profile_ready"] is True
+    assert payload["hackathon_profile_blockers"] == []
+    assert payload["target_qualification_blockers"] == []
+    assert "physical_signal_capture_evidence_missing" in payload["reference_physical_target_blockers"]
 
 
 def test_scenario_command_is_repeatable(tmp_path: Path) -> None:
@@ -78,3 +82,28 @@ def test_verify_and_gates_include_identity_and_hygiene_checks() -> None:
         "repository_hygiene.py",
     ):
         assert text.count(check) >= 2
+
+
+def test_public_demo_and_scenario_use_signed_release_fixture() -> None:
+    text = Path("scripts/dev.py").read_text(encoding="utf-8")
+    assert "fixtures/scenarios/simultaneous-event.signed.json" in text
+    assert "fixtures/scenarios/simultaneous-event.public.pem" in text
+    assert '"--public-key"' in text
+
+
+def test_signed_release_scenario_produces_manifest_digest(tmp_path: Path) -> None:
+    result = subprocess.run(
+        [
+            sys.executable, "-m", "sentinel_edge.cli", "run-scenario",
+            "fixtures/scenarios/simultaneous-event.signed.json",
+            "--public-key", "fixtures/scenarios/simultaneous-event.public.pem",
+            "--state-dir", str(tmp_path / "signed-state"),
+        ],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+    )
+    assert result.returncode == 0, result.stdout + result.stderr
+    payload = json.loads(result.stdout)
+    assert payload["manifest_sha256"]
+    assert len(payload["manifest_sha256"]) == 64

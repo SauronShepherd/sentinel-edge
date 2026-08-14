@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_command_catalog_is_valid_and_nonempty() -> None:
     result = validate(ROOT)
-    assert result == {"valid": True, "count": 50, "failures": []}
+    assert result == {"valid": True, "count": 52, "failures": []}
 
 
 def test_command_catalog_rejects_undocumented_test_alias() -> None:
@@ -33,5 +33,5 @@ def test_dev_help_is_projected_from_the_catalog() -> None:
         check=False,
     )
     assert result.returncode == 0
-    for name in ("setup", "verify", "gates", "test-workstream", "e2e-iteration"):
+    for name in ("setup", "verify", "uix", "gates", "test-workstream", "e2e-iteration"):
         assert name in result.stdout

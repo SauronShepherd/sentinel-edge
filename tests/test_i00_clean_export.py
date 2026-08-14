@@ -18,3 +18,16 @@ def test_exported_tree_passes_hygiene_validation() -> None:
     assert manifest["schema"] == "sentinel-edge.source-export.v1"
     assert all(entry["class"] in {"source", "generated-contract", "evidence-input", "release-output"} for entry in manifest["files"])
     assert not any("__pycache__" in entry["path"] or entry["path"].startswith(".idea/") for entry in manifest["files"])
+    exported_paths = {entry["path"] for entry in manifest["files"]}
+    assert {
+        "docker/Dockerfile.arm64",
+        "docker/requirements-arm64.lock.txt",
+        "config/arm64-python-artifacts.json",
+        "requirements-dev.lock.txt",
+        "requirements-bootstrap.lock.txt",
+        "HACKATHON_WORKLOG.md",
+        "SECURITY.md",
+        "CONTRIBUTING.md",
+        "package.json",
+    } <= exported_paths
+    assert any(path.startswith("schemas/") for path in exported_paths)

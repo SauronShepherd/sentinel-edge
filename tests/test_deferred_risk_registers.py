@@ -8,4 +8,5 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_deferred_and_residual_registers_are_generated_and_complete() -> None:
     result = validate(ROOT)
-    assert result == {"valid": True, "deferred_debt": 4, "residual_risks": 17, "failures": []}
+    assert result == {"valid": True, "deferred_debt": 4, "residual_risks": 1, "failures": []}
+    assert "Arm64 emulator rerun" in (ROOT / "qualification/residual-risk-register.json").read_text(encoding="utf-8")

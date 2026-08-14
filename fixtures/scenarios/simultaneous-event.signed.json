@@ -1,0 +1,93 @@
+{
+  "algorithm": "Ed25519",
+  "manifest": {
+    "observations": [
+      {
+        "hazard": "earthquake",
+        "observed_at": "2026-08-02T08:00:00Z",
+        "received_at": "2026-08-02T08:00:00.010Z",
+        "sequence": 1,
+        "source_id": "imu-1",
+        "source_mode": "fixture",
+        "units": {
+          "accel_x": "g",
+          "accel_y": "g",
+          "accel_z": "g"
+        },
+        "values": {
+          "accel_x": 0.9,
+          "accel_y": 0.7,
+          "accel_z": 1.25
+        }
+      },
+      {
+        "hazard": "wildfire",
+        "observed_at": "2026-08-02T08:00:00Z",
+        "received_at": "2026-08-02T08:00:00.020Z",
+        "sequence": 1,
+        "source_id": "camera-1",
+        "source_mode": "fixture",
+        "units": {
+          "flame_score": "ratio",
+          "smoke_score": "ratio",
+          "temporal_persistence": "ratio"
+        },
+        "values": {
+          "flame_score": 0.3,
+          "smoke_score": 0.84,
+          "temporal_persistence": 0.9
+        }
+      },
+      {
+        "hazard": "flood",
+        "observed_at": "2026-08-02T08:00:00Z",
+        "received_at": "2026-08-02T08:00:00.030Z",
+        "sequence": 1,
+        "source_id": "hydro-1",
+        "source_mode": "fixture",
+        "units": {
+          "rainfall_mm_h": "mm/h",
+          "rate_of_rise_m_per_h": "m/h",
+          "water_level_m": "m"
+        },
+        "values": {
+          "rainfall_mm_h": 42.0,
+          "rate_of_rise_m_per_h": 0.45,
+          "water_level_m": 1.8
+        }
+      },
+      {
+        "hazard": "landslide",
+        "observed_at": "2026-08-02T08:00:00Z",
+        "received_at": "2026-08-02T08:00:00.040Z",
+        "sequence": 1,
+        "source_id": "slope-1",
+        "source_mode": "fixture",
+        "units": {
+          "rainfall_mm_h": "mm/h",
+          "soil_moisture_fraction": "ratio",
+          "tilt_rate_deg_h": "deg/h",
+          "vibration_rms": "g"
+        },
+        "values": {
+          "rainfall_mm_h": 42.0,
+          "soil_moisture_fraction": 0.92,
+          "tilt_rate_deg_h": 0.72,
+          "vibration_rms": 0.38
+        }
+      }
+    ],
+    "resources": {
+      "available_memory_mb": 512,
+      "cpu_pressure": 0.72,
+      "io_pressure": 0.35,
+      "memory_pressure": 0.6,
+      "power_degraded": false,
+      "temperature_c": 67.0
+    },
+    "scenario_id": "simultaneous-event-v1"
+  },
+  "manifest_sha256": "592faa5ef9f5c9f5b6e44d0e65047a00d21f52857b0489eafdbc460d49d738b3",
+  "schema": "sentinel-edge-signed-scenario/1.0",
+  "signature_b64": "D25SzCyJHDtWCKs2ohaSL0TZeUEaMBEP8dEWyXeSRXLfuRxpG0VWdEDj2POhahkPaJyYiuebmN6l1UYcOF1DBQ=="
+}

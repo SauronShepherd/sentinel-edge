@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import venv
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,6 +43,30 @@ def run(command: list[str], cwd: Path) -> tuple[int, str]:
     return proc.returncode, (proc.stdout + "\n" + proc.stderr).strip()
 
 
+def _venv_python(venv_dir: Path) -> Path:
+    return venv_dir / ("Scripts/python.exe" if sys.platform == "win32" else "bin/python")
+
+
+def verify_checkout_import(python: Path, checkout: Path) -> dict[str, object]:
+    code = "from pathlib import Path; import sentinel_edge; print(Path(sentinel_edge.__file__).resolve())"
+    proc = subprocess.run([str(python), "-c", code], cwd=checkout, text=True, capture_output=True, check=False)
+    observed = proc.stdout.strip()
+    expected = (checkout / "src").resolve()
+    valid = False
+    try:
+        valid = proc.returncode == 0 and Path(observed).resolve().is_relative_to(expected)
+    except (OSError, ValueError):
+        valid = False
+    return {
+        "status": "pass" if valid else "fail",
+        "valid": valid,
+        "exit_code": proc.returncode,
+        "observed": observed or None,
+        "expected_root": str(expected),
+        "stderr_tail": proc.stderr[-2000:],
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
@@ -67,6 +92,42 @@ def main() -> int:
         source = ROOT / name
         if source.is_file():
             shutil.copy2(source, output / name)
+
+    # Generate a fresh deterministic local scenario proof for the package.
+    # This is explicitly simulated/fixture evidence and must never be presented
+    # as physical-device performance. The canonical final Arm64 matrix remains
+    # a separate release-admission requirement.
+    scenario_proc = subprocess.run(
+        [sys.executable, "scripts/dev.py", "scenario"],
+        cwd=ROOT, text=True, capture_output=True,
+    )
+    scenario_dir = output / "provenance" / "scenario-runs"
+    scenario_dir.mkdir(parents=True, exist_ok=True)
+    (scenario_dir / "scenario-command.log").write_text(
+        scenario_proc.stdout + "\n--- stderr ---\n" + scenario_proc.stderr, encoding="utf-8"
+    )
+    if scenario_proc.returncode != 0:
+        print("scenario proof generation failed", file=sys.stderr)
+        print(scenario_proc.stderr, file=sys.stderr)
+        return scenario_proc.returncode
+    try:
+        scenario_payload = json.loads(scenario_proc.stdout)
+    except json.JSONDecodeError:
+        print("scenario proof output was not valid JSON", file=sys.stderr)
+        return 2
+    (scenario_dir / "simultaneous-event-proof.json").write_text(
+        json.dumps(scenario_payload, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n"
+    )
+    generated_scenario_dir = ROOT / ".tmp" / "scenario-proof"
+    for source_name, target_name in (("transcript.json", "simultaneous-event-transcript.json"), ("invariants.json", "simultaneous-event-invariants.json")):
+        source = generated_scenario_dir / source_name
+        if not source.is_file():
+            print(f"missing generated scenario artifact: {source_name}", file=sys.stderr)
+            return 2
+        shutil.copy2(source, scenario_dir / target_name)
+    if scenario_payload.get("all_invariants_passed") is not True:
+        print("scenario proof invariants did not all pass", file=sys.stderr)
+        return 2
 
     manifest_records = []
     for path in sorted(output.rglob("*")):
@@ -94,16 +155,32 @@ def main() -> int:
     verification: dict[str, object] = {"status": "not_requested"}
     if args.verify_local:
         with tempfile.TemporaryDirectory(prefix="sentinel-judge-package-") as tmp:
-            unpacked = Path(tmp) / "repo"
+            tmp_root = Path(tmp)
+            unpacked = tmp_root / "repo"
+            smoke_venv = tmp_root / "venv"
             shutil.copytree(output, unpacked)
+            # Keep the package smoke test isolated from editable/PTH state in the
+            # developer interpreter. The temporary venv inherits already
+            # available packages but owns the checkout .pth written by setup.
+            venv.EnvBuilder(with_pip=True, system_site_packages=True, clear=True).create(smoke_venv)
+            smoke_python = _venv_python(smoke_venv)
             commands = ["setup", "doctor", "verify", "demo", "scenario", "benchmark-replay", "claims", "gates"]
-            receipts = {}
+            receipts: dict[str, object] = {}
             ok = True
             for name in commands:
-                code, log = run([sys.executable, "scripts/dev.py", name], unpacked)
+                code, log = run([str(smoke_python), "scripts/dev.py", name], unpacked)
                 receipts[name] = {"exit_code": code, "status": "pass" if code == 0 else "fail", "tail": log[-2000:]}
                 ok = ok and code == 0
-            verification = {"status": "pass" if ok else "fail", "commands": receipts}
+                if name == "setup":
+                    import_receipt = verify_checkout_import(smoke_python, unpacked)
+                    receipts["checkout_import"] = import_receipt
+                    ok = ok and bool(import_receipt.get("valid"))
+            verification = {
+                "status": "pass" if ok else "fail",
+                "commands": receipts,
+                "isolated_venv": True,
+                "python": str(smoke_python),
+            }
 
     result = {
         "output": str(output),

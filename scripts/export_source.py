@@ -10,7 +10,16 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOW_ROOTS = ("apps", "architecture", "artifacts", "config", "contracts", "docs", "fixtures", "modules", "provenance", "qualification", "registries", "sdk", "src", "scripts", "tests", ".github", "pyproject.toml", "uv.lock", "README.md", "CHANGELOG.md", "LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md")
+ALLOW_ROOTS = (
+    "apps", "architecture", "artifacts", "config", "contracts", "docker", "docs",
+    "fixtures", "modules", "provenance", "qualification", "registries", "schemas",
+    "sdk", "src", "scripts", "tests", ".github",
+    "pyproject.toml", "uv.lock", "requirements-dev.lock.txt",
+    "requirements-bootstrap.lock.txt", "requirements-release.lock.json",
+    "package.json", "README.md", "CHANGELOG.md", "HACKATHON_WORKLOG.md",
+    "LICENSE", "NOTICE", "SECURITY.md", "CONTRIBUTING.md",
+    "THIRD_PARTY_NOTICES.md",
+)
 EXCLUDED_PARTS = {".git", ".idea", ".pytest_cache", "__pycache__", "build", "dist", ".venv", ".agents", ".codex"}
 
 

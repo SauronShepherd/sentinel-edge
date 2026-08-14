@@ -2,17 +2,26 @@ schema: sentinel-edge.arm64-emulation-profile.v1
 profile_id: H0-EMULATED-AARCH64-20260813
 execution:
   technology: docker-qemu
-  image: python:3.13-slim
+  image: python:3.13.15-slim
+  image_digest: sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a
   platform: linux/arm64
   guest_architecture: aarch64
   host_architecture_is_reported_separately: true
   network_required_for_judge_path: false
+  network_mode: none
+  network_isolation: docker_network_namespace
+  dependency_lock: docker/requirements-arm64.lock.txt
+  onnxruntime_version: 1.28.0
+  runtime_artifact_manifest: config/arm64-python-artifacts.json
 sensors:
   mode: deterministic_simulated
   physical_hardware_required: false
   acquisition_contract: ObservationV2
 claims:
-  allowed_classes: [simulated, replayed, research]
+  allowed_classes:
+  - simulated
+  - replayed
+  - research
   raspberry_pi_performance_allowed: false
   physical_energy_allowed: false
   physical_thermal_allowed: false

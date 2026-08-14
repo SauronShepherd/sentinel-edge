@@ -85,26 +85,51 @@ def installed_resolution(package_names: Iterable[str]) -> list[dict[str, Any]]:
 
 
 def write_release_lock(root: str | Path, output: str | Path | None = None) -> Path:
+    """Write a deterministic release-lock projection from the authoritative ``uv.lock``.
+
+    Earlier revisions captured whatever happened to be installed in the process
+    environment, which made the supposedly frozen release evidence vary between
+    developer and judge hosts.  The H0 release already treats ``uv.lock`` as the
+    dependency authority, so this projection is deliberately derived from that
+    file instead of from ``importlib.metadata``.
+    """
     root = Path(root).resolve()
     import tomllib
-    data = tomllib.loads((root / 'pyproject.toml').read_text(encoding='utf-8'))
-    direct = []
-    for value in data['project'].get('dependencies', []):
-        direct.append(value.split('>=', 1)[0].split('==', 1)[0].split('<', 1)[0].strip())
-    resolved = installed_resolution(direct)
+    from packaging.requirements import Requirement
+    from packaging.utils import canonicalize_name
+
+    project = tomllib.loads((root / 'pyproject.toml').read_text(encoding='utf-8'))
+    uv_lock = tomllib.loads((root / 'uv.lock').read_text(encoding='utf-8'))
+    direct_requirements = list(project['project'].get('dependencies', []))
+    locked_packages: list[dict[str, Any]] = []
+    locked_names: set[str] = set()
+    for package in uv_lock.get('package', []):
+        name = str(package.get('name', '')).strip()
+        version = package.get('version')
+        if not name or version is None:
+            continue
+        locked_names.add(canonicalize_name(name))
+        locked_packages.append({'name': name, 'version': str(version), 'state': 'locked'})
+    locked_packages.sort(key=lambda item: canonicalize_name(str(item['name'])))
+
+    direct_names = {canonicalize_name(Requirement(value).name) for value in direct_requirements}
+    missing_direct = sorted(direct_names - locked_names)
     payload = {
         'schema': 'sentinel-edge-release-lock/1.0',
         'project_version': _project_version(root),
-        'python': '.'.join(map(str, os.sys.version_info[:3])),
-        'resolution_kind': 'installed_exact_versions',
-        'direct_requirements': data['project'].get('dependencies', []),
-        'resolved': resolved,
-        'complete': all(item['state'] == 'resolved' for item in resolved),
-        'limitations': ['Package archive hashes and an offline wheel mirror are not included in this development lock.'],
+        'python': str(uv_lock.get('requires-python', project['project'].get('requires-python', 'unknown'))),
+        'resolution_kind': 'uv_lock_projection',
+        'direct_requirements': direct_requirements,
+        'resolved': locked_packages,
+        'complete': not missing_direct,
+        'missing_direct_requirements': missing_direct,
+        'uv_lock_sha256': sha256_file(root / 'uv.lock'),
+        'limitations': [
+            'This deterministic projection does not duplicate wheel/archive hashes; uv.lock remains the authoritative hashed dependency lock.',
+            'Arm64 ONNX Runtime is pinned separately in docker/requirements-arm64.lock.txt because it is release-profile-specific.',
+        ],
     }
     output = Path(output) if output else root / 'requirements-release.lock.json'
-    # Release receipts are cross-platform artifacts; force LF regardless of
-    # the host's text-mode newline convention.
     with output.open('w', encoding='utf-8', newline='\n') as handle:
         handle.write(json.dumps(payload, indent=2, sort_keys=True) + '\n')
     return output

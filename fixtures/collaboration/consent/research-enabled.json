@@ -1,0 +1,12 @@
+{
+  "hazards": {
+    "earthquake": true,
+    "flood": true,
+    "landslide": true,
+    "wildfire": true
+  },
+  "policy_version": "collab-consent-v1",
+  "research_enabled": true,
+  "sharing_enabled": true,
+  "updated_at": "2026-08-13T12:00:00+00:00"
+}

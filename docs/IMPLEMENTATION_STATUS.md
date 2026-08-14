@@ -1,5 +1,8 @@
 # Implementation status
 
+> **Historical snapshot notice (v0.21):** This file is retained as provenance and is not the current hackathon release-status authority. For the active `H0-EMULATED-AARCH64-20260813` candidate, use `docs/release/CURRENT_SUBMISSION_READINESS.md`, `qualification/g0-gate-status.json`, and the exact release-candidate evidence. Physical Raspberry Pi/sensor qualification described below is post-submission/reference-target work for this profile.
+
+
 **Version:** 0.21.0  
 **Contract basis:** Sentinel Edge full-scope product and technical contracts v0.22.0  
 **Framework:** native contract/registry governance

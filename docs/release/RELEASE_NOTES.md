@@ -24,3 +24,13 @@ The hackathon release profile is `H0-EMULATED-AARCH64-20260813`. It targets 64-b
 - Mission Control visibly discloses the emulated environment and deterministic sensor simulation.
 
 The final `release_admitted` flag remains false until the exact Git revision is clean and the full Arm64 command matrix is green.
+
+### UIX-aligned Judge workspace
+
+The H0 client has been rebuilt as a dependency-free responsive PWA aligned to the supplied Sentinel Edge UIX specification and generated design mockups. It includes the ten reference workspace patterns — Overview, Sites, Devices, Incident Details, AI Investigation, Policies, Reports & Analytics, Deploy New Site, Firmware & Updates, and Automation — plus hazard-specific Mission Control, Benchmark Lab, Judge Proof and Collaborative Detection surfaces.
+
+The client reads supported state only through Component 5 and adds sanitized read-only endpoints for the bundled benchmark summary and G0 Judge Proof. API/session writes retain same-origin + in-memory CSRF protection; the service worker caches only an explicit static allowlist and never caches `/v1` responses or credentials.
+
+The bundled Arm64-emulated benchmark is publicly presented only as `simulated` evidence: B0 median semantic E2E 111.5 ms / 3 deadline misses, B1 80.5 ms / 1, O1 69.0 ms / 0. No hardware equivalence is implied.
+
+Benchmark reminder: the published B0/B1/O1 values are simulated Arm64-emulated comparative evidence, **not Raspberry Pi 5 performance measurements**.

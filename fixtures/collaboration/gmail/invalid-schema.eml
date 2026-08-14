@@ -1,0 +1,21 @@
+Subject: Sentinel Collaborative Signal v1
+From: node@example.invalid
+To: inbox@example.invalid
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============6600508236733402170=="
+
+--===============6600508236733402170==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Sentinel Edge collaboration fixture
+
+--===============6600508236733402170==
+Content-Type: application/vnd.sentinel-edge.collaborative-signal+json
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="signal.json"
+MIME-Version: 1.0
+
+eyJzY2hlbWFfdmVyc2lvbiI6IjEuMCJ9
+
+--===============6600508236733402170==--

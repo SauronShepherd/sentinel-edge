@@ -260,6 +260,12 @@ class DeterministicScenarioEngine:
             self._temp_artifacts,
         )
 
+    def __enter__(self) -> "DeterministicScenarioEngine":
+        return self
+
+    def __exit__(self, exc_type, exc, tb) -> None:
+        self.close()
+
     def close(self) -> None:
         """Close resources owned by the scenario engine before state cleanup."""
         if getattr(self, "_closed", False):

@@ -1,0 +1,10 @@
+Subject: Sentinel Collaborative Signal v1
+From: node@example.invalid
+To: sentinel-edge-signals@gmail.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+This message contains a Sentinel Edge collaborative hazard signal.
+It does not contain raw sensor data and is not an official warning.
+The machine-readable signal is intentionally missing in this negative fixture.

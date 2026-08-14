@@ -105,6 +105,54 @@ def _emulation_profile_summary(root: Path) -> dict[str, Any]:
         failures.append("emulation_guest_platform_mismatch")
     if execution.get("technology") != "docker-qemu":
         failures.append("emulation_technology_mismatch")
+    if execution.get("image") != "python:3.13.15-slim":
+        failures.append("emulation_python_image_not_pinned")
+    image_digest = str(execution.get("image_digest", ""))
+    if image_digest != "sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a":
+        failures.append("emulation_python_image_digest_not_pinned")
+    dockerfile = root / "docker/Dockerfile.arm64"
+    if not dockerfile.is_file() or f"python:3.13.15-slim@{image_digest}" not in dockerfile.read_text(encoding="utf-8"):
+        failures.append("emulation_dockerfile_base_digest_mismatch")
+    if str(execution.get("onnxruntime_version")) != "1.28.0":
+        failures.append("emulation_onnxruntime_version_not_pinned")
+    dependency_lock_rel = execution.get("dependency_lock")
+    dependency_lock = root / str(dependency_lock_rel or "")
+    artifact_manifest_rel = execution.get("runtime_artifact_manifest")
+    artifact_manifest = root / str(artifact_manifest_rel or "")
+    if dependency_lock_rel != "docker/requirements-arm64.lock.txt" or not dependency_lock.is_file():
+        failures.append("emulation_dependency_lock_missing")
+    else:
+        lock_text = dependency_lock.read_text(encoding="utf-8")
+        required_pins = (
+            "flatbuffers==25.2.10",
+            "numpy==2.3.5",
+            "packaging==25.0",
+            "protobuf==6.33.6",
+            "onnxruntime==1.28.0",
+        )
+        missing_pins = [pin for pin in required_pins if pin not in lock_text]
+        if missing_pins:
+            failures.extend(f"emulation_dependency_pin_missing:{pin}" for pin in missing_pins)
+        if "--hash=sha256:" not in lock_text:
+            failures.append("emulation_dependency_hashes_missing")
+    if artifact_manifest_rel != "config/arm64-python-artifacts.json" or not artifact_manifest.is_file():
+        failures.append("emulation_runtime_artifact_manifest_missing")
+    else:
+        try:
+            artifact_payload = json.loads(artifact_manifest.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            artifact_payload = {}
+            failures.append("emulation_runtime_artifact_manifest_invalid")
+        if artifact_payload.get("schema") != "sentinel-edge.arm64-python-artifacts.v1":
+            failures.append("emulation_runtime_artifact_manifest_schema_mismatch")
+        for artifact in artifact_payload.get("artifacts", []):
+            if not isinstance(artifact, dict):
+                failures.append("emulation_runtime_artifact_entry_invalid")
+                continue
+            pin = f"{artifact.get('name')}=={artifact.get('version')}"
+            digest = f"--hash=sha256:{artifact.get('sha256')}"
+            if dependency_lock.is_file() and (pin not in lock_text or digest not in lock_text):
+                failures.append(f"emulation_runtime_artifact_not_bound:{artifact.get('name')}")
     if sensors.get("physical_hardware_required") is not False:
         failures.append("emulation_profile_still_requires_physical_hardware")
     if sensors.get("mode") != "deterministic_simulated" or sensors.get("acquisition_contract") != "ObservationV2":
@@ -117,6 +165,9 @@ def _emulation_profile_summary(root: Path) -> dict[str, Any]:
         "valid": not failures,
         "profile_id": payload.get("profile_id"),
         "sha256": sha256_file(path),
+        "dependency_lock_sha256": sha256_file(dependency_lock) if dependency_lock.is_file() else None,
+        "runtime_artifact_manifest_sha256": sha256_file(artifact_manifest) if artifact_manifest.is_file() else None,
+        "dockerfile_sha256": sha256_file(root / "docker/Dockerfile.arm64") if (root / "docker/Dockerfile.arm64").is_file() else None,
         "execution": execution,
         "sensors": sensors,
         "claims": claims,
@@ -148,10 +199,46 @@ def _emulated_benchmark_summary(root: Path) -> dict[str, Any]:
         failures.append("emulated_arm64_benchmark_execution_mode_invalid")
     if "CPUExecutionProvider" not in providers:
         failures.append("emulated_arm64_benchmark_cpu_ep_missing")
+    if str(runtime.get("version")) != "1.28.0":
+        failures.append("emulated_arm64_benchmark_runtime_version_mismatch")
+    known_answer = environment.get("known_answer_inference", {}) if isinstance(environment.get("known_answer_inference"), dict) else {}
+    runtime_distribution = known_answer.get("runtime_distribution", {}) if isinstance(known_answer.get("runtime_distribution"), dict) else {}
+    if known_answer.get("passed") is not True:
+        failures.append("emulated_arm64_runtime_known_answer_failed")
+    if known_answer.get("assigned_providers") != ["CPUExecutionProvider"]:
+        failures.append("emulated_arm64_runtime_provider_assignment_invalid")
+    if int(known_answer.get("model_bytes", 0) or 0) <= 0 or not known_answer.get("model_sha256"):
+        failures.append("emulated_arm64_known_answer_model_identity_unbound")
+    if not runtime_distribution.get("record_sha256") or not runtime_distribution.get("native_files"):
+        failures.append("emulated_arm64_runtime_artifact_identity_unbound")
+    container_image = environment.get("container_image", {}) if isinstance(environment.get("container_image"), dict) else {}
+    if not container_image.get("id") or not container_image.get("ref"):
+        failures.append("emulated_arm64_benchmark_container_image_unbound")
     if payload.get("claim_class") != "simulated":
         failures.append("emulated_arm64_benchmark_claim_class_unsafe")
     if payload.get("quality_guardrails_passed") is not True:
         failures.append("emulated_arm64_benchmark_quality_guardrails_failed")
+    instrumentation = payload.get("instrumentation", {}) if isinstance(payload.get("instrumentation"), dict) else {}
+    scheduler_overhead = instrumentation.get("scheduler_overhead", {}) if isinstance(instrumentation.get("scheduler_overhead"), dict) else {}
+    if scheduler_overhead.get("measurement_class") != "measured_emulated_arm64" or int(scheduler_overhead.get("decision_count", 0) or 0) <= 0:
+        failures.append("emulated_arm64_scheduler_overhead_missing")
+    results = payload.get("results", {}) if isinstance(payload.get("results"), dict) else {}
+    required_semantic_fields = {
+        "total_service_ms",
+        "total_queue_delay_ms",
+        "heavy_model_invocation_count",
+        "heavy_model_service_ms",
+        "heavy_model_duty_cycle",
+        "scheduler_decision_count",
+    }
+    for variant in ("B0", "B1", "O1"):
+        row = results.get(variant, {}) if isinstance(results.get(variant), dict) else {}
+        semantic = row.get("semantic", {}) if isinstance(row.get("semantic"), dict) else {}
+        if not required_semantic_fields <= set(semantic):
+            failures.append(f"emulated_arm64_semantic_metrics_missing:{variant}")
+        samples = semantic.get("resource_samples", []) if isinstance(semantic.get("resource_samples"), list) else []
+        if not samples or samples[0].get("evidence_class") != "simulated" or samples[0].get("physical_measurement") is not False:
+            failures.append(f"emulated_arm64_resource_truth_label_invalid:{variant}")
     limitations = " ".join(str(item).lower() for item in payload.get("limitations", []))
     if "not raspberry pi 5 performance" not in limitations:
         failures.append("emulated_arm64_benchmark_pi_limitation_missing")

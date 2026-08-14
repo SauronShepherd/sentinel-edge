@@ -6,10 +6,8 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-from sentinel_edge.collaboration.factory import create_signal
 from sentinel_edge.collaboration.gmail import GmailCollaborativeSignalConnector, GmailReceiptStore
-from sentinel_edge.collaboration.models import CollaborationConsent, CorrelationDomain
-from sentinel_edge.collaboration.wire import encode_email
+from sentinel_edge.collaboration.wire import decode_signal_email
 
 
 class FakeGmail:
@@ -29,33 +27,16 @@ class FakeGmail:
         self.labels.append((message_id, tuple(add), tuple(remove)))
 
 
-def build_signal(now: datetime):
-    consent = CollaborationConsent(
-        sharing_enabled=True,
-        research_enabled=False,
-        hazards={"wildfire": True, "earthquake": False, "flood": False, "landslide": False},
-        policy_version="collab-demo-v1",
-        updated_at=now,
-    )
-    signal = create_signal(
-        consent=consent,
-        hazard="wildfire",
-        observation="possible_smoke",
-        domain=CorrelationDomain(kind="observation_area", id="area:fixture"),
-        node_secret="fixture-node-secret",
-        episode_key="fixture-episode",
-        source_mode="simulated",
-        now=now,
-    )
-    assert signal is not None
-    return signal
-
+def load_fixture(name: str) -> bytes:
+    return (Path("fixtures/collaboration/gmail") / name).read_bytes()
 
 async def exercise() -> dict:
     now = datetime(2026, 8, 13, 12, 0, tzinfo=timezone.utc)
-    signal = build_signal(now)
-    raw = encode_email(signal, sender="node@example.invalid", recipient="inbox@example.invalid")
-    fake = FakeGmail({"gmail-001": raw, "gmail-002": b"malformed", "gmail-003": raw})
+    valid_raw = load_fixture("valid-email.eml")
+    invalid_raw = load_fixture("invalid-json.eml")
+    duplicate_raw = load_fixture("duplicate-signal.eml")
+    signal = decode_signal_email(valid_raw)
+    fake = FakeGmail({"gmail-001": valid_raw, "gmail-002": invalid_raw, "gmail-003": duplicate_raw})
     emitted: list[dict] = []
 
     async def emit(envelope: dict) -> None:

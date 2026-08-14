@@ -27,6 +27,20 @@ def test_open_loop_benchmark_is_deterministic_and_truthfully_simulated() -> None
         assert len(run.raw_latency_samples_ms) == run.processed
         assert sum(run.latency_histogram["counts"]) + run.latency_overflow_count == run.processed
         assert {"model_size_bytes", "rss_mb", "cpu_pressure", "temperature_c"} <= run.resource_samples[0].keys()
+        assert run.resource_samples[0]["source"] == "simulated_benchmark_resource_snapshot"
+        assert run.resource_samples[0]["evidence_class"] == "simulated"
+        assert run.resource_samples[0]["physical_measurement"] is False
+        assert run.total_service_ms > 0
+        assert run.total_queue_delay_ms >= 0
+        assert 0.0 <= run.heavy_model_duty_cycle <= 1.0
+        assert run.heavy_model_invocation_count == sum(
+            1 for record in run.records
+            if record["disposition"] == "processed" and record["workload_id"] in manifest["heavy_workload_ids"]
+        )
+        assert run.heavy_model_service_ms == sum(
+            int(record["service_ms"] or 0) for record in run.records
+            if record["disposition"] == "processed" and record["workload_id"] in manifest["heavy_workload_ids"]
+        )
         assert {"flood", "earthquake", "wildfire", "landslide"} <= run.hazard_quality.keys()
         assert all("completion_rate" in row for row in run.hazard_quality.values())
         processed = next(item for item in run.records if item["disposition"] == "processed")
@@ -44,6 +58,9 @@ def test_open_loop_benchmark_is_deterministic_and_truthfully_simulated() -> None
     assert o1_bench["service_ms"] == opportunity["service_ms"]["O1"]
     assert first[BenchmarkVariant.O1].execution_mode == "orchestrated"
     assert first[BenchmarkVariant.O1].quality_scope == "timed_run_only"
+    assert first[BenchmarkVariant.O1].scheduler_decision_count > 0
+    assert first[BenchmarkVariant.B0].scheduler_decision_count == 0
+    assert first[BenchmarkVariant.B1].scheduler_decision_count == 0
     for variant in BenchmarkVariant:
         observed = {row["opportunity_key"]: row["capture_ms"] for row in first[variant].records}
         expected = {row["opportunity_key"]: row["captured_offset_ms"] for row in manifest["opportunities"]}
@@ -56,3 +73,17 @@ def test_closed_loop_manifest_is_rejected() -> None:
     import pytest
     with pytest.raises(ValueError, match="open_loop"):
         DeterministicBenchmarkLab().run(manifest, BenchmarkVariant.B0)
+
+
+def test_scheduler_overhead_microbenchmark_is_explicitly_emulator_scoped() -> None:
+    from scripts.run_emulated_benchmark import measure_scheduler_overhead
+
+    manifest = load_benchmark_manifest("fixtures/scenarios/benchmark-open-loop.json")
+    result = measure_scheduler_overhead(manifest, iterations=2)
+    assert result["measurement_class"] == "measured_emulated_arm64"
+    assert result["scope"] == "component_3_scheduler_python_control_plane"
+    assert result["iterations"] == 2
+    assert result["decision_count"] > 0
+    assert result["total_cpu_ms"] >= 0
+    assert result["median_per_decision_us"] >= 0
+    assert "not Raspberry Pi 5" in result["note"]

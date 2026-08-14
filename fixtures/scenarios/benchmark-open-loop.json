@@ -24,7 +24,10 @@
         "latency",
         "deadline",
         "resource",
-        "hazard_quality"
+        "hazard_quality",
+        "workload_duty_cycle",
+        "heavy_model_invocations",
+        "scheduler_overhead"
       ],
       "sampling": "per_opportunity"
     }
@@ -115,5 +118,8 @@
         "O1": 24
       }
     }
+  ],
+  "heavy_workload_ids": [
+    "wildfire-stage2"
   ]
 }

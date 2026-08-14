@@ -9,11 +9,16 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_release_export_rejects_dirty_worktree() -> None:
     output = ROOT / ".tmp" / "r01-export-test"
-    result = subprocess.run(
-        [sys.executable, "scripts/export_source.py", "--output", str(output), "--require-clean"],
-        cwd=ROOT,
-        text=True,
-        capture_output=True,
-    )
+    probe = ROOT / ".sentinel-dirty-export-probe"
+    probe.write_text("intentional untracked test marker\n", encoding="utf-8")
+    try:
+        result = subprocess.run(
+            [sys.executable, "scripts/export_source.py", "--output", str(output), "--require-clean"],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+        )
+    finally:
+        probe.unlink(missing_ok=True)
     assert result.returncode == 1
-    assert ("worktree_not_clean" in result.stdout) or ("git_metadata_unavailable" in result.stdout)
+    assert "worktree_not_clean" in result.stdout

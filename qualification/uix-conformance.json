@@ -1,0 +1,717 @@
+{
+  "contract_path": "architecture/uix-screen-contract.yaml",
+  "contract_sha256": "c277e58a55897d02e4f0bd9d23a0679e3dee0a931e5419f884c6ba805b063c06",
+  "contract_version": "0.22.0",
+  "design_basis": {
+    "failures": [],
+    "reference_mockup_count": 10,
+    "reference_mockups": [
+      {
+        "bytes": 1892604,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_14 (1).png",
+        "sha256": "1e08a1fec3f5666b07cd61e1438951ec4dcf837570dbca8921ef5d141c764eb9"
+      },
+      {
+        "bytes": 1959509,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_15 (2).png",
+        "sha256": "c1e035bb6ab312311fdd25ff126fd7e8d64aa0a386f214059e403bc887e51b02"
+      },
+      {
+        "bytes": 2209660,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_15 (3).png",
+        "sha256": "3abfae5ca051c9ffc14818bc54f63317410c3bd6e7a0fa366e8558f289f842b8"
+      },
+      {
+        "bytes": 2178903,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_15 (4).png",
+        "sha256": "f7db5a00cb70a5f15a558c74440ee0ff1e9b4eae1d6cc30d6e811bc639c9e8e2"
+      },
+      {
+        "bytes": 1808070,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_15 (5).png",
+        "sha256": "5cebf611e6f3fcb13dda5a376d34b74e51ba12611e07385d42b5ce1a140ae835"
+      },
+      {
+        "bytes": 1812902,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_16 (6).png",
+        "sha256": "3a228b7eefa5b49f447456cc53d70e3e88ad77e42809373a898fb0166520019f"
+      },
+      {
+        "bytes": 2038430,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_16 (7).png",
+        "sha256": "43f5dcd042a444fd0f5295677bd76bfe8a6de537a020252522f8d37daa00accf"
+      },
+      {
+        "bytes": 1668938,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_16 (8).png",
+        "sha256": "241e78379c59ef4cfcf2450476e7a6b259d508e9686e5e04eb64e1af2deda5f3"
+      },
+      {
+        "bytes": 2160692,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_17 (10).png",
+        "sha256": "a8b663d586822f67395009e52f9a670c020cd22b918a46d27a181fb5f8ee09ee"
+      },
+      {
+        "bytes": 1824545,
+        "path": "docs/design/reference-mockups/ChatGPT Image 13 ago 2026, 13_38_17 (9).png",
+        "sha256": "5f94fa05f4e7853db6fee69ea5601a824b0615f7b62b59a88fc25fc9f8fc133b"
+      }
+    ],
+    "specification": {
+      "path": "docs/design/UIX_SPECIFICATION.md",
+      "sha256": "b11601dd4ef8c75eb80e3ebe67e1d6fbeefc59d6c4aedd77c0184c1416d3481a"
+    },
+    "valid": true
+  },
+  "requirements": [
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "se-topbar",
+            "se-sidebar",
+            "se-main"
+          ],
+          "required_any": [],
+          "source": "html"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "--topbar-h: 68px",
+            "--sidebar-w:244px",
+            "--inspector-w: 324px"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Persistent desktop shell with top bar, sidebar and main workspace.",
+      "id": "UIX-SHELL-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "command-palette",
+            "command-search",
+            "\u2318 K"
+          ],
+          "required_any": [],
+          "source": "html"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "Navigation",
+            "Sites",
+            "Devices",
+            "Incidents",
+            "Policies",
+            "Reports",
+            "Commands",
+            "e.key.toLowerCase()==='k'"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Global command/search surface supports keyboard invocation and grouped results.",
+      "id": "UIX-SHELL-002",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "Arm64 emulated demonstration environment",
+            "deterministic simulations",
+            "Research MVP",
+            "not an official emergency-warning system",
+            "physical Raspberry Pi measurements"
+          ],
+          "required_any": [],
+          "source": "html"
+        }
+      ],
+      "description": "Persistent emulator and research-MVP disclosures are visible in the client shell.",
+      "id": "UIX-SAFETY-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "Hazard state is separate from monitoring coverage"
+          ],
+          "required_any": [],
+          "source": "html"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "Monitoring Coverage",
+            "UI fixture",
+            "not physical fleet uptime",
+            "not a claim of deployed incident frequency"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Hazard state is not conflated with monitoring coverage and fixture-only data is labelled.",
+      "id": "UIX-TRUTH-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "Arm AI Orchestrator",
+            "Running",
+            "Queued",
+            "Sleeping",
+            "Deferred",
+            "Why state changed"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Scheduler activity and decision explanation are operator-visible.",
+      "id": "UIX-SCHED-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "Evidence",
+            "Uncertainty",
+            "Review actions"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Evidence, uncertainty and review affordances are visible.",
+      "id": "UIX-EVIDENCE-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "@media(max-width:1180px)",
+            "@media(max-width:900px)",
+            "@media(max-width:640px)"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Responsive breakpoints preserve usable workspace behavior.",
+      "id": "UIX-RESPONSIVE-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "aria-label=\"Primary navigation\"",
+            "aria-live=\"polite\""
+          ],
+          "required_any": [],
+          "source": "html"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            ":focus-visible",
+            "prefers-reduced-motion"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Keyboard focus, reduced motion, labelled navigation and non-color status support are present.",
+      "id": "UIX-ACCESSIBILITY-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "window.confirm",
+            "Expected blast radius",
+            "Component 4 remains the sole incident-state authority"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Disruptive actions require explicit confirmation and preserve Component-4 authority.",
+      "id": "UIX-ACTIONS-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderOverview",
+            "Recent Alerts",
+            "AI Insights",
+            "Site Status"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Overview reference screen family is implemented.",
+      "id": "UIX-SCREEN-OVERVIEW",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderSites",
+            "All Sites",
+            "Connectivity health"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            ".se-site-map-layout"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Sites reference screen family is implemented with selection context.",
+      "id": "UIX-SCREEN-SITES",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderDevices",
+            "Update Firmware",
+            "Last Check-in",
+            "Connection Health"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            ".se-bulkbar",
+            ".se-inspector"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Devices reference screen family is implemented with filters, bulk actions and inspector.",
+      "id": "UIX-SCREEN-DEVICES",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderIncidents",
+            "Timeline",
+            "Affected Assets",
+            "Response Actions"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            ".se-response-actions"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Incident triage split view is implemented with timeline, evidence and response actions.",
+      "id": "UIX-SCREEN-INCIDENTS",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderInvestigation",
+            "Attack / Hazard Workload Path",
+            "Root Cause Findings",
+            "Suggested Next Actions"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            ".se-investigation-layout"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "AI Investigation reference screen family keeps evidence and deterministic authority visible.",
+      "id": "UIX-SCREEN-AI-INVESTIGATION",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderPolicies",
+            "Simulate Impact",
+            "publish-policy",
+            "Compliance Impact"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Policies reference screen family includes simulation and publish controls.",
+      "id": "UIX-SCREEN-POLICIES",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderReports",
+            "Reports & Analytics",
+            "Schedule & Recipients",
+            "KPI Summary"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            ".se-reports-layout"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Reports reference screen family includes filters, analytics and scheduling context.",
+      "id": "UIX-SCREEN-REPORTS",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderProvisioning",
+            "Deploy New Site",
+            "Deployment Readiness",
+            "Validate Configuration"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            ".se-stepper"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Deploy New Site reference screen family includes six-step readiness workflow.",
+      "id": "UIX-SCREEN-PROVISIONING",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderFirmware",
+            "Firmware & Updates",
+            "Rollout Planner",
+            "Create Campaign"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Firmware reference screen family includes rollout planner and campaign context.",
+      "id": "UIX-SCREEN-FIRMWARE",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "function renderAutomation",
+            "Test Workflow",
+            "Verify remediation",
+            "Recent runs"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            ".se-automation-layout",
+            ".se-flow-canvas"
+          ],
+          "required_any": [],
+          "source": "css"
+        }
+      ],
+      "description": "Automation reference screen family includes visual workflow and step configuration.",
+      "id": "UIX-SCREEN-AUTOMATION",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "Benchmark Lab",
+            "Judge Proof",
+            "not measured Raspberry Pi latency"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Benchmark Lab and Judge Proof are first-class proof surfaces.",
+      "id": "UIX-JUDGE-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "data-site-tab",
+            "data-device-tab",
+            "device-filter-site",
+            "device-filter-risk",
+            "save-report-schedule",
+            "save-provision-draft",
+            "data-firmware-action",
+            "automation-save-step"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Reference object workspaces provide executable selection, filter, tab and local-draft interactions rather than static decorative controls.",
+      "id": "UIX-INTERACTION-001",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "use-operator-token"
+          ],
+          "required_any": [],
+          "source": "html"
+        },
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "/acknowledge",
+            "idempotency_key",
+            "Use the local Operator token",
+            "Component 4 performed the authoritative mutation",
+            "no unsupported production/device mutation was performed"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Incident acknowledgement is an explicit authorized Component-5 command, while unsupported device/remediation mutations remain visibly staged only.",
+      "id": "UIX-AUTHORITY-002",
+      "passed": true,
+      "profile": "H0"
+    },
+    {
+      "checks": [
+        {
+          "any_passed": true,
+          "missing_all": [],
+          "passed": true,
+          "required_all": [
+            "Collaborative Detection",
+            "Default OFF",
+            "privacy-preserving pseudonymous sharing",
+            "Experimental"
+          ],
+          "required_any": [],
+          "source": "javascript"
+        }
+      ],
+      "description": "Collaborative Detection is visibly experimental, opt-in and default-off.",
+      "id": "UIX-COLLAB-001",
+      "passed": true,
+      "profile": "H1"
+    }
+  ],
+  "schema": "sentinel-edge.uix-conformance.v1",
+  "source_digest": "5d5b9724a0106ff8eccd5c0be05b32569eef3fd12029c58e7ab93ee20885ac9c",
+  "source_files": {
+    "css": {
+      "bytes": 36886,
+      "path": "src/sentinel_edge/clients/static/styles.css",
+      "sha256": "faa4fd8ae4ed61efea728611619a58bba2396007b47f04f22d3752255649c76a"
+    },
+    "html": {
+      "bytes": 5393,
+      "path": "src/sentinel_edge/clients/static/index.html",
+      "sha256": "34bd7d220fe2452e15163f4c107755293a2d65c34aeee9c804f9537653f73447"
+    },
+    "javascript": {
+      "bytes": 122554,
+      "path": "src/sentinel_edge/clients/static/app.js",
+      "sha256": "9fab07a5e8de189fb7ab53fd1d2cb8e715f0761a0c650055252bb7a8778e6319"
+    }
+  },
+  "summary": {
+    "failed_count": 0,
+    "failed_ids": [],
+    "h0_count": 22,
+    "h0_passed": 22,
+    "h1_count": 1,
+    "h1_passed": 1,
+    "overall_status": "pass",
+    "passed_count": 23,
+    "requirement_count": 23
+  },
+  "truth_boundary": {
+    "emulated_arm64_disclosure_required": true,
+    "reference_mockups_are_runtime_evidence": false,
+    "research_mvp_warning_required": true
+  }
+}

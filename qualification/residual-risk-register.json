@@ -1,154 +1,10 @@
 {
   "items": [
     {
-      "dependency": "1. Canonical Docker/QEMU AArch64 setup, doctor, test, scenario, and benchmark receipts still need to be captured for this candidate; Docker is unavailable on the current host. This is an emulated execution requirement, not a Raspberry Pi hardware requirement.",
+      "dependency": "1. **Exact final Arm64 emulator rerun and candidate freeze.** Candidate-affecting source/UI/API changes made after the last recorded Arm64 guest receipt require the canonical Docker/QEMU `linux/arm64` command matrix to be rerun on the final Git revision. The current execution sandbox does not provide Docker/QEMU, so this receipt cannot truthfully be regenerated here. Until that rerun is green, `release_admitted` must remain `false` and the final command matrix remains the only technical submission blocker.",
       "id": "RISK-OPEN-BLOCKER-01",
       "owner": "release-owner",
       "rationale": "1.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "2. Publisher-origin Arm64 wheels, exact target lock closure and no-index installation rehearsal on the qualified target image.",
-      "id": "RISK-OPEN-BLOCKER-02",
-      "owner": "release-owner",
-      "rationale": "2.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "3. Deterministic simulated camera/IMU signal-chain receipts through Component 1 need final release-candidate binding. The local scenario path itself is implemented and passing; physical camera/IMU capture is outside this profile.",
-      "id": "RISK-OPEN-BLOCKER-03",
-      "owner": "release-owner",
-      "rationale": "3.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "4. Exact ONNX Runtime session creation and inference on the target, including provider assignment/fallback proof, memory ceilings, hostile-graph corpus and known-answer execution on the released package.",
-      "id": "RISK-OPEN-BLOCKER-04",
-      "owner": "release-owner",
-      "rationale": "4.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "5. Target model-quality evidence bound to the exact released graph, preprocessing, runtime, platform envelope and physical signal chain.",
-      "id": "RISK-OPEN-BLOCKER-05",
-      "owner": "release-owner",
-      "rationale": "5.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "6. Site commissioning on deployed hardware with verified mounting, calibration, datum/baseline, evidence windows and replacement/remount procedures.",
-      "id": "RISK-OPEN-BLOCKER-06",
-      "owner": "release-owner",
-      "rationale": "6.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "7. Simulated power/thermal/storage-pressure policy transitions and final emulation-labelled evidence pack remain to be completed; physical energy is not claimed.",
-      "id": "RISK-OPEN-BLOCKER-07",
-      "owner": "release-owner",
-      "rationale": "7.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "8. B0/B1/O1 replay results now exist locally with truthful `simulated` claim classes; final release binding remains to be completed and Raspberry Pi target measurements are not claimed.",
-      "id": "RISK-OPEN-BLOCKER-08",
-      "owner": "release-owner",
-      "rationale": "8.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "9. Site-specific flood/landslide calibration and field validation.",
-      "id": "RISK-OPEN-BLOCKER-09",
-      "owner": "release-owner",
-      "rationale": "9.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "10. Qualified authenticated time and exact geospatial transformation/datum evidence.",
-      "id": "RISK-OPEN-BLOCKER-10",
-      "owner": "release-owner",
-      "rationale": "10.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "11. Production parser sandboxing with network namespace/seccomp and independent assessment.",
-      "id": "RISK-OPEN-BLOCKER-11",
-      "owner": "release-owner",
-      "rationale": "11.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "12. Complete external-recipient/cache/replica discovery and secure-erasure qualification.",
-      "id": "RISK-OPEN-BLOCKER-12",
-      "owner": "release-owner",
-      "rationale": "12.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "13. A genuinely independent second builder/host and reproducible target binaries, models and images.",
-      "id": "RISK-OPEN-BLOCKER-13",
-      "owner": "release-owner",
-      "rationale": "13.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "14. Current authoritative advisory ingestion, complete inventory/reachability and independently reviewed VEX.",
-      "id": "RISK-OPEN-BLOCKER-14",
-      "owner": "release-owner",
-      "rationale": "14.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "15. Customer-key secure boot or an explicitly accepted restricted-deployment limitation.",
-      "id": "RISK-OPEN-BLOCKER-15",
-      "owner": "release-owner",
-      "rationale": "15.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "16. Independent security, privacy and accessibility reviews and deployed release-credential operations.",
-      "id": "RISK-OPEN-BLOCKER-16",
-      "owner": "release-owner",
-      "rationale": "16.",
-      "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
-      "severity": "BLOCKING",
-      "status": "OPEN"
-    },
-    {
-      "dependency": "17. Closure of remaining repository-side H0 evidence and all release-gate proof packs under the emulated profile.",
-      "id": "RISK-OPEN-BLOCKER-17",
-      "owner": "release-owner",
-      "rationale": "17.",
       "safe_limitation": "The release candidate remains not admitted and the limitation is surfaced in generated manifests.",
       "severity": "BLOCKING",
       "status": "OPEN"
@@ -156,7 +12,7 @@
   ],
   "schema": "sentinel-edge.residual-risk-register.v1",
   "source_digests": {
-    "docs/OPEN_BLOCKERS.md": "d69fc37b1ec3a9a18205b14d58839d1e4c9d8cf6a4b291bc68fd55ee025dda34",
+    "docs/OPEN_BLOCKERS.md": "9c4979156951bc50f8c74ecc2727e6271ff74ce3f4a07dcd9e7a655d5715260a",
     "registries/uncertainties.yaml": "b84fa374a43c10cd8aa7f92e69b64a4c71afb0072fae653587c4396b5e1f80ab"
   }
 }

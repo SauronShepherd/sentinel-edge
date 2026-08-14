@@ -1,0 +1,33 @@
+capability_id: CAP-COLLAB-001
+name: Collaborative Detection
+profile: H1
+slice: S8
+default_enabled: false
+state: implemented
+modes:
+  - fixture
+  - email_experimental
+submission_presentation:
+  label: Experimental
+  default_off: true
+  simulated_peers: true
+  real_email_required: false
+trust_limitations:
+  email_peer_identity: email_unverified
+  trusted_real_multi_node_confirmation: false
+evidence:
+  tests:
+    - tests/test_collaboration_contracts.py
+    - tests/test_collaboration_config_validation.py
+    - tests/test_collaboration_policy.py
+    - tests/test_collaboration_service.py
+    - tests/test_collaboration_gmail.py
+    - tests/test_collaboration_spec_fixtures.py
+  commands:
+    - python scripts/dev.py collaboration-check
+    - python scripts/dev.py collaboration-demo
+    - python scripts/dev.py collaboration-gmail-fixture
+    - python scripts/dev.py test-collaboration
+notes:
+  - Implementation state does not imply release admission or authenticated production peers.
+  - H0 remains independent when this capability is disabled.

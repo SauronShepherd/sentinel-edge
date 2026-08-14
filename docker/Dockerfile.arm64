@@ -1,6 +1,15 @@
-FROM python:3.13-slim
+FROM python:3.13.15-slim@sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a
+ARG SENTINEL_ARM64_BUILD_FINGERPRINT=unset
+LABEL org.sentinel-edge.arm64-build-fingerprint=$SENTINEL_ARM64_BUILD_FINGERPRINT
 WORKDIR /workspace
+
+# Install the exact Python dependency set projected from uv.lock plus the
+# explicitly qualified Arm64 ONNX Runtime build.  The project itself is then
+# installed without dependency resolution so a later index change cannot
+# silently alter the guest runtime.
+COPY docker/requirements-arm64.lock.txt /tmp/requirements-arm64.lock.txt
+RUN python -m pip install --no-cache-dir --require-hashes --only-binary=:all: -r /tmp/requirements-arm64.lock.txt
 COPY . /workspace
-RUN python -m pip install --no-cache-dir --editable ".[test]"
-RUN python -m pip install --no-cache-dir "onnxruntime>=1.20,<2"
+RUN SENTINEL_SETUP_REQUIRE_LOCKED=1 python scripts/bootstrap_local_environment.py
+
 CMD ["python", "--version"]

@@ -1,0 +1,35 @@
+Subject: Sentinel Collaborative Signal v1
+From: node@example.invalid
+To: sentinel-edge-signals@gmail.com
+X-Sentinel-Schema: collaborative-signal-v1
+X-Sentinel-Signal-ID: signal-gmail-valid-001
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============4171306960713447500=="
+
+--===============4171306960713447500==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+This message contains a Sentinel Edge collaborative hazard signal.
+It does not contain raw sensor data and is not an official warning.
+The machine-readable signal is attached as CollaborativeSignalV1 JSON.
+
+--===============4171306960713447500==
+Content-Type: application/vnd.sentinel-edge.collaborative-signal+json
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="signal.json"
+MIME-Version: 1.0
+
+eyJjbG9ja191bmNlcnRhaW50eV9iYW5kIjoibG93IiwiY29uZmlkZW5jZV9iYW5kIjoibWVkaXVt
+IiwiY29ycmVsYXRpb25fZG9tYWluIjp7ImRvbWFpbl9wb2xpY3lfaWQiOiJjb2xsYWItZGVtby12
+MSIsImlkIjoiYXJlYTpnbWFpbCIsImtpbmQiOiJvYnNlcnZhdGlvbl9hcmVhIn0sImNvdmVyYWdl
+X2JhbmQiOiJnb29kIiwiZXBpc29kZV9pZCI6ImVwaXNvZGUtZml4dHVyZS0wMDAxIiwiZXZlbnRf
+dGltZV9idWNrZXQiOiIyMDI2LTA4LTEzVDEyOjAwOjAwWiIsImV4cGlyZXNfYXQiOiIyMDI2LTA4
+LTEzVDEzOjAwOjAwWiIsImhhemFyZCI6IndpbGRmaXJlIiwibm9kZV9wc2V1ZG9ueW0iOiJwZWVy
+X3BzZXVkb255bV9NQUlMMSIsIm9ic2VydmF0aW9uIjoicG9zc2libGVfc21va2UiLCJyZWFzb25f
+Y29kZXMiOltdLCJyZXNlYXJjaF91c2VfYWxsb3dlZCI6ZmFsc2UsInNjaGVtYV92ZXJzaW9uIjoi
+MS4wIiwic2Vuc29yX2hlYWx0aCI6ImhlYWx0aHkiLCJzZXF1ZW5jZSI6MCwic2hhcmluZ19wb2xp
+Y3lfdmVyc2lvbiI6ImNvbGxhYi1jb25zZW50LXYxIiwic2lnbmFsX2lkIjoic2lnbmFsLWdtYWls
+LXZhbGlkLTAwMSIsInNvdXJjZV9tb2RlIjoic2ltdWxhdGVkIn0=
+
+--===============4171306960713447500==--

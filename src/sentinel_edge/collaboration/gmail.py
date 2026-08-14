@@ -134,7 +134,7 @@ class GmailCollaborativeSignalConnector:
                 decision = self.validator.validate(signal=signal, received_at=received_at, transport_trust="email_unverified", seen_signal_ids=seen_signal_ids)
                 if not decision.accepted:
                     raise ValueError(decision.reason_code or "INTERNAL_ERROR")
-                validation_state = "context_only" if decision.reason_code == "DOMAIN_UNKNOWN" else "admitted"
+                validation_state = "context_only" if decision.reason_code in {"DOMAIN_UNKNOWN", "CLOCK_UNSAFE"} else "admitted"
                 envelope = CollaborativeSignalEnvelope(
                     received_at=received_at,
                     transport="email",

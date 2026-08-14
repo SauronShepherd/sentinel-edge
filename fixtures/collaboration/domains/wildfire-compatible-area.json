@@ -1,0 +1,58 @@
+{
+  "evaluation_time": "2026-08-13T12:00:00Z",
+  "expected": {
+    "must_not_action": "verified_visible_smoke",
+    "selected_action": "create_review_incident"
+  },
+  "schema": "sentinel-edge.collaboration-fixture.v1",
+  "signals": [
+    {
+      "clock_uncertainty_band": "low",
+      "confidence_band": "medium",
+      "correlation_domain": {
+        "domain_policy_id": "collab-demo-v1",
+        "id": "area:coarse-1",
+        "kind": "observation_area"
+      },
+      "coverage_band": "good",
+      "episode_id": "episode-fixture-0001",
+      "event_time_bucket": "2026-08-13T12:00:00Z",
+      "expires_at": "2026-08-13T13:00:00Z",
+      "hazard": "wildfire",
+      "node_pseudonym": "peer_pseudonym_A001",
+      "observation": "possible_smoke",
+      "reason_codes": [],
+      "research_use_allowed": false,
+      "schema_version": "1.0",
+      "sensor_health": "healthy",
+      "sequence": 0,
+      "sharing_policy_version": "collab-consent-v1",
+      "signal_id": "signal-fire-area-a01",
+      "source_mode": "simulated"
+    },
+    {
+      "clock_uncertainty_band": "low",
+      "confidence_band": "medium",
+      "correlation_domain": {
+        "domain_policy_id": "collab-demo-v1",
+        "id": "area:coarse-1",
+        "kind": "observation_area"
+      },
+      "coverage_band": "good",
+      "episode_id": "episode-fixture-0001",
+      "event_time_bucket": "2026-08-13T12:00:00Z",
+      "expires_at": "2026-08-13T13:00:00Z",
+      "hazard": "wildfire",
+      "node_pseudonym": "peer_pseudonym_B002",
+      "observation": "persistent_smoke",
+      "reason_codes": [],
+      "research_use_allowed": false,
+      "schema_version": "1.0",
+      "sensor_health": "healthy",
+      "sequence": 0,
+      "sharing_policy_version": "collab-consent-v1",
+      "signal_id": "signal-fire-area-b02",
+      "source_mode": "simulated"
+    }
+  ]
+}

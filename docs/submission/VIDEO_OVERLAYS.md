@@ -1,8 +1,20 @@
-# Video overlays
+# Sentinel Edge — Approved Video Overlays
 
-- `Sentinel Edge — Arm64 emulated judge path`
-- `Physical hardware and physical sensors: not used`
-- `Four hazard adapters: wildfire • earthquake • flood • landslide`
-- `Local-first: collaboration is optional and disabled by default`
-- `Fixture/simulated evidence is not physical-target qualification`
-- `Not an official warning service`
+Use only candidate-bound values. These strings are deliberately short enough for a sub-three-minute demo.
+
+- `RESEARCH MVP · NOT AN OFFICIAL WARNING SYSTEM`
+- `ARM64 EMULATED · DOCKER/QEMU linux/arm64`
+- `DETERMINISTIC SIMULATED CAMERA / IMU / ENVIRONMENTAL INPUTS`
+- `4 HAZARDS · 6 COMPONENTS · COMPONENT 4 SOLE INCIDENT AUTHORITY`
+- `TIER-A EARTHQUAKE RESERVATION`
+- `BOUNDED QUEUES · WAKE/SLEEP · ADAPTIVE CADENCE`
+- `REPLAY / BACKFILL ≠ FRESH EVIDENCE`
+- `B0 = 111.5 ms median · 3 deadline misses`
+- `B1 = 80.5 ms median · 1 deadline miss`
+- `O1 = 69.0 ms median · 0 deadline misses`
+- `BENCHMARK CLASS: SIMULATED / ARM64-EMULATED`
+- `NO RASPBERRY PI PERFORMANCE / ENERGY / THERMAL CLAIM`
+- `NO CLOUD ACCOUNT · NO API KEY · NO PHYSICAL SENSOR REQUIRED`
+- `COLLABORATIVE DETECTION: EXPERIMENTAL · OPT-IN · DEFAULT OFF`
+- `EMAIL PEER TRUST: email_unverified`
+- `APACHE-2.0`

@@ -2165,7 +2165,7 @@
   "release_admitted": true,
   "release_profile": "H0-EMULATED-AARCH64-20260813",
   "schema": "sentinel-edge.release-acceptance-checklist.v1",
-  "source_ledger_sha256": "672045a8f63dfdc5226177fb5e01b09a9954fe8ebb63c11ebd3f5a02522d8779",
+  "source_ledger_sha256": "e61da68d928b98855ba70cb3608ab1b2062aacec45ceef1e2c9a7801a1f5a878",
   "summary": {
     "implementation_complete_count": 240,
     "open_count": 0,

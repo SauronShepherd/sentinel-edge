@@ -10,9 +10,14 @@ import sys
 import time
 from pathlib import Path
 
-from sentinel_edge.release.submission import RELEASE_GENERATED_FILES, REQUIRED_ARM64_COMMANDS, REQUIRED_LOCAL_COMMANDS, source_tree_digest
-
 ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    # Bootstrap the repository command itself from a pristine checkout. Setup is
+    # still the first acceptance command and performs the real package install.
+    sys.path.insert(0, str(SRC))
+
+from sentinel_edge.release.submission import RELEASE_GENERATED_FILES, REQUIRED_ARM64_COMMANDS, REQUIRED_LOCAL_COMMANDS, source_tree_digest
 LOG_DIR = ROOT / ".tmp/submission-preflight"
 OUTPUT = ROOT / "qualification/submission-command-matrix.json"
 
@@ -39,7 +44,13 @@ def run_command(name: str) -> dict[str, object]:
     command = [sys.executable, "scripts/dev.py", name]
     started = dt.datetime.now(dt.timezone.utc)
     monotonic_start = time.monotonic()
-    proc = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, env=os.environ.copy())
+    command_env = os.environ.copy()
+    if REQUIRED_LOCAL_COMMANDS and name == REQUIRED_LOCAL_COMMANDS[0]:
+        # The command order is owned by release.submission; its first local lane
+        # is the environment-provisioning command. Release admission requires
+        # that lane to use the exact hash-pinned dependency lock.
+        command_env["SENTINEL_SETUP_REQUIRE_LOCKED"] = "1"
+    proc = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, env=command_env)
     finished = dt.datetime.now(dt.timezone.utc)
     duration = time.monotonic() - monotonic_start
     log_path = LOG_DIR / f"{name}.log"

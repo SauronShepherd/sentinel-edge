@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T09:53:43.685497+00:00",
+  "generated_at": "2026-08-13T16:48:46.035217+00:00",
   "limitations": [
     "This inventory does not prove operating-system, dynamically loaded, or transitive dependency completeness.",
     "NOASSERTION requires manual release review before redistribution."
@@ -10,14 +10,14 @@
       "license": "NOASSERTION",
       "name": "cryptography",
       "resolution_state": "resolved",
-      "version": "46.0.7"
+      "version": "46.0.4"
     },
     {
       "homepage": null,
       "license": "NOASSERTION",
       "name": "fastapi",
       "resolution_state": "resolved",
-      "version": "0.141.1"
+      "version": "0.128.2"
     },
     {
       "homepage": null,
@@ -52,7 +52,7 @@
       "license": "NOASSERTION",
       "name": "uvicorn",
       "resolution_state": "resolved",
-      "version": "0.52.1"
+      "version": "0.48.0"
     }
   ],
   "schema": "sentinel-edge-third-party-inventory/1.0",

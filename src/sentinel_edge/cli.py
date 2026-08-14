@@ -96,7 +96,7 @@ from sentinel_edge.update import (
     load_private_key,
     load_public_key,
 )
-from sentinel_edge.scenario import DeterministicScenarioEngine, load_scenario, load_signed_scenario
+from sentinel_edge.scenario import DeterministicScenarioEngine, load_scenario, load_signed_scenario, run_submission_scenario_proof
 from sentinel_edge.runtime import (
     TrustedTimeManager,
     ModelPackageManifest,
@@ -137,7 +137,7 @@ def doctor() -> int:
         "raspberry_pi_performance_claim_allowed": False,
         "host_observation": host_observation.model_dump(mode="json"),
         "host_qualification": host_qualification.model_dump(mode="json") if host_qualification else None,
-        "offline_fixture_ready": Path("fixtures/scenarios/simultaneous-event.json").exists(),
+        "offline_fixture_ready": Path("fixtures/scenarios/simultaneous-event.signed.json").exists() and Path("fixtures/scenarios/simultaneous-event.public.pem").exists(),
         "benchmark_fixture_ready": Path("fixtures/scenarios/benchmark-open-loop.json").exists(),
         "configuration_fixture_ready": Path("fixtures/configuration/default-v0.21.0.yaml").exists(),
         "transactional_notification_outbox": True,
@@ -169,11 +169,25 @@ def doctor() -> int:
         "qualification_state": "development_host_only",
         "warning": "Research monitoring and decision support; not an official warning authority.",
     }
-    report["target_qualification_blockers"] = [
+    # Keep physical-reference qualification truth visible without allowing it to
+    # masquerade as an H0 blocker.  The active hackathon profile explicitly
+    # admits deterministic simulated physical-AI inputs in an emulated AArch64
+    # Linux guest.  Physical Raspberry Pi/sensor evidence is relevant only to
+    # stronger physical-target performance/field claims.
+    report["reference_physical_target_blockers"] = [
         *( [] if report["native_arm64_linux_observed"] else ["native_arm64_linux_observation_missing"] ),
         "physical_signal_capture_evidence_missing",
     ]
-    report["hackathon_profile_blockers"] = [] if report["emulated_arm64_profile_available"] and report["offline_fixture_ready"] else ["emulated_profile_or_fixture_missing"]
+    report["hackathon_profile_blockers"] = (
+        []
+        if report["emulated_arm64_profile_available"] and report["offline_fixture_ready"]
+        else ["emulated_profile_or_signed_fixture_missing"]
+    )
+    # Backward-compatible field: this now reports blockers for the selected
+    # release target, not the optional Raspberry Pi physical-reference target.
+    report["target_qualification_blockers"] = list(report["hackathon_profile_blockers"])
+    report["hackathon_profile_ready"] = not report["hackathon_profile_blockers"]
+    report["reference_physical_target_qualified"] = not report["reference_physical_target_blockers"]
     print(json.dumps(report, indent=2, sort_keys=True))
     return 0 if report["architecture_64bit"] and report["offline_fixture_ready"] else 1
 
@@ -188,9 +202,15 @@ def run_scenario(path: str, state_dir: str | None = None, public_key: str | None
             shutil.rmtree(target)
     if public_key:
         scenario, manifest_sha256 = load_signed_scenario(path, load_public_key(public_key))
-        result = DeterministicScenarioEngine(state_dir=state_dir).run(scenario, manifest_sha256=manifest_sha256)
     else:
-        result = DeterministicScenarioEngine(state_dir=state_dir).run(load_scenario(path))
+        scenario, manifest_sha256 = load_scenario(path), None
+    if scenario.get("scenario_id") == "simultaneous-event-v1":
+        proof = run_submission_scenario_proof(
+            scenario, manifest_sha256=manifest_sha256, output_dir=".tmp/scenario-proof"
+        )
+        print(json.dumps(proof, indent=2, sort_keys=True))
+        return 0 if proof.get("all_invariants_passed") is True else 2
+    result = DeterministicScenarioEngine(state_dir=state_dir).run(scenario, manifest_sha256=manifest_sha256)
     print(result.model_dump_json(indent=2))
     return 0
 

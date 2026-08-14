@@ -43,7 +43,7 @@
   ],
   "schema": "sentinel-edge.deferred-register.v1",
   "source_digests": {
-    "docs/OPEN_BLOCKERS.md": "d69fc37b1ec3a9a18205b14d58839d1e4c9d8cf6a4b291bc68fd55ee025dda34",
+    "docs/OPEN_BLOCKERS.md": "9c4979156951bc50f8c74ecc2727e6271ff74ce3f4a07dcd9e7a655d5715260a",
     "registries/uncertainties.yaml": "b84fa374a43c10cd8aa7f92e69b64a4c71afb0072fae653587c4396b5e1f80ab"
   }
 }

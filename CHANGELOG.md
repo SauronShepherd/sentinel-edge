@@ -1,5 +1,18 @@
 # Changelog
 
+## Unreleased — 2026-08-14 hackathon emulator hardening
+
+- Made local setup reproducible from a clean checkout with a standard site-packages `.pth`, a hash-pinned Judge/test lock, and an explicit compatible-preprovisioned fallback that is disabled by final submission preflight.
+- Pinned the Arm64 Docker base by OCI digest and generated a full hash-locked, binary-only AArch64 dependency set, including publisher-index wheel identities for ONNX Runtime 1.28.0 and its numerical/runtime dependencies.
+- Added real AArch64 ONNX Runtime known-answer execution through `CPUExecutionProvider`, provider-fallback rejection, installed distribution `RECORD` fingerprinting, native-library hashing, and model size/digest binding.
+- Extended B0/B1/O1 evidence with total service/queue-delay accounting, heavy-workload invocation/duty-cycle metrics, explicit simulated thermal/power/resource labels, and an emulator-measured scheduler control-plane overhead microbenchmark.
+- Hardened final candidate admission so stale Arm64 benchmark evidence lacking the new runtime and scheduler/workload instrumentation cannot satisfy the frozen release.
+- Fixed the public Judge source export allowlist so the package now includes Docker/Arm64 build inputs, hash-pinned dependency locks, schemas, package metadata, security/contribution guidance, and the hackathon work log required to reproduce and audit the submission.
+- Hardened clean-checkout setup against stale editable installs: the active checkout is prepended through a deterministic `.pth`, setup verifies the resolved `sentinel_edge` module lives under the current checkout, and legacy checkout `.pth` files are removed.
+- Isolated admitted-candidate Judge-package smoke verification in a temporary virtual environment and added an explicit active-checkout import guard; `python scripts/dev.py package` automatically runs the fresh-copy verification once a candidate is release-admitted.
+- Made the strict `test-all` lane safely resumable across interrupted runs: reusable batch receipts are accepted only when source-tree, setup/runtime fingerprint, test-path set, batch signature, collection count, and no-skip/no-xfail/no-failure conditions all match.
+- Fixed the release-export dirty-worktree regression test so it creates its own temporary untracked probe instead of depending on the developer repository already being dirty.
+
 ## 0.21.0 — 2026-08-03
 
 - Added a closed qualification vocabulary and claim ceiling over the weakest effective evidence state.

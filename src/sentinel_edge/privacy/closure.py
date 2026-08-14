@@ -14,7 +14,7 @@ _CREDENTIAL_ASSIGNMENT = re.compile(
     rb"\b(?:api[_-]?key|access[_-]?token|client[_-]?secret|password)\b[\"']?\s*[:=]\s*[\"'][A-Za-z0-9_./+\-=]{16,}[\"']",
     re.IGNORECASE,
 )
-_EXCLUDED_PARTS = {".git", ".pytest_cache", "__pycache__", ".mypy_cache", ".ruff_cache", ".venv", "tests"}
+_EXCLUDED_PARTS = {".git", ".pytest_cache", "__pycache__", ".mypy_cache", ".ruff_cache", "tests"}
 
 
 def scan_repository_for_private_material(root: str | Path) -> tuple[dict[str, str], ...]:

@@ -1,0 +1,58 @@
+{
+  "evaluation_time": "2026-08-13T12:00:00Z",
+  "expected": {
+    "independent_peer_count": 1,
+    "selected_action": "no_action"
+  },
+  "schema": "sentinel-edge.collaboration-fixture.v1",
+  "signals": [
+    {
+      "clock_uncertainty_band": "low",
+      "confidence_band": "medium",
+      "correlation_domain": {
+        "domain_policy_id": "collab-demo-v1",
+        "id": "slope:A",
+        "kind": "slope"
+      },
+      "coverage_band": "good",
+      "episode_id": "episode-fixture-0001",
+      "event_time_bucket": "2026-08-13T12:00:00Z",
+      "expires_at": "2026-08-13T13:00:00Z",
+      "hazard": "landslide",
+      "node_pseudonym": "peer_pseudonym_A001",
+      "observation": "movement_anomaly",
+      "reason_codes": [],
+      "research_use_allowed": false,
+      "schema_version": "1.0",
+      "sensor_health": "healthy",
+      "sequence": 0,
+      "sharing_policy_version": "collab-consent-v1",
+      "signal_id": "signal-slope-a-00001",
+      "source_mode": "simulated"
+    },
+    {
+      "clock_uncertainty_band": "low",
+      "confidence_band": "medium",
+      "correlation_domain": {
+        "domain_policy_id": "collab-demo-v1",
+        "id": "slope:B",
+        "kind": "slope"
+      },
+      "coverage_band": "good",
+      "episode_id": "episode-fixture-0001",
+      "event_time_bucket": "2026-08-13T12:00:00Z",
+      "expires_at": "2026-08-13T13:00:00Z",
+      "hazard": "landslide",
+      "node_pseudonym": "peer_pseudonym_B002",
+      "observation": "movement_anomaly",
+      "reason_codes": [],
+      "research_use_allowed": false,
+      "schema_version": "1.0",
+      "sensor_health": "healthy",
+      "sequence": 0,
+      "sharing_policy_version": "collab-consent-v1",
+      "signal_id": "signal-slope-b-00002",
+      "source_mode": "simulated"
+    }
+  ]
+}

@@ -2795,7 +2795,7 @@ items:
   kind: BUILD_ARTIFACT
   summary: Generated development Claim Registry with explicit claim ceiling
   path: qualification/claim-registry.json
-  sha256: 43e6a8c7cc26afa4d98ea3393d5497fd56ca0104f70c59e847be1c859e26e159
+  sha256: d5371a91d20655e334176ff472e7f23bc0673651304e99056b0fad8ec4fde800
   captured_at: '2026-08-12T05:00:00Z'
   producer: generate_claim_registry.py
   status: ACTIVE

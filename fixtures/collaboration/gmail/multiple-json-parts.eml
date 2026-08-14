@@ -1,0 +1,49 @@
+Subject: Sentinel Collaborative Signal v1
+From: node@example.invalid
+To: inbox@example.invalid
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============2728604779513331352=="
+
+--===============2728604779513331352==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Sentinel Edge collaboration fixture
+
+--===============2728604779513331352==
+Content-Type: application/vnd.sentinel-edge.collaborative-signal+json
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="signal.json"
+MIME-Version: 1.0
+
+eyJzY2hlbWFfdmVyc2lvbiI6IjEuMCIsInNpZ25hbF9pZCI6InNpZ25hbC1nbWFpbC12YWxpZC0w
+MDEiLCJlcGlzb2RlX2lkIjoiZXBpc29kZS1maXh0dXJlLTAwMDEiLCJzZXF1ZW5jZSI6MCwibm9k
+ZV9wc2V1ZG9ueW0iOiJwZWVyX3BzZXVkb255bV9NQUlMMSIsImhhemFyZCI6IndpbGRmaXJlIiwi
+b2JzZXJ2YXRpb24iOiJwb3NzaWJsZV9zbW9rZSIsImNvcnJlbGF0aW9uX2RvbWFpbiI6eyJraW5k
+Ijoib2JzZXJ2YXRpb25fYXJlYSIsImlkIjoiYXJlYTpnbWFpbCIsImRvbWFpbl9wb2xpY3lfaWQi
+OiJjb2xsYWItZGVtby12MSJ9LCJldmVudF90aW1lX2J1Y2tldCI6IjIwMjYtMDgtMTNUMTI6MDA6
+MDBaIiwiY29uZmlkZW5jZV9iYW5kIjoibWVkaXVtIiwiY292ZXJhZ2VfYmFuZCI6Imdvb2QiLCJz
+ZW5zb3JfaGVhbHRoIjoiaGVhbHRoeSIsImNsb2NrX3VuY2VydGFpbnR5X2JhbmQiOiJsb3ciLCJz
+b3VyY2VfbW9kZSI6InNpbXVsYXRlZCIsInNoYXJpbmdfcG9saWN5X3ZlcnNpb24iOiJjb2xsYWIt
+Y29uc2VudC12MSIsInJlc2VhcmNoX3VzZV9hbGxvd2VkIjpmYWxzZSwiZXhwaXJlc19hdCI6IjIw
+MjYtMDgtMTNUMTM6MDA6MDBaIiwicmVhc29uX2NvZGVzIjpbXX0=
+
+--===============2728604779513331352==
+Content-Type: application/vnd.sentinel-edge.collaborative-signal+json
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="signal.json"
+MIME-Version: 1.0
+
+eyJzY2hlbWFfdmVyc2lvbiI6IjEuMCIsInNpZ25hbF9pZCI6InNpZ25hbC1nbWFpbC12YWxpZC0w
+MDEiLCJlcGlzb2RlX2lkIjoiZXBpc29kZS1maXh0dXJlLTAwMDEiLCJzZXF1ZW5jZSI6MCwibm9k
+ZV9wc2V1ZG9ueW0iOiJwZWVyX3BzZXVkb255bV9NQUlMMSIsImhhemFyZCI6IndpbGRmaXJlIiwi
+b2JzZXJ2YXRpb24iOiJwb3NzaWJsZV9zbW9rZSIsImNvcnJlbGF0aW9uX2RvbWFpbiI6eyJraW5k
+Ijoib2JzZXJ2YXRpb25fYXJlYSIsImlkIjoiYXJlYTpnbWFpbCIsImRvbWFpbl9wb2xpY3lfaWQi
+OiJjb2xsYWItZGVtby12MSJ9LCJldmVudF90aW1lX2J1Y2tldCI6IjIwMjYtMDgtMTNUMTI6MDA6
+MDBaIiwiY29uZmlkZW5jZV9iYW5kIjoibWVkaXVtIiwiY292ZXJhZ2VfYmFuZCI6Imdvb2QiLCJz
+ZW5zb3JfaGVhbHRoIjoiaGVhbHRoeSIsImNsb2NrX3VuY2VydGFpbnR5X2JhbmQiOiJsb3ciLCJz
+b3VyY2VfbW9kZSI6InNpbXVsYXRlZCIsInNoYXJpbmdfcG9saWN5X3ZlcnNpb24iOiJjb2xsYWIt
+Y29uc2VudC12MSIsInJlc2VhcmNoX3VzZV9hbGxvd2VkIjpmYWxzZSwiZXhwaXJlc19hdCI6IjIw
+MjYtMDgtMTNUMTM6MDA6MDBaIiwicmVhc29uX2NvZGVzIjpbXX0=
+
+--===============2728604779513331352==--

@@ -98,6 +98,18 @@ commands:
     mutating: true
     execution_semantics: point_in_time
     empty_allowed: false
+  - name: ui
+    profile: development
+    purpose: Serve the seeded local Judge UI on loopback using the deterministic scenario
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: uix
+    profile: development
+    purpose: Generate and validate machine-readable UIX conformance against the ten reference screen families
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
   - name: scenario
     profile: development
     purpose: Run the deterministic simultaneous-event scenario

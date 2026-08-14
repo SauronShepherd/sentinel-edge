@@ -47,13 +47,28 @@ class SmtpEmailCollaborativeSignalPublisher:
     def queued_items(self) -> int:
         return len(self._queue)
 
+    @staticmethod
+    def _semantic_fingerprint(signal: CollaborativeSignal) -> str:
+        import json
+        from hashlib import sha256
+
+        payload = signal.model_dump(
+            mode="json",
+            exclude={"signal_id", "sequence", "event_time_bucket", "expires_at", "reason_codes"},
+        )
+        return sha256(json.dumps(payload, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+
     def publish(self, signal: CollaborativeSignal, *, now: datetime | None = None) -> str:
         now = now or datetime.now(timezone.utc)
         if signal.expires_at <= now:
             return "expired"
+        fingerprint = self._semantic_fingerprint(signal)
         previous = self._sent_by_episode.get(signal.episode_id)
-        if previous and previous[0] == signal.model_dump_json() and (now - previous[1]).total_seconds() < self.config.ordinary_update_min_interval_seconds:
+        if previous and previous[0] == fingerprint and (now - previous[1]).total_seconds() < self.config.ordinary_update_min_interval_seconds:
             return "suppressed_unchanged"
+        for queued in self._queue:
+            if queued.signal.episode_id == signal.episode_id and self._semantic_fingerprint(queued.signal) == fingerprint:
+                return "suppressed_unchanged"
         raw = encode_email(signal, sender=self.sender, recipient=self.recipient)
         if len(self._queue) >= self.config.max_items:
             return "queue_full"
@@ -82,5 +97,5 @@ class SmtpEmailCollaborativeSignalPublisher:
             item.next_attempt_at = now + timedelta(seconds=delay + jitter)
             return "retry_scheduled"
         self._queue.pop(0)
-        self._sent_by_episode[item.signal.episode_id] = (item.signal.model_dump_json(), now)
+        self._sent_by_episode[item.signal.episode_id] = (self._semantic_fingerprint(item.signal), now)
         return "sent"

@@ -49,6 +49,12 @@ class BenchmarkRun(BaseModel):
     raw_latency_samples_ms: tuple[float, ...]
     latency_overflow_count: int = Field(ge=0)
     resource_samples: tuple[dict[str, Any], ...]
+    total_service_ms: int = Field(ge=0)
+    total_queue_delay_ms: int = Field(ge=0)
+    heavy_model_invocation_count: int = Field(ge=0)
+    heavy_model_service_ms: int = Field(ge=0)
+    heavy_model_duty_cycle: float = Field(ge=0.0, le=1.0)
+    scheduler_decision_count: int = Field(ge=0)
     hazard_quality: dict[str, dict[str, int | float]]
     opportunity_accounting: dict[str, int]
     execution_mode: str
@@ -109,10 +115,23 @@ class DeterministicBenchmarkLab:
             json.dumps(schedule_payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
         ).hexdigest()
         if variant is BenchmarkVariant.O1:
-            records = self._run_orchestrated(start, opportunities, variant, manifest.get("resources", {}))
+            records, scheduler_decision_count = self._run_orchestrated(
+                start, opportunities, variant, manifest.get("resources", {})
+            )
         else:
             records = self._run_fixed(start, opportunities, variant)
+            scheduler_decision_count = 0
         end_to_end = [float(item["end_to_end_ms"]) for item in records if item["disposition"] == "processed"]
+        processed_records = [item for item in records if item["disposition"] == "processed"]
+        total_service_ms = sum(int(item.get("service_ms") or 0) for item in processed_records)
+        total_queue_delay_ms = sum(int(item.get("queue_latency_ms") or 0) for item in processed_records)
+        heavy_workload_ids = {str(value) for value in manifest.get("heavy_workload_ids", ["wildfire-stage2"])}
+        heavy_records = [item for item in processed_records if item["workload_id"] in heavy_workload_ids]
+        heavy_model_service_ms = sum(int(item.get("service_ms") or 0) for item in heavy_records)
+        completion_values = [int(item["completion_ms"]) for item in processed_records if item.get("completion_ms") is not None]
+        capture_values = [int(item["capture_ms"]) for item in records]
+        horizon_ms = max(1, (max(completion_values) if completion_values else 1) - (min(capture_values) if capture_values else 0))
+        heavy_model_duty_cycle = min(1.0, heavy_model_service_ms / horizon_ms)
         misses = sum(1 for item in records if item["deadline_missed"])
         hazard_quality: dict[str, dict[str, int | float]] = {}
         opportunity_accounting = {item.value: 0 for item in OpportunityDisposition}
@@ -156,8 +175,16 @@ class DeterministicBenchmarkLab:
                  "rss_mb": float(manifest.get("resources", {}).get("rss_mb", 0.0)),
                  "cpu_pressure": float(manifest.get("resources", {}).get("cpu_pressure", 0.0)),
                  "temperature_c": float(manifest.get("resources", {}).get("temperature_c", 0.0)),
-                 "source": "declared_benchmark_resource_snapshot"},
+                 "source": "simulated_benchmark_resource_snapshot",
+                 "evidence_class": "simulated",
+                 "physical_measurement": False},
             ),
+            total_service_ms=total_service_ms,
+            total_queue_delay_ms=total_queue_delay_ms,
+            heavy_model_invocation_count=len(heavy_records),
+            heavy_model_service_ms=heavy_model_service_ms,
+            heavy_model_duty_cycle=round(heavy_model_duty_cycle, 6),
+            scheduler_decision_count=scheduler_decision_count,
             hazard_quality=hazard_quality,
             opportunity_accounting=opportunity_accounting,
             execution_mode="orchestrated" if variant is BenchmarkVariant.O1 else "fixed_rate",
@@ -186,10 +213,18 @@ class DeterministicBenchmarkLab:
         opportunities: list[BenchmarkOpportunity],
         variant: BenchmarkVariant,
         resources_raw: dict[str, Any],
-    ) -> list[dict[str, Any]]:
+    ) -> tuple[list[dict[str, Any]], int]:
         clock = VirtualClock(start)
         approved = {item.profile_id for item in opportunities}
         scheduler = WorkloadScheduler(clock=clock, mode=RuntimeMode.BENCHMARK, approved_profile_ids=approved)
+        scheduler_decision_count = 0
+
+        def scheduler_call(function, *args, **kwargs):
+            nonlocal scheduler_decision_count
+            result = function(*args, **kwargs)
+            scheduler_decision_count += 1
+            return result
+
         specs: dict[str, WorkloadSpec] = {}
         for item in opportunities:
             if item.workload_id not in specs:
@@ -205,7 +240,7 @@ class DeterministicBenchmarkLab:
                     profile_id=item.profile_id,
                 )
                 specs[item.workload_id] = spec
-                scheduler.register(spec)
+                scheduler_call(scheduler.register, spec)
         resources = ResourceSnapshot.model_validate(resources_raw or {
             "cpu_pressure": 0.4,
             "memory_pressure": 0.4,
@@ -224,7 +259,7 @@ class DeterministicBenchmarkLab:
             while arrivals and arrivals[0][1].scheduled_offset_ms <= now_ms:
                 _, item = arrivals.pop(0)
                 correlation_id = uuid5(NAMESPACE_URL, f"benchmark:{item.opportunity_key}")
-                job = scheduler.submit(
+                job = scheduler_call(scheduler.submit,
                     item.workload_id,
                     {"opportunity_key": item.opportunity_key},
                     released_at=start + timedelta(milliseconds=item.scheduled_offset_ms),
@@ -242,7 +277,7 @@ class DeterministicBenchmarkLab:
                     clock.advance_ms(next_ms - now_ms)
             submit_due()
             if active is None:
-                job = scheduler.dispatch(resources)
+                job = scheduler_call(scheduler.dispatch, resources)
                 if job is None:
                     if scheduler.queued:
                         break
@@ -260,7 +295,7 @@ class DeterministicBenchmarkLab:
                 submit_due()
                 continue
             clock.advance_ms(remaining_ms)
-            scheduler.complete(job)
+            scheduler_call(scheduler.complete, job)
             completion_ms = job.completed_monotonic_ns // 1_000_000
             service_start_ms = job.service_started_monotonic_ns // 1_000_000
             end_to_end_ms = completion_ms - item.captured_offset_ms
@@ -276,7 +311,10 @@ class DeterministicBenchmarkLab:
                     "reason_codes": ["not_dispatched"],
                     "deadline_missed": True,
                 })
-        return sorted(records, key=lambda value: (value["service_start_ms"] is None, value["service_start_ms"] or 0, value["opportunity_key"]))
+        return (
+            sorted(records, key=lambda value: (value["service_start_ms"] is None, value["service_start_ms"] or 0, value["opportunity_key"])),
+            scheduler_decision_count,
+        )
 
     @staticmethod
     def _record(

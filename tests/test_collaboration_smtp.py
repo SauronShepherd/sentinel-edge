@@ -16,6 +16,8 @@ def test_smtp_publisher_sends_and_suppresses_unchanged_updates():
     publisher = SmtpEmailCollaborativeSignalPublisher(sender="node@example.invalid", recipient="inbox@example.invalid", send_bytes=sent.append)
     item = signal()
     assert publisher.publish(item) == "queued"
+    assert publisher.publish(item) == "suppressed_unchanged"
+    assert publisher.queued_items == 1
     assert publisher.drain_once() == "sent"
     assert len(sent) == 1
     assert publisher.publish(item) == "suppressed_unchanged"

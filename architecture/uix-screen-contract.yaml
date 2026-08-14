@@ -1,0 +1,173 @@
+schema: sentinel-edge.uix-screen-contract.v1
+version: 0.22.0
+basis:
+  specification: docs/design/UIX_SPECIFICATION.md
+  reference_mockups: docs/design/reference-mockups
+  note: Reference mockups are design guidance, not runtime evidence.
+sources:
+  html: src/sentinel_edge/clients/static/index.html
+  javascript: src/sentinel_edge/clients/static/app.js
+  css: src/sentinel_edge/clients/static/styles.css
+requirements:
+  - id: UIX-SHELL-001
+    profile: H0
+    description: Persistent desktop shell with top bar, sidebar and main workspace.
+    checks:
+      - source: html
+        all: ['se-topbar', 'se-sidebar', 'se-main']
+      - source: css
+        all: ['--topbar-h: 68px', '--sidebar-w:244px', '--inspector-w: 324px']
+  - id: UIX-SHELL-002
+    profile: H0
+    description: Global command/search surface supports keyboard invocation and grouped results.
+    checks:
+      - source: html
+        all: ['command-palette', 'command-search', '⌘ K']
+      - source: javascript
+        all: ['Navigation', 'Sites', 'Devices', 'Incidents', 'Policies', 'Reports', 'Commands', "e.key.toLowerCase()==='k'"]
+  - id: UIX-SAFETY-001
+    profile: H0
+    description: Persistent emulator and research-MVP disclosures are visible in the client shell.
+    checks:
+      - source: html
+        all: ['Arm64 emulated demonstration environment', 'deterministic simulations', 'Research MVP', 'not an official emergency-warning system', 'physical Raspberry Pi measurements']
+  - id: UIX-TRUTH-001
+    profile: H0
+    description: Hazard state is not conflated with monitoring coverage and fixture-only data is labelled.
+    checks:
+      - source: html
+        all: ['Hazard state is separate from monitoring coverage']
+      - source: javascript
+        all: ['Monitoring Coverage', 'UI fixture', 'not physical fleet uptime', 'not a claim of deployed incident frequency']
+  - id: UIX-SCHED-001
+    profile: H0
+    description: Scheduler activity and decision explanation are operator-visible.
+    checks:
+      - source: javascript
+        all: ['Arm AI Orchestrator', 'Running', 'Queued', 'Sleeping', 'Deferred', 'Why state changed']
+  - id: UIX-EVIDENCE-001
+    profile: H0
+    description: Evidence, uncertainty and review affordances are visible.
+    checks:
+      - source: javascript
+        all: ['Evidence', 'Uncertainty', 'Review actions']
+  - id: UIX-RESPONSIVE-001
+    profile: H0
+    description: Responsive breakpoints preserve usable workspace behavior.
+    checks:
+      - source: css
+        all: ['@media(max-width:1180px)', '@media(max-width:900px)', '@media(max-width:640px)']
+  - id: UIX-ACCESSIBILITY-001
+    profile: H0
+    description: Keyboard focus, reduced motion, labelled navigation and non-color status support are present.
+    checks:
+      - source: html
+        all: ['aria-label="Primary navigation"', 'aria-live="polite"']
+      - source: css
+        all: [':focus-visible', 'prefers-reduced-motion']
+  - id: UIX-ACTIONS-001
+    profile: H0
+    description: Disruptive actions require explicit confirmation and preserve Component-4 authority.
+    checks:
+      - source: javascript
+        all: ['window.confirm', 'Expected blast radius', 'Component 4 remains the sole incident-state authority']
+  - id: UIX-SCREEN-OVERVIEW
+    profile: H0
+    description: Overview reference screen family is implemented.
+    checks:
+      - source: javascript
+        all: ['function renderOverview', 'Recent Alerts', 'AI Insights', 'Site Status']
+  - id: UIX-SCREEN-SITES
+    profile: H0
+    description: Sites reference screen family is implemented with selection context.
+    checks:
+      - source: javascript
+        all: ['function renderSites', 'All Sites', 'Connectivity health']
+      - source: css
+        all: ['.se-site-map-layout']
+  - id: UIX-SCREEN-DEVICES
+    profile: H0
+    description: Devices reference screen family is implemented with filters, bulk actions and inspector.
+    checks:
+      - source: javascript
+        all: ['function renderDevices', 'Update Firmware', 'Last Check-in', 'Connection Health']
+      - source: css
+        all: ['.se-bulkbar', '.se-inspector']
+  - id: UIX-SCREEN-INCIDENTS
+    profile: H0
+    description: Incident triage split view is implemented with timeline, evidence and response actions.
+    checks:
+      - source: javascript
+        all: ['function renderIncidents', 'Timeline', 'Affected Assets', 'Response Actions']
+      - source: css
+        all: ['.se-response-actions']
+  - id: UIX-SCREEN-AI-INVESTIGATION
+    profile: H0
+    description: AI Investigation reference screen family keeps evidence and deterministic authority visible.
+    checks:
+      - source: javascript
+        all: ['function renderInvestigation', 'Attack / Hazard Workload Path', 'Root Cause Findings', 'Suggested Next Actions']
+      - source: css
+        all: ['.se-investigation-layout']
+  - id: UIX-SCREEN-POLICIES
+    profile: H0
+    description: Policies reference screen family includes simulation and publish controls.
+    checks:
+      - source: javascript
+        all: ['function renderPolicies', 'Simulate Impact', 'publish-policy', 'Compliance Impact']
+  - id: UIX-SCREEN-REPORTS
+    profile: H0
+    description: Reports reference screen family includes filters, analytics and scheduling context.
+    checks:
+      - source: javascript
+        all: ['function renderReports', 'Reports & Analytics', 'Schedule & Recipients', 'KPI Summary']
+      - source: css
+        all: ['.se-reports-layout']
+  - id: UIX-SCREEN-PROVISIONING
+    profile: H0
+    description: Deploy New Site reference screen family includes six-step readiness workflow.
+    checks:
+      - source: javascript
+        all: ['function renderProvisioning', 'Deploy New Site', 'Deployment Readiness', 'Validate Configuration']
+      - source: css
+        all: ['.se-stepper']
+  - id: UIX-SCREEN-FIRMWARE
+    profile: H0
+    description: Firmware reference screen family includes rollout planner and campaign context.
+    checks:
+      - source: javascript
+        all: ['function renderFirmware', 'Firmware & Updates', 'Rollout Planner', 'Create Campaign']
+  - id: UIX-SCREEN-AUTOMATION
+    profile: H0
+    description: Automation reference screen family includes visual workflow and step configuration.
+    checks:
+      - source: javascript
+        all: ['function renderAutomation', 'Test Workflow', 'Verify remediation', 'Recent runs']
+      - source: css
+        all: ['.se-automation-layout', '.se-flow-canvas']
+  - id: UIX-JUDGE-001
+    profile: H0
+    description: Benchmark Lab and Judge Proof are first-class proof surfaces.
+    checks:
+      - source: javascript
+        all: ['Benchmark Lab', 'Judge Proof', 'not measured Raspberry Pi latency']
+  - id: UIX-INTERACTION-001
+    profile: H0
+    description: Reference object workspaces provide executable selection, filter, tab and local-draft interactions rather than static decorative controls.
+    checks:
+      - source: javascript
+        all: ['data-site-tab', 'data-device-tab', 'device-filter-site', 'device-filter-risk', 'save-report-schedule', 'save-provision-draft', 'data-firmware-action', 'automation-save-step']
+  - id: UIX-AUTHORITY-002
+    profile: H0
+    description: Incident acknowledgement is an explicit authorized Component-5 command, while unsupported device/remediation mutations remain visibly staged only.
+    checks:
+      - source: html
+        all: ['use-operator-token']
+      - source: javascript
+        all: ['/acknowledge', 'idempotency_key', 'Use the local Operator token', 'Component 4 performed the authoritative mutation', 'no unsupported production/device mutation was performed']
+  - id: UIX-COLLAB-001
+    profile: H1
+    description: Collaborative Detection is visibly experimental, opt-in and default-off.
+    checks:
+      - source: javascript
+        all: ['Collaborative Detection', 'Default OFF', 'privacy-preserving pseudonymous sharing', 'Experimental']

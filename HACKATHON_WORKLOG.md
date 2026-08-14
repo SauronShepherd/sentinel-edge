@@ -1,25 +1,5 @@
 # Sentinel Edge Hackathon Worklog
 
-## Canonical Docker/QEMU Arm64 evidence refresh
-
-Captured a real Docker/QEMU `linux/arm64` guest run with `aarch64` diagnostics, 27 bounded Arm64 tests passing, the simultaneous-event demo and scenario passing, and the emulated benchmark quality guardrails passing with claim class `simulated`. The later Docker Desktop engine restart exposed a host binfmt regression (`exec format error`) that prevents repeating the exact candidate-bound run until the local guest runtime is repaired; no Raspberry Pi performance claim is made.
-
-Changed paths: `qualification/emulated-arm64-benchmark.json`, `qualification/claim-registry.json`, `registries/evidence.yaml`, `HACKATHON_WORKLOG.md`.
-
-Exact commands: `python scripts/dev.py arm64-setup`; `python scripts/dev.py arm64-doctor`; `python scripts/dev.py arm64-test`; `python scripts/dev.py arm64-demo`; `python scripts/dev.py arm64-scenario`; `python scripts/dev.py arm64-benchmark`.
-
-Receipt: Arm64 doctor reported `guest_architecture: aarch64`, `execution_mode: docker-qemu-linux-arm64`; Arm64 test lane passed 27 tests; benchmark reported `quality_guardrails_passed: true` and `claim_class: simulated`.
-
-## UIX mission-control shell alignment — judge-facing client
-
-Reworked the static Mission Control surface to match the supplied UIX direction: persistent product navigation, global search/actions, responsive split-view cards, four-hazard status, runtime health, site status, explicit emulated-Arm64/research disclosures, keyboard focus states, semantic table captions, reduced-motion support, and the full object navigation set. Preserved the API client’s legacy accessibility/security anchors and Component 4/5 authority wording.
-
-Changed paths: `src/sentinel_edge/clients/static/index.html`, `src/sentinel_edge/gateway/api.py`, `HACKATHON_WORKLOG.md`.
-
-Exact commands: `.venv\Scripts\python.exe -m pytest -q tests/test_accessibility_audit.py tests/test_client_security.py tests/test_web_security_policy.py`; `npm test --prefix modules/client-applications`; `.venv\Scripts\python.exe scripts/dev.py verify`.
-
-Receipt: focused UI/security suite (8 passed), client suite (3 passed), and offline verification passed.
-
 ## Globally ordered authority journal — REQ-AJL-001
 
 Added authority-journal positions with unique epoch/ordinal/sequence tuples and a predecessor chain for accepted mutations.
@@ -1851,3 +1831,73 @@ The repository remains a development candidate. Physical Raspberry Pi/Arm64 qual
 - Implemented `REQ-PRE-002`: insufficient or persistent drift is explicitly preserved, weakened, or sent to review, with no automatic retraining or silent continuation of qualified claims.
 - Changed paths: `registries/requirements.yaml`, `registries/tests.yaml`, `provenance/evidence/fda4a1809a8e8140b354702395bc5044e97550fa6f08f1c096e69470e7e0142c.json`.
 - Exact verification command: `.venv\Scripts\python.exe -m pytest -q tests/test_drift_governance.py` (3 passed).
+
+## 2026-08-14 — Final UIX, simultaneous-event proof, and pinned Arm64 emulator profile
+
+- Completed the local responsive UIX workspace against the ten supplied reference-screen families: Overview, Sites, Devices, Incident Details, AI Investigation, Policies, Reports, Deploy New Site, Firmware & Updates, and Automation, while preserving Mission Control, Benchmark Lab, Judge Proof, and the experimental Collaborative Detection surface.
+- Added explicit confirmation/blast-radius handling for disruptive UI actions and retained Component 4 as the sole incident-state authority.
+- Expanded `python scripts/dev.py scenario` into a machine-readable simultaneous-event proof with 24 executable invariants covering all four hazards, Tier-A reservation, wildfire wake/sleep, adaptive flood/landslide cadence, bounded queues, deferral/overload, source and sensor failure, deterministic worker crash/recovery, replay/backfill freshness protection, evidence creation, Component-4 transitions, Component-5 projection, storage/clock faults, and thermal/power policy pressure.
+- Added strict aggregate-test receipts that fail closed on zero collection, skips, xfail/xpass, and record test counts/duration/evidence paths.
+- Pinned the canonical Arm64 guest to `python:3.13.15-slim`, projected the exact runtime dependency set from `uv.lock` into `docker/requirements-arm64.lock.txt`, pinned ONNX Runtime to `1.28.0`, and added container image identity to Arm64 doctor/benchmark evidence.
+- Verified locally: setup, client/UI tests, architecture boundaries, contract synchronization, collaboration contract/privacy/Gmail-fixture suites, the 24-invariant scenario proof, security/privacy H0 tests, and focused release-candidate tests. The final exact Docker/QEMU Arm64 matrix remains intentionally unclaimed in this sandbox because Docker/QEMU is unavailable here.
+
+## 2026-08-14 — Machine-readable UIX conformance and strict Judge test termination
+
+- Added `architecture/uix-screen-contract.yaml` and `scripts/generate_uix_conformance.py` so the release now verifies the implemented client against the supplied UIX specification and all ten reference mockups without treating those design mockups as runtime evidence.
+- Added `qualification/uix-conformance.json`, binding the exact UIX specification digest, the ten reference-mockup digests, implementation source digests, and 21 executable UIX requirements; current result is 21/21 pass, including 20/20 H0 requirements and the optional H1 Collaborative Detection UI surface.
+- Added `python scripts/dev.py uix` to the authoritative command catalogue and wired UIX conformance generation into `verify`, `gates`, `clients`, and submission-readiness generation.
+- Hardened the isolated strict pytest acceptance-batch runner so a completed batch exits deterministically even if an integration test leaves a non-daemon helper thread alive; the runner still writes its machine-readable receipt and fails closed on zero collection, skips, xfail/xpass, collection errors, or test failures.
+- Exact verification commands: `python scripts/dev.py uix` (pass; 9 tests), `python scripts/dev.py clients` (pass; 21 tests), focused UIX/command/strict-runner suite (16 passed), `python scripts/dev.py verify` (pass), and `python scripts/dev.py scenario` (24/24 invariants pass).
+- The exact post-change Docker/QEMU `linux/arm64` submission matrix remains intentionally unclaimed in this sandbox; release admission therefore remains fail-closed until `submission-preflight` succeeds on the frozen revision in an Arm64-emulation-capable local environment.
+
+## 2026-08-14 — Deterministic submission transcript closure
+
+- Fixed a release-evidence nondeterminism in the simultaneous-event proof: the candidate-facing wildfire evidence item previously inherited a random UUID/default receipt time, which made the scenario transcript digest change across otherwise identical runs.
+- The submission scenario now assigns a deterministic UUIDv5 evidence identity derived from the scenario and uses the fixture event time for evidence receipt, preserving the ordinary Component-4/evidence path while making the exported transcript byte-stable.
+- Added a regression test that runs the complete submission scenario twice and requires identical transcript SHA-256, invariant-report SHA-256, evidence ID, and transcript bytes.
+- Exact verification: `python -m pytest -q tests/test_submission_scenario_proof.py` (2 passed); two consecutive `python scripts/dev.py scenario` runs produced the same transcript file SHA-256 `060aaf89047c3ca971c5fe3db5a796e6382b53768d13882e663d450ac4afd0e5` and the generated readiness report remained byte-identical after another scenario/report cycle.
+
+## 2026-08-14 — Interactive UIX authority path and no-egress Arm64 runner
+
+- Converted additional reference-screen controls from decorative placeholders into explicit local interactions: Sites and Devices inspectors now have functional tabs and deep links; device filters are stateful; incident previous/next and evidence rows are interactive; Reports can save a local-only schedule; Provisioning validates required fields and saves a page-local draft; Firmware rollout controls are visibly staged; Automation preserves a real Draft/Published distinction without executing production remediation.
+- Added a local Operator session shortcut and wired **Acknowledge Incident** to the existing authorized Component-5 `/v1/incidents/{hazard}/acknowledge` endpoint with CSRF and idempotency. Unsupported containment/device mutations remain staged only, and Component 4 remains the sole authoritative incident-state writer.
+- Extended `architecture/uix-screen-contract.yaml` with executable H0 interaction and authority checks; the generated UIX result is now 23/23 overall and 22/22 H0.
+- Hardened the canonical Docker/QEMU Arm64 runner with Docker `--network none`. Added guest kernel-namespace inspection that requires loopback-only interfaces and no default route; Arm64 doctor and benchmark lanes now fail if that below-application-layer no-egress condition is not observed.
+- Exact focused verification: `python -m pytest -q tests/test_arm64_emulation_profile.py tests/test_uix_reference_screens.py tests/test_mission_control_uix.py tests/test_auth_and_commands.py tests/test_api_workflows.py` (18 passed) and `python scripts/dev.py verify` (pass).
+- The exact final Docker/QEMU Arm64 matrix still must be executed on the frozen revision in an Arm64-emulation-capable local environment before release admission; no physical device or physical sensor is required.
+## 2026-08-14 — Final AArch64 runtime identity, dependency closure, and benchmark instrumentation
+
+- Reworked `python scripts/dev.py setup` so a pristine checkout becomes importable through a normal site-packages `.pth` instead of an undocumented `PYTHONPATH` override. Ordinary local Judge/demo execution can reuse an already-installed compatible environment when offline, while `submission-preflight` sets a strict mode that requires the exact hash-pinned `requirements-dev.lock.txt`.
+- Added `config/arm64-python-artifacts.json` and deterministic `scripts/generate_arm64_dependency_lock.py`. The canonical Arm64 Docker build now uses an OCI-digest-pinned Python 3.13.15 base and `pip --require-hashes --only-binary=:all:` over the full Judge/test lock plus exact AArch64 NumPy, Protobuf, FlatBuffers and ONNX Runtime 1.28.0 artifacts.
+- Added `src/sentinel_edge/qualification/arm64_runtime.py`: Arm64 doctor/benchmark create a real ONNX Runtime `InferenceSession`, force `CPUExecutionProvider`, execute the admitted deterministic 0.5 known-answer graph, reject provider fallback, and bind model digest/size plus the installed ONNX Runtime distribution `RECORD` and native-library hashes.
+- Expanded benchmark evidence with queue/service totals, explicit heavy-workload invocation and duty-cycle accounting, scheduler decision counts, explicit `simulated` labels for thermal/power/resource policy inputs, and a separate scheduler-control-plane CPU-overhead microbenchmark measured only inside the Arm64 guest.
+- Strengthened release-candidate validation so old Arm64 benchmark artifacts that lack the new known-answer/runtime identity or scheduler/workload instrumentation are not eligible for the final frozen candidate.
+- Local verification completed in this environment: `verify` passed; `scenario` retained 24/24 invariants; `uix` retained 23/23 checks; Collaboration suite passed 61 tests; focused Arm/runtime/benchmark/release tests passed. A strict `test-all` attempt completed batches 1 and 2 and was still running batch 3 when the execution sandbox's per-command time limit terminated it, so no full `test-all` pass is claimed here.
+- The exact final Docker/QEMU Arm64 run remains the only technical evidence action that cannot be executed inside this ChatGPT sandbox. It must be generated by `submission-preflight` on the frozen revision; no Raspberry Pi or physical sensor is required.
+- Audited the generated Judge package and found that the source-export allowlist omitted `docker/`, root dependency locks, `schemas/`, `package.json`, `HACKATHON_WORKLOG.md`, `SECURITY.md`, and `CONTRIBUTING.md`. Fixed `scripts/export_source.py` and added regression checks so a public Judge package now contains the exact Arm64 reproduction inputs and submission-governance files instead of only the Python source tree.
+## 2026-08-14 — Clean Judge-checkout import precedence
+
+- Found a clean-package integrity defect during a Judge-package smoke test: a stale editable install from a different checkout could appear earlier on `sys.path` and cause the Judge commands to execute code from the wrong source tree even though the copied package itself looked valid.
+- Replaced the passive checkout `.pth` with `000-sentinel-edge-checkout.pth`, which prepends only the declared source roots during standard Python site startup; legacy checkout `.pth` files are removed when possible.
+- Added a fail-closed setup self-test that imports `sentinel_edge` in a fresh Python process and requires the resolved module file to be inside the current checkout's `src/` tree. The result is recorded in `.tmp/setup-environment.json`.
+- Added regression coverage in `tests/test_clean_checkout_setup.py`; focused setup/preflight tests pass. A rebuilt Judge package is smoke-tested from a fresh temporary path before final packaging.
+
+## 2026-08-14 — Isolated final Judge-package smoke verification
+
+- Hardened `scripts/build_judge_package.py --verify-local` so the unpacked Judge package is exercised with a temporary virtual environment instead of mutating or inheriting checkout-path state in the developer interpreter.
+- The smoke lane now validates that `sentinel_edge.__file__` resolves under the copied package's own `src/` tree immediately after setup, closing the stale-editable/PTH shadowing failure mode found during package audit.
+- Updated `python scripts/dev.py package`: pre-candidate packaging stays fast, while an admitted frozen candidate automatically adds `--verify-local` and therefore proves the public package from a fresh copy before final distribution.
+- Added focused regression tests for package-smoke isolation and admitted-candidate package behavior.
+
+## 2026-08-14 — Exact-bound resumable strict test-all
+
+- Extended the strict H0 `test-all` batch runner with resumable receipts so long acceptance runs can survive process/time-window interruption without restarting already completed batches.
+- Reuse is fail-closed: every receipt is bound to the exact source-tree digest, setup/runtime fingerprint (Python executable/version, platform/machine, setup mode and resolved exact-lock rows), ordered test paths, and a deterministic batch signature. Any source/environment/path change clears or rejects stale receipts.
+- The per-batch runner now records source/environment/signature/index metadata alongside collection, failures, skips and xfail/xpass state. Only valid nonzero-collection receipts with no skip/xfail/failure may be reused.
+- `python scripts/dev.py test-all` now enables this exact-bound resume mode automatically; a fresh clone still executes every batch from scratch. Focused strict-runner regression tests pass.
+
+## 2026-08-14 — Clean-tree export test determinism
+
+- The resumable full acceptance run exposed a nondeterministic test assumption in `tests/test_r01_export.py`: it expected the repository to already be dirty, so it failed correctly when executed on the clean release tree.
+- Reworked the test to create and remove its own explicit untracked dirty-worktree probe around `export_source.py --require-clean`. The assertion now tests the intended fail-closed behavior independent of developer workspace state.
+- Focused export tests pass after the correction.

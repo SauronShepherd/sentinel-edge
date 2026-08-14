@@ -8,7 +8,6 @@ dist/
 .uv-cache/
 .tmp/
 .idea/
-**/node_modules/
 **/__pycache__/
 **/*.egg-info/
 *.log
@@ -18,3 +17,6 @@ coverage.xml
 .coverage
 release-manifest.json
 artifacts/verification/*.tmp
+
+node_modules/
+**/node_modules/

@@ -1,19 +1,10 @@
-# Development plan after v0.21.0
+# Sentinel Edge development plan — hackathon freeze first
 
-1. Capture an observed Raspberry Pi 5 runtime envelope with exact board, EEPROM/bootloader, firmware, kernel, OS/root, runtime, provider, driver and hardening identities.
-2. Acquire publisher-origin Arm64 wheels and rehearse the exact no-index installation on that qualified target image.
-3. Execute the admitted ONNX model package with the exact target runtime/provider and run the cold/session branch/shape/output known-answer suite before service start.
-4. Capture a physical IMU and camera path using the signed signal-chain profiles; qualify timestamps, effective rate, anti-aliasing, gaps, clipping and saturation.
-5. Commission deployed sensors with site, mount, calibration, datum/baseline, configuration, model and explicit evidence-window identities.
-6. Renew model-quality evidence against the exact physical signal, preprocessing, graph, platform envelope and target runtime package.
-7. Run the signed confirmatory B0/B1/O1 plan with valid power, thermal, memory, network, host-envelope and complete-node energy evidence.
-8. Obtain independent builder, security, privacy and accessibility evidence and close the remaining H0 requirements without upgrading fixtures to target verification.
+## 1. Active hackathon profile
 
-## Emulated Arm64 hackathon profile
+The active candidate is `H0-EMULATED-AARCH64-20260813`. It uses the single Docker/QEMU `linux/arm64` profile in `config/arm64-emulation.yaml`. Deterministic camera, three-axis IMU, rainfall, water-level, soil-moisture, tilt and vibration streams enter through normal Component-1 contracts and remain visibly simulated. Emulation can establish Arm64 software execution and comparative workload evidence; it cannot establish Raspberry Pi latency/power/thermal or physical-sensor quality.
 
-The active candidate uses the single `docker-qemu` `linux/arm64` profile documented in `config/arm64-emulation.yaml`. Run the project-facing commands through `scripts/dev.py`; report host and guest identities separately. Deterministic camera, IMU, hydrology, and landslide fixtures enter through Component 1 contracts and remain visibly simulated. Emulation may establish software execution and comparative workload evidence, never Raspberry Pi performance, physical energy/thermal, or physical-sensor quality.
-
-Canonical command sequence:
+Canonical final freeze sequence:
 
 ```text
 python scripts/dev.py arm64-setup
@@ -22,16 +13,32 @@ python scripts/dev.py arm64-test
 python scripts/dev.py arm64-demo
 python scripts/dev.py arm64-scenario
 python scripts/dev.py arm64-benchmark
+python scripts/dev.py submission-preflight
+python scripts/dev.py release-candidate
 ```
 
-## Optional H1/S8 collaborative detection extension
+No new feature work is admitted if it threatens an H0 G0 gate.
 
-The proposed Collaborative Detection extension (`SE-COLLAB-CODEX-001`) is tracked as a disabled, additive workstream. It must not alter H0 behavior or require Gmail, credentials, or network access.
+## 2. Optional H1/S8 Collaborative Detection
 
-1. **Contracts and policy:** land the versioned correlation-domain, signal, consent, envelope, and decision contracts; enforce the hazard-specific observation vocabulary and the rule that research consent requires operational sharing.
-2. **Local opt-in:** add consent auditing, privacy transformation, material-event signal creation, bounded queueing, and a deterministic fixture publisher. Sharing and research consent remain independent and default OFF.
-3. **Component-4 correlation:** admit normalized Component-1 envelopes, reject replay/expiry/domain mismatches, count one contribution per peer, and emit explainable review/simulated decisions. Component 4 remains the only incident-state writer.
-4. **Experimental email:** add replaceable MIME/SMTP and Gmail-client abstractions behind fake offline fixtures; email remains `email_unverified` and cannot create trusted multi-node verification.
-5. **REST/UI and safety:** expose bounded status/consent/evidence projections without secrets or raw MIME; demonstrate that disabling collaboration restores the H0-capable path.
+Collaborative Detection remains **default OFF** and never becomes an H0 dependency. Its local/offline submission-safe implementation now includes the versioned schemas/types, separate operational/research consent, privacy transformation, material-event signal factory, bounded fixture/email abstractions, Gmail `.eml` fixture path, Component-1 normalization, Component-4 hazard-specific correlation, independent-peer accounting, explicit decision traces, low-cardinality metrics, REST projections, UI settings/trust disclosures and offline tests. Real Gmail remains optional and `email_unverified`; it cannot create trusted real multi-node confirmation.
 
-Current implementation state: contract slice implemented and tested; transport, correlation, REST/UI, and target qualification remain planned. Capability status must not exceed executable evidence.
+The submission-safe demo is fixture-qualified simulated peers only. If collaboration causes any H0 gate regression, the rollback remains:
+
+```yaml
+collaboration:
+  enabled: false
+```
+
+## 3. Post-submission / reference Raspberry Pi work
+
+Only after the hackathon candidate is frozen should the project spend time on the reference physical target and field-lab profile:
+
+1. Capture a Raspberry Pi 5 runtime envelope and publisher-origin Arm64 wheelhouse on that exact image.
+2. Qualify physical IMU/camera signal chains, mounting, calibration and sensor timing.
+3. Measure native Pi latency/RSS plus physical power, thermal and throttling behavior.
+4. Renew model-quality evidence against exact physical signal chains and runtime/provider identity.
+5. Commission field sites, storage/update/backup controls and site-specific flood/landslide calibration.
+6. Complete independent builder/security/privacy/accessibility and broader H1/F1 qualification.
+
+These are not claims of the current hackathon candidate.

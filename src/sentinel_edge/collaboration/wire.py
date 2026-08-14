@@ -19,6 +19,14 @@ MAX_EMAIL_BYTES = 65536
 MAX_JSON_BYTES = 16384
 TransportTrust = Literal["fixture_qualified", "email_unverified", "authenticated_peer", "rejected", "unknown"]
 
+REASON_CODES = frozenset({
+    "SCHEMA_INVALID", "SCHEMA_VERSION_UNSUPPORTED", "PAYLOAD_TOO_LARGE", "EMAIL_TOO_LARGE",
+    "MIME_UNSUPPORTED", "MULTIPLE_SIGNAL_PARTS", "SIGNAL_EXPIRED", "SIGNAL_DUPLICATE",
+    "TRANSPORT_MESSAGE_DUPLICATE", "OBSERVATION_UNSUPPORTED", "HAZARD_DOMAIN_MISMATCH",
+    "DOMAIN_UNKNOWN", "CLOCK_UNSAFE", "SOURCE_MODE_REPLAYED", "SOURCE_MODE_SIMULATED",
+    "PEER_UNTRUSTED", "CONSENT_POLICY_UNSUPPORTED", "INTERNAL_ERROR",
+})
+
 
 @dataclass(frozen=True)
 class ValidationDecision:
@@ -38,7 +46,7 @@ def encode_email(signal: CollaborativeSignal, *, sender: str, recipient: str) ->
     message["To"] = recipient
     message["X-Sentinel-Schema"] = "collaborative-signal-v1"
     message["X-Sentinel-Signal-ID"] = signal.signal_id
-    message.set_content("This message contains a Sentinel Edge collaborative hazard signal.\nIt does not contain raw sensor data and is not an official warning.\n")
+    message.set_content("This message contains a Sentinel Edge collaborative hazard signal.\nIt does not contain raw sensor data and is not an official warning.\nThe machine-readable signal is attached as CollaborativeSignalV1 JSON.\n")
     message.add_attachment(body, maintype="application", subtype="vnd.sentinel-edge.collaborative-signal+json", filename="signal.json")
     encoded = message.as_bytes()
     if len(encoded) > MAX_EMAIL_BYTES:
@@ -59,7 +67,19 @@ def decode_signal_email(raw: bytes) -> CollaborativeSignal:
     if len(body) > MAX_JSON_BYTES:
         raise ValueError("PAYLOAD_TOO_LARGE")
     try:
-        return CollaborativeSignal.model_validate_json(body)
+        payload = json.loads(body)
+    except (json.JSONDecodeError, UnicodeDecodeError) as exc:
+        raise ValueError("SCHEMA_INVALID") from exc
+    if not isinstance(payload, dict):
+        raise ValueError("SCHEMA_INVALID")
+    if payload.get("schema_version") != "1.0":
+        raise ValueError("SCHEMA_VERSION_UNSUPPORTED")
+    hazard = payload.get("hazard")
+    observation = payload.get("observation")
+    if hazard in OBSERVATIONS and observation not in OBSERVATIONS[hazard]:
+        raise ValueError("OBSERVATION_UNSUPPORTED")
+    try:
+        return CollaborativeSignal.model_validate(payload)
     except (ValidationError, ValueError) as exc:
         raise ValueError("SCHEMA_INVALID") from exc
 
@@ -83,4 +103,8 @@ class CollaborativeInboundValidator:
             return ValidationDecision(False, "HAZARD_DOMAIN_MISMATCH")
         if transport_trust in {"unknown", "rejected"}:
             return ValidationDecision(False, "PEER_UNTRUSTED")
+        if signal.hazard == "earthquake" and signal.clock_uncertainty_band in {"high", "unknown"}:
+            return ValidationDecision(True, "CLOCK_UNSAFE", signal)
+        if signal.source_mode == "simulated":
+            return ValidationDecision(True, "SOURCE_MODE_SIMULATED", signal)
         return ValidationDecision(True, None, signal)

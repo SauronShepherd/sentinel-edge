@@ -10,112 +10,155 @@
     "packaging>=25,<26"
   ],
   "limitations": [
-    "Package archive hashes and an offline wheel mirror are not included in this development lock."
+    "This deterministic projection does not duplicate wheel/archive hashes; uv.lock remains the authoritative hashed dependency lock.",
+    "Arm64 ONNX Runtime is pinned separately in docker/requirements-arm64.lock.txt because it is release-profile-specific."
   ],
+  "missing_direct_requirements": [],
   "project_version": "0.21.0",
-  "python": "3.13.14",
-  "resolution_kind": "installed_exact_versions",
+  "python": ">=3.11, <3.14",
+  "resolution_kind": "uv_lock_projection",
   "resolved": [
     {
       "name": "annotated-doc",
-      "state": "resolved",
+      "state": "locked",
       "version": "0.0.5"
     },
     {
       "name": "annotated-types",
-      "state": "resolved",
+      "state": "locked",
       "version": "0.8.0"
     },
     {
       "name": "anyio",
-      "state": "resolved",
+      "state": "locked",
       "version": "4.14.2"
     },
     {
+      "name": "certifi",
+      "state": "locked",
+      "version": "2026.7.22"
+    },
+    {
       "name": "cffi",
-      "state": "resolved",
+      "state": "locked",
       "version": "2.1.1"
     },
     {
       "name": "click",
-      "state": "resolved",
+      "state": "locked",
       "version": "8.4.2"
     },
     {
       "name": "colorama",
-      "state": "resolved",
+      "state": "locked",
       "version": "0.4.6"
     },
     {
       "name": "cryptography",
-      "state": "resolved",
+      "state": "locked",
       "version": "46.0.7"
     },
     {
       "name": "fastapi",
-      "state": "resolved",
+      "state": "locked",
       "version": "0.141.1"
     },
     {
       "name": "h11",
-      "state": "resolved",
+      "state": "locked",
       "version": "0.16.0"
     },
     {
+      "name": "httpcore",
+      "state": "locked",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpx",
+      "state": "locked",
+      "version": "0.28.1"
+    },
+    {
       "name": "idna",
-      "state": "resolved",
+      "state": "locked",
       "version": "3.18"
     },
     {
+      "name": "iniconfig",
+      "state": "locked",
+      "version": "2.3.0"
+    },
+    {
       "name": "packaging",
-      "state": "resolved",
+      "state": "locked",
       "version": "25.0"
     },
     {
       "name": "pillow",
-      "state": "resolved",
+      "state": "locked",
       "version": "12.3.0"
     },
     {
+      "name": "pluggy",
+      "state": "locked",
+      "version": "1.6.0"
+    },
+    {
       "name": "pycparser",
-      "state": "resolved",
+      "state": "locked",
       "version": "3.0"
     },
     {
       "name": "pydantic",
-      "state": "resolved",
+      "state": "locked",
       "version": "2.13.4"
     },
     {
-      "name": "pydantic_core",
-      "state": "resolved",
+      "name": "pydantic-core",
+      "state": "locked",
       "version": "2.46.4"
     },
     {
-      "name": "PyYAML",
-      "state": "resolved",
+      "name": "pygments",
+      "state": "locked",
+      "version": "2.20.0"
+    },
+    {
+      "name": "pytest",
+      "state": "locked",
+      "version": "9.0.2"
+    },
+    {
+      "name": "pyyaml",
+      "state": "locked",
       "version": "6.0.3"
     },
     {
+      "name": "sentinel-edge",
+      "state": "locked",
+      "version": "0.21.0"
+    },
+    {
       "name": "starlette",
-      "state": "resolved",
+      "state": "locked",
       "version": "1.3.1"
     },
     {
-      "name": "typing-inspection",
-      "state": "resolved",
-      "version": "0.4.2"
-    },
-    {
-      "name": "typing_extensions",
-      "state": "resolved",
+      "name": "typing-extensions",
+      "state": "locked",
       "version": "4.16.0"
     },
     {
+      "name": "typing-inspection",
+      "state": "locked",
+      "version": "0.4.2"
+    },
+    {
       "name": "uvicorn",
-      "state": "resolved",
+      "state": "locked",
       "version": "0.52.1"
     }
   ],
-  "schema": "sentinel-edge-release-lock/1.0"
+  "schema": "sentinel-edge-release-lock/1.0",
+  "uv_lock_sha256": "f91c763b538bedca01b4fa3a69c0007e3991c8b310222765b02df79886f6abcb"
 }
