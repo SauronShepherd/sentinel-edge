@@ -2,10 +2,10 @@
   "admission_blockers": [
     "privacy_closure_not_release_eligible",
     "provenance_not_verified",
-    "repository_dirty"
+    "reproducibility_not_verified"
   ],
   "admission_reason": "development_candidate_only",
-  "candidate_id": "c9a9d08203091153b5294c9ea0486c410452d2af768482acab561d3c28d06b34",
+  "candidate_id": "4a9d8b3df501ced147f8ae18e840e1c07bc2f6bcf3b090fad8c41713049581d1",
   "configuration": {
     "active": {
       "actor": "system-bootstrap",
@@ -78,8 +78,8 @@
     },
     "history": [
       {
-        "activated_at": "2026-08-14T09:46:51.530688Z",
-        "activation_id": "c231b8ed-fb3c-4ed7-9ff5-75b0f732a648",
+        "activated_at": "2026-08-14T09:47:49.015310Z",
+        "activation_id": "d1b09c00-427b-47a1-99f6-ac1c2e907920",
         "actor": "system-bootstrap",
         "bundle_id": "sentinel-default",
         "bundle_sha256": "157aff29c9f1951a8b2bfaa92767ff1f0c50735fa438912c7b068c01a65aa3c8",
@@ -94,7 +94,7 @@
     ],
     "last_known_good": null
   },
-  "generated_at": "2026-08-14T09:47:10.380205+00:00",
+  "generated_at": "2026-08-14T09:48:04.663387+00:00",
   "identity": {
     "active_configuration_digest": "157aff29c9f1951a8b2bfaa92767ff1f0c50735fa438912c7b068c01a65aa3c8",
     "active_contract": {
@@ -987,20 +987,10 @@
     },
     "release_profile": "H0-EMULATED-AARCH64-20260813",
     "repository_state": {
-      "dirty": true,
+      "dirty": false,
       "git_available": true,
-      "revision": "2f493d31b4a7f1580d24e1ebe4ae5f8c0607ae9c",
-      "status_entries": [
-        " M THIRD_PARTY_NOTICES.md",
-        " M build-provenance.json",
-        " M privacy-closure.json",
-        " M provenance/rights-inventory.json",
-        " M reproducibility-report.json",
-        " M requirements-release.lock.json",
-        " M sbom.cdx.json",
-        " M security-review.json",
-        " M third-party-inventory.json"
-      ]
+      "revision": "32845cc0220d9623e48cf58b505132731ca34086",
+      "status_entries": []
     },
     "requirements": {
       "by_priority": {
@@ -1072,11 +1062,13 @@
       "release_governance_report_present": true,
       "release_governance_report_sha256": "769c174d3306c6c8620cf370e8d79efea12f43fc16e061fe267f4a7c327575a6",
       "release_governance_verified": true,
-      "reproducibility_failures": [],
+      "reproducibility_failures": [
+        "source_members_digest_mismatch"
+      ],
       "reproducibility_release_eligible": false,
       "reproducibility_report_present": true,
       "reproducibility_report_sha256": "ba355254f689757c2b03e300df731571d2242e19e66094d73122270efd5312c5",
-      "reproducibility_verified": true,
+      "reproducibility_verified": false,
       "runtime_known_issue_failures": [],
       "runtime_known_issue_release_eligible": false,
       "runtime_known_issue_report_present": true,

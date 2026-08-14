@@ -4,8 +4,8 @@
 
 ## Candidate
 
-- Candidate ID: `c9a9d08203091153b5294c9ea0486c410452d2af768482acab561d3c28d06b34`
-- Commit: `2f493d31b4a7f1580d24e1ebe4ae5f8c0607ae9c`
+- Candidate ID: `4a9d8b3df501ced147f8ae18e840e1c07bc2f6bcf3b090fad8c41713049581d1`
+- Commit: `32845cc0220d9623e48cf58b505132731ca34086`
 - Release profile: `H0-EMULATED-AARCH64-20260813`
 - Release admitted: `false`
 
@@ -84,7 +84,7 @@ The Mission Control client exposes all four hazards together, monitoring coverag
 
 - `privacy_closure_not_release_eligible`
 - `provenance_not_verified`
-- `repository_dirty`
+- `reproducibility_not_verified`
 
 ## Remaining manual submission actions (after technical blockers clear)
 

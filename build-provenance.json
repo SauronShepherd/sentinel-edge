@@ -752,9 +752,9 @@
           "uri": "docs/plans/sentinel-edge-complete-end-to-end-build-plan-v0.13.0.md"
         },
         {
-          "bytes": 3146,
+          "bytes": 3187,
           "digest": {
-            "sha256": "94a8b828fd65a569f7a2282f5e5fc845765b158bb7c2be34260ff03468e47a2e"
+            "sha256": "9f21d3c2d6455b829dda4faf95b31625ab8a266b98c916e1565e34e7e388ae25"
           },
           "uri": "docs/release/CURRENT_SUBMISSION_READINESS.md"
         },
@@ -4548,7 +4548,7 @@
         {
           "bytes": 6135,
           "digest": {
-            "sha256": "91022ede7526c06b7eb3d457adf59ff8829ab61a20cb33ca7324a90af5025880"
+            "sha256": "7e1b96d0f73eb02ff88e16b0bb0a003521a2af360dd71dcb7fc0eafeecf9fe22"
           },
           "uri": "qualification/submission-command-matrix.json"
         },
@@ -6058,9 +6058,9 @@
           "uri": "src/sentinel_edge/privacy/__init__.py"
         },
         {
-          "bytes": 8205,
+          "bytes": 8214,
           "digest": {
-            "sha256": "23419274c85e88a24785625e670f573cb0f5ccaead71ccc7b83d260d6c3d8907"
+            "sha256": "6f00ae4b4e3d04c78145ab9a306c877ae7ca5494a53181c81cd5f72b34407cb5"
           },
           "uri": "src/sentinel_edge/privacy/closure.py"
         },
@@ -9689,9 +9689,9 @@
         }
       ],
       "metadata": {
-        "finishedOn": "2026-08-14T09:45:32.396104+00:00",
-        "invocationId": "a119914bd7482d08f0ca4e920c755f6e0595637adc239b2e2b530233ce196883",
-        "startedOn": "2026-08-14T09:45:32.396080+00:00"
+        "finishedOn": "2026-08-14T09:58:07.281082+00:00",
+        "invocationId": "c80b36942c5e72b045a8d40b84663ef5541abe2d5ad8ffee7f273622222a95cb",
+        "startedOn": "2026-08-14T09:58:07.280975+00:00"
       }
     }
   },
@@ -9700,12 +9700,12 @@
     "alignment": "SLSA-v1-provenance-shape; no hermetic or reproducible-build claim",
     "schema": "sentinel-edge-build-provenance/1.0",
     "secret_scan_passed": true,
-    "subject_digest": "8990894127b2640593d8e8ed714b85b8f95fc3237ddb7b5b16dbda5a96f46010"
+    "subject_digest": "c0bc31f9e80a00e144695f65040da7d9e6a6bbca0068914b514455548620f60d"
   },
   "subject": [
     {
       "digest": {
-        "sha256": "8990894127b2640593d8e8ed714b85b8f95fc3237ddb7b5b16dbda5a96f46010"
+        "sha256": "c0bc31f9e80a00e144695f65040da7d9e6a6bbca0068914b514455548620f60d"
       },
       "name": "sentinel-edge-source-tree"
     }
