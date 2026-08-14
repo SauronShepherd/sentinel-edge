@@ -680,7 +680,7 @@
     }
   ],
   "schema": "sentinel-edge.uix-conformance.v1",
-  "source_digest": "5d5b9724a0106ff8eccd5c0be05b32569eef3fd12029c58e7ab93ee20885ac9c",
+  "source_digest": "09f91c355045140baa9df3d27bd0d24f347b779c6f1b467adca450fe370f0213",
   "source_files": {
     "css": {
       "bytes": 36886,
@@ -688,9 +688,9 @@
       "sha256": "faa4fd8ae4ed61efea728611619a58bba2396007b47f04f22d3752255649c76a"
     },
     "html": {
-      "bytes": 5393,
+      "bytes": 5509,
       "path": "src/sentinel_edge/clients/static/index.html",
-      "sha256": "34bd7d220fe2452e15163f4c107755293a2d65c34aeee9c804f9537653f73447"
+      "sha256": "097619e257baf2fd71daf53d2cc14985c9d89623d572f39e003a6bffa0f8a3cc"
     },
     "javascript": {
       "bytes": 122554,

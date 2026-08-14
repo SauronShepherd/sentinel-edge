@@ -16,6 +16,11 @@ RELEASE_GENERATED_FILES = frozenset({
     "release-candidate.json.sig.json",
     "qualification/submission-command-matrix.json",
     "qualification/emulated-arm64-benchmark.json",
+    "qualification/claim-registry.json",
+    "qualification/claim-table.md",
+    "qualification/conformance-ledger.json",
+    "qualification/release-acceptance-checklist.json",
+    "qualification/uix-conformance.json",
     "docs/release/CURRENT_SUBMISSION_READINESS.md",
 })
 _EXCLUDED_FILES = RELEASE_GENERATED_FILES
