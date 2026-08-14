@@ -1,10 +1,7 @@
 {
-  "admission_blockers": [
-    "reproducibility_not_verified",
-    "submission_command_matrix_source_tree_mismatch"
-  ],
-  "admission_reason": "development_candidate_only",
-  "candidate_id": "225e8b16ca3aea2c4936c250504274c7ca5287b3a4205759c48482894c5acc0a",
+  "admission_blockers": [],
+  "admission_reason": "emulated_h0_candidate_closed",
+  "candidate_id": "6edc40d19d492d1d89f0b31104813b38f4a7c2184907d1af53c73fc012636b31",
   "configuration": {
     "active": {
       "actor": "system-bootstrap",
@@ -93,7 +90,7 @@
     ],
     "last_known_good": null
   },
-  "generated_at": "2026-08-14T10:13:20.929528+00:00",
+  "generated_at": "2026-08-14T10:19:24.551602+00:00",
   "identity": {
     "active_configuration_digest": "157aff29c9f1951a8b2bfaa92767ff1f0c50735fa438912c7b068c01a65aa3c8",
     "active_contract": {
@@ -242,7 +239,7 @@
     },
     "frozen_entrant_artifacts": {
       "active_configuration_digest": "157aff29c9f1951a8b2bfaa92767ff1f0c50735fa438912c7b068c01a65aa3c8",
-      "repository_inventory_digest": "8d58efbb9fc98e34a5be5fc7114cfa24353640477ca535208b28022159a44c40",
+      "repository_inventory_digest": "93e188a6b188f28b77258e6aaa348f01a386c88c896201d213c91999f4288e4d",
       "requirements_registry_sha256": "3e17d22c23e01b0723c61f60abc131b42517f406ff49e6a6d42ddd337e79e300"
     },
     "g0_gate_status": {
@@ -256,7 +253,7 @@
       },
       "valid": true
     },
-    "inventory_digest": "8d58efbb9fc98e34a5be5fc7114cfa24353640477ca535208b28022159a44c40",
+    "inventory_digest": "93e188a6b188f28b77258e6aaa348f01a386c88c896201d213c91999f4288e4d",
     "observed_environment": {
       "g0_gate_status_sha256": "bda7ebb0c626888700e8afb069e90b3f9387f79045de5c16bd07ff8300d33787",
       "host_trust_report_sha256": "a6f065cff6099a5cdfc46f0d6961586528a0215e16da7474bfaa688999a5e094",
@@ -988,7 +985,7 @@
     "repository_state": {
       "dirty": false,
       "git_available": true,
-      "revision": "41346977f428af1a6bf1fc8183466b4892a61f99",
+      "revision": "45a6e4b03d38a464f479db9a4a8e6c9ee9ef8559",
       "status_entries": []
     },
     "requirements": {
@@ -1013,12 +1010,10 @@
       "release_credentials_proven": true
     },
     "submission_command_matrix": {
-      "failures": [
-        "submission_command_matrix_source_tree_mismatch"
-      ],
+      "failures": [],
       "present": true,
-      "sha256": "689007dcc61273fdd7fbf4de769a07e7710d440cc7459f8fb49937fe1d8bfa13",
-      "valid": false
+      "sha256": "67951e1ce2e4765b8bc7a2de7e16482311346252c94fb53361ef2c6ddea54b34",
+      "valid": true
     },
     "supply_chain": {
       "benchmark_analysis_failures": [],
@@ -1061,13 +1056,11 @@
       "release_governance_report_present": true,
       "release_governance_report_sha256": "769c174d3306c6c8620cf370e8d79efea12f43fc16e061fe267f4a7c327575a6",
       "release_governance_verified": true,
-      "reproducibility_failures": [
-        "source_members_digest_mismatch"
-      ],
+      "reproducibility_failures": [],
       "reproducibility_release_eligible": false,
       "reproducibility_report_present": true,
-      "reproducibility_report_sha256": "e4d754721a44ba9eb696a9fe1c5b7fc64cc748639984265d808ec59df24d8585",
-      "reproducibility_verified": false,
+      "reproducibility_report_sha256": "f86e45c5e2ee5ef6b00026ced9a190b47a1f87f1d0bf8f4909ddbe0b59ed3681",
+      "reproducibility_verified": true,
       "runtime_known_issue_failures": [],
       "runtime_known_issue_release_eligible": false,
       "runtime_known_issue_report_present": true,
@@ -4415,7 +4408,7 @@
     {
       "bytes": 2653,
       "path": "reproducibility-report.json",
-      "sha256": "e4d754721a44ba9eb696a9fe1c5b7fc64cc748639984265d808ec59df24d8585"
+      "sha256": "f86e45c5e2ee5ef6b00026ced9a190b47a1f87f1d0bf8f4909ddbe0b59ed3681"
     },
     {
       "bytes": 2359,
@@ -8018,7 +8011,7 @@
       "sha256": "b6bd158fa7f734ec647b193dc8708b4a582ea80def1b94512f3f4a528edf438a"
     }
   ],
-  "release_admitted": false,
+  "release_admitted": true,
   "release_profile": "H0-EMULATED-AARCH64-20260813",
   "schema": "sentinel-edge-release-candidate/1.0"
 }
