@@ -4,10 +4,10 @@
 
 ## Candidate
 
-- Candidate ID: `2b3268e8a66edc982e5aebfc6e97ce5dd57831a899dd1df28b76f3aab18d1577`
-- Commit: `a9628218ec4dbd13793a98feb0ac11c400796b4b`
+- Candidate ID: `6edc40d19d492d1d89f0b31104813b38f4a7c2184907d1af53c73fc012636b31`
+- Commit: `4f0fa9e22cc129aaec157451c3b1627b36892c1a`
 - Release profile: `H0-EMULATED-AARCH64-20260813`
-- Release admitted: `false`
+- Release admitted: `true`
 
 ## Arm64 execution environment
 
@@ -82,7 +82,7 @@ The Mission Control client exposes all four hazards together, monitoring coverag
 
 ## Exact blockers
 
-- `provenance_not_verified`
+- None recorded by candidate closure.
 
 ## Remaining manual submission actions (after technical blockers clear)
 
