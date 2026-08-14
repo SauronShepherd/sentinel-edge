@@ -23,6 +23,23 @@ def check(root: Path) -> list[str]:
         "streaming-source-collector": "collector", "analysis-enrichment-engine": "analyzer",
         "model-workload-runtime": "runtime", "incident-event-engine": "incidents",
         "rest-api-integration-gateway": "api", "client-applications": "client",
+        # The production implementation is the monorepo package under
+        # src/sentinel_edge; the module shells above are compatibility wrappers.
+        "collector": "collector", "analyzer": "analyzer", "runtime": "runtime",
+        "incidents": "incidents", "gateway": "api", "clients": "client",
+    }
+    implementation_namespace_owners = {
+        "sentinel_edge.collector": "collector",
+        "sentinel_edge.analyzer": "analyzer",
+        "sentinel_edge.runtime": "runtime",
+        "sentinel_edge.incidents": "incidents",
+        "sentinel_edge.gateway": "api",
+        "sentinel_edge.clients": "client",
+    }
+    allowed_cross_owned_imports = {
+        # The gateway may depend on the notification sink; it does not create
+        # or mutate incident state. Component 4 remains the sole writer.
+        ("api", "sentinel_edge.incidents"),
     }
     source_roots = [root / "src", root / "modules", root / "apps"]
     source_paths = (path for base in source_roots if base.exists() for path in base.rglob("*.py"))
@@ -40,6 +57,15 @@ def check(root: Path) -> list[str]:
                     target = next((part for part in forbidden_prefixes if name.startswith(part)), None)
                     if owner is None or target != owner:
                         errors.append(f"{path.relative_to(root)}:{node.lineno}: forbidden module implementation import {name}")
+                target_owner = next(
+                    (namespace_owner for namespace, namespace_owner in implementation_namespace_owners.items()
+                     if name == namespace or name.startswith(namespace + ".")),
+                    None,
+                )
+                if target_owner is not None:
+                    owner = next((logical_for_dirs[part] for part in path.parts if part in logical_for_dirs), None)
+                    if owner is not None and target_owner != owner and (owner, name.split(".", 3)[0] + "." + name.split(".", 3)[1]) not in allowed_cross_owned_imports:
+                        errors.append(f"{path.relative_to(root)}:{node.lineno}: cross-owned implementation import {name}")
         text = path.read_text(encoding="utf-8")
         owner = next((logical_for_dirs[part] for part in path.parts if part in logical_for_dirs), None)
         if owner:

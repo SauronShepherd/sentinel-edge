@@ -10,7 +10,7 @@ CHECKER = ROOT / "scripts/check_architecture_boundaries.py"
 def run_mutation(relative: str, marker: str, replacement: str) -> str:
     with tempfile.TemporaryDirectory(prefix="sentinel-architecture-") as directory:
         temp = Path(directory)
-        for name in ("architecture", "modules", "docs/baseline/v0.13.0", "scripts"):
+        for name in ("architecture", "modules", "src", "docs/baseline/v0.13.0", "scripts"):
             shutil.copytree(ROOT / name, temp / name, dirs_exist_ok=True,
                             ignore=shutil.ignore_patterns(".git", ".venv", "build", "node_modules", ".pytest_cache", "__pycache__"))
         target = temp / relative
@@ -43,6 +43,15 @@ def test_direct_business_import_mutation_fails():
         "from sentinel_incident_event_engine import forbidden\nfrom dataclasses import dataclass",
     )
     assert "forbidden module implementation import" in output
+
+
+def test_real_src_namespace_cross_import_fails():
+    output = run_mutation(
+        "src/sentinel_edge/runtime/scheduler.py",
+        "from __future__ import annotations",
+        "from sentinel_edge.incidents import IncidentEventEngine\nfrom __future__ import annotations",
+    )
+    assert "cross-owned implementation import sentinel_edge.incidents" in output
 
 def test_policy_disable_mutation_fails_closed():
     output = run_mutation("architecture/import-rules.toml", "forbidden_cross_module_imports = true", "forbidden_cross_module_imports = false")

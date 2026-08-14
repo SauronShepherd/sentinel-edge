@@ -1,158 +1,158 @@
 {
   "commands": {
     "arm64-benchmark": {
-      "duration_seconds": 14.726,
-      "exit_code": 0,
-      "finished_at": "2026-08-14T09:27:32.262127Z",
+      "duration_seconds": 26.456,
+      "exit_code": 2,
+      "finished_at": "2026-08-14T19:36:33.145164Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/arm64-benchmark.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:27:17.536504Z",
-      "status": "pass"
+      "started_at": "2026-08-14T19:36:06.689000Z",
+      "status": "fail"
     },
     "arm64-demo": {
-      "duration_seconds": 24.401,
+      "duration_seconds": 49.377,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:26:45.834885Z",
+      "finished_at": "2026-08-14T19:35:01.642303Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/arm64-demo.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:26:21.433796Z",
+      "started_at": "2026-08-14T19:34:12.265675Z",
       "status": "pass"
     },
     "arm64-doctor": {
-      "duration_seconds": 7.356,
-      "exit_code": 0,
-      "finished_at": "2026-08-14T09:22:06.720254Z",
+      "duration_seconds": 24.199,
+      "exit_code": 2,
+      "finished_at": "2026-08-14T19:26:49.584658Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/arm64-doctor.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:21:59.364270Z",
-      "status": "pass"
+      "started_at": "2026-08-14T19:26:25.385818Z",
+      "status": "fail"
     },
     "arm64-scenario": {
-      "duration_seconds": 31.696,
+      "duration_seconds": 65.037,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:27:17.533895Z",
+      "finished_at": "2026-08-14T19:36:06.684259Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/arm64-scenario.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:26:45.837934Z",
+      "started_at": "2026-08-14T19:35:01.647423Z",
       "status": "pass"
     },
     "arm64-setup": {
-      "duration_seconds": 7.897,
+      "duration_seconds": 247.923,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:21:59.361174Z",
+      "finished_at": "2026-08-14T19:26:25.382325Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/arm64-setup.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:21:51.464407Z",
+      "started_at": "2026-08-14T19:22:17.458924Z",
       "status": "pass"
     },
     "arm64-test": {
-      "duration_seconds": 254.708,
+      "duration_seconds": 442.672,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:26:21.431289Z",
+      "finished_at": "2026-08-14T19:34:12.261741Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/arm64-test.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:22:06.723494Z",
+      "started_at": "2026-08-14T19:26:49.589870Z",
       "status": "pass"
     },
     "benchmark-replay": {
-      "duration_seconds": 2.704,
+      "duration_seconds": 2.456,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:21:42.711118Z",
+      "finished_at": "2026-08-14T19:22:09.031697Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/benchmark-replay.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:21:40.006763Z",
+      "started_at": "2026-08-14T19:22:06.575886Z",
       "status": "pass"
     },
     "claims": {
-      "duration_seconds": 8.748,
+      "duration_seconds": 8.419,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:21:51.461337Z",
+      "finished_at": "2026-08-14T19:22:17.455952Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/claims.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:21:42.713732Z",
+      "started_at": "2026-08-14T19:22:09.036572Z",
       "status": "pass"
     },
     "demo": {
-      "duration_seconds": 1.5,
+      "duration_seconds": 2.428,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:09:46.793503Z",
+      "finished_at": "2026-08-14T18:57:01.028405Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/demo.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:09:45.293734Z",
+      "started_at": "2026-08-14T18:56:58.593778Z",
       "status": "pass"
     },
     "doctor": {
-      "duration_seconds": 1.203,
+      "duration_seconds": 5.958,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:09:33.089316Z",
+      "finished_at": "2026-08-14T18:55:52.249331Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/doctor.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:09:31.886091Z",
+      "started_at": "2026-08-14T18:55:46.291078Z",
       "status": "pass"
     },
     "gates": {
-      "duration_seconds": 12.285,
+      "duration_seconds": 745.394,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:21:40.004654Z",
+      "finished_at": "2026-08-14T19:22:06.571339Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/gates.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:21:27.720150Z",
+      "started_at": "2026-08-14T19:09:41.177410Z",
       "status": "pass"
     },
     "scenario": {
-      "duration_seconds": 1.237,
+      "duration_seconds": 1.943,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:09:48.034807Z",
+      "finished_at": "2026-08-14T18:57:02.978621Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/scenario.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:09:46.797805Z",
+      "started_at": "2026-08-14T18:57:01.030552Z",
       "status": "pass"
     },
     "setup": {
-      "duration_seconds": 10.103,
+      "duration_seconds": 20.023,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:09:31.700863Z",
+      "finished_at": "2026-08-14T18:55:46.086624Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/setup.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:09:21.597541Z",
+      "started_at": "2026-08-14T18:55:26.063438Z",
       "status": "pass"
     },
     "test-all": {
-      "duration_seconds": 699.679,
+      "duration_seconds": 757.469,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:21:27.715638Z",
+      "finished_at": "2026-08-14T19:09:41.173174Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/test-all.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:09:48.036733Z",
+      "started_at": "2026-08-14T18:57:02.980243Z",
       "status": "pass"
     },
     "verify": {
-      "duration_seconds": 12.2,
+      "duration_seconds": 66.282,
       "exit_code": 0,
-      "finished_at": "2026-08-14T09:09:45.291964Z",
+      "finished_at": "2026-08-14T18:56:58.591226Z",
       "host_platform": "Windows-11-10.0.26200-SP0",
       "log": ".tmp/submission-preflight/verify.log",
       "python": "3.13.14",
-      "started_at": "2026-08-14T09:09:33.092089Z",
+      "started_at": "2026-08-14T18:55:52.252544Z",
       "status": "pass"
     }
   },
-  "generated_at": "2026-08-14T09:27:32.263862Z",
-  "overall_status": "pass",
+  "generated_at": "2026-08-14T19:36:33.149148Z",
+  "overall_status": "fail",
   "physical_hardware_required": false,
   "physical_sensors_required": false,
   "raspberry_pi_performance_claim_allowed": false,
@@ -164,7 +164,7 @@
   "repository": {
     "dirty": false,
     "git_available": true,
-    "revision": "7ca5df2c57d79937cb65879dbe27f562abfd0b39",
+    "revision": "f48a1a930d3123ec78a00944448f68850045275c",
     "status_entries": []
   },
   "required_arm64_commands": [
@@ -187,5 +187,5 @@
     "claims"
   ],
   "schema": "sentinel-edge.submission-command-matrix.v1",
-  "source_tree_digest": "8ae54e11beff30135ac3c3575a1ae70f0a33b63989e5fc584b7631e3fa0aa7cc"
+  "source_tree_digest": "fe33ba9a814abc5721cd39b9d64f975fefb2a7b429dcbbe6ccf23c3e7a53b8c3"
 }

@@ -3,14 +3,79 @@
   "comparisons": {
     "B0_to_B1_deadline_miss_delta": -2,
     "B0_to_B1_median_end_to_end_ms_delta": -31.0,
+    "B0_to_B1_total_service_ms_delta": -40,
     "B0_to_O1_median_end_to_end_ms_delta": -42.5,
+    "B0_to_O1_total_queue_delay_ms_delta": -118,
     "B1_to_O1_deadline_miss_delta": -1,
-    "B1_to_O1_median_end_to_end_ms_delta": -11.5
+    "B1_to_O1_median_end_to_end_ms_delta": -11.5,
+    "B1_to_O1_total_service_ms_delta": 0,
+    "heavy_model_duty_cycle": {
+      "B0": 0.47619,
+      "B1": 0.46729,
+      "O1": 0.46729
+    },
+    "heavy_model_invocation_count": {
+      "B0": 1,
+      "B1": 1,
+      "O1": 1
+    }
   },
   "environment": {
+    "container_image": {
+      "id": "sha256:72fa804665fb37123e6ab04e94dfcfba5180a520f69855b4e35db518bd620236",
+      "ref": "sentinel-edge:arm64-emulated-37f56008782eb8f0"
+    },
     "execution_mode": "docker-qemu-linux-arm64",
     "guest_architecture": "aarch64",
     "host_architecture": "AMD64",
+    "known_answer_inference": {
+      "assigned_providers": [
+        "CPUExecutionProvider"
+      ],
+      "available_providers": [
+        "AzureExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "expected_output": 0.5,
+      "failures": [],
+      "input_name": "features",
+      "model": "artifacts/release-models/seismic-onnx-development/model.onnx",
+      "model_bytes": 197,
+      "model_sha256": "86d15d02954ad813287e1a729b18411b44b859dd3ef02509ec597749e5b6651d",
+      "observed_output": 0.5,
+      "output_name": "score",
+      "passed": true,
+      "requested_providers": [
+        "CPUExecutionProvider"
+      ],
+      "runtime_distribution": {
+        "available": true,
+        "distribution": "onnxruntime",
+        "native_files": {
+          "onnxruntime/capi/libonnxruntime.so.1.28.0": "23a37c2994bc273e1d59a4f49af6cba5bf1cfbc29f04907ec27df375aba50a7d",
+          "onnxruntime/capi/libonnxruntime_providers_shared.so": "3b6be288fbfb7dff8770d08a23defdde18e8f7e0f5a2b344a0e5e238c999ea88",
+          "onnxruntime/capi/onnxruntime_pybind11_state.cpython-313-aarch64-linux-gnu.so": "6a1a35ac889e73a139679820025cec9775f8c096d061dfabac6942098f5c0322"
+        },
+        "record_sha256": "f39df4b71f42e12f0c90a7e54ac2593594596fe5267c70cf8b2ad6db812b0c32",
+        "version": "1.28.0",
+        "wheel_metadata_sha256": "63269d7088fde8471561e6ddc72b46e5b2f65a2881040fd58de41c5ad53cfaf0"
+      },
+      "schema": "sentinel-edge.arm64-onnxruntime-known-answer.v1"
+    },
+    "network_isolation": {
+      "below_application_layer_proven": true,
+      "declared_mode": "none",
+      "default_route_present": false,
+      "namespace_interfaces": [
+        "lo"
+      ],
+      "non_loopback_interfaces": [],
+      "reason_codes": [
+        "docker_network_none_namespace_verified"
+      ],
+      "schema": "sentinel-edge.arm64-network-isolation.v1",
+      "valid": true
+    },
     "onnxruntime": {
       "providers": [
         "AzureExecutionProvider",
@@ -20,22 +85,53 @@
     },
     "python": "3.13.15"
   },
+  "instrumentation": {
+    "scheduler_overhead": {
+      "decision_count": 800,
+      "iterations": 50,
+      "max_per_decision_us": 3929.644,
+      "measurement_class": "measured_emulated_arm64",
+      "median_per_decision_us": 81.539,
+      "note": "Measured in the emulated AArch64 guest; not Raspberry Pi 5 scheduler timing.",
+      "p95_per_decision_us": 978.989,
+      "scope": "component_3_scheduler_python_control_plane",
+      "total_cpu_ms": 207.481853
+    },
+    "semantic_resource_policy": {
+      "evidence_class": "simulated",
+      "fields": [
+        "cpu_pressure",
+        "memory_pressure",
+        "io_pressure",
+        "temperature_c",
+        "power_degraded"
+      ],
+      "physical_measurement": false
+    }
+  },
   "limitations": [
-    "All hazard opportunities and semantic service times are deterministic simulations.",
-    "Wall/CPU/RSS values describe the Arm64-emulated guest process, not Raspberry Pi 5 performance.",
-    "No physical energy, thermal, throttling, or sensor-quality claim is made."
+    "All hazard opportunities, semantic service times, and thermal/power/resource-pressure inputs are deterministic simulations.",
+    "Wall/CPU/RSS values and scheduler-overhead timing describe the Arm64-emulated guest process, not Raspberry Pi 5 performance.",
+    "No physical energy, thermal, throttling, power, or sensor-quality claim is made."
   ],
   "manifest": {
     "path": "fixtures/scenarios/benchmark-open-loop.json",
-    "sha256": "1442a8eb780552fc49957f77fd71ad2e05628cf4a05ddd037856bdee63f9ff22"
+    "sha256": "7518d1c7688481451d6dc7110a16c7539ec7cc155a96acadd6d576cff514a46b"
   },
   "quality_checks": {
     "all_opportunities_processed": true,
     "all_variants_offer_same_count": true,
+    "arm64_guest_network_isolated": true,
     "model_runtime_optimization_not_worse_than_baseline": true,
     "orchestrator_deadline_misses_not_worse_than_b1": true,
     "orchestrator_not_worse_than_b1": true,
+    "runtime_distribution_identity_bound": true,
+    "runtime_known_answer_passed": true,
+    "runtime_provider_assignment_cpu_only": true,
     "same_opportunity_schedule": true,
+    "scheduler_overhead_measured_in_arm64_guest": true,
+    "semantic_resource_samples_explicitly_simulated": true,
+    "semantic_workload_metrics_present": true,
     "tier_a_earthquake_deadline_preserved_in_o1": true
   },
   "quality_guardrails_passed": true,
@@ -43,18 +139,18 @@
   "results": {
     "B0": {
       "emulator_execution": {
-        "cpu_median_ms": 1.866941,
+        "cpu_median_ms": 2.782112,
         "cpu_ms": [
-          2.430883,
-          1.866941,
-          1.518614
+          3.569836,
+          2.57401,
+          2.782112
         ],
-        "max_rss_kb": 158512,
-        "wall_median_ms": 1.888593,
+        "max_rss_kb": 204836,
+        "wall_median_ms": 2.799563,
         "wall_ms": [
-          2.684335,
-          1.888593,
-          1.532175
+          3.906337,
+          2.603276,
+          2.799563
         ]
       },
       "semantic": {
@@ -103,6 +199,9 @@
             "skipped": 0
           }
         },
+        "heavy_model_duty_cycle": 0.47619,
+        "heavy_model_invocation_count": 1,
+        "heavy_model_service_ms": 70,
         "instrumentation_config_hashes": [
           "benchmark-config-v1"
         ],
@@ -267,33 +366,38 @@
         "resource_samples": [
           {
             "cpu_pressure": 0.55,
+            "evidence_class": "simulated",
             "model_size_bytes": 0,
+            "physical_measurement": false,
             "rss_mb": 0.0,
             "sample_index": 0,
-            "source": "declared_benchmark_resource_snapshot",
+            "source": "simulated_benchmark_resource_snapshot",
             "temperature_c": 58.0
           }
         ],
         "schedule_digest": "2865c711f4cd003d4bd4a4a9a8096d40b8b017eb06150612f6ca9da14d6f2e75",
+        "scheduler_decision_count": 0,
         "skipped": 0,
-        "telemetry_policy_digest": "d99db1f6f620a34d95034d07c132529b3573ddd83049a5f17ef964d53937a435",
+        "telemetry_policy_digest": "f739509c02017ab0a9be057e682fe24749e1f7775ef581bd81dc09424cc7398b",
+        "total_queue_delay_ms": 251,
+        "total_service_ms": 147,
         "variant": "B0"
       }
     },
     "B1": {
       "emulator_execution": {
-        "cpu_median_ms": 1.504566,
+        "cpu_median_ms": 2.517173,
         "cpu_ms": [
-          1.504566,
-          1.478618,
-          2.421594
+          2.517173,
+          2.283138,
+          3.62881
         ],
-        "max_rss_kb": 158512,
-        "wall_median_ms": 1.52533,
+        "max_rss_kb": 204836,
+        "wall_median_ms": 2.551152,
         "wall_ms": [
-          1.52533,
-          1.491292,
-          2.442286
+          2.551152,
+          2.300471,
+          3.743821
         ]
       },
       "semantic": {
@@ -342,6 +446,9 @@
             "skipped": 0
           }
         },
+        "heavy_model_duty_cycle": 0.46729,
+        "heavy_model_invocation_count": 1,
+        "heavy_model_service_ms": 50,
         "instrumentation_config_hashes": [
           "benchmark-config-v1"
         ],
@@ -506,33 +613,38 @@
         "resource_samples": [
           {
             "cpu_pressure": 0.55,
+            "evidence_class": "simulated",
             "model_size_bytes": 0,
+            "physical_measurement": false,
             "rss_mb": 0.0,
             "sample_index": 0,
-            "source": "declared_benchmark_resource_snapshot",
+            "source": "simulated_benchmark_resource_snapshot",
             "temperature_c": 58.0
           }
         ],
         "schedule_digest": "2865c711f4cd003d4bd4a4a9a8096d40b8b017eb06150612f6ca9da14d6f2e75",
+        "scheduler_decision_count": 0,
         "skipped": 0,
-        "telemetry_policy_digest": "d99db1f6f620a34d95034d07c132529b3573ddd83049a5f17ef964d53937a435",
+        "telemetry_policy_digest": "f739509c02017ab0a9be057e682fe24749e1f7775ef581bd81dc09424cc7398b",
+        "total_queue_delay_ms": 179,
+        "total_service_ms": 107,
         "variant": "B1"
       }
     },
     "O1": {
       "emulator_execution": {
-        "cpu_median_ms": 5.534359,
+        "cpu_median_ms": 8.855352,
         "cpu_ms": [
-          5.65885,
-          5.534359,
-          5.151676
+          8.855352,
+          9.759959,
+          8.497962
         ],
-        "max_rss_kb": 158512,
-        "wall_median_ms": 5.550677,
+        "max_rss_kb": 204836,
+        "wall_median_ms": 8.891839,
         "wall_ms": [
-          5.687816,
-          5.550677,
-          5.171505
+          8.891839,
+          9.785502,
+          8.548698
         ]
       },
       "semantic": {
@@ -581,6 +693,9 @@
             "skipped": 0
           }
         },
+        "heavy_model_duty_cycle": 0.46729,
+        "heavy_model_invocation_count": 1,
+        "heavy_model_service_ms": 50,
         "instrumentation_config_hashes": [
           "benchmark-config-v1"
         ],
@@ -745,16 +860,21 @@
         "resource_samples": [
           {
             "cpu_pressure": 0.55,
+            "evidence_class": "simulated",
             "model_size_bytes": 0,
+            "physical_measurement": false,
             "rss_mb": 0.0,
             "sample_index": 0,
-            "source": "declared_benchmark_resource_snapshot",
+            "source": "simulated_benchmark_resource_snapshot",
             "temperature_c": 58.0
           }
         ],
         "schedule_digest": "2865c711f4cd003d4bd4a4a9a8096d40b8b017eb06150612f6ca9da14d6f2e75",
+        "scheduler_decision_count": 16,
         "skipped": 0,
-        "telemetry_policy_digest": "d99db1f6f620a34d95034d07c132529b3573ddd83049a5f17ef964d53937a435",
+        "telemetry_policy_digest": "f739509c02017ab0a9be057e682fe24749e1f7775ef581bd81dc09424cc7398b",
+        "total_queue_delay_ms": 133,
+        "total_service_ms": 107,
         "variant": "O1"
       }
     }
