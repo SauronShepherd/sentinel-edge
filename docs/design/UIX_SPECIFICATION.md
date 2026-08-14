@@ -1,10 +1,10 @@
 # Sentinel Edge — UIX Specification
 
-**Document type:** Product UI / UX design system and screen specification  
-**Product:** Sentinel Edge  
-**Reference:** 10 generated desktop application mockups in this conversation  
-**Status:** Recommended design baseline  
-**Primary UIX direction:** Clean Product Workspace + Object-Centric Workspace + Split-View Productivity  
+**Document type:** Product UI / UX design system and screen specification
+**Product:** Sentinel Edge
+**Reference:** 10 generated desktop application mockups in this conversation
+**Status:** Recommended design baseline
+**Primary UIX direction:** Clean Product Workspace + Object-Centric Workspace + Split-View Productivity
 **Target:** Enterprise edge-security, infrastructure monitoring, incident response, and operations teams
 
 > **Important implementation note:** The mockups are generated images, not screenshots of a coded application. Therefore the typography, spacing, colors, and CSS below are a **reconstructed implementation specification** intended to reproduce the visual language consistently. The CSS is not literal source code extracted from the images.
@@ -118,8 +118,8 @@ Use it for:
 - Firmware rollout details
 - Workflow step configuration
 
-Desktop: persistent or sticky.  
-Tablet: can move below primary content.  
+Desktop: persistent or sticky.
+Tablet: can move below primary content.
 Mobile: present as full-height drawer/sheet.
 
 ---
