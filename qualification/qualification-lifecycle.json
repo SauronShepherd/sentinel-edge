@@ -1,0 +1,234 @@
+{
+  "claim_decision": {
+    "allowed": false,
+    "capability_id": "sentinel-edge-target-runtime",
+    "decision_digest": "4d89a50ebcc53be9e6d937689dcca9679183b83144b5531f3395447d945cc115",
+    "evidence_ceiling": "tested",
+    "failures": [
+      "claim_exceeds_evidence_state"
+    ],
+    "qualification_vocabulary": [
+      "specified",
+      "implemented",
+      "tested",
+      "target_qualified",
+      "release_admitted",
+      "field_qualified",
+      "deferred",
+      "blocked",
+      "failed",
+      "expired"
+    ],
+    "requested_state": "target_qualified",
+    "schema": "sentinel-edge-qualification-claim-decision/1.0",
+    "statement": "Target runtime qualified"
+  },
+  "evaluations": [
+    {
+      "claim_allowed": false,
+      "declared_state": "tested",
+      "domain": "platform",
+      "effective_state": "tested",
+      "evaluated_at": "2026-08-03T09:05:00+00:00",
+      "evidence_sha256": "1c669577544d508a40c0ec87959d1bf1d3edeebbb2d65eb3e84e1eba10d9c7ec",
+      "failures": [],
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-platform",
+      "report_digest": "49fd1bec28c02df4a2535e7c38d132b4489df4ba4270cc5071f6057cbe3b1f31",
+      "schema": "sentinel-edge-qualification-evidence-evaluation/1.0",
+      "subject_id": "development-platform",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00+00:00",
+      "valid_until": "2026-09-02T09:00:00+00:00"
+    },
+    {
+      "claim_allowed": false,
+      "declared_state": "tested",
+      "domain": "model",
+      "effective_state": "tested",
+      "evaluated_at": "2026-08-03T09:05:00+00:00",
+      "evidence_sha256": "63e9bb1dc46feb95c373d52096ce6e2d5ed49078640c1a58e5159a87099cd67e",
+      "failures": [],
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-model",
+      "report_digest": "c8621a146b54286c6d961590eab461c5bcc6cca22810fb7c5c356f821b00988f",
+      "schema": "sentinel-edge-qualification-evidence-evaluation/1.0",
+      "subject_id": "development-model",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00+00:00",
+      "valid_until": "2026-09-02T09:00:00+00:00"
+    },
+    {
+      "claim_allowed": false,
+      "declared_state": "tested",
+      "domain": "calibration",
+      "effective_state": "tested",
+      "evaluated_at": "2026-08-03T09:05:00+00:00",
+      "evidence_sha256": "6d70e1c4ff3a5bc2a91e70cc4f20affa659f670bf32324439f3a157439f2f775",
+      "failures": [],
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-calibration",
+      "report_digest": "2ee60cda35d2ef50aa32adb3d7d1a96a61e00d03d96b481b0daa9334a81886f1",
+      "schema": "sentinel-edge-qualification-evidence-evaluation/1.0",
+      "subject_id": "development-calibration",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00+00:00",
+      "valid_until": "2026-09-02T09:00:00+00:00"
+    },
+    {
+      "claim_allowed": false,
+      "declared_state": "tested",
+      "domain": "security",
+      "effective_state": "tested",
+      "evaluated_at": "2026-08-03T09:05:00+00:00",
+      "evidence_sha256": "4c9409e154f0e1c878fd80628dd4d50c5ff6f75085b129449d940ccfab92b763",
+      "failures": [],
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-security",
+      "report_digest": "58bed9971ae782bec65a0a7121ccc06aabcb5117e310722f247d5ec07a19de81",
+      "schema": "sentinel-edge-qualification-evidence-evaluation/1.0",
+      "subject_id": "development-security",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00+00:00",
+      "valid_until": "2026-09-02T09:00:00+00:00"
+    },
+    {
+      "claim_allowed": false,
+      "declared_state": "tested",
+      "domain": "source",
+      "effective_state": "tested",
+      "evaluated_at": "2026-08-03T09:05:00+00:00",
+      "evidence_sha256": "91c969b91849eacdb332470cb633379383935ab627d51dc30fff961f509fb12b",
+      "failures": [],
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-source",
+      "report_digest": "0f537619c173e07e2bedf448139b286d5e9185aecd0a63d63e3b7cb3e824117d",
+      "schema": "sentinel-edge-qualification-evidence-evaluation/1.0",
+      "subject_id": "development-source",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00+00:00",
+      "valid_until": "2026-09-02T09:00:00+00:00"
+    }
+  ],
+  "expired_evidence_blocks_claims": true,
+  "reconstructed_evidence_cannot_invent_qualification": true,
+  "release_eligible": false,
+  "report_digest": "64940099c2af5d5a919d23b53eb0b618e8c8e1174394c69101597063db936f2a",
+  "schema": "sentinel-edge-qualification-lifecycle-report/1.0",
+  "target_claim_allowed": false,
+  "vocabulary": {
+    "claim_ceiling_enforced": true,
+    "report_digest": "2e14d91622fecd122dd8dbb3998c4b50e934631383075e55b7249a47e689e084",
+    "schema": "sentinel-edge-qualification-vocabulary/1.0",
+    "states": [
+      "specified",
+      "implemented",
+      "tested",
+      "target_qualified",
+      "release_admitted",
+      "field_qualified",
+      "deferred",
+      "blocked",
+      "failed",
+      "expired"
+    ],
+    "unknown_values_rejected": true
+  },
+  "windows": [
+    {
+      "domain": "platform",
+      "evidence_sha256": "1c669577544d508a40c0ec87959d1bf1d3edeebbb2d65eb3e84e1eba10d9c7ec",
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-platform",
+      "reconstructed_missing_fields": [],
+      "schema": "sentinel-edge-qualification-evidence-window/1.0",
+      "state": "tested",
+      "subject_id": "development-platform",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00Z",
+      "valid_until": "2026-09-02T09:00:00Z"
+    },
+    {
+      "domain": "model",
+      "evidence_sha256": "63e9bb1dc46feb95c373d52096ce6e2d5ed49078640c1a58e5159a87099cd67e",
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-model",
+      "reconstructed_missing_fields": [],
+      "schema": "sentinel-edge-qualification-evidence-window/1.0",
+      "state": "tested",
+      "subject_id": "development-model",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00Z",
+      "valid_until": "2026-09-02T09:00:00Z"
+    },
+    {
+      "domain": "calibration",
+      "evidence_sha256": "6d70e1c4ff3a5bc2a91e70cc4f20affa659f670bf32324439f3a157439f2f775",
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-calibration",
+      "reconstructed_missing_fields": [],
+      "schema": "sentinel-edge-qualification-evidence-window/1.0",
+      "state": "tested",
+      "subject_id": "development-calibration",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00Z",
+      "valid_until": "2026-09-02T09:00:00Z"
+    },
+    {
+      "domain": "security",
+      "evidence_sha256": "4c9409e154f0e1c878fd80628dd4d50c5ff6f75085b129449d940ccfab92b763",
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-security",
+      "reconstructed_missing_fields": [],
+      "schema": "sentinel-edge-qualification-evidence-window/1.0",
+      "state": "tested",
+      "subject_id": "development-security",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00Z",
+      "valid_until": "2026-09-02T09:00:00Z"
+    },
+    {
+      "domain": "source",
+      "evidence_sha256": "91c969b91849eacdb332470cb633379383935ab627d51dc30fff961f509fb12b",
+      "limitations": [
+        "development_fixture_not_target_qualification"
+      ],
+      "provenance": "fixture",
+      "qualification_id": "v0.21.0-source",
+      "reconstructed_missing_fields": [],
+      "schema": "sentinel-edge-qualification-evidence-window/1.0",
+      "state": "tested",
+      "subject_id": "development-source",
+      "target_binding_sha256": null,
+      "valid_from": "2026-08-03T09:00:00Z",
+      "valid_until": "2026-09-02T09:00:00Z"
+    }
+  ]
+}

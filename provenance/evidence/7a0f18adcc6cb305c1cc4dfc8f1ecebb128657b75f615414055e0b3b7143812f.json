@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "50e9f8015276afb865100a5d95ad5db7f0146b4f6571afa4fed8a49891d555e2"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collaboration_api.py tests/test_client_accessibility.py tests/test_client_security.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 10.5,
+  "environment": {
+    "name": "local deterministic API/UI fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "7a0f18adcc6cb305c1cc4dfc8f1ecebb128657b75f615414055e0b3b7143812f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "50e9f8015276afb865100a5d95ad5db7f0146b4f6571afa4fed8a49891d555e2"
+    },
+    {
+      "path": "tests\\test_collaboration_api.py",
+      "sha256": "b8ce319d97cff943575b4d30c14be4b3ebccd5d138ba362f0e6d1254cab85275"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:03:25.853185Z",
+  "result": "passed",
+  "revision": "collaboration-consent-ui-v1-20260813",
+  "schema_version": 1
+}

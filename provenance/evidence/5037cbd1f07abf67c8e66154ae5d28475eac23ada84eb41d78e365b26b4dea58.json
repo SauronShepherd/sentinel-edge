@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "qualification\\g0-gate-status.json",
+      "sha256": "f4d181b70301f66f0109fa78492a33ee7c86b80c8519f15280f969246ed1c2a0"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest tests/test_model_package_signal_chain_v020.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 19,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 16.0,
+  "environment": {
+    "name": "windows-development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5037cbd1f07abf67c8e66154ae5d28475eac23ada84eb41d78e365b26b4dea58",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\runtime\\model_packages.py",
+      "sha256": "5282eb80eb6f999c86001d8ae2e657ac232cf4305aa0d2d20a4d79c57e23e8ff"
+    },
+    {
+      "path": "tests\\test_model_package_signal_chain_v020.py",
+      "sha256": "15aa05c378463fd567f7bad311d7d130e73092779931d00a903e8f1373a2a31f"
+    }
+  ],
+  "recorded_at": "2026-08-12T16:38:08.773078Z",
+  "result": "passed",
+  "revision": "onnx-worker-policy-disclosure",
+  "schema_version": 1
+}

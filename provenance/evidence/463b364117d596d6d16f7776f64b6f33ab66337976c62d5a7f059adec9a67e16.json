@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_trust_report.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "463b364117d596d6d16f7776f64b6f33ab66337976c62d5a7f059adec9a67e16",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\release\\trust.py",
+      "sha256": "2c60f6c249abc81ebe61bb5473aec32029eb6008bbfcb7850cef7ff5fc9838cd"
+    },
+    {
+      "path": "tests\\test_trust_report.py",
+      "sha256": "d20dcff177fa13882262f99c5cd325a38f94ef0d09de244dfa53a4253bb9a084"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:31:08.061464Z",
+  "result": "passed",
+  "revision": "REQ-TRU-001 explicit hash integrity versus signed authenticity",
+  "schema_version": 1
+}

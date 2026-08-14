@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_physical_sources.py tests/test_qualification.py tests/test_camera_model_source_qualification.py tests/test_collector.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 22,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 13.8,
+  "environment": {
+    "name": "Windows development host; physical-source qualification unavailable",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "181628f3418b2f006e26c73f40b59adfe75cc34d538e4e7a24beeb3052be61a4",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collector\\physical.py",
+      "sha256": "3868f4b272710c119f379a61e6e4af1e9017a588804bf9b3f1da9629fac33a1d"
+    },
+    {
+      "path": "src\\sentinel_edge\\collector\\service.py",
+      "sha256": "79dd54199d660e2b6e21262a1fca423a88d50856587c42af6de1cc56fea348d1"
+    },
+    {
+      "path": "tests\\test_physical_sources.py",
+      "sha256": "6748544ff495c8d627108043810a1c2c3332c0ea96b1da423037e6608babdfc6"
+    }
+  ],
+  "recorded_at": "2026-08-12T16:42:46.202495Z",
+  "result": "passed",
+  "revision": "working-tree-physical-adapters",
+  "schema_version": 1
+}

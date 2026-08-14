@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_derived_spatial_result.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "6298978160431c7052aab87c45e65f97fc83c933e5083761f8b3b36659ba8922",
+  "inputs": [
+    {
+      "path": "tests\\test_derived_spatial_result.py",
+      "sha256": "e5776733e9c1ac3f2c11d0f57f2263bcf7e76096192804d04914b3593428ed67"
+    },
+    {
+      "path": "src\\sentinel_edge\\geospatial\\derived_result.py",
+      "sha256": "ea0fedccca8ba0340b49767da47295a95b6ef106c79f5b03eb667dc8c59a4829"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:13:23.111084Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-grp012",
+  "schema_version": 1
+}

@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "architecture\\owned-namespaces.yaml",
+      "sha256": "a6afc78175bb82514b51d1d7879157dc0f8a2bac9d391d4edfbba855d7272bd0"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\component\\\\test_collector_core.py --tb=short; .venv\\\\Scripts\\\\python.exe scripts\\\\check_architecture_boundaries.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 5,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.9,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "340ca0154d024e23b3cba28e4d5e28e3c7c13a455f4c234872090ceaec299462",
+  "inputs": [
+    {
+      "path": "modules\\streaming-source-collector\\src\\sentinel_streaming_source_collector\\application\\privacy_minimization.py",
+      "sha256": "dc1a2cfcaeb6ca454d3b5f38797321b4767090d7a73add0c7225f6fa78db7525"
+    },
+    {
+      "path": "tests\\component\\test_collector_core.py",
+      "sha256": "64603047e67b434f609e40d6cf8be24a0d4c3186dbdbfeec2c0b11e211e653a7"
+    }
+  ],
+  "recorded_at": "2026-08-12T14:23:35.925361Z",
+  "result": "passed",
+  "revision": "REQ-PRI-001-minimization",
+  "schema_version": 1
+}

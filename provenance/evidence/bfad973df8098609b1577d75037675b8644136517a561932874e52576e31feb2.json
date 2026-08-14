@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_collector.py",
+      "sha256": "d5a21f9a89bae04340dbbaf324cf6c6c67a811c5dbff7c557fec40cf2d896fec"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_collector.py tests/test_recovery.py tests/test_source_health_lifecycle.py tests/test_android_sensor_bridge.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 11,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 21.0,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "bfad973df8098609b1577d75037675b8644136517a561932874e52576e31feb2",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collector\\service.py",
+      "sha256": "f9deec79b763e6376c8823a8555711cc4cdc90d4e135444a7fddacdf1968d294"
+    },
+    {
+      "path": "tests\\test_collector.py",
+      "sha256": "d5a21f9a89bae04340dbbaf324cf6c6c67a811c5dbff7c557fec40cf2d896fec"
+    },
+    {
+      "path": "tests\\test_recovery.py",
+      "sha256": "802da187b3b23f3eb7a893ebc8f2aec1c11cdf4d57953dd11e2525b86eb0b87b"
+    },
+    {
+      "path": "tests\\test_source_health_lifecycle.py",
+      "sha256": "2da2a93674186ecb00688906fb535fcf00a623038166f6634e1545eb2e9387a8"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:25:36.301064Z",
+  "result": "passed",
+  "revision": "adapter-bounded-lateness-REQ-TIM-001",
+  "schema_version": 1
+}

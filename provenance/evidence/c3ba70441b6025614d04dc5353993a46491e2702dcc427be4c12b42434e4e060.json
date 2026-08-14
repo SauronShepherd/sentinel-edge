@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_energy_window.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "c3ba70441b6025614d04dc5353993a46491e2702dcc427be4c12b42434e4e060",
+  "inputs": [
+    {
+      "path": "tests\\test_energy_window.py",
+      "sha256": "880d5837856321091199ba0e57df6ed83e3eb5c55d6ccebc241cfc0b800b39cd"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\energy_window.py",
+      "sha256": "b70cfeaa358e7e799509d7553c04e1da660ba456b47e1397dd2811e554910cde"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:40:21.924759Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-eng003",
+  "schema_version": 1
+}

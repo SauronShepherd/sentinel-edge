@@ -10,10 +10,9 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def test_pyproject_and_lock_are_consistent() -> None:
-    # The managed Windows image exposes uv as a WinGet shim that cannot be
-    # spawned by child processes.  The locked development environment already
-    # contains the same pinned uv release, so invoke it through this interpreter.
-    result = subprocess.run([sys.executable, "-m", "uv", "lock", "--check"], cwd=ROOT, text=True, capture_output=True)
+    # This gate is intentionally offline. Networked lock refresh is a separate
+    # explicit operation and must not be required for governance validation.
+    result = subprocess.run([sys.executable, "scripts/check_lock_metadata.py"], cwd=ROOT, text=True, capture_output=True)
     assert result.returncode == 0, result.stdout + result.stderr
 
 

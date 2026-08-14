@@ -1,0 +1,19 @@
+{
+  "activation_allowed": true,
+  "failures": [],
+  "graph_sha256": "77548a15c78d2bda62f8f293a661ca9f3086dc7a25e0c5675b46d8a7e6e2c78f",
+  "limitations": [
+    "The registry matcher proves only the exact runtime, provider, compiler, architecture, operator, attribute and graph scopes represented in the context.",
+    "Target qualification still requires exact target runtime introspection and released graph inventory evidence."
+  ],
+  "matched_issues": [],
+  "profile_id": "seismic-onnx-development-v1",
+  "registry_expires_at": "2026-09-02T08:05:00+00:00",
+  "registry_id": "sentinel-edge-runtime-known-issues",
+  "registry_reviewed_at": "2026-08-03T08:05:00+00:00",
+  "registry_version": 1,
+  "report_digest": "c599f33c626162b49ac963b62630c31e58343ebbebbfdb87fa360dcf13ec6a8c",
+  "schema": "sentinel-edge-runtime-known-issue-evaluation/1.0",
+  "target_qualified": false,
+  "used_exceptions": []
+}

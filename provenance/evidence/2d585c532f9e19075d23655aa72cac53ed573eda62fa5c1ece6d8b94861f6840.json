@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_provenance_and_advisories.py -k advisory",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "2d585c532f9e19075d23655aa72cac53ed573eda62fa5c1ece6d8b94861f6840",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\release\\advisories.py",
+      "sha256": "3393237d9a0b76f5ea2a73aa95ec2b1025c565cf3cafa3712fdd146728dc6551"
+    },
+    {
+      "path": "tests\\test_provenance_and_advisories.py",
+      "sha256": "251681e16d0f31c10e74ecde64dba6911f4681d85e21ecf49ea517d22137eb51"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:43:11.008762Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

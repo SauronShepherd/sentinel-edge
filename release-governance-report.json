@@ -1,0 +1,39 @@
+{
+  "credential_failures": [],
+  "credential_profile": {
+    "development_bearer_tokens_present": false,
+    "evidence": [
+      "tests/test_benchmark_governance_v018.py",
+      "tests/test_release_closure_v017.py"
+    ],
+    "private_key_storage": "external_offline_key",
+    "purpose_key_ids": {
+      "audit": "audit-key-v1",
+      "boot": "boot-key-unconfigured",
+      "release": "71610844acc708848c40986dfdbecc83",
+      "update": "update-key-v1"
+    },
+    "rotation_tested": true,
+    "schema": "sentinel-edge-release-credential-profile/1.0"
+  },
+  "failures": [
+    "required_independent_reviews_missing"
+  ],
+  "independent_reviews_complete": false,
+  "limitations": [
+    "Reviewer independence is checked against declared builder and signer identities, not employment or financial relationships outside the packet.",
+    "External key storage is represented by an operational profile; hardware security properties require deployment evidence."
+  ],
+  "release_credentials_proven": true,
+  "release_eligible": false,
+  "report_digest": "f9073fadd8d7ed2c7e77e731a235484172dc64053f4aaaa3fc10cbfdae4850cf",
+  "review_packets": [],
+  "review_results": [],
+  "review_types_missing": [
+    "accessibility",
+    "privacy",
+    "security"
+  ],
+  "review_types_passed": [],
+  "schema": "sentinel-edge-release-governance-report/1.0"
+}

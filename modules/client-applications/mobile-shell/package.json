@@ -1,1 +1,1 @@
-{"name":"@sentinel/mobile-shell","version":"0.1.0","private":true,"type":"module","scripts":{"build":"tsc --noEmit --strict --target ES2022 --module NodeNext --moduleResolution NodeNext src/test-harness.ts"}}
+{"name":"@sentinel/mobile-shell","version":"0.1.0","private":true,"type":"module","scripts":{"build":"tsc --noEmit --strict --target ES2022 --module NodeNext --moduleResolution NodeNext --allowImportingTsExtensions src/test-harness.ts"}}

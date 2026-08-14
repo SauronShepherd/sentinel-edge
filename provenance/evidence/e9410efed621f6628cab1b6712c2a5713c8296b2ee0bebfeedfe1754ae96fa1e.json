@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_exposure_separation.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "e9410efed621f6628cab1b6712c2a5713c8296b2ee0bebfeedfe1754ae96fa1e",
+  "inputs": [
+    {
+      "path": "tests\\test_exposure_separation.py",
+      "sha256": "5d3ba50c2e91427465c5b4b0327d3255cb344248dd6e550c2c3240e0a4fe2b4b"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\exposure.py",
+      "sha256": "864680d7672bfb76245179ecac3ff1a42dcf4bc5dd2248912f265b140361ed02"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:15:30.376980Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-imp005",
+  "schema_version": 1
+}

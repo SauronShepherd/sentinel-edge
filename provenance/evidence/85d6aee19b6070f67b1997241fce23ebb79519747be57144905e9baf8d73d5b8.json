@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_threshold_abstention.py tests/test_hazards.py tests/test_flood_landslide_contracts.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 24,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 13.9,
+  "environment": {
+    "name": "Windows development host; deterministic hazard threshold tests",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "85d6aee19b6070f67b1997241fce23ebb79519747be57144905e9baf8d73d5b8",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\thresholds.py",
+      "sha256": "b3eab3cd6d6e1a81317e6dd6890c37eccd74879aa26221fc5299596b57137e3a"
+    },
+    {
+      "path": "src\\sentinel_edge\\hazards\\wildfire.py",
+      "sha256": "a0d8d69b44ff41996bdd41d2fc50d43cb17d187c6572acca3264482578223d57"
+    },
+    {
+      "path": "src\\sentinel_edge\\hazards\\earthquake.py",
+      "sha256": "dcf95f08a6aff9054ca5a3ed0ef0544687a6a939567d9adeeabcf3d038344d08"
+    },
+    {
+      "path": "tests\\test_threshold_abstention.py",
+      "sha256": "284e875d0ef76efcd16f324fd79f97f94ef4153b839e686894ef1e7f758017d0"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:02:13.477831Z",
+  "result": "passed",
+  "revision": "working-tree-threshold-abstention",
+  "schema_version": 1
+}

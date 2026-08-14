@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_jrc_flood_maps.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3d42e5085a948ec10411c4cedc3dcea878d69563a20090849fe9b2f2c0652b20",
+  "inputs": [
+    {
+      "path": "tests\\test_jrc_flood_maps.py",
+      "sha256": "edf4212f6cc30b34cea3819651499baa6285fe16ab55459fe3dd527c57040de5"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\jrc_flood_maps.py",
+      "sha256": "8cb8da688612efb3afe73709419ea747ebf2247d1dc09ec3f150c8ce45dcd451"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:10:50.051836Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-src002",
+  "schema_version": 1
+}

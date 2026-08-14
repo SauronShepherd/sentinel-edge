@@ -1,0 +1,45 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_artifact_reference_contract.py tests/test_artifact_read_authorization.py tests/test_artifact_governance.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 12,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "596eef935f38faa48ef8460d1334cb1ff747173e59ce67c220bcde273096654f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\storage\\artifacts.py",
+      "sha256": "6ae3302e749e0f5d2f3f9500552445be91806ec974504c65e8db994f173a4ca4"
+    },
+    {
+      "path": "src\\sentinel_edge\\storage\\artifact_governance.py",
+      "sha256": "fa7b56384bed831259ec3945ba95496e969e413d9f1812d0fc3f2f6eb509484c"
+    },
+    {
+      "path": "tests\\test_artifact_reference_contract.py",
+      "sha256": "c1421264f76148b8cb72e454cc4ed0c98a95be4b93e334b12ac837324ce3d0e9"
+    },
+    {
+      "path": "tests\\test_artifact_read_authorization.py",
+      "sha256": "c1736f1bb80a4cd5c9fae4973013d6a676fd376628a94ff40da643d680d671a7"
+    },
+    {
+      "path": "tests\\test_artifact_governance.py",
+      "sha256": "c95dd7803613a81c75b1a394007e3880764a055a409dd1dcab2d2cf6c08704f1"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:56:43.630105Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

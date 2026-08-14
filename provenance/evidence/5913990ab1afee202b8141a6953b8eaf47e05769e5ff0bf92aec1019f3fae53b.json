@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_required_grids.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5913990ab1afee202b8141a6953b8eaf47e05769e5ff0bf92aec1019f3fae53b",
+  "inputs": [
+    {
+      "path": "tests\\test_required_grids.py",
+      "sha256": "e9cf2f1e29d69bcb6d68e158c78f523d75bf23673b2b36fbe73cd1d587dda1a7"
+    },
+    {
+      "path": "src\\sentinel_edge\\geospatial\\transform_declarations.py",
+      "sha256": "8cd49b9f8a2c3281bc0d6db80bf159472c3c78aa27c8d6e555faffee640a80fd"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:11:23.190416Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-grp010",
+  "schema_version": 1
+}

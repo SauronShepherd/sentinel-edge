@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_audit_revocation_and_connector_lifecycle.py -k signed_audit_checkpoint_detects",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "40fcfb03e86246d6f591083bd4ad62234b0e4818cf024a2c1ac981000e9a7e28",
+  "inputs": [
+    {
+      "path": "tests\\test_audit_revocation_and_connector_lifecycle.py",
+      "sha256": "5106957ade4544ceb938a99b44398a9653fc317cc06ce40a8acad259702d831e"
+    },
+    {
+      "path": "src\\sentinel_edge\\security\\key_lifecycle.py",
+      "sha256": "52f99c4a07d83a6e2e7907666f142bb9c775f2bed50cc4220fdac30bef2f639a"
+    },
+    {
+      "path": "src\\sentinel_edge\\audit\\checkpoints.py",
+      "sha256": "dd6baf37e4a624ef46c7b15797c127f2907c7bbf12c5010aba83a01ea5cf8f31"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:18:59.851684Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-akc005",
+  "schema_version": 1
+}

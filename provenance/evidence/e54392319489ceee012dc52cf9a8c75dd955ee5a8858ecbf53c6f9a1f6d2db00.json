@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_artifacts_and_claims.py tests/test_artifact_governance.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "e54392319489ceee012dc52cf9a8c75dd955ee5a8858ecbf53c6f9a1f6d2db00",
+  "inputs": [
+    {
+      "path": "tests\\test_artifacts_and_claims.py",
+      "sha256": "43cbcd541b17d079f0bb9291a3ddba66b817cc7688eb6eb204341f1d71373096"
+    },
+    {
+      "path": "tests\\test_artifact_governance.py",
+      "sha256": "c95dd7803613a81c75b1a394007e3880764a055a409dd1dcab2d2cf6c08704f1"
+    },
+    {
+      "path": "src\\sentinel_edge\\storage\\artifacts.py",
+      "sha256": "6ae3302e749e0f5d2f3f9500552445be91806ec974504c65e8db994f173a4ca4"
+    },
+    {
+      "path": "src\\sentinel_edge\\storage\\artifact_governance.py",
+      "sha256": "fa7b56384bed831259ec3945ba95496e969e413d9f1812d0fc3f2f6eb509484c"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:01:25.120992Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-abx003",
+  "schema_version": 1
+}

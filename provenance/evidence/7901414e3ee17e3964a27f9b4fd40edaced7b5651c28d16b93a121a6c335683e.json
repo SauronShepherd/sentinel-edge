@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_openhydronet_research.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "7901414e3ee17e3964a27f9b4fd40edaced7b5651c28d16b93a121a6c335683e",
+  "inputs": [
+    {
+      "path": "tests\\test_openhydronet_research.py",
+      "sha256": "ddfd5237575ec0ca571780a280fe4e45c4c2def92d2c9f42d5a029472f143f18"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\research_assets.py",
+      "sha256": "a41447ffbb6f586197f4d1182e16a74cee72b800520cd4d9ab449a5cf93f122d"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:20:35.627638Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-sv005",
+  "schema_version": 1
+}

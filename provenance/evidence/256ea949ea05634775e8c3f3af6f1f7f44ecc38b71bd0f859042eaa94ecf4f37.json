@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_source_quality.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "256ea949ea05634775e8c3f3af6f1f7f44ecc38b71bd0f859042eaa94ecf4f37",
+  "inputs": [
+    {
+      "path": "tests\\test_source_quality.py",
+      "sha256": "790e9100585b205ee134fcc9edb75cbe75d88ebf6facfe2930ca9a2a8a7f6ad1"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:16:40.999155Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

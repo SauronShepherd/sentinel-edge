@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "expected_decision": "negative",
+      "expected_score": 0.04742587317756678,
+      "features": {
+        "haze_ratio": 0.1,
+        "smoke_texture": 0.1,
+        "upward_motion": 0.1
+      },
+      "id": "clear"
+    },
+    {
+      "expected_decision": "positive",
+      "expected_score": 0.9878715650157257,
+      "features": {
+        "haze_ratio": 0.8,
+        "smoke_texture": 0.9,
+        "upward_motion": 0.7
+      },
+      "id": "smoke"
+    }
+  ],
+  "schema": "sentinel-known-answer/1.0"
+}

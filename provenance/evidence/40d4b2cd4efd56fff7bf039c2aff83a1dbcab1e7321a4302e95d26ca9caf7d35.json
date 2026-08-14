@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_post_event_corroboration.py",
+      "sha256": "f0c8555527acc8111c95a717002777692797e062e6e4844a85dd154a29248307"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_post_event_corroboration.py tests/test_multi_node_correlation.py tests/test_earthquake_hard_negatives.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.5,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "40d4b2cd4efd56fff7bf039c2aff83a1dbcab1e7321a4302e95d26ca9caf7d35",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\post_event.py",
+      "sha256": "cb62269503261f96bd8902178f444ced42fbc9027e6e328cb46bc3f298c7f727"
+    },
+    {
+      "path": "tests\\test_post_event_corroboration.py",
+      "sha256": "f0c8555527acc8111c95a717002777692797e062e6e4844a85dd154a29248307"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:46:11.246526Z",
+  "result": "passed",
+  "revision": "post-event-ign-usgs-corroboration-REQ-EQ-007",
+  "schema_version": 1
+}

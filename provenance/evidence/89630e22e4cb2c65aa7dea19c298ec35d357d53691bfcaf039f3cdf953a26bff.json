@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_admin_bootstrap.py tests/test_audit_revocation_and_connector_lifecycle.py tests/test_privacy_backup_and_exports.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 20,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 27.1,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "89630e22e4cb2c65aa7dea19c298ec35d357d53691bfcaf039f3cdf953a26bff",
+  "inputs": [
+    {
+      "path": "tests\\test_admin_bootstrap.py",
+      "sha256": "9a33f0b1669386753e0ed36ed697f60661b17232db4df60d8ce752f21cf4904f"
+    },
+    {
+      "path": "tests\\test_audit_revocation_and_connector_lifecycle.py",
+      "sha256": "5106957ade4544ceb938a99b44398a9653fc317cc06ce40a8acad259702d831e"
+    },
+    {
+      "path": "tests\\test_privacy_backup_and_exports.py",
+      "sha256": "c1bfa9447440916a645973c28419a88558fbc3c126f46330eb8dd7d125ccab46"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:51:14.493456Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

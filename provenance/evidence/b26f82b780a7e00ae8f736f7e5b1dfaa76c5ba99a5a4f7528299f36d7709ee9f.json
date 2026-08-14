@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_claim_lineage.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.6,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b26f82b780a7e00ae8f736f7e5b1dfaa76c5ba99a5a4f7528299f36d7709ee9f",
+  "inputs": [
+    {
+      "path": "tests\\test_claim_lineage.py",
+      "sha256": "e8eb07eb0fca0a276222f4b77ad71049e0b4fe14e06b47481bc1e9a43ea69cdd"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:21:25.711963Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

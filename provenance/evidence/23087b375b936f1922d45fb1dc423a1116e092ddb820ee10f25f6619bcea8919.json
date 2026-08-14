@@ -1,0 +1,9 @@
+{
+  "receipt_id": "23087b375b936f1922d45fb1dc423a1116e092ddb820ee10f25f6619bcea8919",
+  "requirement_ids": ["REQ-TIM-002"],
+  "changed_paths": ["src/sentinel_edge/incidents/engine.py", "tests/test_incidents.py", "tests/test_incident_identity.py", "tests/test_incident_commands_and_relations.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_incidents.py tests/test_incident_identity.py tests/test_incident_commands_and_relations.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

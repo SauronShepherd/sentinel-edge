@@ -1,0 +1,12 @@
+{
+  "architecture": "x86_64",
+  "compiler": "python-3.13",
+  "execution_provider": "CPUExecutionProvider",
+  "fallback_observed": false,
+  "provider_assignment_proven": true,
+  "runtime_name": "onnxruntime",
+  "runtime_package_sha256": "b7e9d8d9dc105b0240eb086809b1b1d6b8d2b0495ce37bc6b84cd3d29b4c2bc2",
+  "runtime_version": "development-contract",
+  "target_host_qualified": false,
+  "target_runtime_measured": false
+}

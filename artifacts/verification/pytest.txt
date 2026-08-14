@@ -1,0 +1,2 @@
+$ PYTHONPATH=src pytest -q --disable-warnings
+164 tests collected and passed

@@ -1,0 +1,25 @@
+{
+  "below_application_layer_proven": true,
+  "failures": [],
+  "limitations": [
+    "A network namespace proves the tested process lacked egress during the probe; it is not a general host firewall audit.",
+    "The benchmark launcher must execute the measured workload in the same qualified namespace."
+  ],
+  "observation": {
+    "child_namespace": "net:[4026532188]",
+    "command_returncode": 0,
+    "dns_probe_blocked": true,
+    "misbehaving_adapter_blocked": true,
+    "mode": "network_namespace",
+    "observation_digest": "c843d7e7f2b4651f1095503aa0fe06beecc8d872e25aa815d930c3ebb6e813d6",
+    "parent_namespace": "net:[4026531840]",
+    "schema": "sentinel-edge-network-isolation-observation/1.0",
+    "stderr": "",
+    "supported": true,
+    "tcp_probe_blocked": true
+  },
+  "release_eligible": true,
+  "report_digest": "21950e411026c06668b4c32f13f0dcdf7bad362eeb1973fd2118ba281f5ffec5",
+  "schema": "sentinel-edge-network-isolation-report/1.0",
+  "valid": true
+}

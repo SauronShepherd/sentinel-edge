@@ -1,0 +1,13 @@
+{
+  "reason_codes": [
+    "idle_noise_envelope_passed"
+  ],
+  "sample_count": 1,
+  "schema": "sentinel-edge-idle-noise-envelope/1.0",
+  "thresholds": {
+    "max_cpu_psi_avg10": 0.1,
+    "max_dirty_kb": 1024.0,
+    "max_load1": 1.0
+  },
+  "valid": true
+}

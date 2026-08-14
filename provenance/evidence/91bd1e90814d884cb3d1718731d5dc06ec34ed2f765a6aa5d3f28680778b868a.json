@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_firms.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "91bd1e90814d884cb3d1718731d5dc06ec34ed2f765a6aa5d3f28680778b868a",
+  "inputs": [
+    {
+      "path": "tests\\test_firms.py",
+      "sha256": "5c7ae46e30f2df19acaa95bb7f4a0190abd7249b03fa21bd47369c7c5a3a2a97"
+    },
+    {
+      "path": "src\\sentinel_edge\\integrations\\firms.py",
+      "sha256": "24d825eb9490387eae5e7446bfaaa8de9e08100c1a836a2c184f955abfc0e21d"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:43:00.917520Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-fir001-002",
+  "schema_version": 1
+}

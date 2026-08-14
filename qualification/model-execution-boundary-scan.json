@@ -1,0 +1,13 @@
+{
+  "allowed_non_release_tooling": [
+    "sentinel_edge.benchmark",
+    "sentinel_edge.qualification",
+    "sentinel_edge.release"
+  ],
+  "files_scanned": 111,
+  "findings": [],
+  "release_execution_boundary": "sentinel_edge.runtime",
+  "report_digest": "fbb5926e8e9c37bbf0c5395243198c323d33ef99288a7ea39c831a0247d5e610",
+  "schema": "sentinel-edge-model-execution-boundary-scan/1.0",
+  "valid": true
+}

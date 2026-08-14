@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "power-energy-report.json",
+      "sha256": "f5adb602034efd1c19766613168c8dfffd432331c9b822f36ff615d21f5ffcf0"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\test_power_energy_runtime_v019.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.5,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "dcc7129d03d4da790863fa9560e9ec9c7e97241c13f53eb5fa712ebcb131fe42",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\power_energy.py",
+      "sha256": "3b5702aa8b8ddff13468679f3b74525a737f6ec45b7e60f979299c7228ddf6fc"
+    },
+    {
+      "path": "tests\\test_power_energy_runtime_v019.py",
+      "sha256": "db2e689628ccdae3d67a55161e1ef23c4e0e799b1990443dad639d4b66881a5d"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:14:58.819764Z",
+  "result": "passed",
+  "revision": "REQ-ENE-001-002-energy-lane-v2",
+  "schema_version": 1
+}

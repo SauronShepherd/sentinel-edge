@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_worklog.py tests/test_i00_git_metadata.py tests/test_evidence_registry.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 6.0,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "15c589893c2c798b15f89c5a28d6925289189b9f457ca8975acc07e02e9ceba4",
+  "inputs": [
+    {
+      "path": "HACKATHON_WORKLOG.md",
+      "sha256": "f4fe092b73ca6bb550514652207f583c0102a1f1091574a1a481217a3ab66f28"
+    },
+    {
+      "path": "tests\\test_worklog.py",
+      "sha256": "f9f8285d12c1080d738befb5939316f83d57b67ea8dc90b462125e3b4d0a8593"
+    },
+    {
+      "path": "tests\\test_i00_git_metadata.py",
+      "sha256": "28367ceeae02994b856712936c0e9a610168243a161ec6708142e9b79ea3fe91"
+    },
+    {
+      "path": "tests\\test_evidence_registry.py",
+      "sha256": "329fff904b26c3ca04c50d5fd32964e0a997194fce0a45b747d47f7ec4899869"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:56:18.508474Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

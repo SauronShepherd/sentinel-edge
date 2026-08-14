@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\test_power_energy_runtime_v019.py -k energy_evidence or energy_claim or power_state or power_health_api --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 4,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.5,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "7603576c67c2a54a7b47db5178ae600a89d6dfa497045c02d007a8abcd0aa0bd",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\power_energy.py",
+      "sha256": "bac32905c595f4fec9da0c6060162f939474a074a3265cec98e07554765b6003"
+    },
+    {
+      "path": "tests\\test_power_energy_runtime_v019.py",
+      "sha256": "46ff0b4ca8eef1cef84ee030d012b27e7574aa6f493aaf470dc41e105601a64c"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:13:35.131467Z",
+  "result": "passed",
+  "revision": "REQ-ENE-001-meter-coverage",
+  "schema_version": 1
+}

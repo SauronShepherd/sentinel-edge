@@ -1,0 +1,9 @@
+{
+  "receipt_id": "87b3610157c7fc453e0d2fb04e90c9963ce4db9217a360eb85dbf900f1f0dccc",
+  "requirement_ids": ["REQ-SEN-003"],
+  "changed_paths": ["src/sentinel_edge/collector/service.py", "tests/test_collector.py", "tests/test_recovery.py", "tests/test_android_sensor_bridge.py", "tests/test_hazards.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collector.py tests/test_recovery.py tests/test_android_sensor_bridge.py tests/test_hazards.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

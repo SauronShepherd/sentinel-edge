@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_ood_handling.py tests/test_applicability_domain.py tests/test_qualification.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 13,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.5,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "619d5387287373e7978bebb949bfe8f648bb2d3f24d1fc2191cd2661c85fcdb2",
+  "inputs": [
+    {
+      "path": "tests\\test_ood_handling.py",
+      "sha256": "2c71fe8c8202d91af4a9acca168d780b58902789385becbf3228a6e4d342f02d"
+    },
+    {
+      "path": "tests\\test_applicability_domain.py",
+      "sha256": "2b5aeebb286839335453710eff4f89d2d2f1cfc03ca528b5be502cb4ff491319"
+    },
+    {
+      "path": "tests\\test_qualification.py",
+      "sha256": "813315292951953b04c6fa62716441ed4fb4b8710df191ab06a7df3ce363655d"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:43:39.468087Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

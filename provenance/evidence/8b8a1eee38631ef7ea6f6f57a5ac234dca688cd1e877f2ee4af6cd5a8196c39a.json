@@ -1,0 +1,9 @@
+{
+  "receipt_id": "8b8a1eee38631ef7ea6f6f57a5ac234dca688cd1e877f2ee4af6cd5a8196c39a",
+  "requirement_ids": ["REQ-SEN-006"],
+  "changed_paths": ["src/sentinel_edge/collector/external_trigger.py", "tests/test_external_trigger.py", "tests/test_sensor_plane.py", "tests/test_sensor_protocol.py", "tests/test_collector.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_external_trigger.py tests/test_sensor_plane.py tests/test_sensor_protocol.py tests/test_collector.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

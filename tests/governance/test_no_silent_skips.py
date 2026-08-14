@@ -35,3 +35,18 @@ def test_deselected_log_is_rejected(tmp_path: Path) -> None:
     log = tmp_path / "run.log"
     log.write_text("1 passed, 2 deselected", encoding="utf-8")
     assert run_checker(report, log).returncode != 0
+
+
+def test_xfail_and_collection_error_are_rejected(tmp_path: Path) -> None:
+    report = tmp_path / "xfail.xml"
+    report.write_text(
+        '<testsuite tests="1" failures="0" errors="1" skipped="0">'
+        '<testcase classname="x" name="broken"><error message="collection error"/></testcase>'
+        '</testsuite>', encoding="utf-8"
+    )
+    log = tmp_path / "run.log"
+    log.write_text("1 xfailed, 1 xpassed", encoding="utf-8")
+    result = run_checker(report, log)
+    assert result.returncode != 0
+    assert "collection" in result.stdout
+    assert "xfailed" in result.stdout

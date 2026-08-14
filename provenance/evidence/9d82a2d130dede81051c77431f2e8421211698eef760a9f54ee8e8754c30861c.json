@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_identifier_authority.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "9d82a2d130dede81051c77431f2e8421211698eef760a9f54ee8e8754c30861c",
+  "inputs": [
+    {
+      "path": "tests\\test_identifier_authority.py",
+      "sha256": "4012269a50e4a7a8314c3f33e7beb92b008039df6c5c732ee8156c7edf68882d"
+    },
+    {
+      "path": "src\\sentinel_edge\\security\\identifier_authority.py",
+      "sha256": "b39799e3f91fedc35253a01f5a81658418d14be9d48c1d03071bba53200380aa"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:28:55.498122Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-idm005",
+  "schema_version": 1
+}

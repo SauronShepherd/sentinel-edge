@@ -1,0 +1,45 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_schema_evolution.py tests/contracts/test_compatibility.py tests/contracts/test_round_trip_contracts.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 9,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "8ee7326364d01ecf3841e1e5f39852a780a34bfcd2c723ecdb61b3127df1f342",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\evolution\\contracts.py",
+      "sha256": "be7893181d7ad33edb151b2cef845fb7e16c00b092bab73b12a022a65fa18574"
+    },
+    {
+      "path": "src\\sentinel_edge\\evolution\\wire.py",
+      "sha256": "a16641ed21970cd490c8a2b0b13aa780a1c033ec080b44f4aa8b63fb4d95f937"
+    },
+    {
+      "path": "tests\\test_schema_evolution.py",
+      "sha256": "fbd05ff7eaaa6ba32491619a87b00d1ba55b0808c55d09d60d8ac7141631172c"
+    },
+    {
+      "path": "tests\\contracts\\test_compatibility.py",
+      "sha256": "03807fb8c1315cbc1101beab38f82733ea3892c68e0a7131726860d171a4fa3d"
+    },
+    {
+      "path": "tests\\contracts\\test_round_trip_contracts.py",
+      "sha256": "75267e634ead115b24ac045f7a005bea4952981e4b83c6336489c5f5c1c54cfb"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:09:16.652681Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

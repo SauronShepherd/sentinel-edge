@@ -1,0 +1,74 @@
+{
+  "artifact_catalog": {
+    "by_classification": {
+      "internal": 1
+    },
+    "registration_count": 1,
+    "secret_prohibited_registration_ids": [],
+    "unclassified_registration_ids": [],
+    "usage": {
+      "budgets": {
+        "node_max_objects": 100000,
+        "per_candidate_max_bytes": 536870912,
+        "per_candidate_max_objects": 20000,
+        "per_incident_max_bytes": 268435456,
+        "per_incident_max_objects": 10000,
+        "per_run_max_bytes": 536870912,
+        "per_run_max_objects": 20000,
+        "per_source_max_bytes": 134217728,
+        "per_source_max_objects": 10000
+      },
+      "by_classification": {
+        "internal": {
+          "logical_bytes": 1317,
+          "registrations": 1
+        }
+      },
+      "logical_bytes": 1317,
+      "objects": 1,
+      "registrations": 1
+    }
+  },
+  "claims": {
+    "all_content_addressed_artifact_writes_require_explicit_policy": true,
+    "disposition_lineage_is_registration_based": true,
+    "external_recipient_deletion_requires_receipt": true,
+    "independent_privacy_review_complete": false,
+    "secret_values_are_process_memory_only": true
+  },
+  "disposition": {
+    "by_status": {},
+    "explicit_retained_exception_ids": [],
+    "request_count": 0,
+    "unresolved_request_ids": []
+  },
+  "failures": [],
+  "generated_at": "2026-08-13T16:48:18.535263+00:00",
+  "limitations": [
+    "lineage closure covers registered descendants and declared external recipients only",
+    "secure erasure from flash remanence, filesystem journals, backups and controllers is not claimed",
+    "protected local state lacks an approved at-rest encryption profile and must be empty at candidate freeze",
+    "independent privacy assessment is not complete"
+  ],
+  "privacy_state_complete": true,
+  "protected_local_state": {
+    "active_grant_ids": [],
+    "grant_count": 0,
+    "limitation": "development_scope_without_approved_storage_encryption_profile",
+    "protected_cache_entries": 0,
+    "queued_authority_items": 0,
+    "release_eligible": false,
+    "values_encrypted_at_rest": false
+  },
+  "release_eligible": true,
+  "report_sha256": "71b5a22b420ec064ee5020e71aef83f56b0bdcc5481690af6eb9f0b6deac7cd1",
+  "repository_private_material_findings": [],
+  "schema": "sentinel-edge-privacy-closure/1.0",
+  "secrets": {
+    "by_state": {},
+    "live_reference_keys": [],
+    "metadata_database_sha256": "2801d6d3da39ce65c549aba6570c3c9ea1396acf5e41c73e16f85c281c43d29c",
+    "reference_count": 0,
+    "secret_values_persisted": false
+  }
+}

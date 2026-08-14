@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_trusted_time.py tests/test_clock_and_overload.py tests/test_clock_uncertainty_metadata.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 19,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.2,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "23a7aa1404b929c13ba75059ef660733687ea85e6e1a973e43a2630003afc6cf",
+  "inputs": [
+    {
+      "path": "tests\\test_trusted_time.py",
+      "sha256": "baa8fe1425faabd752d38535ec139991fdc0acaa9aeb81f1c4be93e2eca26470"
+    },
+    {
+      "path": "tests\\test_clock_and_overload.py",
+      "sha256": "be1c57d119c8a8e0740b298d01917e72e6f252f19e3c07fb57f04bb57f2ce732"
+    },
+    {
+      "path": "tests\\test_clock_uncertainty_metadata.py",
+      "sha256": "7c89331db7f5dbc23d8d25764235ecd0f0ac80b7c6ed9b5aec90ee4b6f9724c6"
+    }
+  ],
+  "recorded_at": "2026-08-13T04:02:03.848473Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

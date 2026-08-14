@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_landslide_context.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "1a51c8e79b2d7df146e6f2ea92c836280a778db62bcb91b70721d09beb7ffd4f",
+  "inputs": [
+    {
+      "path": "tests\\test_landslide_context.py",
+      "sha256": "dc319ae96c6141e611767ac34b185c64dace2d3a43500ad587b8bd5e042d6f15"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\landslide_context.py",
+      "sha256": "476993e59366af20bdecdccdb7d04c0795892098b5a418ee15ec7198f39930c3"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:21:30.065126Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-egm002",
+  "schema_version": 1
+}

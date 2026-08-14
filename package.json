@@ -1,0 +1,12 @@
+{
+  "name": "sentinel-edge",
+  "private": true,
+  "version": "0.21.0",
+  "description": "Sentinel Edge local client and emulated Arm64 project",
+  "workspaces": ["modules/client-applications"],
+  "scripts": {
+    "client:install": "npm ci --prefix modules/client-applications --ignore-scripts --no-audit --no-fund",
+    "client:build": "npm run build --prefix modules/client-applications",
+    "client:test": "npm test --prefix modules/client-applications"
+  }
+}

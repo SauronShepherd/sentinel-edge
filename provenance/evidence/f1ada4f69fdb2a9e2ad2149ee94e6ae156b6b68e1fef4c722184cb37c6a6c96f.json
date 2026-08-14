@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "f2fa6c498f555a77515f80bd1d19af99209b66cb773d49622b5d9845bd71c87a"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collaboration_api.py tests/test_api.py tests/test_collaboration_gmail.py tests/test_collaboration_smtp.py tests/test_collaboration_wire.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 12,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.7,
+  "environment": {
+    "name": "local deterministic API fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "f1ada4f69fdb2a9e2ad2149ee94e6ae156b6b68e1fef4c722184cb37c6a6c96f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "f2fa6c498f555a77515f80bd1d19af99209b66cb773d49622b5d9845bd71c87a"
+    },
+    {
+      "path": "tests\\test_collaboration_api.py",
+      "sha256": "6a43035e194c76224d6161a5565c700cc0994ec8a8fc180f785a268e13c4e0f0"
+    }
+  ],
+  "recorded_at": "2026-08-13T09:59:47.932491Z",
+  "result": "passed",
+  "revision": "collaboration-rest-v1-20260813",
+  "schema_version": 1
+}

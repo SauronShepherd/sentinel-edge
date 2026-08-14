@@ -1,0 +1,181 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "pkg:pypi/cryptography@46.0.4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e5402c57fd93e77ef7f17e5a7916a3f09a3a18688aeb8cda1d7e5f7e7043c627"
+        }
+      ],
+      "name": "cryptography",
+      "properties": [
+        {
+          "name": "sentinel-edge:resolution-state",
+          "value": "resolved"
+        }
+      ],
+      "purl": "pkg:pypi/cryptography@46.0.4",
+      "type": "library",
+      "version": "46.0.4"
+    },
+    {
+      "bom-ref": "pkg:pypi/fastapi@0.128.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8c271a70900368e040f70f21394af644d821de48806f712037b00d8f940b4f7b"
+        }
+      ],
+      "name": "fastapi",
+      "properties": [
+        {
+          "name": "sentinel-edge:resolution-state",
+          "value": "resolved"
+        }
+      ],
+      "purl": "pkg:pypi/fastapi@0.128.2",
+      "type": "library",
+      "version": "0.128.2"
+    },
+    {
+      "bom-ref": "pkg:pypi/packaging@25.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d3a16aa967723b94c9de0e683681bfe056fed547755bced90e8f0ed85818f467"
+        }
+      ],
+      "name": "packaging",
+      "properties": [
+        {
+          "name": "sentinel-edge:resolution-state",
+          "value": "resolved"
+        }
+      ],
+      "purl": "pkg:pypi/packaging@25.0",
+      "type": "library",
+      "version": "25.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/Pillow@12.3.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "56c05f211bd853e95f0556dc42ec9d5c28934dc4dafa344cbbcc9c1f3c04ba9d"
+        }
+      ],
+      "name": "Pillow",
+      "properties": [
+        {
+          "name": "sentinel-edge:resolution-state",
+          "value": "resolved"
+        }
+      ],
+      "purl": "pkg:pypi/Pillow@12.3.0",
+      "type": "library",
+      "version": "12.3.0"
+    },
+    {
+      "bom-ref": "pkg:pypi/pydantic@2.13.4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b46c5c7ca93158354db63b5d36934527ff8c01fe30c82e396e838fa75a5d3d1b"
+        }
+      ],
+      "name": "pydantic",
+      "properties": [
+        {
+          "name": "sentinel-edge:resolution-state",
+          "value": "resolved"
+        }
+      ],
+      "purl": "pkg:pypi/pydantic@2.13.4",
+      "type": "library",
+      "version": "2.13.4"
+    },
+    {
+      "bom-ref": "pkg:pypi/PyYAML@6.0.3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fa4f4827ed2b6b8447c4c3e2d31dcb6c24ea1af4c207d04a5c7dca81da0a14d6"
+        }
+      ],
+      "name": "PyYAML",
+      "properties": [
+        {
+          "name": "sentinel-edge:resolution-state",
+          "value": "resolved"
+        }
+      ],
+      "purl": "pkg:pypi/PyYAML@6.0.3",
+      "type": "library",
+      "version": "6.0.3"
+    },
+    {
+      "bom-ref": "pkg:pypi/uvicorn@0.48.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "130f5b169e4fa01b15dcccf4c2dd5d1f8e340f746f3affb3272c741bc481545d"
+        }
+      ],
+      "name": "uvicorn",
+      "properties": [
+        {
+          "name": "sentinel-edge:resolution-state",
+          "value": "resolved"
+        }
+      ],
+      "purl": "pkg:pypi/uvicorn@0.48.0",
+      "type": "library",
+      "version": "0.48.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [
+        "pkg:pypi/cryptography@46.0.4",
+        "pkg:pypi/fastapi@0.128.2",
+        "pkg:pypi/packaging@25.0",
+        "pkg:pypi/Pillow@12.3.0",
+        "pkg:pypi/pydantic@2.13.4",
+        "pkg:pypi/PyYAML@6.0.3",
+        "pkg:pypi/uvicorn@0.48.0"
+      ],
+      "ref": "pkg:pypi/sentinel-edge@0.21.0"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "pkg:pypi/sentinel-edge@0.21.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "sentinel-edge",
+      "type": "application",
+      "version": "0.21.0"
+    },
+    "properties": [
+      {
+        "name": "sentinel-edge:scope",
+        "value": "declared-runtime-dependencies"
+      },
+      {
+        "name": "sentinel-edge:completeness",
+        "value": "does-not-prove-dynamic-or-os-dependency-completeness"
+      }
+    ],
+    "timestamp": "2026-08-13T16:48:44.933548+00:00"
+  },
+  "serialNumber": "urn:uuid:07b4c7ab-a561-5ff1-a40f-3825f1f2f1f3",
+  "specVersion": "1.7",
+  "version": 1
+}

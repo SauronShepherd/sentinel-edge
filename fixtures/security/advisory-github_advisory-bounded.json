@@ -1,0 +1,8 @@
+{
+  "schema": "sentinel-edge-advisory-snapshot/1.0",
+  "source": "github_advisory-bounded-snapshot",
+  "source_class": "github_advisory",
+  "source_mode": "fixture",
+  "completeness": "bounded_snapshot",
+  "advisories": []
+}

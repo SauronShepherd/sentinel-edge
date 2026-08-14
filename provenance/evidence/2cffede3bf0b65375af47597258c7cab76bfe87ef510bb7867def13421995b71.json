@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_clock_uncertainty_metadata.py tests/test_collector.py tests/test_recovery.py tests/test_source_health_lifecycle.py tests/test_domain.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 10,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.8,
+  "environment": {
+    "name": "Windows development host; deterministic source cursor tests",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "2cffede3bf0b65375af47597258c7cab76bfe87ef510bb7867def13421995b71",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\domain\\models.py",
+      "sha256": "760abb8e41faf80958cd6b6e09fdaec3d9611f3e17d4ebb13a80bd8bc456c92c"
+    },
+    {
+      "path": "src\\sentinel_edge\\collector\\service.py",
+      "sha256": "e18187ff253248021c582741b20ff87229a8313ed40e83c8d21e5994600010e0"
+    },
+    {
+      "path": "src\\sentinel_edge\\storage\\sqlite_store.py",
+      "sha256": "4e61d053d56c13d959dd191df165f9a613e36b05f6ebf6424ba286f85259af66"
+    },
+    {
+      "path": "tests\\test_clock_uncertainty_metadata.py",
+      "sha256": "7c89331db7f5dbc23d8d25764235ecd0f0ac80b7c6ed9b5aec90ee4b6f9724c6"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:10:54.039344Z",
+  "result": "passed",
+  "revision": "working-tree-clock-uncertainty",
+  "schema_version": 1
+}

@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_evidence_governance.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "96027a1f19d86471b5484b216bdc485f29c2ab582afe3b958b0f56b574a65cbd",
+  "inputs": [
+    {
+      "path": "tests\\test_evidence_governance.py",
+      "sha256": "f585d428a6ea383875fe18851e32b639da572e2a20bd9c064455c6a38b599895"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:05:06.122534Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_dataset_variants.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "1307d22546ff13f494b5506234dbbe0af54367ad315d0bdc2d327ad49bb93abc",
+  "inputs": [
+    {
+      "path": "tests\\test_dataset_variants.py",
+      "sha256": "8d90c48bfc7cc2fb2196ed121b63687a46e1df46938f9ee4bc7489ac7f1008b9"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:18:53.378790Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_media_parser.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 5,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "d2e0c51ee379b59e95101e940597b51935c9a764d3d7966b541f35c01bc3a99f",
+  "inputs": [
+    {
+      "path": "tests\\test_media_parser.py",
+      "sha256": "55b4640ff02a815fc9dc1c64dfd69b3c2a925dffb7a45d053937718664cb422e"
+    },
+    {
+      "path": "src\\sentinel_edge\\media\\sandbox.py",
+      "sha256": "f110be4f3921b20e51480adc8735b6ca6dd13847414bf0b76c29612606c52d7e"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:06:46.797601Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-upl005",
+  "schema_version": 1
+}

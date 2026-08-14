@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_privacy_backup_and_exports.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 55.6,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "69917368a4a7591212814bc2bb58e8be55a07a9234a3d2ce645ad18829632452",
+  "inputs": [
+    {
+      "path": "tests\\test_privacy_backup_and_exports.py",
+      "sha256": "c8e0124ddbf3dae275d94ae527ccd32c3e5e922b477271144cab000d45e852eb"
+    },
+    {
+      "path": "src\\sentinel_edge\\exports\\service.py",
+      "sha256": "ea0b3174298addcab3b234dfad30aabb5b07874713a094ca021696b9d84d0fb6"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:07:42.586649Z",
+  "result": "passed",
+  "revision": "REQ-EVT-007 finalized manifest hash tamper test",
+  "schema_version": 1
+}

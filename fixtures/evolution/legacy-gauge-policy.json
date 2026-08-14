@@ -1,0 +1,12 @@
+{
+  "source_id": "legacy-gauge-1",
+  "allowed_properties": ["water_level_m", "rate_of_rise_m_per_h"],
+  "property_aliases": {
+    "level": "water_level_m",
+    "rise": "rate_of_rise_m_per_h"
+  },
+  "allowed_units": {
+    "water_level_m": ["m"],
+    "rate_of_rise_m_per_h": ["m/h"]
+  }
+}

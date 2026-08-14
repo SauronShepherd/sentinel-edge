@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_hazards.py::test_stale_source_ttl_contributes_zero_to_new_escalation tests/test_collector.py::test_adapter_lateness_is_bounded_and_audited tests/test_source_health_lifecycle.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.2,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "519abc2211ed657936e5dab81fc6787e59b79e9f9ad038739c56b84343bba695",
+  "inputs": [
+    {
+      "path": "tests\\test_hazards.py",
+      "sha256": "89bd1dc9be51d40d9400699eccdee0f14d1bbbcdda1b9f9414f81dc35ca0949b"
+    },
+    {
+      "path": "tests\\test_collector.py",
+      "sha256": "d5a21f9a89bae04340dbbaf324cf6c6c67a811c5dbff7c557fec40cf2d896fec"
+    },
+    {
+      "path": "tests\\test_source_health_lifecycle.py",
+      "sha256": "2da2a93674186ecb00688906fb535fcf00a623038166f6634e1545eb2e9387a8"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:54:58.784219Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

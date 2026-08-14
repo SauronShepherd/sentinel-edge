@@ -1,0 +1,39 @@
+{
+  "algorithm": "Ed25519",
+  "registry": {
+    "expires_at": "2026-09-02T08:05:00Z",
+    "issues": [
+      {
+        "default_disposition": "deny",
+        "evidence_refs": [
+          "tests/test_runtime_known_issues_v019.py"
+        ],
+        "expires_at": "2026-09-02T08:05:00Z",
+        "introduced_at": "2026-08-02T08:05:00Z",
+        "issue_id": "RKI-DEVELOPMENT-REFERENCE-001",
+        "match": {
+          "architecture": "x86_64",
+          "attribute_name": null,
+          "attribute_value": null,
+          "compiler": null,
+          "graph_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+          "operator": null,
+          "provider": "CPUExecutionProvider",
+          "runtime_name": "sentinel-edge",
+          "runtime_version": "0.19.0"
+        },
+        "reviewed_at": "2026-08-03T08:05:00Z",
+        "title": "Reference issue for an explicitly different graph digest"
+      }
+    ],
+    "registry_id": "sentinel-edge-runtime-known-issues",
+    "reviewed_at": "2026-08-03T08:05:00Z",
+    "schema": "sentinel-edge-runtime-known-issue-registry/1.0",
+    "version": 1
+  },
+  "registry_sha256": "e1c26a4a827d09c8f41be52a65de1fc49c492adc208b9177b1ae52ec357a4fa8",
+  "schema": "sentinel-edge-signed-runtime-known-issue-registry/1.0",
+  "signature_b64": "z/TTJL3i3FLCIKb2z+QFEIXIeFk/mvt7x37ESf2zZ1K7FC2aY2nIXOX6vPLBicC9r14lkzxcDcfvWWrYCmJkBQ==",
+  "signed_at": "2026-08-03T08:05:01Z",
+  "signer_key_id": "a4f03ee0c7d8b11952c143395c37caf2"
+}

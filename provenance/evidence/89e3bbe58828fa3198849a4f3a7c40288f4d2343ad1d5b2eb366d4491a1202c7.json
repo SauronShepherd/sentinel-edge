@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_deployment_governance.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.7,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "89e3bbe58828fa3198849a4f3a7c40288f4d2343ad1d5b2eb366d4491a1202c7",
+  "inputs": [
+    {
+      "path": "tests\\test_deployment_governance.py",
+      "sha256": "eb228160b6755a5758728096c75c52127d5c5c828992b4ab60dcdbd26c73345b"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:23:48.428994Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

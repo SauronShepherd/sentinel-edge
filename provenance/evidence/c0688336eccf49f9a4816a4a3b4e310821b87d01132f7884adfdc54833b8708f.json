@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_source_completeness.py tests/test_source_quality.py tests/test_source_lifecycle.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.4,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "c0688336eccf49f9a4816a4a3b4e310821b87d01132f7884adfdc54833b8708f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\integrations\\source_quality.py",
+      "sha256": "591e2ae38ec6b8ae4f0242741f27555e407e4b2a8c33292e9af376306a64b943"
+    },
+    {
+      "path": "tests\\test_source_completeness.py",
+      "sha256": "a9f34dc7f7df70b21d1f91a27bf2ccbe409603a428a962d7560ef5512d46a56d"
+    },
+    {
+      "path": "tests\\test_source_quality.py",
+      "sha256": "790e9100585b205ee134fcc9edb75cbe75d88ebf6facfe2930ca9a2a8a7f6ad1"
+    },
+    {
+      "path": "tests\\test_source_lifecycle.py",
+      "sha256": "4406409e982e1e03159589bbbdfa29a104965cf5bb9e394c7b49a85e378dd327"
+    }
+  ],
+  "recorded_at": "2026-08-13T04:04:33.622268Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

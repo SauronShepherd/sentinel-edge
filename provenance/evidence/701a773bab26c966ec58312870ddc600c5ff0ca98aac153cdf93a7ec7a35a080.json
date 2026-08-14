@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "docs\\IMPLEMENTATION_STATUS.md",
+      "sha256": "eb593eaa5d722ed8ea2efd8b70cdf23cc9ee618781e1e9723b6277160c65e8a4"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\architecture\\\\test_independent_packageability.py tests\\\\component\\\\test_all_module_lifecycles.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.7,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "701a773bab26c966ec58312870ddc600c5ff0ca98aac153cdf93a7ec7a35a080",
+  "inputs": [
+    {
+      "path": "tests\\architecture\\test_independent_packageability.py",
+      "sha256": "0c2ffc2f4c83079a92e53b641a83c2dd5e178acf99e73fda9b3cdf4e8859d401"
+    },
+    {
+      "path": "tests\\component\\test_all_module_lifecycles.py",
+      "sha256": "4f81bcf1f5326e4ce090f2250d1a8e9126c8b820ed18798eec4eec1afe094971"
+    }
+  ],
+  "recorded_at": "2026-08-12T14:02:21.674346Z",
+  "result": "passed",
+  "revision": "REQ-MOD-002-packageability",
+  "schema_version": 1
+}

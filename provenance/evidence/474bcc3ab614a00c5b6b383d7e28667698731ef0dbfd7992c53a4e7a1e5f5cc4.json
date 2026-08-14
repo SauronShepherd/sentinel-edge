@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_peer_security.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.2,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "474bcc3ab614a00c5b6b383d7e28667698731ef0dbfd7992c53a4e7a1e5f5cc4",
+  "inputs": [
+    {
+      "path": "tests\\test_peer_security.py",
+      "sha256": "a61da0313fd8d4a2e92383558eb343730fffa4871bc135a7815147ff971802ac"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:09:11.249199Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

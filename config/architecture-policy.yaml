@@ -1,0 +1,28 @@
+schema_version: "1.0"
+top_level_components:
+  - collector
+  - analysis
+  - runtime
+  - incidents
+  - gateway
+  - clients
+sole_incident_writer: incidents
+client_boundary: gateway
+forbidden_dependencies:
+  collector: [incidents, gateway, clients]
+  analysis: [incidents, gateway, clients]
+  runtime: [incidents, gateway, clients]
+  incidents: [clients]
+  clients: [collector, analysis, runtime, incidents, storage]
+shared_non_authority_packages:
+  - benchmark
+  - configuration
+  - domain
+  - hazards
+  - operations
+  - qualification
+  - release
+  - review
+  - scenario
+  - security
+  - storage

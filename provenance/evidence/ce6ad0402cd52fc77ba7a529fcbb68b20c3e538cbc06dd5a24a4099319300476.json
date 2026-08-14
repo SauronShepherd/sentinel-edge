@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "path": "architecture\\owned-namespaces.yaml",
+      "sha256": "a6afc78175bb82514b51d1d7879157dc0f8a2bac9d391d4edfbba855d7272bd0"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\test_storage_api.py tests\\\\test_storage_backup_and_spool.py tests\\\\architecture\\\\test_authority_boundaries.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 15,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 17.3,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "ce6ad0402cd52fc77ba7a529fcbb68b20c3e538cbc06dd5a24a4099319300476",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\scenario\\engine.py",
+      "sha256": "00ebd0dd90cb88242db1b97be1c8c298d578245ef1e5183e3873b7b6ba5423f6"
+    },
+    {
+      "path": "tests\\test_storage_api.py",
+      "sha256": "06e7033a788b7042dfdc11a429699f3bc4a6295e1a4bc38bfd831ddf5d77e138"
+    },
+    {
+      "path": "tests\\test_storage_backup_and_spool.py",
+      "sha256": "569a736827c63be3077dbfd4306a192bc33e3b9255fcfb973a2a2ad769336b0c"
+    },
+    {
+      "path": "tests\\architecture\\test_authority_boundaries.py",
+      "sha256": "e7a35b5563ee341e5a0f7cbccea9c4211f8e161badb4ba77d6cc124a87d221d4"
+    }
+  ],
+  "recorded_at": "2026-08-12T14:24:36.376714Z",
+  "result": "passed",
+  "revision": "REQ-DLV-001-authority-outage",
+  "schema_version": 1
+}

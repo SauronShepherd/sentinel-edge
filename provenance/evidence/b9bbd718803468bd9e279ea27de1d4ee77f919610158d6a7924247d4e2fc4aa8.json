@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_scheduler.py tests/test_clock_and_overload.py tests/test_storage_backup_and_spool.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 27,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 5.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b9bbd718803468bd9e279ea27de1d4ee77f919610158d6a7924247d4e2fc4aa8",
+  "inputs": [
+    {
+      "path": "tests\\test_scheduler.py",
+      "sha256": "6f9592da94bb926197b131f9aabbdb1b4791fdeb887a47b7ad673ccd5729dbaa"
+    },
+    {
+      "path": "tests\\test_clock_and_overload.py",
+      "sha256": "be1c57d119c8a8e0740b298d01917e72e6f252f19e3c07fb57f04bb57f2ce732"
+    },
+    {
+      "path": "tests\\test_storage_backup_and_spool.py",
+      "sha256": "569a736827c63be3077dbfd4306a192bc33e3b9255fcfb973a2a2ad769336b0c"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:59:03.377739Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

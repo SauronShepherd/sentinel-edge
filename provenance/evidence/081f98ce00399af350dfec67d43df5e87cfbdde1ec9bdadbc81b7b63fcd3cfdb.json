@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_multi_node_correlation.py",
+      "sha256": "779f9a55f35438965aa34f0991fadb5849cffcbd085517a3db2c4ed4d0919157"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_multi_node_correlation.py tests/test_earthquake_hard_negatives.py tests/test_hazards.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 19,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.0,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "081f98ce00399af350dfec67d43df5e87cfbdde1ec9bdadbc81b7b63fcd3cfdb",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\multi_node.py",
+      "sha256": "2b7c434d66d277ddbe751bf6049df8af6ca9aba421130d8e635516b1a5171333"
+    },
+    {
+      "path": "tests\\test_multi_node_correlation.py",
+      "sha256": "779f9a55f35438965aa34f0991fadb5849cffcbd085517a3db2c4ed4d0919157"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:44:13.610805Z",
+  "result": "passed",
+  "revision": "simulated-multi-node-correlation-REQ-EQ-006",
+  "schema_version": 1
+}

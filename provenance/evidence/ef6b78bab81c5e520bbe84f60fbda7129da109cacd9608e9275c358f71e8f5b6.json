@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_incidents.py -k late_context tests/test_history_requirements.py -k late",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "ef6b78bab81c5e520bbe84f60fbda7129da109cacd9608e9275c358f71e8f5b6",
+  "inputs": [
+    {
+      "path": "tests\\test_incidents.py",
+      "sha256": "d11a8a31dd755cb8ac238657fcd780cec3dfb51ad5613095f7c2222f747b4705"
+    },
+    {
+      "path": "tests\\test_history_requirements.py",
+      "sha256": "a88eb5420336568b20c8ea7f3853c93b5500fa490eebf72920b8dc6fcda16c71"
+    },
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "b603158f6fb01a25ceb13230a3042cbdbe988fb9f06d9e9c92a29d1c2e1b1e5b"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:54:05.811761Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rev003",
+  "schema_version": 1
+}

@@ -1,0 +1,9 @@
+{
+  "receipt_id": "72a94589ee07848829532efbc60bd9b212f8632fc5cfd7a4fe72244c689c3d95",
+  "requirement_ids": ["REQ-MGT-005"],
+  "changed_paths": ["src/sentinel_edge/runtime/model_packages.py", "tests/test_model_package_signal_chain_v020.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_model_package_signal_chain_v020.py::test_onnx_inspection_worker_is_bounded_and_deterministic tests/test_model_package_signal_chain_v020.py::test_onnx_inspection_worker_rejects_invalid_budget",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_observation_contract_adapters.py",
+      "sha256": "6a43ec9ed4e9433fb6bac1033036262469a1ccbc8fe679c5dba0275354b0446a"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_observation_contract_adapters.py tests/test_ingress_adapters.py tests/test_android_sensor_bridge.py tests/test_sensor_plane.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 11,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 7.3,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "8170eb62119dcc720f33fd62b31a8fb49deb3301d13040b9b7948e3631bcb08d",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\evolution\\contracts.py",
+      "sha256": "be7893181d7ad33edb151b2cef845fb7e16c00b092bab73b12a022a65fa18574"
+    },
+    {
+      "path": "src\\sentinel_edge\\evolution\\__init__.py",
+      "sha256": "cb033c2326bcb90a0b5dae7d8ca83fc141259b85c98879b0291231c7a45c5e0d"
+    },
+    {
+      "path": "tests\\test_observation_contract_adapters.py",
+      "sha256": "6a43ec9ed4e9433fb6bac1033036262469a1ccbc8fe679c5dba0275354b0446a"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:49:18.165519Z",
+  "result": "passed",
+  "revision": "stable-observation-contract-adapters-REQ-INT-001",
+  "schema_version": 1
+}

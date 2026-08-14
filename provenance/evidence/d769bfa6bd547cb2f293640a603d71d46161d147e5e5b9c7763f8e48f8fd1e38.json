@@ -1,0 +1,9 @@
+{
+  "receipt_id": "d769bfa6bd547cb2f293640a603d71d46161d147e5e5b9c7763f8e48f8fd1e38",
+  "requirement_ids": ["REQ-SEN-001"],
+  "changed_paths": ["src/sentinel_edge/qualification/timing.py", "src/sentinel_edge/scenario/engine.py", "tests/test_latency_decomposition.py", "tests/test_scenario_e2e.py", "tests/test_capability_faults.py", "tests/test_signed_scenarios.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_latency_decomposition.py tests/test_scenario_e2e.py tests/test_capability_faults.py tests/test_signed_scenarios.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

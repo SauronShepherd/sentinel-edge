@@ -1,0 +1,9 @@
+{
+  "receipt_id": "3a7d2cf5ae4f633c9cd93ab15e67227ae631b4c8e146dad2822c4467e040a671",
+  "requirement_ids": ["REQ-TIM-001"],
+  "changed_paths": ["src/sentinel_edge/qualification/timing.py", "src/sentinel_edge/collector/service.py", "tests/test_collector.py", "tests/test_recovery.py", "tests/test_source_health_lifecycle.py", "tests/test_android_sensor_bridge.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collector.py tests/test_recovery.py tests/test_source_health_lifecycle.py tests/test_android_sensor_bridge.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

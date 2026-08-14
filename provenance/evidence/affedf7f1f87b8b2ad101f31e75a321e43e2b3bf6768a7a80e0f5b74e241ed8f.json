@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_webhook_security.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "affedf7f1f87b8b2ad101f31e75a321e43e2b3bf6768a7a80e0f5b74e241ed8f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\webhook_security.py",
+      "sha256": "578cd6c3a5a63ba6bdcf4da686fe0e3d65dd2b406ab71b9e611300e6b0ccb184"
+    },
+    {
+      "path": "tests\\test_webhook_security.py",
+      "sha256": "f51edd650766bd476f1eea8b56b8b0e40b581f64d6a808c8dd4301ed514d2a0a"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:12:11.697697Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "97b5d4423310f8f494221f10b9b2cc4ea2495aea5e9854aecaa9be5dc60cd527"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_web_security_policy.py tests/test_web_boundary_integration.py tests/test_client_security.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 8,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 9.7,
+  "environment": {
+    "name": "local deterministic web security fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "65bff476604017bde0bc0301d84b046b8b6cb59faa62c571112b73adbb19c8b0",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "97b5d4423310f8f494221f10b9b2cc4ea2495aea5e9854aecaa9be5dc60cd527"
+    },
+    {
+      "path": "src\\sentinel_edge\\gateway\\web_security.py",
+      "sha256": "30364136a8d33807fe52e6b0887e60de249ba447a9ecdd1a70aaf1bce20a472b"
+    },
+    {
+      "path": "tests\\test_web_boundary_integration.py",
+      "sha256": "308dd641b170da31356bb10033551f782ae4e600cfc8acbc3c3a47eca5a432dc"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:36:30.560872Z",
+  "result": "passed",
+  "revision": "web-browser-write-csrf-v1-20260813",
+  "schema_version": 1
+}

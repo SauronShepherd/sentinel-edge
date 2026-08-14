@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\web_security.py",
+      "sha256": "30364136a8d33807fe52e6b0887e60de249ba447a9ecdd1a70aaf1bce20a472b"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_web_security_policy.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.6,
+  "environment": {
+    "name": "local deterministic web security fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "e21e259f6d76b86bfb970097787a5727450f57717fba31d19ef7f43bd09e825c",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\web_security.py",
+      "sha256": "30364136a8d33807fe52e6b0887e60de249ba447a9ecdd1a70aaf1bce20a472b"
+    },
+    {
+      "path": "tests\\test_web_security_policy.py",
+      "sha256": "75f9ae21605c0fa0b22605826b5c1ad68394adbcb90c1518aa619846b8881ed6"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:33:36.451589Z",
+  "result": "passed",
+  "revision": "web-plaintext-bearer-v1-20260813",
+  "schema_version": 1
+}

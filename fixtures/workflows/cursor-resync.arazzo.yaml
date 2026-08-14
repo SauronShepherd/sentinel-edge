@@ -1,0 +1,13 @@
+arazzo: 1.1.0
+info:
+  title: Sentinel Edge cursor resynchronization
+  version: 1.0.0
+workflowId: cursor-resync
+workflows:
+  - workflowId: cursor-resync
+    x-proof-paths: [retry, idempotency, optimistic-conflict, rest-resync]
+    steps:
+      - stepId: read
+        operationId: ./openapi.yaml#/paths/~1projections/get
+      - stepId: resync
+        operationId: ./openapi.yaml#/paths/~1projections~1resync/post

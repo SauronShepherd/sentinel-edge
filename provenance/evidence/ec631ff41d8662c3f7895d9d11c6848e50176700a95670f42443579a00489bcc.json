@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_history_requirements.py",
+      "sha256": "a88eb5420336568b20c8ea7f3853c93b5500fa490eebf72920b8dc6fcda16c71"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_history_requirements.py tests/test_incidents.py tests/test_claim_lineage.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 11,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 9.2,
+  "environment": {
+    "name": "local deterministic history fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "ec631ff41d8662c3f7895d9d11c6848e50176700a95670f42443579a00489bcc",
+  "inputs": [
+    {
+      "path": "tests\\test_history_requirements.py",
+      "sha256": "a88eb5420336568b20c8ea7f3853c93b5500fa490eebf72920b8dc6fcda16c71"
+    },
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "b603158f6fb01a25ceb13230a3042cbdbe988fb9f06d9e9c92a29d1c2e1b1e5b"
+    },
+    {
+      "path": "src\\sentinel_edge\\release\\claim_lineage.py",
+      "sha256": "52c2e63db919dbe8b441dbc5a5d8e2ebedc14a2994562ee2e2f841332a05f97c"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:20:58.655166Z",
+  "result": "passed",
+  "revision": "history-requirements-v1-20260813",
+  "schema_version": 1
+}

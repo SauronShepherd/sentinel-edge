@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\collaboration\\wire.py",
+      "sha256": "3419fc74f43a2e37693b1ff44ea5f94574e66d72aa2015cb33faadc0e788e093"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collaboration_wire.py tests/test_collaboration_contracts.py tests/test_collaboration_policy.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 13,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.3,
+  "environment": {
+    "name": "local deterministic fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "aabc8e7a73a10bea1dcd9344081c1ba196814e93e4a61a289b1fd676fd3e6dd7",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collaboration\\wire.py",
+      "sha256": "3419fc74f43a2e37693b1ff44ea5f94574e66d72aa2015cb33faadc0e788e093"
+    },
+    {
+      "path": "src\\sentinel_edge\\collaboration\\models.py",
+      "sha256": "663a007875d41015f399af345c89fba936419bf0e6b8512662ba641a29d5c1ea"
+    },
+    {
+      "path": "tests\\test_collaboration_wire.py",
+      "sha256": "260aeb25f56babfc10294aac66358379b0ab79cf219192854eb3bbfe32442841"
+    }
+  ],
+  "recorded_at": "2026-08-13T09:54:40.649496Z",
+  "result": "passed",
+  "revision": "collaboration-wire-v1-20260813",
+  "schema_version": 1
+}

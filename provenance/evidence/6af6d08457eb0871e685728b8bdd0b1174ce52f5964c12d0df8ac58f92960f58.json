@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_arazzo_workflows.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "6af6d08457eb0871e685728b8bdd0b1174ce52f5964c12d0df8ac58f92960f58",
+  "inputs": [
+    {
+      "path": "tests\\test_arazzo_workflows.py",
+      "sha256": "ff97390b803b13a452cb5a409fef92700759fabe82772221c9119fcd6cbd345b"
+    },
+    {
+      "path": "src\\sentinel_edge\\workflows\\arazzo.py",
+      "sha256": "ea736b473c71f10a3f7b418d8245e6f2658521171a5b44a31f6b1fb9ba798b32"
+    },
+    {
+      "path": "fixtures\\workflows\\upload-review.arazzo.yaml",
+      "sha256": "7bee0c5eb7eea2dd7d61a2ca2a329eaa8eb18b5944323f87c39d6e9286c51c80"
+    },
+    {
+      "path": "fixtures\\workflows\\cursor-resync.arazzo.yaml",
+      "sha256": "643bdd6ed1b3ad89a5f2cb505f92bb578c7eee68fedb184d455d6b1f740dc213"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:33:28.805995Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-awf003",
+  "schema_version": 1
+}

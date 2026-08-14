@@ -1,43 +1,244 @@
-
 # Sentinel Edge
 
-Sentinel Edge is an edge-first, multi-hazard research platform for collecting observations, analyzing evidence, executing qualified workloads, maintaining authoritative incident state, exposing a public API, and supporting web/mobile operator workflows.
+**Research MVP — not an official emergency-warning service.**
 
-> **Research system, not an official emergency-warning service.** Observations, inferences, forecasts, and demonstrations may be wrong. Always follow authorized sources and emergency services.
+Sentinel Edge is an **offline-first, Arm64-targeted Physical AI platform** for running four heterogeneous hazard-monitoring workloads on one constrained edge node. Its central contribution is a criticality- and deadline-aware workload orchestrator that protects the earthquake path, wakes and sleeps heavier wildfire processing, adapts lower-priority work, and keeps degradation visible under contention and faults.
 
-## Iteration status
+> **Research MVP — not an official emergency-warning system. AI observations and forecasts may be wrong. Verify with authorized sources and contact emergency services when appropriate.**
 
-- Baseline: modular architecture documentation v0.13.0
-- Active increment: **I03 — collector core and deterministic acquisition**
-- Completion discipline: an iteration is not complete until every mandatory gate passes with zero unexpected skips, expected failures, collection errors, or flaky reruns.
+## Hackathon release profile
 
-## Six bounded modules
+The current hackathon profile is **`H0-EMULATED-AARCH64-20260813`**.
 
-1. Streaming Source Collector — exclusively acquires source data.
-2. Analysis & Enrichment Engine — derives claims, lineage, and trust factors.
-3. Model & Workload Runtime — exclusively executes qualified workloads.
-4. Incident & Event Engine — exclusively writes incident lifecycle state.
-5. REST API & Integration Gateway — only supported client/integration mutation boundary.
-6. Client Applications — web/PWA and mobile shells; never reimplement server truth logic.
+- Execution target: 64-bit Arm Linux / AArch64.
+- Canonical evidence environment: Docker + QEMU `linux/arm64`.
+- Sensor input: deterministic simulated/fixture camera, IMU and environmental streams through the normal acquisition contract.
+- Physical Raspberry Pi: not required for this candidate.
+- Physical camera/IMU/environmental sensors: not required for this candidate.
+- Raspberry Pi 5 remains the reference deployment target, **not** the device on which the hackathon benchmark numbers are physically measured.
+- No physical Pi energy, thermal, throttling, sensor-quality or latency claim is made without physical evidence.
 
-## First commands
+The package implementation version remains `0.21.0`; the active product and technical contracts are `0.22.0`. Those are intentionally separate version axes and are checked by `scripts/check_version_consistency.py`.
+
+## Why this is Physical AI
+
+Sentinel Edge consumes physical-world signal shapes—camera frames, three-axis IMU, rainfall, water level, soil moisture, tilt and vibration—and makes local observation/escalation decisions. In the hackathon candidate those signal streams are deterministic simulations, but they enter through the same Component-1 observation boundary intended for physical adapters. Scenario fixtures never write incident state directly.
+
+## Four hazard adapters
+
+| Hazard | H0 depth | Demonstration |
+|---|---|---|
+| Wildfire | Hero | Camera smoke cascade/equivalent, temporal persistence, wake/sleep heavy processing, evidence clip |
+| Earthquake | Hero | Fixed-rate IMU, deterministic trigger, Tier-A reserved dispatch, waveform evidence |
+| Flood | Bounded functional | Rainfall/water-level validation, rate of rise, thresholds, missing/stale handling |
+| Landslide | Bounded functional | Rainfall, soil/tilt/vibration movement indicators, missingness, context-adaptive cadence |
+
+## Exactly six top-level components
+
+1. **Streaming Source Collector** — acquisition, quarantine and normalized observations.
+2. **Analysis & Enrichment Engine** — deterministic/qualified analysis outputs, not incident authority.
+3. **Model & Workload Runtime** — qualified workload execution and the scheduler.
+4. **Incident & Event Engine** — the **sole incident-lifecycle mutation authority**.
+5. **REST API & Integration Gateway** — supported client/integration command and query boundary.
+6. **Client Applications** — responsive Mission Control/PWA projections and commands through Component 5.
+
+Module-owned persistence and explicit ports are used instead of direct cross-component table coupling.
+
+## Optimization story: B0 → B1 → O1
+
+Sentinel Edge keeps one deterministic opportunity manifest and compares:
+
+- **B0** — naive fixed-rate reference behavior.
+- **B1** — optimized model/runtime/preprocessing behavior at fixed rate.
+- **O1** — the same optimized profiles plus criticality/deadline orchestration and adaptive cadence.
+
+```text
+B0 → B1 = model/runtime/preprocessing effect
+B1 → O1 = scheduling/adaptive-cadence effect
+B0 → O1 = total platform effect
+```
+
+The emulated benchmark reports deterministic semantic scheduling results plus Arm64-emulated guest wall/CPU/RSS observations. These are **not Raspberry Pi 5 measurements**.
+
+## Fastest Judge path
+
+From a clean checkout/source archive:
 
 ```bash
 python scripts/dev.py setup
-python scripts/dev.py governance
-python scripts/dev.py gates
+python scripts/dev.py doctor
+python scripts/dev.py demo
 ```
 
-The active I01 gate is intentionally small but real. Targets for future lanes already exist; they validate the capability registry and explicitly report `planned`, without counting absent suites as passing evidence.
+Deeper local proof:
 
-## Repository navigation
+```bash
+python scripts/dev.py verify
+python scripts/dev.py scenario
+python scripts/dev.py test-all
+python scripts/dev.py gates
+python scripts/dev.py benchmark-replay
+python scripts/dev.py claims
+```
 
-- `docs/adr/` — accepted architecture and delivery decisions.
-- `docs/baseline/v0.13.0/` — immutable source architecture documents and manifest.
-- `docs/plans/` — executable end-to-end build plan.
-- `provenance/` — capability state, evidence schemas, immutable evidence, and iteration acceptance.
-- `scripts/` — repository/governance gate implementations.
-- `tests/governance/` — I00 tests and controlled failure proofs.
-- `.github/workflows/` — fast, full, and Arm CI contracts.
+The H0 Judge path requires no live source, cloud account, API key, second board, physical sensor or private credential.
 
-See [the repository map](docs/development/repository-map.md) for current and planned ownership.
+## Canonical Arm64-emulated path
+
+Docker must support `linux/arm64` through its normal emulation/virtualization mechanism.
+
+```bash
+python scripts/dev.py arm64-setup
+python scripts/dev.py arm64-doctor
+python scripts/dev.py arm64-test
+python scripts/dev.py arm64-demo
+python scripts/dev.py arm64-scenario
+python scripts/dev.py arm64-benchmark
+```
+
+`arm64-doctor` reports guest and host architecture separately, exact Python/ONNX Runtime identity, execution providers, selected profile and key model/config/fixture digests. It must report an AArch64 guest and `CPUExecutionProvider`.
+
+`arm64-benchmark` writes `qualification/emulated-arm64-benchmark.json`. The artifact explicitly classifies the benchmark as simulated/emulated evidence and refuses hardware-specific claims.
+
+## Final release closure
+
+The repository has a two-stage release workflow so generated evidence cannot accidentally self-invalidate the candidate.
+
+First run the complete preflight:
+
+```bash
+python scripts/dev.py submission-preflight
+```
+
+This records the required local and Arm64 command matrix at:
+
+```text
+qualification/submission-command-matrix.json
+```
+
+Commit the resulting deterministic evidence/generator changes, verify the worktree is clean, then create the exact candidate:
+
+```bash
+python scripts/dev.py release-candidate
+```
+
+Release admission fails closed when any of these is true:
+
+- the repository has no real Git revision or has source/config/evidence changes;
+- the submission command matrix is absent, stale or not fully green;
+- any H0 requirement remains open;
+- any G0 pack fails;
+- the Claim Registry is invalid;
+- required release/supply-chain evidence does not verify;
+- the emulated profile is inconsistent with its no-physical-hardware/no-Pi-performance claim policy.
+
+Generated `release-candidate.json`, `release-manifest.json` and candidate signature files are excluded from the Git cleanliness calculation because they are outputs of candidate creation itself. Other changes still invalidate the candidate.
+
+## Deterministic simultaneous-event scenario
+
+```bash
+python scripts/dev.py scenario
+```
+
+The scenario exercises normal multi-hazard monitoring, smoke/rain/water/slope/IMU changes, scheduler contention, Tier-A seismic reservation, lower-priority deferral, bounded queues, source/sensor faults and recovery through normal component boundaries. Replayed/backfill evidence is never promoted into fresh evidence.
+
+## Mission Control
+
+The H0 client surface is intended to make the runtime arbitration inspectable rather than hiding it behind a single hazard score. Judge-facing UI should show:
+
+- all four hazards together;
+- system health separately from hazard state;
+- monitoring coverage separately from hazard state;
+- running/queued/sleeping/deferred jobs and reason codes;
+- evidence/timeline and review state;
+- fixture/simulated/replayed source labels;
+- candidate identity;
+- benchmark view;
+- the persistent research-MVP warning;
+- the explicit Arm64-emulated demonstration disclosure.
+
+## Collaborative Detection (optional H1/S8)
+
+Collaborative Detection is **disabled by default** and is never an H0 dependency. It can share small privacy-minimized event-level signals, not raw sensor/media streams. Operational sharing consent and future research contribution consent are separate.
+
+Offline checks:
+
+```bash
+python scripts/dev.py collaboration-check
+python scripts/dev.py collaboration-demo
+python scripts/dev.py collaboration-gmail-fixture
+python scripts/dev.py test-collaboration
+```
+
+Email transport is experimental and must never be presented as cryptographically authenticated peer verification. Local monitoring continues unchanged when collaboration is disabled or unavailable.
+
+## Important directories
+
+```text
+architecture/       executable architecture/command/policy truth
+config/             release and optional feature configuration
+contracts/          generated/shared contract packages
+fixtures/           deterministic Judge/scenario/benchmark inputs
+modules/            six top-level component packages
+provenance/         evidence and submission-media metadata
+qualification/      generated qualification, G0, claim and release truth
+registries/         requirements, ADRs, tasks, tests and evidence registries
+schemas/            released JSON schemas
+scripts/dev.py      canonical developer/Judge command surface
+src/sentinel_edge/  compact Python implementation
+```
+
+## Contracts and conformance
+
+The active contracts are:
+
+- `docs/contracts/sentinel-edge-full-scope-product-contract-v0.22.0.md`
+- `docs/contracts/sentinel-edge-full-scope-technical-contract-v0.22.0.md`
+
+They define 743 product requirements, including the 240-row H0 cutline, and 193 binding ADRs. The hackathon emulation amendment is implemented as the selected release profile rather than by fabricating physical-device qualification.
+
+Useful checks:
+
+```bash
+python scripts/check_contract_sync.py
+python scripts/validate_delivery_registry.py
+python scripts/validate_requirement_ledger.py
+python scripts/validate_requirement_closure.py
+python scripts/generate_release_minimum_manifest.py
+python scripts/generate_g0_gate_status.py
+python scripts/validate_g0_gate_status.py
+```
+
+## Safety and claim boundaries
+
+Sentinel Edge does **not** claim:
+
+- earthquake prediction;
+- official emergency warnings or dispatch authority;
+- safety certification;
+- exact wildfire ignition coordinates from one monocular camera;
+- guaranteed flooding from one uncertain forecast;
+- imminent landslide timing from an unvalidated model;
+- a universal combined disaster probability;
+- Raspberry Pi 5 performance from emulated execution;
+- physical energy/thermal/throttling behavior from simulated policy transitions.
+
+Simulation, replay, target and research results remain visibly distinct from physical measurements.
+
+## License
+
+Apache-2.0. See `LICENSE` and the third-party inventory/notices for dependency, model, fixture and data-rights information.
+
+## Additional repository validation lanes
+
+The canonical command catalog also exposes focused maintenance/verification lanes. They are not needed for the three-command Judge demo, but remain available for maintainers and CI:
+
+```text
+format  lint  type  architecture  governance  contracts
+no-silent-skips  hygiene  test-all  gates
+aer  plugins  testkit  components  clients  packages  compatibility  generated
+security  privacy  accessibility  provenance  docs  report  package
+backup-verify  update-verify  test-arm
+```
+
+Invoke any lane as `python scripts/dev.py <command>`.

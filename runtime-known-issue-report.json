@@ -1,0 +1,20 @@
+{
+  "activation_allowed": true,
+  "failures": [],
+  "graph_sha256": "7c30a7d7b31599d069de9299fd627aea507471a21385daba053bcdb9b49cc962",
+  "limitations": [
+    "The registry matcher proves only the exact runtime, provider, compiler, architecture, operator, attribute and graph scopes represented in the context.",
+    "Target qualification still requires exact target runtime introspection and released graph inventory evidence."
+  ],
+  "matched_issues": [],
+  "profile_id": "seismic-trigger-v1",
+  "registry_expires_at": "2026-09-02T08:05:00+00:00",
+  "registry_id": "sentinel-edge-runtime-known-issues",
+  "registry_reviewed_at": "2026-08-03T08:05:00+00:00",
+  "registry_version": 1,
+  "release_eligible": false,
+  "report_digest": "4c9409e154f0e1c878fd80628dd4d50c5ff6f75085b129449d940ccfab92b763",
+  "schema": "sentinel-edge-runtime-known-issue-evaluation/1.0",
+  "target_qualified": false,
+  "used_exceptions": []
+}

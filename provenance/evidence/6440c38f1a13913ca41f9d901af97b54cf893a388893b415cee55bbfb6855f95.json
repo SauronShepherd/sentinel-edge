@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_geospatial_missing_operation.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "6440c38f1a13913ca41f9d901af97b54cf893a388893b415cee55bbfb6855f95",
+  "inputs": [
+    {
+      "path": "tests\\test_geospatial_missing_operation.py",
+      "sha256": "c5617b9791c28b18acdbf2f4277b8eb8c6ebd2b6670520509fa24d4460d374f7"
+    },
+    {
+      "path": "src\\sentinel_edge\\geospatial\\contracts.py",
+      "sha256": "0ed326805132a294c58f4936e677ca6f164a87b887984a051362b575cc8d5239"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:04:25.972679Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-grp006",
+  "schema_version": 1
+}

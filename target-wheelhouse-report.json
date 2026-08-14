@@ -1,0 +1,474 @@
+{
+  "acquisition_manifest_sha256": "72c7db45378fa17dde502eedc6fc1714771265bad202e8e16335978c9d4a3bbf",
+  "entries": [
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "annotated-doc",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "0.0.4"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "annotated-types",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "0.7.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "anyio",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "4.13.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "cffi",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "2.0.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "click",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "8.1.8"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "cryptography",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "46.0.4"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "fastapi",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "0.128.2"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "h11",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "0.16.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "idna",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "3.17"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "packaging",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "25.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "pillow",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "12.2.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "pycparser",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "3.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "pydantic",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "2.13.4"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "pydantic-core",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "2.46.4"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "pyyaml",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "6.0.3"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "starlette",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "0.50.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "typing-inspection",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "0.4.2"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "typing-extensions",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "4.15.0"
+    },
+    {
+      "declared_bytes": null,
+      "declared_sha256": null,
+      "failures": [
+        "origin_url_missing",
+        "publisher_origin_not_proven",
+        "wheel_path_missing"
+      ],
+      "name": "uvicorn",
+      "observed_bytes": null,
+      "observed_sha256": null,
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "valid": false,
+      "version": "0.48.0"
+    }
+  ],
+  "failures": [
+    "target_locked_wheels_invalid",
+    "target_offline_install_rehearsal_missing_or_invalid"
+  ],
+  "installation_rehearsal": {
+    "installed_lock_sha256": "b7e9d8d9dc105b0240eb086809b1b1d6b8d2b0495ce37bc6b84cd3d29b4c2bc2",
+    "machine": "aarch64",
+    "no_index": true,
+    "reason": "publisher-origin Arm64 wheels and qualified Raspberry Pi image not available in this environment",
+    "require_hashes": true,
+    "success": false
+  },
+  "invalid": [
+    "annotated-doc==0.0.4",
+    "annotated-types==0.7.0",
+    "anyio==4.13.0",
+    "cffi==2.0.0",
+    "click==8.1.8",
+    "cryptography==46.0.4",
+    "fastapi==0.128.2",
+    "h11==0.16.0",
+    "idna==3.17",
+    "packaging==25.0",
+    "pillow==12.2.0",
+    "pycparser==3.0",
+    "pydantic==2.13.4",
+    "pydantic-core==2.46.4",
+    "pyyaml==6.0.3",
+    "starlette==0.50.0",
+    "typing-extensions==4.15.0",
+    "typing-inspection==0.4.2",
+    "uvicorn==0.48.0"
+  ],
+  "limitations": [
+    "The verifier does not download wheels and trusts no URL without a local hash-bound artifact.",
+    "Publisher origin is a declared evidence field and requires independent provenance outside this verifier.",
+    "A current-platform wheelhouse cannot qualify an Arm64 target by tag substitution."
+  ],
+  "lock_sha256": "b7e9d8d9dc105b0240eb086809b1b1d6b8d2b0495ce37bc6b84cd3d29b4c2bc2",
+  "missing": [],
+  "release_eligible": false,
+  "report_digest": "34c206f581514a39787a71c4e77a90c56c8d976ae65e7c6d1383a8d519055ac5",
+  "required_count": 19,
+  "required_target_tags": [
+    "cp313-cp313-manylinux_2_28_aarch64",
+    "py3-none-any"
+  ],
+  "schema": "sentinel-edge-target-wheelhouse-report/1.0",
+  "target_platform": "linux-aarch64-raspberry-pi-5",
+  "target_platform_complete": false,
+  "unexpected": []
+}

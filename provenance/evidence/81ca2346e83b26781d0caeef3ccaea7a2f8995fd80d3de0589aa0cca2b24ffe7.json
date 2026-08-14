@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\test_scheduler.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.0,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "81ca2346e83b26781d0caeef3ccaea7a2f8995fd80d3de0589aa0cca2b24ffe7",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\runtime\\scheduler.py",
+      "sha256": "f91a23c895ea163f9a3b52d5ed5343c62abf3f4f72cb06ddbe1ee209e869d720"
+    },
+    {
+      "path": "tests\\test_scheduler.py",
+      "sha256": "6f9592da94bb926197b131f9aabbdb1b4791fdeb887a47b7ad673ccd5729dbaa"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:27:18.273672Z",
+  "result": "passed",
+  "revision": "REQ-CMP-013-physical-hot-path",
+  "schema_version": 1
+}

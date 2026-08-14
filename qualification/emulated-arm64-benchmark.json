@@ -1,0 +1,763 @@
+{
+  "claim_class": "simulated",
+  "comparisons": {
+    "B0_to_B1_deadline_miss_delta": -2,
+    "B0_to_B1_median_end_to_end_ms_delta": -31.0,
+    "B0_to_O1_median_end_to_end_ms_delta": -42.5,
+    "B1_to_O1_deadline_miss_delta": -1,
+    "B1_to_O1_median_end_to_end_ms_delta": -11.5
+  },
+  "environment": {
+    "execution_mode": "docker-qemu-linux-arm64",
+    "guest_architecture": "aarch64",
+    "host_architecture": "AMD64",
+    "onnxruntime": {
+      "providers": [
+        "AzureExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "version": "1.28.0"
+    },
+    "python": "3.13.15"
+  },
+  "limitations": [
+    "All hazard opportunities and semantic service times are deterministic simulations.",
+    "Wall/CPU/RSS values describe the Arm64-emulated guest process, not Raspberry Pi 5 performance.",
+    "No physical energy, thermal, throttling, or sensor-quality claim is made."
+  ],
+  "manifest": {
+    "path": "fixtures/scenarios/benchmark-open-loop.json",
+    "sha256": "1442a8eb780552fc49957f77fd71ad2e05628cf4a05ddd037856bdee63f9ff22"
+  },
+  "quality_checks": {
+    "all_opportunities_processed": true,
+    "all_variants_offer_same_count": true,
+    "model_runtime_optimization_not_worse_than_baseline": true,
+    "orchestrator_deadline_misses_not_worse_than_b1": true,
+    "orchestrator_not_worse_than_b1": true,
+    "same_opportunity_schedule": true,
+    "tier_a_earthquake_deadline_preserved_in_o1": true
+  },
+  "quality_guardrails_passed": true,
+  "release_profile": "H0-EMULATED-AARCH64-20260813",
+  "results": {
+    "B0": {
+      "emulator_execution": {
+        "cpu_median_ms": 1.866941,
+        "cpu_ms": [
+          2.430883,
+          1.866941,
+          1.518614
+        ],
+        "max_rss_kb": 158512,
+        "wall_median_ms": 1.888593,
+        "wall_ms": [
+          2.684335,
+          1.888593,
+          1.532175
+        ]
+      },
+      "semantic": {
+        "camera_preprocessing": {
+          "backend_version": "opencv-4.10.0",
+          "build": "sentinel-camera-preprocess-v1",
+          "kleidicv_enabled": false,
+          "opencv_enabled": true,
+          "operations": [
+            "decode",
+            "resize",
+            "privacy_mask"
+          ],
+          "thread_policy": "single-threaded"
+        },
+        "claim_class": "simulated",
+        "deadline_misses": 3,
+        "execution_mode": "fixed_rate",
+        "hazard_quality": {
+          "earthquake": {
+            "completion_rate": 1.0,
+            "deadline_misses": 1,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "flood": {
+            "completion_rate": 1.0,
+            "deadline_misses": 0,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "landslide": {
+            "completion_rate": 1.0,
+            "deadline_misses": 1,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "wildfire": {
+            "completion_rate": 1.0,
+            "deadline_misses": 1,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          }
+        },
+        "instrumentation_config_hashes": [
+          "benchmark-config-v1"
+        ],
+        "latency_histogram": {
+          "counts": [
+            0,
+            0,
+            1,
+            0,
+            3,
+            0,
+            0
+          ],
+          "edges": [
+            0.0,
+            10.0,
+            25.0,
+            50.0,
+            100.0,
+            250.0,
+            500.0,
+            1000.0
+          ],
+          "metric": "end_to_end_ms",
+          "precision_ms": 1.0,
+          "range_policy": "overflow_not_clipped"
+        },
+        "latency_overflow_count": 0,
+        "median_end_to_end_ms": 111.5,
+        "offered": 4,
+        "opportunity_accounting": {
+          "deadline_missed": 0,
+          "deferred": 0,
+          "dropped": 0,
+          "expired": 0,
+          "failed": 0,
+          "invalid": 0,
+          "never_started": 0,
+          "offered": 4,
+          "processed": 4,
+          "queued": 0,
+          "replaced": 0,
+          "skipped": 0
+        },
+        "p50_end_to_end_ms": 108.0,
+        "p95_end_to_end_ms": 137.0,
+        "p99_end_to_end_ms": 137.0,
+        "processed": 4,
+        "quality_scope": "timed_run_replay",
+        "raw_latency_samples_ms": [
+          38.0,
+          108.0,
+          115.0,
+          137.0
+        ],
+        "records": [
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 38,
+            "deadline_missed": false,
+            "deadline_ms": 100,
+            "disposition": "processed",
+            "end_to_end_ms": 38,
+            "hazard": "flood",
+            "opportunity_key": "flood-001",
+            "queue_latency_ms": 0,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 38,
+            "service_start_ms": 0,
+            "stage_latency_ms": {
+              "decode": 7,
+              "infer": 15,
+              "postprocess": 3,
+              "preprocess": 7,
+              "store": 6
+            },
+            "tier": 2,
+            "workload_id": "flood-evaluate"
+          },
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 108,
+            "deadline_missed": true,
+            "deadline_ms": 90,
+            "disposition": "processed",
+            "end_to_end_ms": 108,
+            "hazard": "wildfire",
+            "opportunity_key": "wildfire-001",
+            "queue_latency_ms": 38,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 70,
+            "service_start_ms": 38,
+            "stage_latency_ms": {
+              "decode": 14,
+              "infer": 28,
+              "postprocess": 7,
+              "preprocess": 14,
+              "store": 7
+            },
+            "tier": 1,
+            "workload_id": "wildfire-stage2"
+          },
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 115,
+            "deadline_missed": true,
+            "deadline_ms": 20,
+            "disposition": "processed",
+            "end_to_end_ms": 115,
+            "hazard": "earthquake",
+            "opportunity_key": "earthquake-001",
+            "queue_latency_ms": 108,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 7,
+            "service_start_ms": 108,
+            "stage_latency_ms": {
+              "decode": 1,
+              "infer": 2,
+              "postprocess": 0,
+              "preprocess": 1,
+              "store": 3
+            },
+            "tier": 0,
+            "workload_id": "earthquake-trigger"
+          },
+          {
+            "actual_release_ms": 10,
+            "capture_ms": 10,
+            "completion_ms": 147,
+            "deadline_missed": true,
+            "deadline_ms": 120,
+            "disposition": "processed",
+            "end_to_end_ms": 137,
+            "hazard": "landslide",
+            "opportunity_key": "landslide-001",
+            "queue_latency_ms": 105,
+            "queue_start_ms": 10,
+            "reason_codes": [],
+            "scheduled_release_ms": 10,
+            "service_ms": 32,
+            "service_start_ms": 115,
+            "stage_latency_ms": {
+              "decode": 6,
+              "infer": 12,
+              "postprocess": 3,
+              "preprocess": 6,
+              "store": 5
+            },
+            "tier": 2,
+            "workload_id": "landslide-evaluate"
+          }
+        ],
+        "resource_samples": [
+          {
+            "cpu_pressure": 0.55,
+            "model_size_bytes": 0,
+            "rss_mb": 0.0,
+            "sample_index": 0,
+            "source": "declared_benchmark_resource_snapshot",
+            "temperature_c": 58.0
+          }
+        ],
+        "schedule_digest": "2865c711f4cd003d4bd4a4a9a8096d40b8b017eb06150612f6ca9da14d6f2e75",
+        "skipped": 0,
+        "telemetry_policy_digest": "d99db1f6f620a34d95034d07c132529b3573ddd83049a5f17ef964d53937a435",
+        "variant": "B0"
+      }
+    },
+    "B1": {
+      "emulator_execution": {
+        "cpu_median_ms": 1.504566,
+        "cpu_ms": [
+          1.504566,
+          1.478618,
+          2.421594
+        ],
+        "max_rss_kb": 158512,
+        "wall_median_ms": 1.52533,
+        "wall_ms": [
+          1.52533,
+          1.491292,
+          2.442286
+        ]
+      },
+      "semantic": {
+        "camera_preprocessing": {
+          "backend_version": "opencv-4.10.0",
+          "build": "sentinel-camera-preprocess-v1",
+          "kleidicv_enabled": false,
+          "opencv_enabled": true,
+          "operations": [
+            "decode",
+            "resize",
+            "privacy_mask"
+          ],
+          "thread_policy": "single-threaded"
+        },
+        "claim_class": "simulated",
+        "deadline_misses": 1,
+        "execution_mode": "fixed_rate",
+        "hazard_quality": {
+          "earthquake": {
+            "completion_rate": 1.0,
+            "deadline_misses": 1,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "flood": {
+            "completion_rate": 1.0,
+            "deadline_misses": 0,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "landslide": {
+            "completion_rate": 1.0,
+            "deadline_misses": 0,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "wildfire": {
+            "completion_rate": 1.0,
+            "deadline_misses": 0,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          }
+        },
+        "instrumentation_config_hashes": [
+          "benchmark-config-v1"
+        ],
+        "latency_histogram": {
+          "counts": [
+            0,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0
+          ],
+          "edges": [
+            0.0,
+            10.0,
+            25.0,
+            50.0,
+            100.0,
+            250.0,
+            500.0,
+            1000.0
+          ],
+          "metric": "end_to_end_ms",
+          "precision_ms": 1.0,
+          "range_policy": "overflow_not_clipped"
+        },
+        "latency_overflow_count": 0,
+        "median_end_to_end_ms": 80.5,
+        "offered": 4,
+        "opportunity_accounting": {
+          "deadline_missed": 0,
+          "deferred": 0,
+          "dropped": 0,
+          "expired": 0,
+          "failed": 0,
+          "invalid": 0,
+          "never_started": 0,
+          "offered": 4,
+          "processed": 4,
+          "queued": 0,
+          "replaced": 0,
+          "skipped": 0
+        },
+        "p50_end_to_end_ms": 78.0,
+        "p95_end_to_end_ms": 97.0,
+        "p99_end_to_end_ms": 97.0,
+        "processed": 4,
+        "quality_scope": "timed_run_replay",
+        "raw_latency_samples_ms": [
+          28.0,
+          78.0,
+          83.0,
+          97.0
+        ],
+        "records": [
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 28,
+            "deadline_missed": false,
+            "deadline_ms": 100,
+            "disposition": "processed",
+            "end_to_end_ms": 28,
+            "hazard": "flood",
+            "opportunity_key": "flood-001",
+            "queue_latency_ms": 0,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 28,
+            "service_start_ms": 0,
+            "stage_latency_ms": {
+              "decode": 5,
+              "infer": 11,
+              "postprocess": 2,
+              "preprocess": 5,
+              "store": 5
+            },
+            "tier": 2,
+            "workload_id": "flood-evaluate"
+          },
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 78,
+            "deadline_missed": false,
+            "deadline_ms": 90,
+            "disposition": "processed",
+            "end_to_end_ms": 78,
+            "hazard": "wildfire",
+            "opportunity_key": "wildfire-001",
+            "queue_latency_ms": 28,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 50,
+            "service_start_ms": 28,
+            "stage_latency_ms": {
+              "decode": 10,
+              "infer": 20,
+              "postprocess": 5,
+              "preprocess": 10,
+              "store": 5
+            },
+            "tier": 1,
+            "workload_id": "wildfire-stage2"
+          },
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 83,
+            "deadline_missed": true,
+            "deadline_ms": 20,
+            "disposition": "processed",
+            "end_to_end_ms": 83,
+            "hazard": "earthquake",
+            "opportunity_key": "earthquake-001",
+            "queue_latency_ms": 78,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 5,
+            "service_start_ms": 78,
+            "stage_latency_ms": {
+              "decode": 1,
+              "infer": 2,
+              "postprocess": 0,
+              "preprocess": 1,
+              "store": 1
+            },
+            "tier": 0,
+            "workload_id": "earthquake-trigger"
+          },
+          {
+            "actual_release_ms": 10,
+            "capture_ms": 10,
+            "completion_ms": 107,
+            "deadline_missed": false,
+            "deadline_ms": 120,
+            "disposition": "processed",
+            "end_to_end_ms": 97,
+            "hazard": "landslide",
+            "opportunity_key": "landslide-001",
+            "queue_latency_ms": 73,
+            "queue_start_ms": 10,
+            "reason_codes": [],
+            "scheduled_release_ms": 10,
+            "service_ms": 24,
+            "service_start_ms": 83,
+            "stage_latency_ms": {
+              "decode": 4,
+              "infer": 9,
+              "postprocess": 2,
+              "preprocess": 4,
+              "store": 5
+            },
+            "tier": 2,
+            "workload_id": "landslide-evaluate"
+          }
+        ],
+        "resource_samples": [
+          {
+            "cpu_pressure": 0.55,
+            "model_size_bytes": 0,
+            "rss_mb": 0.0,
+            "sample_index": 0,
+            "source": "declared_benchmark_resource_snapshot",
+            "temperature_c": 58.0
+          }
+        ],
+        "schedule_digest": "2865c711f4cd003d4bd4a4a9a8096d40b8b017eb06150612f6ca9da14d6f2e75",
+        "skipped": 0,
+        "telemetry_policy_digest": "d99db1f6f620a34d95034d07c132529b3573ddd83049a5f17ef964d53937a435",
+        "variant": "B1"
+      }
+    },
+    "O1": {
+      "emulator_execution": {
+        "cpu_median_ms": 5.534359,
+        "cpu_ms": [
+          5.65885,
+          5.534359,
+          5.151676
+        ],
+        "max_rss_kb": 158512,
+        "wall_median_ms": 5.550677,
+        "wall_ms": [
+          5.687816,
+          5.550677,
+          5.171505
+        ]
+      },
+      "semantic": {
+        "camera_preprocessing": {
+          "backend_version": "opencv-4.10.0",
+          "build": "sentinel-camera-preprocess-v1",
+          "kleidicv_enabled": false,
+          "opencv_enabled": true,
+          "operations": [
+            "decode",
+            "resize",
+            "privacy_mask"
+          ],
+          "thread_policy": "single-threaded"
+        },
+        "claim_class": "simulated",
+        "deadline_misses": 0,
+        "execution_mode": "orchestrated",
+        "hazard_quality": {
+          "earthquake": {
+            "completion_rate": 1.0,
+            "deadline_misses": 0,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "flood": {
+            "completion_rate": 1.0,
+            "deadline_misses": 0,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "landslide": {
+            "completion_rate": 1.0,
+            "deadline_misses": 0,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          },
+          "wildfire": {
+            "completion_rate": 1.0,
+            "deadline_misses": 0,
+            "offered": 1,
+            "processed": 1,
+            "skipped": 0
+          }
+        },
+        "instrumentation_config_hashes": [
+          "benchmark-config-v1"
+        ],
+        "latency_histogram": {
+          "counts": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "edges": [
+            0.0,
+            10.0,
+            25.0,
+            50.0,
+            100.0,
+            250.0,
+            500.0,
+            1000.0
+          ],
+          "metric": "end_to_end_ms",
+          "precision_ms": 1.0,
+          "range_policy": "overflow_not_clipped"
+        },
+        "latency_overflow_count": 0,
+        "median_end_to_end_ms": 69.0,
+        "offered": 4,
+        "opportunity_accounting": {
+          "deadline_missed": 0,
+          "deferred": 0,
+          "dropped": 0,
+          "expired": 0,
+          "failed": 0,
+          "invalid": 0,
+          "never_started": 0,
+          "offered": 4,
+          "processed": 4,
+          "queued": 0,
+          "replaced": 0,
+          "skipped": 0
+        },
+        "p50_end_to_end_ms": 55.0,
+        "p95_end_to_end_ms": 97.0,
+        "p99_end_to_end_ms": 97.0,
+        "processed": 4,
+        "quality_scope": "timed_run_only",
+        "raw_latency_samples_ms": [
+          5.0,
+          55.0,
+          83.0,
+          97.0
+        ],
+        "records": [
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 5,
+            "deadline_missed": false,
+            "deadline_ms": 20,
+            "disposition": "processed",
+            "end_to_end_ms": 5,
+            "hazard": "earthquake",
+            "opportunity_key": "earthquake-001",
+            "queue_latency_ms": 0,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 5,
+            "service_start_ms": 0,
+            "stage_latency_ms": {
+              "decode": 1,
+              "infer": 2,
+              "postprocess": 0,
+              "preprocess": 1,
+              "store": 1
+            },
+            "tier": 0,
+            "workload_id": "earthquake-trigger"
+          },
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 55,
+            "deadline_missed": false,
+            "deadline_ms": 90,
+            "disposition": "processed",
+            "end_to_end_ms": 55,
+            "hazard": "wildfire",
+            "opportunity_key": "wildfire-001",
+            "queue_latency_ms": 5,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 50,
+            "service_start_ms": 5,
+            "stage_latency_ms": {
+              "decode": 10,
+              "infer": 20,
+              "postprocess": 5,
+              "preprocess": 10,
+              "store": 5
+            },
+            "tier": 1,
+            "workload_id": "wildfire-stage2"
+          },
+          {
+            "actual_release_ms": 0,
+            "capture_ms": 0,
+            "completion_ms": 83,
+            "deadline_missed": false,
+            "deadline_ms": 100,
+            "disposition": "processed",
+            "end_to_end_ms": 83,
+            "hazard": "flood",
+            "opportunity_key": "flood-001",
+            "queue_latency_ms": 55,
+            "queue_start_ms": 0,
+            "reason_codes": [],
+            "scheduled_release_ms": 0,
+            "service_ms": 28,
+            "service_start_ms": 55,
+            "stage_latency_ms": {
+              "decode": 5,
+              "infer": 11,
+              "postprocess": 2,
+              "preprocess": 5,
+              "store": 5
+            },
+            "tier": 2,
+            "workload_id": "flood-evaluate"
+          },
+          {
+            "actual_release_ms": 10,
+            "capture_ms": 10,
+            "completion_ms": 107,
+            "deadline_missed": false,
+            "deadline_ms": 120,
+            "disposition": "processed",
+            "end_to_end_ms": 97,
+            "hazard": "landslide",
+            "opportunity_key": "landslide-001",
+            "queue_latency_ms": 73,
+            "queue_start_ms": 10,
+            "reason_codes": [],
+            "scheduled_release_ms": 10,
+            "service_ms": 24,
+            "service_start_ms": 83,
+            "stage_latency_ms": {
+              "decode": 4,
+              "infer": 9,
+              "postprocess": 2,
+              "preprocess": 4,
+              "store": 5
+            },
+            "tier": 2,
+            "workload_id": "landslide-evaluate"
+          }
+        ],
+        "resource_samples": [
+          {
+            "cpu_pressure": 0.55,
+            "model_size_bytes": 0,
+            "rss_mb": 0.0,
+            "sample_index": 0,
+            "source": "declared_benchmark_resource_snapshot",
+            "temperature_c": 58.0
+          }
+        ],
+        "schedule_digest": "2865c711f4cd003d4bd4a4a9a8096d40b8b017eb06150612f6ca9da14d6f2e75",
+        "skipped": 0,
+        "telemetry_policy_digest": "d99db1f6f620a34d95034d07c132529b3573ddd83049a5f17ef964d53937a435",
+        "variant": "O1"
+      }
+    }
+  },
+  "schema": "sentinel-edge.emulated-arm64-benchmark.v1"
+}

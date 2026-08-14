@@ -1,0 +1,29 @@
+{
+  "benchmark_id": "local-development",
+  "benchmark_manifest_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+  "evaluated_at": "2026-08-02T17:49:57.111320Z",
+  "evidence_sha256": "02e0668005997a871cc78dc3de07df978cfcce6d40c235d6522ab579e34a391c",
+  "host_report_sha256": "bc9ca515bf315dbf8a9dc1abca3751643225bb9cd7bafd53c5fd3728c4fa345b",
+  "opportunity_manifest_equal": true,
+  "power_valid": false,
+  "quality_guardrails_passed": false,
+  "raw_sample_count": 3,
+  "reason_codes": [
+    "power_invalid",
+    "quality_guardrails_failed",
+    "source_not_measured",
+    "target_host_not_qualified",
+    "thermal_invalid"
+  ],
+  "runtime_profile_sha256s": [],
+  "schema_version": "1.0.0",
+  "source_class": "simulated",
+  "target_host_qualified": false,
+  "target_measurement_claim_allowed": false,
+  "thermal_valid": false,
+  "variants": [
+    "B0",
+    "B1",
+    "O1"
+  ]
+}

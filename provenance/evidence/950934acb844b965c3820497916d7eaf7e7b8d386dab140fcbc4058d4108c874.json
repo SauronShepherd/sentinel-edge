@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_decision_reconstruction.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "950934acb844b965c3820497916d7eaf7e7b8d386dab140fcbc4058d4108c874",
+  "inputs": [
+    {
+      "path": "tests\\test_decision_reconstruction.py",
+      "sha256": "7187eb361e7421072ad8a1e2f815e33c182af1e21822d48fe1db6a7e34750284"
+    },
+    {
+      "path": "src\\sentinel_edge\\review\\decision_reconstruction.py",
+      "sha256": "1e8f5acefe7f6e1868955cf0fcac50eedbd71d2257f184ef12f3098dd780b273"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:07:39.648673Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rev002",
+  "schema_version": 1
+}

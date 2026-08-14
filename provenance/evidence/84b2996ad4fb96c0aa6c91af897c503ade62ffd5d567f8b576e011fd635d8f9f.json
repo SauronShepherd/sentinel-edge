@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_replay_verification.py tests/test_scenario_e2e.py tests/test_benchmark_lab.py tests/test_after_event_review.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.0,
+  "environment": {
+    "name": "Windows development host; deterministic replay verification tests",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "84b2996ad4fb96c0aa6c91af897c503ade62ffd5d567f8b576e011fd635d8f9f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\replay.py",
+      "sha256": "35b902227da41862860cfd18ae089f9f487db914188682ad5c73f55f8a16f60e"
+    },
+    {
+      "path": "tests\\test_replay_verification.py",
+      "sha256": "b9aa808696bef9f71c69d390ef4878b528843cd72fff1866577cbedfb31b1d3a"
+    }
+  ],
+  "recorded_at": "2026-08-12T16:56:55.080639Z",
+  "result": "passed",
+  "revision": "working-tree-replay-classification",
+  "schema_version": 1
+}

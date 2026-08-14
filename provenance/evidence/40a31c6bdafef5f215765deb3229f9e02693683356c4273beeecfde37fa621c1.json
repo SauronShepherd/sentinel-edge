@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_secure_boot_fixture.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "40a31c6bdafef5f215765deb3229f9e02693683356c4273beeecfde37fa621c1",
+  "inputs": [
+    {
+      "path": "tests\\test_secure_boot_fixture.py",
+      "sha256": "2abfedf041034b15d83a416ac55130225cf2e260c818102d8571f54f55799e3d"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\secure_boot_fixture.py",
+      "sha256": "9a2755d477a1b780f7b259df0cd62e19c61dcc55f1e9fab88a5ef4e5f341476a"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:02:14.998690Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-hbt004",
+  "schema_version": 1
+}

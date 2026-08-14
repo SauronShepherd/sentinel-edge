@@ -1,0 +1,24 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_audit_baseline.py tests/test_conformance_ledger.py tests/test_command_catalog.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 13,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 25.0,
+  "environment": {
+    "name": "development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "96b9898991d49720ee0fd51b53dbef873c9e778968b6dbd988d52be948cad156",
+  "inputs": [],
+  "recorded_at": "2026-08-13T09:19:13.441380Z",
+  "result": "passed",
+  "revision": "repo-governance-20260813",
+  "schema_version": 1
+}

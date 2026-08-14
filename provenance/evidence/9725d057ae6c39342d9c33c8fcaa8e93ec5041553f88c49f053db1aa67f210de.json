@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "path": "architecture\\owned-namespaces.yaml",
+      "sha256": "a6afc78175bb82514b51d1d7879157dc0f8a2bac9d391d4edfbba855d7272bd0"
+    },
+    {
+      "path": "architecture\\import-rules.toml",
+      "sha256": "fc9e3326bf9d903e38670d5496445a83263b363b2c37367d5a66171aca19c033"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\architecture\\\\test_mutations.py tests\\\\architecture\\\\test_client_boundary_mutations.py tests\\\\architecture\\\\test_authority_boundaries.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 11,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 177.6,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "9725d057ae6c39342d9c33c8fcaa8e93ec5041553f88c49f053db1aa67f210de",
+  "inputs": [
+    {
+      "path": "tests\\architecture\\test_mutations.py",
+      "sha256": "c5f63f6149f03cc897e643caa1cc974ba9dafabde5353b50bd5785a8f3f7a742"
+    },
+    {
+      "path": "tests\\architecture\\test_client_boundary_mutations.py",
+      "sha256": "851f3313d7fdc3edaa5bb69b2d02d67a16bcaab51a867b360ac5f6fd6275b156"
+    },
+    {
+      "path": "tests\\architecture\\test_authority_boundaries.py",
+      "sha256": "e7a35b5563ee341e5a0f7cbccea9c4211f8e161badb4ba77d6cc124a87d221d4"
+    }
+  ],
+  "recorded_at": "2026-08-12T14:10:41.596298Z",
+  "result": "passed",
+  "revision": "REQ-MOD-003-005-boundaries",
+  "schema_version": 1
+}

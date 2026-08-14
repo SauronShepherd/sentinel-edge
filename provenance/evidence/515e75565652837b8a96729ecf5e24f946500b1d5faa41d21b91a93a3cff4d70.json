@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_data_influence.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.7,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "515e75565652837b8a96729ecf5e24f946500b1d5faa41d21b91a93a3cff4d70",
+  "inputs": [
+    {
+      "path": "tests\\test_data_influence.py",
+      "sha256": "4a46ddfd070485cdf52717602e8598f71d32113350249bcc90e9f7b3b55e92cc"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:20:20.482050Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

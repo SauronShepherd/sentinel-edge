@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_evidence_state_events.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "516e31f8556e8c6b14255680b2bd3cfd8a9a899f090e9f8863b9aab4472edebf",
+  "inputs": [
+    {
+      "path": "tests\\test_evidence_state_events.py",
+      "sha256": "59668d9666ce4d1d55f2a7ea835705b8fb61fc637dd84f0bd0d57e7b03ed6ebb"
+    },
+    {
+      "path": "src\\sentinel_edge\\evidence\\state_events.py",
+      "sha256": "5ac9abbf61bd7aeaf1c4fcc281465242a772bba328ccbaac721d5886f60eb630"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:48:13.803353Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-dgp006",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_corrective_actions.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "8b97a4976428cbec5d3af869ef7c764c579fb31379c1c8fae640dfb640007e4a",
+  "inputs": [
+    {
+      "path": "tests\\test_corrective_actions.py",
+      "sha256": "1e15a2298ba18d8b4bcc30d24363ef1aafbe01ee4545fe70ff2963e8eb8703af"
+    },
+    {
+      "path": "src\\sentinel_edge\\review\\corrective_actions.py",
+      "sha256": "025b25e3a470a547347dac16532c134ee18bda86110edde571ffde489bb28f42"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:53:53.378981Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-act001",
+  "schema_version": 1
+}

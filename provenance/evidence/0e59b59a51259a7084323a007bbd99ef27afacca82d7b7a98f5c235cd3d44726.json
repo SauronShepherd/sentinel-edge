@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_content_origin.py tests/test_evidence_claim_graph.py tests/test_api.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 10,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 7.4,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "0e59b59a51259a7084323a007bbd99ef27afacca82d7b7a98f5c235cd3d44726",
+  "inputs": [
+    {
+      "path": "tests\\test_content_origin.py",
+      "sha256": "730f13d9d88560698afd4f38ed05306b64d59c0b6d2d746be20635bf5800e26f"
+    },
+    {
+      "path": "tests\\test_evidence_claim_graph.py",
+      "sha256": "257cbd858f3bcb678e02c8ae187d77a5d467b45c24fbe0249df695b824dbf921"
+    },
+    {
+      "path": "tests\\test_api.py",
+      "sha256": "754851c131d11722e7ef49a1d20634ed8b711fffe5b2a2ea750829764390eeb9"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:32:21.584907Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

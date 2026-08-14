@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_geospatial_transform_policy.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3cac4f1926c762b642a321253161acfa0498e913a0c76afd11876dd065f8d33c",
+  "inputs": [
+    {
+      "path": "tests\\test_geospatial_transform_policy.py",
+      "sha256": "2704fd57721341ac2478ea92d83b9ffdf3abe2b6e951136d1db20f1df81b2adb"
+    },
+    {
+      "path": "src\\sentinel_edge\\geospatial\\contracts.py",
+      "sha256": "0ed326805132a294c58f4936e677ca6f164a87b887984a051362b575cc8d5239"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:03:28.069389Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-grp003",
+  "schema_version": 1
+}

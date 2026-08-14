@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_release_candidate.py -k identity_is_stable or separates_frozen",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "44c42ddc1be542355088961487e1803724a1304d383bcba7170fdd9c3af809cc",
+  "inputs": [
+    {
+      "path": "tests\\test_release_candidate.py",
+      "sha256": "6c0fe88494281c145d9bf7ed118245449357ec8413eb01d203609f113a190a3b"
+    },
+    {
+      "path": "src\\sentinel_edge\\release\\candidate.py",
+      "sha256": "76d75cd8a98a200cb5f8772cf385568a7c9b503145938d91a1bad0aa0804b1d1"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:57:32.870208Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rci005",
+  "schema_version": 1
+}

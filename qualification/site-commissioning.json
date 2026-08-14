@@ -1,0 +1,17 @@
+{
+  "calibration_identity": "development-calibration-v1",
+  "commissioning_id": "earthquake-development-commissioning-v1",
+  "evaluated_at": "2026-08-03T08:19:00+00:00",
+  "failures": [],
+  "limitations": [
+    "fixture_signal_not_site_verification"
+  ],
+  "record_sha256": "104f7c6f35e3ebac4115800d3456abd11e5c5a6637af3b87300a8db3a6d76ada",
+  "report_digest": "6d70e1c4ff3a5bc2a91e70cc4f20affa659f670bf32324439f3a157439f2f775",
+  "review_or_degraded_only": true,
+  "schema": "sentinel-edge-site-commissioning-evaluation/1.0",
+  "signal_chain_profile_sha256": "45d5a7d6a43e721318388e6244edc898be7d6ded4b28e37b50756619d28ac3cf",
+  "site_id": "development-site",
+  "site_verified_claim_allowed": false,
+  "state": "tested"
+}

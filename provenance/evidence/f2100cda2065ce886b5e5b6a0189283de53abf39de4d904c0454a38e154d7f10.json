@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_geojson_exchange.py",
+      "sha256": "beb6a9235768f2bfe3cc016c09b057f32ae513884573e9c2037e3d042b916956"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_geojson_exchange.py tests/test_geospatial_contracts.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.5,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "f2100cda2065ce886b5e5b6a0189283de53abf39de4d904c0454a38e154d7f10",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\geospatial\\exchange.py",
+      "sha256": "0fe674e4e5ff4524f9fa124809fe26a13de0ef30811f12a87a0be6ece3cdcfe4"
+    },
+    {
+      "path": "src\\sentinel_edge\\geospatial\\__init__.py",
+      "sha256": "4cec1c6a7bcbe72d17f8d1fcb427c6247710ab9e2c2df304fcdf8e8cb5d49d0f"
+    },
+    {
+      "path": "tests\\test_geojson_exchange.py",
+      "sha256": "beb6a9235768f2bfe3cc016c09b057f32ae513884573e9c2037e3d042b916956"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:52:19.571975Z",
+  "result": "passed",
+  "revision": "bounded-geojson-exchange-REQ-INT-003",
+  "schema_version": 1
+}

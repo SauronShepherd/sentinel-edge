@@ -1,0 +1,19 @@
+{
+  "envelope_id": "development-platform-envelope-v0.21.0",
+  "envelope_sha256": "53a43f9e59f4b7555eb13f9fb081df876d0d331fce99a913b22771db2a0b06c0",
+  "evaluated_at": "2026-08-03T09:05:00+00:00",
+  "failures": [
+    "platform_fact_mismatch:driver_identities:imu",
+    "platform_fact_mismatch:hardening_identities:kernel_lockdown",
+    "platform_fact_mismatch:machine",
+    "platform_fact_mismatch:runtime_identities:provider",
+    "platform_source_not_observed"
+  ],
+  "limitations": [],
+  "qualification_inheritance_allowed": false,
+  "raspberry_pi_5_vector_claim_allowed": true,
+  "report_digest": "1c669577544d508a40c0ec87959d1bf1d3edeebbb2d65eb3e84e1eba10d9c7ec",
+  "schema": "sentinel-edge-platform-runtime-envelope-evaluation/1.0",
+  "state": "failed",
+  "target_qualified": false
+}

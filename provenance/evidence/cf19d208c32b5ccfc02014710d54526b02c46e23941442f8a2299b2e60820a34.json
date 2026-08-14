@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\web_security.py",
+      "sha256": "1c9ae4c457229776772403770cfea6c33a5cb3acba52704e82731e85d6a595bc"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_web_security_policy.py tests/test_web_boundary_integration.py tests/test_client_security.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 9,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 10.0,
+  "environment": {
+    "name": "local deterministic web security fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "cf19d208c32b5ccfc02014710d54526b02c46e23941442f8a2299b2e60820a34",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\web_security.py",
+      "sha256": "1c9ae4c457229776772403770cfea6c33a5cb3acba52704e82731e85d6a595bc"
+    },
+    {
+      "path": "tests\\test_web_security_policy.py",
+      "sha256": "5f4c4f2debb44ff14c0c94a53073e5e33f71f2a66077cf5183847cf48f82fafe"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:38:51.247940Z",
+  "result": "passed",
+  "revision": "websocket-origin-auth-v1-20260813",
+  "schema_version": 1
+}

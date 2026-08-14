@@ -1,0 +1,29 @@
+{
+  "artifacts": [
+    {
+      "path": ".tmp\\arm64-benchmark.json",
+      "sha256": "fe2de331fcfb4792f05e37d8a58c7e8b40b0eef174c11c7f641df14c591f4e03"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe scripts/dev.py arm64-benchmark",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 22.0,
+  "environment": {
+    "name": "docker-qemu-linux-arm64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "4491c5cad3f9c148a57499b845a72053cd20dc09293208a3f09775e47faedbc5",
+  "inputs": [],
+  "recorded_at": "2026-08-13T09:03:24.274108Z",
+  "result": "passed",
+  "revision": "H0-EMULATED-AARCH64-20260813",
+  "schema_version": 1
+}

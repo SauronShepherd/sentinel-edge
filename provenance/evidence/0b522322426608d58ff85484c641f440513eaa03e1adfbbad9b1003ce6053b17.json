@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_incident_commands_and_relations.py::test_blind_required_sensor_cannot_resolve_event -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 10.1,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "0b522322426608d58ff85484c641f440513eaa03e1adfbbad9b1003ce6053b17",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "b603158f6fb01a25ceb13230a3042cbdbe988fb9f06d9e9c92a29d1c2e1b1e5b"
+    },
+    {
+      "path": "tests\\test_incident_commands_and_relations.py",
+      "sha256": "87c1f280f89c8f9424444f8f728600137b533dd2be051a471e74d41d28cdab7b"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:28:24.058562Z",
+  "result": "passed",
+  "revision": "REQ-RES-001 blind coverage blocks event resolution",
+  "schema_version": 1
+}

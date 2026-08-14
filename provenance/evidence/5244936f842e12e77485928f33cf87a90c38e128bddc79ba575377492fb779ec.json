@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_lhasa_assets.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5244936f842e12e77485928f33cf87a90c38e128bddc79ba575377492fb779ec",
+  "inputs": [
+    {
+      "path": "tests\\test_lhasa_assets.py",
+      "sha256": "6c3c4e81d8cb1d874b29cf36d94672c73583a8b6c28ebcb592672766a2e03fb2"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\lhasa_assets.py",
+      "sha256": "8b6b4c8829db5505e8487c9fd2537564fe8daf403c0ac744db8828007db02fc2"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:48:41.160959Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-smd003",
+  "schema_version": 1
+}

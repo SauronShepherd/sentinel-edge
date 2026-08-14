@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_correction_window.py tests/test_incidents.py tests/test_notifications_and_reviews.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 13,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "1c42e29b04355406e2c9e04c5ed0c42d933a7579c6cf7fed92e70a55cce621f3",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\correction_window.py",
+      "sha256": "9f8c469b24da1237f0416ac98e8b24876fe54a9a611b446cc27f1216c05ffc0b"
+    },
+    {
+      "path": "tests\\test_correction_window.py",
+      "sha256": "fe13e76cc42e20edc844c7253c08dd901912fd302b60bf69daf25cb7e34ad027"
+    },
+    {
+      "path": "tests\\test_incidents.py",
+      "sha256": "d11a8a31dd755cb8ac238657fcd780cec3dfb51ad5613095f7c2222f747b4705"
+    },
+    {
+      "path": "tests\\test_notifications_and_reviews.py",
+      "sha256": "ecd92e25bed42be218822a7b8b8b31a627c312897f7b1756692a25c2d7222ae5"
+    }
+  ],
+  "recorded_at": "2026-08-13T04:06:58.087527Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

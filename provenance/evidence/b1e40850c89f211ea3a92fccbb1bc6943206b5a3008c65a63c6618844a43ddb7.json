@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_drift_campaign.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b1e40850c89f211ea3a92fccbb1bc6943206b5a3008c65a63c6618844a43ddb7",
+  "inputs": [
+    {
+      "path": "tests\\test_drift_campaign.py",
+      "sha256": "7f97848b7d14af3a8eb172aefcd10d0625b1b6b86d178ee2d5c842d4e5e4850b"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\drift_campaign.py",
+      "sha256": "622f7be777cca2d2aa422ba0835768c65a3d4bebc11b0d1406c52d0435a28e4b"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:09:36.635670Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-drf008",
+  "schema_version": 1
+}

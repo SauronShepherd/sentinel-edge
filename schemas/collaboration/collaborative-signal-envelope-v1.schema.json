@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sentinel://schemas/collaborative-signal-envelope-v1",
+  "title": "CollaborativeSignalEnvelopeV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["envelope_version", "received_at", "transport", "transport_message_id", "transport_trust", "signal", "validation_state", "correlation_id"],
+  "properties": {
+    "envelope_version": {"const": "1.0"},
+    "received_at": {"type": "string", "format": "date-time"},
+    "transport": {"type": "string", "enum": ["fixture", "email", "future_http", "future_zenoh"]},
+    "transport_message_id": {"type": "string", "minLength": 1, "maxLength": 160},
+    "transport_trust": {"type": "string", "enum": ["fixture_qualified", "email_unverified", "authenticated_peer", "rejected"]},
+    "signal": {"$ref": "collaborative-signal-v1.schema.json"},
+    "validation_state": {"type": "string", "enum": ["admitted", "context_only", "rejected"]},
+    "validation_reason_codes": {"type": "array", "maxItems": 16, "items": {"type": "string", "minLength": 1, "maxLength": 64}},
+    "correlation_id": {"type": "string", "minLength": 8, "maxLength": 96}
+  }
+}

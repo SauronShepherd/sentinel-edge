@@ -1,30 +1,43 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "sentinel-edge"
-version = "0.0.0"
-description = "Sentinel Edge research platform workspace"
+version = "0.21.0"
+description = "Offline-first Arm edge multi-hazard monitoring and workload orchestration baseline"
 readme = "README.md"
-requires-python = ">=3.12,<3.14"
-dependencies = []
-
-[dependency-groups]
-dev = ["pytest==9.0.2", "PyYAML==6.0.3", "jsonschema==4.26.0"]
-
-[tool.uv]
-package = false
-
-[tool.pytest.ini_options]
-minversion = "9.0"
-testpaths = ["tests"]
-addopts = [
-  "--strict-config",
-  "--strict-markers",
-  "--disable-warnings",
+requires-python = ">=3.11,<3.14"
+license = {text = "Apache-2.0"}
+dependencies = [
+  "fastapi>=0.128,<1",
+  "pydantic>=2.13,<3",
+  "PyYAML>=6,<7",
+  "uvicorn>=0.48,<1",
+  "cryptography>=46,<47",
+  "Pillow>=12,<13",
+  "packaging>=25,<26",
 ]
 
-[tool.sentinel-edge.toolchain]
-python = "3.12-3.13"
-uv = "0.10.0"
-pytest = "9.0.2"
-pyyaml = "6.0.3"
-jsonschema = "4.26.0"
+[project.optional-dependencies]
+test = ["pytest>=9,<10", "httpx>=0.28,<1"]
+
+[project.scripts]
+sentinel-edge = "sentinel_edge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [
+  "src",
+  "modules/analysis-enrichment-engine/src",
+  "modules/incident-event-engine/src",
+  "modules/model-workload-runtime/src",
+  "modules/rest-api-integration-gateway/src",
+  "modules/streaming-source-collector/src",
+  "sdk/sentinel-plugin-sdk/src",
+  "sdk/sentinel-testkit/src",
+]
+addopts = "-q"

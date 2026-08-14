@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_ingress_adapters.py tests/test_reference_policy.py tests/test_collector.py tests/test_domain.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 16,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 5.9,
+  "environment": {
+    "name": "Windows development host; deterministic Component-1 ingress contract tests",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5c0adac170a7d518ade0e65f4a0e2f1651c22deb5683a554c49ed90bc8e07a9f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collector\\ingress.py",
+      "sha256": "42b531665c3ec00f6ede53b4ce8b9371bbbb3ab96f3864e937d505b23a256e2f"
+    },
+    {
+      "path": "src\\sentinel_edge\\collector\\__init__.py",
+      "sha256": "2dd4c2d4ffdadf71cf8a205f385279501ca96693e747300211d598f6e2d82bca"
+    },
+    {
+      "path": "tests\\test_ingress_adapters.py",
+      "sha256": "ace5858a0e7ca3923d1438ec9a4fe32608b35a9f2904ca3f15bc56f12bf605de"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:04:58.239571Z",
+  "result": "passed",
+  "revision": "working-tree-ingress-adapters",
+  "schema_version": 1
+}

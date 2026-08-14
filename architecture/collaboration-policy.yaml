@@ -1,0 +1,15 @@
+schema: sentinel-edge.collaboration-policy.v1
+capability_id: CAP-COLLAB-001
+profile: H1
+default_enabled: false
+incident_writer: component-4
+acquisition_owner: component-1
+client_boundary: component-5
+rules:
+  - local_h0_must_not_depend_on_collaboration
+  - research_consent_requires_operational_sharing
+  - email_unverified_cannot_create_trusted_multi_node_confirmation
+  - one_peer_counts_once_per_correlation_episode
+  - unknown_or_incompatible_domain_is_context_only
+  - raw_media_sensor_values_exact_coordinates_and_secrets_are_forbidden
+  - collaboration_failure_must_not_disable_local_monitoring

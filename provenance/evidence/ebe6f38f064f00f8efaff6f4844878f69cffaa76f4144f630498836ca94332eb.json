@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_notification_privacy.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "ebe6f38f064f00f8efaff6f4844878f69cffaa76f4144f630498836ca94332eb",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\security\\notification_privacy.py",
+      "sha256": "bf662a68c005b18b72591fa0e5f7b9689b10ea4be983d2b2d9137ba37094677f"
+    },
+    {
+      "path": "tests\\test_notification_privacy.py",
+      "sha256": "ce3507a4ae675b830c05b6df7a08e31b494a3ea81068d05a23a4e257ac20e4f8"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:32:02.473602Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_incident_commands_and_relations.py::test_unreviewed_confirmed_incident_cannot_be_resolved -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 20.6,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "92b385dab1ba374fd1db7b117a5c656f88a00e9c91ce0d8621d35c6955c060a1",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "4df0808a087d3b5165fc4a515040799343aa0660676451b07b90b44708a41130"
+    },
+    {
+      "path": "tests\\test_incident_commands_and_relations.py",
+      "sha256": "d853d324d2ab39fc37ad6174d58a19131a70221d4bde9bbe80389f8599f49c2d"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:22:59.614813Z",
+  "result": "passed",
+  "revision": "REQ-HUM-006 block auto-close of unreviewed high-severity local event",
+  "schema_version": 1
+}

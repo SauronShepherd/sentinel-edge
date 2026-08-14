@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_assurance_case.py tests/test_claim_registry_generation.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 8,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a4b541285dc9d0b49391d45b856045dea6964b6dd5d6d6565b7912ff11a40ce7",
+  "inputs": [
+    {
+      "path": "tests\\test_assurance_case.py",
+      "sha256": "1dd8c23cced092cb21fd7accf84c9c26278fededa657470b9a0f3a2827124647"
+    },
+    {
+      "path": "tests\\test_claim_registry_generation.py",
+      "sha256": "fc68b288dab6973a811e571aae2351161d51d85c1151d4e1fb5bfddf6884f51c"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:40:33.591888Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

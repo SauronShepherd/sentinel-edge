@@ -1,0 +1,19 @@
+schema: sentinel-edge.arm64-emulation-profile.v1
+profile_id: H0-EMULATED-AARCH64-20260813
+execution:
+  technology: docker-qemu
+  image: python:3.13-slim
+  platform: linux/arm64
+  guest_architecture: aarch64
+  host_architecture_is_reported_separately: true
+  network_required_for_judge_path: false
+sensors:
+  mode: deterministic_simulated
+  physical_hardware_required: false
+  acquisition_contract: ObservationV2
+claims:
+  allowed_classes: [simulated, replayed, research]
+  raspberry_pi_performance_allowed: false
+  physical_energy_allowed: false
+  physical_thermal_allowed: false
+  physical_sensor_quality_allowed: false

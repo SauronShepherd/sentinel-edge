@@ -1,0 +1,306 @@
+schema: sentinel-edge.command-catalog.v1
+version: 0.22.0
+entrypoint: python scripts/dev.py
+commands:
+  - name: arm64-setup
+    profile: development
+    purpose: Prepare the canonical Docker/QEMU linux-arm64 emulation image
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: arm64-doctor
+    profile: development
+    purpose: Report guest AArch64 and host identity for the emulated profile
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: arm64-test
+    profile: development
+    purpose: Run the bounded contract test lane in the emulated Arm64 guest
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: arm64-demo
+    profile: development
+    purpose: Run the deterministic demo in the emulated Arm64 guest
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: arm64-scenario
+    profile: development
+    purpose: Run the deterministic simultaneous-event scenario in the emulated Arm64 guest
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: arm64-benchmark
+    profile: development
+    purpose: Run the emulation-labelled benchmark lane without making hardware claims
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: collaboration-check
+    profile: development
+    purpose: Validate disabled-by-default collaboration contracts and policy without network access
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: collaboration-demo
+    profile: development
+    purpose: Run deterministic simulated collaborative peers offline
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: collaboration-gmail-fixture
+    profile: development
+    purpose: Process bounded Gmail MIME fixtures without Internet access
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: test-collaboration
+    profile: development
+    purpose: Run the offline collaboration contract and safety tests
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: submission-preflight
+    profile: release
+    purpose: Run and record the complete local and Arm64-emulated Judge command matrix
+    mutating: true
+    execution_semantics: revalidate_before_commit
+    empty_allowed: false
+  - name: release-candidate
+    profile: release
+    purpose: Build and verify the exact candidate after a green committed submission preflight
+    mutating: true
+    execution_semantics: revalidate_before_commit
+    empty_allowed: false
+  - name: setup
+    profile: development
+    purpose: Validate and install the offline development environment
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: verify
+    profile: development
+    purpose: Run deterministic offline repository verification
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: doctor
+    profile: development
+    purpose: Report host and capability state
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: demo
+    profile: development
+    purpose: Run the deterministic demonstration scenario
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: scenario
+    profile: development
+    purpose: Run the deterministic simultaneous-event scenario
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: benchmark
+    profile: target
+    purpose: Execute the native benchmark lane on a qualified target
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: benchmark-replay
+    profile: development
+    purpose: Replay the bounded benchmark reference results
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: claims
+    profile: release
+    purpose: Generate and validate the release claim closure
+    mutating: true
+    execution_semantics: revalidate_before_commit
+    empty_allowed: false
+  - name: aer
+    profile: development
+    purpose: Build the deterministic After-Event Review artifact
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: format
+    profile: development
+    purpose: Check repository text formatting and line endings
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: lint
+    profile: development
+    purpose: Run the repository lint lane
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: type
+    profile: development
+    purpose: Run the repository type-check lane
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: architecture
+    profile: development
+    purpose: Check component ownership and architecture boundaries
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: governance
+    profile: development
+    purpose: Run governance tests with deterministic plugin settings
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: contracts
+    profile: development
+    purpose: Check synchronized contract projections
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: no-silent-skips
+    profile: development
+    purpose: Run the complete suite and reject unexpected skips
+    mutating: true
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: hygiene
+    profile: development
+    purpose: Check repository hygiene and generated-artifact policy
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: gates
+    profile: release
+    purpose: Run the authoritative G0 release gate set
+    mutating: false
+    execution_semantics: revalidate_before_commit
+    empty_allowed: false
+  - name: test-all
+    profile: development
+    purpose: Run the complete development test suite
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: test-workstream
+    profile: internal
+    purpose: Run a bounded workstream acceptance selection
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+    internal: true
+  - name: e2e-iteration
+    profile: internal
+    purpose: Run a bounded end-to-end iteration selection
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+    internal: true
+  - name: plugins
+    profile: development
+    purpose: Run plugin capability acceptance checks
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: testkit
+    profile: development
+    purpose: Run deterministic testkit and contract checks
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: components
+    profile: development
+    purpose: Run backend component capability checks
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: clients
+    profile: development
+    purpose: Check client boundary and contract behavior
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: packages
+    profile: development
+    purpose: Check package metadata and repository hygiene
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: compatibility
+    profile: development
+    purpose: Run current and previous contract compatibility checks
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: generated
+    profile: development
+    purpose: Validate generated contract projections
+    mutating: true
+    execution_semantics: revalidate_before_commit
+    empty_allowed: false
+  - name: security
+    profile: development
+    purpose: Run security and authorization acceptance checks
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: privacy
+    profile: development
+    purpose: Run privacy closure and export checks
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: accessibility
+    profile: development
+    purpose: Run accessibility capability checks
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: provenance
+    profile: development
+    purpose: Validate provenance and lock metadata
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: docs
+    profile: development
+    purpose: Validate documentation links and contract synchronization
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: report
+    profile: release
+    purpose: Generate machine-readable conformance and acceptance reports
+    mutating: true
+    execution_semantics: revalidate_before_commit
+    empty_allowed: false
+  - name: package
+    profile: release
+    purpose: Validate package and release artifact hygiene
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: backup-verify
+    profile: development
+    purpose: Verify backup, restore and retention behavior
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: update-verify
+    profile: development
+    purpose: Verify offline update and rollback behavior
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: false
+  - name: test-arm
+    profile: development
+    purpose: Guard the planned Arm lane without claiming target benchmark evidence
+    mutating: false
+    execution_semantics: point_in_time
+    empty_allowed: true

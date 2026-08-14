@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_profile_governance.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a59b2d1b545b44f4f852ad83398cf5583ce496e0eebefb6ffae705af44c09c47",
+  "inputs": [
+    {
+      "path": "tests\\test_profile_governance.py",
+      "sha256": "396bf3443caef4547dc1a1090b3a83788a34e36a36da5096e8b2f46c6694a664"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\profile_governance.py",
+      "sha256": "95028128a690fbf5c9ba332cb29f66ae5c28b493f4819c5721fbd20934675305"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:08:28.760366Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-drf007",
+  "schema_version": 1
+}

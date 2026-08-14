@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_arrival_quality.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "c6ca0c4fbfbda2220f13ac5bf54fc2faab68a9a57fb1048546bc4bba288e1b5e",
+  "inputs": [
+    {
+      "path": "tests\\test_arrival_quality.py",
+      "sha256": "c558c97217ce1ac0e844c9c0d1a85e40d095f9fa6fe980b5f635f23e5259a6ef"
+    },
+    {
+      "path": "src\\sentinel_edge\\benchmark\\arrival_quality.py",
+      "sha256": "810671d28f5a609b448a78c17d6979b98f0e26d8eb0a70323caaa5d12c3fc40e"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:52:14.801214Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-arr006",
+  "schema_version": 1
+}

@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "68bc8ddfac97176a25fef7a9e2a8824d1c992b3c51a53895885f3bb5ad0aad33"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collaboration_api.py tests/test_api.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.8,
+  "environment": {
+    "name": "local deterministic API fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "be32c285a7488f469e6e82792a1944b0a6219943ca9e33177c79cb096976d977",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "68bc8ddfac97176a25fef7a9e2a8824d1c992b3c51a53895885f3bb5ad0aad33"
+    },
+    {
+      "path": "tests\\test_collaboration_api.py",
+      "sha256": "ae556a7f9a23a91587074353fa382b456a987baf76739272dd16b590760a6437"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:12:23.775820Z",
+  "result": "passed",
+  "revision": "collaboration-signal-projection-v1-20260813",
+  "schema_version": 1
+}

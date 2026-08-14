@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_evidence_claim_graph.py -k person_identification",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "d39cf85c6618b69f5fefd2565df0403fb49e36507b2d499ec5f990aa94cf0e78",
+  "inputs": [
+    {
+      "path": "tests\\test_evidence_claim_graph.py",
+      "sha256": "257cbd858f3bcb678e02c8ae187d77a5d467b45c24fbe0249df695b824dbf921"
+    },
+    {
+      "path": "src\\sentinel_edge\\domain\\models.py",
+      "sha256": "cc3b97c5f5d120872c35aec948d67976f98aa18592915bd487e99fcbf1703a5d"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:11:52.639055Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-imp004",
+  "schema_version": 1
+}

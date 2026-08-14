@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_drift_governance.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5c385e92ed07d49e5ff46ec97342a43171ad63bb2ecdda6aebba4b8bfa551074",
+  "inputs": [
+    {
+      "path": "tests\\test_drift_governance.py",
+      "sha256": "6ba6df805c7c2611a6472997889bf82b52c98cb5ccdb14780b0d20cbd44c869a"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:03:24.172401Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

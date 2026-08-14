@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_root_integrity.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a5557aa2bfc498669c559907075f451c4498e52deb5e60799ddc947a6a16d554",
+  "inputs": [
+    {
+      "path": "tests\\test_root_integrity.py",
+      "sha256": "c38c84761a863011368d557de0ea5650210236b0a9c0cfffb1e10f5a046adcf3"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\root_integrity.py",
+      "sha256": "7c8d7d885f0d6a1cd769174f71ba8295ea2467fb4a3af49fcdbf5fa9c12e0623"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:03:23.552720Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-hbt005",
+  "schema_version": 1
+}

@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_network_session.py tests/test_web_security_policy.py tests/test_audit_revocation_and_connector_lifecycle.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 14,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 17.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "88099974c7c61213dc6fae0f90a0b99e7a839ce50ac207de89e6fa248ac9ca7c",
+  "inputs": [
+    {
+      "path": "tests\\test_network_session.py",
+      "sha256": "ef880622fd7715be50cd71a4a549bfa98e74d2fc8584353c4676f77f3ec70139"
+    },
+    {
+      "path": "tests\\test_web_security_policy.py",
+      "sha256": "75f9ae21605c0fa0b22605826b5c1ad68394adbcb90c1518aa619846b8881ed6"
+    },
+    {
+      "path": "tests\\test_audit_revocation_and_connector_lifecycle.py",
+      "sha256": "5106957ade4544ceb938a99b44398a9653fc317cc06ce40a8acad259702d831e"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:52:34.778015Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

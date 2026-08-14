@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_upload_quarantine.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "6607cdcaf08d4bd743140708e3fc25b09ee58a7f5c5da83ce9ec191d49223307",
+  "inputs": [
+    {
+      "path": "tests\\test_upload_quarantine.py",
+      "sha256": "9a1cfbe3ef4304ac98c4e539e68b4dda64b3a90a8121c9cddf8ecab32a3e867b"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\upload_quarantine.py",
+      "sha256": "11d4832b9bf62da915a9431bf2dcc54bf6de88b3b74cdf290613ee8bf4a7d8b0"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:09:16.258889Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-upl002",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_notifications_and_reviews.py -k grouped or snooze or correction_storm",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "4b9904f8df86b98e5cd7762e8ad71e99e426e1377ea1ae79eb93f3f886f65bd6",
+  "inputs": [
+    {
+      "path": "tests\\test_notifications_and_reviews.py",
+      "sha256": "ddcd8070d368a465f2569e22799a9875233a1daf8d8950ca7a43754c9d6ac649"
+    },
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "b603158f6fb01a25ceb13230a3042cbdbe988fb9f06d9e9c92a29d1c2e1b1e5b"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:55:13.849887Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rev004",
+  "schema_version": 1
+}

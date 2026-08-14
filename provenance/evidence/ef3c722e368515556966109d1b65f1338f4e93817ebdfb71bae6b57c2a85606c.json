@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_sensor_plane_optional.py",
+      "sha256": "a41f39defa294ce106eeebf81f19ea8dad19c3e7a0c36428aa41c58effd1f580"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_sensor_plane_optional.py tests/test_sensor_plane.py tests/test_sensor_protocol.py tests/test_external_trigger.py tests/test_collector.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 20,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 8.7,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "ef3c722e368515556966109d1b65f1338f4e93817ebdfb71bae6b57c2a85606c",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collector\\sensor_plane.py",
+      "sha256": "cf49abf2b7cbf914eb6788a45e906b5fbbf445665b23bc76502c3eb36a6393b2"
+    },
+    {
+      "path": "src\\sentinel_edge\\app.py",
+      "sha256": "9db6a4d7330cf269dd8f113d5079e0c98208d99e473997eb07d717f99d90e12a"
+    },
+    {
+      "path": "tests\\test_sensor_plane_optional.py",
+      "sha256": "a41f39defa294ce106eeebf81f19ea8dad19c3e7a0c36428aa41c58effd1f580"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:34:25.897605Z",
+  "result": "passed",
+  "revision": "pi-only-fixture-mode-REQ-SEN-007",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_decision_trace.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.5,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "58f433a696d9156c4ccbfe874c0d94048002a328864a7df0ff40b26b97dde843",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\analysis\\decision_trace.py",
+      "sha256": "37dc22b21f3cea55c6321612b7c7ac3861b78c4ce103039f1a57e80e8031a8c3"
+    },
+    {
+      "path": "tests\\test_decision_trace.py",
+      "sha256": "1788fa206f8d7cf630f7526cff4b5a5d106bf8607bf1bee92753799851f22ee3"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:33:15.880700Z",
+  "result": "passed",
+  "revision": "REQ-HUM-003 escalation and non-escalation decision trace",
+  "schema_version": 1
+}

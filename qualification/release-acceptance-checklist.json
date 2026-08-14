@@ -1,0 +1,2177 @@
+{
+  "fixture_evidence_is_non_target": true,
+  "items": [
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLT-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLT-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLT-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLT-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLT-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLT-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLT-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLT-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IN-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IN-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IN-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IN-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IN-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IN-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IN-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IN-010",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-009",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORC-010",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-WF-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-WF-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-WF-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-WF-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-WF-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-WF-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-WF-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-FL-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-FL-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-FL-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-FL-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-FL-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EQ-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EQ-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EQ-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EQ-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EQ-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EQ-009",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-LS-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-LS-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-LS-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-LS-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-LS-010",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EVT-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EVT-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EVT-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-DAT-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-DAT-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-DAT-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-UX-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-UX-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-UX-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-UX-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-UX-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-UX-010",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-009",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BEN-010",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-SCN-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-SCN-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-SCN-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CLM-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CLM-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CLM-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CLM-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-REC-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RUN-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RUN-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RUN-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-OPP-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-OPP-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-INTF-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-INTF-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-OBS-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-TRU-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-TRU-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PWR-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PWR-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-HOST-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-HOST-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-HOST-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CNF-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CNF-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CNF-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CNF-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BOOT-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ENG-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ENG-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-GAT-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-GAT-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-GAT-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-TSP-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-QUA-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MEM-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PRS-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PRI-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-STA-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-OSS-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MMI-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MMI-009",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MMI-012",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MMI-025",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-009",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-010",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-013",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-014",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMP-015",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-008",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-009",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MOD-010",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CON-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CON-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CON-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CON-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CON-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLG-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLG-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PLG-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ERR-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ERR-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-AIT-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-DLV-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-DLV-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ART-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-REF-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-REF-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CLK-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BKF-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CAP-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CAP-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ORG-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EXT-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EXT-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EXT-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-EXT-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMD-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CMD-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ARL-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ARL-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CAU-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CAU-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-LIV-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-LIV-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MIO-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MIO-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MIO-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CNX-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CNX-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CV-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ENE-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ENE-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-AUP-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-AUP-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-AUP-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CLC-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-LDE-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MSR-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MSR-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MSR-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MSR-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MSR-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MGT-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MGT-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MGT-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MGT-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-MGT-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-AZF-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-AZF-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-AZF-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IDM-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IDM-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-IDM-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-GRP-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-GRP-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CUR-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CUR-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CUR-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-CUR-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-TRC-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-TRC-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-TRC-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-TRC-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-TRC-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PCS-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PCS-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PCS-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-PCS-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-SLC-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ARR-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ARR-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ARR-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ARR-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ARR-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-ARR-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-SIG-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-SIG-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-SIG-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-SIG-006",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BGV-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BGV-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BGV-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BGV-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-BGV-007",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RKI-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RKI-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RKI-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RKI-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RSB-001",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RSB-002",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RSB-003",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RSB-004",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    },
+    {
+      "implementation_complete": true,
+      "profile": "H0",
+      "release_ready": true,
+      "required_for_release": true,
+      "requirement_id": "REQ-RSB-005",
+      "status": "IMPLEMENTED",
+      "target_evidence_backed": false
+    }
+  ],
+  "release_admitted": true,
+  "release_profile": "H0-EMULATED-AARCH64-20260813",
+  "schema": "sentinel-edge.release-acceptance-checklist.v1",
+  "source_ledger_sha256": "e61da68d928b98855ba70cb3608ab1b2062aacec45ceef1e2c9a7801a1f5a878",
+  "summary": {
+    "implementation_complete_count": 240,
+    "open_count": 0,
+    "release_ready_count": 240,
+    "required_count": 240,
+    "target_evidence_backed_count": 0
+  },
+  "target_evidence_required": false
+}

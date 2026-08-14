@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\security\\auth.py",
+      "sha256": "648af2a40421513ecfa14c8811524a2c4a8bd3bbc6d09c54630c5381da7273e6"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_principal_review_authority.py tests/test_principal_kind_trace.py tests/test_auth_and_commands.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 8,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 5.4,
+  "environment": {
+    "name": "local deterministic authorization fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3e6ec60b5014dc32c4b8f22253c5aff6486507ee7890a482654a25401be35135",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\security\\auth.py",
+      "sha256": "648af2a40421513ecfa14c8811524a2c4a8bd3bbc6d09c54630c5381da7273e6"
+    },
+    {
+      "path": "tests\\test_principal_review_authority.py",
+      "sha256": "072bce134ab3f26eeaedeb4fc939e69488fdf3e1d94bc1f9aba2527c16aa2ecf"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:31:18.589024Z",
+  "result": "passed",
+  "revision": "principal-review-authority-v1-20260813",
+  "schema_version": 1
+}

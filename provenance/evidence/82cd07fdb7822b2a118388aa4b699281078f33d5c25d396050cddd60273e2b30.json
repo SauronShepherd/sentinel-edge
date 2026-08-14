@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_release_status_snapshot.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "82cd07fdb7822b2a118388aa4b699281078f33d5c25d396050cddd60273e2b30",
+  "inputs": [
+    {
+      "path": "tests\\test_release_status_snapshot.py",
+      "sha256": "92462a5b7fa850bd0320bb9dc7de27ffc8e36b9606606b56ca3a7c9dec7dea51"
+    },
+    {
+      "path": "src\\sentinel_edge\\release\\status_snapshot.py",
+      "sha256": "7c01e267c84bbd90084b93e6f65a70ec3259d6dc4a70d5b0189a0c987432c62e"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:16:36.658768Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rsb006",
+  "schema_version": 1
+}

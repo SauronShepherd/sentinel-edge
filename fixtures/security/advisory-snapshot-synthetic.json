@@ -1,0 +1,22 @@
+{
+  "schema": "sentinel-edge-advisory-snapshot/1.0",
+  "source": "synthetic-security-test-source",
+  "source_mode": "fixture",
+  "completeness": "complete",
+  "advisories": [
+    {
+      "observation_id": "OBS-TEST-FASTAPI-1",
+      "advisory_id": "TEST-2026-0001",
+      "source": "synthetic-security-test-source",
+      "source_mode": "fixture",
+      "authority": "test_only",
+      "observed_at": "2026-08-02T00:00:00Z",
+      "package": "fastapi",
+      "affected_versions": ["0.999.0-test"],
+      "platform_predicates": ["any"],
+      "feature_predicates": ["synthetic_test_path"],
+      "status": "affected",
+      "source_artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ]
+}

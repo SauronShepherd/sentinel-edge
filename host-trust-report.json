@@ -1,0 +1,91 @@
+{
+  "evaluation": {
+    "failures": [],
+    "observation_digest": "a2589fb430afc775ea771a6e6773b63569f21a6da83b748ae4cac51e94b679d0",
+    "release_eligible": true,
+    "require_secure_boot": false,
+    "residual_limitations": [
+      "Application hashes and signatures do not protect against a compromised running kernel or privileged host.",
+      "No customer-key Raspberry Pi secure-boot qualification is claimed.",
+      "Unavailable platform evidence is reported as unavailable rather than inferred."
+    ],
+    "schema": "sentinel-edge-host-trust-report/1.0",
+    "secure_boot_proven": false,
+    "trust_class": "unmeasured",
+    "valid": true
+  },
+  "observation": {
+    "application_artifact_trust_separate": true,
+    "board_model": null,
+    "bootloader": {
+      "available": false,
+      "command": [
+        "vcgencmd",
+        "bootloader_version"
+      ],
+      "returncode": null,
+      "stdout": null
+    },
+    "firmware": {
+      "device_tree_model_sha256": null,
+      "raspberry_pi_config_sha256": null
+    },
+    "initramfs": [],
+    "judge_h0_secure_boot_required": false,
+    "kernel": {
+      "image_path": null,
+      "image_sha256": null,
+      "lockdown": null,
+      "lsm": null,
+      "proc_version_sha256": "35eea2e91bb9f1c148d41fde0898c8ebdf8297d6da2c88b74325ea787fc2c71a",
+      "release": "6.12.13"
+    },
+    "key_purpose_domains": [
+      "boot-signing",
+      "release-signing",
+      "device-identity",
+      "backup-decryption"
+    ],
+    "limitations": [
+      "Application hashes and signatures do not protect against a compromised running kernel or privileged host.",
+      "No customer-key Raspberry Pi secure-boot qualification is claimed.",
+      "Unavailable platform evidence is reported as unavailable rather than inferred."
+    ],
+    "machine": "x86_64",
+    "observation_digest": "a2589fb430afc775ea771a6e6773b63569f21a6da83b748ae4cac51e94b679d0",
+    "observed_at": "2026-08-03T10:58:01.088509+00:00",
+    "privileged_host_compromise_not_covered": true,
+    "root_filesystem": {
+      "dm_verity_observed": false,
+      "mountinfo": "50 35 254:0 / / rw,relatime - ext4 /dev/vda rw,stripe=3072",
+      "mountinfo_sha256": "e1d2db7d17f3bc9a94f9d19816476253669832838da2dc446a2df6b30b6307d7"
+    },
+    "schema": "sentinel-edge-host-trust-observation/1.0",
+    "secure_boot_evidence": {
+      "kernel_lockdown": null,
+      "raspberry_pi_bootloader": {
+        "available": false,
+        "command": [
+          "vcgencmd",
+          "bootloader_version"
+        ],
+        "returncode": null,
+        "stdout": null
+      },
+      "raspberry_pi_config": {
+        "available": false,
+        "command": [
+          "vcgencmd",
+          "get_config",
+          "int"
+        ],
+        "returncode": null,
+        "stdout": null
+      },
+      "uefi_secure_boot_variable_present": false
+    },
+    "secure_boot_proven": false,
+    "system": "Linux",
+    "trust_class": "unmeasured"
+  }
+}

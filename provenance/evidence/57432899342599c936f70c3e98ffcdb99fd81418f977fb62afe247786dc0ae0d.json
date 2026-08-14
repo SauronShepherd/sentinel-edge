@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_watchdog_recovery.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.7,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "57432899342599c936f70c3e98ffcdb99fd81418f977fb62afe247786dc0ae0d",
+  "inputs": [
+    {
+      "path": "tests\\test_watchdog_recovery.py",
+      "sha256": "263a8f10c6aef64a812fd491d310ce7913d9fb912f0393e449cc31dad16e8f1f"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:48:55.100385Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,18 @@
+{
+  "benchmark_evidence_complete": true,
+  "evaluated_at": "2026-08-03T10:58:00.869355Z",
+  "host_binding_match": true,
+  "manifest_sha256": "30a0cbfe6ee7da15536446a359872ce2afe8395c116e7b07a171d3d46065525b",
+  "model_integrity_match": true,
+  "model_sha256": "7c30a7d7b31599d069de9299fd627aea507471a21385daba053bcdb9b49cc962",
+  "profile_id": "seismic-trigger-v1",
+  "quality_evidence_complete": true,
+  "reason_codes": [
+    "development_profile_evidence_complete_no_target_host_binding"
+  ],
+  "release_admissible": false,
+  "runtime_identity_match": true,
+  "schema_version": "1.0.0",
+  "state": "tested",
+  "target_qualified": false
+}

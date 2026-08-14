@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": "npm test (modules/client-applications)",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.3,
+  "environment": {
+    "name": "windows-development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10"
+  },
+  "evidence_id": "aa3e38b365a6ccaf25e887aa1baaa6fda76ac256e75fb5619e7c469df8e2aa9c",
+  "inputs": [
+    {
+      "path": "modules\\client-applications\\shared-domain\\src\\semantic-contract.ts",
+      "sha256": "296e0c3889ad9a2cb7c716d32c03b772b7ce47ad92a774518faacae53df4cf6f"
+    },
+    {
+      "path": "modules\\client-applications\\web\\src\\test-harness.ts",
+      "sha256": "769cafda486c7ac05c32e3c50bbb9bb494715e04371e81b3af8b3b87fae88872"
+    },
+    {
+      "path": "modules\\client-applications\\mobile-shell\\src\\test-harness.ts",
+      "sha256": "11262f420a41482f6c83a463d6507db821cf66da2576edb4e1b9ebee13483136"
+    },
+    {
+      "path": "modules\\client-applications\\test\\client.test.mjs",
+      "sha256": "ae8e793f3b2bd28039d1be98108d3524c30cd690737d8fe54da7433de690c8be"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:40:07.907504Z",
+  "result": "passed",
+  "revision": "client-semantic-contract-parity",
+  "schema_version": 1
+}

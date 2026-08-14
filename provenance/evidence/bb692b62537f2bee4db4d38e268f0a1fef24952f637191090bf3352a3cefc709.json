@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_monitoring_coverage_separation.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 9.2,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "bb692b62537f2bee4db4d38e268f0a1fef24952f637191090bf3352a3cefc709",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "750bf209d15c116ca148465eeea37a5c4ae24ac27a7e8ae765924138c0c09188"
+    },
+    {
+      "path": "tests\\test_monitoring_coverage_separation.py",
+      "sha256": "d13079a9ec644a1a3c8f8a5880de8fec685c18fb03dc4a8a6c28717513cd401a"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:35:26.534073Z",
+  "result": "passed",
+  "revision": "REQ-HUM-004 state and monitoring coverage separation",
+  "schema_version": 1
+}

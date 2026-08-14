@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_offline_updates.py tests/test_configuration_activation.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.9,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b76469422d7d631ba8cec75d9ebdc61cbbda6d00e22eb7b86d9171a1c0d3690c",
+  "inputs": [
+    {
+      "path": "tests\\test_offline_updates.py",
+      "sha256": "2df526bcfcd2cb916cd5217ebe7f61a31baddbfdcf2bb1b97c06757207711a3d"
+    },
+    {
+      "path": "tests\\test_configuration_activation.py",
+      "sha256": "42226d056c10ffd70d7d7e8629f15d72df12220e186ca3003880b5ad63f67cd5"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:54:31.722967Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

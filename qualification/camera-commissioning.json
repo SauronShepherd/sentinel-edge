@@ -1,0 +1,30 @@
+{
+  "blurred_frames": 0,
+  "commissioned_at": "2026-08-02T17:51:48.231824Z",
+  "dark_frames": 0,
+  "duration_seconds": 17.8,
+  "frame_count": 90,
+  "frozen_frames": 0,
+  "maximum_gap_ms": 200.0,
+  "non_monotonic_frames": 0,
+  "observed_fps": 5.0,
+  "occluded_frames": 0,
+  "p95_capture_age_ms": 0.0,
+  "p99_interval_jitter_ms": 0.0,
+  "physical_source_proven": false,
+  "preprocessing_profile_sha256": "60777ef5579aacae592d2dcc1b8bfbe5cb471dd87275718c8b9c20d015fcbf7c",
+  "rate_error_fraction": 0.0,
+  "reason_codes": [
+    "physical_camera_not_proven"
+  ],
+  "requested_fps": 5.0,
+  "resolution_consistent": true,
+  "schema_version": "1.0.0",
+  "sensor_kind": "camera",
+  "sequence_gaps": 0,
+  "session_id": "44baab34-1699-4080-a664-7ee7a9ababaf",
+  "source_id": "wildfire-camera-development",
+  "source_path": "fixtures/camera/wildfire-camera-5fps-development.jsonl",
+  "source_sha256": "1495f599c39749261f259c64802081a15b0ccf293410fc3b44083ef53308424a",
+  "state": "tested"
+}

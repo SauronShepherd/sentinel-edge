@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_attestation_policy.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "23f9f11ce1889dc1bc6785f8309d8f57272c435a15e4c17566751c9350b95c12",
+  "inputs": [
+    {
+      "path": "tests\\test_attestation_policy.py",
+      "sha256": "6cf908772e1c06dc08b617a66ecf68de6168dde7f6718dfedffd362c0615a4dc"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:13:09.743994Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

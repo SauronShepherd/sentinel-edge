@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_applicability_domain.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.1,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "c8c453ed2554a6250177d3d856474166d24c19fd8628862ece7ee9041b571185",
+  "inputs": [
+    {
+      "path": "tests\\test_applicability_domain.py",
+      "sha256": "2b5aeebb286839335453710eff4f89d2d2f1cfc03ca528b5be502cb4ff491319"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:01:58.956679Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

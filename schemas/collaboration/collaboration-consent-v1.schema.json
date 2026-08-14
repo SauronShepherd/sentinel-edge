@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sentinel://schemas/collaboration-consent-v1",
+  "title": "CollaborationConsentV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sharing_enabled", "research_enabled", "hazards", "policy_version", "updated_at"],
+  "properties": {"sharing_enabled": {"type": "boolean"}, "research_enabled": {"type": "boolean"}, "hazards": {"type": "object", "additionalProperties": false, "required": ["wildfire", "earthquake", "flood", "landslide"], "properties": {"wildfire": {"type": "boolean"}, "earthquake": {"type": "boolean"}, "flood": {"type": "boolean"}, "landslide": {"type": "boolean"}}}, "policy_version": {"type": "string"}, "updated_at": {"type": "string", "format": "date-time"}},
+  "allOf": [{"if": {"properties": {"research_enabled": {"const": true}}}, "then": {"properties": {"sharing_enabled": {"const": true}}}]
+}

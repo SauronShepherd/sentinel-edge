@@ -1,0 +1,182 @@
+{
+  "current_history_separated": true,
+  "degraded_power_observed": true,
+  "limitations": [
+    "Power and energy inputs are deterministic development fixtures, not Raspberry Pi telemetry or physical meter traces.",
+    "The physical-format fixture proves disclosure and validation semantics but is not reportable as measured energy."
+  ],
+  "physical_fixture": {
+    "evidence_kind": "physical",
+    "failures": [],
+    "fixed_quality_target": true,
+    "idle_subtraction_disclosed": true,
+    "limitations": [
+      "A proxy is never labelled as physical energy.",
+      "Complete-node scope is a declared measurement boundary and still requires target instrumentation qualification."
+    ],
+    "methods": [
+      "external-inline-meter-fixture"
+    ],
+    "physical_energy_reportable": false,
+    "physical_format_present": true,
+    "proxy_only": false,
+    "quality_guardrails_passed": true,
+    "report_digest": "4d16fb4903a96af2ddd1ad79ec59fc2dd6f2787d5b075d8d48eff352330969a3",
+    "sample_count": 3,
+    "sampling_hz": [
+      10.0
+    ],
+    "schema": "sentinel-edge-energy-comparison/1.0",
+    "source_classes": [
+      "fixture"
+    ],
+    "uncertainty_disclosed": true
+  },
+  "power_snapshots": [
+    {
+      "current": {
+        "frequency_capped_current": false,
+        "frequency_capped_history": false,
+        "major_faults_delta": 0,
+        "memory_psi_avg10": 0.0,
+        "observed_at": "2026-08-03T08:00:00Z",
+        "source": "development-fixture",
+        "swap_total_mb": 0.0,
+        "swap_used_mb": 0.0,
+        "temperature_c": 54.0,
+        "throttled_current": false,
+        "throttled_history": false,
+        "under_voltage_current": true,
+        "under_voltage_history": true,
+        "zram_used_mb": 0.0
+      },
+      "current_power_threat": true,
+      "healthy_recovery_samples": 0,
+      "historical_power_event_seen": true,
+      "observed_samples": 1,
+      "reason_codes": [
+        "historical_power_event_seen",
+        "under_voltage_current"
+      ],
+      "required_recovery_samples": 3,
+      "snapshot_digest": "5fff24bd0c5c1952c722ad3226c4229f2c295c8c047ad67c54a950c71bea2fb8",
+      "state": "degraded_power"
+    },
+    {
+      "current": {
+        "frequency_capped_current": false,
+        "frequency_capped_history": false,
+        "major_faults_delta": 0,
+        "memory_psi_avg10": 0.0,
+        "observed_at": "2026-08-03T08:00:01Z",
+        "source": "development-fixture",
+        "swap_total_mb": 0.0,
+        "swap_used_mb": 0.0,
+        "temperature_c": 53.5,
+        "throttled_current": false,
+        "throttled_history": false,
+        "under_voltage_current": false,
+        "under_voltage_history": true,
+        "zram_used_mb": 0.0
+      },
+      "current_power_threat": false,
+      "healthy_recovery_samples": 1,
+      "historical_power_event_seen": true,
+      "observed_samples": 2,
+      "reason_codes": [
+        "historical_power_event_seen",
+        "power_recovery_hysteresis_pending"
+      ],
+      "required_recovery_samples": 3,
+      "snapshot_digest": "561ec055a71e286937980715ec7b1543499e49a8c4c01543291d99ab83622bda",
+      "state": "recovering"
+    },
+    {
+      "current": {
+        "frequency_capped_current": false,
+        "frequency_capped_history": false,
+        "major_faults_delta": 0,
+        "memory_psi_avg10": 0.0,
+        "observed_at": "2026-08-03T08:00:02Z",
+        "source": "development-fixture",
+        "swap_total_mb": 0.0,
+        "swap_used_mb": 0.0,
+        "temperature_c": 53.0,
+        "throttled_current": false,
+        "throttled_history": false,
+        "under_voltage_current": false,
+        "under_voltage_history": true,
+        "zram_used_mb": 0.0
+      },
+      "current_power_threat": false,
+      "healthy_recovery_samples": 2,
+      "historical_power_event_seen": true,
+      "observed_samples": 3,
+      "reason_codes": [
+        "historical_power_event_seen",
+        "power_recovery_hysteresis_pending"
+      ],
+      "required_recovery_samples": 3,
+      "snapshot_digest": "b749d87a92e8ebcc8887695989495e8503650ce8d91297ce08c2256911bc8adc",
+      "state": "recovering"
+    },
+    {
+      "current": {
+        "frequency_capped_current": false,
+        "frequency_capped_history": false,
+        "major_faults_delta": 0,
+        "memory_psi_avg10": 0.0,
+        "observed_at": "2026-08-03T08:00:03Z",
+        "source": "development-fixture",
+        "swap_total_mb": 0.0,
+        "swap_used_mb": 0.0,
+        "temperature_c": 52.5,
+        "throttled_current": false,
+        "throttled_history": false,
+        "under_voltage_current": false,
+        "under_voltage_history": true,
+        "zram_used_mb": 0.0
+      },
+      "current_power_threat": false,
+      "healthy_recovery_samples": 3,
+      "historical_power_event_seen": true,
+      "observed_samples": 4,
+      "reason_codes": [
+        "historical_power_event_seen"
+      ],
+      "required_recovery_samples": 3,
+      "snapshot_digest": "af6fe3b1822ca440236c0f7088ffa54928dd5ab2a2fe8b62ac4809ff02698e42",
+      "state": "healthy"
+    }
+  ],
+  "proxy_energy": {
+    "evidence_kind": "proxy",
+    "failures": [],
+    "fixed_quality_target": true,
+    "idle_subtraction_disclosed": true,
+    "limitations": [
+      "A proxy is never labelled as physical energy.",
+      "Complete-node scope is a declared measurement boundary and still requires target instrumentation qualification."
+    ],
+    "methods": [
+      "deterministic-work-proxy"
+    ],
+    "physical_energy_reportable": false,
+    "physical_format_present": false,
+    "proxy_only": true,
+    "quality_guardrails_passed": true,
+    "report_digest": "fab44ae6ec12cf99f8a297ca22171f40d21032849557813d56d5888b64d9f60d",
+    "sample_count": 3,
+    "sampling_hz": [],
+    "schema": "sentinel-edge-energy-comparison/1.0",
+    "source_classes": [
+      "simulated"
+    ],
+    "uncertainty_disclosed": true
+  },
+  "recovery_hysteresis_passed": true,
+  "release_eligible": false,
+  "report_digest": "2679159edaa869c4bb36dd890091f41748f69c061f2657706a7de411d31738d8",
+  "schema": "sentinel-edge-power-energy-qualification/1.0",
+  "target_qualified": false
+}

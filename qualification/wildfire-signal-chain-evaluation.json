@@ -1,0 +1,18 @@
+{
+  "commissioning_report_sha256": "45210c7d25a31472ec54508dec8c9ad805568b5c91c91be4d992cd953b16864d",
+  "compatibility_passed": true,
+  "degraded_reason_codes": [],
+  "failures": [],
+  "latency_quality_evidence_valid": true,
+  "model_profile_id": "wildfire-smoke-linear-v1",
+  "observed_at": "2026-08-03T08:16:00+00:00",
+  "physical_source_proven": false,
+  "profile_id": "wildfire-camera-chain-v1",
+  "profile_sha256": "4f00dec7424a4d20417f4a96c3b7a5a50019ccbbe01b1d2ae40b9e3f11cb8b5e",
+  "quality_passed": true,
+  "report_digest": "a70c7e4e65927868d7eeda2d000f743a566d1679508fc631f8a1d5e6b7e09205",
+  "schema": "sentinel-edge-signal-chain-evaluation/1.0",
+  "source_class": "fixture",
+  "state": "tested",
+  "verified_claim_allowed": false
+}

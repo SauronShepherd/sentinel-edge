@@ -1,0 +1,87 @@
+{
+  "scenario_id": "simultaneous-event-v1",
+  "resources": {
+    "cpu_pressure": 0.72,
+    "memory_pressure": 0.6,
+    "io_pressure": 0.35,
+    "temperature_c": 67.0,
+    "available_memory_mb": 512,
+    "power_degraded": false
+  },
+  "observations": [
+    {
+      "source_id": "imu-1",
+      "hazard": "earthquake",
+      "source_mode": "fixture",
+      "sequence": 1,
+      "observed_at": "2026-08-02T08:00:00Z",
+      "received_at": "2026-08-02T08:00:00.010Z",
+      "values": {
+        "accel_x": 0.9,
+        "accel_y": 0.7,
+        "accel_z": 1.25
+      },
+      "units": {
+        "accel_x": "g",
+        "accel_y": "g",
+        "accel_z": "g"
+      }
+    },
+    {
+      "source_id": "camera-1",
+      "hazard": "wildfire",
+      "source_mode": "fixture",
+      "sequence": 1,
+      "observed_at": "2026-08-02T08:00:00Z",
+      "received_at": "2026-08-02T08:00:00.020Z",
+      "values": {
+        "smoke_score": 0.84,
+        "flame_score": 0.3,
+        "temporal_persistence": 0.9
+      },
+      "units": {
+        "smoke_score": "ratio",
+        "flame_score": "ratio",
+        "temporal_persistence": "ratio"
+      }
+    },
+    {
+      "source_id": "hydro-1",
+      "hazard": "flood",
+      "source_mode": "fixture",
+      "sequence": 1,
+      "observed_at": "2026-08-02T08:00:00Z",
+      "received_at": "2026-08-02T08:00:00.030Z",
+      "values": {
+        "water_level_m": 1.8,
+        "rate_of_rise_m_per_h": 0.45,
+        "rainfall_mm_h": 42.0
+      },
+      "units": {
+        "water_level_m": "m",
+        "rate_of_rise_m_per_h": "m/h",
+        "rainfall_mm_h": "mm/h"
+      }
+    },
+    {
+      "source_id": "slope-1",
+      "hazard": "landslide",
+      "source_mode": "fixture",
+      "sequence": 1,
+      "observed_at": "2026-08-02T08:00:00Z",
+      "received_at": "2026-08-02T08:00:00.040Z",
+      "values": {
+        "soil_moisture_fraction": 0.92,
+        "tilt_rate_deg_h": 0.72,
+        "vibration_rms": 0.38,
+        "rainfall_mm_h": 42.0
+      },
+      "units": {
+        "soil_moisture_fraction": "ratio",
+        "tilt_rate_deg_h": "deg/h",
+        "vibration_rms": "g",
+        "rainfall_mm_h": "mm/h"
+      }
+    }
+  ]
+}

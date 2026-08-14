@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_earthquake_hard_negatives.py",
+      "sha256": "be19015d27d55a5d4abec22a1d0eb12cf4872d0a3529f5906f6236de50fb13cb"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_earthquake_hard_negatives.py tests/test_hazards.py tests/test_threshold_abstention.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 20,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.6,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "12f5453900bb1ff7259a6c53363d81d764e7dfa847464d61762de54c7a2d9f9a",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\hard_negatives.py",
+      "sha256": "76d7ce9e2014fce11bd667674e1cc883be71e5fdd9780ad1e9af0f845aaa067e"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\__init__.py",
+      "sha256": "40ff35447bf8e811239875fea89745ecdff7af36c98d1fd895fc137b9e7892ce"
+    },
+    {
+      "path": "tests\\test_earthquake_hard_negatives.py",
+      "sha256": "be19015d27d55a5d4abec22a1d0eb12cf4872d0a3529f5906f6236de50fb13cb"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:42:03.824928Z",
+  "result": "passed",
+  "revision": "earthquake-hard-negative-report-REQ-EQ-004",
+  "schema_version": 1
+}

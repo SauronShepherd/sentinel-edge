@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "fixtures\\runtime\\seismic-onnx-development.package.json",
+      "sha256": "f61ad0fff443967e2e9f0691484adced83400c3b4a0507e3bf23e6c5d1aabf52"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\test_model_package_signal_chain_v020.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 17,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 11.1,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3a1fdde3d36618c4cb5cec91d4cfe14fd15b9c4a2b1fa1cd4c6e32007158bc6b",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\runtime\\model_packages.py",
+      "sha256": "47fb8ae67b4716cc2b9744781efda0ae395ac743e565abec3e582ebe5cb18b43"
+    },
+    {
+      "path": "tests\\test_model_package_signal_chain_v020.py",
+      "sha256": "582c2f100e17189f1e208b6075e6adc6983ca8bc6babd86ff2d494d1a3e272ec"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:29:56.241372Z",
+  "result": "passed",
+  "revision": "REQ-MGT-001-onnx-inventory",
+  "schema_version": 1
+}

@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_sensor_plane.py",
+      "sha256": "1a957ab89cb78a68ebb2985de14d5f4f475f401c7aad2c817196058ffb11a9cf"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_sensor_plane.py tests/test_sensor_protocol.py tests/test_android_sensor_bridge.py tests/test_collector.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 17,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.1,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a690d114bac77b3b6cc6004aa696d14b7aca1fde56c7869468d5999d5eef1b2f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collector\\sensor_plane.py",
+      "sha256": "fede5222e3f312be4560dbdd012f473a049caf3ec1700486347b4e24bf02cdda"
+    },
+    {
+      "path": "src\\sentinel_edge\\collector\\sensor_protocol.py",
+      "sha256": "6c260839d02d02ef51f4674a3df2fe2ecbd43aea22ab16849c2b30b35a796d39"
+    },
+    {
+      "path": "tests\\test_sensor_plane.py",
+      "sha256": "1a957ab89cb78a68ebb2985de14d5f4f475f401c7aad2c817196058ffb11a9cf"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:30:42.477344Z",
+  "result": "passed",
+  "revision": "pico-cortex-m33-sensor-plane-REQ-SEN-005",
+  "schema_version": 1
+}

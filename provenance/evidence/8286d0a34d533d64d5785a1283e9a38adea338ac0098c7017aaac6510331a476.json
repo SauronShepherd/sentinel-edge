@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_critical_reserve.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "8286d0a34d533d64d5785a1283e9a38adea338ac0098c7017aaac6510331a476",
+  "inputs": [
+    {
+      "path": "tests\\test_critical_reserve.py",
+      "sha256": "bcd951767dbbd9bae9c96ea474ebdfba6aa24188e8976983e5cb07127bbdfff5"
+    },
+    {
+      "path": "src\\sentinel_edge\\storage\\critical_reserve.py",
+      "sha256": "7a031e4d8bcb7d41b03b29778bf4a0b624670a45a27a23e8b1a6fb336cac2bcc"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:57:43.536729Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-iop004",
+  "schema_version": 1
+}

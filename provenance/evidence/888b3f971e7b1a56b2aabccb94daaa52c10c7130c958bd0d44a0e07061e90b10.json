@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_post_fire_context.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "888b3f971e7b1a56b2aabccb94daaa52c10c7130c958bd0d44a0e07061e90b10",
+  "inputs": [
+    {
+      "path": "tests\\test_post_fire_context.py",
+      "sha256": "c77503353240a1beb803bd60b2eac59e694c32b4cef351f59c015cec130f50f8"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\post_fire_context.py",
+      "sha256": "c59a209bf97c1c88bb507dea33399f5839421e91c493184fa9f37f83508ef8b9"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:51:10.673913Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-pfc001",
+  "schema_version": 1
+}

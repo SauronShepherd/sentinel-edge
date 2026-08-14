@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_geospatial_runtime_identity.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "9209eab6a24bf609aa57c896741041c1720ed65df9955752a713f98cef13bf1f",
+  "inputs": [
+    {
+      "path": "tests\\test_geospatial_runtime_identity.py",
+      "sha256": "40328e7f4ceb3e1a7cef7718cb8e95317ef5a61ba83bae0dee7241a02e6ddb6e"
+    },
+    {
+      "path": "src\\sentinel_edge\\geospatial\\runtime_identity.py",
+      "sha256": "2e3bc1c958cb69463172c8c10b57d50d42ee0b8fa137ba48c48cca89c91e8185"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:05:40.899710Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-grp008",
+  "schema_version": 1
+}

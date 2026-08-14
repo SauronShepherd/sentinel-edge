@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_release_manifest_signing.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a06877ab2be25388307bea2d11be13636ccb7e20eec82c72c47c89fcf14ad155",
+  "inputs": [
+    {
+      "path": "tests\\test_release_manifest_signing.py",
+      "sha256": "8bb909f0c46e318c965b32d6b11908580883dfaa19a0d3af15052d6b9a3dccaa"
+    },
+    {
+      "path": "src\\sentinel_edge\\release\\signing.py",
+      "sha256": "0ed9642f4776c0fd0907a9ff6f899898073a1c337f5f5e718e2486d61007a4f4"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:41:14.190301Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rci001",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_authority_journal.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "705610908a7da0dd8035381d5863dfc51c791003d64109a5812c3258d66b1be6",
+  "inputs": [
+    {
+      "path": "tests\\test_authority_journal.py",
+      "sha256": "e7c75bc19a864b2089329c651af4ebd874883259c7c440b06366e71e9d3c9352"
+    },
+    {
+      "path": "src\\sentinel_edge\\audit\\authority_journal.py",
+      "sha256": "c5f773813df9da1295c861809de8797baa4ce6b2128da944e258d9175559baa6"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:12:02.885618Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-ajl001",
+  "schema_version": 1
+}

@@ -1,0 +1,52 @@
+{
+  "algorithm": "Ed25519",
+  "profile": {
+    "adc_bits": 16,
+    "anti_alias_filter": {
+      "cutoff_hz": 40.0,
+      "evidence_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "filter_id": "fir-aa-v1",
+      "kind": "FIR",
+      "order": 64
+    },
+    "axis_or_sector_identity": "x-east/y-north/z-up",
+    "capture_interface": "iio-char-device",
+    "compatible_model_profile_ids": [
+      "seismic-trigger-v1",
+      "seismic-onnx-development-v1"
+    ],
+    "created_at": "2026-08-03T08:15:00Z",
+    "driver_or_firmware_identity": "development-driver-v1",
+    "expires_at": "2026-09-02T08:15:00Z",
+    "full_scale": 16.0,
+    "hazard": "earthquake",
+    "maximum_fifo_delay_ms": 5.0,
+    "maximum_gap_ms": 15.0,
+    "maximum_jitter_ms": 0.5,
+    "maximum_rate_error_fraction": 0.01,
+    "maximum_timestamp_uncertainty_ms": 0.5,
+    "physical_source_required_for_verified_claim": true,
+    "preprocessing_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "profile_id": "earthquake-imu-chain-v1",
+    "rate_operations": [
+      {
+        "anti_alias_filter_required": true,
+        "input_rate_hz": 400.0,
+        "kind": "decimate",
+        "method": "polyphase-fir",
+        "output_rate_hz": 100.0
+      }
+    ],
+    "sample_rate_hz": 400.0,
+    "schema": "sentinel-edge-signal-chain-profile/1.0",
+    "sensor_identity": "imu-development-fixture",
+    "sensor_kind": "imu",
+    "timestamp_source": "kernel-monotonic-raw",
+    "unit": "m/s2"
+  },
+  "profile_sha256": "45d5a7d6a43e721318388e6244edc898be7d6ded4b28e37b50756619d28ac3cf",
+  "schema": "sentinel-edge-signed-signal-chain-profile/1.0",
+  "signature_b64": "fAmv0emLHT11bU7UgyIJcYDriryeE+N3gu58+A3vG+zIHCXuaRbyR/9UkczLXfpvpArLw5Xdzct42l4UPv5xBw==",
+  "signed_at": "2026-08-03T08:15:01Z",
+  "signer_key_id": "4d4360fbfddbaec1ae5297cc2cb7d628"
+}

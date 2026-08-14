@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_reevaluation_queue.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "91b07fc534db4d017a53faa92cebc6613f59dfccc1213caba760edb34e9476d1",
+  "inputs": [
+    {
+      "path": "tests\\test_reevaluation_queue.py",
+      "sha256": "7b83c92c9bbbbe6f49e4d0c700287f0b1e02abd098505443068f6f0c8a9b813b"
+    },
+    {
+      "path": "src\\sentinel_edge\\review\\reevaluation_queue.py",
+      "sha256": "7764852b32cfa04045b55065ff27ec9f57715d83e430a965ce052e8a47ce3001"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:09:17.437352Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rev006",
+  "schema_version": 1
+}

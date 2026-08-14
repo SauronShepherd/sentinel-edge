@@ -1,0 +1,9 @@
+{
+  "receipt_id": "ff7f1c9f5f296cc3c6ea4eae1fcd749a2af5c6a418c1c7fd78be84014435f1f8",
+  "requirement_ids": ["REQ-FL-004"],
+  "changed_paths": ["src/sentinel_edge/hazards/flood.py", "src/sentinel_edge/hazards/forecast.py", "src/sentinel_edge/hazards/landslide.py", "tests/test_forecast_transparency.py", "tests/test_flood_landslide_contracts.py", "tests/test_hazards.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_forecast_transparency.py tests/test_flood_landslide_contracts.py tests/test_hazards.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

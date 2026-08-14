@@ -1,0 +1,18 @@
+{
+  "commissioning_report_sha256": "ccf19bbe8b224269091b51d0a9695c53305285c548e6b48afaa9110323466847",
+  "compatibility_passed": true,
+  "degraded_reason_codes": [],
+  "failures": [],
+  "latency_quality_evidence_valid": true,
+  "model_profile_id": "seismic-trigger-v1",
+  "observed_at": "2026-08-03T08:16:00+00:00",
+  "physical_source_proven": false,
+  "profile_id": "earthquake-imu-chain-v1",
+  "profile_sha256": "45d5a7d6a43e721318388e6244edc898be7d6ded4b28e37b50756619d28ac3cf",
+  "quality_passed": true,
+  "report_digest": "91c969b91849eacdb332470cb633379383935ab627d51dc30fff961f509fb12b",
+  "schema": "sentinel-edge-signal-chain-evaluation/1.0",
+  "source_class": "fixture",
+  "state": "tested",
+  "verified_claim_allowed": false
+}

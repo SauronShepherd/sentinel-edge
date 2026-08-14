@@ -23,3 +23,21 @@ def test_required_removal_enum_and_nullability_mutations_are_rejected():
     errors = compare(schema, narrowed)
     assert "narrowed enum: state" in errors
     assert "narrowed nullability: state" in errors
+
+
+def test_semantic_identity_unit_and_meaning_mutations_are_rejected():
+    schema = {
+        "required": ["reading"],
+        "properties": {
+            "reading": {
+                "type": "number",
+                "x-unit": "m/s2",
+                "x-identity": "sensor-reading",
+                "x-meaning": "acceleration magnitude",
+            }
+        },
+    }
+    for key, label in (("x-unit", "unit"), ("x-identity", "identity"), ("x-meaning", "meaning")):
+        mutated = json.loads(json.dumps(schema))
+        mutated["properties"]["reading"][key] = "changed"
+        assert f"changed field {label}: reading" in compare(schema, mutated)

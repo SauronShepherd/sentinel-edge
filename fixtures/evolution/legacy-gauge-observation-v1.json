@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "source_id": "legacy-gauge-1",
+  "hazard": "flood",
+  "source_mode": "fixture",
+  "sequence": 1,
+  "observed_at": "2026-08-02T18:00:00Z",
+  "received_at": "2026-08-02T18:00:00Z",
+  "values": {"level": 1.2, "rise": 0.3},
+  "units": {"level": "m", "rise": "m/h"}
+}

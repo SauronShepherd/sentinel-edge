@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_benchmark_governance_v018.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 9,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "71a5ea571ea47fb55539010abe8c0de8a0605c47bfd367d37799f8bdfdad20c9",
+  "inputs": [
+    {
+      "path": "tests\\test_benchmark_governance_v018.py",
+      "sha256": "fd12bf918cc587a8c51bc5aeba41c97889f7ee72c818e689d4dc57f97be81af2"
+    },
+    {
+      "path": "src\\sentinel_edge\\benchmark\\governance.py",
+      "sha256": "41a7f075f59a72af760908d746bf56d94207b43add0df52054d060b3867b3568"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:59:34.817835Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-bgv008",
+  "schema_version": 1
+}

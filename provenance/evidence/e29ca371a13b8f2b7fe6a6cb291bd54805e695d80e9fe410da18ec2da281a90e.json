@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\test_runtime_api.py tests\\\\test_storage_api.py tests\\\\component\\\\test_all_module_lifecycles.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 10,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 7.4,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "e29ca371a13b8f2b7fe6a6cb291bd54805e695d80e9fe410da18ec2da281a90e",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\operations\\capabilities.py",
+      "sha256": "323a4c5dba63ddd325ac28400abb31c40e946c8348d5866c901824b03539da06"
+    },
+    {
+      "path": "src\\sentinel_edge\\scenario\\engine.py",
+      "sha256": "00ebd0dd90cb88242db1b97be1c8c298d578245ef1e5183e3873b7b6ba5423f6"
+    },
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "750bf209d15c116ca148465eeea37a5c4ae24ac27a7e8ae765924138c0c09188"
+    },
+    {
+      "path": "tests\\test_runtime_api.py",
+      "sha256": "6dfe0a1155c4cf576386645828d80a482cd2b90cbb3b11d51123e110eb7253b2"
+    }
+  ],
+  "recorded_at": "2026-08-12T14:27:23.493897Z",
+  "result": "passed",
+  "revision": "REQ-CAP-001-capability-failure",
+  "schema_version": 1
+}

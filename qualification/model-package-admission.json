@@ -1,0 +1,87 @@
+{
+  "admission_passed": true,
+  "architecture": "x86_64",
+  "evaluated_at": "2026-08-03T08:12:00+00:00",
+  "execution_provider": "CPUExecutionProvider",
+  "failures": [],
+  "graph": {
+    "function_count": 0,
+    "graph_capability_sha256": "c4c6311826bc2cacd1ad2aba9b402d19b2012976a3cc484931a23663edb284ab",
+    "initializers": [
+      {
+        "dimensions": [
+          3,
+          1
+        ],
+        "dtype": "float32",
+        "external_data": [],
+        "external_location": false,
+        "name": "weight",
+        "raw_bytes": 12
+      }
+    ],
+    "inputs": [
+      {
+        "dimensions": [
+          "N",
+          3
+        ],
+        "dtype": "float32",
+        "name": "features"
+      }
+    ],
+    "ir_version": 9,
+    "model_sha256": "77548a15c78d2bda62f8f293a661ca9f3086dc7a25e0c5675b46d8a7e6e2c78f",
+    "operators": [
+      {
+        "attributes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "domain": "ai.onnx",
+        "has_subgraph": false,
+        "operator": "MatMul",
+        "path": "graph/node:0"
+      },
+      {
+        "attributes_sha256": "219a376b71d735fae7813e34094c85bbd99f6170b74ebf4fce4045b213c3fae0",
+        "domain": "ai.onnx",
+        "has_subgraph": false,
+        "operator": "Sigmoid",
+        "path": "graph/node:1"
+      }
+    ],
+    "opsets": [
+      {
+        "domain": "ai.onnx",
+        "version": 18
+      }
+    ],
+    "outputs": [
+      {
+        "dimensions": [
+          "N",
+          1
+        ],
+        "dtype": "float32",
+        "name": "score"
+      }
+    ],
+    "protobuf_fields_seen": 39,
+    "schema": "sentinel-edge-onnx-graph-fingerprint/1.0"
+  },
+  "graph_capability_sha256": "c4c6311826bc2cacd1ad2aba9b402d19b2012976a3cc484931a23663edb284ab",
+  "input_allocation_bytes": 96,
+  "limitations": [
+    "target_host_not_qualified",
+    "target_runtime_not_measured"
+  ],
+  "manifest_sha256": "66eabfd4366a7dda513b37efd265ebf81e0c1de2acbc4e8cdbbbad2040848a5e",
+  "model_sha256": "77548a15c78d2bda62f8f293a661ca9f3086dc7a25e0c5675b46d8a7e6e2c78f",
+  "output_allocation_bytes": 32,
+  "package_id": "seismic-onnx-development-v1",
+  "release_admissible": false,
+  "report_digest": "63e9bb1dc46feb95c373d52096ce6e2d5ed49078640c1a58e5159a87099cd67e",
+  "runtime_name": "onnxruntime",
+  "runtime_package_sha256": "b7e9d8d9dc105b0240eb086809b1b1d6b8d2b0495ce37bc6b84cd3d29b4c2bc2",
+  "runtime_version": "development-contract",
+  "schema": "sentinel-edge-model-package-admission/1.0",
+  "target_qualified": false
+}

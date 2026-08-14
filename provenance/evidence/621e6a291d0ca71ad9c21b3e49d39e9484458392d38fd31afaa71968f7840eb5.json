@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_copernicus_endpoint.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.3,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "621e6a291d0ca71ad9c21b3e49d39e9484458392d38fd31afaa71968f7840eb5",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\integrations\\stac.py",
+      "sha256": "0849d3ef7a95dd95cb8032310699b9a8e5d4033d3267b86bd135549a6108762d"
+    },
+    {
+      "path": "tests\\test_copernicus_endpoint.py",
+      "sha256": "ac4173f6cdfa52210e2a1efc72e78733809a20ba3971bd3d1368ea465f186fc5"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:38:31.934649Z",
+  "result": "passed",
+  "revision": "REQ-DAT-007 supported Copernicus STAC OData endpoint policy",
+  "schema_version": 1
+}

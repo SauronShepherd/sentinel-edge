@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\collaboration\\fixture.py",
+      "sha256": "99873ecb7d98bde32ef29a3b7273dd8c01a432fbd611e61db671df71d5aafc4d"
+    },
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "be26013f9d5596db8296c7afca96d45d3ea21604e43366a547e7a31ff22345ad"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe scripts/dev.py collaboration-demo; .venv\\Scripts\\python.exe -m pytest -q tests/test_collaboration_config.py tests/test_collaboration_config_validation.py tests/test_collaboration_fixture.py tests/test_collaboration_privacy.py tests/test_collaboration_policy.py tests/test_collaboration_wire.py tests/test_collaboration_smtp.py tests/test_collaboration_gmail.py tests/test_collaboration_api.py tests/test_client_accessibility.py tests/test_client_security.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 29,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 13.6,
+  "environment": {
+    "name": "offline deterministic collaboration fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "d08b02ca41596a4454d889362384fbba3294b63e7931b7b0095be5ee3ffe3093",
+  "inputs": [
+    {
+      "path": "config\\collaboration.yaml",
+      "sha256": "9c15dc83b0c1afaac0947fb89bf7344d9ded10230aa75074603e37644fcc4c0c"
+    },
+    {
+      "path": "architecture\\collaboration-policy.yaml",
+      "sha256": "4b290cbc81490dd665d6cf6d1bc110c5d4273df1ba2b15f6b58ec11927b48fda"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:10:58.597251Z",
+  "result": "passed",
+  "revision": "collaboration-definition-of-done-v1-20260813",
+  "schema_version": 1
+}

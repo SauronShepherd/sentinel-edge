@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_evidence_registry_binding.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "75e918e973bf440c6e3d6aea37192603d809130f471d9c34d02b970ef79bbe32",
+  "inputs": [
+    {
+      "path": "tests\\test_evidence_registry_binding.py",
+      "sha256": "96934ae8ba305fd55d785fcc66afb76277caabb5b3c5d06e9cbe805f486c30a3"
+    },
+    {
+      "path": "src\\sentinel_edge\\evidence\\registry_binding.py",
+      "sha256": "39dc511601d7e1cb5304f520c84539b02e7fd956c969d43e6c1ed69653c73fc0"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:47:01.982025Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-dgp004",
+  "schema_version": 1
+}

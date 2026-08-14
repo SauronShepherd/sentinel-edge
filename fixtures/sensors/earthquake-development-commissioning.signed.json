@@ -1,0 +1,30 @@
+{
+  "algorithm": "Ed25519",
+  "record": {
+    "actor": "development-commissioner",
+    "baseline_noise_summary": {
+      "rms_m_s2": 0.02
+    },
+    "calibration_identity": "development-calibration-v1",
+    "camera_sector": null,
+    "commissioning_id": "earthquake-development-commissioning-v1",
+    "compatible_model_profile_ids": [
+      "seismic-trigger-v1"
+    ],
+    "configuration_sha256": "9f6d53208e869c29aef0adfb144f01bfd2d35fb6f6247dfe4dbd8daf4f48fbc3",
+    "created_at": "2026-08-03T08:18:00Z",
+    "datum_identity": "local-building-frame-v1",
+    "expires_at": "2026-09-02T08:18:00Z",
+    "mounting_or_pose": "fixture-level-north-aligned",
+    "privacy_mask_sha256": null,
+    "schema": "sentinel-edge-site-commissioning-record/1.0",
+    "sensor_identity": "imu-development-fixture",
+    "signal_chain_profile_sha256": "45d5a7d6a43e721318388e6244edc898be7d6ded4b28e37b50756619d28ac3cf",
+    "site_id": "development-site"
+  },
+  "record_sha256": "104f7c6f35e3ebac4115800d3456abd11e5c5a6637af3b87300a8db3a6d76ada",
+  "schema": "sentinel-edge-signed-site-commissioning-record/1.0",
+  "signature_b64": "WfAv20PEx8Xnq2h+YTqYggsh2Jcxj9NJrfmXkAeBzV/rR7tTRRKNDnTqF++yLQJpMA/8ar5cvKLZX4FbCbNMAQ==",
+  "signed_at": "2026-08-03T08:18:01Z",
+  "signer_key_id": "4d4360fbfddbaec1ae5297cc2cb7d628"
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_qualification_lifecycle_v021.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 4,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "9596550c1ab63bd7737e44126d034d863d8e43ce6c3ab53765703947f77c1cb6",
+  "inputs": [
+    {
+      "path": "tests\\test_qualification_lifecycle_v021.py",
+      "sha256": "a4e2f5db518986e06e960e4a0a29e38506a27599aa089f6051922a207a2bbbe4"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\lifecycle.py",
+      "sha256": "6e77e9956ba5cb7251056d053135aacfcd550e1eb749af7b16be7a7ad9313afb"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:20:00.082537Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-cql001",
+  "schema_version": 1
+}

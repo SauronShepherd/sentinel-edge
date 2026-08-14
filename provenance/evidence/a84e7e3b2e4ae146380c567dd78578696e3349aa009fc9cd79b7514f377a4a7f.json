@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_audit_revocation_and_connector_lifecycle.py -k policy_revocation_preserves_prior_audit_semantics",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a84e7e3b2e4ae146380c567dd78578696e3349aa009fc9cd79b7514f377a4a7f",
+  "inputs": [
+    {
+      "path": "tests\\test_audit_revocation_and_connector_lifecycle.py",
+      "sha256": "5106957ade4544ceb938a99b44398a9653fc317cc06ce40a8acad259702d831e"
+    },
+    {
+      "path": "src\\sentinel_edge\\security\\key_lifecycle.py",
+      "sha256": "52f99c4a07d83a6e2e7907666f142bb9c775f2bed50cc4220fdac30bef2f639a"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:16:48.705809Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-akc002-003",
+  "schema_version": 1
+}

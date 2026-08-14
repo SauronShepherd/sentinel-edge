@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "fixtures\\scenarios\\simultaneous-event.json",
+      "sha256": "d69d526be833a52f2c2bfd240ca6a4302eb8b21b6f32636bf33d1c95d14530b5"
+    },
+    {
+      "path": "fixtures\\scenarios\\benchmark-open-loop.json",
+      "sha256": "3ce7e2f29dff16eb517e0a31e4e4cee9eda87115f3882962b701ff680f64ddae"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\test_clock_and_overload.py -k bundled_judge_fixture_set --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.0,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3afef503339f7f36290cbf8c9fb10ea49d8b25c2127cbdc51b740e6f76868b23",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\fixtures.py",
+      "sha256": "be56d7d35021c517bada26c89178e8b7603b043ab266a0bdf159d3ba39cae2c9"
+    },
+    {
+      "path": "tests\\test_clock_and_overload.py",
+      "sha256": "c86107866398aef64df833c3762a65ccd2bfc166f33f879a367d1f8a0641c278"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:18:38.227511Z",
+  "result": "passed",
+  "revision": "REQ-LDE-004-judge-fixtures",
+  "schema_version": 1
+}

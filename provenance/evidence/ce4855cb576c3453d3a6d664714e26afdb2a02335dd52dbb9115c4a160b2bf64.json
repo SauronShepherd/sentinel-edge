@@ -1,0 +1,45 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_producer_identity.py tests/test_principal_kind_trace.py tests/test_principal_review_authority.py tests/test_auth_and_commands.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 10,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 7.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "ce4855cb576c3453d3a6d664714e26afdb2a02335dd52dbb9115c4a160b2bf64",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\security\\auth.py",
+      "sha256": "145c59424b751905a02288a47689014d879192fe90064e19518ebc6752bcf3b3"
+    },
+    {
+      "path": "tests\\test_producer_identity.py",
+      "sha256": "ba62b301e8b7a157e7c74a4a6b9ebb6a989d46f31879241ebe1ed74a5fc54579"
+    },
+    {
+      "path": "tests\\test_principal_kind_trace.py",
+      "sha256": "732cc80223a407767f39b6be15e6ed1625b7b7a9607ddc59edec00df915e4f23"
+    },
+    {
+      "path": "tests\\test_principal_review_authority.py",
+      "sha256": "072bce134ab3f26eeaedeb4fc939e69488fdf3e1d94bc1f9aba2527c16aa2ecf"
+    },
+    {
+      "path": "tests\\test_auth_and_commands.py",
+      "sha256": "3de94a7ca3479ced2a0e2f0a1a99480448ddb6e1066a585e7aca2fccd4e49a47"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:02:54.149545Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

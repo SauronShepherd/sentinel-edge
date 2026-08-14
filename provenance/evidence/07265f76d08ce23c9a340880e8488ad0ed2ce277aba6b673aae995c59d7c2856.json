@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_egms.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "07265f76d08ce23c9a340880e8488ad0ed2ce277aba6b673aae995c59d7c2856",
+  "inputs": [
+    {
+      "path": "tests\\test_egms.py",
+      "sha256": "07d5a8d95d90eeeb3b40733668a9b5dfed35748a5a24c33d939b41fb41d68533"
+    },
+    {
+      "path": "src\\sentinel_edge\\integrations\\egms.py",
+      "sha256": "a7cb43190b6188c7a3a3fc71d784fe66fe40ae43fb41fe395f37e27ca8623df5"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:44:19.655968Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-egm001",
+  "schema_version": 1
+}

@@ -1,0 +1,9 @@
+{
+  "receipt_id": "48d2b4c7b36ca1ace8cd5be7be87a20ce382df605235d3bf6a7c8907f2749e1a",
+  "requirement_ids": ["REQ-WF-007"],
+  "changed_paths": ["src/sentinel_edge/incidents/engine.py", "tests/test_controlled_activity.py", "tests/test_incident_commands_and_relations.py", "tests/test_auth_and_commands.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_controlled_activity.py tests/test_incident_commands_and_relations.py tests/test_auth_and_commands.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

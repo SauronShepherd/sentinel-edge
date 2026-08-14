@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_critical_durability.py tests/test_recovery.py tests/test_storage_api.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 6.2,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "9854338c072614a45fbfa04bf341f917dfb76f424e58053185c276a16dc30e29",
+  "inputs": [
+    {
+      "path": "tests\\test_critical_durability.py",
+      "sha256": "c5950ebe7090e370bb618871837ba785a252d336d0a986156abee27a2e0ccf3c"
+    },
+    {
+      "path": "tests\\test_recovery.py",
+      "sha256": "802da187b3b23f3eb7a893ebc8f2aec1c11cdf4d57953dd11e2525b86eb0b87b"
+    },
+    {
+      "path": "tests\\test_storage_api.py",
+      "sha256": "06e7033a788b7042dfdc11a429699f3bc4a6295e1a4bc38bfd831ddf5d77e138"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:48:07.418733Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_io_pressure.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "d41b99af84edbedb27d52c84ccb22660c9cd948c44b6adda29feef8e4172b060",
+  "inputs": [
+    {
+      "path": "tests\\test_io_pressure.py",
+      "sha256": "1b6c2e68a8fd154c1947ee11cb9dbe76a6ae9e41af222d2430d814a1ec159c9f"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\io_pressure.py",
+      "sha256": "5d6b499b4e7a6afddb39883f56a10a84f7036501b9f888f1a544c5b11fe8501c"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:54:32.682544Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-iop001",
+  "schema_version": 1
+}

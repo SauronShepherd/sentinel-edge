@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_native_artifact_qualification.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "90a0ebcf9e81c79e8f1f5800a0aa067b0c040db98e62de4f82cbb060886f8036",
+  "inputs": [
+    {
+      "path": "tests\\test_native_artifact_qualification.py",
+      "sha256": "0b9f82628487f8695078b8a0bf8eacfaf253c6703bcd9017455772721a4edc86"
+    },
+    {
+      "path": "src\\sentinel_edge\\runtime\\native_artifact_qualification.py",
+      "sha256": "1b6a02cb52daf44d499e878b4f1fcb2a61725a7b8142c64f2f9d3fe4df5f664c"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:49:51.536745Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-mgt006",
+  "schema_version": 1
+}

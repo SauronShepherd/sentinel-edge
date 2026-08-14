@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "path": "docs\\IMPLEMENTATION_STATUS.md",
+      "sha256": "e39080949d6f5dfa329fac91a0f49558819f298725db4cc2c9475682126d13fb"
+    }
+  ],
+  "command": "npm test; npm run build --workspace @sentinel/web; npm run build --workspace @sentinel/mobile-shell",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 5,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 14.2,
+  "environment": {
+    "name": "windows-development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10"
+  },
+  "evidence_id": "c49c4ed59df250e85ff9548db38104045c2dcfbbd4ac1f841db2a7db0543db11",
+  "inputs": [
+    {
+      "path": "modules\\client-applications\\package-lock.json",
+      "sha256": "e53430617cb2b6aa0caa862770647cf1f4e5781a1214db9025d1220746023ef7"
+    },
+    {
+      "path": "modules\\client-applications\\web\\package.json",
+      "sha256": "75fc19e03041320b7e9277109ff8190f58726bdcfa9783acd278d7c8cfcad1c4"
+    },
+    {
+      "path": "modules\\client-applications\\mobile-shell\\package.json",
+      "sha256": "f06107c9f4f8539d2de8d78d52130ebc72c06f3d7d834d021825314809e58111"
+    },
+    {
+      "path": "modules\\client-applications\\shared-domain\\src\\index.ts",
+      "sha256": "1a5bcf77535bd948aa7fdf965d942760d93525d1b76e7de03125dd11c5232d79"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:50:27.040873Z",
+  "result": "passed",
+  "revision": "typescript-contract-compilation",
+  "schema_version": 1
+}

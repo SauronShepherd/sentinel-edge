@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_location_evidence.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "e9326aacbe8f6f22cab8d1004bb1e3c3d2bcc3577e38a19382276344aaf39a54",
+  "inputs": [
+    {
+      "path": "tests\\test_location_evidence.py",
+      "sha256": "b21a51d75043680fd3df80b323427d60821262045b77ba2a21bceb89ddc99f12"
+    },
+    {
+      "path": "src\\sentinel_edge\\privacy\\location_evidence.py",
+      "sha256": "a397a7afc970e81637cc052172107ba057a13f19b6c99093d318c6407b8b0063"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:15:30.134305Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-loc001",
+  "schema_version": 1
+}

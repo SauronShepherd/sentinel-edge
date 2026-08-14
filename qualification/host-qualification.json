@@ -1,0 +1,45 @@
+{
+  "benchmark_claim_allowed": false,
+  "evaluated_at": "2026-08-02T17:49:40.749719Z",
+  "host_profile_match": false,
+  "observation": {
+    "architecture_64bit": true,
+    "board_model": null,
+    "boot_id_sha256": "a0de57050c75df4d1f521b305d70ebf72aa85ef68672abf01115ab8660724f2d",
+    "cgroup_v2": true,
+    "cpu_count": 5,
+    "cpu_model": "0",
+    "kernel_release": "6.12.13",
+    "machine": "x86_64",
+    "maximum_temperature_c": null,
+    "memory_mb": 6072,
+    "observed_at": "2026-08-02T17:49:40.749565Z",
+    "observed_files": {
+      "/etc/os-release": "8b8c2f53770c96bf2996f8e9feb3705d4fec1a4579251eea8c996cb458257731",
+      "/proc/cpuinfo": "a3ed454ed7814e7ba8c6b58c16a84446e32b814bf2084de79c6a2e426088f78b",
+      "/proc/meminfo": "8332ac96216bf51f7ba216715b4a718bc1ef1d08ff6c8dc3d343622213bd38fe"
+    },
+    "os_id": "debian",
+    "os_version_id": "13",
+    "power_evidence": "unavailable",
+    "psi_available": false,
+    "schema_version": "1.0.0",
+    "system": "Linux",
+    "thermal_sensor_count": 0
+  },
+  "observation_sha256": "5764928beb0366ab82f9884251b5ac55c608d862fd0470b05968dba42d6547da",
+  "profile_id": "raspberry-pi-5-h0-v1",
+  "profile_sha256": "ec300ee70cb1fb88550dc481f038b503dd2e180a6c29d3039f5b82dc72b15f9b",
+  "reason_codes": [
+    "architecture_mismatch",
+    "board_model_mismatch",
+    "power_evidence_unavailable",
+    "psi_unavailable",
+    "temperature_unobserved",
+    "thermal_evidence_unavailable"
+  ],
+  "report_id": "8c279753-37fc-4af0-a3ba-43fa97050ff4",
+  "schema_version": "1.0.0",
+  "state": "failed",
+  "target_device_claim_allowed": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_id": "development-ntp",
+  "origin": "ntp",
+  "authenticated": false,
+  "observed_utc": "2026-08-02T18:00:00Z",
+  "observed_monotonic_ns": 1000000000,
+  "uncertainty_ms": 25.0,
+  "age_ms": 0.0,
+  "stratum": 2,
+  "reference_id": "development.pool.invalid",
+  "continuity_id": "development-boot-1",
+  "clock_epoch": 0,
+  "certificate_bootstrap_valid": true
+}

@@ -1,0 +1,47 @@
+{
+  "audit_date": "2026-08-04",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "inventory": {
+    "count": 7948,
+    "sha256": "807015a18cd6ff25e41c952917a0415af0e50f4e4b080c3bba2f22c75c57b614"
+  },
+  "registry_counts": {
+    "decisions.yaml": 193,
+    "evidence.yaml": 369,
+    "executions.yaml": 0,
+    "iterations.yaml": 12,
+    "releases.yaml": 0,
+    "requirements.yaml": 743,
+    "reviews.yaml": 0,
+    "tasks.yaml": 96,
+    "tests.yaml": 108,
+    "uncertainties.yaml": 4
+  },
+  "repository": {
+    "branch": "codex/remediation-r00-audit-baseline",
+    "dirty": true,
+    "head": "4c989f6c369436a35c751f1381609b04f8e6bac7",
+    "remotes": [
+      "origin\thttps://github.com/SauronShepherd/sentinel-edge.git (fetch)",
+      "origin\thttps://github.com/SauronShepherd/sentinel-edge.git (push)"
+    ]
+  },
+  "schema": "sentinel-edge.remediation-baseline.v1",
+  "status_policy": {
+    "fixture_evidence_is_non_target": true,
+    "verified_requires_receipt": true
+  },
+  "workflows": {
+    "missing": [],
+    "present": [
+      ".github/workflows/ci-arm.yml",
+      ".github/workflows/ci-fast.yml",
+      ".github/workflows/ci-full.yml",
+      ".github/workflows/ci-release.yml",
+      ".github/workflows/ci.yml"
+    ]
+  }
+}

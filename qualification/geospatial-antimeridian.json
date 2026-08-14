@@ -1,0 +1,26 @@
+{
+  "decision": "valid",
+  "geometry_type": "LineString",
+  "coordinate_count": 2,
+  "antimeridian_crossing": true,
+  "normalized_geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        179.5,
+        10.0
+      ],
+      [
+        -179.5,
+        10.0
+      ]
+    ]
+  },
+  "source_crs": "EPSG:4326",
+  "source_axis_order": "longitude_latitude",
+  "transform_pipeline": "identity:EPSG:4326",
+  "reason_codes": [
+    "antimeridian_crossing_explicit",
+    "rfc7946_geometry_valid"
+  ]
+}

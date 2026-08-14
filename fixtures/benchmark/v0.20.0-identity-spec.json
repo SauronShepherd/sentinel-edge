@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "runtime_profile",
+      "path": "fixtures/runtime/seismic-trigger-v1.profile.json",
+      "sha256": "a76c501c957637c9f5b7cc15d1a1a54933486ad25989290322c88f04aa1a3931"
+    },
+    {
+      "name": "model",
+      "path": "artifacts/models/seismic-trigger-v1.rules.json",
+      "sha256": "7c30a7d7b31599d069de9299fd627aea507471a21385daba053bcdb9b49cc962"
+    },
+    {
+      "name": "configuration",
+      "path": "fixtures/configuration/default-v0.20.0.yaml",
+      "sha256": "8ed062be451fd7c3d2322c0ab463f9ec902efcf173362573ff95468256210452"
+    },
+    {
+      "name": "fixture",
+      "path": "fixtures/scenarios/benchmark-open-loop.json",
+      "sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613"
+    }
+  ],
+  "schema": "sentinel-edge-benchmark-identity-spec/1.0"
+}

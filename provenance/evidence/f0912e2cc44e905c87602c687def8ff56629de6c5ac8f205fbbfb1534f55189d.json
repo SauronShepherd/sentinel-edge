@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7668f665d154d3bb9604b1e38f8f29df218de53854cf95bd874d66e0dcc152f"
+    }
+  ],
+  "command": "python -m pytest -q tests/test_command_catalog.py tests/test_claim_registry_generation.py tests/test_conformance_ledger.py tests/test_release_minimum_manifest.py tests/test_evidence_registry.py tests/test_audit_baseline.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 15,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 26.86,
+  "environment": {
+    "name": "development-windows-python313",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "f0912e2cc44e905c87602c687def8ff56629de6c5ac8f205fbbfb1534f55189d",
+  "inputs": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7668f665d154d3bb9604b1e38f8f29df218de53854cf95bd874d66e0dcc152f"
+    },
+    {
+      "path": "registries\\requirements.yaml",
+      "sha256": "8b91caf0b6c43e81c5f038f7ed8249b20baa6a14b3871b1fd9d484f15604b90c"
+    }
+  ],
+  "recorded_at": "2026-08-12T04:10:57.686707Z",
+  "result": "passed",
+  "revision": "4c989f6c369436a35c751f1381609b04f8e6bac7",
+  "schema_version": 1
+}

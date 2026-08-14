@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_support_policy.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "8d64cb98fb9a867113b659c0bd688f78c6574e96ff05c73d313f38efa9b0cc26",
+  "inputs": [
+    {
+      "path": "tests\\test_support_policy.py",
+      "sha256": "404f97dd27e1b6afe0a2032afa96de94a1053fe1cc282d0d72b77a41bb281bda"
+    },
+    {
+      "path": "src\\sentinel_edge\\release\\support_policy.py",
+      "sha256": "c51f1fcac00500cf17ca6ef7cffeb78585404b645550c3a6f306e6edb89a2bf3"
+    },
+    {
+      "path": "src\\sentinel_edge\\release\\advisories.py",
+      "sha256": "3393237d9a0b76f5ea2a73aa95ec2b1025c565cf3cafa3712fdd146728dc6551"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:26:39.379746Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-vul001",
+  "schema_version": 1
+}

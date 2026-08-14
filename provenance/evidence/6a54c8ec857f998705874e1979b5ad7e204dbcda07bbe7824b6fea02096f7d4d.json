@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_evidence_lifecycle.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "6a54c8ec857f998705874e1979b5ad7e204dbcda07bbe7824b6fea02096f7d4d",
+  "inputs": [
+    {
+      "path": "tests\\test_evidence_lifecycle.py",
+      "sha256": "29827fb3165f5413957203b3d69cd618ebfd1697b3cac320e4e36e12568b7ce1"
+    },
+    {
+      "path": "src\\sentinel_edge\\evidence\\service.py",
+      "sha256": "e698b3454ae31ce98244d1a7206a0831796b435d2c213d83e14b13d439caa881"
+    },
+    {
+      "path": "src\\sentinel_edge\\storage\\sqlite_store.py",
+      "sha256": "4e61d053d56c13d959dd191df165f9a613e36b05f6ebf6424ba286f85259af66"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:48:06.626240Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rev005",
+  "schema_version": 1
+}

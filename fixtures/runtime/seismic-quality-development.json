@@ -1,0 +1,8 @@
+{
+  "schema": "sentinel-edge-quality-evidence/1.0",
+  "profile_id": "seismic-trigger-v1",
+  "classification": "development_fixture",
+  "quality_guardrails_passed": true,
+  "target_qualified": false,
+  "reason": "Deterministic fixture checks pass; no labelled target-device quality corpus is bound."
+}

@@ -1,0 +1,56 @@
+{
+  "artifact_digest": "c2c1b29b57caba7ce014e4af247c4793dfd2b808e9e6ffe8687a5652cd9f8bbc",
+  "attestations": [
+    {
+      "artifact_digest": "c2c1b29b57caba7ce014e4af247c4793dfd2b808e9e6ffe8687a5652cd9f8bbc",
+      "builder_id": "sentinel-local-builder-a",
+      "created_at": "2026-08-03T10:58:01.362723+00:00",
+      "environment_digest": "c025112f7d82237d8b5c181ed7eedad12dde1d97d9461b1d2ac1dbdab95d96b9",
+      "host_fingerprint": "3a9a063070203724a37d6f98113a7f2051c182e67d2494be7b984c576bfb0a4e",
+      "schema": "sentinel-edge-independent-build-attestation/1.0",
+      "signature": "ormhSeolLtSGdfnWyndP8Wv308n02WkTubQNzc3ZtRcsGao8yltedOyi/zQbzHbn0UMbJzUbWAvh14NJ6VCgAA==",
+      "signer_key_id": "a419e8280c1383cbfb2c2a29bbb38506",
+      "source_digest": "acc8c591ea90f0c80a122d8e0ab15323607ed926f08bf4d1478d054236349126"
+    },
+    {
+      "artifact_digest": "c2c1b29b57caba7ce014e4af247c4793dfd2b808e9e6ffe8687a5652cd9f8bbc",
+      "builder_id": "sentinel-local-builder-b",
+      "created_at": "2026-08-03T10:58:01.362797+00:00",
+      "environment_digest": "4d46e9b4e8626db6cd34e6900e1e9fa47497287af84808ae7499b6435063f7aa",
+      "host_fingerprint": "3a9a063070203724a37d6f98113a7f2051c182e67d2494be7b984c576bfb0a4e",
+      "schema": "sentinel-edge-independent-build-attestation/1.0",
+      "signature": "n1FyWzCPpoUA9JeI4oNtL9xiNLkyoQWSIlv20jxprzocqiR32Ynp4mvkOxmMGjlv8BJXiGfcCc71Cl8T8WhqBg==",
+      "signer_key_id": "ec060e0798fc5174b3e48ccbc7a25ff1",
+      "source_digest": "acc8c591ea90f0c80a122d8e0ab15323607ed926f08bf4d1478d054236349126"
+    }
+  ],
+  "builder_count": 2,
+  "environment_count": 2,
+  "failures": [
+    "builder_host_not_independent"
+  ],
+  "host_count": 1,
+  "independent": false,
+  "limitations": [
+    "Independence is proven only from the registered builder, host, environment and signer identities.",
+    "A dishonest builder can still misreport its host unless the attestation is anchored in separately trusted infrastructure."
+  ],
+  "release_eligible": false,
+  "report_digest": "f00b5760a244ee34f14d5e1bbb724b1059ce52de19cf6f4714a941996099aa65",
+  "schema": "sentinel-edge-independent-build-report/1.0",
+  "source_digest": "acc8c591ea90f0c80a122d8e0ab15323607ed926f08bf4d1478d054236349126",
+  "verification": [
+    {
+      "builder_id": "sentinel-local-builder-a",
+      "failures": [],
+      "signer_key_id": "a419e8280c1383cbfb2c2a29bbb38506",
+      "valid": true
+    },
+    {
+      "builder_id": "sentinel-local-builder-b",
+      "failures": [],
+      "signer_key_id": "ec060e0798fc5174b3e48ccbc7a25ff1",
+      "valid": true
+    }
+  ]
+}

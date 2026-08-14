@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "qualification\\scope-freeze.json",
+      "sha256": "9700ebdabd700658645a77ef265ec68a6c31343402b1ecb87e18a564b49a0caa"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe scripts/generate_scope_freeze.py; .venv\\Scripts\\python.exe -m pytest -q tests/test_scope_freeze.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "c1fe65816268717c91cca0bcfd071946c95cd16d1d4804d3f00bbe74488f0c8c",
+  "inputs": [
+    {
+      "path": "tests\\test_scope_freeze.py",
+      "sha256": "8b4d81e4c4d0dee8c91fc861228055c7f23f65083e61c0fcce6dd7e98adfe3e1"
+    },
+    {
+      "path": "scripts\\generate_scope_freeze.py",
+      "sha256": "f76f1e8f298f6936c2dd95c2996b228d84e2fd4fc5560346f5d23e976ce89c43"
+    },
+    {
+      "path": "scripts\\validate_scope_freeze.py",
+      "sha256": "99b571cd3cf9c16b6d23041ae714e7f45e75eaee36ecc98a71430013eec2c4ab"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:02:10.394245Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-rci008-v2",
+  "schema_version": 1
+}

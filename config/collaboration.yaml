@@ -1,0 +1,47 @@
+schema: sentinel-edge.collaboration-config.v1
+version: "1.0"
+collaboration:
+  enabled: false
+  capability_id: "CAP-COLLAB-001"
+  mode: disabled
+  sharing_enabled: false
+  research_enabled: false
+  policy_version: "collab-consent-v1"
+  hazards:
+    wildfire: true
+    earthquake: true
+    flood: true
+    landslide: true
+  privacy:
+    exact_coordinates_allowed: false
+    raw_sensor_data_allowed: false
+    raw_media_allowed: false
+    raw_waveforms_allowed: false
+  outbound:
+    enabled: false
+    transport: smtp_email
+    destination: sentinel-edge-signals@gmail.com
+    max_email_bytes: 65536
+    max_json_payload_bytes: 16384
+    queue:
+      max_items: 64
+      max_age_seconds: 3600
+      initial_backoff_seconds: 5
+      max_backoff_seconds: 300
+      max_attempts: 8
+      ordinary_update_min_interval_seconds: 60
+  inbound:
+    enabled: false
+    transport: gmail_api
+    poll_interval_seconds: 30
+    search_query: 'subject:"Sentinel Collaborative Signal v1" newer_than:7d'
+    processed_label: sentinel/processed
+    rejected_label: sentinel/rejected
+  correlation:
+    policy_file: architecture/collaboration-policy.yaml
+  retention:
+    operational_signal_hours: 168
+    rejected_payload_hours: 24
+    transport_receipt_days: 30
+  transport: fixture
+  email_experimental: false

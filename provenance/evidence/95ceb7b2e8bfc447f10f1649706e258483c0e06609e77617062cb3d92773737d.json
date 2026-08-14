@@ -1,0 +1,9 @@
+{
+  "receipt_id": "95ceb7b2e8bfc447f10f1649706e258483c0e06609e77617062cb3d92773737d",
+  "requirement_ids": ["REQ-EQ-004"],
+  "changed_paths": ["src/sentinel_edge/hazards/earthquake.py", "tests/test_earthquake_hard_negatives.py", "tests/test_hazards.py", "tests/test_threshold_abstention.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_earthquake_hard_negatives.py tests/test_hazards.py tests/test_threshold_abstention.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

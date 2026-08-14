@@ -1,0 +1,9 @@
+{
+  "receipt_id": "31a1b5c0a2fbb8eeef2c4a7bf38b88f2282e4325708e2ba7e719ff100f9cfd45",
+  "requirement_ids": ["REQ-INT-004"],
+  "changed_paths": ["src/sentinel_edge/exports/cap.py", "tests/test_cap_test_drafts.py", "tests/test_privacy_backup_and_exports.py", "tests/test_authority_watermark_closure.py", "tests/test_public_export_scanner.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_cap_test_drafts.py tests/test_privacy_backup_and_exports.py tests/test_authority_watermark_closure.py tests/test_public_export_scanner.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

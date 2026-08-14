@@ -1,0 +1,35 @@
+{
+  "adc_bits": null,
+  "anti_alias_filter_id": null,
+  "axis_or_sector_identity": "sector-northwest/privacy-mask-v1",
+  "capture_interface": "v4l2-video-device",
+  "clipping_samples": 0,
+  "commissioning_report_sha256": "45210c7d25a31472ec54508dec8c9ad805568b5c91c91be4d992cd953b16864d",
+  "driver_or_firmware_identity": "development-camera-driver-v1",
+  "fifo_delay_ms": 18.0,
+  "full_scale": null,
+  "maximum_gap_ms": 250.0,
+  "observed_at": "2026-08-03T08:16:00Z",
+  "observed_rate_hz": 5.0,
+  "p99_jitter_ms": 5.0,
+  "preprocessing_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "quantization_maximum": 255.0,
+  "quantization_minimum": 0.0,
+  "rate_error_fraction": 0.01,
+  "rate_operations": [
+    {
+      "anti_alias_filter_required": false,
+      "input_rate_hz": 5.0,
+      "kind": "native",
+      "method": "native-capture",
+      "output_rate_hz": 5.0
+    }
+  ],
+  "saturation_samples": 0,
+  "sensor_identity": "camera-development-fixture",
+  "sensor_kind": "camera",
+  "source_class": "fixture",
+  "timestamp_source": "camera-driver-monotonic",
+  "timestamp_uncertainty_ms": 2.0,
+  "unit": "rgb8-frame"
+}

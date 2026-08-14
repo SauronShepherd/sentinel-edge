@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_sensor_plane_auth.py tests/test_sensor_plane.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 5,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "e8e3705a66973631d298b355430982c46d1a84854e834e670460512207e003af",
+  "inputs": [
+    {
+      "path": "tests\\test_sensor_plane_auth.py",
+      "sha256": "1d99af24cfa1c87f2b6a1412bb5d2f9b7597a2c1ee198ca84014216564624305"
+    },
+    {
+      "path": "tests\\test_sensor_plane.py",
+      "sha256": "1a957ab89cb78a68ebb2985de14d5f4f475f401c7aad2c817196058ffb11a9cf"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:10:35.771725Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

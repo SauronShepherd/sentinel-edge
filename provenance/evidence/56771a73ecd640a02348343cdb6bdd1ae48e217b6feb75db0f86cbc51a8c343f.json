@@ -1,0 +1,9 @@
+{
+  "receipt_id": "56771a73ecd640a02348343cdb6bdd1ae48e217b6feb75db0f86cbc51a8c343f",
+  "requirement_ids": ["REQ-DET-001"],
+  "changed_paths": ["src/sentinel_edge/qualification/replay.py", "tests/test_replay_verification.py", "tests/test_scenario_e2e.py", "tests/test_benchmark_lab.py", "tests/test_after_event_review.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_replay_verification.py tests/test_scenario_e2e.py tests/test_benchmark_lab.py tests/test_after_event_review.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

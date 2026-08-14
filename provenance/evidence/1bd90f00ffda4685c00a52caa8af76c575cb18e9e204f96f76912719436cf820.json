@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_source_snapshot.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.2,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "1bd90f00ffda4685c00a52caa8af76c575cb18e9e204f96f76912719436cf820",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\integrations\\source_snapshot.py",
+      "sha256": "a7fc69991dd3d25db25212e894e45a6e28bcbdf80945f1925a4d18030c5b06f7"
+    },
+    {
+      "path": "tests\\test_source_snapshot.py",
+      "sha256": "76912b2bc49757093f76d150cb6bf89d4db054ebd9dd744bef192f09a0a2dffb"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:30:37.711653Z",
+  "result": "passed",
+  "revision": "REQ-DAT-001 complete observed published fetched expiry source snapshot",
+  "schema_version": 1
+}

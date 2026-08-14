@@ -1,0 +1,10 @@
+{
+  "below_application_layer_proven": false,
+  "evidence_digest": "24cafaf6bdd9f4609cb9add569a348477d62576bf15773dab039ee861459f9bf",
+  "failures": [
+    "below_application_network_denial_not_proven"
+  ],
+  "mode": "python_guard",
+  "schema": "sentinel-edge-benchmark-network-isolation/1.0",
+  "valid": false
+}

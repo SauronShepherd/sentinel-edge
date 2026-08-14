@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "path": "qualification\\g0-gate-status.json",
+      "sha256": "f4d181b70301f66f0109fa78492a33ee7c86b80c8519f15280f969246ed1c2a0"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_controlled_activity.py tests/test_incident_commands_and_relations.py tests/test_auth_and_commands.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 12,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 5.3,
+  "environment": {
+    "name": "Windows development host; deterministic Component-4 integration tests",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5dfd3560ecdfb27036e20790946f29248df2dcc6839b80f6fdaa6e1e02b3c605",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\domain\\models.py",
+      "sha256": "4cc0115185a2d607f9a6a5b25fcb145cced0f22cd27e7049f9d43bc672430aa7"
+    },
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "cb26f3078608696ad3a825b20e4522b0673a163e724fa7c048348f007334097e"
+    },
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "750bf209d15c116ca148465eeea37a5c4ae24ac27a7e8ae765924138c0c09188"
+    },
+    {
+      "path": "tests\\test_controlled_activity.py",
+      "sha256": "57b134dde15e3f91f7fb043ab8783b94a102214413bb1b0fdbee677e3ff47735"
+    }
+  ],
+  "recorded_at": "2026-08-12T16:46:00.384911Z",
+  "result": "passed",
+  "revision": "working-tree-controlled-activity",
+  "schema_version": 1
+}

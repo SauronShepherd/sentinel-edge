@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_external_trigger.py",
+      "sha256": "b45d136c52f5417bc1c9ecd68ed9b54d3f73d046d5967dfe142d560d8967f5da"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_external_trigger.py tests/test_sensor_plane.py tests/test_sensor_protocol.py tests/test_collector.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 17,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.2,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "78adbdcb6184620eb1bc462714b3dcb326ef29b64977a11237adb5ebe75b1249",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collector\\external_trigger.py",
+      "sha256": "fee7b205d5fea62b937dbd8e717e560217cb19bda032ceb5baf6e86b7e5f5f7d"
+    },
+    {
+      "path": "tests\\test_external_trigger.py",
+      "sha256": "b45d136c52f5417bc1c9ecd68ed9b54d3f73d046d5967dfe142d560d8967f5da"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:32:29.465646Z",
+  "result": "passed",
+  "revision": "external-deterministic-trigger-REQ-SEN-006",
+  "schema_version": 1
+}

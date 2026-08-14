@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_drift_governance.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "fda4a1809a8e8140b354702395bc5044e97550fa6f08f1c096e69470e7e0142c",
+  "inputs": [
+    {
+      "path": "tests\\test_drift_governance.py",
+      "sha256": "6ba6df805c7c2611a6472997889bf82b52c98cb5ccdb14780b0d20cbd44c869a"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\drift.py",
+      "sha256": "4877ed3556e0a28db1b45fe965dbeb24b19c436e32491defb42a74e454a24d71"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:31:35.960670Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-pre002",
+  "schema_version": 1
+}

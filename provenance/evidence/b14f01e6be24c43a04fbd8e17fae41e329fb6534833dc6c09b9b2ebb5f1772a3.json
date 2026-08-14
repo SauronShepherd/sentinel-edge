@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_documented_interface_boundary.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 5.4,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b14f01e6be24c43a04fbd8e17fae41e329fb6534833dc6c09b9b2ebb5f1772a3",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collector\\references.py",
+      "sha256": "b9cf0c7f158ac73d5c8be5816005e8260db051d42b75062b82f2430365e8fb3a"
+    },
+    {
+      "path": "tests\\test_documented_interface_boundary.py",
+      "sha256": "03aed3e97f9c9083af498a76250ea16234c22752cc899e35c57c0102e298d0e8"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:40:27.634978Z",
+  "result": "passed",
+  "revision": "REQ-DAT-009 documented adapter boundary rejects unstable page scraping",
+  "schema_version": 1
+}

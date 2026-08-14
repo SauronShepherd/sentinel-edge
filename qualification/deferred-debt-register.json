@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "dependency": "Which exact Raspberry Pi 5 board, cooling, storage, power supply, kernel, firmware, and OS image will be used for target qualification?",
+      "due_date": "2026-08-05",
+      "id": "UQ-TARGET-HARDWARE",
+      "owner": "release-owner",
+      "rationale": "The uploaded inputs contain contracts and legacy delivery framework, but no physical target or measured host envelope. The uncertainty blocks qualification, not source-level implementation planning.",
+      "safe_limitation": "Development and fixture behavior remains available, but no target or field qualification claim is permitted.",
+      "severity": "CRITICAL",
+      "status": "DEFERRED"
+    },
+    {
+      "dependency": "Which exact trained wildfire and earthquake model artifacts, calibration sets, licences, and quality baselines will be admitted?",
+      "due_date": "2026-08-06",
+      "id": "UQ-MODEL-ASSETS",
+      "owner": "model-owner",
+      "rationale": "No model binaries or calibration datasets were supplied; deterministic adapters preserve the executable path without claiming learned-model quality.",
+      "safe_limitation": "Development and fixture behavior remains available, but no target or field qualification claim is permitted.",
+      "severity": "CRITICAL",
+      "status": "DEFERRED"
+    },
+    {
+      "dependency": "Which locally captured camera or IMU device and commissioning evidence will satisfy the physical-signal H0 proof?",
+      "due_date": "2026-08-06",
+      "id": "UQ-PHYSICAL-SIGNAL",
+      "owner": "deployment-owner",
+      "rationale": "Fixture mode is implementable now, while physical capture requires site hardware and consent/commissioning choices.",
+      "safe_limitation": "Development and fixture behavior remains available, but no target or field qualification claim is permitted.",
+      "severity": "HIGH",
+      "status": "DEFERRED"
+    },
+    {
+      "dependency": "Which optional live-source entitlements, credentials, endpoints, licences, and freshness policies will be qualified?",
+      "due_date": "2026-08-10",
+      "id": "UQ-LIVE-SOURCES",
+      "owner": "source-steward",
+      "rationale": "The H0 live-source minimum is zero; source integration follows core fixture and local-signal closure.",
+      "safe_limitation": "Development and fixture behavior remains available, but no target or field qualification claim is permitted.",
+      "severity": "MEDIUM",
+      "status": "DEFERRED"
+    }
+  ],
+  "schema": "sentinel-edge.deferred-register.v1",
+  "source_digests": {
+    "docs/OPEN_BLOCKERS.md": "d69fc37b1ec3a9a18205b14d58839d1e4c9d8cf6a4b291bc68fd55ee025dda34",
+    "registries/uncertainties.yaml": "b84fa374a43c10cd8aa7f92e69b64a4c71afb0072fae653587c4396b5e1f80ab"
+  }
+}

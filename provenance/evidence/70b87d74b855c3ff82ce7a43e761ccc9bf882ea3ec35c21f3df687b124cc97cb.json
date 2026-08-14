@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_web_boundary_integration.py tests/test_web_security_policy.py tests/test_api.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "70b87d74b855c3ff82ce7a43e761ccc9bf882ea3ec35c21f3df687b124cc97cb",
+  "inputs": [
+    {
+      "path": "tests\\test_web_boundary_integration.py",
+      "sha256": "4e2801fe8faa392805e4f7cf7179226a8cb6312898812e7901996ce25625ad96"
+    },
+    {
+      "path": "tests\\test_web_security_policy.py",
+      "sha256": "75f9ae21605c0fa0b22605826b5c1ad68394adbcb90c1518aa619846b8881ed6"
+    },
+    {
+      "path": "tests\\test_api.py",
+      "sha256": "754851c131d11722e7ef49a1d20634ed8b711fffe5b2a2ea750829764390eeb9"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:28:28.450817Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

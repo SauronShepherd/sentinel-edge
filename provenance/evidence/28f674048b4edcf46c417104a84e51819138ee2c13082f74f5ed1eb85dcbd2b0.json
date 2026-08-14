@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_cv_ablation.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "28f674048b4edcf46c417104a84e51819138ee2c13082f74f5ed1eb85dcbd2b0",
+  "inputs": [
+    {
+      "path": "tests\\test_cv_ablation.py",
+      "sha256": "b7177f265895e7d062abd3a384e12df8c7089a3563ced44245a7c1bb48ca95aa"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\cv_ablation.py",
+      "sha256": "2fc0d4875ae816142ca5d282a364a4059cf84483cfeb95c06bb542f0d49fb0fd"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:45:29.370931Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-cv002",
+  "schema_version": 1
+}

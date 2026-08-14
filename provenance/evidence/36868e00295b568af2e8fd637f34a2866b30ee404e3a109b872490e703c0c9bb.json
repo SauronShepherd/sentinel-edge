@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "docs\\IMPLEMENTATION_STATUS.md",
+      "sha256": "bc8f71d0a90fa3b2089fd322468ff753f990d05969d7f12cd7ceaa8df45d8076"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest tests/test_capability_faults.py tests/test_runtime_api.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 7.0,
+  "environment": {
+    "name": "windows-development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "36868e00295b568af2e8fd637f34a2866b30ee404e3a109b872490e703c0c9bb",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\scenario\\engine.py",
+      "sha256": "d6de34c3f0b7b3c5816103f3d796e000fdd3220b94827fde32a3c231882aebfd"
+    },
+    {
+      "path": "src\\sentinel_edge\\operations\\capabilities.py",
+      "sha256": "323a4c5dba63ddd325ac28400abb31c40e946c8348d5866c901824b03539da06"
+    },
+    {
+      "path": "tests\\test_capability_faults.py",
+      "sha256": "d15fa1b8ba760138eb4dd252ecbddee4d1c855364253b86d3bd037b1e1df0ceb"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:44:10.214163Z",
+  "result": "passed",
+  "revision": "capability-fault-consequences",
+  "schema_version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "clipped": {
+    "reasons": [
+      "clipping_detected"
+    ],
+    "report_digest": "c80d41260a01572c08d1abad8aa66523b7c16a70fc169c6fba45b9c9cfa2f23c",
+    "state": "blocked"
+  },
+  "decimated": {
+    "report_digest": "91c969b91849eacdb332470cb633379383935ab627d51dc30fff961f509fb12b",
+    "state": "tested"
+  },
+  "interpolated": {
+    "report_digest": "e5e4ae70e3d850d3c75e50a96c3336be39a6a6e3ac1e69c9bf596d9afc0b2db4",
+    "state": "tested"
+  },
+  "native": {
+    "report_digest": "a70c7e4e65927868d7eeda2d000f743a566d1679508fc631f8a1d5e6b7e09205",
+    "state": "tested"
+  },
+  "report_digest": "23d276407a075713e4b334638d3de7b3444bcafafa61b512b3de8426183e9981",
+  "saturated": {
+    "reasons": [
+      "saturation_detected"
+    ],
+    "report_digest": "b6ace8b93b01e28e9654edbb24caf695020809410c094674f1655a24af26fe3e",
+    "state": "blocked"
+  },
+  "schema": "sentinel-edge-signal-chain-conformance/1.0",
+  "target_qualified": false
+}

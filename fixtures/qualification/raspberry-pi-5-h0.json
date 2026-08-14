@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "raspberry-pi-5-h0-v1",
+  "required_system": "Linux",
+  "allowed_machines": ["aarch64", "arm64"],
+  "board_model_contains": ["raspberry pi 5"],
+  "minimum_cpu_count": 4,
+  "minimum_memory_mb": 3800,
+  "require_64bit": true,
+  "require_psi": true,
+  "require_cgroup_v2": true,
+  "require_thermal_sensor": true,
+  "require_power_evidence": true,
+  "maximum_temperature_c": 80.0
+}

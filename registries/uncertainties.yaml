@@ -1,0 +1,41 @@
+items:
+- id: UQ-TARGET-HARDWARE
+  question: Which exact Raspberry Pi 5 board, cooling, storage, power supply, kernel, firmware, and OS image will
+    be used for target qualification?
+  severity: CRITICAL
+  status: DEFERRED
+  blocking_scope: []
+  owner: release-owner
+  deferral_rationale: The uploaded inputs contain contracts and legacy delivery framework, but no physical target or measured host envelope.
+    The uncertainty blocks qualification, not source-level implementation planning.
+  due_date: '2026-08-05'
+- id: UQ-MODEL-ASSETS
+  question: Which exact trained wildfire and earthquake model artifacts, calibration sets, licences, and quality
+    baselines will be admitted?
+  severity: CRITICAL
+  status: DEFERRED
+  blocking_scope: []
+  owner: model-owner
+  deferral_rationale: No model binaries or calibration datasets were supplied; deterministic adapters preserve the
+    executable path without claiming learned-model quality.
+  due_date: '2026-08-06'
+- id: UQ-PHYSICAL-SIGNAL
+  question: Which locally captured camera or IMU device and commissioning evidence will satisfy the physical-signal
+    H0 proof?
+  severity: HIGH
+  status: DEFERRED
+  blocking_scope: []
+  owner: deployment-owner
+  deferral_rationale: Fixture mode is implementable now, while physical capture requires site hardware and consent/commissioning
+    choices.
+  due_date: '2026-08-06'
+- id: UQ-LIVE-SOURCES
+  question: Which optional live-source entitlements, credentials, endpoints, licences, and freshness policies will
+    be qualified?
+  severity: MEDIUM
+  status: DEFERRED
+  blocking_scope: []
+  owner: source-steward
+  deferral_rationale: The H0 live-source minimum is zero; source integration follows core fixture and local-signal
+    closure.
+  due_date: '2026-08-10'

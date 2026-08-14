@@ -1,0 +1,3 @@
+# Agent instructions
+
+Use `registries/requirements.yaml` and the ten registries as the delivery authority. Work only within the active task's allowed paths, implement deterministic checks before model use, record changed paths and exact commands, and never mark a requirement verified without receipt-backed target evidence. Component 4 is the only incident-state writer. Component 6 communicates only through Component 5. Treat bounded ONNX inspection, fixture signal chains, development commissioning, fixture platform envelopes, evidence-window rehearsals and fixture known-answer execution as non-target evidence. Do not add Makefile or PowerShell automation.

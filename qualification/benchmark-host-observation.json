@@ -1,0 +1,52 @@
+{
+  "background_process_count": 17,
+  "background_process_names": [
+    "artifact_tool_r",
+    "bash",
+    "log_forwarder",
+    "python",
+    "sleep",
+    "start-server.sh",
+    "supervisord",
+    "timeout",
+    "tini"
+  ],
+  "background_service_evidence": "bounded_proc_comm_snapshot",
+  "cpu_frequencies_khz": {},
+  "cpu_governors": {},
+  "cpu_pressure": null,
+  "io_pressure": null,
+  "irq_affinity_default": "ffffffff,ffffffff",
+  "kernel_release": "6.12.13",
+  "load_average": [
+    0.37548828125,
+    0.3681640625,
+    0.23046875
+  ],
+  "machine": "x86_64",
+  "major_faults_total": 242,
+  "memory_pressure": null,
+  "observation_digest": "21777f4408dd5ca913ff2c3933d73185179c97bcffbf2377b7e7f97675fa39a8",
+  "observed_at": "2026-08-03T10:58:01.087872+00:00",
+  "page_cache": {
+    "Buffers": "338900 kB",
+    "Cached": "1265660 kB",
+    "Dirty": "2892 kB",
+    "MemAvailable": "5190512 kB",
+    "SwapFree": "0 kB",
+    "SwapTotal": "0 kB",
+    "Writeback": "0 kB"
+  },
+  "process_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "process_cgroup": "0::/",
+  "process_cpuset_effective": "0-4",
+  "provider_threads": 1,
+  "schema": "sentinel-edge-benchmark-host-observation/1.0",
+  "zram_devices": {}
+}

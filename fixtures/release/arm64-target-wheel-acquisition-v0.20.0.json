@@ -1,0 +1,280 @@
+{
+  "entries": [
+    {
+      "bytes": null,
+      "name": "annotated-doc",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "0.0.4"
+    },
+    {
+      "bytes": null,
+      "name": "annotated-types",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "0.7.0"
+    },
+    {
+      "bytes": null,
+      "name": "anyio",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "4.13.0"
+    },
+    {
+      "bytes": null,
+      "name": "cffi",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "2.0.0"
+    },
+    {
+      "bytes": null,
+      "name": "click",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "8.1.8"
+    },
+    {
+      "bytes": null,
+      "name": "cryptography",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "46.0.4"
+    },
+    {
+      "bytes": null,
+      "name": "fastapi",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "0.128.2"
+    },
+    {
+      "bytes": null,
+      "name": "h11",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "0.16.0"
+    },
+    {
+      "bytes": null,
+      "name": "idna",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "3.17"
+    },
+    {
+      "bytes": null,
+      "name": "packaging",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "25.0"
+    },
+    {
+      "bytes": null,
+      "name": "pillow",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "12.2.0"
+    },
+    {
+      "bytes": null,
+      "name": "pycparser",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "3.0"
+    },
+    {
+      "bytes": null,
+      "name": "pydantic",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "2.13.4"
+    },
+    {
+      "bytes": null,
+      "name": "pydantic_core",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "2.46.4"
+    },
+    {
+      "bytes": null,
+      "name": "PyYAML",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "6.0.3"
+    },
+    {
+      "bytes": null,
+      "name": "starlette",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "0.50.0"
+    },
+    {
+      "bytes": null,
+      "name": "typing-inspection",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "0.4.2"
+    },
+    {
+      "bytes": null,
+      "name": "typing_extensions",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "4.15.0"
+    },
+    {
+      "bytes": null,
+      "name": "uvicorn",
+      "origin_kind": "publisher_index",
+      "origin_url": null,
+      "path": "",
+      "publisher_origin_proven": false,
+      "sha256": null,
+      "tags": [
+        "cp313-cp313-manylinux_2_28_aarch64",
+        "py3-none-any"
+      ],
+      "version": "0.48.0"
+    }
+  ],
+  "installation_rehearsal": {
+    "installed_lock_sha256": "18f489d0559837007b343644470221eac8c28f9cd2036bf5f221fc8d2a369f9d",
+    "machine": "aarch64",
+    "no_index": true,
+    "reason": "publisher-origin Arm64 wheels and qualified Raspberry Pi image not available in this environment",
+    "require_hashes": true,
+    "success": false
+  },
+  "schema": "sentinel-edge-target-wheel-acquisition/1.0",
+  "target_platform": "linux-aarch64-raspberry-pi-5"
+}

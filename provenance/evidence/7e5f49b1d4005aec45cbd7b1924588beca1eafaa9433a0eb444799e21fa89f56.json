@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_protected_client.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "7e5f49b1d4005aec45cbd7b1924588beca1eafaa9433a0eb444799e21fa89f56",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\protected_client.py",
+      "sha256": "946d35c9446ebe89a9859c82c423299346f3994f5baf67712901decf347b2e3d"
+    },
+    {
+      "path": "tests\\test_protected_client.py",
+      "sha256": "55b26a69fe953506d0c2fe6126625ac7b4e5f6450518a5a08536b4a743279d51"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:33:31.976819Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

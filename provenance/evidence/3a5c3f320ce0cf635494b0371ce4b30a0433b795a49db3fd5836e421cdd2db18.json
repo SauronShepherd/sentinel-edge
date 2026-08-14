@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_exposure_context.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3a5c3f320ce0cf635494b0371ce4b30a0433b795a49db3fd5836e421cdd2db18",
+  "inputs": [
+    {
+      "path": "tests\\test_exposure_context.py",
+      "sha256": "d8757f9a979c77be3a27a92746fe8d2e2a1281a7d8f8014187e90d456003bf3a"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\exposure_context.py",
+      "sha256": "7544e80087220b6bba83911caa162bdf2073e01be1af23bf7617c7f73ae04ba5"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:25:04.126102Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-imp001",
+  "schema_version": 1
+}

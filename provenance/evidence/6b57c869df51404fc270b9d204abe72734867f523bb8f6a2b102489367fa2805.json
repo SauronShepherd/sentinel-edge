@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_presentation_metadata.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "6b57c869df51404fc270b9d204abe72734867f523bb8f6a2b102489367fa2805",
+  "inputs": [
+    {
+      "path": "tests\\test_presentation_metadata.py",
+      "sha256": "e22c353bfb0120e3028de75786bf457aa4e0bad068bb24eb529c35508f8e9182"
+    },
+    {
+      "path": "src\\sentinel_edge\\gateway\\presentation_metadata.py",
+      "sha256": "162dfb243bf6cb4f3e0f42a138d328586c0a9ef52f8dcfbc1716262df9537dbe"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:56:09.588429Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-ext005",
+  "schema_version": 1
+}

@@ -1,0 +1,87 @@
+{
+  "schema_name": "sentinel-edge-observation",
+  "from_version": "1.0.0",
+  "to_version": "2.0.0",
+  "state": "migrated",
+  "raw_payload_sha256": "1ec1933645c1a3ba4ce9392d1f71628ead9d445f7bd63602e892f9d73c590243",
+  "normalized_payload_sha256": "77b621dc83a0bacedda42e6d1a839b1680cf227ab5e7e35ea9ca65fa5abaca66",
+  "raw_payload": {
+    "schema_version": "1.0.0",
+    "source_id": "legacy-gauge-1",
+    "hazard": "flood",
+    "source_mode": "fixture",
+    "sequence": 1,
+    "observed_at": "2026-08-02T18:00:00Z",
+    "received_at": "2026-08-02T18:00:00Z",
+    "values": {
+      "level": 1.2,
+      "rise": 0.3
+    },
+    "units": {
+      "level": "m",
+      "rise": "m/h"
+    }
+  },
+  "normalized_payload": {
+    "schema_version": "2.0.0",
+    "observation_id": "5d642f5d-7f7c-5d0a-821c-49668b076d1b",
+    "correlation_id": "9f359c21-8085-53ca-a25e-36d2d3c970f2",
+    "source_id": "legacy-gauge-1",
+    "hazard": "flood",
+    "source_mode": "fixture",
+    "boot_id": "fixture-boot-1",
+    "sequence": 1,
+    "observed_at": "2026-08-02T18:00:00Z",
+    "received_at": "2026-08-02T18:00:00Z",
+    "values": {
+      "water_level_m": 1.2,
+      "rate_of_rise_m_per_h": 0.3
+    },
+    "units": {
+      "water_level_m": "m",
+      "rate_of_rise_m_per_h": "m/h"
+    },
+    "quality_flags": [],
+    "source_lineage": "fixture-v1",
+    "clock_epoch": 0,
+    "measurements": [
+      {
+        "observed_property_id": "rate_of_rise_m_per_h",
+        "value": 0.3,
+        "unit": "m/h",
+        "quality": "valid",
+        "uncertainty": null,
+        "uncertainty_status": "unknown",
+        "phenomenon_start": "2026-08-02T17:00:00Z",
+        "phenomenon_end": "2026-08-02T18:00:00Z",
+        "statistic": "rate",
+        "axis": null,
+        "orientation": "positive-up",
+        "reference": "local-datum-unqualified:legacy-gauge-1",
+        "source_value_key": "rate_of_rise_m_per_h"
+      },
+      {
+        "observed_property_id": "water_level_m",
+        "value": 1.2,
+        "unit": "m",
+        "quality": "valid",
+        "uncertainty": null,
+        "uncertainty_status": "unknown",
+        "phenomenon_start": "2026-08-02T18:00:00Z",
+        "phenomenon_end": "2026-08-02T18:00:00Z",
+        "statistic": "instantaneous",
+        "axis": null,
+        "orientation": "positive-up",
+        "reference": "local-datum-unqualified:legacy-gauge-1",
+        "source_value_key": "water_level_m"
+      }
+    ],
+    "measurement_references": {},
+    "measurement_orientations": {},
+    "measurement_uncertainty": {}
+  },
+  "reason_codes": [
+    "exact_source_specific_migration",
+    "raw_payload_preserved"
+  ]
+}

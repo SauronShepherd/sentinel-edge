@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_i01_active_contract_snapshot.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "f6e4678581254627bbb467ca57699149365d099bffed6a05c7d30cd24f975033",
+  "inputs": [
+    {
+      "path": "tests\\test_i01_active_contract_snapshot.py",
+      "sha256": "8867edf184a718c6b10cdd01268b76329cc8501d1c62955795e29dc6e8a28dbc"
+    },
+    {
+      "path": "scripts\\generate_active_contract_snapshot.py",
+      "sha256": "1facedeac6576995b8b04c58bb55065a78698452755676c36cba6b25b53bdc60"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:21:24.817641Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-cql004",
+  "schema_version": 1
+}

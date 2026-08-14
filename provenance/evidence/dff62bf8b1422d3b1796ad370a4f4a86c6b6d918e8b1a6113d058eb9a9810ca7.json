@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "docs\\IMPLEMENTATION_STATUS.md",
+      "sha256": "b13c99b575ee7152bd0748ebb089944cc1e2052704a11a49f5ffd9a263ac439e"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest tests/test_pairwise_interference.py tests/test_benchmark_lab.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 4,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.2,
+  "environment": {
+    "name": "windows-development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "dff62bf8b1422d3b1796ad370a4f4a86c6b6d918e8b1a6113d058eb9a9810ca7",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\benchmark\\interference.py",
+      "sha256": "c34355bef11104430b4c0f31a7ced30759727e9f6fa02f5a38aa2d789769d1d2"
+    },
+    {
+      "path": "src\\sentinel_edge\\benchmark\\__init__.py",
+      "sha256": "3fc0ab5c9d1003f894a1654d27ef702cede53f3e3e462842d0f086f2091c462d"
+    },
+    {
+      "path": "tests\\test_pairwise_interference.py",
+      "sha256": "9cd719bd983025d011dd0b993287eb3a1c40d9e953a57008f16bac635bde2c7d"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:46:13.261778Z",
+  "result": "passed",
+  "revision": "pairwise-interference-report",
+  "schema_version": 1
+}

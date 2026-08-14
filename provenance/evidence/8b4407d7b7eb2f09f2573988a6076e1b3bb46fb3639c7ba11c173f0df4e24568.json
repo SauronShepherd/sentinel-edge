@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_optional_context.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.7,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "8b4407d7b7eb2f09f2573988a6076e1b3bb46fb3639c7ba11c173f0df4e24568",
+  "inputs": [
+    {
+      "path": "tests\\test_optional_context.py",
+      "sha256": "028745c9dbe192cd92f918d21c871603ea0b2bd84e5e8d3d9f681a26d6887033"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:22:32.935394Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

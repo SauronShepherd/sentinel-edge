@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "path": "contracts\\compatibility-matrix\\current-n-1.yaml",
+      "sha256": "2f2590efca96cada259d11a0db3df991b3f2bd088f10118f60d6d1160f1a839c"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\contracts --tb=short; .venv\\\\Scripts\\\\python.exe scripts\\\\check_compatibility.py; node --test test/contract-roundtrip.test.mjs (cwd modules/client-applications)",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 9,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 13.4,
+  "environment": {
+    "name": "local-windows-python-node",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "9eb268814c33695771033b266f007f19a4829cdeafa910ca875d743e47c13195",
+  "inputs": [
+    {
+      "path": "scripts\\check_compatibility.py",
+      "sha256": "783111b10a795fb791b684281671f5976e4124a859dc0386ccfa247905182edd"
+    },
+    {
+      "path": "tests\\contracts\\test_compatibility.py",
+      "sha256": "03807fb8c1315cbc1101beab38f82733ea3892c68e0a7131726860d171a4fa3d"
+    },
+    {
+      "path": "tests\\contracts\\test_round_trip_contracts.py",
+      "sha256": "75267e634ead115b24ac045f7a005bea4952981e4b83c6336489c5f5c1c54cfb"
+    },
+    {
+      "path": "modules\\client-applications\\test\\contract-roundtrip.test.mjs",
+      "sha256": "6bea8eb1968d2a188ec4683fd4ab36fa50191fdd40059114d972a799d5c87e06"
+    }
+  ],
+  "recorded_at": "2026-08-12T14:21:30.740968Z",
+  "result": "passed",
+  "revision": "REQ-CON-001-003-semantic-roundtrip",
+  "schema_version": 1
+}

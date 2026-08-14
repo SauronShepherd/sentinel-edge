@@ -1,0 +1,75 @@
+{
+  "artifact_classes": [
+    {
+      "artifact": "deterministic-source-bundle",
+      "build_a": {
+        "bytes": 6621198,
+        "members": 1311,
+        "path": "/tmp/sentinel-repro-artifacts-lckfn_ma/source-bundle-a.zip",
+        "sha256": "4913cc059ff2bbc3b83927aa6e438efad6511095c88401facc2a91d7f19fec7a"
+      },
+      "build_b": {
+        "bytes": 6621198,
+        "members": 1311,
+        "path": "/tmp/sentinel-repro-artifacts-lckfn_ma/source-bundle-b.zip",
+        "sha256": "4913cc059ff2bbc3b83927aa6e438efad6511095c88401facc2a91d7f19fec7a"
+      },
+      "classification": "reproducible",
+      "comparison": {
+        "byte_exact": true,
+        "digest_equal": true
+      },
+      "determinism_class": "byte_exact"
+    },
+    {
+      "artifact": "signed-release-candidate-and-attestations",
+      "classification": "provenance_only",
+      "determinism_class": "semantic",
+      "reason": "timestamps, environment observations, and signature envelopes are intentionally invocation-specific"
+    }
+  ],
+  "build_variations": {
+    "absolute_paths": "different",
+    "enumeration_order": [
+      "forward",
+      "reverse"
+    ],
+    "locale_profiles": [
+      "C",
+      "C.UTF-8"
+    ],
+    "timezone_profiles": [
+      "UTC",
+      "Europe/Madrid"
+    ]
+  },
+  "dependency_lock": {
+    "complete": true,
+    "path": "requirements-release.lock.json",
+    "resolution_kind": "installed_exact_versions",
+    "sha256": "d78e6b472e979509331c5a13f7311f708e885789af5a87174f982ce0aa02d897"
+  },
+  "limitations": [
+    "The byte-exact claim applies only to the deterministic source bundle.",
+    "No OS-level network namespace or independent builder organization is proven.",
+    "Package wheel hashes and an offline dependency mirror are not included.",
+    "Target binaries, models, firmware, and Raspberry Pi images are outside this report."
+  ],
+  "network_control": {
+    "below_application_layer_proven": false,
+    "mode": "python_socket_denial",
+    "network_used": false
+  },
+  "project_version": "0.21.0",
+  "release_eligible": false,
+  "report_digest": "3f02c3e01402e875461c5f0f08915eae552533618c2c16c7378c9cf9f1be41c6",
+  "schema": "sentinel-edge-reproducibility-report/1.0",
+  "source_bundle_claim_valid": true,
+  "source_date_epoch": 1700000000,
+  "source_members_digest": "ce8d014f3882cdf86f555a57944afddc6ff9ee4bc9c6ef9decf98420cfc59e60",
+  "toolchain": {
+    "archive_format": "zip-stored-canonical-v1",
+    "implementation": "cpython",
+    "python": "3.13.5"
+  }
+}

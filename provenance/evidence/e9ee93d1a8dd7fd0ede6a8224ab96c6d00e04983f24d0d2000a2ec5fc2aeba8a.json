@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_content_origin.py tests/test_evidence_claim_graph.py tests/test_evidence_api.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 10,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "e9ee93d1a8dd7fd0ede6a8224ab96c6d00e04983f24d0d2000a2ec5fc2aeba8a",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\domain\\models.py",
+      "sha256": "cc3b97c5f5d120872c35aec948d67976f98aa18592915bd487e99fcbf1703a5d"
+    },
+    {
+      "path": "tests\\test_content_origin.py",
+      "sha256": "871f71457cb39e86da001532a7a18d4557952b24e7bb921575ed42c63a3bf84a"
+    },
+    {
+      "path": "tests\\test_evidence_claim_graph.py",
+      "sha256": "257cbd858f3bcb678e02c8ae187d77a5d467b45c24fbe0249df695b824dbf921"
+    },
+    {
+      "path": "tests\\test_evidence_api.py",
+      "sha256": "88886761e2fab83243f16375ea54ddd62f6c62b3614216c2d35b8687a7ac1708"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:08:05.972635Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

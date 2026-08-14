@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_readiness_timing.py tests/test_readiness_api.py tests/component/test_all_module_lifecycles.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 9,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.3,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "6cb135e1f8a4666e8053b683a6d105f8b052bd09d6de130c56b36c414a603ce8",
+  "inputs": [
+    {
+      "path": "tests\\test_readiness_timing.py",
+      "sha256": "463597788aba42ab831a241e2f92d624e673195249c2382019b130d5fbacd84a"
+    },
+    {
+      "path": "tests\\test_readiness_api.py",
+      "sha256": "c9f68f67f63ac8b96dc4f9e0831718c746f00eb93b9b3799d21aa199659d20fa"
+    },
+    {
+      "path": "tests\\component\\test_all_module_lifecycles.py",
+      "sha256": "4f81bcf1f5326e4ce090f2250d1a8e9126c8b820ed18798eec4eec1afe094971"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:49:27.805140Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_latency_decomposition.py tests/test_scenario_e2e.py tests/test_capability_faults.py tests/test_signed_scenarios.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 9.1,
+  "environment": {
+    "name": "Windows development host; deterministic scenario timing tests",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "302c39411c971dd024fcb08fd96d11ee6208bd1844f93e3311082b4a2d19f697",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\timing.py",
+      "sha256": "7cb541640c61d44059a2862dc5f1760a097823322c06d9005155c0d7cc4e3992"
+    },
+    {
+      "path": "src\\sentinel_edge\\scenario\\engine.py",
+      "sha256": "14b1d44b90ea2cc6fd6220170cead2a388f30054eb6089afd188d4acfc8a90ac"
+    },
+    {
+      "path": "tests\\test_latency_decomposition.py",
+      "sha256": "e011c98187a249b4672c980398913ada427087d3b4c20544200b36d4ad4badf0"
+    },
+    {
+      "path": "tests\\test_scenario_e2e.py",
+      "sha256": "9a7002e9e0d50c3d0c1d2afe338cc74e6514f639e26dfaf76cf5150e93dda444"
+    }
+  ],
+  "recorded_at": "2026-08-12T16:54:12.682662Z",
+  "result": "passed",
+  "revision": "working-tree-latency-decomposition",
+  "schema_version": 1
+}

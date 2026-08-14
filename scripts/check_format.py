@@ -3,7 +3,7 @@ from __future__ import annotations
 from _repo import ROOT
 
 TEXT_SUFFIXES = {".py", ".pyi", ".md", ".toml", ".yaml", ".yml", ".json", ".jsonl", ".txt"}
-IGNORED = {".git", ".venv", ".idea", "build", "dist", ".pytest_cache", "node_modules", ".egg-info"}
+IGNORED = {".git", ".venv", ".idea", ".tmp", "build", "dist", ".pytest_cache", "node_modules", ".egg-info"}
 
 
 def main() -> int:

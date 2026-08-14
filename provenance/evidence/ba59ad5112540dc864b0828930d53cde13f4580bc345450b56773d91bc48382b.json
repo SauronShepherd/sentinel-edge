@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_platform_envelope_v021.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "ba59ad5112540dc864b0828930d53cde13f4580bc345450b56773d91bc48382b",
+  "inputs": [
+    {
+      "path": "tests\\test_platform_envelope_v021.py",
+      "sha256": "5db40914eaeb19a50febc5221767c5425d08e44109f390d350c0609d8b4d4173"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\platform_envelope.py",
+      "sha256": "f0f0450c7a8f4736baddf2dfd037966a7a59a7ad0a82ce764ccc5ad090066a85"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:30:42.196554Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-pre003",
+  "schema_version": 1
+}

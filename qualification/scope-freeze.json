@@ -1,0 +1,19 @@
+{
+  "exception_schema": {
+    "required_fields": [
+      "exception_id",
+      "reason",
+      "approver",
+      "displaced_or_cut",
+      "affected_requirements",
+      "mandatory_reruns"
+    ]
+  },
+  "exceptions": [],
+  "freeze_id": "R00-H0-SCOPE-20260812",
+  "frozen_at": "2026-08-12T00:00:00Z",
+  "h0_count": 240,
+  "h0_ids_sha256": "6010922d97f4406079cf60cd612f5676e1fe938b9cf1dbd86f9b2ac71c0c2cd4",
+  "requirements_sha256": "3e17d22c23e01b0723c61f60abc131b42517f406ff49e6a6d42ddd337e79e300",
+  "schema": "sentinel-edge.scope-freeze.v1"
+}

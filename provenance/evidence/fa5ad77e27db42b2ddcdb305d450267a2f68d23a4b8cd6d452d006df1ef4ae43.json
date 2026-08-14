@@ -1,0 +1,9 @@
+{
+  "receipt_id": "fa5ad77e27db42b2ddcdb305d450267a2f68d23a4b8cd6d452d006df1ef4ae43",
+  "requirement_ids": ["REQ-DET-002"],
+  "changed_paths": ["src/sentinel_edge/qualification/thresholds.py", "src/sentinel_edge/hazards/base.py", "tests/test_threshold_abstention.py", "tests/test_hazards.py", "tests/test_flood_landslide_contracts.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_threshold_abstention.py tests/test_hazards.py tests/test_flood_landslide_contracts.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

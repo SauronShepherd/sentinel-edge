@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_counterfactual_audit.py tests/test_benchmark_lab.py tests/test_clock_and_overload.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 16,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.4,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b2f19a9513af9253955f523b1c7bcaa303445894b2893836da5a529641d13c91",
+  "inputs": [
+    {
+      "path": "tests\\test_counterfactual_audit.py",
+      "sha256": "e544e4bab2721ab8d21007d4aaab5e193bd7556b25eb01ad4d642715a8654c3b"
+    },
+    {
+      "path": "tests\\test_benchmark_lab.py",
+      "sha256": "6e587f7869a08062602c4228f581977b55a497809699bc305de9bb492ec9f9ce"
+    },
+    {
+      "path": "tests\\test_clock_and_overload.py",
+      "sha256": "be1c57d119c8a8e0740b298d01917e72e6f252f19e3c07fb57f04bb57f2ce732"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:57:34.573561Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

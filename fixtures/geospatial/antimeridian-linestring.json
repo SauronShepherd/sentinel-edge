@@ -1,0 +1,9 @@
+{
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [[179.5, 10.0], [-179.5, 10.0]]
+  },
+  "source_crs": "EPSG:4326",
+  "source_axis_order": "longitude_latitude",
+  "transform_pipeline": "identity:EPSG:4326"
+}

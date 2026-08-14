@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_operator_workflow_metrics.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 15.1,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "cf95a33baa1f12531a35733d780d8e278de275aff0336a92ce02031c5ac0c149",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "c7f4a83b61e10096e81c2b2917d967c700f0268c6a0f3821125ed9c6f03158ac"
+    },
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "b4a4de5d54f7f4e8cc31345a37edf448b144caf2234e0c7645cbe4ba589b9b30"
+    },
+    {
+      "path": "tests\\test_operator_workflow_metrics.py",
+      "sha256": "9884439caef3cef2f60bf597396834f29a8b9a5a9011f7dbdb83b049cbbc3250"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:25:55.794970Z",
+  "result": "passed",
+  "revision": "REQ-HUM-007 acknowledgement and review workflow timing metrics",
+  "schema_version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "commissioned_at": "2026-08-02T17:51:47.437348Z",
+  "duration_seconds": 1.99,
+  "maximum_gap_ms": 10.0,
+  "non_monotonic_samples": 0,
+  "observed_rate_hz": 100.0,
+  "observed_unit": "m/s2",
+  "p99_interval_jitter_ms": 0.0,
+  "physical_source_proven": false,
+  "rate_error_fraction": 0.0,
+  "reason_codes": [
+    "physical_device_not_proven"
+  ],
+  "requested_rate_hz": 100.0,
+  "required_axes": [
+    "x",
+    "y",
+    "z"
+  ],
+  "sample_count": 200,
+  "saturation_samples": 0,
+  "schema_version": "1.0.0",
+  "sensor_kind": "imu",
+  "sequence_gaps": 0,
+  "session_id": "9efc0490-82a3-40bf-b3a5-33303ab26964",
+  "source_id": "imu-development",
+  "source_path": "fixtures/sensors/imu-100hz-development.jsonl",
+  "source_sha256": "95d813412a2d5dbe2236c709033fa7528a089cb06a4c53eaef0b359632cdd1d5",
+  "state": "tested"
+}

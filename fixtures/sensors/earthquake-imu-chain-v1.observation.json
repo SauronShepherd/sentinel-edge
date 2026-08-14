@@ -1,0 +1,35 @@
+{
+  "adc_bits": 16,
+  "anti_alias_filter_id": "fir-aa-v1",
+  "axis_or_sector_identity": "x-east/y-north/z-up",
+  "capture_interface": "iio-char-device",
+  "clipping_samples": 0,
+  "commissioning_report_sha256": "ccf19bbe8b224269091b51d0a9695c53305285c548e6b48afaa9110323466847",
+  "driver_or_firmware_identity": "development-driver-v1",
+  "fifo_delay_ms": 2.0,
+  "full_scale": 16.0,
+  "maximum_gap_ms": 11.0,
+  "observed_at": "2026-08-03T08:16:00Z",
+  "observed_rate_hz": 100.0,
+  "p99_jitter_ms": 0.2,
+  "preprocessing_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "quantization_maximum": 15.999,
+  "quantization_minimum": -16.0,
+  "rate_error_fraction": 0.002,
+  "rate_operations": [
+    {
+      "anti_alias_filter_required": true,
+      "input_rate_hz": 400.0,
+      "kind": "decimate",
+      "method": "polyphase-fir",
+      "output_rate_hz": 100.0
+    }
+  ],
+  "saturation_samples": 0,
+  "sensor_identity": "imu-development-fixture",
+  "sensor_kind": "imu",
+  "source_class": "fixture",
+  "timestamp_source": "kernel-monotonic-raw",
+  "timestamp_uncertainty_ms": 0.2,
+  "unit": "m/s2"
+}

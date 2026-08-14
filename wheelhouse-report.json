@@ -1,0 +1,382 @@
+{
+  "complete": true,
+  "failures": [],
+  "incompatible": [],
+  "install_rehearsal": {
+    "installed_file_count": 1314,
+    "network_disabled_by_pip": true,
+    "performed": true,
+    "requested": true,
+    "returncode": 0,
+    "stderr_tail": "WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n",
+    "stdout_tail": "ents.txt (line 10))\nProcessing ./artifacts/wheelhouse/pillow-12.2.0-cp313-cp313-manylinux_2_27_x86_64.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 11))\nProcessing ./artifacts/wheelhouse/pycparser-3.0-py3-none-any.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 12))\nProcessing ./artifacts/wheelhouse/pydantic-2.13.4-py3-none-any.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 13))\nProcessing ./artifacts/wheelhouse/pydantic_core-2.46.4-cp313-cp313-manylinux_2_17_x86_64.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 14))\nProcessing ./artifacts/wheelhouse/PyYAML-6.0.3-cp313-cp313-manylinux_2_17_x86_64.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 15))\nProcessing ./artifacts/wheelhouse/starlette-0.50.0-py3-none-any.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 16))\nProcessing ./artifacts/wheelhouse/typing_extensions-4.15.0-py3-none-any.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 17))\nProcessing ./artifacts/wheelhouse/typing_inspection-0.4.2-py3-none-any.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 18))\nProcessing ./artifacts/wheelhouse/uvicorn-0.48.0-py3-none-any.whl (from -r /tmp/sentinel-wheelhouse-rehearsal-2c12vq5v/requirements.txt (line 19))\nInstalling collected packages: uvicorn, typing-inspection, typing-extensions, starlette, pyyaml, pydantic-core, pydantic, pycparser, pillow, packaging, idna, h11, fastapi, cryptography, click, cffi, anyio, annotated-types, annotated-doc\n\nSuccessfully installed annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.13.0 cffi-2.0.0 click-8.1.8 cryptography-46.0.4 fastapi-0.128.2 h11-0.16.0 idna-3.17 packaging-25.0 pillow-12.2.0 pycparser-3.0 pydantic-2.13.4 pydantic-core-2.46.4 pyyaml-6.0.3 starlette-0.50.0 typing-extensions-4.15.0 typing-inspection-0.4.2 uvicorn-0.48.0\n",
+    "success": true
+  },
+  "limitations": [
+    "OS packages, firmware and dynamically loaded native libraries are outside this Python wheelhouse.",
+    "Release eligibility requires a successful no-index installation rehearsal for the exact lock."
+  ],
+  "lock_sha256": "b7e9d8d9dc105b0240eb086809b1b1d6b8d2b0495ce37bc6b84cd3d29b4c2bc2",
+  "manifest": {
+    "directory_name": "wheelhouse",
+    "entries": [
+      {
+        "build": null,
+        "bytes": 801561,
+        "canonical_name": "pyyaml",
+        "entry_digest": "74dc2f7375733eee294dab5f94ba119ef44229eace0e180e12dcbedf215c8095",
+        "failures": [],
+        "metadata_name": "PyYAML",
+        "metadata_version": "6.0.3",
+        "name": "pyyaml",
+        "path": "PyYAML-6.0.3-cp313-cp313-manylinux_2_17_x86_64.whl",
+        "record_present": true,
+        "sha256": "1e652d0ced3fa6980b7527c24add4a5f9abc45c2ea87b80aceb067cf9bdd8796",
+        "tags": [
+          "cp313-cp313-manylinux_2_17_x86_64"
+        ],
+        "valid": true,
+        "version": "6.0.3"
+      },
+      {
+        "build": null,
+        "bytes": 5674,
+        "canonical_name": "annotated-doc",
+        "entry_digest": "7c3e797c7f806591a784a0197554dad000accd30a60fc1042f74f498c22f1b4c",
+        "failures": [],
+        "metadata_name": "annotated-doc",
+        "metadata_version": "0.0.4",
+        "name": "annotated-doc",
+        "path": "annotated_doc-0.0.4-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "973cd7950c014753903e57563e8a4cf27d1af5443ce66867ef774b8017364f6e",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "0.0.4"
+      },
+      {
+        "build": null,
+        "bytes": 14026,
+        "canonical_name": "annotated-types",
+        "entry_digest": "b39e68def8f73cd688c31055fbeb87f3798d78fc762a21e201f11b0de4d6e2ff",
+        "failures": [],
+        "metadata_name": "annotated-types",
+        "metadata_version": "0.7.0",
+        "name": "annotated-types",
+        "path": "annotated_types-0.7.0-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "a15e5ddd8bcbb68b75a34fe33497327254908c7064ec99299d9dd73e4da57365",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "0.7.0"
+      },
+      {
+        "build": null,
+        "bytes": 114693,
+        "canonical_name": "anyio",
+        "entry_digest": "304cb2d779a0c77f8e7be7ec27a1f6dd1d20dd2d9f63458f8b6c8184c96d53f5",
+        "failures": [],
+        "metadata_name": "anyio",
+        "metadata_version": "4.13.0",
+        "name": "anyio",
+        "path": "anyio-4.13.0-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "f8e2f7124d4da271f620e0d1c2e8fd70af4feccc354f0c2afb45674147dd2f09",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "4.13.0"
+      },
+      {
+        "build": null,
+        "bytes": 219530,
+        "canonical_name": "cffi",
+        "entry_digest": "0d4b14c105a88a446188abbff6d6f51502c1d704bbb4405d71b09fe8d4cd07ab",
+        "failures": [],
+        "metadata_name": "cffi",
+        "metadata_version": "2.0.0",
+        "name": "cffi",
+        "path": "cffi-2.0.0-cp313-cp313-manylinux_2_17_x86_64.whl",
+        "record_present": true,
+        "sha256": "f1a0911133493e6a525394c0d87cdcc31f17287fedc283965c7c1e909d753f00",
+        "tags": [
+          "cp313-cp313-manylinux_2_17_x86_64"
+        ],
+        "valid": true,
+        "version": "2.0.0"
+      },
+      {
+        "build": null,
+        "bytes": 98533,
+        "canonical_name": "click",
+        "entry_digest": "25c587e1ee707d75d415dadfef16b1bbcbc1ad1294c2695e46cb7308ab3ecbf7",
+        "failures": [],
+        "metadata_name": "click",
+        "metadata_version": "8.1.8",
+        "name": "click",
+        "path": "click-8.1.8-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "9296fd2d2d2062acde57624d0940c18be095415a0665a1169e91e7517455c76a",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "8.1.8"
+      },
+      {
+        "build": null,
+        "bytes": 4452159,
+        "canonical_name": "cryptography",
+        "entry_digest": "506458398b00c7f111f6fae676b69ee86e20d426c84f1c4ba2ea83496bb3ec61",
+        "failures": [],
+        "metadata_name": "cryptography",
+        "metadata_version": "46.0.4",
+        "name": "cryptography",
+        "path": "cryptography-46.0.4-cp311-abi3-manylinux_2_34_x86_64.whl",
+        "record_present": true,
+        "sha256": "ad80ba8bc22156729dee9703acd56da25a76a01d6ba0d1bf2def38bb02d8cba2",
+        "tags": [
+          "cp311-abi3-manylinux_2_34_x86_64"
+        ],
+        "valid": true,
+        "version": "46.0.4"
+      },
+      {
+        "build": null,
+        "bytes": 104390,
+        "canonical_name": "fastapi",
+        "entry_digest": "19bced9babba741035f0dd29cc1785259da34828255a5d20f2720767e7a2cd1d",
+        "failures": [],
+        "metadata_name": "fastapi",
+        "metadata_version": "0.128.2",
+        "name": "fastapi",
+        "path": "fastapi-0.128.2-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "b7a75364100100e8c99fe842108082a143a81d2ba496fb1e8b0591ff02f9edf7",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "0.128.2"
+      },
+      {
+        "build": null,
+        "bytes": 37881,
+        "canonical_name": "h11",
+        "entry_digest": "7b891f05eef8779f704ce34c17f12f731eace5356d3aae37684af31d4e057be8",
+        "failures": [],
+        "metadata_name": "h11",
+        "metadata_version": "0.16.0",
+        "name": "h11",
+        "path": "h11-0.16.0-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "1d47c297b864cd9dfce7dfbb5728511823da161ce634642dde366ea45ace5a1d",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "0.16.0"
+      },
+      {
+        "build": null,
+        "bytes": 65651,
+        "canonical_name": "idna",
+        "entry_digest": "fc13348d8dc019798f8bc7d6d058b2715245422330b951957ad827d07b33593e",
+        "failures": [],
+        "metadata_name": "idna",
+        "metadata_version": "3.17",
+        "name": "idna",
+        "path": "idna-3.17-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "34ae10b8d332a62cd89daa6e735840ff542c3b265d3c0d1aee465467cd629403",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "3.17"
+      },
+      {
+        "build": null,
+        "bytes": 66825,
+        "canonical_name": "packaging",
+        "entry_digest": "91cf8da825d8f0bf8bddc213f46f0434bf9fc9b12bb397c5d73f45d8b6d2fd3e",
+        "failures": [],
+        "metadata_name": "packaging",
+        "metadata_version": "25.0",
+        "name": "packaging",
+        "path": "packaging-25.0-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "dcbdbc376d48214c02200bf4b84600944e8ab84d6cdaf812e5c2957fa6457c86",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "25.0"
+      },
+      {
+        "build": null,
+        "bytes": 6894117,
+        "canonical_name": "pillow",
+        "entry_digest": "065c45a88a1e2059f297766ac6edd0418df52042407a76b31d4fbdeda7f34c51",
+        "failures": [],
+        "metadata_name": "pillow",
+        "metadata_version": "12.2.0",
+        "name": "pillow",
+        "path": "pillow-12.2.0-cp313-cp313-manylinux_2_27_x86_64.whl",
+        "record_present": true,
+        "sha256": "7dae928beb116c130398bd14aa4829bde4e11202dff253e37768c200e618d8ce",
+        "tags": [
+          "cp313-cp313-manylinux_2_27_x86_64"
+        ],
+        "valid": true,
+        "version": "12.2.0"
+      },
+      {
+        "build": null,
+        "bytes": 48552,
+        "canonical_name": "pycparser",
+        "entry_digest": "64ddb2822d563c0a5a7292ec8e32e1a003c064e0e32634abdf9c0aad4de2dcef",
+        "failures": [],
+        "metadata_name": "pycparser",
+        "metadata_version": "3.0",
+        "name": "pycparser",
+        "path": "pycparser-3.0-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "9d8b2573a45afc0f660857f8d9acd256c458a1aa752488e2506f02d3efd862fb",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "3.0"
+      },
+      {
+        "build": null,
+        "bytes": 472990,
+        "canonical_name": "pydantic",
+        "entry_digest": "0b1904f47ff7b012a544aed045abb615823e1786878aeb3383c7907b7f9fb8c6",
+        "failures": [],
+        "metadata_name": "pydantic",
+        "metadata_version": "2.13.4",
+        "name": "pydantic",
+        "path": "pydantic-2.13.4-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "f02979eec1c4ef2ed58d580f816525eadadf0132864d31411c2e24d0817ca510",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "2.13.4"
+      },
+      {
+        "build": null,
+        "bytes": 2034733,
+        "canonical_name": "pydantic-core",
+        "entry_digest": "bd5a4f73a6e18b0710d51bc149d804dd8c394f7bde3ec35f9de7d8583310897a",
+        "failures": [],
+        "metadata_name": "pydantic_core",
+        "metadata_version": "2.46.4",
+        "name": "pydantic-core",
+        "path": "pydantic_core-2.46.4-cp313-cp313-manylinux_2_17_x86_64.whl",
+        "record_present": true,
+        "sha256": "91f28377e5206fb24406bacd7252e47212467639fb111b06578d4c1db2c17b3a",
+        "tags": [
+          "cp313-cp313-manylinux_2_17_x86_64"
+        ],
+        "valid": true,
+        "version": "2.46.4"
+      },
+      {
+        "build": null,
+        "bytes": 74401,
+        "canonical_name": "starlette",
+        "entry_digest": "de487fadbfe393106a5bec8b05fe415f7e587ac043831273507e42bff754a3bd",
+        "failures": [],
+        "metadata_name": "starlette",
+        "metadata_version": "0.50.0",
+        "name": "starlette",
+        "path": "starlette-0.50.0-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "3d6fb6c53676f49d55e803ca7b0624a354bade77669d77d9c9013b62cb65d8d0",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "0.50.0"
+      },
+      {
+        "build": null,
+        "bytes": 44829,
+        "canonical_name": "typing-extensions",
+        "entry_digest": "55b60689058e2ef66e04fdaea213fba462c981fa324b790837bc1fd3bd0b53c4",
+        "failures": [],
+        "metadata_name": "typing_extensions",
+        "metadata_version": "4.15.0",
+        "name": "typing-extensions",
+        "path": "typing_extensions-4.15.0-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "658b8d48f7d611b0af1da4aa197ad07c74fbc3ebe739ad07879f5bce0adc04d7",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "4.15.0"
+      },
+      {
+        "build": null,
+        "bytes": 14998,
+        "canonical_name": "typing-inspection",
+        "entry_digest": "d1c463e67a0f43f9be560fb2d425b2f675b7286a1552479f86e56dc7c4573df9",
+        "failures": [],
+        "metadata_name": "typing-inspection",
+        "metadata_version": "0.4.2",
+        "name": "typing-inspection",
+        "path": "typing_inspection-0.4.2-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "2930de788d5cad886947aeaae61d5d8ab3f138a1c450910dea2e5ea529db3081",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "0.4.2"
+      },
+      {
+        "build": null,
+        "bytes": 71761,
+        "canonical_name": "uvicorn",
+        "entry_digest": "d52342532f223b9caa050644d77ad6fbef38d401033d1066bec66598cdf8ffd9",
+        "failures": [],
+        "metadata_name": "uvicorn",
+        "metadata_version": "0.48.0",
+        "name": "uvicorn",
+        "path": "uvicorn-0.48.0-py3-none-any.whl",
+        "record_present": true,
+        "sha256": "73d31624d928da2025832fefd8836e53c377a9aac187c17143624123ed5e9613",
+        "tags": [
+          "py3-none-any"
+        ],
+        "valid": true,
+        "version": "0.48.0"
+      }
+    ],
+    "limitations": [
+      "A manifest proves only the wheel files present in this directory.",
+      "Platform compatibility and complete lock closure are evaluated separately."
+    ],
+    "manifest_digest": "e084c6f363ea39f53046d85717548921a4eaa93b9dc4df4447d0099cc1a8b72f",
+    "schema": "sentinel-edge-wheelhouse-manifest/1.0",
+    "valid": true,
+    "wheel_count": 19
+  },
+  "missing": [],
+  "release_eligible": true,
+  "report_digest": "3cb70b80610c1b6482edbc20163b477290fa462c2fff360f7602bb4afdb35445",
+  "required_count": 19,
+  "schema": "sentinel-edge-wheelhouse-verification/1.0",
+  "unexpected": [],
+  "wrong_version": []
+}

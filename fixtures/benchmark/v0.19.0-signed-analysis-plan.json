@@ -1,0 +1,59 @@
+{
+  "algorithm": "Ed25519",
+  "plan": {
+    "bootstrap_resamples": 1000,
+    "claim_set": "confirmatory",
+    "confidence_level": 0.95,
+    "created_at": "2026-08-03T07:00:00Z",
+    "exclusions": [
+      "thermal_invalid",
+      "power_invalid",
+      "host_noise_invalid",
+      "identity_mismatch",
+      "network_attempt"
+    ],
+    "guardrails": {
+      "max_deadline_miss_rate": 0.01,
+      "max_major_faults_delta": 0.0,
+      "max_memory_psi_avg10": 0.5,
+      "minimum_quality_recall": 0.9
+    },
+    "identities": {
+      "configuration_sha256": "ae3c6eafbe9310993e58c3b31ff5f3c2eb80a873f93814f25b07db6240a916bd",
+      "fixture_manifest_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+      "host_report_sha256": "e8a0261911e0c1fc66cd37d0e4c5588305946e60ca3506fe0a0eedc65eef324e",
+      "model_sha256s": [
+        "7c30a7d7b31599d069de9299fd627aea507471a21385daba053bcdb9b49cc962"
+      ],
+      "network_isolation_report_sha256": "21950e411026c06668b4c32f13f0dcdf7bad362eeb1973fd2118ba281f5ffec5",
+      "opportunity_manifest_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+      "runtime_profile_sha256s": [
+        "b979ddef67f2e6b4de5289f8a1d48824af63a41c346a8077886fbc158d028b3e"
+      ],
+      "wheelhouse_report_sha256": "0ef345845b1940af77ba9b6c78c762574c75af84b10d0b9878335779e926d953"
+    },
+    "interval_method": "paired_percentile_bootstrap",
+    "minimum_complete_pairs": 3,
+    "offered_load_manifest_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+    "plan_id": "sentinel-edge-v0.19.0-confirmatory-development-envelope",
+    "primary_metrics": [
+      "end_to_end_ms",
+      "work_proxy_units"
+    ],
+    "schema": "sentinel-edge-benchmark-analysis-plan/1.0",
+    "stop_rule": {
+      "count": 3,
+      "type": "fixed_complete_pairs"
+    },
+    "variants": [
+      "B0",
+      "B1",
+      "O1"
+    ]
+  },
+  "plan_sha256": "8f1828142f9abcbae04a048694bc2361799734ab8a00ca5f279b25bd486c6d4c",
+  "schema": "sentinel-edge-signed-benchmark-plan/1.0",
+  "signature_b64": "fd389E96Hmgts1NgZsFrxV/zPh2OLOjL5HdqM1AEeiE7qlshrRFRkaa0W93GtPhutGQ+6LdU9QuvA4Qt/xRAAw==",
+  "signed_at": "2026-08-03T07:01:00Z",
+  "signer_key_id": "b6722bc3a59c519525cdb7b4e6297901"
+}

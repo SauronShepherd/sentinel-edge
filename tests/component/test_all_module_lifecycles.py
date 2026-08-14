@@ -7,8 +7,11 @@ from sentinel_module_runner.main import MODULES, lifecycle, start_module
 
 def test_every_backend_module_runs_black_box_lifecycle():
     for name in MODULES:
-        states = [item["state"] for item in lifecycle(name)]
+        first = lifecycle(name)
+        second = lifecycle(name)
+        states = [item["state"] for item in first]
         assert states == ["ready", "degraded", "draining", "stopped"]
+        assert first == second
 
 def test_dependency_outage_and_recovery_drive_readiness():
     for name in MODULES:
@@ -18,6 +21,14 @@ def test_dependency_outage_and_recovery_drive_readiness():
         assert runtime.readiness() is False
         runtime.port.outage = False
         assert runtime.recover() == "ready"
+
+
+def test_drain_deadline_is_explicit_and_deterministic():
+    for name in MODULES:
+        runtime = start_module(name)
+        assert runtime.drain(25) == "draining"
+        assert runtime.diagnostic_snapshot()["state"] == "draining"
+        assert runtime.stop() == "stopped"
 
 def test_malformed_configuration_is_rejected():
     for name in MODULES:

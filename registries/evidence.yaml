@@ -1,0 +1,2867 @@
+items:
+- id: EV-PRODUCT-CONTRACT
+  kind: SOURCE
+  summary: Sentinel Edge v0.22 full-scope product contract
+  path: docs/contracts/sentinel-edge-full-scope-product-contract-v0.22.0.md
+  sha256: 46d9d2885146a56e60cd370aa6700b324514ec4b6818b3e013d855383033fb58
+  captured_at: '2026-08-02T10:40:00+02:00'
+  producer: sentinel-edge-contract-conversion
+  status: ACTIVE
+- id: EV-TECHNICAL-CONTRACT
+  kind: SOURCE
+  summary: Sentinel Edge v0.22 full-scope technical contract
+  path: docs/contracts/sentinel-edge-full-scope-technical-contract-v0.22.0.md
+  sha256: 728804322fbf8a05906cb06ebd87b1673430f0d5666d0d95b56668bf6de491cc
+  captured_at: '2026-08-02T10:40:00+02:00'
+  producer: sentinel-edge-contract-conversion
+  status: ACTIVE
+- id: EV-IMPLEMENTATION-BASELINE
+  kind: RUNTIME_OBSERVATION
+  summary: Executable v0.20.0 implementation-baseline status
+  path: evidence/implementation-baseline.txt
+  sha256: c9fc5a253c6dedc1f9e15dd70d3465940cd1468cda1937405a4154edeb7fa9f0
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.20.0 complete 225-test development suite
+  path: evidence/v0.20.0-pytest.txt
+  sha256: 94a1f7a851195c4748fe9db472e6c2338015a6c58ad5c96df65511fc1b1a4b6a
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: pytest
+  status: ACTIVE
+- id: EV-V020-RECOVERY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.2.0 focused restart, monotonic-time, and overload tests
+  path: evidence/v0.2.0-recovery.txt
+  sha256: c4b808d34f4db00b333696dec1f3a43a2887d8bfe0cb7af07a3cb98ff43a7830
+  captured_at: '2026-08-02T10:43:25+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V020-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.20.0 development-host diagnostics
+  path: evidence/v0.20.0-doctor.txt
+  sha256: 3f9d841ff6a75ad11cc26dc48c2f1b3ebba60955d35cc4f6e1262634586cc673
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V020-SCENARIO
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.20.0 deterministic simultaneous-hazard scenario
+  path: evidence/v0.20.0-scenario.txt
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V020-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.2.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.2.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T10:43:25+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V020-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.20.0 synchronization for 743 requirements and 193 ADRs
+  path: evidence/v0.20.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V030-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.3.0 full development test suite
+  path: evidence/v0.3.0-pytest.txt
+  sha256: 12a9a4a8915fb8d2bb5b4227220247cde267c1a0620203589fe47280d5be4a7f
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V030-FOCUSED-TESTS
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.3.0 focused configuration, notification, recovery, release-candidate,
+    source-health, AER, and API tests
+  path: evidence/v0.3.0-focused-tests.txt
+  sha256: 08faea39fd19189f6544839f505d91d76ecb1367e219f5db362cdf22916ef869
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V030-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.3.0 development-host doctor output
+  path: evidence/v0.3.0-doctor.json
+  sha256: 10561b2c5677bb54214377a00b19d1042165cd615acdebb6fac2468112d3eb44
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V030-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.3.0 deterministic simultaneous-event replay with authority
+    and notification evidence
+  path: evidence/v0.3.0-scenario.json
+  sha256: ba785bf03fe4dcda0104bd1965b166d40030ed0bcf56e848c0a3f8e946d861cf
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V030-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.3.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.3.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V030-CONFIG-ACTIVATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.3.0 successful transactional configuration activation
+    receipt
+  path: evidence/v0.3.0-config-activation.json
+  sha256: b768dc9048d747a137fd40ccabdf923e8867c8249d670ce884c1b8d99311da7d
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V030-CONFIG-ROLLBACK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.3.0 failed-canary configuration rollback receipt
+  path: evidence/v0.3.0-config-rollback.json
+  sha256: 297adf90aa71036459e4f5a6c801c370cdd63587b8345213a0a71f410938c451
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V030-AFTER-EVENT-REVIEW
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.3.0 deterministic After-Event Review artifact
+  path: evidence/v0.3.0-after-event-review.json
+  sha256: 2ebfd61bf082eb25d8fe2264afbbfd22e6e5b206050230c9930a555c6fa8bc8c
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V030-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.3.0 product-requirement and ADR synchronization check
+  path: evidence/v0.3.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T12:54:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V040-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.4.0 full development test suite
+  path: evidence/v0.4.0-pytest.txt
+  sha256: 6dd786dc72d45e02d32f9a2c96fbee7f0ea69261b610e86a41d1a671dd0186ef
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V040-FOCUSED-SECURITY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.4.0 focused authentication, authorization, idempotency,
+    client-cache, offline-update, and supply-chain tests
+  path: evidence/v0.4.0-focused-security-tests.txt
+  sha256: eb27a136c18598aedc0e4f11e6893b614a04335a9faf3ec03433325d777e2663
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V040-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.4.0 development-host doctor output
+  path: evidence/v0.4.0-doctor.json
+  sha256: a8c3945f88481322d4ab4ac82f9250a91db9907d7c194a5ebd2e428a8e74c8bf
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V040-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.4.0 deterministic simultaneous-event replay
+  path: evidence/v0.4.0-scenario.json
+  sha256: ba785bf03fe4dcda0104bd1965b166d40030ed0bcf56e848c0a3f8e946d861cf
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V040-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.4.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.4.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V040-AUTH-WORKFLOW
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.4.0 authenticated command, principal-stamping, replay,
+    and denial workflow
+  path: evidence/v0.4.0-auth-command-workflow.json
+  sha256: 0410586bf6b6fc6a12b88bf4bb7c2db3a59db1ea008864e18b10250258c6cbca
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-testclient
+  status: ACTIVE
+- id: EV-V040-UPDATE-BUNDLE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.4.0 development signed offline update bundle
+  path: evidence/v0.4.0-update-bundle.zip
+  sha256: 41056a63efca686beab2780512bc31ef7995240b4513fab236c39d93e98a74b7
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-update-builder
+  status: ACTIVE
+- id: EV-V040-UPDATE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.4.0 development update verification public key
+  path: evidence/v0.4.0-update-public.pem
+  sha256: ad34133eb3931d114e0b6bf55f3a399953cf40c689a9d8f9953acd6afd709cca
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V040-UPDATE-VERIFY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.4.0 offline update signature, expiry, rollback, compatibility,
+    and target verification receipt
+  path: evidence/v0.4.0-update-verification.json
+  sha256: 333059e4da93b2114568384337e785220413595a7c9972b5c494ac2771bcbfab
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V040-UPDATE-STAGE
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.4.0 field-lab offline update staging receipt
+  path: evidence/v0.4.0-update-staging.json
+  sha256: 5f1ca6acef4b65aba1f841fb03822e8954587209099cc4a3415a2b25e5c27318
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V040-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.4.0 CycloneDX 1.7 declared runtime dependency SBOM
+  path: evidence/v0.4.0-sbom.cdx.json
+  sha256: 4b3fa4de16ec2a8a0efa4d2d53e0103ed3723484ca3bba4d9dc0a1adab9bcaf9
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V040-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.4.0 direct third-party dependency inventory
+  path: evidence/v0.4.0-third-party-inventory.json
+  sha256: 8db3a61fac98abc6d9eab01d16fe963a409e48dca91fa5ccb57ec7a46355dabc
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V040-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.4.0 direct dependency notices
+  path: evidence/v0.4.0-THIRD_PARTY_NOTICES.md
+  sha256: 791ea2dc63fcf4749cf0eef88447b4edac237ff6a0629b36aac1605f3c29a829
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V040-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.4.0 development release verification public key
+  path: evidence/v0.4.0-release-public.pem
+  sha256: 5d5fa9b67e9c406ba723f764268d579e3ca082e62d1a62a79d33cbf970c83e0d
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V040-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.4.0 product-requirement and ADR synchronization check
+  path: evidence/v0.4.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T15:33:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V050-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.5.0 full development test suite
+  path: evidence/v0.5.0-pytest.txt
+  sha256: 9352925e5e271773731e7ca3a390daf15479f6b144d2d059ca8d677d62821619
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V050-FOCUSED-PROJECTION-SUPPLY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.5.0 focused projection, offline-command, provenance, advisory,
+    candidate, and client tests
+  path: evidence/v0.5.0-focused-projection-supply-chain-tests.txt
+  sha256: 511fb971caf59261241ec2a3919d9d10c7dcb9ec044ee07d50b2db465184f057
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V050-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.5.0 development-host doctor output
+  path: evidence/v0.5.0-doctor.json
+  sha256: b3e87d4fbb605167200090ebc9c5abad36522b52ffd95012475c40567ce1c839
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V050-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.5.0 deterministic simultaneous-event replay
+  path: evidence/v0.5.0-scenario.json
+  sha256: ba785bf03fe4dcda0104bd1965b166d40030ed0bcf56e848c0a3f8e946d861cf
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V050-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.5.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.5.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V050-PROJECTION-OFFLINE
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.5.0 authenticated projection, cursor-gap, offline-ticket,
+    mutation-receipt workflow
+  path: evidence/v0.5.0-projection-offline-workflow.json
+  sha256: b8ec81c5b29a6803c6a59eacbbf8cb037a3c511810f0b6590333839c6e3c8872
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-testclient
+  status: ACTIVE
+- id: EV-V050-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.5.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.5.0-security-review.json
+  sha256: 584af6f6e5cfa621b1cd846ea14da55745cbfc09ef93a9cf2ced44084ab01fc2
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V050-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.5.0 CycloneDX 1.7 declared runtime dependency SBOM
+  path: evidence/v0.5.0-sbom.cdx.json
+  sha256: fb9c8c843dd555c3542cdce78d6514a067183b3801fdf0dfdb90fe9b685a0e95
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V050-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.5.0 direct third-party dependency inventory
+  path: evidence/v0.5.0-third-party-inventory.json
+  sha256: 81900ca9d804fef0ca6e18ccef24fecca812f242fbfd361e31fd111a04317179
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V050-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.5.0 direct dependency notices
+  path: evidence/v0.5.0-third-party-notices.md
+  sha256: 791ea2dc63fcf4749cf0eef88447b4edac237ff6a0629b36aac1605f3c29a829
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V050-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.5.0 development release verification public key
+  path: evidence/v0.5.0-release-public.pem
+  sha256: e69218c4df321dde8b2f56bbf7a56c0c6d6836e3b204c7f4e97417384daab57a
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V050-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.5.0 product-requirement and ADR synchronization check
+  path: evidence/v0.5.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T18:17:17+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V060-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.6.0 full development test suite
+  path: evidence/v0.6.0-pytest.txt
+  sha256: 075ca72bd3c733566e8b37c84bfcdb26ebaad93cb7e0a15d42d96d3ed9f0e0b4
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V060-FOCUSED-QUALIFICATION
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.6.0 focused host, sensor, profile, benchmark-evidence,
+    readiness, and candidate tests
+  path: evidence/v0.6.0-focused-qualification-tests.txt
+  sha256: cfc14fd2dc11c362cccf5421245ca5ab0e9d286b54a604a80bd2dd5522f6feb9
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V060-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 development-host doctor and host qualification output
+  path: evidence/v0.6.0-doctor.json
+  sha256: 8f28814ce2b292bc99e1a19360085d2457e3a3edf0f2675a56a7eebae033d320
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 deterministic simultaneous-event replay
+  path: evidence/v0.6.0-scenario.json
+  sha256: ba785bf03fe4dcda0104bd1965b166d40030ed0bcf56e848c0a3f8e946d861cf
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-BENCHMARK-REPLAY
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 simulated open-loop B0/B1/O1 replay
+  path: evidence/v0.6.0-benchmark-replay.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-READINESS
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 startup readiness barrier projection
+  path: evidence/v0.6.0-readiness.json
+  sha256: c07ba95d980ccfb20cee2dd690e2e6a541ed9f39fcb83e53a372bb9961f99c12
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-testclient
+  status: ACTIVE
+- id: EV-V060-HOST-QUALIFICATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 failed Raspberry Pi 5 target-host qualification on
+    the development host
+  path: evidence/v0.6.0-host-qualification.json
+  sha256: 0a46ea5449d7dd863ffe85e336c1b9c5d725e79eec700587d8457fcd22438012
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-SENSOR-COMMISSIONING
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 fixture-only IMU commissioning record labelled tested
+    and not physical
+  path: evidence/v0.6.0-sensor-commissioning.json
+  sha256: db7987edc4ae7b42d672b40609fcdf620e07f9c4f437e8002e5593f07778d9d1
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-RUNTIME-PROFILE
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 deterministic runtime profile integrity and development
+    admission record
+  path: evidence/v0.6.0-runtime-profile-qualification.json
+  sha256: b7946e2aa8ec80fbfae69775e4d5c6506d33f2e80eff90b1e3cddf1cdd10f656
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-BENCHMARK-EVIDENCE
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 benchmark evidence validation rejecting simulated
+    input as a target measurement
+  path: evidence/v0.6.0-benchmark-evidence-report.json
+  sha256: 0ccbcf15f863130cf3780369f1fad8748719ee6deacd7cf808a50375047cb77a
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-QUALIFICATION-SUMMARY
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.6.0 combined qualification truth summary
+  path: evidence/v0.6.0-qualification-summary.json
+  sha256: bb974f32ae0c19283faf15d1390949d70efa49f793bc760935292abf8bcb5f84
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V060-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.6.0 product-requirement and ADR synchronization check
+  path: evidence/v0.6.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T18:40:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V060-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.6.0 CycloneDX 1.7 declared runtime dependency SBOM
+  path: evidence/v0.6.0-sbom.cdx.json
+  sha256: fcbee9bb5ca2529566f3adcb380e8ac0d8c7109ecdc5618c2994b3cf66801304
+  captured_at: '2026-08-02T18:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.6.0 direct third-party dependency inventory
+  path: evidence/v0.6.0-third-party-inventory.json
+  sha256: 44829176d20ed7e027424584a0331e9540d24fc90458e4bea7a8d192b77da510
+  captured_at: '2026-08-02T18:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.6.0 direct dependency notices
+  path: evidence/v0.6.0-third-party-notices.md
+  sha256: 791ea2dc63fcf4749cf0eef88447b4edac237ff6a0629b36aac1605f3c29a829
+  captured_at: '2026-08-02T18:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.6.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.6.0-security-review.json
+  sha256: 8a0ceff82a677dc3961c2fd1335497410eda12f2b17959c368ff3db43aaec5a2
+  captured_at: '2026-08-02T18:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V060-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.6.0 development release verification public key
+  path: evidence/v0.6.0-release-public.pem
+  sha256: 6e0118d67ece6f7058634e7e0b5843c89ff09eb2b885d928692cccac2142d6f5
+  captured_at: '2026-08-02T18:45:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V070-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.7.0 full development test suite
+  path: evidence/v0.7.0-pytest.txt
+  sha256: 15503b10fdec850e5e25683ea219523abd3be733479ab430cd75077823dbe6f2
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V070-FOCUSED-QUALIFICATION
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.7.0 focused camera, wildfire-health, model-quality, source-policy,
+    qualification, and candidate tests
+  path: evidence/v0.7.0-focused-camera-model-source-tests.txt
+  sha256: 32faef56d0289369b1ac111e68ee0bb7b2ed1bcf92d3f33b75313bd0556c3e6f
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V070-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.7.0 development-host doctor output
+  path: evidence/v0.7.0-doctor.json
+  sha256: af0cbeeb77decdb8cfccc32be648ec9659970daa5fc645593b94dcd058a2a08f
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.7.0 deterministic simultaneous-event replay
+  path: evidence/v0.7.0-scenario.json
+  sha256: ba785bf03fe4dcda0104bd1965b166d40030ed0bcf56e848c0a3f8e946d861cf
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-BENCHMARK-REPLAY
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.7.0 simulated open-loop B0/B1/O1 replay
+  path: evidence/v0.7.0-benchmark-replay.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-CAMERA-COMMISSIONING
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.7.0 camera commissioning fixture report labelled tested
+    and not physical
+  path: evidence/v0.7.0-camera-commissioning.json
+  sha256: 8d565852a93d784aef5f82742398d6b2692e278c2535a39e053672da26b82647
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-MODEL-QUALITY
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.7.0 compact wildfire model graph, known-answer, split,
+    licence, and event-quality report
+  path: evidence/v0.7.0-model-quality-report.json
+  sha256: c1d45fe32de23501cbd7b3449cb48ccbc8d6fdf0f43a83e234cf02769fa45ded
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-SOURCE-QUALIFICATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.7.0 source entitlement, rights, terms, freshness, and
+    generation qualification report
+  path: evidence/v0.7.0-source-meteoalarm-fixture.json
+  sha256: ed2e05a1b770ba766d38f87ef36fd1ea1129c58e31a5612627fcaefee032babf
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-SOURCE-READINESS
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.7.0 source registry readiness summary preserving zero-live-source
+    H0 validity
+  path: evidence/v0.7.0-source-readiness.json
+  sha256: c46dc79073469783383c6532df8e6009a233b24b75d5bb57e68d3d17d6fef21b
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-QUALIFICATION-SUMMARY
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.7.0 combined host, physical-signal, model, runtime, source,
+    and benchmark qualification truth
+  path: evidence/v0.7.0-qualification-summary.json
+  sha256: 3067836670464ebbefb39e9f83e5575808330f3682e34e08595124bedd4fa653
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V070-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.7.0 product-requirement and ADR synchronization check
+  path: evidence/v0.7.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V070-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.7.0 CycloneDX 1.7 declared runtime dependency SBOM
+  path: evidence/v0.7.0-sbom.cdx.json
+  sha256: 9daf79b4291028a8911ff4b8144d65a3a17038243f6234e5f3a5ecca7ff06f81
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.7.0 direct third-party dependency inventory
+  path: evidence/v0.7.0-third-party-inventory.json
+  sha256: 2515151a3e76289a05e03b3d24a10972d02f7a41199911f3f752d12fb506e19c
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.7.0 direct dependency notices
+  path: evidence/v0.7.0-third-party-notices.md
+  sha256: 791ea2dc63fcf4749cf0eef88447b4edac237ff6a0629b36aac1605f3c29a829
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.7.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.7.0-security-review.json
+  sha256: 7a05dd6ce16536b89500ecce3da65ced87a8dedc7fe5be088ef6c4d5cbcb5ef6
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V070-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.7.0 development release verification public key
+  path: evidence/v0.7.0-release-public.pem
+  sha256: 9c814ad060265e1e2b4b067e9a530cf0cd69825a82479dd09f12c5061bdcdbd4
+  captured_at: '2026-08-02T19:00:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V080-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.8.0 full development test suite
+  path: evidence/v0.8.0-pytest.txt
+  sha256: 650187a4ae2a868d13be275796a0d28ad4257a5afeea46b9e46fc9082e9ae4f9
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V080-FOCUSED-FLOOD-STORAGE
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.8.0 focused flood, landslide, storage, spool, backup,
+    maintenance, and API tests
+  path: evidence/v0.8.0-focused-flood-storage-tests.txt
+  sha256: f44919a3367dc52929a8af8f8919d5f9536d2eb90b5c6c6d38b1e58904be21bc
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V080-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.8.0 development-host doctor output
+  path: evidence/v0.8.0-doctor.json
+  sha256: 4db849d7936b1292a4fdec04c65bce37812b96bfb1edc6aebec9eb547929f2eb
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.8.0 deterministic simultaneous-event replay
+  path: evidence/v0.8.0-scenario.json
+  sha256: 545133b7095cee8acfbb61b074bb242672fd8fd1cc5f5337b34efa173c866c62
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-BENCHMARK-REPLAY
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.8.0 simulated open-loop B0/B1/O1 replay
+  path: evidence/v0.8.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-BACKUP-WORKFLOW
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.8.0 online checkpoint, backup verification, isolated restore,
+    and reconciliation workflow
+  path: evidence/v0.8.0-backup-workflow.json
+  sha256: 4d74ca3ac794f62df7e1089d0a2533ec55af6ef8d601f062d12dc2f8fdd2a6f5
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-BACKUP-ARCHIVE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.8.0 synthetic state backup archive
+  path: evidence/v0.8.0-state-backup.zip
+  sha256: f655d559aaead43c46d156542ae8ead68d19a509c3e73d868c8ac1ad8339d094
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-STORAGE-MAINTENANCE
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.8.0 telemetry write-budget and Tier-A maintenance decision
+    evidence
+  path: evidence/v0.8.0-storage-maintenance.json
+  sha256: dccec80c0471496950aad634a59b741152ad4ab4b39660232c51d7662992d1d2
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-storage-lab
+  status: ACTIVE
+- id: EV-V080-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.8.0 product-requirement and ADR synchronization check
+  path: evidence/v0.8.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V080-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.8.0 CycloneDX 1.7 declared runtime dependency SBOM
+  path: evidence/v0.8.0-sbom.cdx.json
+  sha256: c5b7b9944a89278a406376197094f9d87e0fc0e7e4a6d52c2e3af2c1a0b2cfef
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.8.0 direct third-party dependency inventory
+  path: evidence/v0.8.0-third-party-inventory.json
+  sha256: c582ed015d91e8d572b49730ba0e65cbeac3200760cec4282ef8976e7bcf2e11
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.8.0 direct dependency notices
+  path: evidence/v0.8.0-third-party-notices.md
+  sha256: 791ea2dc63fcf4749cf0eef88447b4edac237ff6a0629b36aac1605f3c29a829
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.8.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.8.0-security-review.json
+  sha256: c764237ee8d124e39cc1653aa1f608d29edd7a9812dc5ac31a28fc9c5976c3d5
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V080-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.8.0 development release verification public key
+  path: evidence/v0.8.0-release-public.pem
+  sha256: bdb7baa8cc99c5dbba14fcfff013ebb3e684e1b68eb8477065db97c12dd012cd
+  captured_at: '2026-08-02T19:48:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V090-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.9.0 full 118-test development suite
+  path: evidence/v0.9.0-pytest.txt
+  sha256: ec24b1df4c55a458c979609d90e55631cc8b37abeeaf1c9772d4d30e57e6f1a3
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V090-FOCUSED-SEMANTICS
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.9.0 focused measurement, time, geospatial, evolution,
+    authority, API, and authorization tests
+  path: evidence/v0.9.0-focused-semantics-tests.txt
+  sha256: 4c7d89c6b4889a969dc34598e322e3d075c89f233730c55afa1a69d2d84d836c
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V090-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.9.0 development-host doctor output
+  path: evidence/v0.9.0-doctor.json
+  sha256: 273f53241ce42c3555b1f1e272968bf322ec942622908239c0ce381c6c1f8fbc
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.9.0 deterministic simultaneous-event replay
+  path: evidence/v0.9.0-scenario.json
+  sha256: 2b51b8fe02875ebdc0818c129403cb72e64121285cde0614ab74344141adc010
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.9.0 simulated open-loop B0/B1/O1 replay
+  path: evidence/v0.9.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-TIME-NTP
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.9.0 unauthenticated-NTP display-only policy evidence
+  path: evidence/v0.9.0-time-unauthenticated-ntp.json
+  sha256: df1457ec7d363420ad392426e1df8f6835c783500b22562ff66a43b119b32ff4
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-TIME-NTS
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.9.0 abstract authenticated-NTS policy evidence; not a
+    concrete client qualification
+  path: evidence/v0.9.0-time-authenticated-nts.json
+  sha256: ab52b3132ded7fd9cafae810e5e65e1b8415ee87c16c5906553858e91dbd0bd9
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-GEOSPATIAL
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.9.0 RFC 7946 antimeridian validation evidence
+  path: evidence/v0.9.0-geospatial-antimeridian.json
+  sha256: 1828d7fd6f04fdb3262239d8a5507a6240768a7799287547739b2245b69c41e1
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-MIGRATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.9.0 deterministic legacy-observation migration evidence
+  path: evidence/v0.9.0-legacy-observation-migration.json
+  sha256: f582e3cef51112a2ba29df26773d903054b2d76ceec91cfd961afb74df9ae5f6
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-AUTHORITY
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.9.0 digest-bound authority and projection conformance
+    evidence
+  path: evidence/v0.9.0-authority-conformance.json
+  sha256: c4c3534fd0c285b9f050a1faf6f296f42a2d9208e632b026c57bd9255cb2bdb6
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-authority-lab
+  status: ACTIVE
+- id: EV-V090-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.9.0 product-requirement and ADR synchronization check
+  path: evidence/v0.9.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T20:10:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V090-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.9.0 CycloneDX 1.7 declared runtime dependency SBOM
+  path: evidence/v0.9.0-sbom.cdx.json
+  sha256: 42dca89aa04aa7ecf608c5e32f385052a8c266f540482bab3c82f5adc6090082
+  captured_at: '2026-08-02T20:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.9.0 direct third-party dependency inventory
+  path: evidence/v0.9.0-third-party-inventory.json
+  sha256: 108d04389fa0e27ae1ee0720310c4ee357603a6bc5263335832e8c58b2275a56
+  captured_at: '2026-08-02T20:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.9.0 direct dependency notices
+  path: evidence/v0.9.0-third-party-notices.md
+  sha256: 791ea2dc63fcf4749cf0eef88447b4edac237ff6a0629b36aac1605f3c29a829
+  captured_at: '2026-08-02T20:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.9.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.9.0-security-review.json
+  sha256: b9535c8321aaa5cc3cbbce9b62e94f53997817a5e1c8042bb4a49cdcdb105371
+  captured_at: '2026-08-02T20:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V090-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.9.0 development release verification public key
+  path: evidence/v0.9.0-release-public.pem
+  sha256: 7bafe31c91616c0e345b351ea68d2afdcccf11680f37f26fffc3de26d5a30d7b
+  captured_at: '2026-08-02T20:18:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V010-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.10.0 full development test suite (132 tests)
+  path: evidence/v0.10.0-pytest.txt
+  sha256: 6f56d1941d6e6b217f191c1435e40069b1de98bcedb6de4d8fbdfa8e8f0263a2
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V010-FOCUSED-TRUST-IDENTITY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.10.0 focused evidence, incident identity, relation, and
+    API tests (14 tests)
+  path: evidence/v0.10.0-focused-trust-identity-tests.txt
+  sha256: fe9dca0451129aaabdd76ea13e310b61a52091a146a1f9fe5b72b851eb33547f
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V010-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.10.0 product-requirement and ADR synchronization check
+  path: evidence/v0.10.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V010-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.10.0 development-host doctor output
+  path: evidence/v0.10.0-doctor.json
+  sha256: 3956f621aa37aeae1c1479df33755e945eef936048e1316ecad7e0b9793b1e8b
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V010-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.10.0 deterministic simultaneous-event replay output
+  path: evidence/v0.10.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V010-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.10.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.10.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V010-TRUST-INCIDENT-GRAPH
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.10.0 restart-stable evidence-family, claim, identity,
+    command, and incident-relation graph
+  path: evidence/v0.10.0-trust-incident-graph.json
+  sha256: adfd694d50ec8e5082ebed60a945987f5db709a2fe388c6d35cdbd871f7f68a0
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-trust-identity-lab
+  status: ACTIVE
+- id: EV-V010-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.10.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.10.0-sbom.cdx.json
+  sha256: 7b53f9bb03c9a32e715129a4355dcc51d497496be6f7a7ad165ce4f2386bdea7
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V010-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.10.0 direct third-party dependency inventory
+  path: evidence/v0.10.0-third-party-inventory.json
+  sha256: 96c1dfd13872cf1dc6a6202405570564cfa7f3192133cabe30b5a415ae046a81
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V010-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.10.0 direct dependency notices
+  path: evidence/v0.10.0-third-party-notices.md
+  sha256: 791ea2dc63fcf4749cf0eef88447b4edac237ff6a0629b36aac1605f3c29a829
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V010-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.10.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.10.0-security-review.json
+  sha256: 30d68a384d3713c8fe80d7fe6e9217480160ea886b632cce5f0c1a576fb3572f
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V010-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.10.0 development release verification public key
+  path: evidence/v0.10.0-release-public.pem
+  sha256: 200cd2147f25d7b96781fcbded6348e62ba7c37b4b6cda0ae092f7b2b2862aa4
+  captured_at: '2026-08-02T20:55:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V011-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.11.0 full development test suite (141 tests)
+  path: evidence/v0.11.0-pytest.txt
+  sha256: 6784b8776af7d43b5fffe74e841851f66dde65d001393cff56ed696939ea743b
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V011-FOCUSED-LIFECYCLE-PARSER
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.11.0 focused evidence lifecycle, rights, parser, claim,
+    and API tests (16 tests)
+  path: evidence/v0.11.0-focused-lifecycle-parser-tests.txt
+  sha256: ecf57d762b443151696ef4727347520d0d5715719bac1e0cd93caddf627ffa61
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V011-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.11.0 product-requirement and ADR synchronization check
+  path: evidence/v0.11.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V011-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.11.0 development-host doctor output
+  path: evidence/v0.11.0-doctor.json
+  sha256: a8594583c0efcef853bd91fc28a3655a6f47f66a8f788e3db78b06c7f9817ff3
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V011-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.11.0 deterministic simultaneous-event replay output
+  path: evidence/v0.11.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V011-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.11.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.11.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V011-LIFECYCLE-PARSER
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.11.0 restart-stable evidence lifecycle, rights expiry,
+    deletion proof, claim reconciliation, and bounded parser receipt
+  path: evidence/v0.11.0-evidence-lifecycle-parser.json
+  sha256: 01749c3307a85bfd6f375a85e25b07277d1115c9e2d74e1b6582a033b3bfee77
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-lifecycle-parser-lab
+  status: ACTIVE
+- id: EV-V011-MEDIA-PARSER
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.11.0 sanitize-media CLI report; explicitly non-release-eligible
+  path: evidence/v0.11.0-media-parser.json
+  sha256: be910be48cf6051d9165860caebf27fc296026377c6da182dce4ca521a29ec6b
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V011-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.11.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.11.0-sbom.cdx.json
+  sha256: 7acb6783b52f0d121e35d38033714463b2cd39736da21eec40cff65efd3910b5
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V011-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.11.0 direct third-party dependency inventory
+  path: evidence/v0.11.0-third-party-inventory.json
+  sha256: 38a45c1d9846fa973a880302f4a35bd3337e167c1a195d35f1ebdb18b73d58fc
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V011-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.11.0 direct dependency notices
+  path: evidence/v0.11.0-third-party-notices.md
+  sha256: 752f761789aece3db0609a85c49672b1e01a885d6f0c78b230419aaf01e543f8
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V011-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.11.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.11.0-security-review.json
+  sha256: 8656934d0422e99ac71b2da50cc6faf0f13847a7063d19f47a1c594a8a4ef003
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V011-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.11.0 development release verification public key
+  path: evidence/v0.11.0-release-public.pem
+  sha256: bf8b7f9bac342665ef9ab7df869f465cb5f180947821ea5f3c670433f41b54f2
+  captured_at: '2026-08-02T22:18:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V012-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.12.0 full development test suite (150 tests)
+  path: evidence/v0.12.0-pytest.txt
+  sha256: ea93dfdc73afaf1bfe32d36583ab06d64abf9beadec6a0fba058688c64947ab9
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V012-FOCUSED-PRIVACY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.12.0 focused privacy, backup, export, update and API tests
+    (9 tests)
+  path: evidence/v0.12.0-focused-privacy-tests.txt
+  sha256: 585ba42829657b9e2d56f8614be6c3365a8405474eed008559511ab50f2ffcfb
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V012-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.12.0 product-requirement and ADR synchronization check
+  path: evidence/v0.12.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V012-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.12.0 development-host doctor output
+  path: evidence/v0.12.0-doctor.json
+  sha256: 58a684b0cde45988b068c8a5c1b1a30b54059f9efd85a723f9d60b96bb58f5d5
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V012-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.12.0 deterministic simultaneous-event replay output
+  path: evidence/v0.12.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V012-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.12.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.12.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V012-PRIVACY-BACKUP-EXPORT
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.12.0 deletion-safe backup, exact hold, closed export and
+    tombstone-bound update receipt
+  path: evidence/v0.12.0-privacy-backup-export.json
+  sha256: 1099450189215cf20b8e28eca102ac9820da64ce7853f9ed225cc6eb7481a2eb
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-privacy-lab
+  status: ACTIVE
+- id: EV-V012-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.12.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.12.0-sbom.cdx.json
+  sha256: 238ce233d95b86cecf9ec64c1cb8c0e86381dc56427605e5bdec88b063ccf3ab
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V012-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.12.0 direct third-party dependency inventory
+  path: evidence/v0.12.0-third-party-inventory.json
+  sha256: ab1ca00de940437c09497fbef7f2a33b27eddbdef70d5f1ccb49b20697de1b91
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V012-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.12.0 direct dependency notices
+  path: evidence/v0.12.0-third-party-notices.md
+  sha256: 752f761789aece3db0609a85c49672b1e01a885d6f0c78b230419aaf01e543f8
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V012-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.12.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.12.0-security-review.json
+  sha256: 0ba934081baee8f40df58a4ad31edeb8270b32b4cd67cfe46165d3562585caf7
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V012-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.12.0 development release verification public key
+  path: evidence/v0.12.0-release-public.pem
+  sha256: d73727c5c76935a86ee235fb3b9d1e0cb8469fd5ef6ef98461007d6b3d4854f2
+  captured_at: '2026-08-02T22:57:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V013-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.13.0 full development test suite
+  path: evidence/v0.13.0-pytest.txt
+  sha256: cfdee3a183e09a4d48b953a0e6668069a3dca9b7dd85a0a056dfffdc3077c3f9
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V013-FOCUSED
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.13.0 focused artifact, disposition, secret, privacy closure
+    and API tests
+  path: evidence/v0.13.0-artifact-disposition-secret-tests.txt
+  sha256: f44919a3367dc52929a8af8f8919d5f9536d2eb90b5c6c6d38b1e58904be21bc
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V013-TEST-COUNT
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.13.0 collected and passing test count
+  path: evidence/v0.13.0-test-count.txt
+  sha256: cc937762c739b9c8d4705abe8e76381f2119b07488def121b46fe41d60343887
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V013-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.13.0 contract synchronization check
+  path: evidence/v0.13.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V013-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.13.0 development-host doctor output
+  path: evidence/v0.13.0-doctor.json
+  sha256: 3bc15a03645ba3d79296284d351d0376ffc7a7505790412b1dea1002c35bacf2
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V013-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.13.0 deterministic simultaneous-event replay output
+  path: evidence/v0.13.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V013-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.13.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.13.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V013-ARTIFACT-DISPOSITION-SECRETS
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.13.0 mandatory artifact policy, registered-lineage disposition,
+    external receipt and versioned secret lifecycle receipt
+  path: evidence/v0.13.0-artifact-disposition-secrets.json
+  sha256: 1f3fefc2fc1a534d271677b92cbd7d9c8f94738c4cc73673770990424f4e2b63
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-privacy-storage-lab
+  status: ACTIVE
+- id: EV-V013-PRIVACY-CLOSURE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.13.0 candidate-bound privacy closure
+  path: evidence/v0.13.0-privacy-closure.json
+  sha256: 1142b51be23203b46398069859ac5edf2a38afb46f68eb8981a4550205e5e1c4
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V013-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.13.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.13.0-sbom.cdx.json
+  sha256: fd8bd33d017ff0ed6e83c574b71847681f445ce077d823b30616f56ffcb58251
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V013-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.13.0 direct third-party dependency inventory
+  path: evidence/v0.13.0-third-party-inventory.json
+  sha256: f9f01a436cda8afbaa125870f8041c3eb7395afdb79ea059a2c24279ae835e57
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V013-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.13.0 direct dependency notices
+  path: evidence/v0.13.0-third-party-notices.md
+  sha256: 752f761789aece3db0609a85c49672b1e01a885d6f0c78b230419aaf01e543f8
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V013-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.13.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.13.0-security-review.json
+  sha256: 3192695a12ca967f0aa9cd0c5eec9539898f52ddf345672edb3e70b10783d908
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V013-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.13.0 development release verification public key
+  path: evidence/v0.13.0-release-public.pem
+  sha256: 90c14de08787a60771ea00023b58cea37ac4d72c6bc99f5c793e1c85c1a22bd1
+  captured_at: '2026-08-03T05:55:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V014-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.14.0 full development test suite
+  path: evidence/v0.14.0-pytest.txt
+  sha256: 1292070cb87492036533f6dc90c2442fa3ac952fa6bb720475bc3fc2fd5dc31a
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V014-FOCUSED
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.14.0 focused audit, revocation, connector and decommission
+    tests
+  path: evidence/v0.14.0-audit-revocation-tests.txt
+  sha256: 6b13a72cbfacd91b11e133270eb58b0d55644aef19a0e559ebaa9ace9b52f8d0
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V014-TEST-COUNT
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.14.0 collected and passing test count
+  path: evidence/v0.14.0-test-count.txt
+  sha256: 36aa52102afa64257532dcebb8743d025015f892b8174eae95caf2498da5301e
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V014-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.14.0 contract synchronization check
+  path: evidence/v0.14.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V014-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.14.0 development-host doctor output
+  path: evidence/v0.14.0-doctor.json
+  sha256: 8c641227c27079d25485d69316ea96545b5623d833ff823dd537931c4fc08b1e
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V014-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.14.0 deterministic simultaneous-event replay output
+  path: evidence/v0.14.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V014-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.14.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.14.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V014-AUDIT-REVOCATION-DECOMMISSION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.14.0 signed audit, key revocation, protected-state purge,
+    connector shutdown and decommission receipt
+  path: evidence/v0.14.0-audit-revocation-decommission.json
+  sha256: 10e51274db6289d7b9667368c10a835df3fcc72e20829e2d0eecb84ea0ef96f6
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-security-lifecycle-lab
+  status: ACTIVE
+- id: EV-V014-CONFIG-ACTIVATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.14.0 successful transactional configuration activation
+  path: evidence/v0.14.0-config-activation.json
+  sha256: 02774cc92ffaff19e2b358c59e3e0a6b5d777d395b678b81198ca06bab7369bb
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V014-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.14.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.14.0-sbom.cdx.json
+  sha256: 6ba121d1bed69a4216f536ca90185f02c88b91c4921730a1db6d4c423b323bf0
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V014-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.14.0 direct third-party dependency inventory
+  path: evidence/v0.14.0-third-party-inventory.json
+  sha256: 04c21106250bb57be514dbf37a7e3b6538d4548558687a38dcc996a3598c073b
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V014-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.14.0 direct dependency notices
+  path: evidence/v0.14.0-third-party-notices.md
+  sha256: 752f761789aece3db0609a85c49672b1e01a885d6f0c78b230419aaf01e543f8
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V014-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.14.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.14.0-security-review.json
+  sha256: 44d591099cc0e28980069ed1ce945dee63424cfd5130ad628ffc986f3636f514
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V014-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.14.0 development release verification public key
+  path: evidence/v0.14.0-release-public.pem
+  sha256: 638152e6eb8b29ce86e6df0f2977563dca5ea4fe8785925d2e765957c8b9093d
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V014-PRIVACY-CLOSURE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.14.0 candidate-bound privacy closure
+  path: evidence/v0.14.0-privacy-closure.json
+  sha256: a4ce507ce9af6f264de266d9ef37f88a6818046525858937e47b8ff37a15b8fd
+  captured_at: '2026-08-03T06:38:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.15.0 full development test suite
+  path: evidence/v0.15.0-pytest.txt
+  sha256: e9755e389aace1cd755b2ca44cb6cf8968d4a6ca42eb2723d93a708f888d0fd5
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V015-FOCUSED
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.15.0 focused authority-watermark, recipient-reconciliation
+    and network-removal tests
+  path: evidence/v0.15.0-focused-authority-tests.txt
+  sha256: c4b808d34f4db00b333696dec1f3a43a2887d8bfe0cb7af07a3cb98ff43a7830
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V015-TEST-COUNT
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.15.0 collected and passing test count
+  path: evidence/v0.15.0-test-count.txt
+  sha256: 04ae880127db4cc0e7d723be519a350e2deebe377c97e3ad46dea0bbbc4b2b0b
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V015-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.15.0 contract synchronization check
+  path: evidence/v0.15.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V015-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.15.0 development-host doctor output
+  path: evidence/v0.15.0-doctor.json
+  sha256: 422e4f8ddefaa4433319f687cfc6aed94d5f657148c481e28acaca041146b4bb
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.15.0 deterministic simultaneous-event replay output
+  path: evidence/v0.15.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.15.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.15.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-AUTHORITY-CLOSURE
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.15.0 canonical authority-watermark, restart-safe recipient
+    reconciliation and observed network-removal receipt
+  path: evidence/v0.15.0-authority-recipient-network.json
+  sha256: 5453256ac4d61cc413adb16c0e5d9eae9b4cdbee1495bf5f4c95a55c00c84131
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-authority-closure-lab
+  status: ACTIVE
+- id: EV-V015-CONFIG-ACTIVATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.15.0 successful transactional configuration activation
+  path: evidence/v0.15.0-config-activation.json
+  sha256: 193d076c2d9517aae3761933522b9fe8a612ed538f69918885e523fe0af6f836
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.15.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.15.0-sbom.cdx.json
+  sha256: 6a434e45ace1fee6f8f47aa6008da57eeb39a3429286bb598dea697c6a9b5855
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.15.0 direct third-party dependency inventory
+  path: evidence/v0.15.0-third-party-inventory.json
+  sha256: 39745d6ff7545c3e32e6dac0d1be6e65e2cc2f9d97bfa889a8a2070c3d9130e4
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.15.0 direct dependency notices
+  path: evidence/v0.15.0-third-party-notices.md
+  sha256: 752f761789aece3db0609a85c49672b1e01a885d6f0c78b230419aaf01e543f8
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.15.0 bounded offline advisory review; explicitly incomplete
+    and release-ineligible
+  path: evidence/v0.15.0-security-review.json
+  sha256: 7f625d8a008ad4e01827aeb267af9ea0ac48ebbd923182ffc80ba53c1c62ebca
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V015-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.15.0 development release verification public key
+  path: evidence/v0.15.0-release-public.pem
+  sha256: 638152e6eb8b29ce86e6df0f2977563dca5ea4fe8785925d2e765957c8b9093d
+  captured_at: '2026-08-03T07:26:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V015-PRIVACY-CLOSURE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.15.0 candidate-bound privacy closure
+  path: evidence/v0.15.0-privacy-closure.json
+  sha256: 8a408ab6604af7b025d87990467f6a0548a819525f96129a6f500d25beebcd4c
+  captured_at: '2026-08-03T07:28:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V016-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.16.0 full development test suite
+  path: evidence/v0.16.0-pytest.txt
+  sha256: 50a006f7638924e92f6d376c03c27b39110379ccd7856084610cb18128ef0d5e
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V016-FOCUSED
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.16.0 focused reproducibility, advisory, and host-trust
+    tests
+  path: evidence/v0.16.0-focused-repro-advisory-host-tests.txt
+  sha256: a6972b345a51bd4bda668733579828f78c349f5a31f9484a1ee6f95f66554dd9
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V016-TEST-COUNT
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.16.0 collected and passing development-test count
+  path: evidence/v0.16.0-test-count.txt
+  sha256: 1214d147838871d6f69627edc839df93d44057a636ab11f9d0af1efdd8a42ff2
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-pytest
+  status: ACTIVE
+- id: EV-V016-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.16.0 contract synchronization check
+  path: evidence/v0.16.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V016-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.16.0 development-host doctor output
+  path: evidence/v0.16.0-doctor.json
+  sha256: f1319889a9118ffe864cc99cf5987717bdea0763a45f52670d45c86c50f7bdc0
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V016-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.16.0 deterministic simultaneous-event replay output
+  path: evidence/v0.16.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V016-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.16.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.16.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V016-REPRO-HOST-ADVISORY
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.16.0 paired source-build, advisory, host-trust, and benchmark-host
+    receipt
+  path: evidence/v0.16.0-repro-advisory-host.json
+  sha256: 6406866cf48c6c1f0ceab33f2ae0a21cd1b3dacfd6650c70bf270c75b462fe5f
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V016-CONFIG-ACTIVATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.16.0 successful transactional configuration activation
+  path: evidence/v0.16.0-config-activation.json
+  sha256: d7ac27c065697787a38a8b67d3af114384b89a1849e3100bb96f51302fef4107
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V016-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.16.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.16.0-sbom.cdx.json
+  sha256: 7bf62d07cbe2d5375349a5ca6364fda2ab31d0bf35b7e6820950929ac7b34185
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V016-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.16.0 direct third-party dependency inventory
+  path: evidence/v0.16.0-third-party-inventory.json
+  sha256: f142a0369924c5e765b558829df4d24db822b4c9f0608796ce62f4037850874f
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V016-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.16.0 direct dependency notices
+  path: evidence/v0.16.0-third-party-notices.md
+  sha256: 3b6e99a8664f9145ee296e8c506e1e76de0361bfb8763610e5b7211de81511f6
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V016-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.16.0 bounded four-class advisory review; explicitly release-ineligible
+  path: evidence/v0.16.0-security-review.json
+  sha256: 0eb40cac4d9d7d86a822be9d20664a5238899d7d621f25df23c725df90da9ccb
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V016-REPRODUCIBILITY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.16.0 paired byte-exact deterministic source-bundle report
+    with honest scope limits
+  path: evidence/v0.16.0-reproducibility-report.json
+  sha256: 3f25d4fda32a1c43e824190411998b459d4f9c6933a714445468fc987217e411
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V016-HOST-TRUST
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.16.0 application-versus-host trust observation; secure
+    boot not inferred
+  path: evidence/v0.16.0-host-trust-report.json
+  sha256: ae2f9e766eef7b96280666e97866f431aaad33bd610ce131e4af37e3e1ff2fb6
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-host-observer
+  status: ACTIVE
+- id: EV-V016-RELEASE-LOCK
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.16.0 exact installed dependency resolution lock
+  path: evidence/v0.16.0-requirements-release.lock.json
+  sha256: 1e4eacb9922752c6baf7425a8f314a2230a5ac3f2bb2cdec44bf700032f394aa
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V016-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.16.0 development release verification public key
+  path: evidence/v0.16.0-release-public.pem
+  sha256: 0dec05330bb054a345c2b73417af3bcc2da47ee4abb928e50913b5c362f006bb
+  captured_at: '2026-08-03T08:25:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V016-PRIVACY-CLOSURE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.16.0 candidate-bound privacy closure
+  path: evidence/v0.16.0-privacy-closure.json
+  sha256: 3c674ef648c53fae98f50a3859b2059a67412bc3e2c50e7cad0b6ad1af521b3d
+  captured_at: '2026-08-03T08:29:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.17.0 full development test suite
+  path: evidence/v0.17.0-pytest.txt
+  sha256: a94ebfea0dc8de4b29c62ee408608e4ecad9012cb4dbbe998ffd223e26462174
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: pytest-9
+  status: ACTIVE
+- id: EV-V017-FOCUSED-RELEASE-CLOSURE
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.17.0 focused wheelhouse, network, builder and governance
+    tests
+  path: evidence/v0.17.0-focused-release-closure-tests.txt
+  sha256: cddd6ad92837035ad7ca95529e87ae86f3fa2eb24b748a96e6b9cd29c4403a9c
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: pytest-9
+  status: ACTIVE
+- id: EV-V017-TEST-COUNT
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.17.0 collected development-test count
+  path: evidence/v0.17.0-test-count.txt
+  sha256: de0c4c83030785bcece7de694c587d86b0608a10b3c5696dd3c96792c7915ccf
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: pytest-9
+  status: ACTIVE
+- id: EV-V017-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.17.0 contract synchronization check
+  path: evidence/v0.17.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-contract-lint
+  status: ACTIVE
+- id: EV-V017-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.17.0 development-host doctor output
+  path: evidence/v0.17.0-doctor.json
+  sha256: 4ba5866addb4aa862e5f1b2a3fc30a10468dd3557b67919984775c04611b8bf5
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-SCENARIO
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.17.0 deterministic simultaneous-event replay output
+  path: evidence/v0.17.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.17.0 simulated open-loop B0/B1/O1 replay output
+  path: evidence/v0.17.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-CLOSURE-RECEIPT
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.17.0 wheelhouse, network isolation, independent builder
+    and release governance receipt
+  path: evidence/v0.17.0-wheelhouse-network-governance.json
+  sha256: 3ad47dc14c5d8a0643e61a6c6a66888f6b14db28a05bfeff84f3503387d50bdd
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V017-CONFIG-ACTIVATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.17.0 successful transactional configuration activation
+  path: evidence/v0.17.0-config-activation.json
+  sha256: 9ef31f1bc0a4eb62f6dc612cf6bac1b843fd8b9dfff9b79680c4b1d80052aee0
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.17.0-sbom.cdx.json
+  sha256: 50dd58ceb86ae17130b2a3c1e128458a38280930ecfbab58322896e733770dea
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 direct third-party dependency inventory
+  path: evidence/v0.17.0-third-party-inventory.json
+  sha256: bd543c95908d2b199cee7814fdf88abb00b8d06f06d8d41ced5167166cea288c
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 direct dependency notices
+  path: evidence/v0.17.0-third-party-notices.md
+  sha256: 3b6e99a8664f9145ee296e8c506e1e76de0361bfb8763610e5b7211de81511f6
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 bounded four-class advisory review; explicitly release-ineligible
+  path: evidence/v0.17.0-security-review.json
+  sha256: 83468dc43140518e74021c555884f573a424fec7ddfe9a82ea116f2a75bdec3a
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V017-REPRODUCIBILITY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 paired deterministic source-bundle reproducibility
+    report
+  path: evidence/v0.17.0-reproducibility-report.json
+  sha256: f572c65434378a18a848b01abb98d0a1302cc332d75223349625e6c01c87cff3
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V017-HOST-TRUST
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.17.0 application-versus-host trust report
+  path: evidence/v0.17.0-host-trust-report.json
+  sha256: 9a6ce161770d37d8149b1408a6f4facab0d9d95a037623a8a9a814d8bbbd8edb
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-host-observer
+  status: ACTIVE
+- id: EV-V017-RELEASE-LOCK
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 exact installed dependency resolution lock
+  path: evidence/v0.17.0-requirements-release.lock.json
+  sha256: 76dbe2a5ef8b8e2cf0feb585f81836b55b316f3c29316c08d2a33fec084aa613
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V017-WHEELHOUSE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 hash-locked offline current-platform wheelhouse verification
+  path: evidence/v0.17.0-wheelhouse-report.json
+  sha256: e48955c0045c0c799c4d2172f7567b53b25c1dd7944e22feff4753d02248a1b6
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V017-NETWORK-ISOLATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.17.0 Linux network-namespace egress-denial report
+  path: evidence/v0.17.0-network-isolation-report.json
+  sha256: a42b96157b628509717cc6d676f36a5a86285c1eecf59a226616d48df84c71e8
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-host-observer
+  status: ACTIVE
+- id: EV-V017-INDEPENDENT-BUILD
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 signed builder-attestation report; one-host independence
+    remains open
+  path: evidence/v0.17.0-independent-build-report.json
+  sha256: ac172a531f9c6045021fe34ba1d81addd8719c60ced4c29771da2219c895e615
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V017-RELEASE-GOVERNANCE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 credential and independent-review governance report
+  path: evidence/v0.17.0-release-governance-report.json
+  sha256: ae7928fe2b61919c3e537f8374fb4b55ff238f47959a1343c2b7ce29f517b6dd
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V017-BUILDER-A-PUBLIC
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 builder A verification public key
+  path: evidence/v0.17.0-builder-a-public.pem
+  sha256: a1245d02365f6cd0655af123b7a4ea72e976db87bb46123e37821bbe47d6e07c
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V017-BUILDER-B-PUBLIC
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 builder B verification public key
+  path: evidence/v0.17.0-builder-b-public.pem
+  sha256: a787160b6c4eccb611b64b66f0ea770cf756a38beab20d04328ff23bd562504f
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V017-PRIVACY-CLOSURE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 candidate-bound privacy closure
+  path: evidence/v0.17.0-privacy-closure.json
+  sha256: 865162cbd3db14aa7a272387eeecf9b2c9ef7bd7d6bad5c79da6822e8bac0a17
+  captured_at: '2026-08-03T08:52:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V017-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.17.0 development release verification public key
+  path: evidence/v0.17.0-release-public.pem
+  sha256: 330ef2289c6c807f90bfb9d2d8bfaa6c680761682d563a960bfffa9d48d92ae3
+  captured_at: '2026-08-03T08:54:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V018-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 full development test suite
+  path: evidence/v0.18.0-pytest.txt
+  sha256: 32fe2b1380f1384c22ece24979bb90c2cdf2b0055b1a9ee645633f57d9420a6d
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: pytest
+  status: ACTIVE
+- id: EV-V018-FOCUSED-BENCHMARK
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 focused benchmark governance and target-wheel tests
+  path: evidence/v0.18.0-focused-benchmark-governance-tests.txt
+  sha256: 9442da78551971c24cb61c73304b74aefea780d867c6ab3a525ca84c700e2119
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: pytest
+  status: ACTIVE
+- id: EV-V018-TEST-COUNT
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 collected development-test count
+  path: evidence/v0.18.0-test-count.txt
+  sha256: 71d639166081cb71bd73f22222d24ec6c39bf62b54f246b69bd88aeeb54f8d86
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: pytest
+  status: ACTIVE
+- id: EV-V018-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 requirement and ADR synchronization check
+  path: evidence/v0.18.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-contract-sync
+  status: ACTIVE
+- id: EV-V018-DOCTOR
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.18.0 development-host doctor output
+  path: evidence/v0.18.0-doctor.json
+  sha256: 7629cb426d343a2d7e625b57ccddec52334989ac83bdde0478bb120a661e2f71
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V018-SCENARIO
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 deterministic simultaneous-event replay
+  path: evidence/v0.18.0-scenario.json
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V018-BENCHMARK-REPLAY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 simulated open-loop B0/B1/O1 replay
+  path: evidence/v0.18.0-benchmark.json
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V018-BENCHMARK-GOVERNANCE
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 signed-plan, paired-analysis, target-wheel and same-namespace
+    benchmark receipt
+  path: evidence/v0.18.0-target-benchmark-governance.json
+  sha256: d8c23ccdaab682574cc159b3c958f98fdfb8e0401dcccae9603fc151fe6a5e6c
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-CONFIG-ACTIVATION
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 transactional configuration activation
+  path: evidence/v0.18.0-config-activation.json
+  sha256: bbd20824d836a424c380bb3b66556c10184be6dcdaa7065af6e63f6af96cee33
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V018-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 CycloneDX declared runtime dependency SBOM
+  path: evidence/v0.18.0-sbom.cdx.json
+  sha256: 69b7ac66789ba3aef781f7250fe202debbf86945d0a0e50d0366e7522badec2a
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V018-THIRD-PARTY-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 direct third-party inventory
+  path: evidence/v0.18.0-third-party-inventory.json
+  sha256: 63f640f46c6537139400c658886a1049210f7453a262ac1a995b7b52edaf3b0b
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V018-THIRD-PARTY-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 direct dependency notices
+  path: evidence/v0.18.0-third-party-notices.md
+  sha256: 3b6e99a8664f9145ee296e8c506e1e76de0361bfb8763610e5b7211de81511f6
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V018-SECURITY-REVIEW
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 bounded four-source advisory review; release-ineligible
+  path: evidence/v0.18.0-security-review.json
+  sha256: 4a00b694c8e9f9e1a9bbda502e380aa5115aa2fab1e43674618d9e4ea2064af2
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-REPRODUCIBILITY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 paired deterministic source-bundle report
+  path: evidence/v0.18.0-reproducibility-report.json
+  sha256: 6e8dd18b01bf0682e5136e6bd625ea50957ab6cdcabc6b08ac42afdab5e2b7e5
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-HOST-TRUST
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.18.0 host and boot trust observation
+  path: evidence/v0.18.0-host-trust-report.json
+  sha256: 8de6688a971422dcc96237207cb0bd783bec5783b5bd86375a2781c4856c6b46
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-host-observer
+  status: ACTIVE
+- id: EV-V018-RELEASE-LOCK
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 exact installed dependency lock
+  path: evidence/v0.18.0-requirements-release.lock.json
+  sha256: dec277751ab7ccc8679520716c907a5784fc033fbe29f372d2a41f436ed26280
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-WHEELHOUSE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 current-platform hash-locked offline wheelhouse
+  path: evidence/v0.18.0-wheelhouse-report.json
+  sha256: 20cc9591276a3187d898dc650bf8bbb4855207e508be1238f2333fc807deeb07
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-TARGET-WHEELHOUSE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 Arm64 target-wheelhouse report; explicitly incomplete
+  path: evidence/v0.18.0-target-wheelhouse-report.json
+  sha256: 3fa86bb359cf2777da7ae39687e53e9d239898fa31b8cca5f5453e29e6d8f95b
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-NETWORK-ISOLATION
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.18.0 Linux network-namespace egress-denial report
+  path: evidence/v0.18.0-network-isolation-report.json
+  sha256: a42b96157b628509717cc6d676f36a5a86285c1eecf59a226616d48df84c71e8
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-host-observer
+  status: ACTIVE
+- id: EV-V018-ISOLATED-BENCHMARK
+  kind: RUNTIME_OBSERVATION
+  summary: Sentinel Edge v0.18.0 workload executed in the same no-egress namespace
+  path: evidence/v0.18.0-isolated-benchmark-command.json
+  sha256: 8c5bc3e5e688128e12d5db009f74de86d95e011b60296fc65e52b1d0a1bbcfe6
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-host-observer
+  status: ACTIVE
+- id: EV-V018-BENCHMARK-IDENTITY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 exact runtime/model/configuration/fixture identity
+    verification
+  path: evidence/v0.18.0-benchmark-identity-report.json
+  sha256: 9d467f82ae82d4f7a0e278e1bae20f5541314d986183c25645f1b448d34f797e
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-BENCHMARK-ANALYSIS
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 confirmatory paired analysis; target headline blocked
+  path: evidence/v0.18.0-benchmark-analysis-report.json
+  sha256: 3bce4ccebf94326e1335ad6f603c39161779c71547298ec66f7abd674c39095c
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-RUNTIME-PROFILE
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.18.0 runtime-profile qualification; development-tested
+    only
+  path: evidence/v0.18.0-runtime-profile-qualification.json
+  sha256: 17c9c0fb782b7d09f37103a5173376a884651af172babef2e377fa52706fbe41
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V018-INDEPENDENT-BUILD
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 builder attestation report; one-host independence
+    remains open
+  path: evidence/v0.18.0-independent-build-report.json
+  sha256: 46a6f181d503c29ccfc1105445dac501f473efd458331edb5a41b75bc45c3703
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-RELEASE-GOVERNANCE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 release credential and review governance report
+  path: evidence/v0.18.0-release-governance-report.json
+  sha256: bcd1efcff79bdc8ad9aab25458dec1fc589677a985c74c2d62213c61c4add75e
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V018-BUILDER-A-PUBLIC
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 builder A verification public key
+  path: evidence/v0.18.0-builder-a-public.pem
+  sha256: 0307667d12c8fcda6be0125378c20cc615f42c14c8302e4fba6e13ebe69f8de0
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V018-BUILDER-B-PUBLIC
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 builder B verification public key
+  path: evidence/v0.18.0-builder-b-public.pem
+  sha256: 0eb1a405c192146440356466dd77d8f0136c6b63146f41f209955a6de8f58b3f
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V018-BENCHMARK-PLAN-PUBLIC
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 benchmark analysis-plan verification public key
+  path: evidence/v0.18.0-benchmark-plan-public.pem
+  sha256: 5994ad113ff07cfc22db4835d4719f13c4c6463ea1c776c34bd5f63007ace30d
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V018-PRIVACY-CLOSURE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 candidate-bound privacy closure
+  path: evidence/v0.18.0-privacy-closure.json
+  sha256: 713792d5d7e89676a64cbeed8afe9b9b118e88c6f4618b72f747b21ce580e8ec
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V018-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.18.0 development release verification public key
+  path: evidence/v0.18.0-release-public.pem
+  sha256: ba1a7bea88c53e1a751bfcf2e259506ae652b66b12908d520ff183fbab96794f
+  captured_at: '2026-08-03T09:45:00+02:00'
+  producer: sentinel-edge-keygen
+  status: ACTIVE
+- id: EV-V019-POWER-ENERGY
+  kind: SOURCE
+  summary: Sentinel Edge v0.19.0 power, energy and memory-pressure qualification semantics
+  path: evidence/v0.19.0-power-energy-report.json
+  sha256: f5adb602034efd1c19766613168c8dfffd432331c9b822f36ff615d21f5ffcf0
+  captured_at: '2026-08-03T10:10:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V019-RUNTIME-KNOWN-ISSUES
+  kind: SOURCE
+  summary: Sentinel Edge v0.19.0 signed runtime-known-issue registry and evaluation
+  path: evidence/v0.19.0-runtime-known-issue-report.json
+  sha256: df715b4575eb068fdad16e5210c6ee13f852226eaad1314a6748d52c0149e015
+  captured_at: '2026-08-03T10:10:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V019-BENCHMARK-GOVERNANCE
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.19.0 target benchmark governance with power/energy metadata;
+    target claim blocked
+  path: evidence/v0.19.0-target-benchmark-governance.json
+  sha256: e891863c26cf2a4c7bd73b56ffa85a21d3d35e5b6ded704c5b56669f02234d92
+  captured_at: '2026-08-03T10:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V019-PYTEST
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.19.0 complete 213-test development suite
+  path: evidence/v0.19.0-pytest.txt
+  sha256: a2ab74ff55af0ae08903f4d3bf191a9387f853ab7a628a6f20d52c379566d6bf
+  captured_at: '2026-08-03T10:10:00+02:00'
+  producer: pytest
+  status: ACTIVE
+- id: EV-V019-CONTRACT-SYNC
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.19.0 contract synchronization for 743 requirements and
+    193 ADRs
+  path: evidence/v0.19.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T10:10:00+02:00'
+  producer: sentinel-edge-contract-check
+  status: ACTIVE
+- id: EV-V020-MODEL-PACKAGE
+  kind: SOURCE
+  summary: Sentinel Edge v0.20.0 bounded ONNX package admission
+  path: evidence/v0.20.0-model-package-admission.json
+  sha256: 33f5c60db3214167540e140fba720240adf759e84ecb42299d372bb417615658
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V020-EXECUTION-BOUNDARY
+  kind: SOURCE
+  summary: Sentinel Edge v0.20.0 Component-3 model execution-boundary scan
+  path: evidence/v0.20.0-model-execution-boundary-scan.json
+  sha256: 752e66f72f67c3e163847fda5bfe6894609e7c62c80dc45d68478a257555f8e5
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V020-SIGNAL-CHAIN
+  kind: SOURCE
+  summary: Sentinel Edge v0.20.0 signed earthquake IMU signal-chain evaluation
+  path: evidence/v0.20.0-signal-chain-evaluation.json
+  sha256: 1ea1cc0b32c54585dff716e2d141707e6b40e3de1dff8797a3091522cb0bcc88
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V020-SIGNAL-CHAIN-WILDFIRE
+  kind: SOURCE
+  summary: Sentinel Edge v0.20.0 signed wildfire camera signal-chain evaluation
+  path: evidence/v0.20.0-wildfire-signal-chain-evaluation.json
+  sha256: 89f8c91aa2bfc23b4b565ce9b05d4f24dea54f79074d29d89b0d1ce19aa4312f
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V020-SIGNAL-CONFORMANCE
+  kind: SOURCE
+  summary: Sentinel Edge v0.20.0 signal-chain conformance and negative-case receipt
+  path: evidence/v0.20.0-signal-chain-conformance.json
+  sha256: ecf8a67a7b01f3e289b99f3822d52a944c32fe3c20423946bd46efa082374d97
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V020-SITE-COMMISSIONING
+  kind: SOURCE
+  summary: Sentinel Edge v0.20.0 signed site-commissioning identity evaluation
+  path: evidence/v0.20.0-site-commissioning.json
+  sha256: 9606d9ae550c9a2d585e2508790d95a93a2f00543d39f1a46440b98875703fdc
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-qualification
+  status: ACTIVE
+- id: EV-V020-FOCUSED-TESTS
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.20.0 focused 12-test model-package and signal-chain suite
+  path: evidence/v0.20.0-model-package-signal-chain-tests.txt
+  sha256: 8c0870ddc47e4239ee56d0f607513c4f3c9299ac6efea3ad1ec0b0f9daa78a84
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: pytest
+  status: ACTIVE
+- id: EV-V020-BENCHMARK-REPLAY
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.20.0 deterministic simulated B0/B1/O1 replay
+  path: evidence/v0.20.0-benchmark-replay.txt
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V020-CONFIG-ACTIVATION
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.20.0 configuration activation receipt
+  path: evidence/v0.20.0-config-activation.txt
+  sha256: b95796f743109592928e7d269c9605476cea6b252527832ceca7b4eb4ee1562e
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-cli
+  status: ACTIVE
+- id: EV-V020-BENCHMARK-GOVERNANCE
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.20.0 target benchmark, model-package and signal-chain
+    governance receipt; target claims blocked
+  path: evidence/v0.20.0-target-benchmark-governance.json
+  sha256: 9615e2e599243fb97e16330930e83ec26a18f52b194b652f54d878b024b8af73
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-SBOM
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 CycloneDX SBOM
+  path: evidence/v0.20.0-sbom.cdx.json
+  sha256: a90b0bb2e7908b8b93f8b5a87294de7e562b5598653d8d828a5c63d88cd960ad
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-SECURITY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 bounded multi-source advisory review
+  path: evidence/v0.20.0-security-review.json
+  sha256: 8eb97af99c9f3680033508cb75b10ea63b88bf6b9b99e9b2aaebe28d9b06b3f5
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-INVENTORY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 third-party inventory
+  path: evidence/v0.20.0-third-party-inventory.json
+  sha256: 9684e707d6e20ee3cdad0124c3bf090687143a369a8749f3c358f69d2044bcbe
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-NOTICES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 third-party notices
+  path: evidence/v0.20.0-third-party-notices.md
+  sha256: 3b6e99a8664f9145ee296e8c506e1e76de0361bfb8763610e5b7211de81511f6
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-REPRODUCIBILITY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 scoped reproducibility report
+  path: evidence/v0.20.0-reproducibility-report.json
+  sha256: 41412a990e68e90378f44f1b490a3402802657f731af161307faad1d1528622c
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-LOCK
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 exact installed dependency lock
+  path: evidence/v0.20.0-requirements-release.lock.json
+  sha256: 18f489d0559837007b343644470221eac8c28f9cd2036bf5f221fc8d2a369f9d
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-WHEELHOUSE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 current-platform wheelhouse report
+  path: evidence/v0.20.0-wheelhouse-report.json
+  sha256: dc9910b7a45fe9f0fd7bcb4b62bd0459c9c2379dbbfdbe33147a4a5fbb1b7f2d
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-TARGET-WHEELHOUSE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 incomplete Arm64 target-wheelhouse report
+  path: evidence/v0.20.0-target-wheelhouse-report.json
+  sha256: a8051dafef3ce16cbdee3d5ec6381eba9f17922ef659feb702fc62984c9843a4
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-HOST-TRUST
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 development-host trust report
+  path: evidence/v0.20.0-host-trust-report.json
+  sha256: 59c1c9c24e0e442513577b1e527166dc51a79361466beb59203875e5676834e9
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-NETWORK
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 network-isolation report
+  path: evidence/v0.20.0-network-isolation-report.json
+  sha256: a42b96157b628509717cc6d676f36a5a86285c1eecf59a226616d48df84c71e8
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-INDEPENDENT-BUILD
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 independent-build comparison report
+  path: evidence/v0.20.0-independent-build-report.json
+  sha256: ca626e7af3acb4ee811d0567b5781be853319f321b4e46c8ac0eab355fb8f944
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-RELEASE-GOVERNANCE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 release-credential and independent-review governance
+    report
+  path: evidence/v0.20.0-release-governance-report.json
+  sha256: f4e8c67cc4d510f64de8635261741cc9e5ef1e17f85a4f16b9a282f755781265
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-POWER-ENERGY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 power and energy development report
+  path: evidence/v0.20.0-power-energy-report.json
+  sha256: f5adb602034efd1c19766613168c8dfffd432331c9b822f36ff615d21f5ffcf0
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-RUNTIME-KNOWN-ISSUES
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 signed runtime-known-issue evaluation
+  path: evidence/v0.20.0-runtime-known-issue-report.json
+  sha256: df715b4575eb068fdad16e5210c6ee13f852226eaad1314a6748d52c0149e015
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-RUNTIME-PROFILE
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 runtime-profile qualification
+  path: evidence/v0.20.0-runtime-profile-qualification.json
+  sha256: 37316265650e5b076dfa022a9ed900383fdfd5a7f422d7065f524bd8cb272484
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-BENCHMARK-ANALYSIS
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 benchmark analysis report
+  path: evidence/v0.20.0-benchmark-analysis-report.json
+  sha256: 6c0b0e2c4ff288d8a1c0dfdb23ddf7a19ec4b966fa357e9c426bb93a212106b9
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-BENCHMARK-IDENTITY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 benchmark identity report
+  path: evidence/v0.20.0-benchmark-identity-report.json
+  sha256: cef36abfa02858a93cd14d096297088553e26132bd204fc41d2b895375a2c05e
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-ISOLATED-BENCHMARK
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 same-namespace benchmark command report
+  path: evidence/v0.20.0-isolated-benchmark-command.json
+  sha256: 5334b64c950a25c3bad19a7e91db5d1d618ccf41e22bbe6bec111c8cdd5b6d26
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-RELEASE-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 development release verification public key
+  path: evidence/v0.20.0-release-public.pem
+  sha256: 5b8eb49a2897513f4a1ca29dd3cd2d43613db65418943f4529a64b5ba1f46df1
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V020-SIGNAL-PUBLIC-KEY
+  kind: BUILD_ARTIFACT
+  summary: Sentinel Edge v0.20.0 signal-chain verification public key
+  path: evidence/v0.20.0-signal-chain-public.pem
+  sha256: dc8e6e0db7f6ec2598ec81226b420c4dd7dbd2de5a342b2f38a88019756a0bd0
+  captured_at: '2026-08-03T11:40:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V021-QUALIFICATION-LIFECYCLE-SOURCE
+  kind: SOURCE
+  summary: Sentinel Edge v0.21.0 qualification evidence-window and claim-ceiling report
+  path: evidence/v0.21.0-qualification-lifecycle.json
+  sha256: cd1f8e6e92327bbe1b67a1ca75a2d86b539900c4808d1a8d250d973a87f33161
+  captured_at: '2026-08-03T12:55:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V021-PLATFORM-ENVELOPE-SOURCE
+  kind: SOURCE
+  summary: Sentinel Edge v0.21.0 platform runtime-envelope evaluation
+  path: evidence/v0.21.0-platform-runtime-envelope.json
+  sha256: 2e7d0cf7278e4dae63924cee645f02baef1dd9b8af98a62d606bf4e56c0ebbbf
+  captured_at: '2026-08-03T12:55:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V021-RUNTIME-KAT-SOURCE
+  kind: SOURCE
+  summary: Sentinel Edge v0.21.0 cold/session runtime known-answer report
+  path: evidence/v0.21.0-runtime-known-answer.json
+  sha256: 01681154783bc24b8a6b5b3cf48534af875d6fb1425b2ca4f761a2ada761111b
+  captured_at: '2026-08-03T12:55:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V021-TESTS
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.21.0 complete 235-test development suite
+  path: evidence/v0.21.0-pytest.txt
+  sha256: ffe21220f07f9bb87fc1e33c849923a46494fa04c8a57ae6916d0c2d8aae18b2
+  captured_at: '2026-08-03T12:55:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V021-FOCUSED-TESTS
+  kind: TEST_RESULT
+  summary: Sentinel Edge v0.21.0 focused qualification, platform and runtime KAT tests
+  path: evidence/v0.21.0-qualification-platform-kat-tests.txt
+  sha256: 7040371af15613c02e821ec0eecc1d1330f691ace4cef93a41bfa358822c4103
+  captured_at: '2026-08-03T12:55:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-BENCHMARK-ANALYSIS-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-benchmark-analysis-report.json'
+  path: evidence/v0.21.0-benchmark-analysis-report.json
+  sha256: fe5317eb990e2d5133a77e6ca05a25de026866ba24c4063405834e2a65858d92
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-BENCHMARK-HOST-OBSERVATION-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-benchmark-host-observation.json'
+  path: evidence/v0.21.0-benchmark-host-observation.json
+  sha256: cd86dcc3a10ded0e187dd7a135aec7cdae563bbd75afb1333177f4a38b4a192e
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-BENCHMARK-IDENTITY-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-benchmark-identity-report.json'
+  path: evidence/v0.21.0-benchmark-identity-report.json
+  sha256: a50ecd16c7e4cb548b97a13690c8d2b4c4f092eb6fa4ce848b91ad4b0acbcc70
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-BENCHMARK-PLAN-PUBLIC-PEM
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-benchmark-plan-public.pem'
+  path: evidence/v0.21.0-benchmark-plan-public.pem
+  sha256: f0fc7f146ca6b3e34ef9e4ff21ed01db10d3e88cddff07e16096386932688349
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-BENCHMARK-REPLAY-TXT
+  kind: TEST_RESULT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-benchmark-replay.txt'
+  path: evidence/v0.21.0-benchmark-replay.txt
+  sha256: cb48f12bf7ca8cf533829c0558cc302f60f2563bcfc1591ea72c4603484e3b08
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-BUILDER-A-PUBLIC-PEM
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-builder-a-public.pem'
+  path: evidence/v0.21.0-builder-a-public.pem
+  sha256: c279e6038da64e18864745f2aedbf09b662f85fb2761963e2349c7e97b178f64
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-BUILDER-B-PUBLIC-PEM
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-builder-b-public.pem'
+  path: evidence/v0.21.0-builder-b-public.pem
+  sha256: 34a0503c41b9ee646476f7191880f05d61be9e692dd793b9e4d10de723ac9c7b
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-CONFIG-ACTIVATION-TXT
+  kind: TEST_RESULT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-config-activation.txt'
+  path: evidence/v0.21.0-config-activation.txt
+  sha256: 9454adb69119dccfcfac4d2d0f1c085b0c7cee9493fb054636692d57fa2a1de5
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-CONTRACT-SYNC-TXT
+  kind: TEST_RESULT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-contract-sync.txt'
+  path: evidence/v0.21.0-contract-sync.txt
+  sha256: e091bd560bf80f7ac82e415ba7f999672392982552e0702f42263838aa33e69c
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-DOCTOR-TXT
+  kind: TEST_RESULT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-doctor.txt'
+  path: evidence/v0.21.0-doctor.txt
+  sha256: 3eeebd452b7e74b0f2f88d7bb4f5a8cf82ca6554e3e95c0e162a58f048fec5c2
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-HOST-TRUST-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-host-trust-report.json'
+  path: evidence/v0.21.0-host-trust-report.json
+  sha256: a6f065cff6099a5cdfc46f0d6961586528a0215e16da7474bfaa688999a5e094
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-INDEPENDENT-BUILD-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-independent-build-report.json'
+  path: evidence/v0.21.0-independent-build-report.json
+  sha256: 5adfde11cffcbf817d723f2a4b412109fa5e0edb39ee06c93f87a0fade0ab070
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-ISOLATED-BENCHMARK-COMMAND-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-isolated-benchmark-command.json'
+  path: evidence/v0.21.0-isolated-benchmark-command.json
+  sha256: 8c5bc3e5e688128e12d5db009f74de86d95e011b60296fc65e52b1d0a1bbcfe6
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-MODEL-EXECUTION-BOUNDARY-SCAN-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-model-execution-boundary-scan.json'
+  path: evidence/v0.21.0-model-execution-boundary-scan.json
+  sha256: 83f00c35a44e84444258ec6ed8c51b2cbd6b9cd066b39e56cfb58b06f6fbc915
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-MODEL-PACKAGE-ADMISSION-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-model-package-admission.json'
+  path: evidence/v0.21.0-model-package-admission.json
+  sha256: 2cb22ad27ef43585ef99534ad46f203f0be2d7fbf32b65aba4e63d00ac1bf5f4
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-NETWORK-ISOLATION-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-network-isolation-report.json'
+  path: evidence/v0.21.0-network-isolation-report.json
+  sha256: a42b96157b628509717cc6d676f36a5a86285c1eecf59a226616d48df84c71e8
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-POWER-ENERGY-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-power-energy-report.json'
+  path: evidence/v0.21.0-power-energy-report.json
+  sha256: f5adb602034efd1c19766613168c8dfffd432331c9b822f36ff615d21f5ffcf0
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-RELEASE-GOVERNANCE-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-release-governance-report.json'
+  path: evidence/v0.21.0-release-governance-report.json
+  sha256: 769c174d3306c6c8620cf370e8d79efea12f43fc16e061fe267f4a7c327575a6
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-RELEASE-PUBLIC-PEM
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-release-public.pem'
+  path: evidence/v0.21.0-release-public.pem
+  sha256: c10777c40ccc777c3b0b78c2799014e271b1e3a2fce48ab82116062abdb8e40e
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-REPRODUCIBILITY-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-reproducibility-report.json'
+  path: evidence/v0.21.0-reproducibility-report.json
+  sha256: db394dae98c657fc1829f3a8097af5658ccdfc36837eb4e05e010fe4884a374b
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-REQUIREMENTS-RELEASE-LOCK-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-requirements-release.lock.json'
+  path: evidence/v0.21.0-requirements-release.lock.json
+  sha256: b7e9d8d9dc105b0240eb086809b1b1d6b8d2b0495ce37bc6b84cd3d29b4c2bc2
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-RUNTIME-ISSUES-PUBLIC-PEM
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-runtime-issues-public.pem'
+  path: evidence/v0.21.0-runtime-issues-public.pem
+  sha256: 310032fa9657b9872bea52494fd31fba35093aeff1857eed00ba52980ab6f18c
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-RUNTIME-KNOWN-ISSUE-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-runtime-known-issue-report.json'
+  path: evidence/v0.21.0-runtime-known-issue-report.json
+  sha256: df715b4575eb068fdad16e5210c6ee13f852226eaad1314a6748d52c0149e015
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-RUNTIME-PROFILE-QUALIFICATION-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-runtime-profile-qualification.json'
+  path: evidence/v0.21.0-runtime-profile-qualification.json
+  sha256: 17baa87e594099363e1bbb92dfe320a24753aad418e8da10488098938d6becff
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-SBOM-CDX-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-sbom.cdx.json'
+  path: evidence/v0.21.0-sbom.cdx.json
+  sha256: 2b1f81f64e9c1e67444d7fc9d874d5f0c12d1b842b8bf171ab674178e9dbd6a5
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-SCENARIO-TXT
+  kind: TEST_RESULT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-scenario.txt'
+  path: evidence/v0.21.0-scenario.txt
+  sha256: 1744b79950ba25bc115d5f58fcece7587e42a0187b0fe77f78d34c99265a84b3
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-SECURITY-REVIEW-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-security-review.json'
+  path: evidence/v0.21.0-security-review.json
+  sha256: 567fda372437f0cfe8c7ace19e5a72db3669ac56be45847a9cc3d5112a52ca18
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-SIGNAL-CHAIN-CONFORMANCE-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-signal-chain-conformance.json'
+  path: evidence/v0.21.0-signal-chain-conformance.json
+  sha256: ecf8a67a7b01f3e289b99f3822d52a944c32fe3c20423946bd46efa082374d97
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-SIGNAL-CHAIN-EVALUATION-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-signal-chain-evaluation.json'
+  path: evidence/v0.21.0-signal-chain-evaluation.json
+  sha256: 1ea1cc0b32c54585dff716e2d141707e6b40e3de1dff8797a3091522cb0bcc88
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-SIGNAL-CHAIN-PUBLIC-PEM
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-signal-chain-public.pem'
+  path: evidence/v0.21.0-signal-chain-public.pem
+  sha256: 2dc65dec35622b8b4bdf5ffc8525e34da749d185979a7ef6930479ccf8ce37c0
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-SITE-COMMISSIONING-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-site-commissioning.json'
+  path: evidence/v0.21.0-site-commissioning.json
+  sha256: bd9f2739d8f65a02afcb0c9d4bd899bb1819600e62af86ad426fb08c8783ed53
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-TARGET-BENCHMARK-GOVERNANCE-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-target-benchmark-governance.json'
+  path: evidence/v0.21.0-target-benchmark-governance.json
+  sha256: 02da5584b2e7f82817660f484d8f8d0ecb72931e061829a8e62c22a400cf5ab6
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-TARGET-WHEELHOUSE-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-target-wheelhouse-report.json'
+  path: evidence/v0.21.0-target-wheelhouse-report.json
+  sha256: 602f8cb766277daf5e5a1fbd12d46a3860a2e0dfeba14c2e50756f0ee315ffc5
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-THIRD-PARTY-INVENTORY-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-third-party-inventory.json'
+  path: evidence/v0.21.0-third-party-inventory.json
+  sha256: 4e0039c5da6515c84760de96f277bf08dcff4c0f43fd548692909557157bfc95
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-THIRD-PARTY-NOTICES-MD
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-third-party-notices.md'
+  path: evidence/v0.21.0-third-party-notices.md
+  sha256: 3b6e99a8664f9145ee296e8c506e1e76de0361bfb8763610e5b7211de81511f6
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-WHEELHOUSE-REPORT-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-wheelhouse-report.json'
+  path: evidence/v0.21.0-wheelhouse-report.json
+  sha256: b6bd158fa7f734ec647b193dc8708b4a582ea80def1b94512f3f4a528edf438a
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-V0-21-0-WILDFIRE-SIGNAL-CHAIN-EVALUATION-JSON
+  kind: BUILD_ARTIFACT
+  summary: 'Sentinel Edge v0.21.0 evidence artifact: v0.21.0-wildfire-signal-chain-evaluation.json'
+  path: evidence/v0.21.0-wildfire-signal-chain-evaluation.json
+  sha256: 89f8c91aa2bfc23b4b565ce9b05d4f24dea54f79074d29d89b0d1ce19aa4312f
+  captured_at: '2026-08-03T13:10:00+02:00'
+  producer: sentinel-edge-release-lab
+  status: ACTIVE
+- id: EV-R00-GOVERNANCE-RECEIPT-20260812
+  kind: TEST_RESULT
+  summary: Development-host governance suite receipt for the remediation baseline
+  path: provenance/evidence/03a7a5a6bc8a3598995b2d201c5ebab5f47104850bb4f81b82c38556fa77bd16.json
+  sha256: 40cb267a23f5738cf04498283dd208f9c7739351a253b8789289091cf4b4f8a0
+  captured_at: '2026-08-12T03:21:45.351884Z'
+  producer: pytest
+  status: ACTIVE
+- id: EV-R00-TOOLING-RECEIPT-20260812
+  kind: TEST_RESULT
+  summary: Focused deterministic command, claim, conformance and release-minimum tests
+  path: provenance/evidence/f0912e2cc44e905c87602c687def8ff56629de6c5ac8f205fbbfb1534f55189d.json
+  sha256: 201a9580b3504395eb0fc4b7a7819dd04419ff5e1bb44294d8dfcddce7717dba
+  captured_at: '2026-08-12T05:30:00Z'
+  producer: pytest
+  status: ACTIVE
+- id: EV-R00-TOOLING-RECEIPT-20260812-R2
+  kind: TEST_RESULT
+  summary: Focused deterministic tooling tests including hand-entered claim rejection
+  path: provenance/evidence/3a465d71bc0349b69605449cf84acdf08364773a238f473a14f800c8bc97717c.json
+  sha256: 195c601fd1e0bec41a2f487d31c9707a714cf461027d6ba08997c3716ae2942b
+  captured_at: '2026-08-12T06:00:00Z'
+  producer: pytest
+  status: ACTIVE
+- id: EV-R00-CLAIM-REGISTRY-20260812
+  kind: BUILD_ARTIFACT
+  summary: Generated development Claim Registry with explicit claim ceiling
+  path: qualification/claim-registry.json
+  sha256: d5371a91d20655e334176ff472e7f23bc0673651304e99056b0fad8ec4fde800
+  captured_at: '2026-08-12T05:00:00Z'
+  producer: generate_claim_registry.py
+  status: ACTIVE
+- id: EV-R00-CLAIM-TABLE-20260812
+  kind: BUILD_ARTIFACT
+  summary: Generated Claim Registry table derived from machine-readable claims
+  path: qualification/claim-table.md
+  sha256: b70717b80be91a7062a541d63b869541a4de52e6e9fb4049f9dd699ccf42dbab
+  captured_at: '2026-08-12T05:00:00Z'
+  producer: generate_claim_registry.py
+  status: ACTIVE
+- id: EV-R00-FULL-SUITE-20260812
+  kind: TEST_RESULT
+  summary: Full 319-test suite with Windows resource warnings promoted to errors
+  path: provenance/evidence/1e51a40279e6e95cf36d1509598f639037acb644ee2e802a5b7b3b1547e1a02d.json
+  sha256: 8485e064193449ed6ad9aa99d1c4fe400c1cea336984ec9dae3edb148db79813
+  captured_at: '2026-08-12T04:45:50Z'
+  producer: pytest
+  status: ACTIVE
+- id: EV-R00-GOVERNANCE-PROJECTIONS-20260812
+  kind: TEST_RESULT
+  summary: Focused scope-freeze, deferred-risk, traceability and conformance validation
+  path: provenance/evidence/b9c1f07425f8dfd695fac7f28f902c865c791a145e0514e09f9c83714e0508d9.json
+  sha256: 9bb86d7f48f57cc943513b8a4138514462c6e8c899fd0e6714b1a123e97609c8
+  captured_at: '2026-08-12T05:00:00Z'
+  producer: pytest
+  status: ACTIVE
+- id: EV-R00-FULL-SUITE-R01-20260812
+  kind: TEST_RESULT
+  summary: Full 323-test warning-strict suite after Windows restore replacement fix
+  path: provenance/evidence/b7c72e22a43392d8e3a9975359952eb4f1e74300d7235095d38507583bb7d51d.json
+  sha256: 15b65402b1b30773ceee628d007177510abf72515a29e21c6ce2db219e1062d1
+  captured_at: '2026-08-12T06:30:00Z'
+  producer: pytest
+  status: ACTIVE
+- id: EV-R00-FULL-SUITE-R02-20260812
+  kind: TEST_RESULT
+  summary: Full 324-test warning-strict suite after delivery-lane regression coverage
+  path: provenance/evidence/61f0a710bbe421946ffa2b86bc7fad8c9aa527603bba62991cc30edd9f45302f.json
+  sha256: 1f75172e40a66ee4180c1b010cdd8fe1cfb6de2985a018729324ac0bd08b9f44
+  captured_at: '2026-08-12T07:30:00Z'
+  producer: pytest
+  status: ACTIVE
+- id: EV-R00-G0-GATE-STATUS-20260812
+  kind: BUILD_ARTIFACT
+  summary: Generated twelve-pack G0 release status with authoritative requirement,
+    test and artifact mappings derived from the v0.22 technical contract and H0 cutline
+  path: qualification/g0-gate-status.json
+  sha256: bda7ebb0c626888700e8afb069e90b3f9387f79045de5c16bd07ff8300d33787
+  captured_at: '2026-08-12T07:45:00Z'
+  producer: generate_g0_gate_status.py
+  status: ACTIVE
+- id: EV-R00-FULL-SUITE-R03-20260812
+  kind: TEST_RESULT
+  summary: Full 326-test warning-strict suite after release-candidate G0 binding
+  path: provenance/evidence/5c85189971115aaad16f374e036f61c0f73ec74c0fda358a0d2f36e996576ab9.json
+  sha256: 1e2eab2009a127af6b1a107ea9b8132226790755b9049a976292a558a79f8e22
+  captured_at: '2026-08-12T08:30:00Z'
+  producer: pytest
+  status: ACTIVE
+- id: EV-R00-FULL-SUITE-R04-20260812
+  kind: TEST_RESULT
+  summary: Current full 335-test warning-strict suite after complete G0 requirement
+    mapping
+  path: provenance/evidence/d79048da82242e1cac950a3193c906131f897fe0d346289c40b482d75bea39d8.json
+  sha256: 055bd23b0106ea213decf63050bd97c8a00b4ff95e17bfef4eaddd8481994cfd
+  captured_at: '2026-08-12T09:30:00Z'
+  producer: pytest
+  status: ACTIVE

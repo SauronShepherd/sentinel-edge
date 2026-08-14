@@ -1,0 +1,45 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_live_projections_and_offline.py tests/test_auth_and_commands.py tests/test_incident_commands_and_relations.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 18,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 14.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "adfee7abb57da5f774598ad05ffb7f396e00bca95e56701718a3c4bc7277355e",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "97b5d4423310f8f494221f10b9b2cc4ea2495aea5e9854aecaa9be5dc60cd527"
+    },
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "b603158f6fb01a25ceb13230a3042cbdbe988fb9f06d9e9c92a29d1c2e1b1e5b"
+    },
+    {
+      "path": "tests\\test_live_projections_and_offline.py",
+      "sha256": "ef6744eb0db0048a031665ea793b21a66a238e72fd5c225adceeebd2f500336c"
+    },
+    {
+      "path": "tests\\test_auth_and_commands.py",
+      "sha256": "3de94a7ca3479ced2a0e2f0a1a99480448ddb6e1066a585e7aca2fccd4e49a47"
+    },
+    {
+      "path": "tests\\test_incident_commands_and_relations.py",
+      "sha256": "87c1f280f89c8f9424444f8f728600137b533dd2be051a471e74d41d28cdab7b"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:49:53.669792Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

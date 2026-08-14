@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_c2pa_export.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "28e71820d35d799ae1e99ba92a04f7729e29b46061e441078b7156bd1e23fd0c",
+  "inputs": [
+    {
+      "path": "tests\\test_c2pa_export.py",
+      "sha256": "8735c671b6a18486af960fec7675ba2486029c04d28b1ddccfeeaa4185736761"
+    },
+    {
+      "path": "src\\sentinel_edge\\exports\\c2pa.py",
+      "sha256": "b74b40cf6d85eb100ac6f725ed5c9cda0c09c5632205e5e009ee023dff5afbde"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:36:02.478214Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-exp004",
+  "schema_version": 1
+}

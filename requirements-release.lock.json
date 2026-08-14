@@ -1,0 +1,116 @@
+{
+  "complete": true,
+  "direct_requirements": [
+    "fastapi>=0.128,<1",
+    "pydantic>=2.13,<3",
+    "PyYAML>=6,<7",
+    "uvicorn>=0.48,<1",
+    "cryptography>=46,<47",
+    "Pillow>=12,<13",
+    "packaging>=25,<26"
+  ],
+  "limitations": [
+    "Package archive hashes and an offline wheel mirror are not included in this development lock."
+  ],
+  "project_version": "0.21.0",
+  "python": "3.13.14",
+  "resolution_kind": "installed_exact_versions",
+  "resolved": [
+    {
+      "name": "annotated-types",
+      "state": "resolved",
+      "version": "0.8.0"
+    },
+    {
+      "name": "anyio",
+      "state": "resolved",
+      "version": "4.14.2"
+    },
+    {
+      "name": "cffi",
+      "state": "resolved",
+      "version": "2.1.1"
+    },
+    {
+      "name": "click",
+      "state": "resolved",
+      "version": "8.4.2"
+    },
+    {
+      "name": "colorama",
+      "state": "resolved",
+      "version": "0.4.6"
+    },
+    {
+      "name": "cryptography",
+      "state": "resolved",
+      "version": "50.0.0"
+    },
+    {
+      "name": "fastapi",
+      "state": "resolved",
+      "version": "0.116.1"
+    },
+    {
+      "name": "h11",
+      "state": "resolved",
+      "version": "0.16.0"
+    },
+    {
+      "name": "idna",
+      "state": "resolved",
+      "version": "3.18"
+    },
+    {
+      "name": "packaging",
+      "state": "resolved",
+      "version": "26.2"
+    },
+    {
+      "name": "pillow",
+      "state": "resolved",
+      "version": "12.3.0"
+    },
+    {
+      "name": "pycparser",
+      "state": "resolved",
+      "version": "3.0"
+    },
+    {
+      "name": "pydantic",
+      "state": "resolved",
+      "version": "2.13.4"
+    },
+    {
+      "name": "pydantic_core",
+      "state": "resolved",
+      "version": "2.46.4"
+    },
+    {
+      "name": "PyYAML",
+      "state": "resolved",
+      "version": "6.0.3"
+    },
+    {
+      "name": "starlette",
+      "state": "resolved",
+      "version": "0.47.3"
+    },
+    {
+      "name": "typing-inspection",
+      "state": "resolved",
+      "version": "0.4.2"
+    },
+    {
+      "name": "typing_extensions",
+      "state": "resolved",
+      "version": "4.16.0"
+    },
+    {
+      "name": "uvicorn",
+      "state": "resolved",
+      "version": "0.35.0"
+    }
+  ],
+  "schema": "sentinel-edge-release-lock/1.0"
+}

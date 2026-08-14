@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_stac_metadata.py",
+      "sha256": "ff6fe1eb977476aca3d1efdf579afe68cca2305a778515678972def3ae644e8d"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_stac_metadata.py tests/test_sensorthings_export.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.5,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "aa921989bd008b67579830ab9941c7017c694a916c351cf3bbe7738505566b3a",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\integrations\\stac.py",
+      "sha256": "321fb4b650152aff3c5114fafc8747879aaca00cf3af1cd0ab6c382e84a36068"
+    },
+    {
+      "path": "tests\\test_stac_metadata.py",
+      "sha256": "ff6fe1eb977476aca3d1efdf579afe68cca2305a778515678972def3ae644e8d"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:55:57.649199Z",
+  "result": "passed",
+  "revision": "stac-context-metadata-REQ-INT-005",
+  "schema_version": 1
+}

@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "qualification\\conformance-ledger.json",
+      "sha256": "2f1eb745ab90538a4da8fdd629015bac53ca2efc921ed37520ac6d826886e24d"
+    }
+  ],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\governance\\\\test_command_surface.py tests\\\\governance\\\\test_workspace.py tests\\\\test_command_catalog.py --tb=short; .venv\\\\Scripts\\\\python.exe scripts\\\\dev.py setup",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 9,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 32.7,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "15d00f0dc56d3beb2baf03da465b3af2362d7bc8fbf8782be0fe8f47f02a385e",
+  "inputs": [
+    {
+      "path": "architecture\\command-catalog.yaml",
+      "sha256": "8d7d670d6f8df46ecb91b92f87fc8ab19b4aa05116cbe178bab8d5bc3b09bbd8"
+    },
+    {
+      "path": "scripts\\dev.py",
+      "sha256": "5aa82dd947e656c898d2871741a58d57004c48ac6310d64501a6d23f146adadc"
+    },
+    {
+      "path": "tests\\governance\\test_command_surface.py",
+      "sha256": "01a195dbdc9b05925888962f8a69e7cb9bb38fdb5fea8f64b5780df850245405"
+    }
+  ],
+  "recorded_at": "2026-08-12T14:17:38.887390Z",
+  "result": "passed",
+  "revision": "REQ-MOD-010-command-surface",
+  "schema_version": 1
+}

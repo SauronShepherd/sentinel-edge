@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_official_source_record.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.3,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5b2f1368858b596aab12dd5f1f6f24e05b595cd9400cdd9d86f2a8bfccfa452e",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\integrations\\official_source.py",
+      "sha256": "e628659e48c8917f1e7278fd4164182df6c0c3a40f37ef945d3c9b5c5bdb0344"
+    },
+    {
+      "path": "tests\\test_official_source_record.py",
+      "sha256": "7270e4d73c1937d5450ad690749cda1485b4f179c3ba131651c167b17e210bae"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:32:29.803867Z",
+  "result": "passed",
+  "revision": "REQ-DAT-003 preserve official wording and severity",
+  "schema_version": 1
+}

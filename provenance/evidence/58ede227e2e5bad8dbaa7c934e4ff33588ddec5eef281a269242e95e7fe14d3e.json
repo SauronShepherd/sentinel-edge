@@ -1,0 +1,9 @@
+{
+  "receipt_id": "58ede227e2e5bad8dbaa7c934e4ff33588ddec5eef281a269242e95e7fe14d3e",
+  "requirement_ids": ["REQ-IN-010"],
+  "changed_paths": ["src/sentinel_edge/collector/service.py", "tests/test_collector.py", "tests/test_sensor_plane.py", "tests/test_sensor_protocol.py", "tests/test_ingress_adapters.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collector.py tests/test_sensor_plane.py tests/test_sensor_protocol.py tests/test_ingress_adapters.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

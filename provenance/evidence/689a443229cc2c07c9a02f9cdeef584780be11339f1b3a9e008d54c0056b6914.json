@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "docs\\IMPLEMENTATION_STATUS.md",
+      "sha256": "9f94ba0d693ed24611d06709e40b5f263707ef59099c2681f99c72ce9dd31dc1"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest tests/test_signed_scenarios.py tests/test_scenario_e2e.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 5.0,
+  "environment": {
+    "name": "windows-development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "689a443229cc2c07c9a02f9cdeef584780be11339f1b3a9e008d54c0056b6914",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\scenario\\signing.py",
+      "sha256": "6b05e01a4890de66e702865410c55f136cb341c68be6db01664db8580c100d02"
+    },
+    {
+      "path": "src\\sentinel_edge\\scenario\\engine.py",
+      "sha256": "0daebd28442293a82f7a377ac06440b7aed68b7a893e3d65e6abcc127ba603c0"
+    },
+    {
+      "path": "tests\\test_signed_scenarios.py",
+      "sha256": "530d5a47cccea5f5a618c3923a8e7e5bff02edde6088f8a8a04c2b1049553aea"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:36:15.682568Z",
+  "result": "passed",
+  "revision": "scenario-signed-manifest-implementation",
+  "schema_version": 1
+}

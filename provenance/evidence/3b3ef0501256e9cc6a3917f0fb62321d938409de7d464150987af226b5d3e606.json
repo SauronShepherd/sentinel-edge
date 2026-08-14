@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_source_link_validation.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3b3ef0501256e9cc6a3917f0fb62321d938409de7d464150987af226b5d3e606",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\sources.py",
+      "sha256": "3c6dbabb4c2e7de73bc05d4283f57648017155b3e9f46f51bc863b903840b7cf"
+    },
+    {
+      "path": "tests\\test_source_link_validation.py",
+      "sha256": "2cfc0269b81843186f67afa96239fad14df79f10f84b8724011785a1275c15b0"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:45:10.609275Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

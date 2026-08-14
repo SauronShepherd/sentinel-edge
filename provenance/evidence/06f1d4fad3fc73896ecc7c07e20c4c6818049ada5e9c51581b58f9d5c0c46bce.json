@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_incidents.py",
+      "sha256": "d11a8a31dd755cb8ac238657fcd780cec3dfb51ad5613095f7c2222f747b4705"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_incidents.py tests/test_incident_identity.py tests/test_incident_commands_and_relations.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 16,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 5.2,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "06f1d4fad3fc73896ecc7c07e20c4c6818049ada5e9c51581b58f9d5c0c46bce",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "713f1e1682af74d88662db64b5f407a43303df6095fe64c01bc5305a8d021d0d"
+    },
+    {
+      "path": "tests\\test_incidents.py",
+      "sha256": "d11a8a31dd755cb8ac238657fcd780cec3dfb51ad5613095f7c2222f747b4705"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:59:08.166345Z",
+  "result": "passed",
+  "revision": "late-context-no-fresh-alert-REQ-TIM-002",
+  "schema_version": 1
+}

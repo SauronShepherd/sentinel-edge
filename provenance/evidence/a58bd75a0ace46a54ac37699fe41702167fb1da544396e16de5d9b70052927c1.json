@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "qualification\\conformance-ledger.json",
+      "sha256": "3eeda863b4dbc85fe642c18e7a93722996415cf7eb19a3b632279e8e879391ab"
+    },
+    {
+      "path": "qualification\\g0-gate-status.json",
+      "sha256": "bda7ebb0c626888700e8afb069e90b3f9387f79045de5c16bd07ff8300d33787"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe scripts/validate_requirement_closure.py; scripts/validate_conformance_ledger.py; scripts/validate_evidence_registry.py; scripts/validate_g0_gate_status.py; .venv\\\\Scripts\\\\python.exe -m pytest -q collaboration/UI suite",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 22,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 53.2,
+  "environment": {
+    "name": "local deterministic project verification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a58bd75a0ace46a54ac37699fe41702167fb1da544396e16de5d9b70052927c1",
+  "inputs": [
+    {
+      "path": "qualification\\conformance-ledger.json",
+      "sha256": "3eeda863b4dbc85fe642c18e7a93722996415cf7eb19a3b632279e8e879391ab"
+    },
+    {
+      "path": "qualification\\g0-gate-status.json",
+      "sha256": "bda7ebb0c626888700e8afb069e90b3f9387f79045de5c16bd07ff8300d33787"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:18:53.667001Z",
+  "result": "passed",
+  "revision": "post-collaboration-regression-v1-20260813",
+  "schema_version": 1
+}

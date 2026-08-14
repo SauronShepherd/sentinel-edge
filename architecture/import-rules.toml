@@ -1,3 +1,17 @@
 [rules]
 shared_prefixes = ["contracts", "sdk"]
 forbidden_cross_module_imports = true
+forbidden_implementation_prefixes = [
+  "sentinel_streaming_source_collector",
+  "sentinel_analysis_enrichment_engine",
+  "sentinel_model_workload_runtime",
+  "sentinel_incident_event_engine",
+  "sentinel_rest_api_integration_gateway",
+  "sentinel_client_applications",
+  "modules.streaming_source_collector",
+  "modules.analysis_enrichment_engine",
+  "modules.model_workload_runtime",
+  "modules.incident_event_engine",
+  "modules.rest_api_integration_gateway",
+  "modules.client_applications",
+]

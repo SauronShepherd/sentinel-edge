@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_nts_state.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b489035dd698a0b27cd4a27b5982609d85ce25ac1f9f9bdb9ab56c2586afefe5",
+  "inputs": [
+    {
+      "path": "tests\\test_nts_state.py",
+      "sha256": "eda8ed6e02bbea75f9cd789cc0e4c95d730c914302f9baa2ee537ac96e8aeb97"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\nts_state.py",
+      "sha256": "77ebdf99e8114974c76c01c4213bbc8cda054e82f78932b74e06078f03457a77"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:04:43.988549Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-cts003",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_io_shedding.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "773d1a7266bbe05f556c4f2f7f4b373275dad767c741022edb5a5216dacbf254",
+  "inputs": [
+    {
+      "path": "tests\\test_io_shedding.py",
+      "sha256": "436ec9f97441371f8d5e88b616e4fd21332bf7f511746f26369cf1b16c9ca9db"
+    },
+    {
+      "path": "src\\sentinel_edge\\runtime\\io_shedding.py",
+      "sha256": "c5b52d059e1e98e3d6963f7873b02eb8f8d346040a50e02fee7f4a84468d0497"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:56:40.432694Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-iop003",
+  "schema_version": 1
+}

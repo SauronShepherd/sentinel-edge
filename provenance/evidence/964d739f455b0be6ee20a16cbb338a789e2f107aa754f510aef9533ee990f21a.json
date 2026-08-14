@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_scenario_faults.py",
+      "sha256": "bca4a9efb2f11e654c5ad56398e4ad228086fd920af5d9700abfd7a7a96dc9ff"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_scenario_faults.py tests/test_scenario_replay_controls.py tests/test_scenario_e2e.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 5,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 29.1,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "964d739f455b0be6ee20a16cbb338a789e2f107aa754f510aef9533ee990f21a",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\scenario\\faults.py",
+      "sha256": "95a58d1bf7a4f91a649a5f648c9b8e059614b99cc217df9abe99997dbee40981"
+    },
+    {
+      "path": "src\\sentinel_edge\\scenario\\__init__.py",
+      "sha256": "399539c48587aa02c74a3c7560ab36531da937ff964bb036b83e5452144a2721"
+    },
+    {
+      "path": "tests\\test_scenario_faults.py",
+      "sha256": "bca4a9efb2f11e654c5ad56398e4ad228086fd920af5d9700abfd7a7a96dc9ff"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:40:15.340883Z",
+  "result": "passed",
+  "revision": "declared-scenario-fault-injection-REQ-SCN-004",
+  "schema_version": 1
+}

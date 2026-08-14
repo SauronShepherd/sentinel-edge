@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_privacy_backup_and_exports.py::test_export_authorization_denies_restricted_raw_media_without_govern_permission tests/test_privacy_backup_and_exports.py::test_export_manifest_is_closed_rights_aware_and_redacts_restricted_metadata -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 13.0,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a424a7afefe6946f0da511b626e257567a6231c9c528c140051575bf466b3519",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "750bf209d15c116ca148465eeea37a5c4ae24ac27a7e8ae765924138c0c09188"
+    },
+    {
+      "path": "src\\sentinel_edge\\security\\auth.py",
+      "sha256": "40210aa7fae00a0d26134b967f0810018fdda422aca539b346cb0ee779e36217"
+    },
+    {
+      "path": "tests\\test_privacy_backup_and_exports.py",
+      "sha256": "c1bfa9447440916a645973c28419a88558fbc3c126f46330eb8dd7d125ccab46"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:26:30.320689Z",
+  "result": "passed",
+  "revision": "REQ-EXP-003 role-based restricted export authorization",
+  "schema_version": 1
+}

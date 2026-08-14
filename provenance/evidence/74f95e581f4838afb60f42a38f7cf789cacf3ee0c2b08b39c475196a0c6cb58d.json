@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_encrypted_backup.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 7.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "74f95e581f4838afb60f42a38f7cf789cacf3ee0c2b08b39c475196a0c6cb58d",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\storage\\encrypted_backup.py",
+      "sha256": "1664d2d234b9cb48f373c42f38729d222cf3dd560517d07e0dbc30029258c0d2"
+    },
+    {
+      "path": "tests\\test_encrypted_backup.py",
+      "sha256": "aa781b5a7e76666847927501b4ce868c62d760e894bf57aa7f5dceb4e84611b3"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:29:49.160094Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

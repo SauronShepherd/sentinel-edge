@@ -1,0 +1,36 @@
+{
+  "failures": [],
+  "measured_mode_allowed": true,
+  "records": [
+    {
+      "expected_sha256": "2d630638f3767ebbbe560589f0d8c81aa23901f60e7de0dfac0ca224dfa25d85",
+      "match": true,
+      "name": "runtime_profile",
+      "observed_sha256": "2d630638f3767ebbbe560589f0d8c81aa23901f60e7de0dfac0ca224dfa25d85",
+      "path": "fixtures/runtime/seismic-trigger-v1.profile.json"
+    },
+    {
+      "expected_sha256": "7c30a7d7b31599d069de9299fd627aea507471a21385daba053bcdb9b49cc962",
+      "match": true,
+      "name": "model",
+      "observed_sha256": "7c30a7d7b31599d069de9299fd627aea507471a21385daba053bcdb9b49cc962",
+      "path": "artifacts/models/seismic-trigger-v1.rules.json"
+    },
+    {
+      "expected_sha256": "9f6d53208e869c29aef0adfb144f01bfd2d35fb6f6247dfe4dbd8daf4f48fbc3",
+      "match": true,
+      "name": "configuration",
+      "observed_sha256": "9f6d53208e869c29aef0adfb144f01bfd2d35fb6f6247dfe4dbd8daf4f48fbc3",
+      "path": "fixtures/configuration/default-v0.21.0.yaml"
+    },
+    {
+      "expected_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+      "match": true,
+      "name": "fixture",
+      "observed_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+      "path": "fixtures/scenarios/benchmark-open-loop.json"
+    }
+  ],
+  "report_digest": "387d7327fc6ad95ac9b350ee433fad4bd0c321a45f4db3e95a98b9168cbe85f9",
+  "schema": "sentinel-edge-benchmark-identity-verification/1.0"
+}

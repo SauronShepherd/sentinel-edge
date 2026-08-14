@@ -1,0 +1,45 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_privacy_backup_and_exports.py tests/test_storage_backup_and_spool.py tests/test_authority_watermark_closure.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 20,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 29.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "098fb7745b65c0ce353f0d267a83b75b5fe4b84ba0f0e71b562627e34ad7f256",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\storage\\backup.py",
+      "sha256": "f8a595c6e306511d0b9d2f2c95d2845397c9796affda71b3fe5d6da77c096432"
+    },
+    {
+      "path": "src\\sentinel_edge\\privacy\\closure.py",
+      "sha256": "23419274c85e88a24785625e670f573cb0f5ccaead71ccc7b83d260d6c3d8907"
+    },
+    {
+      "path": "tests\\test_privacy_backup_and_exports.py",
+      "sha256": "c1bfa9447440916a645973c28419a88558fbc3c126f46330eb8dd7d125ccab46"
+    },
+    {
+      "path": "tests\\test_storage_backup_and_spool.py",
+      "sha256": "569a736827c63be3077dbfd4306a192bc33e3b9255fcfb973a2a2ad769336b0c"
+    },
+    {
+      "path": "tests\\test_authority_watermark_closure.py",
+      "sha256": "4d7d1d1585c2b5c931744b9e6eb108e5388c7711d953eb3ed8e0b620a0cf700b"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:58:24.202928Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

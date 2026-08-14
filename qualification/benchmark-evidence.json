@@ -1,0 +1,40 @@
+{
+  "benchmark_id": "local-development",
+  "benchmark_manifest_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+  "host_report_sha256": "bc9ca515bf315dbf8a9dc1abca3751643225bb9cd7bafd53c5fd3728c4fa345b",
+  "power_valid": false,
+  "quality_guardrails_passed": false,
+  "runtime_profile_sha256s": [],
+  "samples": [
+    {
+      "classification": "development_placeholder_not_measurement",
+      "elapsed_ms": 0.0,
+      "iteration": 0,
+      "opportunity_manifest_sha256": "2243cc51bd4d565a293e8347cfb272ace590b88107b2be8df0c4e4eb06f840ee",
+      "variant": "B0"
+    },
+    {
+      "classification": "development_placeholder_not_measurement",
+      "elapsed_ms": 0.0,
+      "iteration": 0,
+      "opportunity_manifest_sha256": "2243cc51bd4d565a293e8347cfb272ace590b88107b2be8df0c4e4eb06f840ee",
+      "variant": "B1"
+    },
+    {
+      "classification": "development_placeholder_not_measurement",
+      "elapsed_ms": 0.0,
+      "iteration": 0,
+      "opportunity_manifest_sha256": "2243cc51bd4d565a293e8347cfb272ace590b88107b2be8df0c4e4eb06f840ee",
+      "variant": "O1"
+    }
+  ],
+  "schema": "sentinel-edge-target-benchmark-evidence/1.0",
+  "source_class": "simulated",
+  "target_host_qualified": false,
+  "thermal_valid": false,
+  "variants": [
+    "B0",
+    "B1",
+    "O1"
+  ]
+}

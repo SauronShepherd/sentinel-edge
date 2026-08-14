@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_timer_policy.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3e7a35e0059cc5c556ef5c04b508d62b569156bb4741a8a06bc1cdb433350cec",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\runtime\\timer_policy.py",
+      "sha256": "b4c72cf9789bfdd792392e00ab9e5fa1a1bea5355fa5ec041a4e31894a12949c"
+    },
+    {
+      "path": "tests\\test_timer_policy.py",
+      "sha256": "94b0af8208cf7a559112106b69f834b908d457d1fff12acd703d9b7d19bd4d0d"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:14:52.321835Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_metadata_conflicts.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "78bfdf866809db54e4cb7d70f9707d2ad41b702037ed086330d03111656cee93",
+  "inputs": [
+    {
+      "path": "tests\\test_metadata_conflicts.py",
+      "sha256": "10cd6c8448f2df2e675c5d08a5090c90cfb6c6d546ad894479b7b9f1599e0128"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\metadata_conflicts.py",
+      "sha256": "fad65b882a182ac8d4eab593c81ad293a9db325855d22229f24150f697aecf09"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:57:02.549869Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-smd001",
+  "schema_version": 1
+}

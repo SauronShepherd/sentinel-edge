@@ -1,0 +1,24 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe scripts/dev.py arm64-doctor",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 8.0,
+  "environment": {
+    "name": "docker-qemu-linux-arm64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "761dc7474d1899c2aa6d383f577bc144f5078aba7bd5e2afc0a6f15b58aaec1b",
+  "inputs": [],
+  "recorded_at": "2026-08-13T08:57:52.505719Z",
+  "result": "passed",
+  "revision": "H0-EMULATED-AARCH64-20260813",
+  "schema_version": 1
+}

@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": ".venv\\\\Scripts\\\\python.exe -m pytest -q tests\\\\test_qualification.py -k fixture_can_pass_signal_quality_without_proving_physical_device tests\\\\test_camera_model_source_qualification.py -k fixture_passes_quality_without_claiming_physical_device --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.0,
+  "environment": {
+    "name": "local-windows-python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "545bc79a9d6ff5f32ae5e0f779db4cbdf2adaffab101283def24b9285948b743",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\sensors.py",
+      "sha256": "d8b86304653f840a1d46f28df196521f29f84b6569976cd3d2bd03dfbf498719"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\camera.py",
+      "sha256": "eb0beab4b724ad36b9083a0dceae25c4864d95d540e9afdecbb3749edd76985d"
+    },
+    {
+      "path": "tests\\test_qualification.py",
+      "sha256": "813315292951953b04c6fa62716441ed4fb4b8710df191ab06a7df3ce363655d"
+    },
+    {
+      "path": "tests\\test_camera_model_source_qualification.py",
+      "sha256": "aa33eb216ff9e5ed84c4ea03bd0b360e9575f8219e7b279b00f5cef5aa4e31af"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:25:55.417928Z",
+  "result": "passed",
+  "revision": "REQ-PLT-003-physical-boundary",
+  "schema_version": 1
+}

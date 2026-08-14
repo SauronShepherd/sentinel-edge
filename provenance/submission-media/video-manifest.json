@@ -1,0 +1,12 @@
+{
+  "schema": "sentinel-edge-submission-video-manifest/1.0",
+  "status": "planned",
+  "required": true,
+  "public_url": null,
+  "recording_owner": "human-submitter",
+  "environment": "100% emulated/virtualized Arm64",
+  "hardware_used": false,
+  "script": "docs/submission/VIDEO_SCRIPT.md",
+  "shot_list": "docs/submission/VIDEO_SHOT_LIST.md",
+  "overlays": "docs/submission/VIDEO_OVERLAYS.md"
+}

@@ -1,0 +1,28 @@
+audit_date: '2026-08-04'
+owner: Sentinel Edge release owner
+defects:
+  - id: F-001
+    severity: blocker
+    summary: Accepted test baseline is not green.
+    reproduction: PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q tests/governance --tb=short
+    remediation: R03
+  - id: F-002
+    severity: blocker
+    summary: Mandatory root CI workflows are missing.
+    reproduction: python scripts/validate_ci_workflows.py
+    remediation: R04
+  - id: F-004
+    severity: blocker
+    summary: uv.lock is stale or inconsistent with project metadata.
+    reproduction: python -m pytest -q tests/governance/test_ci_contract.py
+    remediation: R02
+  - id: F-007
+    severity: high
+    summary: Component tests depend on prior sys.path mutation.
+    reproduction: PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q tests/component/test_collector_core.py
+    remediation: R06
+  - id: F-015
+    severity: blocker
+    summary: Checked-in release candidate inventory does not match the repository.
+    reproduction: python -c "from sentinel_edge.release_candidate import verify_release_candidate; print(verify_release_candidate('release-candidate.json', '.'))"
+    remediation: R01

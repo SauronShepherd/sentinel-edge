@@ -49,7 +49,7 @@ def main() -> int:
     target = target_dir / f"{evidence_id}.json"
     serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     try:
-        with target.open("x", encoding="utf-8") as stream:
+        with target.open("x", encoding="utf-8", newline="\n") as stream:
             stream.write(serialized)
     except FileExistsError:
         if target.read_text(encoding="utf-8") != serialized:

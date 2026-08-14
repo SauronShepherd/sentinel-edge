@@ -1,0 +1,35 @@
+{
+  "claim_ceiling": {
+    "quality_guardrails_passed": true,
+    "raspberry_pi_performance_claim_allowed": false,
+    "source_class": "simulated_emulated_arm64",
+    "target_host_qualified": false,
+    "target_measurement_claim_allowed": false
+  },
+  "claims": [
+    {
+      "artifact_refs": [
+        "sha256:31e4f621dc1aded7b6ec2460c8e8548eceebc028ac081358c5f846eb832f810a",
+        "sha256:a50ecd16c7e4cb548b97a13690c8d2b4c4f092eb6fa4ce848b91ad4b0acbcc70"
+      ],
+      "capability_hashes": [],
+      "claim_class": "simulated",
+      "claim_id": "benchmark-local-development",
+      "config_hashes": [],
+      "model_hashes": [],
+      "release_candidate_id": null,
+      "statement": "Arm64-emulated B0/B1/O1 comparison with deterministic simulated sensor inputs; results are not Raspberry Pi 5 performance measurements"
+    }
+  ],
+  "schema": "sentinel-edge-claim-registry/1.0",
+  "source_artifacts": [
+    {
+      "path": "qualification/emulated-arm64-benchmark.json",
+      "sha256": "31e4f621dc1aded7b6ec2460c8e8548eceebc028ac081358c5f846eb832f810a"
+    },
+    {
+      "path": "qualification/benchmark-identity-report.json",
+      "sha256": "a50ecd16c7e4cb548b97a13690c8d2b4c4f092eb6fa4ce848b91ad4b0acbcc70"
+    }
+  ]
+}

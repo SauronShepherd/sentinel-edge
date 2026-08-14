@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_sensor_protocol.py",
+      "sha256": "b33466e8ca1e42681a1e5ef8ba36477ba66b1664c50b920d2341afe4bef618aa"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_sensor_protocol.py tests/test_android_sensor_bridge.py tests/test_collector.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 14,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 16.0,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "2dc8141037e21562d72ea520e24a8f0293280474a2f4d4dae3c73c63e1bdbed7",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collector\\sensor_protocol.py",
+      "sha256": "6c260839d02d02ef51f4674a3df2fe2ecbd43aea22ab16849c2b30b35a796d39"
+    },
+    {
+      "path": "src\\sentinel_edge\\collector\\__init__.py",
+      "sha256": "77bcb286fb67b86e9e3e1fe9a8da2ffeb1819dce9b5bc630015f61a557afae88"
+    },
+    {
+      "path": "tests\\test_sensor_protocol.py",
+      "sha256": "b33466e8ca1e42681a1e5ef8ba36477ba66b1664c50b920d2341afe4bef618aa"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:28:51.210271Z",
+  "result": "passed",
+  "revision": "versioned-crc-sensor-frames-REQ-SEN-004",
+  "schema_version": 1
+}

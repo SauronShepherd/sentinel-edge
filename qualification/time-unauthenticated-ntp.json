@@ -1,0 +1,32 @@
+{
+  "authenticated": false,
+  "clock_epoch": 0,
+  "display_time_allowed": true,
+  "peer_correlation_allowed": false,
+  "reason_codes": [
+    "unauthenticated_ntp_cannot_strengthen_security",
+    "unauthenticated_or_uncertain_time_display_only"
+  ],
+  "remote_freshness_allowed": false,
+  "security_validity_allowed": false,
+  "selected_origin": "ntp",
+  "selected_source_id": "development-ntp",
+  "sources": [
+    {
+      "age_ms": 0.0,
+      "authenticated": false,
+      "certificate_bootstrap_valid": true,
+      "clock_epoch": 0,
+      "continuity_id": "development-boot-1",
+      "observed_monotonic_ns": 1000000000,
+      "observed_utc": "2026-08-02T18:00:00Z",
+      "origin": "ntp",
+      "reference_id": "development.pool.invalid",
+      "source_id": "development-ntp",
+      "stratum": 2,
+      "uncertainty_ms": 25.0
+    }
+  ],
+  "state": "display_only",
+  "uncertainty_ms": 25.0
+}

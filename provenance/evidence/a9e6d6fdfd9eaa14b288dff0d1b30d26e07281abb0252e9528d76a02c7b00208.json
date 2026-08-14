@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_realtime_experiment.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a9e6d6fdfd9eaa14b288dff0d1b30d26e07281abb0252e9528d76a02c7b00208",
+  "inputs": [
+    {
+      "path": "tests\\test_realtime_experiment.py",
+      "sha256": "b5b6fbc438103739fc9fd7b8d451052943698025ab410424e3addf013fb094b9"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\realtime_experiment.py",
+      "sha256": "982ab192ee7860cf8f9c4f3085594396aa544f56cc1607a5137eb81ac3bf50f4"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:41:34.825532Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-oss002",
+  "schema_version": 1
+}

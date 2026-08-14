@@ -1,0 +1,13 @@
+arazzo: 1.1.0
+info:
+  title: Sentinel Edge upload review
+  version: 1.0.0
+workflowId: upload-review
+workflows:
+  - workflowId: upload-review
+    x-proof-paths: [retry, idempotency, optimistic-conflict, rest-resync]
+    steps:
+      - stepId: upload
+        operationId: ./openapi.yaml#/paths/~1uploads/post
+      - stepId: review
+        operationId: ./openapi.yaml#/paths/~1reviews~1{review_id}/get

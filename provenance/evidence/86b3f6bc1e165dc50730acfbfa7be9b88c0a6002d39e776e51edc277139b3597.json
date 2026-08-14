@@ -1,0 +1,9 @@
+{
+  "receipt_id": "86b3f6bc1e165dc50730acfbfa7be9b88c0a6002d39e776e51edc277139b3597",
+  "requirement_ids": ["REQ-INT-005"],
+  "changed_paths": ["src/sentinel_edge/integrations/stac.py", "tests/test_stac_metadata.py", "tests/test_sensorthings_export.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_stac_metadata.py tests/test_sensorthings_export.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

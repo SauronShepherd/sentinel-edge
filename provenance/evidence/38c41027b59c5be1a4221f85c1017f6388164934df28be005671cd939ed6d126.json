@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_raster_context.py tests/test_stac_metadata.py tests/test_geospatial_contracts.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 8,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.5,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "38c41027b59c5be1a4221f85c1017f6388164934df28be005671cd939ed6d126",
+  "inputs": [
+    {
+      "path": "tests\\test_raster_context.py",
+      "sha256": "32c189e98c31290c93201be2f215756020c401d07979f5e76dbcb75953813f69"
+    },
+    {
+      "path": "tests\\test_stac_metadata.py",
+      "sha256": "ff6fe1eb977476aca3d1efdf579afe68cca2305a778515678972def3ae644e8d"
+    },
+    {
+      "path": "tests\\test_geospatial_contracts.py",
+      "sha256": "75a5e130f627b3a7bc22b1a55264d21e4768109cfd4206c3f7edc54f4e932b3d"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:45:59.892052Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

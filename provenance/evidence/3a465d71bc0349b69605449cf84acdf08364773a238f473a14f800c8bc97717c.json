@@ -1,0 +1,58 @@
+{
+  "artifacts": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7668f665d154d3bb9604b1e38f8f29df218de53854cf95bd874d66e0dcc152f"
+    }
+  ],
+  "command": "python -m pytest -q tests/test_command_catalog.py tests/test_claim_registry_generation.py tests/test_conformance_ledger.py tests/test_release_minimum_manifest.py tests/test_evidence_registry.py tests/test_audit_baseline.py --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 16,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 42.25,
+  "environment": {
+    "name": "development-windows-python313",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3a465d71bc0349b69605449cf84acdf08364773a238f473a14f800c8bc97717c",
+  "inputs": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7668f665d154d3bb9604b1e38f8f29df218de53854cf95bd874d66e0dcc152f"
+    },
+    {
+      "path": "scripts\\dev.py",
+      "sha256": "5bd35ea7fecebd2fea2db028446d0c81a25857c76d98133793e7fede02c7787c"
+    },
+    {
+      "path": "scripts\\validate_command_catalog.py",
+      "sha256": "29d4642c5deca320bf6bf3ad424b450b4f1c31b63010396072f8162b1e665c56"
+    },
+    {
+      "path": "scripts\\generate_claim_registry.py",
+      "sha256": "9429bb47bf22e5b30c529db34912c760f00e557ea1e879c0ff63f96d2b9b17a2"
+    },
+    {
+      "path": "scripts\\validate_claim_registry.py",
+      "sha256": "627bcb2bbcf8411757e3c93c7d3723cd6c3666cb80e9aa76e7e235107ab4614d"
+    },
+    {
+      "path": "scripts\\generate_conformance_ledger.py",
+      "sha256": "3b31d5f6cddb860bb2bdfb83a1a4b299cd6b53fdcb873cadee590f983974f799"
+    },
+    {
+      "path": "scripts\\generate_release_minimum_manifest.py",
+      "sha256": "d728e7e4e3aa922b9bc6c09428bf6868b602144e4e9153e69a84ec3fafc55dd1"
+    }
+  ],
+  "recorded_at": "2026-08-12T04:13:49.309908Z",
+  "result": "passed",
+  "revision": "4c989f6c369436a35c751f1381609b04f8e6bac7",
+  "schema_version": 1
+}

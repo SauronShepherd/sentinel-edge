@@ -1,0 +1,62 @@
+{
+  "artifacts": [
+    {
+      "path": "qualification\\scope-freeze.json",
+      "sha256": "31d9467564e1d6cb4a7fbe5a2eb8f1899b40804119770f9f83ac85df5b33753a"
+    },
+    {
+      "path": "qualification\\deferred-debt-register.json",
+      "sha256": "4600d1f03f1eb914df7ed2f8b2bea6b40df5b3b1ac889279ec1255d4366984e7"
+    },
+    {
+      "path": "qualification\\residual-risk-register.json",
+      "sha256": "53177282149233228cc89ddbeedd9f0dbfe5b0b1612c90cd6a7610aea7508aef"
+    },
+    {
+      "path": "docs\\IMPLEMENTATION_STATUS.md",
+      "sha256": "636d814ce4859871d5b74abf3fb8b848d39d2d9061be7f8e20d18db7cafdf050"
+    }
+  ],
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q --tb=short -W error::pytest.PytestUnraisableExceptionWarning",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 323,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 354.1,
+  "environment": {
+    "name": "Windows 11 / Python 3.13.14 / local development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b7c72e22a43392d8e3a9975359952eb4f1e74300d7235095d38507583bb7d51d",
+  "inputs": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7668f665d154d3bb9604b1e38f8f29df218de53854cf95bd874d66e0dcc152f"
+    },
+    {
+      "path": "registries/requirements.yaml",
+      "sha256": "2a7880979726547cd029a89f97fd35ed50a58881c99a43de8fd8a8150f4b7b54"
+    },
+    {
+      "path": "architecture\\command-catalog.yaml",
+      "sha256": "8d7d670d6f8df46ecb91b92f87fc8ab19b4aa05116cbe178bab8d5bc3b09bbd8"
+    },
+    {
+      "path": "registries\\requirements.yaml",
+      "sha256": "8b91caf0b6c43e81c5f038f7ed8249b20baa6a14b3871b1fd9d484f15604b90c"
+    },
+    {
+      "path": "registries\\uncertainties.yaml",
+      "sha256": "25faf25260add3d8c1c2acef26b83ba61f2315767121820b202683b233841019"
+    }
+  ],
+  "recorded_at": "2026-08-12T05:25:20.910119Z",
+  "result": "passed",
+  "revision": "4c989f6c369436a35c751f1381609b04f8e6bac7",
+  "schema_version": 1
+}

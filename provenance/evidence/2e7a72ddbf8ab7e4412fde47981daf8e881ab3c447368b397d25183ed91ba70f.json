@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_privacy_backup_and_exports.py::test_export_manifest_is_closed_rights_aware_and_redacts_restricted_metadata tests/test_privacy_backup_and_exports.py::test_export_verifier_rejects_undeclared_member tests/test_privacy_backup_and_exports.py::test_finalized_export_manifest_hash_detects_tampering -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 10.2,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "2e7a72ddbf8ab7e4412fde47981daf8e881ab3c447368b397d25183ed91ba70f",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\exports\\service.py",
+      "sha256": "ea0b3174298addcab3b234dfad30aabb5b07874713a094ca021696b9d84d0fb6"
+    },
+    {
+      "path": "tests\\test_privacy_backup_and_exports.py",
+      "sha256": "c8e0124ddbf3dae275d94ae527ccd32c3e5e922b477271144cab000d45e852eb"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:13:15.682718Z",
+  "result": "passed",
+  "revision": "REQ-EVT-009 portable ZIP JSON media data closure",
+  "schema_version": 1
+}

@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_generation_policy.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.6,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "d713e17f11c66bae80db570f0a17a742c10126c419f956705bac4d5b1a0ad9f6",
+  "inputs": [
+    {
+      "path": "tests\\test_generation_policy.py",
+      "sha256": "b67b63c500835f594c08292ee451d5a8d1e5ce5c05ec57a4d3f433a922a3e1c1"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:24:55.395065Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

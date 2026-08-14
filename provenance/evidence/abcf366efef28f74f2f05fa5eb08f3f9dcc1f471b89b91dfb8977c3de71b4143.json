@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_client_localization_mobile.py tests/test_client_security.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.2,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "abcf366efef28f74f2f05fa5eb08f3f9dcc1f471b89b91dfb8977c3de71b4143",
+  "inputs": [
+    {
+      "path": "tests\\test_client_localization_mobile.py",
+      "sha256": "61fd3ef2868fe7cada74baa4ca7eda204a05c00679de934aced24d584202b29b"
+    },
+    {
+      "path": "tests\\test_client_security.py",
+      "sha256": "0edb71f7b39ba3a1cd27ba24b2640abfa4c364ab908acc23089c350745998dd9"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:27:30.991405Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

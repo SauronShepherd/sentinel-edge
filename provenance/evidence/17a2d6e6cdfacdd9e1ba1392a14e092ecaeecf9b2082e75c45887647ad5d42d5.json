@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_transform_pin_manifest.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "17a2d6e6cdfacdd9e1ba1392a14e092ecaeecf9b2082e75c45887647ad5d42d5",
+  "inputs": [
+    {
+      "path": "tests\\test_transform_pin_manifest.py",
+      "sha256": "218e2eb19b598bafe8695612d8ea6639b2c734034f308a326be42edd90128afc"
+    },
+    {
+      "path": "src\\sentinel_edge\\geospatial\\pin_manifest.py",
+      "sha256": "3ed278586eb5b7f7a4f797b8dfbe2e6102bfdd6afa7ddef52006d6bca7f73831"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:23:45.840306Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-grp001",
+  "schema_version": 1
+}

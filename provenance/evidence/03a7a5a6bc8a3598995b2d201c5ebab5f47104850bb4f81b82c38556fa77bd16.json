@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7668f665d154d3bb9604b1e38f8f29df218de53854cf95bd874d66e0dcc152f"
+    }
+  ],
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q tests/governance --tb=short",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 16,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.9,
+  "environment": {
+    "name": "development-windows-python313",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "03a7a5a6bc8a3598995b2d201c5ebab5f47104850bb4f81b82c38556fa77bd16",
+  "inputs": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7668f665d154d3bb9604b1e38f8f29df218de53854cf95bd874d66e0dcc152f"
+    },
+    {
+      "path": "registries\\requirements.yaml",
+      "sha256": "8b91caf0b6c43e81c5f038f7ed8249b20baa6a14b3871b1fd9d484f15604b90c"
+    }
+  ],
+  "recorded_at": "2026-08-12T03:21:45.351884Z",
+  "result": "passed",
+  "revision": "4c989f6c369436a35c751f1381609b04f8e6bac7",
+  "schema_version": 1
+}

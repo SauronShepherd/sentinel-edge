@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_privacy_backup_and_exports.py::test_export_manifest_is_closed_rights_aware_and_redacts_restricted_metadata -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 13.0,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "b76bbf9d5f28ee66e28f24e11117b15b6324f77655af8f026f3bd42cc2f4f706",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\exports\\service.py",
+      "sha256": "ea0b3174298addcab3b234dfad30aabb5b07874713a094ca021696b9d84d0fb6"
+    },
+    {
+      "path": "tests\\test_privacy_backup_and_exports.py",
+      "sha256": "f8dcdf98d7d1d5a717ad284060f3f8cd8a1d10aaabab06f58023d36e5c58de19"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:20:07.037127Z",
+  "result": "passed",
+  "revision": "REQ-EXP-002 derived export parent hash and transformation list",
+  "schema_version": 1
+}

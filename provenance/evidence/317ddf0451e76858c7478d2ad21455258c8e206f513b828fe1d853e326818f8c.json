@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_location_trust.py tests/test_collaboration_policy.py tests/test_collaboration_config.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 10,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 2.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "317ddf0451e76858c7478d2ad21455258c8e206f513b828fe1d853e326818f8c",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collaboration\\privacy.py",
+      "sha256": "494275e99a381415d8b3fbee0411cf88352a8a3429ab72c0e4bb7089142b44db"
+    },
+    {
+      "path": "tests\\test_location_trust.py",
+      "sha256": "7ddb6412725b5c17e1605961133503cdae0e355630b63e6b4d3f349b12fd61af"
+    },
+    {
+      "path": "tests\\test_collaboration_policy.py",
+      "sha256": "1981cd276e76125991348afc616fbde9acdade6a7c6e63f312f91f415241656c"
+    },
+    {
+      "path": "tests\\test_collaboration_config.py",
+      "sha256": "ca5791276f05c3cf2972f922dcdc98641b0742b5917eefacdf4d85ae226433f3"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:53:48.636488Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

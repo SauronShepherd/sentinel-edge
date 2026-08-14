@@ -1,0 +1,45 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_privacy_backup_and_exports.py tests/test_storage_backup_and_spool.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 16,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 24.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "f3d0f6ce6ab45c4d2820f38ed8aa840569d8887081900c82fcea2d6d03df9a40",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\storage\\backup.py",
+      "sha256": "f8a595c6e306511d0b9d2f2c95d2845397c9796affda71b3fe5d6da77c096432"
+    },
+    {
+      "path": "src\\sentinel_edge\\privacy\\closure.py",
+      "sha256": "23419274c85e88a24785625e670f573cb0f5ccaead71ccc7b83d260d6c3d8907"
+    },
+    {
+      "path": "src\\sentinel_edge\\privacy\\tombstones.py",
+      "sha256": "d20f52dda24df1d634af138fea9858bfe954189edde9502ea59b7cd1e6571193"
+    },
+    {
+      "path": "tests\\test_privacy_backup_and_exports.py",
+      "sha256": "c1bfa9447440916a645973c28419a88558fbc3c126f46330eb8dd7d125ccab46"
+    },
+    {
+      "path": "tests\\test_storage_backup_and_spool.py",
+      "sha256": "569a736827c63be3077dbfd4306a192bc33e3b9255fcfb973a2a2ad769336b0c"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:24:34.083465Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,46 @@
+{
+  "blocking_findings": [],
+  "completeness": "bounded_or_unknown",
+  "conflicts": [],
+  "generated_at": "2026-08-13T16:48:17.402360+00:00",
+  "limitations": [
+    "A bounded or fixture advisory snapshot cannot prove absence of vulnerabilities.",
+    "Package-name/version matching does not prove reachability; exact platform and feature predicates remain visible."
+  ],
+  "matches": [],
+  "observations_count": 0,
+  "release_eligible": false,
+  "schema": "sentinel-edge-security-advisory-review/1.0",
+  "source_states": [
+    {
+      "completeness": "bounded_snapshot",
+      "snapshot_sha256": "024b960c96e0f3c82a2993e6304bfb5b8e4d5b4291c9b7fb55585266bc0729a0",
+      "source": "osv-bounded-snapshot",
+      "source_class": "osv",
+      "source_mode": "fixture"
+    },
+    {
+      "completeness": "bounded_snapshot",
+      "snapshot_sha256": "10830b187fe43116a46d7a800df4d89b3130aec02fdfa4192d1b1a3817ca6077",
+      "source": "github_advisory-bounded-snapshot",
+      "source_class": "github_advisory",
+      "source_mode": "fixture"
+    },
+    {
+      "completeness": "bounded_snapshot",
+      "snapshot_sha256": "e37cf0bd3dee21c9037c316b4f4daaf43c2625a0987bf79fa38360badc4797b7",
+      "source": "cisa_kev-bounded-snapshot",
+      "source_class": "cisa_kev",
+      "source_mode": "fixture"
+    },
+    {
+      "completeness": "bounded_snapshot",
+      "snapshot_sha256": "0b3c772ae334490c01e2f932d1c52dbd85bc0ceb89b44d2b245a0a218755d3a7",
+      "source": "vendor-bounded-snapshot",
+      "source_class": "vendor",
+      "source_mode": "fixture"
+    }
+  ],
+  "subject_digest": "13e4a3e49e9a5f59f4cd1674f15199e349e5bab761d835c38d1c330af74a11fc",
+  "vex_decisions": []
+}

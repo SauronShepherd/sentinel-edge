@@ -1,0 +1,9 @@
+{
+  "receipt_id": "d65612d85d431811ff62ebcbed78aacdb4da8c6dfcd7cfb039adca549d06e72f",
+  "requirement_ids": ["REQ-EQ-007"],
+  "changed_paths": ["src/sentinel_edge/qualification/post_event.py", "tests/test_post_event_corroboration.py", "tests/test_multi_node_correlation.py", "tests/test_earthquake_hard_negatives.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_post_event_corroboration.py tests/test_multi_node_correlation.py tests/test_earthquake_hard_negatives.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

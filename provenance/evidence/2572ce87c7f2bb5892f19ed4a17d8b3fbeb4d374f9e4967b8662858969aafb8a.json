@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_time_faults.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "2572ce87c7f2bb5892f19ed4a17d8b3fbeb4d374f9e4967b8662858969aafb8a",
+  "inputs": [
+    {
+      "path": "tests\\test_time_faults.py",
+      "sha256": "262fc4a9ef9a4d50d7ea9030719b9c793bd0a7a0f9332f35fd338c7e404d93d8"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\time_faults.py",
+      "sha256": "864527e85813def824b05569059a7db0e07df883fa7a5f18a9e7fd4347228b12"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:05:56.013849Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-cts007",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_risk_calibration.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "10f02b6e7cfa776b474ba3852dca296eb5cd4d72eacd47193190a2cd32adc0c3",
+  "inputs": [
+    {
+      "path": "tests\\test_risk_calibration.py",
+      "sha256": "cb5965ed06b86413c237572ec2628387b910a75e91ea9037a75ef08d27b117e7"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\risk_calibration.py",
+      "sha256": "8603a39a51a9caa6281bde107266a91c0dc931d4ca28664d0159897c1ddf7631"
+    }
+  ],
+  "recorded_at": "2026-08-13T14:07:19.054897Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-drf006",
+  "schema_version": 1
+}

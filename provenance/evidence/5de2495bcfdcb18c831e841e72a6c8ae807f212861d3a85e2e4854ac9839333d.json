@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_cap_test_drafts.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 9.7,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5de2495bcfdcb18c831e841e72a6c8ae807f212861d3a85e2e4854ac9839333d",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\exports\\cap.py",
+      "sha256": "671a734d384c821c8ac3c51b976323563d16c250d63d8c76cfa3a39edef881ef"
+    },
+    {
+      "path": "tests\\test_cap_test_drafts.py",
+      "sha256": "642cb94f90baa95df12a0817f62055926fb5fe29099152028ddd62493faf0dbc"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:14:45.165096Z",
+  "result": "passed",
+  "revision": "REQ-EVT-010 CAP 1.2 Test draft cannot auto-send",
+  "schema_version": 1
+}

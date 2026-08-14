@@ -1,0 +1,81 @@
+{
+  "allowed_custom_domains": [],
+  "allowed_external_data": [],
+  "allowed_operators": {
+    "ai.onnx": [
+      "MatMul",
+      "Sigmoid"
+    ]
+  },
+  "allowed_opsets": {
+    "ai.onnx": [
+      18,
+      18
+    ]
+  },
+  "control_flow_allowed": false,
+  "created_at": "2026-08-03T08:10:00Z",
+  "custom_op_libraries": [],
+  "expected_execution_provider": "CPUExecutionProvider",
+  "expires_at": "2026-09-02T08:10:00Z",
+  "external_data_allowed": false,
+  "fallback_allowed": false,
+  "inputs": [
+    {
+      "dimensions": [
+        {
+          "maximum": 8,
+          "minimum": 1,
+          "symbol": "N"
+        },
+        {
+          "maximum": 3,
+          "minimum": 3,
+          "symbol": null
+        }
+      ],
+      "dtype": "float32",
+      "maximum_bytes": 96,
+      "maximum_elements": 24,
+      "name": "features",
+      "rank": 2
+    }
+  ],
+  "model_format": "onnx",
+  "model_path": "model.onnx",
+  "model_sha256": "77548a15c78d2bda62f8f293a661ca9f3086dc7a25e0c5675b46d8a7e6e2c78f",
+  "outputs": [
+    {
+      "dimensions": [
+        {
+          "maximum": 8,
+          "minimum": 1,
+          "symbol": "N"
+        },
+        {
+          "maximum": 1,
+          "minimum": 1,
+          "symbol": null
+        }
+      ],
+      "dtype": "float32",
+      "maximum_bytes": 32,
+      "maximum_elements": 8,
+      "name": "score",
+      "rank": 2
+    }
+  ],
+  "package_files": [
+    {
+      "bytes": 132,
+      "path": "model.onnx",
+      "sha256": "77548a15c78d2bda62f8f293a661ca9f3086dc7a25e0c5675b46d8a7e6e2c78f"
+    }
+  ],
+  "package_id": "seismic-onnx-development-v1",
+  "plugin_execution_providers": [],
+  "python_ops_allowed": false,
+  "release_root": "artifacts/release-models/seismic-onnx-development",
+  "runtime_extensions": [],
+  "schema": "sentinel-edge-model-package-manifest/1.0"
+}

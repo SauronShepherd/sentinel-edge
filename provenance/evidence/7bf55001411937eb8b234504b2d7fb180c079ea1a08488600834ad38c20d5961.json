@@ -1,0 +1,9 @@
+{
+  "receipt_id": "7bf55001411937eb8b234504b2d7fb180c079ea1a08488600834ad38c20d5961",
+  "requirement_ids": ["REQ-INT-003"],
+  "changed_paths": ["src/sentinel_edge/geospatial/exchange.py", "tests/test_geojson_exchange.py", "tests/test_geospatial_contracts.py", "tests/test_observation_contract_adapters.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_geojson_exchange.py tests/test_geospatial_contracts.py tests/test_observation_contract_adapters.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

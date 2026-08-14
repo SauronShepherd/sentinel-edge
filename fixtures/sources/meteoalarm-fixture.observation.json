@@ -1,0 +1,13 @@
+{
+  "authenticated": false,
+  "authorization_scope_sha256": null,
+  "cache_context_sha256": null,
+  "generation_id": "fixture-generation-1",
+  "license_id": "fixture-internal",
+  "observed_at": "2026-08-02T12:00:00+00:00",
+  "reachable": true,
+  "schema_version": "1.0.0",
+  "source_event_at": "2026-08-02T11:59:55+00:00",
+  "source_id": "meteoalarm-fixture",
+  "terms_revision": "fixture-2026-08-02"
+}

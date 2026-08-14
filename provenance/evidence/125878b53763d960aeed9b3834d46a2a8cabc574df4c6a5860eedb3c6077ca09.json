@@ -1,0 +1,24 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe scripts/dev.py claims",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 8.0,
+  "environment": {
+    "name": "development-plus-emulation-profile",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "125878b53763d960aeed9b3834d46a2a8cabc574df4c6a5860eedb3c6077ca09",
+  "inputs": [],
+  "recorded_at": "2026-08-13T09:39:53.485447Z",
+  "result": "passed",
+  "revision": "H0-EMULATED-AARCH64-20260813",
+  "schema_version": 1
+}

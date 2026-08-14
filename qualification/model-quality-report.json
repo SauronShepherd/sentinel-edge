@@ -1,0 +1,24 @@
+{
+  "abstention_rate": 0.0,
+  "claim_sample_count": 4,
+  "dataset_integrity_match": true,
+  "evaluated_at": "2026-08-02T17:49:52.985833Z",
+  "false_alarm_rate": 0.0,
+  "final_claim_set_frozen": true,
+  "graph_quarantine_passed": true,
+  "known_answer_integrity_match": true,
+  "known_answer_passed": true,
+  "manifest_sha256": "aec7cb204ea5ab562c02861b586f74607c975e9f56c041569893c1d5b1e58318",
+  "model_id": "wildfire-smoke-linear-v1",
+  "model_integrity_match": true,
+  "quality_guardrails_passed": true,
+  "reason_codes": [
+    "model_quality_development_passed"
+  ],
+  "recall": 1.0,
+  "sample_count": 12,
+  "schema_version": "1.0.0",
+  "split_leakage_detected": false,
+  "state": "tested",
+  "target_qualified": false
+}

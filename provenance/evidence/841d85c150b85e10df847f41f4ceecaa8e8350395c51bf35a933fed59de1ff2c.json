@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_upload_admission.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "841d85c150b85e10df847f41f4ceecaa8e8350395c51bf35a933fed59de1ff2c",
+  "inputs": [
+    {
+      "path": "tests\\test_upload_admission.py",
+      "sha256": "4a803ae0a36870fa348948d480fa1eafa27ebef8896c912b2934be4930e8ca3f"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\upload_admission.py",
+      "sha256": "038ac3186ebc0f85c4adb4952a49903e3cbadf4961e477b9c7c20ccb783aea96"
+    },
+    {
+      "path": "src\\sentinel_edge\\qualification\\upload_grants.py",
+      "sha256": "e17b18aeb75b5c0081c476234fdcef5e9f91beb3fcdf7812b8d0233bf4e87212"
+    }
+  ],
+  "recorded_at": "2026-08-13T12:07:56.504833Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-upl001",
+  "schema_version": 1
+}

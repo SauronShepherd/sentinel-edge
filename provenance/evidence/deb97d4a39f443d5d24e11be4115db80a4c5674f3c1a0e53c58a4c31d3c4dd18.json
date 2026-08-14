@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "docs\\IMPLEMENTATION_STATUS.md",
+      "sha256": "7099278989b59d775f5d06f380fbd3ffc7106302eaad63e8d22fea19695435ba"
+    }
+  ],
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q --tb=short -W error::pytest.PytestUnraisableExceptionWarning",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 0,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 372.1,
+  "environment": {
+    "name": "Windows 11 / Python 3.13.14 / local development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "deb97d4a39f443d5d24e11be4115db80a4c5674f3c1a0e53c58a4c31d3c4dd18",
+  "inputs": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "c7668f665d154d3bb9604b1e38f8f29df218de53854cf95bd874d66e0dcc152f"
+    },
+    {
+      "path": "registries/requirements.yaml",
+      "sha256": "2a7880979726547cd029a89f97fd35ed50a58881c99a43de8fd8a8150f4b7b54"
+    }
+  ],
+  "recorded_at": "2026-08-12T04:45:50.215357Z",
+  "result": "passed",
+  "revision": "HEAD",
+  "schema_version": 1
+}

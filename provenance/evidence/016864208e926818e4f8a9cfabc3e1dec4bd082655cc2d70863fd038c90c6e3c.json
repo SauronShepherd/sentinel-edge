@@ -1,0 +1,24 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe scripts/dev.py gates",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 17,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 147.0,
+  "environment": {
+    "name": "development-plus-emulation-profile",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "016864208e926818e4f8a9cfabc3e1dec4bd082655cc2d70863fd038c90c6e3c",
+  "inputs": [],
+  "recorded_at": "2026-08-13T09:45:13.188712Z",
+  "result": "passed",
+  "revision": "H0-EMULATED-AARCH64-20260813",
+  "schema_version": 1
+}

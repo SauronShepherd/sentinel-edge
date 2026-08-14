@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_source_attribution.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 6.5,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "3b9c7fb2fafeae6a8e08e69b1f8236f4108a8f8cbe71de8a9019eaba2471e594",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\sources.py",
+      "sha256": "4e6f513a085ae7893f5dcf65979ba157932e7de19a061fc0f2aa4d1322cb2fdc"
+    },
+    {
+      "path": "tests\\test_source_attribution.py",
+      "sha256": "32792f488d8a548ed7e3eb64c63af7cc8b3de8e019340d2a135e7b4947bdb841"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:36:37.424682Z",
+  "result": "passed",
+  "revision": "REQ-DAT-005 source attribution and license in Source Health",
+  "schema_version": 1
+}

@@ -1,0 +1,9 @@
+{
+  "receipt_id": "8de30e9d447dcec726bcfb00a853d2fbad1b6236482eaa1bcb000c4ccbfbab05",
+  "requirement_ids": ["REQ-INT-002"],
+  "changed_paths": ["src/sentinel_edge/integrations/sensorthings.py", "tests/test_sensorthings_export.py", "tests/test_observation_contract_adapters.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_sensorthings_export.py tests/test_observation_contract_adapters.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

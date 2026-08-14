@@ -1,0 +1,13 @@
+{
+  "abstain_margin": 0.03,
+  "bias": -4.0,
+  "external_data": false,
+  "schema": "sentinel-linear-model/1.0",
+  "threshold": 0.6,
+  "type": "linear_sigmoid",
+  "weights": {
+    "haze_ratio": 2.0,
+    "smoke_texture": 6.0,
+    "upward_motion": 2.0
+  }
+}

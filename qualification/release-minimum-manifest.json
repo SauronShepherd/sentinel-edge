@@ -1,0 +1,5574 @@
+{
+  "automatic_cut": {
+    "open_count": 0,
+    "reason_codes": [],
+    "release_admitted": true,
+    "status": "clear"
+  },
+  "closed_count": 240,
+  "contract_version": "0.22.0",
+  "critical_path": {
+    "items": [],
+    "open_requirement_ids": [],
+    "status": "complete"
+  },
+  "mapping_failures": [],
+  "open_count": 0,
+  "profile": "H0",
+  "release_admitted": true,
+  "release_profile": "H0-EMULATED-AARCH64-20260813",
+  "requirement_count": 240,
+  "requirement_registry_sha256": "3e17d22c23e01b0723c61f60abc131b42517f406ff49e6a6d42ddd337e79e300",
+  "rows": [
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [
+        "761dc7474d1899c2aa6d383f577bc144f5078aba7bd5e2afc0a6f15b58aaec1"
+      ],
+      "gates": [
+        "e2e",
+        "integration",
+        "static"
+      ],
+      "implementation": [
+        "TASK-001"
+      ],
+      "owner": "workstream-10-01",
+      "requirement_id": "REQ-PLT-001",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-PLT-001] Run in the declared 64-bit Arm Linux emulation profile (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-PLT-001-EMULATED-ARM64"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration",
+        "static"
+      ],
+      "implementation": [
+        "TASK-001"
+      ],
+      "owner": "workstream-10-01",
+      "requirement_id": "REQ-PLT-002",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-PLT-002] Provide no-hardware fixture mode (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-001",
+        "TEST-097",
+        "TEST-PLT-002-FIXTURE-SCENARIO"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [
+        "06591805fd36565080532f28637283a8006379b87e9038b45e5c96981eb08572"
+      ],
+      "gates": [
+        "e2e",
+        "integration",
+        "static"
+      ],
+      "implementation": [
+        "TASK-001"
+      ],
+      "owner": "workstream-10-01",
+      "requirement_id": "REQ-PLT-003",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-PLT-003] Provide at least one deterministic simulated camera or IMU signal path through the normal observation contract (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-PLT-003-SIMULATED-SIGNAL"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-PLT-004-local-operation",
+      "evidence": [
+        "1a83459af79e41d659e78f0647a5fa5c1a5c31fa12f12b92e253b48b69142556"
+      ],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-001"
+      ],
+      "owner": "workstream-10-01",
+      "requirement_id": "REQ-PLT-004",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-PLT-004] Operate locally without internet (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-PLT-004-LOCAL-CONTINUITY"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-001"
+      ],
+      "owner": "workstream-10-01",
+      "requirement_id": "REQ-PLT-005",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-PLT-005] Use a public MIT or Apache-2.0 repository (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-001",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-001"
+      ],
+      "owner": "workstream-10-01",
+      "requirement_id": "REQ-PLT-006",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-PLT-006] Include deterministic setup and doctor commands (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-001",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-001"
+      ],
+      "owner": "workstream-10-01",
+      "requirement_id": "REQ-PLT-007",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-PLT-007] Document significant hackathon-period work (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-001",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-001"
+      ],
+      "owner": "workstream-10-01",
+      "requirement_id": "REQ-PLT-008",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-PLT-008] Label live, cached, simulated and fixture data (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-001",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-002"
+      ],
+      "owner": "workstream-10-02",
+      "requirement_id": "REQ-IN-001",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-IN-001] Ingest camera, video fixture or RTSP source (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-002",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-002"
+      ],
+      "owner": "workstream-10-02",
+      "requirement_id": "REQ-IN-002",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-IN-002] Ingest IMU stream or waveform fixture (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-002",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-002"
+      ],
+      "owner": "workstream-10-02",
+      "requirement_id": "REQ-IN-003",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-IN-003] Ingest rainfall and water-level stream/fixture (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-002",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-002"
+      ],
+      "owner": "workstream-10-02",
+      "requirement_id": "REQ-IN-004",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-IN-004] Ingest soil moisture, tilt and vibration (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-002",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-002"
+      ],
+      "owner": "workstream-10-02",
+      "requirement_id": "REQ-IN-005",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-IN-005] Validate sequence and timestamp order (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-002",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-002"
+      ],
+      "owner": "workstream-10-02",
+      "requirement_id": "REQ-IN-006",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-IN-006] Detect frozen, missing and implausible values (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-002",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-002"
+      ],
+      "owner": "workstream-10-02",
+      "requirement_id": "REQ-IN-007",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-IN-007] Preserve units and conversion provenance (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-002",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-002"
+      ],
+      "owner": "workstream-10-02",
+      "requirement_id": "REQ-IN-010",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-IN-010] Use bounded ring buffers (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-002",
+        "TEST-097",
+        "TEST-IN-010-RING-BUFFER"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-001",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-001] Register criticality, period, deadline and maximum deferral (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-002",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-002] Reserve capacity for seismic processing (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-003",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-003] Prevent indefinite wildfire gating (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-004",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-004] Prevent flood/landslide starvation (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-005",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-005] Reallocate cadence from fresh evidence/context (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-006",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-006] Run only prevalidated model profiles (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-007",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-007] React to thermal pressure (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-008",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-008] Declare overload when guarantees fail (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-009",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-009] Show active, queued, sleeping and deferred jobs (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-003"
+      ],
+      "owner": "workstream-10-03",
+      "requirement_id": "REQ-ORC-010",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-ORC-010] Support deterministic benchmark mode (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-003",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-004"
+      ],
+      "owner": "workstream-10-04",
+      "requirement_id": "REQ-WF-001",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-WF-001] Measure camera health (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-004",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-004"
+      ],
+      "owner": "workstream-10-04",
+      "requirement_id": "REQ-WF-002",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-WF-002] Run tiny Stage-1 classifier (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-004",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-004"
+      ],
+      "owner": "workstream-10-04",
+      "requirement_id": "REQ-WF-003",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-WF-003] Run stronger Stage-2 detector (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-004",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-004"
+      ],
+      "owner": "workstream-10-04",
+      "requirement_id": "REQ-WF-004",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-WF-004] Require temporal persistence (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-004",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-004"
+      ],
+      "owner": "workstream-10-04",
+      "requirement_id": "REQ-WF-005",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-WF-005] Retain pre/post-trigger clip (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-004",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-004"
+      ],
+      "owner": "workstream-10-04",
+      "requirement_id": "REQ-WF-006",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-WF-006] Support abstention (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-004",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-004"
+      ],
+      "owner": "workstream-10-04",
+      "requirement_id": "REQ-WF-008",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-WF-008] Avoid exact monocular geolocation (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-004",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-005"
+      ],
+      "owner": "workstream-10-05",
+      "requirement_id": "REQ-FL-001",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-FL-001] Show observed level and rate of rise (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-005",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-005"
+      ],
+      "owner": "workstream-10-05",
+      "requirement_id": "REQ-FL-002",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-FL-002] Apply configurable sensor thresholds (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-005",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-005"
+      ],
+      "owner": "workstream-10-05",
+      "requirement_id": "REQ-FL-005",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-FL-005] Fall back to deterministic rules (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-005",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-005"
+      ],
+      "owner": "workstream-10-05",
+      "requirement_id": "REQ-FL-006",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-FL-006] Use missing-data masks (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-005",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-005"
+      ],
+      "owner": "workstream-10-05",
+      "requirement_id": "REQ-FL-007",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-FL-007] Separate susceptibility from observation (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-005",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-006"
+      ],
+      "owner": "workstream-10-06",
+      "requirement_id": "REQ-EQ-001",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EQ-001] Process continuous fixed-rate IMU windows (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-006",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-006"
+      ],
+      "owner": "workstream-10-06",
+      "requirement_id": "REQ-EQ-002",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EQ-002] Apply low-cost deterministic trigger (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-006",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-006"
+      ],
+      "owner": "workstream-10-06",
+      "requirement_id": "REQ-EQ-003",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EQ-003] Run tiny INT8 1D classifier (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-006",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-006"
+      ],
+      "owner": "workstream-10-06",
+      "requirement_id": "REQ-EQ-005",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EQ-005] Store raw event waveform (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-006",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-006"
+      ],
+      "owner": "workstream-10-06",
+      "requirement_id": "REQ-EQ-008",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EQ-008] Never claim prediction (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-006",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-006"
+      ],
+      "owner": "workstream-10-06",
+      "requirement_id": "REQ-EQ-009",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EQ-009] Show clock health (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-006",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-007"
+      ],
+      "owner": "workstream-10-07",
+      "requirement_id": "REQ-LS-001",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-LS-001] Calculate rainfall accumulation windows (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-007",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-007"
+      ],
+      "owner": "workstream-10-07",
+      "requirement_id": "REQ-LS-003",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-LS-003] Detect tilt or vibration anomaly (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-007",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-007"
+      ],
+      "owner": "workstream-10-07",
+      "requirement_id": "REQ-LS-005",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-LS-005] Separate susceptibility from movement (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-007",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-007"
+      ],
+      "owner": "workstream-10-07",
+      "requirement_id": "REQ-LS-006",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-LS-006] Increase cadence after rain/seismic context (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-007",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-007"
+      ],
+      "owner": "workstream-10-07",
+      "requirement_id": "REQ-LS-010",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-LS-010] Avoid imminent-landslide language (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-007",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-008"
+      ],
+      "owner": "workstream-10-08",
+      "requirement_id": "REQ-EVT-001",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EVT-001] Use hazard-specific event IDs/states (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-008",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-008"
+      ],
+      "owner": "workstream-10-08",
+      "requirement_id": "REQ-EVT-003",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EVT-003] Preserve model/config/source lineage (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-008",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-008"
+      ],
+      "owner": "workstream-10-08",
+      "requirement_id": "REQ-EVT-004",
+      "slice": [
+        "ITER-001"
+      ],
+      "statement": "[FR-EVT-004] Allow confirm/reject/uncertain/control labels (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-008",
+        "TEST-097"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-009"
+      ],
+      "owner": "workstream-10-09",
+      "requirement_id": "REQ-DAT-002",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-DAT-002] Enforce TTL in decision logic (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-009",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-009"
+      ],
+      "owner": "workstream-10-09",
+      "requirement_id": "REQ-DAT-006",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-DAT-006] Bundle legal fixtures (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-009",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-009"
+      ],
+      "owner": "workstream-10-09",
+      "requirement_id": "REQ-DAT-008",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-DAT-008] Distinguish authority and source role (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-009",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-010"
+      ],
+      "owner": "workstream-10-10",
+      "requirement_id": "REQ-UX-001",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-UX-001] Show four hazard cards together (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-010",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-010"
+      ],
+      "owner": "workstream-10-10",
+      "requirement_id": "REQ-UX-002",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-UX-002] Show system health separately (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-010",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-010"
+      ],
+      "owner": "workstream-10-10",
+      "requirement_id": "REQ-UX-003",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-UX-003] Visualize scheduler activity (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-010",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-010"
+      ],
+      "owner": "workstream-10-10",
+      "requirement_id": "REQ-UX-004",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-UX-004] Explain every state change (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-010",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-010"
+      ],
+      "owner": "workstream-10-10",
+      "requirement_id": "REQ-UX-005",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-UX-005] Show missing/stale signals (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-010",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-010"
+      ],
+      "owner": "workstream-10-10",
+      "requirement_id": "REQ-UX-010",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-UX-010] Show persistent research warning (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-010",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-001",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-001] Compare the naive fixed-rate B0 reference; FP32 applies to learned workloads only (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-002",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-002] Compare optimized-model fixed-rate B1 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-003",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-003] Compare orchestrated O1 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-004",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-004] Measure stage and end-to-end latency (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-005",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-005] Measure deadlines and misses (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-006",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-006] Measure model size, RSS, CPU and temperature (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-007",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-007] Report hazard-specific quality (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-BEN-008-energy-disclosure",
+      "evidence": [
+        "1f2e7f2fcad2bbc683b4580f6e744ee12694acf8833bfae5f1fa3e42de47db9c"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-008",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-008] Measure energy externally (SHOULD; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-BEN-008-ENERGY-DISCLOSURE"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-009",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-009] Use warm-up, repeats and steady state (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-011"
+      ],
+      "owner": "workstream-10-11",
+      "requirement_id": "REQ-BEN-010",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-BEN-010] Separate targets from results (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-011",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-SCN-001-signed-manifest",
+      "evidence": [
+        "689a443229cc2c07c9a02f9cdeef584780be11339f1b3a9e008d54c0056b6914"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-016"
+      ],
+      "owner": "workstream-10-16",
+      "requirement_id": "REQ-SCN-001",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-SCN-001] Run all acceptance scenarios from signed manifests (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-SCN-001-SIGNED-MANIFEST"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-016"
+      ],
+      "owner": "workstream-10-16",
+      "requirement_id": "REQ-SCN-002",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-SCN-002] Emit normal observation/source contracts (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-016",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-016"
+      ],
+      "owner": "workstream-10-16",
+      "requirement_id": "REQ-SCN-005",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-SCN-005] Prevent live network access in benchmark mode (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-016",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-016"
+      ],
+      "owner": "workstream-10-16",
+      "requirement_id": "REQ-CLM-001",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-CLM-001] Classify every headline value as measured, replayed, simulated, target or research (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-016",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-016"
+      ],
+      "owner": "workstream-10-16",
+      "requirement_id": "REQ-CLM-002",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-CLM-002] Resolve measured claims to raw artifacts and exact capability/config/model hashes (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-016",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-016"
+      ],
+      "owner": "workstream-10-16",
+      "requirement_id": "REQ-CLM-003",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-CLM-003] Generate release charts/tables from the Claim Registry (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-016",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-016"
+      ],
+      "owner": "workstream-10-16",
+      "requirement_id": "REQ-CLM-004",
+      "slice": [
+        "ITER-002"
+      ],
+      "statement": "[FR-CLM-004] Show absolute values with percentage deltas (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-016",
+        "TEST-098"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-017"
+      ],
+      "owner": "workstream-10-17",
+      "requirement_id": "REQ-REC-002",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-REC-002] Establish boot IDs, sequences and event-time watermarks before fresh escalation (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-017",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-019"
+      ],
+      "owner": "workstream-10-19",
+      "requirement_id": "REQ-RUN-001",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-RUN-001] Exclude the removed ArmNN EP (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-019",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-019"
+      ],
+      "owner": "workstream-10-19",
+      "requirement_id": "REQ-RUN-002",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-RUN-002] Benchmark a pinned released CPU EP/MLAS path (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-019",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-019"
+      ],
+      "owner": "workstream-10-19",
+      "requirement_id": "REQ-RUN-006",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-RUN-006] Make no SVE/SME/SME2 claim on Raspberry Pi 5 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-019",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-020"
+      ],
+      "owner": "workstream-10-20",
+      "requirement_id": "REQ-OPP-001",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-OPP-001] Record every eligible observation opportunity before the scheduler acts (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-020",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-020"
+      ],
+      "owner": "workstream-10-20",
+      "requirement_id": "REQ-OPP-002",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-OPP-002] Report O1 online quality using only work performed during the timed run (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-020",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-INTF-001-pairwise-report",
+      "evidence": [
+        "dff62bf8b1422d3b1796ad370a4f4a86c6b6d918e8b1a6113d058eb9a9810ca7"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-020"
+      ],
+      "owner": "workstream-10-20",
+      "requirement_id": "REQ-INTF-001",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-INTF-001] Measure hero workloads alone and with declared co-runners (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-INTF-001-PAIRWISE-REPORT"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-020"
+      ],
+      "owner": "workstream-10-20",
+      "requirement_id": "REQ-INTF-002",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-INTF-002] Treat unknown Tier A interference conservatively (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-020",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-020"
+      ],
+      "owner": "workstream-10-20",
+      "requirement_id": "REQ-OBS-001",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-OBS-001] Use identical release instrumentation in B0/B1/O1 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-020",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-021"
+      ],
+      "owner": "workstream-10-21",
+      "requirement_id": "REQ-TRU-002",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-TRU-002] Load only manifest-approved models from a read-only release location (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-021",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-021"
+      ],
+      "owner": "workstream-10-21",
+      "requirement_id": "REQ-TRU-003",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-TRU-003] Verify runtime/model/config/fixture identities before Judge/benchmark mode (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-021",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-022"
+      ],
+      "owner": "workstream-10-22",
+      "requirement_id": "REQ-PWR-001",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-PWR-001] Show under-voltage, frequency-cap and throttling health separately from temperature (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-022",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-022"
+      ],
+      "owner": "workstream-10-22",
+      "requirement_id": "REQ-PWR-002",
+      "slice": [
+        "ITER-003"
+      ],
+      "statement": "[FR-PWR-002] Invalidate measured runs under current under-voltage/frequency capping (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-022",
+        "TEST-099"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-030"
+      ],
+      "owner": "workstream-10-30",
+      "requirement_id": "REQ-HOST-001",
+      "slice": [
+        "ITER-004"
+      ],
+      "statement": "[FR-HOST-001] Record CPU governor/frequency, kernel, IRQ/cpuset placement, provider threads, background services and page-cache condition (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-030",
+        "TEST-100"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-030"
+      ],
+      "owner": "workstream-10-30",
+      "requirement_id": "REQ-HOST-002",
+      "slice": [
+        "ITER-004"
+      ],
+      "statement": "[FR-HOST-002] Enforce benchmark network denial below the application layer (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-030",
+        "TEST-100"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-030"
+      ],
+      "owner": "workstream-10-30",
+      "requirement_id": "REQ-HOST-003",
+      "slice": [
+        "ITER-004"
+      ],
+      "statement": "[FR-HOST-003] Define an idle/noise envelope and pre-run qualification (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-030",
+        "TEST-100"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-031"
+      ],
+      "owner": "workstream-10-31",
+      "requirement_id": "REQ-CNF-001",
+      "slice": [
+        "ITER-004"
+      ],
+      "statement": "[FR-CNF-001] Publish a machine-readable conformance ledger (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-031",
+        "TEST-100"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-031"
+      ],
+      "owner": "workstream-10-31",
+      "requirement_id": "REQ-CNF-002",
+      "slice": [
+        "ITER-004"
+      ],
+      "statement": "[FR-CNF-002] Prevent specified-only features from appearing as completed (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-031",
+        "TEST-100"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-031"
+      ],
+      "owner": "workstream-10-31",
+      "requirement_id": "REQ-CNF-003",
+      "slice": [
+        "ITER-004"
+      ],
+      "statement": "[FR-CNF-003] Freeze `H0` scope and runtime/model/source candidates on declared dates (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-031",
+        "TEST-100"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-031"
+      ],
+      "owner": "workstream-10-31",
+      "requirement_id": "REQ-CNF-004",
+      "slice": [
+        "ITER-004"
+      ],
+      "statement": "[FR-CNF-004] Generate the release acceptance checklist from the ledger (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-031",
+        "TEST-100"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-033"
+      ],
+      "owner": "workstream-10-33",
+      "requirement_id": "REQ-BOOT-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-BOOT-001] Use an explicit startup/readiness barrier (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-033",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-033"
+      ],
+      "owner": "workstream-10-33",
+      "requirement_id": "REQ-ENG-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-ENG-001] Report physical energy when measured, otherwise label a non-energy proxy (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-033",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-033"
+      ],
+      "owner": "workstream-10-33",
+      "requirement_id": "REQ-ENG-002",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-ENG-002] Keep quality targets fixed across performance/energy comparisons (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-033",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-GAT-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-GAT-001] Use the twelve `G0` gate packs as release status (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-GAT-002",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-GAT-002] Apply an automatic feature cutline (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-GAT-003",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-GAT-003] Freeze runtime, model, fixture and source identities before headline benchmarking (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-TSP-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-TSP-001] Record capture/sample, ingest, release and decision times separately (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-QUA-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-QUA-001] Recalibrate scores and thresholds after quantization (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-MEM-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MEM-001] Record swap/zram, major faults and memory-pressure state (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-PRS-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-PRS-001] Enforce parser/media/archive resource budgets (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-PRI-001-public-persistence",
+      "evidence": [
+        "a6e7b6ff5940f65599c8738f8353296d0c0993957449589013ec58230636f319"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-PRI-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-PRI-001] Apply privacy masks and coordinate minimization before ordinary persistence (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-PRI-001-PUBLIC-PERSISTENCE"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-STA-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-STA-001] Use paired alternating benchmark blocks and uncertainty intervals (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-034"
+      ],
+      "owner": "workstream-10-34",
+      "requirement_id": "REQ-OSS-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-OSS-001] Use normal Linux scheduling by default (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-034",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-035"
+      ],
+      "owner": "workstream-10-35",
+      "requirement_id": "REQ-MMI-008",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MMI-008] Show source standing, media integrity, extraction confidence and claim corroboration separately (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-035",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-035"
+      ],
+      "owner": "workstream-10-35",
+      "requirement_id": "REQ-MMI-009",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MMI-009] Never hide trust dimensions behind one opaque score (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-035",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-035"
+      ],
+      "owner": "workstream-10-35",
+      "requirement_id": "REQ-MMI-012",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MMI-012] Prevent low-trust external evidence from independently verifying or resolving a hazard (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-035",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-035"
+      ],
+      "owner": "workstream-10-35",
+      "requirement_id": "REQ-MMI-025",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MMI-025] Keep all live social/news/platform connectors optional (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-035",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-001] Define exactly six major product components (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-002",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-002] Make the Streaming Source Collector the sole connector/acquisition boundary (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-003",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-003] Keep acquisition separate from interpretation (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-004",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-004] Make the Analysis & Enrichment Engine produce structured, uncertainty-bearing analysis (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-005",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-005] Make the Model & Workload Runtime the sole validated model-execution boundary (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-006",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-006] Make the Incident & Event Engine the sole incident-state writer (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-007",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-007] Support `new_incident` and status-update decisions as versioned event-engine commands (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-008",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-008] Expose all supported client operations through a versioned REST API (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-009",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-009] Keep web/mobile clients behind the REST/integration boundary (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-CMP-010-semantic-parity",
+      "evidence": [
+        "aa3e38b365a6ccaf25e887aa1baaa6fda76ac256e75fb5619e7c469df8e2aa9c"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-010",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-010] Deliver web and mobile as one semantic client component (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-CMP-010-SEMANTIC-PARITY"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-CMP-013-physical-hot-path",
+      "evidence": [
+        "81ca2346e83b26781d0caeef3ccaea7a2f8995fd80d3de0589aa0cca2b24ffe7"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-013",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-013] Preserve the physical hot path independently of multimodal enrichment (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-CMP-013-HOT-PATH"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-014",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-014] Publish component ownership and shared-service write authority (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-036"
+      ],
+      "owner": "workstream-10-36",
+      "requirement_id": "REQ-CMP-015",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CMP-015] Correlate requests/jobs/analysis/events across component boundaries (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-036",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-001] Implement the six product components as enforceable module boundaries (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-037",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-MOD-002-packageability",
+      "evidence": [
+        "701a773bab26c966ec58312870ddc600c5ff0ca98aac153cdf93a7ec7a35a080"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-002",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-002] Make Components 1\u20135 independently packageable and black-box testable (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-MOD-002-PACKAGEABILITY"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-MOD-003-005-boundaries",
+      "evidence": [
+        "9725d057ae6c39342d9c33c8fcaa8e93ec5041553f88c49f053db1aa67f210de"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-003",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-003] Keep module-owned database, migration, artifact and secret namespaces (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-MOD-003-NAMESPACE-MUTATIONS"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-MOD-003-005-boundaries",
+      "evidence": [
+        "9725d057ae6c39342d9c33c8fcaa8e93ec5041553f88c49f053db1aa67f210de"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-004",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-004] Prohibit direct business-module repository imports (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-MOD-004-IMPORT-MUTATION"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-MOD-003-005-boundaries",
+      "evidence": [
+        "9725d057ae6c39342d9c33c8fcaa8e93ec5041553f88c49f053db1aa67f210de"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-005",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-005] Keep clients outside backend persistence and internal transport (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-MOD-005-CLIENT-MUTATION"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-006",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-006] Use machine-readable architecture policy as the enforcement source (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-037",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-007",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-007] Provide one common backend lifecycle (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-037",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-008",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-008] Drive lifecycle degradation/recovery through fake dependencies and virtual time (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-037",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-009",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-009] Exercise crash/restart and owned-state reconciliation (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-037",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-MOD-010-command-surface",
+      "evidence": [
+        "15d00f0dc56d3beb2baf03da465b3af2362d7bc8fbf8782be0fe8f47f02a385e"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-037"
+      ],
+      "owner": "workstream-10-37",
+      "requirement_id": "REQ-MOD-010",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-MOD-010] Use one cross-platform Python development command surface (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-MOD-010-COMMAND-SURFACE"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-CON-001-003-semantic-roundtrip",
+      "evidence": [
+        "9eb268814c33695771033b266f007f19a4829cdeafa910ca875d743e47c13195"
+      ],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-CON-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CON-001] Enforce real current/N-1 semantic compatibility (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-CON-001-SEMANTIC-MUTATIONS"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-CON-002-typescript-compile",
+      "evidence": [
+        "c49c4ed59df250e85ff9548db38104045c2dcfbbd4ac1f841db2a7db0543db11"
+      ],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-CON-002",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CON-002] Compile generated Python and TypeScript contracts (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-CON-002-TYPESCRIPT-COMPILE"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-CON-001-003-semantic-roundtrip",
+      "evidence": [
+        "9eb268814c33695771033b266f007f19a4829cdeafa910ca875d743e47c13195"
+      ],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-CON-003",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CON-003] Round-trip canonical values across Python and TypeScript (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-CON-003-ROUNDTRIP"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-CON-004",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CON-004] Fail an active mandatory test lane with zero tests (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-038",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-CON-005",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-CON-005] Reject unexpected skip/xfail/collection failure as acceptance evidence (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-038",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-PLG-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-PLG-001] Use typed allowlisted plugin capabilities (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-038",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-PLG-002",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-PLG-002] Make incident lifecycle authority impossible for non-Incident plugins (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-038",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-PLG-003",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-PLG-003] Detect plugin dependency cycles and illegal lifecycle transitions (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-038",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-ERR-001",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-ERR-001] Separate safe public problem details from private diagnostics (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-038",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-038"
+      ],
+      "owner": "workstream-10-38",
+      "requirement_id": "REQ-ERR-002",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-ERR-002] Return stable machine-readable public reason codes (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-038",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-040"
+      ],
+      "owner": "workstream-10-40",
+      "requirement_id": "REQ-AIT-002",
+      "slice": [
+        "ITER-005"
+      ],
+      "statement": "[FR-AIT-002] Keep official wording and critical state independent of generative output (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-040",
+        "TEST-101"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-DLV-001-authority-outage",
+      "evidence": [
+        "ce6ad0402cd52fc77ba7a529fcbb68b20c3e538cbc06dd5a24a4099319300476"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-041"
+      ],
+      "owner": "workstream-10-41",
+      "requirement_id": "REQ-DLV-001",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-DLV-001] Keep the Incident & Event Engine as the only incident lifecycle authority even while it is unavailable (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-DLV-001-AUTHORITY-OUTAGE"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-041"
+      ],
+      "owner": "workstream-10-41",
+      "requirement_id": "REQ-DLV-004",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-DLV-004] Expose loss of incident-decision authority to clients (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-041",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-042"
+      ],
+      "owner": "workstream-10-42",
+      "requirement_id": "REQ-ART-001",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-ART-001] Use opaque artifact references across module boundaries; naming never grants authorization (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-042",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-042"
+      ],
+      "owner": "workstream-10-42",
+      "requirement_id": "REQ-REF-001",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-REF-001] Treat a submitted URL as `reference_only` until a source policy explicitly permits server-side resolution (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-042",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-042"
+      ],
+      "owner": "workstream-10-42",
+      "requirement_id": "REQ-REF-002",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-REF-002] Prevent SSRF/local-network access from external-reference resolution (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-042",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-043"
+      ],
+      "owner": "workstream-10-43",
+      "requirement_id": "REQ-CLK-001",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-CLK-001] Use monotonic time for local deadlines and measured stage durations (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-043",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-043"
+      ],
+      "owner": "workstream-10-43",
+      "requirement_id": "REQ-BKF-001",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-BKF-001] Preserve original event/publication/product time on catch-up/backfill (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-043",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-CAP-001-distinct-faults",
+      "evidence": [
+        "36868e00295b568af2e8fd637f34a2866b30ee404e3a109b872490e703c0c9bb"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-046"
+      ],
+      "owner": "workstream-10-46",
+      "requirement_id": "REQ-CAP-001",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-CAP-001] Translate module/dependency failure into user-visible operational capability (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-CAP-001-DISTINCT-FAULTS"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-046"
+      ],
+      "owner": "workstream-10-46",
+      "requirement_id": "REQ-CAP-002",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-CAP-002] Never use a generic \u201chealthy\u201d state to hide loss of a critical capability (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-046",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-047"
+      ],
+      "owner": "workstream-10-47",
+      "requirement_id": "REQ-ORG-002",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-ORG-002] Keep official wording and incident lifecycle independent of generative content (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-047",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-048"
+      ],
+      "owner": "workstream-10-48",
+      "requirement_id": "REQ-EXT-001",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-EXT-001] Split each hazard extension into component-owned collector/analyzer/runtime/incident facets (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-048",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-048"
+      ],
+      "owner": "workstream-10-48",
+      "requirement_id": "REQ-EXT-002",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-EXT-002] Execute release models only through Component 3 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-048",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-048"
+      ],
+      "owner": "workstream-10-48",
+      "requirement_id": "REQ-EXT-003",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-EXT-003] Evaluate and commit hazard lifecycle transitions only in Component 4 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-048",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-048"
+      ],
+      "owner": "workstream-10-48",
+      "requirement_id": "REQ-EXT-004",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-EXT-004] Bind compatible hazard facets with one versioned extension manifest (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-048",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-048"
+      ],
+      "owner": "workstream-10-48",
+      "requirement_id": "REQ-CMD-001",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-CMD-001] Keep one documented `python scripts/dev.py` command catalog for local, CI and judge workflows (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-048",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-048"
+      ],
+      "owner": "workstream-10-48",
+      "requirement_id": "REQ-CMD-002",
+      "slice": [
+        "ITER-006"
+      ],
+      "statement": "[FR-CMD-002] Fail when a mandatory command lane is missing, empty unexpectedly or renamed only in documentation (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-048",
+        "TEST-102"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-049"
+      ],
+      "owner": "workstream-10-49",
+      "requirement_id": "REQ-ARL-001",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-ARL-001] Treat artifact IDs as opaque references, not bearer credentials (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-049",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-049"
+      ],
+      "owner": "workstream-10-49",
+      "requirement_id": "REQ-ARL-002",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-ARL-002] Never expose another module's filesystem path (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-049",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-050"
+      ],
+      "owner": "workstream-10-50",
+      "requirement_id": "REQ-CAU-001",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-CAU-001] Do not assume global ordering from at-least-once delivery (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-050",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-050"
+      ],
+      "owner": "workstream-10-50",
+      "requirement_id": "REQ-CAU-002",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-CAU-002] Serialize incident lifecycle mutations per aggregate and check base/expected version where semantics require it (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-050",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-052"
+      ],
+      "owner": "workstream-10-52",
+      "requirement_id": "REQ-LIV-001",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-LIV-001] Carry authoritative incident/projection version on every live SSE/WebSocket update (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-052",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-052"
+      ],
+      "owner": "workstream-10-52",
+      "requirement_id": "REQ-LIV-002",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-LIV-002] Detect expired/gapped live-stream cursors and resynchronize from REST (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-052",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-053"
+      ],
+      "owner": "workstream-10-53",
+      "requirement_id": "REQ-MIO-001",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-MIO-001] Declare dtype/rank/min-max shape/elements/bytes for every release model input/output (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-053",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-053"
+      ],
+      "owner": "workstream-10-53",
+      "requirement_id": "REQ-MIO-002",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-MIO-002] Reject unbounded symbolic dimensions in release mode unless a separately bounded wrapper exists (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-053",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-053"
+      ],
+      "owner": "workstream-10-53",
+      "requirement_id": "REQ-MIO-003",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-MIO-003] Restrict ONNX external data to manifest-approved package-local artifacts or disable it (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-053",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-054"
+      ],
+      "owner": "workstream-10-54",
+      "requirement_id": "REQ-CNX-001",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-CNX-001] Declare every source connector as `poll`, `subscribe`, `webhook`, `stream` or `fixture` (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-054",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-054"
+      ],
+      "owner": "workstream-10-54",
+      "requirement_id": "REQ-CNX-002",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-CNX-002] Route every connector mode through Component 1 normalization/source policy (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-054",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-056"
+      ],
+      "owner": "workstream-10-56",
+      "requirement_id": "REQ-CV-001",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-CV-001] Record exact camera-preprocessing backend/build in every measured variant (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-056",
+        "TEST-103"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-ENE-001-002-energy-lane-v2",
+      "evidence": [
+        "dcc7129d03d4da790863fa9560e9ec9c7e97241c13f53eb5fa712ebcb131fe42"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-056"
+      ],
+      "owner": "workstream-10-56",
+      "requirement_id": "REQ-ENE-001",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-ENE-001] Require sufficient external-meter time coverage/alignment for a joule claim (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-ENE-001-METER-COVERAGE"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-ENE-001-002-energy-lane-v2",
+      "evidence": [
+        "dcc7129d03d4da790863fa9560e9ec9c7e97241c13f53eb5fa712ebcb131fe42"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-056"
+      ],
+      "owner": "workstream-10-56",
+      "requirement_id": "REQ-ENE-002",
+      "slice": [
+        "ITER-007"
+      ],
+      "statement": "[FR-ENE-002] Preserve meter sample count, alignment, integration method and uncertainty (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-ENE-002-METER-TRACE"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-057"
+      ],
+      "owner": "workstream-10-57",
+      "requirement_id": "REQ-AUP-001",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-AUP-001] Keep trusted `PrincipalRef` and role/scope fields out of public client mutation payloads (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-057",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-057"
+      ],
+      "owner": "workstream-10-57",
+      "requirement_id": "REQ-AUP-002",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-AUP-002] Derive and stamp the authenticated principal and authorization decision in Component 5 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-057",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-057"
+      ],
+      "owner": "workstream-10-57",
+      "requirement_id": "REQ-AUP-003",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-AUP-003] Require trusted producer provenance for internal human-authority commands (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-057",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-057"
+      ],
+      "owner": "workstream-10-57",
+      "requirement_id": "REQ-CLC-001",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-CLC-001] Use explicit allowlist caching in the PWA/service worker and default-deny authentication/restricted API responses (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-057",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-LDE-004-judge-fixtures-v2",
+      "evidence": [
+        "90cf2bc77ce87dbc68a5bd7c7ad146e2ead8264ff9b662c22f62d4f43a1461af"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-057"
+      ],
+      "owner": "workstream-10-57",
+      "requirement_id": "REQ-LDE-004",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-LDE-004] Keep judge mode free of unnecessary real private/community media by default (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-LDE-004-JUDGE-FIXTURES"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-058"
+      ],
+      "owner": "workstream-10-58",
+      "requirement_id": "REQ-MSR-001",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MSR-001] Pair every released measurement value with an observed-property ID and admissible unit (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-058",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-058"
+      ],
+      "owner": "workstream-10-58",
+      "requirement_id": "REQ-MSR-002",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MSR-002] Carry quality and uncertainty per measurement/channel (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-058",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-058"
+      ],
+      "owner": "workstream-10-58",
+      "requirement_id": "REQ-MSR-003",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MSR-003] State phenomenon interval and statistic for accumulated, averaged, rate and change values (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-058",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-058"
+      ],
+      "owner": "workstream-10-58",
+      "requirement_id": "REQ-MSR-004",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MSR-004] Carry axis, orientation/sign convention and datum/reference where the property requires it (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-058",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-058"
+      ],
+      "owner": "workstream-10-58",
+      "requirement_id": "REQ-MSR-005",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MSR-005] Validate property cardinality, unit dimension, range and reference compatibility through a versioned registry (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-058",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": "REQ-MGT-001-onnx-inventory",
+      "evidence": [
+        "3a1fdde3d36618c4cb5cec91d4cfe14fd15b9c4a2b1fa1cd4c6e32007158bc6b"
+      ],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-059"
+      ],
+      "owner": "workstream-10-59",
+      "requirement_id": "REQ-MGT-001",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MGT-001] Inventory ONNX IR/opset imports, domains/operators, functions/control flow, external data and graph budgets for every release model (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-MGT-001-ONNX-INVENTORY"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-059"
+      ],
+      "owner": "workstream-10-59",
+      "requirement_id": "REQ-MGT-002",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MGT-002] Disable unapproved Python/custom operators, shared custom-op libraries, runtime extensions and plugin execution providers in H0 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-059",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-059"
+      ],
+      "owner": "workstream-10-59",
+      "requirement_id": "REQ-MGT-003",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MGT-003] Bound graph/subgraph/function depth, node/initializer/string/attribute size, shape inference and control-flow work (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-059",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-059"
+      ],
+      "owner": "workstream-10-59",
+      "requirement_id": "REQ-MGT-004",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MGT-004] Record and verify expected per-node execution-provider assignment and fallback (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-059",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-059"
+      ],
+      "owner": "workstream-10-59",
+      "requirement_id": "REQ-MGT-005",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-MGT-005] Create/optimize sessions in a lower-privilege resource-bounded worker (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-059",
+        "TEST-104",
+        "TEST-MGT-005-BOUNDED-ONNX-WORKER"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-061"
+      ],
+      "owner": "workstream-10-61",
+      "requirement_id": "REQ-AZF-001",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-AZF-001] Bind internal authorization to exact command payload, principal, session/device trust epochs, resource scope and policy version (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-061",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-061"
+      ],
+      "owner": "workstream-10-61",
+      "requirement_id": "REQ-AZF-002",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-AZF-002] Declare point-in-time, revalidate-before-commit or user-reconfirm execution semantics per command class (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-061",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-061"
+      ],
+      "owner": "workstream-10-61",
+      "requirement_id": "REQ-AZF-003",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-AZF-003] Revalidate or reconfirm delayed/recovered high-impact commands before commit (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-061",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-062"
+      ],
+      "owner": "workstream-10-62",
+      "requirement_id": "REQ-IDM-001",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-IDM-001] Scope idempotency by principal/device, operation, target and client key (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-062",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-062"
+      ],
+      "owner": "workstream-10-62",
+      "requirement_id": "REQ-IDM-002",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-IDM-002] Return the original result for same scoped key/payload and reject same scoped key/different payload (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-062",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-062"
+      ],
+      "owner": "workstream-10-62",
+      "requirement_id": "REQ-IDM-003",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-IDM-003] Generate authority-bearing opaque tokens/nonces with a CSPRNG and at least 128 bits effective entropy (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-062",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-064"
+      ],
+      "owner": "workstream-10-64",
+      "requirement_id": "REQ-GRP-002",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-GRP-002] Disable transform-time network access in judge/benchmark modes (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-064",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-064"
+      ],
+      "owner": "workstream-10-64",
+      "requirement_id": "REQ-GRP-005",
+      "slice": [
+        "ITER-008"
+      ],
+      "statement": "[FR-GRP-005] Require compatible vertical/sensor datum references for water level, depth, elevation and slope/height comparisons (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-064",
+        "TEST-104"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-065"
+      ],
+      "owner": "workstream-10-65",
+      "requirement_id": "REQ-CUR-001",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-CUR-001] Bind every live cursor to a stream epoch, principal scope and filter scope (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-065",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-065"
+      ],
+      "owner": "workstream-10-65",
+      "requirement_id": "REQ-CUR-002",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-CUR-002] Keep the cursor non-authoritative for data access and incident version (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-065",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-065"
+      ],
+      "owner": "workstream-10-65",
+      "requirement_id": "REQ-CUR-003",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-CUR-003] Create a new stream epoch after projection restore/rebuild/incompatible migration (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-065",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-065"
+      ],
+      "owner": "workstream-10-65",
+      "requirement_id": "REQ-CUR-005",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-CUR-005] Fetch the current authoritative REST projection before showing continuity after a cursor gap/epoch change (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-065",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-066"
+      ],
+      "owner": "workstream-10-66",
+      "requirement_id": "REQ-TRC-001",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-TRC-001] Register every exact functional requirement ID in one machine-readable traceability registry (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-066",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-066"
+      ],
+      "owner": "workstream-10-66",
+      "requirement_id": "REQ-TRC-002",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-TRC-002] Reject ranges, wildcards, family-only placeholders and nonexistent IDs as exact evidence links (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-066",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-066"
+      ],
+      "owner": "workstream-10-66",
+      "requirement_id": "REQ-TRC-003",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-TRC-003] Validate every technical anchor, contract, test, gate and evidence reference (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-066",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-066"
+      ],
+      "owner": "workstream-10-66",
+      "requirement_id": "REQ-TRC-004",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-TRC-004] Require nonempty owner/technical/test/gate/evidence links for every `H0 MUST` (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-066",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-066"
+      ],
+      "owner": "workstream-10-66",
+      "requirement_id": "REQ-TRC-005",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-TRC-005] Bind the registry to the synchronized functional/technical versions and digests (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-066",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-067"
+      ],
+      "owner": "workstream-10-67",
+      "requirement_id": "REQ-PCS-001",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-PCS-001] Return a durable mutation receipt with command identity, terminal/continuing status and committed aggregate version (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-067",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-067"
+      ],
+      "owner": "workstream-10-67",
+      "requirement_id": "REQ-PCS-002",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-PCS-002] Expose command lifecycle states separately from incident projection state (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-067",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-067"
+      ],
+      "owner": "workstream-10-67",
+      "requirement_id": "REQ-PCS-003",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-PCS-003] Provide a bounded read-your-writes mechanism using committed version or a scoped consistency token (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-067",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-067"
+      ],
+      "owner": "workstream-10-67",
+      "requirement_id": "REQ-PCS-004",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-PCS-004] Carry aggregate version, stream epoch and causation/command identity on live projection updates (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-067",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-069"
+      ],
+      "owner": "workstream-10-69",
+      "requirement_id": "REQ-SLC-007",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-SLC-007] Keep judge and benchmark images free of live connector credentials and private release/audit signing keys (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-069",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-072"
+      ],
+      "owner": "workstream-10-72",
+      "requirement_id": "REQ-ARR-001",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-ARR-001] Generate a signed opportunity/arrival schedule whose release times are independent of completion time (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-072",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-072"
+      ],
+      "owner": "workstream-10-72",
+      "requirement_id": "REQ-ARR-002",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-ARR-002] Use the same scheduled arrivals and source/capture timeline for B0, B1 and O1 (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-072",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-072"
+      ],
+      "owner": "workstream-10-72",
+      "requirement_id": "REQ-ARR-003",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-ARR-003] Record scheduled release, actual release, capture/sample, queue start, service start and completion for every timed opportunity (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-072",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-072"
+      ],
+      "owner": "workstream-10-72",
+      "requirement_id": "REQ-ARR-004",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-ARR-004] Include missed, dropped, skipped, replaced and never-started eligible opportunities in SLO/quality accounting (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-072",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-072"
+      ],
+      "owner": "workstream-10-72",
+      "requirement_id": "REQ-ARR-005",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-ARR-005] Declare histogram/range/precision and retain raw samples plus overflow counts (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-072",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-072"
+      ],
+      "owner": "workstream-10-72",
+      "requirement_id": "REQ-ARR-007",
+      "slice": [
+        "ITER-009"
+      ],
+      "statement": "[FR-ARR-007] Predeclare primary latency/SLO metrics and forbid closed-loop substitution for an open-loop simultaneous-event claim (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-072",
+        "TEST-105"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-076"
+      ],
+      "owner": "workstream-10-76",
+      "requirement_id": "REQ-SIG-001",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-SIG-001] Bind every hero physical/model path to an exact sensor/capture/ADC/sample-rate/full-scale/filter/timestamp/preprocessing signal-chain profile (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-076",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-076"
+      ],
+      "owner": "workstream-10-76",
+      "requirement_id": "REQ-SIG-002",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-SIG-002] Declare anti-alias filtering, Nyquist assumptions and every resampling/decimation/interpolation operation (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-076",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-076"
+      ],
+      "owner": "workstream-10-76",
+      "requirement_id": "REQ-SIG-003",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-SIG-003] Detect and expose clipping, saturation, quantization range and axis/full-scale mismatch (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-076",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-076"
+      ],
+      "owner": "workstream-10-76",
+      "requirement_id": "REQ-SIG-006",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-SIG-006] Fail safely on unknown/incompatible signal chain (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-076",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-077"
+      ],
+      "owner": "workstream-10-77",
+      "requirement_id": "REQ-BGV-001",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-BGV-001] Freeze a signed benchmark analysis plan before confirmatory claim-set execution (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-077",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-077"
+      ],
+      "owner": "workstream-10-77",
+      "requirement_id": "REQ-BGV-002",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-BGV-002] Separate development/tuning, calibration and final claim sets under hazard-specific group/time/site leakage rules (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-077",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-077"
+      ],
+      "owner": "workstream-10-77",
+      "requirement_id": "REQ-BGV-003",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-BGV-003] Prohibit post-claim-set tuning under the same campaign (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-077",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-077"
+      ],
+      "owner": "workstream-10-77",
+      "requirement_id": "REQ-BGV-004",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-BGV-004] Record every attempted candidate and every invalid, failed or aborted block (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-077",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-077"
+      ],
+      "owner": "workstream-10-77",
+      "requirement_id": "REQ-BGV-007",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-BGV-007] Distinguish confirmatory from exploratory benchmark outputs (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-077",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-079"
+      ],
+      "owner": "workstream-10-79",
+      "requirement_id": "REQ-RKI-001",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-RKI-001] Maintain a signed known-issue registry scoped by runtime/provider/compiler/architecture/operator/attribute/graph pattern (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-079",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-079"
+      ],
+      "owner": "workstream-10-79",
+      "requirement_id": "REQ-RKI-002",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-RKI-002] Fingerprint every released graph including opsets, custom domains, operator attributes, control-flow/subgraphs and initializer placement (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-079",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-079"
+      ],
+      "owner": "workstream-10-79",
+      "requirement_id": "REQ-RKI-003",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-RKI-003] Default an applicable issue match to deny, rewrite, fallback, upgrade/downgrade or bounded exception (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-079",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "integration"
+      ],
+      "implementation": [
+        "TASK-079"
+      ],
+      "owner": "workstream-10-79",
+      "requirement_id": "REQ-RKI-004",
+      "slice": [
+        "ITER-010"
+      ],
+      "statement": "[FR-RKI-004] Exercise cold/session initialization plus applicable branch/shape/output known-answer tests (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-079",
+        "TEST-106"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-081"
+      ],
+      "owner": "workstream-10-81",
+      "requirement_id": "REQ-RSB-001",
+      "slice": [
+        "ITER-011"
+      ],
+      "statement": "[FR-RSB-001] Generate a release-minimum manifest mapping every H0 clause to gate, slice, owner, implementation, test and evidence (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-081",
+        "TEST-107"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-081"
+      ],
+      "owner": "workstream-10-81",
+      "requirement_id": "REQ-RSB-002",
+      "slice": [
+        "ITER-011"
+      ],
+      "statement": "[FR-RSB-002] Freeze H0 scope and require an exception, displaced/cut work and rerun list for any post-freeze H0 addition (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-081",
+        "TEST-107"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-081"
+      ],
+      "owner": "workstream-10-81",
+      "requirement_id": "REQ-RSB-003",
+      "slice": [
+        "ITER-011"
+      ],
+      "statement": "[FR-RSB-003] Make priority/profile disagreement across functional, technical, registry and cutline text release-blocking (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-081",
+        "TEST-107"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-081"
+      ],
+      "owner": "workstream-10-81",
+      "requirement_id": "REQ-RSB-004",
+      "slice": [
+        "ITER-011"
+      ],
+      "statement": "[FR-RSB-004] Generate critical-path and automatic-cut status from the release-minimum manifest (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-081",
+        "TEST-107"
+      ]
+    },
+    {
+      "closure_complete": true,
+      "completion_execution_id": null,
+      "evidence": [],
+      "gates": [
+        "e2e",
+        "static"
+      ],
+      "implementation": [
+        "TASK-081"
+      ],
+      "owner": "workstream-10-81",
+      "requirement_id": "REQ-RSB-005",
+      "slice": [
+        "ITER-011"
+      ],
+      "statement": "[FR-RSB-005] Permit shared proof only with explicit per-requirement evidence links (MUST; profile H0).",
+      "status": "IMPLEMENTED",
+      "tests": [
+        "TEST-081",
+        "TEST-107"
+      ]
+    }
+  ],
+  "schema": "sentinel-edge-release-minimum-manifest/1.0"
+}

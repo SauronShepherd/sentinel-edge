@@ -1,0 +1,57 @@
+{
+  "algorithm": "Ed25519",
+  "plan": {
+    "bootstrap_resamples": 1000,
+    "claim_set": "confirmatory",
+    "confidence_level": 0.95,
+    "created_at": "2026-08-03T07:00:00Z",
+    "exclusions": [
+      "thermal_invalid",
+      "power_invalid",
+      "host_noise_invalid",
+      "identity_mismatch",
+      "network_attempt"
+    ],
+    "guardrails": {
+      "max_deadline_miss_rate": 0.01,
+      "minimum_quality_recall": 0.9
+    },
+    "identities": {
+      "configuration_sha256": "09b63d626a76d2f89359150ea4aaa047d6dd64b1243a751a3c58e86dc660f7bb",
+      "fixture_manifest_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+      "host_report_sha256": "e8a0261911e0c1fc66cd37d0e4c5588305946e60ca3506fe0a0eedc65eef324e",
+      "model_sha256s": [
+        "7c30a7d7b31599d069de9299fd627aea507471a21385daba053bcdb9b49cc962"
+      ],
+      "network_isolation_report_sha256": "21950e411026c06668b4c32f13f0dcdf7bad362eeb1973fd2118ba281f5ffec5",
+      "opportunity_manifest_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+      "runtime_profile_sha256s": [
+        "381f2012f329c300a340eeb1f80873a9db90bec816a929feae5e32167bf92b16"
+      ],
+      "wheelhouse_report_sha256": "e75824e0a6a832c2535093188e55ef5cff78dfbd4be4457f1b5c7405c846cecc"
+    },
+    "interval_method": "paired_percentile_bootstrap",
+    "minimum_complete_pairs": 3,
+    "offered_load_manifest_sha256": "64e8a71d366e073a134f0edcf2f18a73572f1dc24e4334bfd000ac9a32ed2613",
+    "plan_id": "sentinel-edge-v0.18.0-confirmatory-development-envelope",
+    "primary_metrics": [
+      "end_to_end_ms",
+      "energy_mj"
+    ],
+    "schema": "sentinel-edge-benchmark-analysis-plan/1.0",
+    "stop_rule": {
+      "count": 3,
+      "type": "fixed_complete_pairs"
+    },
+    "variants": [
+      "B0",
+      "B1",
+      "O1"
+    ]
+  },
+  "plan_sha256": "090aeeb528d3eace2ecb7d6995104739393cfe3d3130b87f8a7ebefd21bd93de",
+  "schema": "sentinel-edge-signed-benchmark-plan/1.0",
+  "signature_b64": "6R2gP8hifS0W8THD9g4VsVZYzfgVXUNz2RKm3nPIRKm4Jv8ecTo/BVNLuTpfEYDerc1xO0pIj3OPcoBMnRNcDA==",
+  "signed_at": "2026-08-03T07:01:00Z",
+  "signer_key_id": "df057893c2c85ef422cfd301064b8320"
+}

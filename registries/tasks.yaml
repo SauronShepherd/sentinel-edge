@@ -1,0 +1,4653 @@
+items:
+- id: TASK-001
+  objective: 'Implement and verify product-contract workstream 10.1: Platform and deployment.'
+  iteration_id: ITER-001
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-PLT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLT-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLT-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLT-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLT-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLT-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-001-workstream-01
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-001
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-002
+  objective: 'Implement and verify product-contract workstream 10.2: Input gateway.'
+  iteration_id: ITER-001
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-IN-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IN-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-002-workstream-02
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-002
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-003
+  objective: 'Implement and verify product-contract workstream 10.3: Workload orchestration.'
+  iteration_id: ITER-001
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-ORC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORC-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-003-workstream-03
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-003
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-004
+  objective: 'Implement and verify product-contract workstream 10.4: Wildfire adapter.'
+  iteration_id: ITER-001
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-WF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WF-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-004-workstream-04
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-004
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-005
+  objective: 'Implement and verify product-contract workstream 10.5: Flood adapter.'
+  iteration_id: ITER-001
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-FL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FL-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-005-workstream-05
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-005
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-006
+  objective: 'Implement and verify product-contract workstream 10.6: Earthquake adapter.'
+  iteration_id: ITER-001
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-EQ-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EQ-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-006-workstream-06
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-006
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-007
+  objective: 'Implement and verify product-contract workstream 10.7: Landslide adapter.'
+  iteration_id: ITER-001
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-LS-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LS-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-007-workstream-07
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-007
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-008
+  objective: 'Implement and verify product-contract workstream 10.8: Events and evidence.'
+  iteration_id: ITER-001
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-EVT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVT-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-008-workstream-08
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-008
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-009
+  objective: 'Implement and verify product-contract workstream 10.9: Sources.'
+  iteration_id: ITER-002
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-DAT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DAT-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-009-workstream-09
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-009
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-010
+  objective: 'Implement and verify product-contract workstream 10.10: User experience.'
+  iteration_id: ITER-002
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-UX-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UX-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-010-workstream-10
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-010
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-011
+  objective: 'Implement and verify product-contract workstream 10.11: Benchmark proof.'
+  iteration_id: ITER-002
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-BEN-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BEN-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-011-workstream-11
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-011
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-012
+  objective: 'Implement and verify product-contract workstream 10.12: Provenance, reproducibility and judging.'
+  iteration_id: ITER-002
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-PRV-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRV-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRV-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRV-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRV-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRV-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRV-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRV-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-012-workstream-12
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-012
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-013
+  objective: 'Implement and verify product-contract workstream 10.13: Human factors, review and alert fatigue.'
+  iteration_id: ITER-002
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-HUM-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HUM-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HUM-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HUM-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HUM-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HUM-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HUM-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HUM-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-013-workstream-13
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-013
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-014
+  objective: 'Implement and verify product-contract workstream 10.14: Sensor timing and optional Cortex-M33 plane.'
+  iteration_id: ITER-002
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SEN-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SEN-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SEN-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SEN-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SEN-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SEN-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SEN-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-014-workstream-14
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-014
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-015
+  objective: 'Implement and verify product-contract workstream 10.15: Interoperability.'
+  iteration_id: ITER-002
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-INT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-INT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-INT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-INT-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-INT-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-015-workstream-15
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-015
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-016
+  objective: 'Implement and verify product-contract workstream 10.16: Deterministic scenarios and claim integrity.'
+  iteration_id: ITER-002
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SCN-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SCN-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SCN-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SCN-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SCN-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLM-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLM-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLM-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLM-004
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-016-workstream-16
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-016
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-017
+  objective: 'Implement and verify product-contract workstream 10.17: Configuration, restart and temporal consistency.'
+  iteration_id: ITER-003
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CFG-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CFG-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CFG-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REC-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TIM-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TIM-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-017-workstream-17
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-017
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-018
+  objective: 'Implement and verify product-contract workstream 10.18: Alert budget and After-Event Review.'
+  iteration_id: ITER-003
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-ALT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ALT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ALT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ALT-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AER-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AER-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AER-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AER-004
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-018-workstream-18
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-018
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-019
+  objective: 'Implement and verify product-contract workstream 10.19: Runtime proof and provider scope.'
+  iteration_id: ITER-003
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-RUN-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RUN-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RUN-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RUN-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RUN-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RUN-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-019-workstream-19
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-019
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-020
+  objective: 'Implement and verify product-contract workstream 10.20: Adaptive opportunity, determinism and interference.'
+  iteration_id: ITER-003
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-OPP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-OPP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-OPP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DET-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DET-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-INTF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-INTF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-OBS-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-OBS-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-020-workstream-20
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-020
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-021
+  objective: 'Implement and verify product-contract workstream 10.21: Artifact, model and export trust.'
+  iteration_id: ITER-003
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-TRU-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TRU-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TRU-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TRU-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EXP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EXP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EXP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EXP-004
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-021-workstream-21
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-021
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-022
+  objective: 'Implement and verify product-contract workstream 10.22: Power, watchdog and crash containment.'
+  iteration_id: ITER-003
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-PWR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PWR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PWR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WDG-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WDG-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RES-001
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-022-workstream-22
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-022
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-023
+  objective: 'Implement and verify product-contract workstream 10.23: Source-policy maintenance.'
+  iteration_id: ITER-003
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SPM-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SPM-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SPM-003
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-023-workstream-23
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-023
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-024
+  objective: 'Implement and verify product-contract workstream 10.24: Delivery semantics and idempotent side effects.'
+  iteration_id: ITER-003
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-MSG-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSG-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSG-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSG-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSG-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSG-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-024-workstream-24
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-024
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-025
+  objective: 'Implement and verify product-contract workstream 10.25: Device identity, enrollment and transport
+    trust.'
+  iteration_id: ITER-004
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-ID-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ID-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ID-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ID-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ID-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ID-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ID-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-025-workstream-25
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-025
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-026
+  objective: 'Implement and verify product-contract workstream 10.26: Secure update and lifecycle.'
+  iteration_id: ITER-004
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-UPD-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPD-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPD-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPD-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPD-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPD-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPD-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-026-workstream-26
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-026
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-027
+  objective: 'Implement and verify product-contract workstream 10.27: Schema evolution and artifact compatibility.'
+  iteration_id: ITER-004
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-EVO-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVO-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVO-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVO-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EVO-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-027-workstream-27
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-027
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-028
+  objective: 'Implement and verify product-contract workstream 10.28: Storage endurance, backup and restore.'
+  iteration_id: ITER-004
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-STO-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-STO-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-STO-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-STO-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-STO-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-STO-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-STO-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-028-workstream-28
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-028
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-029
+  objective: 'Implement and verify product-contract workstream 10.29: Commissioning, accessibility and deployment
+    governance.'
+  iteration_id: ITER-004
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-COM-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-COM-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ACC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ACC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GOV-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GOV-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GOV-003
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-029-workstream-29
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-029
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-030
+  objective: 'Implement and verify product-contract workstream 10.30: Benchmark host isolation and noise envelope.'
+  iteration_id: ITER-004
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-HOST-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HOST-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HOST-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HOST-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HOST-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-030-workstream-30
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-030
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-031
+  objective: 'Implement and verify product-contract workstream 10.31: Conformance and implementation-status integrity.'
+  iteration_id: ITER-004
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CNF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CNF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CNF-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CNF-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CNF-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-031-workstream-31
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-031
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-032
+  objective: 'Implement and verify product-contract workstream 10.32: Assurance, adversarial ML and out-of-distribution
+    behavior.'
+  iteration_id: ITER-004
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-ASR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ASR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AML-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AML-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AML-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AML-004
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-032-workstream-32
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-032
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-033
+  objective: 'Implement and verify product-contract workstream 10.33: Startup, local authorization and energy evidence.'
+  iteration_id: ITER-005
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-BOOT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BOOT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AUT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AUT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ENG-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ENG-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ENG-003
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-033-workstream-33
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-033
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-034
+  objective: 'Implement and verify product-contract workstream 10.34: Execution cutline and pipeline-integrity requirements.'
+  iteration_id: ITER-005
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-GAT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GAT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GAT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TSP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TSP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-QUA-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MEM-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MEM-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRS-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRI-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-STA-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-OSS-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-OSS-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SRC-001
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-034-workstream-34
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-034
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-035
+  objective: 'Implement and verify product-contract workstream 10.35: Multimodal incident intelligence and heterogeneous
+    source trust.'
+  iteration_id: ITER-005
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-MMI-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-010
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-011
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-012
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-013
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-014
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-015
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-016
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-017
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-018
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-019
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-020
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-021
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-022
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-023
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-024
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MMI-025
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-035-workstream-35
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-035
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-036
+  objective: 'Implement and verify product-contract workstream 10.36: Six-component architecture and client boundary.'
+  iteration_id: ITER-005
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CMP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-010
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-011
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-012
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-013
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-014
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMP-015
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-036-workstream-36
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-036
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-037
+  objective: 'Implement and verify product-contract workstream 10.37: Modular independence and executable architecture.'
+  iteration_id: ITER-005
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-MOD-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-008
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MOD-010
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-037-workstream-37
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-037
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-038
+  objective: 'Implement and verify product-contract workstream 10.38: Contract, plugin and public-error proof.'
+  iteration_id: ITER-005
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CON-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CON-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CON-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CON-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CON-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLG-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLG-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PLG-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ERR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ERR-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-038-workstream-38
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-038
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-039
+  objective: 'Implement and verify product-contract workstream 10.39: Correction-aware history and source transitions.'
+  iteration_id: ITER-005
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-HIS-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HIS-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HIS-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SV-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SV-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SV-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SV-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SV-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SV-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-039-workstream-39
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-039
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-040
+  objective: 'Implement and verify product-contract workstream 10.40: Supply-chain and product-security readiness.'
+  iteration_id: ITER-005
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SUP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SUP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SUP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SUP-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-VUL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-VUL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AIT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AIT-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-040-workstream-40
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-040
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-041
+  objective: 'Implement and verify product-contract workstream 10.41: Durable module delivery and incident-authority
+    availability.'
+  iteration_id: ITER-006
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-DLV-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLV-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLV-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLV-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLV-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLV-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-041-workstream-41
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-041
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-042
+  objective: 'Implement and verify product-contract workstream 10.42: Artifact access and safe external-reference
+    resolution.'
+  iteration_id: ITER-006
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-ART-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ART-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ART-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REF-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REF-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REF-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-042-workstream-42
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-042
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-043
+  objective: 'Implement and verify product-contract workstream 10.43: Time discontinuity, catch-up and source completeness.'
+  iteration_id: ITER-006
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CLK-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLK-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SCP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SCP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BKF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BKF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BKF-003
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-043-workstream-43
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-043
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-044
+  objective: 'Implement and verify product-contract workstream 10.44: Source algorithm lineage and scientific-transition
+    control.'
+  iteration_id: ITER-006
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-LIN-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LIN-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LIN-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LIN-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LIN-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-044-workstream-44
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-044
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-045
+  objective: 'Implement and verify product-contract workstream 10.45: Offline-command safety, calibration compatibility
+    and convergent recovery.'
+  iteration_id: ITER-006
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-OFF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-OFF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-OFF-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CAL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CAL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BKP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BKP-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-045-workstream-45
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-045
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-046
+  objective: 'Implement and verify product-contract workstream 10.46: Capability matrix, telemetry and review feedback
+    loop.'
+  iteration_id: ITER-006
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CAP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CAP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TEL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TEL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ACT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ACT-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-046-workstream-46
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-046
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-047
+  objective: 'Implement and verify product-contract workstream 10.47: Mobility-aware location, content origin and
+    network exposure.'
+  iteration_id: ITER-006
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-LOC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LOC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORG-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ORG-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-NET-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-NET-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-047-workstream-47
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-047
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-048
+  objective: 'Implement and verify product-contract workstream 10.48: Component-scoped hazard extension authority.'
+  iteration_id: ITER-006
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-EXT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EXT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EXT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EXT-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EXT-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMD-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CMD-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-048-workstream-48
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-048
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-049
+  objective: 'Implement and verify product-contract workstream 10.49: Artifact authorization, confidentiality and
+    lifetime.'
+  iteration_id: ITER-007
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-ARL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARL-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARL-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARL-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-049-workstream-49
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-049
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-050
+  objective: 'Implement and verify product-contract workstream 10.50: Causal command processing and principal provenance.'
+  iteration_id: ITER-007
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CAU-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CAU-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CAU-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CAU-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRN-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRN-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-050-workstream-50
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-050
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-051
+  objective: 'Implement and verify product-contract workstream 10.51: Privacy-safe backup, deletion and secret rebinding.'
+  iteration_id: ITER-007
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-BDR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BDR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BDR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BDR-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BDR-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BDR-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BDR-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-051-workstream-51
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-051
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-052
+  objective: 'Implement and verify product-contract workstream 10.52: Trusted proxy, browser and service exposure.'
+  iteration_id: ITER-007
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-WEB-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WEB-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WEB-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WEB-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WEB-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LIV-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LIV-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LIV-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LIV-004
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-052-workstream-52
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-052
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-053
+  objective: 'Implement and verify product-contract workstream 10.53: Bounded model tensor and allocation envelope.'
+  iteration_id: ITER-007
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-MIO-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MIO-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MIO-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MIO-004
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-053-workstream-53
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-053
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-054
+  objective: 'Implement and verify product-contract workstream 10.54: Source advisory, processing-class and current
+    source profiles.'
+  iteration_id: ITER-007
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CNX-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CNX-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CNX-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CNX-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SQA-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SQA-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FIR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-FIR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EGM-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-EGM-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-054-workstream-54
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-054
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-055
+  objective: 'Implement and verify product-contract workstream 10.55: Impact/exposure context without hazard-truth
+    leakage.'
+  iteration_id: ITER-007
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-IMP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IMP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IMP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IMP-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IMP-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-055-workstream-55
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-055
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-056
+  objective: 'Implement and verify product-contract workstream 10.56: Cascade, energy, API-description and audit
+    proof.'
+  iteration_id: ITER-007
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CV-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CV-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PFC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PFC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ENE-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ENE-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-API-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-API-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AUD-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AUD-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-056-workstream-56
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-056
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-057
+  objective: 'Implement and verify product-contract workstream 10.57: Final-convergence security, temporal, client
+    and spatial contracts.'
+  iteration_id: ITER-008
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-TVA-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TVA-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TVA-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TVA-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TVA-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AUP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AUP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AUP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AUP-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WHK-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WHK-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WHK-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WHK-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WHK-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLC-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLC-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLC-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CLC-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LDE-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LDE-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LDE-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-LDE-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ACK-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ACK-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ACK-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ATT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ATT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ATT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GEO-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GEO-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GEO-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GEO-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GEO-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SMD-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SMD-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SMD-003
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-057-workstream-57
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-057
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-058
+  objective: 'Implement and verify product-contract workstream 10.58: Measurement semantics requirements.'
+  iteration_id: ITER-008
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-MSR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSR-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSR-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MSR-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-058-workstream-58
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-058
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-059
+  objective: 'Implement and verify product-contract workstream 10.59: Model graph and execution-capability trust.'
+  iteration_id: ITER-008
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-MGT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MGT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MGT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MGT-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MGT-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-MGT-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-059-workstream-59
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-059
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-060
+  objective: 'Implement and verify product-contract workstream 10.60: Direct upload/report ingress.'
+  iteration_id: ITER-008
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-UPL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPL-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPL-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPL-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPL-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-UPL-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-060-workstream-60
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-060
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-061
+  objective: 'Implement and verify product-contract workstream 10.61: Authorization freshness and delayed effects.'
+  iteration_id: ITER-008
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-AZF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AZF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AZF-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AZF-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AZF-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-061-workstream-61
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-061
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-062
+  objective: 'Implement and verify product-contract workstream 10.62: Idempotency and opaque identifier requirements.'
+  iteration_id: ITER-008
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-IDM-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IDM-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IDM-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IDM-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IDM-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IDM-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-062-workstream-62
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-062
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-063
+  objective: 'Implement and verify product-contract workstream 10.63: Audit signing-key compromise semantics.'
+  iteration_id: ITER-008
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-AKC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AKC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AKC-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AKC-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AKC-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-063-workstream-63
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-063
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-064
+  objective: 'Implement and verify product-contract workstream 10.64: Reproducible geospatial and vertical-reference
+    requirements.'
+  iteration_id: ITER-008
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-GRP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-064-workstream-64
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-064
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-065
+  objective: 'Implement and verify product-contract workstream 10.65: Live projection cursor epoch and scope.'
+  iteration_id: ITER-009
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CUR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CUR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CUR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CUR-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CUR-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CUR-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-065-workstream-65
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-065
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-066
+  objective: 'Implement and verify product-contract workstream 10.66: Exact traceability and workflow proof.'
+  iteration_id: ITER-009
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-TRC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TRC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TRC-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TRC-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TRC-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TRC-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AWF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AWF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AWF-003
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-066-workstream-66
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-066
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-067
+  objective: 'Implement and verify product-contract workstream 10.67: Projection consistency and command observability.'
+  iteration_id: ITER-009
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-PCS-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PCS-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PCS-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PCS-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PCS-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PCS-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-067-workstream-67
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-067
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-068
+  objective: 'Implement and verify product-contract workstream 10.68: Erasure, restriction, consent and derivation
+    closure.'
+  iteration_id: ITER-009
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-DSR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DSR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DSR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DSR-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DSR-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DSR-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DSR-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DSR-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-068-workstream-68
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-068
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-069
+  objective: 'Implement and verify product-contract workstream 10.69: Secret and credential lifecycle.'
+  iteration_id: ITER-009
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SLC-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SLC-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SLC-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SLC-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SLC-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SLC-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SLC-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-069-workstream-69
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-069
+  blocking_uncertainty_ids: []
+  risk_level: CRITICAL
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-070
+  objective: 'Implement and verify product-contract workstream 10.70: Backup confidentiality and restore authority.'
+  iteration_id: ITER-009
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-BPR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BPR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BPR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BPR-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BPR-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BPR-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-070-workstream-70
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-070
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-071
+  objective: 'Implement and verify product-contract workstream 10.71: Dead-letter quarantine and redrive safety.'
+  iteration_id: ITER-009
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-DLR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLR-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLR-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DLR-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-071-workstream-71
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-071
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-072
+  objective: 'Implement and verify product-contract workstream 10.72: Scheduled-arrival and latency-integrity benchmark
+    contract.'
+  iteration_id: ITER-009
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-ARR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARR-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARR-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARR-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ARR-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-072-workstream-72
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-072
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-073
+  objective: 'Implement and verify product-contract workstream 10.73: Correction, retraction and bounded reevaluation.'
+  iteration_id: ITER-010
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-REV-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REV-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REV-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REV-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REV-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-REV-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-073-workstream-73
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-073
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-074
+  objective: 'Implement and verify product-contract workstream 10.74: Applicability domain, spatial bias and research-data
+    admission.'
+  iteration_id: ITER-010
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-APP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-APP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-APP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-APP-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-APP-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-APP-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-APP-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-074-workstream-74
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-074
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-075
+  objective: 'Implement and verify product-contract workstream 10.75: Loaded geospatial-runtime identity correction.'
+  iteration_id: ITER-010
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-GRP-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-075-workstream-75
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-075
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-076
+  objective: 'Implement and verify product-contract workstream 10.76: Physical signal-chain validity.'
+  iteration_id: ITER-010
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SIG-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SIG-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SIG-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SIG-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SIG-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SIG-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SIG-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-076-workstream-76
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-076
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-077
+  objective: 'Implement and verify product-contract workstream 10.77: Frozen benchmark analysis and protected claim
+    set.'
+  iteration_id: ITER-010
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-BGV-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BGV-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BGV-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BGV-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BGV-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BGV-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BGV-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-BGV-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-077-workstream-77
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-077
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-078
+  objective: 'Implement and verify product-contract workstream 10.78: Training-data influence and withdrawal.'
+  iteration_id: ITER-010
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-TDI-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TDI-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TDI-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TDI-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TDI-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-TDI-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-078-workstream-78
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-078
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-079
+  objective: 'Implement and verify product-contract workstream 10.79: Runtime known-issue and graph-pattern gate.'
+  iteration_id: ITER-010
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-RKI-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RKI-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RKI-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RKI-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RKI-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RKI-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-079-workstream-79
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-079
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-080
+  objective: 'Implement and verify product-contract workstream 10.80: Operation-specific geospatial proof.'
+  iteration_id: ITER-010
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-GRP-009
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-010
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-011
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-012
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-GRP-013
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-080-workstream-80
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-080
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-081
+  objective: 'Implement and verify product-contract workstream 10.81: Executable H0 release-minimum and scope budget.'
+  iteration_id: ITER-011
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-RSB-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RSB-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RSB-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RSB-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RSB-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RSB-006
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-081-workstream-81
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-081
+  blocking_uncertainty_ids: []
+  risk_level: HIGH
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-082
+  objective: 'Implement and verify product-contract workstream 10.82: Wire envelope and boundary integrity.'
+  iteration_id: ITER-011
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-WIR-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WIR-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WIR-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WIR-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WIR-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WIR-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-WIR-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-082-workstream-82
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-082
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-083
+  objective: 'Implement and verify product-contract workstream 10.83: I/O pressure and persistence service protection.'
+  iteration_id: ITER-011
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-IOP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IOP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IOP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IOP-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IOP-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IOP-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IOP-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-IOP-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-083-workstream-83
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-083
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-084
+  objective: 'Implement and verify product-contract workstream 10.84: Host and boot trust.'
+  iteration_id: ITER-011
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-HBT-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HBT-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HBT-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HBT-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HBT-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HBT-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-HBT-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-084-workstream-84
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-084
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-085
+  objective: 'Implement and verify product-contract workstream 10.85: Authenticated time-source trust.'
+  iteration_id: ITER-011
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CTS-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CTS-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CTS-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CTS-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CTS-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CTS-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CTS-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-085-workstream-85
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-085
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-086
+  objective: 'Implement and verify product-contract workstream 10.86: Reproducible builds and VEX.'
+  iteration_id: ITER-011
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-RPB-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RPB-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RPB-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RPB-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RPB-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RPB-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RPB-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RPB-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-086-workstream-86
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-086
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-087
+  objective: 'Implement and verify product-contract workstream 10.87: Operational drift and profile validity.'
+  iteration_id: ITER-011
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-DRF-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DRF-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DRF-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DRF-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DRF-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DRF-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DRF-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DRF-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-087-workstream-87
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-087
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-088
+  objective: 'Implement and verify product-contract workstream 10.88: Additional offline research source.'
+  iteration_id: ITER-011
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SRC-002
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-088-workstream-88
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-088
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-089
+  objective: 'Implement and verify product-contract workstream 10.89: Release-candidate identity and evidence closure.'
+  iteration_id: ITER-012
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-RCI-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RCI-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RCI-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RCI-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RCI-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RCI-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RCI-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-RCI-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-089-workstream-89
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-089
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-090
+  objective: 'Implement and verify product-contract workstream 10.90: Capability qualification and generated current
+    contract.'
+  iteration_id: ITER-012
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-CQL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CQL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CQL-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CQL-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CQL-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CQL-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-CQL-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-090-workstream-90
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-090
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-091
+  objective: 'Implement and verify product-contract workstream 10.91: Global accepted-authority journal.'
+  iteration_id: ITER-012
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-AJL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AJL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AJL-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AJL-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AJL-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AJL-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-AJL-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-091-workstream-91
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-091
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-092
+  objective: 'Implement and verify product-contract workstream 10.92: Digest profiles and typed evidence binding.'
+  iteration_id: ITER-012
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-DGP-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DGP-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DGP-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DGP-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DGP-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DGP-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-DGP-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-092-workstream-92
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-092
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-093
+  objective: 'Implement and verify product-contract workstream 10.93: Artifact budgets, sensitivity and export closure.'
+  iteration_id: ITER-012
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-ABX-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ABX-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ABX-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ABX-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ABX-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ABX-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-ABX-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-093-workstream-93
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-093
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-094
+  objective: 'Implement and verify product-contract workstream 10.94: Source capability lifecycle and generation-safe
+    ingestion.'
+  iteration_id: ITER-012
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SRL-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SRL-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SRL-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SRL-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SRL-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SRL-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SRL-007
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-094-workstream-94
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-094
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-095
+  objective: 'Implement and verify product-contract workstream 10.95: Security-advisory intake and toolchain incident
+    response.'
+  iteration_id: ITER-012
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-SAI-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SAI-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SAI-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SAI-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SAI-005
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SAI-006
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SAI-007
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-SAI-008
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-095-workstream-95
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-095
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED
+- id: TASK-096
+  objective: 'Implement and verify product-contract workstream 10.96: Platform runtime compatibility envelope.'
+  iteration_id: ITER-012
+  status: PLANNED
+  criterion_scopes:
+  - requirement_id: REQ-PRE-001
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRE-002
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRE-003
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRE-004
+    criterion_ids:
+    - AC-001
+  - requirement_id: REQ-PRE-005
+    criterion_ids:
+    - AC-001
+  branch: task/TASK-096-workstream-96
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  allowed_paths:
+  - src/
+  - tests/
+  - fixtures/
+  - docs/
+  - scripts/
+  - config/
+  forbidden_paths:
+  - docs/contracts/
+  max_changed_files: 120
+  validation_test_ids:
+  - TEST-096
+  blocking_uncertainty_ids: []
+  risk_level: MEDIUM
+  allowed_model_profile_ids:
+  - LOW_COST
+  - GENERAL
+  - ADVANCED

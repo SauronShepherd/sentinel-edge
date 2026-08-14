@@ -1,0 +1,239 @@
+items:
+- id: ITER-001
+  title: Foundation and acquisition
+  objective: Implement and close contract workstreams 10.1 through 10.8 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-001-foundation-and-acquisition
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-097
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-002
+  title: Orchestration and hazard adapters
+  objective: Implement and close contract workstreams 10.9 through 10.16 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-002-orchestration-and-hazard-adapters
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-098
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-003
+  title: Evidence, sources, and clients
+  objective: Implement and close contract workstreams 10.17 through 10.24 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-003-evidence-sources-and-clients
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-099
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-004
+  title: Temporal consistency and review
+  objective: Implement and close contract workstreams 10.25 through 10.32 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-004-temporal-consistency-and-review
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-100
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-005
+  title: Runtime, trust, and delivery
+  objective: Implement and close contract workstreams 10.33 through 10.40 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-005-runtime-trust-and-delivery
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-101
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-006
+  title: Lifecycle, storage, and commissioning
+  objective: Implement and close contract workstreams 10.41 through 10.48 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-006-lifecycle-storage-and-commissioning
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-102
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-007
+  title: Assurance and execution cutline
+  objective: Implement and close contract workstreams 10.49 through 10.56 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-007-assurance-and-execution-cutline
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-103
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-008
+  title: Multimodal intelligence and modular architecture
+  objective: Implement and close contract workstreams 10.57 through 10.64 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-008-multimodal-intelligence-and-modular-architecture
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-104
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-009
+  title: Supply chain, durable delivery, and time
+  objective: Implement and close contract workstreams 10.65 through 10.72 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-009-supply-chain-durable-delivery-and-time
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-105
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-010
+  title: Extensions, authorization, privacy, and network exposure
+  objective: Implement and close contract workstreams 10.73 through 10.80 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-010-extensions-authorization-privacy-and-network-exposure
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-106
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-011
+  title: Measurement, runtime graph, and geospatial proof
+  objective: Implement and close contract workstreams 10.81 through 10.88 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-011-measurement-runtime-graph-and-geospatial-proof
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-107
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment
+- id: ITER-012
+  title: Release identity, advisory intake, and platform envelope
+  objective: Implement and close contract workstreams 10.89 through 10.96 with criterion-level evidence.
+  status: PLANNED
+  branch: iteration/ITER-012-release-identity-advisory-intake-and-platform-envelope
+  base_commit: 7829f09d2094e3d7c5dcea516c7e6da4ebe8afda
+  outcome_ids:
+  - OUT-BOUNDED-SERVICE
+  - OUT-EXTENSIBLE-INTEGRATION
+  - OUT-HAZARD-MONITORING
+  - OUT-REPRODUCIBLE-PROOF
+  - OUT-RESILIENT-EDGE
+  - OUT-SECURE-LOCAL-OPERATION
+  - OUT-TRUSTED-EVIDENCE
+  - OUT-USABLE-OPERATIONS
+  end_to_end_test_ids:
+  - TEST-108
+  rollback_strategy: Revert the iteration result commit and restore the previous verified release candidate; preserve
+    evidence as superseded history.
+  target_environment: Arm64 Linux reference node and deterministic fixture environment

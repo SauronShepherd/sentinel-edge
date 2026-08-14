@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_artifact_governance.py::test_finalized_reference_rejects_change_after_reference -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 6.1,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "7c3294f1f4d1ce51da65ba34325f48d1b00ef688ab42f713d9d816a5f35798c8",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\storage\\artifacts.py",
+      "sha256": "6ae3302e749e0f5d2f3f9500552445be91806ec974504c65e8db994f173a4ca4"
+    },
+    {
+      "path": "tests\\test_artifact_governance.py",
+      "sha256": "c95dd7803613a81c75b1a394007e3880764a055a409dd1dcab2d2cf6c08704f1"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:28:48.861401Z",
+  "result": "passed",
+  "revision": "REQ-ART-003 finalized artifact TOCTOU integrity rejection",
+  "schema_version": 1
+}

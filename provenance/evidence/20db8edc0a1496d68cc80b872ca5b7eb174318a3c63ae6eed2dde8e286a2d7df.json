@@ -1,0 +1,9 @@
+{
+  "receipt_id": "20db8edc0a1496d68cc80b872ca5b7eb174318a3c63ae6eed2dde8e286a2d7df",
+  "requirement_ids": ["REQ-IN-009"],
+  "changed_paths": ["src/sentinel_edge/collector/android_bridge.py", "tests/test_android_sensor_bridge.py", "tests/test_ingress_adapters.py", "tests/test_collector.py", "tests/test_domain.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_android_sensor_bridge.py tests/test_ingress_adapters.py tests/test_collector.py tests/test_domain.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_client_accessibility.py tests/test_client_security.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.5,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "daacb1cb99b6e248b30271a346b987f0344321c7cf057fa116effe0d86eb06b6",
+  "inputs": [
+    {
+      "path": "tests\\test_client_accessibility.py",
+      "sha256": "92581d97e69090b824ec6a722a93186f50fcf44bd6867320b25caa8e29cfb233"
+    },
+    {
+      "path": "tests\\test_client_security.py",
+      "sha256": "0edb71f7b39ba3a1cd27ba24b2640abfa4c364ab908acc23089c350745998dd9"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:26:18.847459Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

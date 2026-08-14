@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_media_persistence.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "264956092e3b46162bc6365adf4ba9e499da856ee35af47f8dce1b94aabb9148",
+  "inputs": [
+    {
+      "path": "tests\\test_media_persistence.py",
+      "sha256": "edbb99b5b10fb882db5d56f227f185f01e7b6f67cf6ed916052f376d6ce408df"
+    },
+    {
+      "path": "src\\sentinel_edge\\runtime\\media_persistence.py",
+      "sha256": "07a8b20a7c64d90e8125a797098a0f59ca72e9f64f9e5d04a4addb84d540e8eb"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:59:59.091628Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-iop007",
+  "schema_version": 1
+}

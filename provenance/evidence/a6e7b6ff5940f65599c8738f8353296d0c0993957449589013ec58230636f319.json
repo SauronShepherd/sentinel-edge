@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "privacy-closure.json",
+      "sha256": "04f39e0d8d436befd76ccca089e9e9adfce6e1fe3f9bd9e84048fa7aaafdb344"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest tests/test_public_export_scanner.py tests/test_privacy_closure.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 5,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.0,
+  "environment": {
+    "name": "windows-development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a6e7b6ff5940f65599c8738f8353296d0c0993957449589013ec58230636f319",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\exports\\scanner.py",
+      "sha256": "152eabfa11b11756c91925c409c7a0f844f795b09e30257182abcf4aebbbbe01"
+    },
+    {
+      "path": "tests\\test_public_export_scanner.py",
+      "sha256": "c85185bd4522ccfbbaa74b4b9c4436e9f35505797a8723d1746038fd8660d625"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:42:17.899467Z",
+  "result": "passed",
+  "revision": "privacy-persistence-boundary",
+  "schema_version": 1
+}

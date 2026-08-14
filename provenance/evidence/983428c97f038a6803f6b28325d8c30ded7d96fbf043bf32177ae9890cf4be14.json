@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_live_projections_and_offline.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 5,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 8.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "983428c97f038a6803f6b28325d8c30ded7d96fbf043bf32177ae9890cf4be14",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\offline.py",
+      "sha256": "640d590ed1f6ccefa324e1db7f170bed1daa8b8968f97d62367ae27e552a5569"
+    },
+    {
+      "path": "src\\sentinel_edge\\incidents\\engine.py",
+      "sha256": "b603158f6fb01a25ceb13230a3042cbdbe988fb9f06d9e9c92a29d1c2e1b1e5b"
+    },
+    {
+      "path": "tests\\test_live_projections_and_offline.py",
+      "sha256": "ef6744eb0db0048a031665ea793b21a66a238e72fd5c225adceeebd2f500336c"
+    }
+  ],
+  "recorded_at": "2026-08-13T11:01:20.458435Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

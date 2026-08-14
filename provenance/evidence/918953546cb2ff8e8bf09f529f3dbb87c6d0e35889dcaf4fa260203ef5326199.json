@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_network_exposure_policy.py tests/test_web_security_policy.py tests/test_web_boundary_integration.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 9,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 10.8,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "918953546cb2ff8e8bf09f529f3dbb87c6d0e35889dcaf4fa260203ef5326199",
+  "inputs": [
+    {
+      "path": "tests\\test_network_exposure_policy.py",
+      "sha256": "dae70977b998062cfca93afced1a2d12d8ee0fed0a40301e9969a210a9061190"
+    },
+    {
+      "path": "tests\\test_web_security_policy.py",
+      "sha256": "75f9ae21605c0fa0b22605826b5c1ad68394adbcb90c1518aa619846b8881ed6"
+    },
+    {
+      "path": "tests\\test_web_boundary_integration.py",
+      "sha256": "4e2801fe8faa392805e4f7cf7179226a8cb6312898812e7901996ce25625ad96"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:34:01.892777Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_source_resilience.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.0,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "5941fd3254f6a5c172dace609261e8947052d55a422aa7b112725da1280d3649",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\integrations\\resilience.py",
+      "sha256": "e03da7ee6733a527bd6989e7680e2557ffa5e250738a044922989ad387adbdf9"
+    },
+    {
+      "path": "tests\\test_source_resilience.py",
+      "sha256": "de6ff346071e26ca6ffdc6e574ee7e79edf0300d4d404248839092b5fef52915"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:34:09.763772Z",
+  "result": "passed",
+  "revision": "REQ-DAT-004 timeout cache backoff circuit breaker outage",
+  "schema_version": 1
+}

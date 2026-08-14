@@ -1,0 +1,56 @@
+schema_version: 1.0.0
+bundle_id: sentinel-default
+version: 0.13.0
+actor: system-bootstrap
+workloads:
+- workload_id: earthquake-trigger
+  hazard: earthquake
+  tier: 0
+  period_ms: 10
+  deadline_ms: 100
+  max_deferral_ms: 0
+  estimated_cost_ms: 5
+  memory_mb: 16
+  profile_id: seismic-trigger-v1
+  forced_scan_ms: null
+- workload_id: wildfire-stage2
+  hazard: wildfire
+  tier: 1
+  period_ms: 1000
+  deadline_ms: 1500
+  max_deferral_ms: 2000
+  estimated_cost_ms: 80
+  memory_mb: 96
+  profile_id: wildfire-deterministic-v1
+  forced_scan_ms: 5000
+- workload_id: flood-evaluate
+  hazard: flood
+  tier: 2
+  period_ms: 5000
+  deadline_ms: 3000
+  max_deferral_ms: 10000
+  estimated_cost_ms: 15
+  memory_mb: 24
+  profile_id: flood-rules-v2
+  forced_scan_ms: null
+- workload_id: landslide-evaluate
+  hazard: landslide
+  tier: 2
+  period_ms: 5000
+  deadline_ms: 3000
+  max_deferral_ms: 10000
+  estimated_cost_ms: 15
+  memory_mb: 24
+  profile_id: landslide-rules-v2
+  forced_scan_ms: null
+settings:
+  available_memory_mb: 512
+  notification_budget: 8
+  critical_spool_max_items: 256
+  critical_spool_max_bytes: 4194304
+  critical_spool_max_age_seconds: 900
+  artifact_max_bytes: 16777216
+  artifact_reserve_bytes: 524288
+model_hashes: {}
+source_hashes: {}
+created_at: '2026-08-02T10:00:00Z'

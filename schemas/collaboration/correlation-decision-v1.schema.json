@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sentinel://schemas/correlation-decision-v1",
+  "title": "CorrelationDecisionV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision_id", "policy_id", "hazard", "domain_kind", "domain_id", "window_start", "window_end", "candidate_signal_ids", "accepted_signal_ids", "rejected_signal_ids", "independent_peer_count", "selected_action", "positive_reasons", "blocking_reasons", "created_at"],
+  "properties": {
+    "decision_id": {"type": "string", "minLength": 8, "maxLength": 96},
+    "policy_id": {"type": "string", "minLength": 1, "maxLength": 96},
+    "hazard": {"type": "string", "enum": ["wildfire", "earthquake", "flood", "landslide"]},
+    "domain_kind": {"type": "string", "enum": ["spatial_cell", "observation_area", "camera_sector", "river_reach", "catchment", "slope", "monitored_site", "unknown"]},
+    "domain_id": {"type": "string", "minLength": 1, "maxLength": 96},
+    "window_start": {"type": "string", "format": "date-time"},
+    "window_end": {"type": "string", "format": "date-time"},
+    "candidate_signal_ids": {"type": "array", "items": {"type": "string"}},
+    "accepted_signal_ids": {"type": "array", "items": {"type": "string"}},
+    "rejected_signal_ids": {"type": "array", "items": {"type": "string"}},
+    "independent_peer_count": {"type": "integer", "minimum": 0},
+    "selected_action": {"type": "string", "enum": ["no_action", "context_only", "create_review_incident", "update_incident", "multi_node_trigger_simulated"]},
+    "positive_reasons": {"type": "array", "items": {"type": "string", "maxLength": 64}},
+    "blocking_reasons": {"type": "array", "items": {"type": "string", "maxLength": 64}},
+    "created_or_updated_incident_id": {"type": ["string", "null"]},
+    "created_at": {"type": "string", "format": "date-time"}
+  }
+}

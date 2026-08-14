@@ -1,0 +1,43 @@
+{
+  "benchmark_evidence": [
+    {
+      "kind": "development_benchmark",
+      "path": "fixtures/runtime/seismic-benchmark-development.json",
+      "sha256": "da2a60da70b0970e4986693f58dd3300fdfb5ed22bb248c72bc27ebe880eff55"
+    }
+  ],
+  "created_at": "2026-08-02T00:00:00Z",
+  "execution_provider": "python-deterministic",
+  "expires_at": "2027-08-02T00:00:00Z",
+  "hazard": "earthquake",
+  "host_report_sha256": null,
+  "input_contract": {
+    "dtype": "float64",
+    "shape": [
+      "N",
+      3
+    ],
+    "unit": "m/s2"
+  },
+  "model_format": "deterministic_rules",
+  "model_path": "artifacts/models/seismic-trigger-v1.rules.json",
+  "model_sha256": "7c30a7d7b31599d069de9299fd627aea507471a21385daba053bcdb9b49cc962",
+  "output_contract": {
+    "score": "float[0,1]",
+    "state_hint": "enum"
+  },
+  "profile_id": "seismic-trigger-v1",
+  "quality_evidence": [
+    {
+      "kind": "development_quality",
+      "path": "fixtures/runtime/seismic-quality-development.json",
+      "sha256": "3955ae0bca35f22c272c5e3ae2a4a3cd350b742b13f2b11bd6e535b794bdd382"
+    }
+  ],
+  "quantization": "not_applicable",
+  "runtime_name": "sentinel-edge",
+  "runtime_version": "0.21.0",
+  "schema_version": "1.0.0",
+  "thread_count": 1,
+  "workload_id": "earthquake-trigger"
+}

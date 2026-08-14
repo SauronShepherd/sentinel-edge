@@ -1,0 +1,118 @@
+{
+  "scenario_id": "simultaneous-event-v1",
+  "observations": 4,
+  "analyses": 4,
+  "incident_versions": 4,
+  "authority_mutations": 8,
+  "dispatch_order": [
+    "earthquake-trigger",
+    "wildfire-stage2",
+    "flood-evaluate",
+    "landslide-evaluate"
+  ],
+  "final_states": {
+    "earthquake": "confirmed",
+    "flood": "suspected",
+    "landslide": "suspected",
+    "wildfire": "suspected"
+  },
+  "source_health": {
+    "camera-1": "healthy",
+    "hydro-1": "healthy",
+    "imu-1": "healthy",
+    "slope-1": "healthy"
+  },
+  "opportunity_counts": {
+    "offered": 0,
+    "queued": 0,
+    "deferred": 0,
+    "processed": 4,
+    "skipped": 0,
+    "replaced": 0,
+    "invalid": 0
+  },
+  "opportunity_balanced": true,
+  "notification_metrics": {
+    "pending": 4,
+    "delivered": 0,
+    "failed": 0,
+    "suppressed": 0,
+    "expired": 0,
+    "dead_letter": 0,
+    "total": 4,
+    "backlog_age_seconds": 0.145
+  },
+  "schedule_digest": "f0a299b504b252c2e36d884c1db872e9208ab6b38d2d43e54ef65b4a0bc62320",
+  "trace_ids": {
+    "imu-1": "df8fc7d8-83d5-57dd-af07-03c052f50b1e",
+    "camera-1": "5ec410b9-2910-5386-b6ab-d627cb5a7dd1",
+    "hydro-1": "1d0bf9fd-89bb-5448-aabe-31b89b0f9023",
+    "slope-1": "4ac6b4eb-c509-5659-89f6-a6b8f930c7d1"
+  },
+  "scheduler": {
+    "active": [],
+    "queued": [],
+    "deferred": [],
+    "sleeping": [
+      "earthquake-trigger",
+      "flood-evaluate",
+      "landslide-evaluate",
+      "wildfire-stage2"
+    ],
+    "overloaded": false,
+    "degradation_level": 0,
+    "reason_codes": []
+  },
+  "critical_spool": {
+    "pending_items": 0,
+    "pending_bytes": 0,
+    "maximum_items": 256,
+    "maximum_bytes": 4194304,
+    "oldest_age_seconds": 0.0,
+    "expired_items": 0,
+    "exhausted": false
+  },
+  "storage": {
+    "state": "healthy",
+    "writable": true,
+    "used_bytes": 1285,
+    "maximum_bytes": 16777216,
+    "reserve_bytes": 524288,
+    "noncritical_budget_remaining_bytes": 16251643,
+    "critical_budget_remaining_bytes": 16775931,
+    "reason_codes": [
+      "storage_writable"
+    ]
+  },
+  "time_trust": {
+    "state": "trusted",
+    "selected_source_id": "scenario-fixture-clock",
+    "selected_origin": "fixture",
+    "authenticated": false,
+    "uncertainty_ms": 0.0,
+    "clock_epoch": 0,
+    "display_time_allowed": true,
+    "security_validity_allowed": true,
+    "remote_freshness_allowed": true,
+    "peer_correlation_allowed": true,
+    "reason_codes": [
+      "trusted_time_selected"
+    ],
+    "sources": [
+      {
+        "source_id": "scenario-fixture-clock",
+        "origin": "fixture",
+        "authenticated": false,
+        "observed_utc": "2026-08-02T08:00:00.010000Z",
+        "observed_monotonic_ns": 0,
+        "uncertainty_ms": 0.0,
+        "age_ms": 0.0,
+        "stratum": null,
+        "reference_id": "signed-scenario-manifest",
+        "continuity_id": "fixture-continuity-v1",
+        "clock_epoch": 0,
+        "certificate_bootstrap_valid": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "receipt_id": "769df73ad72014d917faf5dba8238189032ec196368104cb4359cccb7f396a8d",
+  "requirement_ids": ["REQ-PLT-002"],
+  "changed_paths": ["registries/requirements.yaml", "registries/tests.yaml", "tests/test_scenario_e2e.py", "fixtures/scenarios/simultaneous-event.json"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_scenario_e2e.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

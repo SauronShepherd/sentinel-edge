@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_supply_chain_evidence.py::test_release_candidate_signature_detects_tamper -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 1,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 12.4,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "866a171a1220ecb02d507848f3bebc9b120fe1cce0f53947aa28b9afd02c7e19",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\release\\signing.py",
+      "sha256": "909a5878f678b72af12b714e08db9c909caf711513a46ff5f15dd84a4204c14a"
+    },
+    {
+      "path": "tests\\test_supply_chain_evidence.py",
+      "sha256": "a17825ed30d87a449d585638fcc367dfb4200c150e8583075ed806bc7b92e93e"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:42:57.391947Z",
+  "result": "passed",
+  "revision": "REQ-PRV-004 artifact hash and untrusted signer rejection",
+  "schema_version": 1
+}

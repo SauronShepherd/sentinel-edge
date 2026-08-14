@@ -1,0 +1,18 @@
+{
+  "claimed_cpu_features": [
+    "asimd"
+  ],
+  "driver_identities": {
+    "imu": "qualified-target-driver"
+  },
+  "hardening_identities": {
+    "kernel_lockdown": "integrity"
+  },
+  "machine": "aarch64",
+  "require_observed_source": true,
+  "runtime_identities": {
+    "provider": "CPUExecutionProvider",
+    "sentinel-edge": "0.21.0"
+  },
+  "target_family": "raspberry-pi-5"
+}

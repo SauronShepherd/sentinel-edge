@@ -1,0 +1,32 @@
+{
+  "all_enabled_sources_qualified": true,
+  "decision_influence_count": 1,
+  "enabled_count": 1,
+  "h0_zero_live_source_valid": true,
+  "live_release_ready_count": 0,
+  "reports": [
+    {
+      "decision_influence_allowed": true,
+      "decision_state": "active",
+      "endpoint_reachable": true,
+      "evaluated_at": "2026-08-02T17:49:53.813316Z",
+      "freshness_valid": true,
+      "generation_consistent": true,
+      "observation_sha256": "e9a3f5b969c199efe679588e954bf4610bffb7308ee041d3c180f3d0d710032d",
+      "policy_sha256": "cf11093e17632802b0aceda1491855981265a86b50e26600f07e8aed7aa5f0dc",
+      "product_fit": true,
+      "provider_authorized": true,
+      "reason_codes": [
+        "source_fixture_qualified"
+      ],
+      "release_ready": false,
+      "rights_permitted": true,
+      "schema_compatible": true,
+      "schema_version": "1.0.0",
+      "source_id": "meteoalarm-fixture",
+      "state": "tested",
+      "terms_current": true
+    }
+  ],
+  "schema": "sentinel-edge-source-readiness/1.0"
+}

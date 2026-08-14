@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_geospatial_known_answers.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "05b6ba42efc01269f7465a244d48cb08142cec4aa6df7173aae8a42643d90c38",
+  "inputs": [
+    {
+      "path": "tests\\test_geospatial_known_answers.py",
+      "sha256": "5c9c5b217342389bd7c452e7fb28b6cd11ce1b42a4a05ba86e1daf2306bd9b47"
+    },
+    {
+      "path": "src\\sentinel_edge\\geospatial\\known_answers.py",
+      "sha256": "10fd0039d12707596839effd4cad78f9ccc0952007878eaa39eb8284146af918"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:12:18.725104Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-grp011",
+  "schema_version": 1
+}

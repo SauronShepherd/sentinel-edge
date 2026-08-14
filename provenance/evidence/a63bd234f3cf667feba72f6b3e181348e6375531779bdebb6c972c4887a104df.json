@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "qualification\\claim-registry.json",
+      "sha256": "924b736e77bde6749e2dbef536bae6d41396c99ef7b8038a244d86a0a3694389"
+    },
+    {
+      "path": "qualification\\claim-table.md",
+      "sha256": "472705e4f4496589ab9cd1736057c3a48bebda17dce529911861a3b6fd22df8f"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_claim_registry_generation.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 6,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 7.1,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "a63bd234f3cf667feba72f6b3e181348e6375531779bdebb6c972c4887a104df",
+  "inputs": [
+    {
+      "path": "tests\\test_claim_registry_generation.py",
+      "sha256": "fc68b288dab6973a811e571aae2351161d51d85c1151d4e1fb5bfddf6884f51c"
+    },
+    {
+      "path": "src\\sentinel_edge\\release\\claims.py",
+      "sha256": "b9f537dbf1279ac3d134bff2bb3b129442ada3c9c048f0f741536491666bac58"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:11:30.557333Z",
+  "result": "passed",
+  "revision": "REQ-PRV-006 automated claim classification report",
+  "schema_version": 1
+}

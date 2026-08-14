@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sentinel://schemas/collaborative-signal-v1",
+  "title": "CollaborativeSignalV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "signal_id", "episode_id", "sequence", "node_pseudonym", "hazard", "observation", "correlation_domain", "event_time_bucket", "confidence_band", "coverage_band", "sensor_health", "clock_uncertainty_band", "source_mode", "sharing_policy_version", "research_use_allowed", "expires_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "signal_id": {"type": "string", "minLength": 16, "maxLength": 80}, "episode_id": {"type": "string", "minLength": 16, "maxLength": 80}, "sequence": {"type": "integer", "minimum": 0}, "node_pseudonym": {"type": "string", "minLength": 16, "maxLength": 96, "pattern": "^[A-Za-z0-9_-]+$"}, "hazard": {"type": "string", "enum": ["wildfire", "earthquake", "flood", "landslide"]}, "observation": {"type": "string", "minLength": 1, "maxLength": 96, "pattern": "^[a-z0-9_]+$"}, "correlation_domain": {"$ref": "sentinel://schemas/correlation-domain-v1"}, "event_time_bucket": {"type": "string", "format": "date-time"}, "confidence_band": {"type": "string", "enum": ["low", "medium", "high", "unknown"]}, "coverage_band": {"type": "string", "enum": ["good", "partial", "degraded", "blind", "unknown"]}, "sensor_health": {"type": "string", "enum": ["healthy", "degraded", "failed", "unknown"]}, "clock_uncertainty_band": {"type": "string", "enum": ["low", "medium", "high", "unknown"]}, "source_mode": {"type": "string", "enum": ["live", "fixture", "simulated", "replayed"]}, "sharing_policy_version": {"type": "string", "minLength": 1, "maxLength": 32}, "research_use_allowed": {"type": "boolean"}, "expires_at": {"type": "string", "format": "date-time"}, "reason_codes": {"type": "array", "maxItems": 16, "items": {"type": "string", "pattern": "^[A-Z0-9_]+$"}}
+  }
+}

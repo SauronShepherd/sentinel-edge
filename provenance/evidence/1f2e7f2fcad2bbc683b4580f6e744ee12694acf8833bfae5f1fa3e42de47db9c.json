@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "power-energy-report.json",
+      "sha256": "f5adb602034efd1c19766613168c8dfffd432331c9b822f36ff615d21f5ffcf0"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest tests/test_power_energy_runtime_v019.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 8,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 7.6,
+  "environment": {
+    "name": "windows-development",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "1f2e7f2fcad2bbc683b4580f6e744ee12694acf8833bfae5f1fa3e42de47db9c",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\qualification\\power_energy.py",
+      "sha256": "eb76e1527cea3a9865846581cde4d3ff6e9da4192c36b36cb03c2f273c73fc6f"
+    },
+    {
+      "path": "tests\\test_power_energy_runtime_v019.py",
+      "sha256": "e1adff81f6515db54910f20b6ae44f0ec8d14d4e144ecfb16eefba6cd9b20d25"
+    }
+  ],
+  "recorded_at": "2026-08-12T15:47:52.674413Z",
+  "result": "passed",
+  "revision": "external-energy-method-disclosure",
+  "schema_version": 1
+}

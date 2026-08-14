@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "path": "tests\\test_scenario_replay_controls.py",
+      "sha256": "457e16a20ed3573efe0bed6fdf836a54514ce545b6ce3e31f23c99d914f2d447"
+    }
+  ],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_scenario_replay_controls.py tests/test_scenario_e2e.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 3,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.9,
+  "environment": {
+    "name": "Windows AMD64 development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "8f30ea9a2282e1033a60e38f6bdb05ac88842e48174c35908509847b5bd4ccd3",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\scenario\\replay.py",
+      "sha256": "d4361534650ca4a1cb43df299ea5d77b33f95c1608c019a8b6f656ce8ccda1e6"
+    },
+    {
+      "path": "src\\sentinel_edge\\scenario\\__init__.py",
+      "sha256": "c25a980955fde579faa9a7328526740af74de6f3edcd52e2ec81405b97f5f2d9"
+    },
+    {
+      "path": "tests\\test_scenario_replay_controls.py",
+      "sha256": "457e16a20ed3573efe0bed6fdf836a54514ce545b6ce3e31f23c99d914f2d447"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:37:48.180235Z",
+  "result": "passed",
+  "revision": "explicit-scenario-replay-controls-REQ-SCN-003",
+  "schema_version": 1
+}

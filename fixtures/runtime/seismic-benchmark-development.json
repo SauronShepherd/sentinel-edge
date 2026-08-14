@@ -1,0 +1,8 @@
+{
+  "schema": "sentinel-edge-profile-benchmark/1.0",
+  "profile_id": "seismic-trigger-v1",
+  "classification": "development_measurement",
+  "profile_benchmark_passed": true,
+  "target_qualified": false,
+  "reason": "Development-host profile checks pass; no Raspberry Pi 5 measurement is bound."
+}

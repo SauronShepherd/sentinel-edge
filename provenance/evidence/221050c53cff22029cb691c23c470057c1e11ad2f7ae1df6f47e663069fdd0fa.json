@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_card_index.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 8.0,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "221050c53cff22029cb691c23c470057c1e11ad2f7ae1df6f47e663069fdd0fa",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\release\\cards.py",
+      "sha256": "3ca6f3b81ad93eb7df58fe170042ef61e8bf80ef890bf8521ba08532a65f45cf"
+    },
+    {
+      "path": "tests\\test_card_index.py",
+      "sha256": "50f0b5e23342f66e1364ed8554d4f97f21d2ac4512c229ee6671dd5e17010d28"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:44:49.161416Z",
+  "result": "passed",
+  "revision": "REQ-PRV-008 machine-readable model data source card index",
+  "schema_version": 1
+}

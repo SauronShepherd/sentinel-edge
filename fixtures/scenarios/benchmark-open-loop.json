@@ -1,0 +1,119 @@
+{
+  "scenario_id": "benchmark-open-loop-v1",
+  "start_at": "2026-08-02T08:00:00Z",
+  "model_size_bytes": 0,
+  "release_instrumentation": {
+    "config_hashes": [
+      "benchmark-config-v1"
+    ],
+    "camera_preprocessing": {
+      "opencv_enabled": true,
+      "kleidicv_enabled": false,
+      "backend_version": "opencv-4.10.0",
+      "build": "sentinel-camera-preprocess-v1",
+      "thread_policy": "single-threaded",
+      "operations": [
+        "decode",
+        "resize",
+        "privacy_mask"
+      ]
+    },
+    "telemetry_policy": {
+      "release_schema": "sentinel-edge-release-instrumentation-v1",
+      "metrics": [
+        "latency",
+        "deadline",
+        "resource",
+        "hazard_quality"
+      ],
+      "sampling": "per_opportunity"
+    }
+  },
+  "benchmark_policy": {
+    "arrival_mode": "open_loop",
+    "primary_tail_metric": "p99_end_to_end_ms",
+    "miss_policy": "missed_and_skipped_counted_in_offered_rate",
+    "warmup_runs": 1,
+    "repeats": 3,
+    "steady_state": true,
+    "online_quality_scope": "timed_run_only"
+  },
+  "resources": {
+    "cpu_pressure": 0.55,
+    "memory_pressure": 0.45,
+    "io_pressure": 0.2,
+    "temperature_c": 58.0,
+    "available_memory_mb": 512,
+    "power_degraded": false
+  },
+  "opportunities": [
+    {
+      "opportunity_key": "flood-001",
+      "workload_id": "flood-evaluate",
+      "hazard": "flood",
+      "tier": 2,
+      "scheduled_offset_ms": 0,
+      "captured_offset_ms": 0,
+      "deadline_ms": 100,
+      "max_deferral_ms": 100,
+      "memory_mb": 24,
+      "profile_id": "flood-rules-v1",
+      "service_ms": {
+        "B0": 38,
+        "B1": 28,
+        "O1": 28
+      }
+    },
+    {
+      "opportunity_key": "wildfire-001",
+      "workload_id": "wildfire-stage2",
+      "hazard": "wildfire",
+      "tier": 1,
+      "scheduled_offset_ms": 0,
+      "captured_offset_ms": 0,
+      "deadline_ms": 90,
+      "max_deferral_ms": 100,
+      "memory_mb": 96,
+      "profile_id": "wildfire-deterministic-v1",
+      "service_ms": {
+        "B0": 70,
+        "B1": 50,
+        "O1": 50
+      }
+    },
+    {
+      "opportunity_key": "earthquake-001",
+      "workload_id": "earthquake-trigger",
+      "hazard": "earthquake",
+      "tier": 0,
+      "scheduled_offset_ms": 0,
+      "captured_offset_ms": 0,
+      "deadline_ms": 20,
+      "max_deferral_ms": 0,
+      "memory_mb": 16,
+      "profile_id": "seismic-trigger-v1",
+      "service_ms": {
+        "B0": 7,
+        "B1": 5,
+        "O1": 5
+      }
+    },
+    {
+      "opportunity_key": "landslide-001",
+      "workload_id": "landslide-evaluate",
+      "hazard": "landslide",
+      "tier": 2,
+      "scheduled_offset_ms": 10,
+      "captured_offset_ms": 10,
+      "deadline_ms": 120,
+      "max_deferral_ms": 150,
+      "memory_mb": 24,
+      "profile_id": "landslide-rules-v1",
+      "service_ms": {
+        "B0": 32,
+        "B1": 24,
+        "O1": 24
+      }
+    }
+  ]
+}

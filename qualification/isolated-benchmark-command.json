@@ -1,0 +1,23 @@
+{
+  "child_namespace": "net:[4026532251]",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-c",
+    "import os; assert os.environ.get('SENTINEL_BENCHMARK_NETWORK_ISOLATED') == '1'; print('benchmark-workload-ok')"
+  ],
+  "failures": [],
+  "limitations": [
+    "The report proves only the captured command process ran in the tested namespace.",
+    "Target qualification still requires binding this report to the exact measured B0/B1/O1 execution and host envelope."
+  ],
+  "parent_namespace": "net:[4026531840]",
+  "preflight_egress_blocked": true,
+  "report_digest": "44e556d53842f00fb70b67715e805b8f0bd25e403fad4b0dfecbfaa0287b4436",
+  "schema": "sentinel-edge-isolated-benchmark-command/1.0",
+  "stderr": "",
+  "stdout": "benchmark-workload-ok\n",
+  "supported": true,
+  "valid": true,
+  "workload_returncode": 0,
+  "workload_started": true
+}

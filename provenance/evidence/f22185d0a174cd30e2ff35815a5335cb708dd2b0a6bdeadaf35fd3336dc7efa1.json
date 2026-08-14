@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_payload_validation.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 4.0,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "f22185d0a174cd30e2ff35815a5335cb708dd2b0a6bdeadaf35fd3336dc7efa1",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\integrations\\payload_validation.py",
+      "sha256": "350ea89c37be914f43f066b0646a750b31c0d464d7fb266c58ef99a18b7482bc"
+    },
+    {
+      "path": "tests\\test_payload_validation.py",
+      "sha256": "4e17962f1f227f7e28e1751a189dbe966012acc9685414a44058940acb996555"
+    }
+  ],
+  "recorded_at": "2026-08-12T18:18:22.714239Z",
+  "result": "passed",
+  "revision": "REQ-DAT-010 bounded CAP GeoJSON XML validation",
+  "schema_version": 1
+}

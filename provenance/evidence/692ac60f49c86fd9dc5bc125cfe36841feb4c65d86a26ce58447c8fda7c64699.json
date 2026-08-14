@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_claim_access.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "692ac60f49c86fd9dc5bc125cfe36841feb4c65d86a26ce58447c8fda7c64699",
+  "inputs": [
+    {
+      "path": "tests\\test_claim_access.py",
+      "sha256": "f21ba80f37b6476e5921b42643cfe719c093dd1f0e6971d81f5e9933a77f9619"
+    },
+    {
+      "path": "src\\sentinel_edge\\benchmark\\claim_access.py",
+      "sha256": "9fb6cab257cb4efbb02dae03cf4bd224dd876f9cf0d25264fe684c337094120f"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:53:22.655003Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-bgv006",
+  "schema_version": 1
+}

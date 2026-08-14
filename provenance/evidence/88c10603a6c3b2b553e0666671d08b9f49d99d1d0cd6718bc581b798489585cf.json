@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_research_asset_policy.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.7,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "88c10603a6c3b2b553e0666671d08b9f49d99d1d0cd6718bc581b798489585cf",
+  "inputs": [
+    {
+      "path": "tests\\test_research_asset_policy.py",
+      "sha256": "2c86dbb9836ea69e8cc1e5869009983b34beb33173b370d0de1e3d0419497120"
+    }
+  ],
+  "recorded_at": "2026-08-13T03:06:49.575506Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

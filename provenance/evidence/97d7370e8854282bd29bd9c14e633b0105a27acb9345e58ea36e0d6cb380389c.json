@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_forecast_transparency.py tests/test_flood_landslide_contracts.py tests/test_hazards.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 24,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 12.9,
+  "environment": {
+    "name": "Windows development host; deterministic flood forecast contract tests",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "97d7370e8854282bd29bd9c14e633b0105a27acb9345e58ea36e0d6cb380389c",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\hazards\\forecast.py",
+      "sha256": "2de293679068efe5cd4ecc09325ed2ee6f8853ac81d7ebb790c0b4f8f5ba6fb3"
+    },
+    {
+      "path": "src\\sentinel_edge\\hazards\\flood.py",
+      "sha256": "915dc99e1f68d2bd3371be81ba261c929b6f3212c4012b450328813d4dea2016"
+    },
+    {
+      "path": "tests\\test_forecast_transparency.py",
+      "sha256": "0a4c7798dd63cba56e157b83cec639e892026db2834b96e7a07b429e81591a49"
+    }
+  ],
+  "recorded_at": "2026-08-12T17:07:54.271124Z",
+  "result": "passed",
+  "revision": "working-tree-forecast-transparency",
+  "schema_version": 1
+}

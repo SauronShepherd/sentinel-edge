@@ -1,0 +1,37 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest -q tests/test_cap_test_drafts.py tests/test_privacy_backup_and_exports.py tests/test_authority_watermark_closure.py tests/test_public_export_scanner.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 14,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 31.8,
+  "environment": {
+    "name": "Windows development host; deterministic CAP/export integration tests",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "cb4dcc241a09bec2993c7152c7ec9f6ea54b9b29d502c2270d87f081e0fd4828",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\exports\\cap.py",
+      "sha256": "671a734d384c821c8ac3c51b976323563d16c250d63d8c76cfa3a39edef881ef"
+    },
+    {
+      "path": "src\\sentinel_edge\\exports\\__init__.py",
+      "sha256": "3708c5b5382af673662040e0964b426ddc91e36e2db09b882057fcd046312f77"
+    },
+    {
+      "path": "tests\\test_cap_test_drafts.py",
+      "sha256": "642cb94f90baa95df12a0817f62055926fb5fe29099152028ddd62493faf0dbc"
+    }
+  ],
+  "recorded_at": "2026-08-12T16:51:01.149885Z",
+  "result": "passed",
+  "revision": "working-tree-cap-test-drafts",
+  "schema_version": 1
+}

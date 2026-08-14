@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collaboration_gmail.py tests/test_collaboration_config.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 4,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 3.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "2428e13bb852bfca66e24d18cfb654add22364b9a910abd163f9d7663dd47492",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\collaboration\\gmail.py",
+      "sha256": "7b01a11e98ef0241e70ddf89325be452a0d04d1f7d904a26aca92c639e918e07"
+    },
+    {
+      "path": "tests\\test_collaboration_gmail.py",
+      "sha256": "4c6239518ea7177623a20266a643a074b88fb54e95d9e89f34bcf8fe1b9291dd"
+    },
+    {
+      "path": "tests\\test_collaboration_config.py",
+      "sha256": "ca5791276f05c3cf2972f922dcdc98641b0742b5917eefacdf4d85ae226433f3"
+    },
+    {
+      "path": "config\\collaboration.yaml",
+      "sha256": "9c15dc83b0c1afaac0947fb89bf7344d9ded10230aa75074603e37644fcc4c0c"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:48:11.977909Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

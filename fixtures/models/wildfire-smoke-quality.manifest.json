@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-08-02T00:00:00+00:00",
+  "dataset_path": "fixtures/models/wildfire-smoke-quality-dataset.jsonl",
+  "dataset_sha256": "4f56248e5b16f17e618441e5f13a174b2a3f06872aa41049d071dd389eefccf1",
+  "expires_at": "2027-08-02T00:00:00+00:00",
+  "final_claim_set_frozen": true,
+  "hazard": "wildfire",
+  "known_answer_path": "fixtures/models/wildfire-smoke-known-answer.json",
+  "known_answer_sha256": "ee770473302932d49773af9a4feaafcc1288daf7294c69df9a44a559757e5ce0",
+  "license_id": "Apache-2.0",
+  "maximum_abstention_rate": 0.0,
+  "maximum_false_alarm_rate": 0.0,
+  "minimum_recall": 1.0,
+  "model_format": "sentinel-linear-json",
+  "model_id": "wildfire-smoke-linear-v1",
+  "model_path": "artifacts/models/wildfire-smoke-linear-v1.json",
+  "model_sha256": "363f399c3e98aae45a91f0432e5987d03eb177fb381a622a60295dbf4b376350",
+  "schema_version": "1.0.0",
+  "score_tolerance": 1e-12,
+  "source_class": "simulated",
+  "split_group_field": "group_id"
+}

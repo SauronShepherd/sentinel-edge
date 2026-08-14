@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "branch_id": "positive",
+      "case_id": "positive",
+      "expected_outputs": {
+        "branch": "positive",
+        "score": 1.0
+      },
+      "inputs": {
+        "value": 1
+      },
+      "tolerance": 0.0
+    },
+    {
+      "branch_id": "negative",
+      "case_id": "negative",
+      "expected_outputs": {
+        "branch": "negative",
+        "score": 0.0
+      },
+      "inputs": {
+        "value": -1
+      },
+      "tolerance": 0.0
+    }
+  ],
+  "model_graph_sha256": "c4c6311826bc2cacd1ad2aba9b402d19b2012976a3cc484931a23663edb284ab",
+  "required_branches": [
+    "positive",
+    "negative"
+  ],
+  "runtime_profile_sha256": "8740612d6c83acd5563baab009f0d120b97e954e63450b3ceb5acead254e9efd",
+  "session_initialization_repetitions": 2,
+  "suite_id": "seismic-development-known-answer-v0.21.0"
+}

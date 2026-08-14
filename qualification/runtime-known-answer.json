@@ -1,0 +1,38 @@
+{
+  "branch_coverage_complete": true,
+  "case_results": [
+    {
+      "actual_output_sha256": "ec18f5bd97050eec6addbadb3023aafc51dd52d84d030ba5e59b284f7b1b0ded",
+      "branch_id": "positive",
+      "case_id": "positive",
+      "failures": [],
+      "passed": true
+    },
+    {
+      "actual_output_sha256": "7cb877f8e1839e351ca1e3fb3a0984754ad4583a76e5399bd05975bfdd425802",
+      "branch_id": "negative",
+      "case_id": "negative",
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "cold_initialization_passed": true,
+  "development_passed": true,
+  "failures": [],
+  "model_graph_sha256": "c4c6311826bc2cacd1ad2aba9b402d19b2012976a3cc484931a23663edb284ab",
+  "report_digest": "a85755f6f36418745d5466238f2489c5e5b55dcce43edb5bb0d90f825d0807eb",
+  "runtime_profile_sha256": "8740612d6c83acd5563baab009f0d120b97e954e63450b3ceb5acead254e9efd",
+  "schema": "sentinel-edge-runtime-known-answer-report/1.0",
+  "service_start_allowed": true,
+  "session_initialization_ms": [
+    0.000822,
+    0.000711
+  ],
+  "session_initialization_repetitions": 2,
+  "state": "tested",
+  "suite_id": "seismic-development-known-answer-v0.21.0",
+  "suite_sha256": "2426a80f93f5bd5d7f119cd0f90954d01cfe7c961c5120e238f96429d5d7686d",
+  "target_host_qualified": false,
+  "target_qualified": false,
+  "target_runtime_qualified": false
+}

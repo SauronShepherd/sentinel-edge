@@ -1,0 +1,41 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_artifact_read_authorization.py tests/test_artifact_governance.py tests/test_privacy_export_api.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 8,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 6.0,
+  "environment": {
+    "name": "emulated-aarch64-dev",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "59e3e541689a4dcddbed11f6797b507a3023ab2b9b7e719c0b8e58b8cf325ab2",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\storage\\artifact_governance.py",
+      "sha256": "fa7b56384bed831259ec3945ba95496e969e413d9f1812d0fc3f2f6eb509484c"
+    },
+    {
+      "path": "tests\\test_artifact_read_authorization.py",
+      "sha256": "c1736f1bb80a4cd5c9fae4973013d6a676fd376628a94ff40da643d680d671a7"
+    },
+    {
+      "path": "tests\\test_artifact_governance.py",
+      "sha256": "c95dd7803613a81c75b1a394007e3880764a055a409dd1dcab2d2cf6c08704f1"
+    },
+    {
+      "path": "tests\\test_privacy_export_api.py",
+      "sha256": "13bd4ab589e19aacea92104a8868fb1ee5c63f4323702869c7493a97432b64c8"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:55:16.439065Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

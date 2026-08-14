@@ -1,0 +1,25 @@
+{
+  "architecture_64bit": true,
+  "board_model": null,
+  "boot_id_sha256": "a0de57050c75df4d1f521b305d70ebf72aa85ef68672abf01115ab8660724f2d",
+  "cgroup_v2": true,
+  "cpu_count": 5,
+  "cpu_model": "0",
+  "kernel_release": "6.12.13",
+  "machine": "x86_64",
+  "maximum_temperature_c": null,
+  "memory_mb": 6072,
+  "observed_at": "2026-08-02T17:49:39.944002Z",
+  "observed_files": {
+    "/etc/os-release": "8b8c2f53770c96bf2996f8e9feb3705d4fec1a4579251eea8c996cb458257731",
+    "/proc/cpuinfo": "a3ed454ed7814e7ba8c6b58c16a84446e32b814bf2084de79c6a2e426088f78b",
+    "/proc/meminfo": "958dd19a3fd4390ca18d715b4f39b087fe496b1d7fac288bf230620754769375"
+  },
+  "os_id": "debian",
+  "os_version_id": "13",
+  "power_evidence": "unavailable",
+  "psi_available": false,
+  "schema_version": "1.0.0",
+  "system": "Linux",
+  "thermal_sensor_count": 0
+}

@@ -1,0 +1,29 @@
+{
+  "artifacts": [],
+  "command": "PYTHONPATH=src .venv/Scripts/python.exe -m pytest tests/test_wire_boundary.py -q",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 0.6,
+  "environment": {
+    "name": "Windows development host",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "6b195c29e588ebab9c46283f3a0c2ab399803d8d6dfd1cc732655a5ca67b520e",
+  "inputs": [
+    {
+      "path": "tests\\test_wire_boundary.py",
+      "sha256": "ed384cdbfaab2ea508b2af51757bacdf26ffdf062efe515d8ed54793a854b92e"
+    }
+  ],
+  "recorded_at": "2026-08-12T19:51:03.937306Z",
+  "result": "passed",
+  "revision": "working-tree",
+  "schema_version": 1
+}

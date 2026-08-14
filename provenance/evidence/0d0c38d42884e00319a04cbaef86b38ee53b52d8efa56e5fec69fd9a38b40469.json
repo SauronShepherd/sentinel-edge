@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "c36dc352d39651f8d1bb5af9169786e46ee69cfe7365048dddbfc206945154b2"
+    }
+  ],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_collaboration_api.py tests/test_api.py tests/test_incident_identity_api.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 7,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 10.9,
+  "environment": {
+    "name": "local deterministic API fixture",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "0d0c38d42884e00319a04cbaef86b38ee53b52d8efa56e5fec69fd9a38b40469",
+  "inputs": [
+    {
+      "path": "src\\sentinel_edge\\gateway\\api.py",
+      "sha256": "c36dc352d39651f8d1bb5af9169786e46ee69cfe7365048dddbfc206945154b2"
+    },
+    {
+      "path": "tests\\test_collaboration_api.py",
+      "sha256": "835e1c3c6f900a668f4a6a2f781f58fab06b48aac8468b70932de52f70460326"
+    }
+  ],
+  "recorded_at": "2026-08-13T10:07:37.399282Z",
+  "result": "passed",
+  "revision": "collaboration-projections-v1-20260813",
+  "schema_version": 1
+}

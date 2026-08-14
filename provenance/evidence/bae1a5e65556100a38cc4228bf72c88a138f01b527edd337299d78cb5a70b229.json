@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_acl_diagnostic.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 2,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "bae1a5e65556100a38cc4228bf72c88a138f01b527edd337299d78cb5a70b229",
+  "inputs": [
+    {
+      "path": "tests\\test_acl_diagnostic.py",
+      "sha256": "cd3fede3b345f7f29c92079bc996cb5039130f6d4f9294918222d98590c505fe"
+    },
+    {
+      "path": "src\\sentinel_edge\\runtime\\acl_diagnostic.py",
+      "sha256": "cdb8ad337a2dfa23facba02668be5ab0767acdf1807b51b1e6930f9982a8e7ec"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:34:44.588826Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-run005",
+  "schema_version": 1
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "sentinel-edge-deterministic-rules/1.0",
+  "profile_id": "seismic-trigger-v1",
+  "inputs": ["x", "y", "z"],
+  "unit": "m/s2",
+  "trigger": {"peak_vector_min": 1.5, "persistence_samples": 3},
+  "claim_limit": "development deterministic fixture; not a learned or target-qualified model"
+}

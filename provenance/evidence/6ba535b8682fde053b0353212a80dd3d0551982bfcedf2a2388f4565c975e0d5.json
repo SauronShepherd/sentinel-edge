@@ -1,0 +1,9 @@
+{
+  "receipt_id": "6ba535b8682fde053b0353212a80dd3d0551982bfcedf2a2388f4565c975e0d5",
+  "requirement_ids": ["REQ-SCN-004"],
+  "changed_paths": ["src/sentinel_edge/scenario/faults.py", "tests/test_scenario_faults.py", "tests/test_scenario_replay_controls.py", "tests/test_scenario_e2e.py"],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_scenario_faults.py tests/test_scenario_replay_controls.py tests/test_scenario_e2e.py",
+  "result": "PASSED",
+  "evidence_class": "development_fixture",
+  "target_qualification": false
+}

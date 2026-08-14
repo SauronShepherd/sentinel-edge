@@ -1,0 +1,33 @@
+{
+  "artifacts": [],
+  "command": ".venv\\Scripts\\python.exe -m pytest -q tests/test_update_preconditions.py",
+  "counts": {
+    "collection_errors": 0,
+    "failed": 0,
+    "passed": 4,
+    "rerun": 0,
+    "skipped": 0,
+    "xfailed": 0
+  },
+  "duration_seconds": 1.0,
+  "environment": {
+    "name": "H0 emulated aarch64 qualification",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "evidence_id": "8bf279cc238e0c5fe611b6c1e40c40c8371bffcf6c35b7c2fdef7f1b20ac2e96",
+  "inputs": [
+    {
+      "path": "tests\\test_update_preconditions.py",
+      "sha256": "9a228a880a5058cd0ea0f42dee84665283bb320429541095e0ee9d989f2fbf00"
+    },
+    {
+      "path": "src\\sentinel_edge\\update\\preconditions.py",
+      "sha256": "0b93e9edbd75e43bb052d410df7502bc349634e9f090808b1ea5f040ff108931"
+    }
+  ],
+  "recorded_at": "2026-08-13T13:37:53.917141Z",
+  "result": "passed",
+  "revision": "working-tree-20260813-upd004",
+  "schema_version": 1
+}
