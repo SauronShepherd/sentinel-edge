@@ -33,6 +33,7 @@ _GENERATED = {
     "wheelhouse-report.json",
     "power-energy-report.json",
     "runtime-known-issue-report.json",
+    "docs/release/CURRENT_SUBMISSION_READINESS.md",
 }
 
 

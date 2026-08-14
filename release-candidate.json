@@ -1,11 +1,10 @@
 {
   "admission_blockers": [
-    "privacy_closure_not_release_eligible",
-    "provenance_not_verified",
-    "reproducibility_not_verified"
+    "repository_dirty",
+    "submission_command_matrix_source_tree_mismatch"
   ],
   "admission_reason": "development_candidate_only",
-  "candidate_id": "4a9d8b3df501ced147f8ae18e840e1c07bc2f6bcf3b090fad8c41713049581d1",
+  "candidate_id": "005afc439f61c1aa0050a2961faa1d39ac25357ef5bc6112cd83770fb1d0962e",
   "configuration": {
     "active": {
       "actor": "system-bootstrap",
@@ -78,8 +77,8 @@
     },
     "history": [
       {
-        "activated_at": "2026-08-14T09:47:49.015310Z",
-        "activation_id": "d1b09c00-427b-47a1-99f6-ac1c2e907920",
+        "activated_at": "2026-08-14T09:59:52.000875Z",
+        "activation_id": "51892e4f-c48d-44b5-8624-17c698fd591f",
         "actor": "system-bootstrap",
         "bundle_id": "sentinel-default",
         "bundle_sha256": "157aff29c9f1951a8b2bfaa92767ff1f0c50735fa438912c7b068c01a65aa3c8",
@@ -94,7 +93,7 @@
     ],
     "last_known_good": null
   },
-  "generated_at": "2026-08-14T09:48:04.663387+00:00",
+  "generated_at": "2026-08-14T10:08:30.735206+00:00",
   "identity": {
     "active_configuration_digest": "157aff29c9f1951a8b2bfaa92767ff1f0c50735fa438912c7b068c01a65aa3c8",
     "active_contract": {
@@ -243,7 +242,7 @@
     },
     "frozen_entrant_artifacts": {
       "active_configuration_digest": "157aff29c9f1951a8b2bfaa92767ff1f0c50735fa438912c7b068c01a65aa3c8",
-      "repository_inventory_digest": "3f21c2b243279cfd9a74c76e30a33d22c3e3643d36488db567f9eaa4c74fb178",
+      "repository_inventory_digest": "b2da54c5f0ebcfe15f5289b35b14f63113c1072bf2545fe7eb93c2c32cc742d8",
       "requirements_registry_sha256": "3e17d22c23e01b0723c61f60abc131b42517f406ff49e6a6d42ddd337e79e300"
     },
     "g0_gate_status": {
@@ -257,7 +256,7 @@
       },
       "valid": true
     },
-    "inventory_digest": "3f21c2b243279cfd9a74c76e30a33d22c3e3643d36488db567f9eaa4c74fb178",
+    "inventory_digest": "b2da54c5f0ebcfe15f5289b35b14f63113c1072bf2545fe7eb93c2c32cc742d8",
     "observed_environment": {
       "g0_gate_status_sha256": "bda7ebb0c626888700e8afb069e90b3f9387f79045de5c16bd07ff8300d33787",
       "host_trust_report_sha256": "a6f065cff6099a5cdfc46f0d6961586528a0215e16da7474bfaa688999a5e094",
@@ -267,9 +266,9 @@
       "failures": [],
       "independent_review_complete": false,
       "present": true,
-      "privacy_state_complete": false,
-      "release_eligible": false,
-      "sha256": "e829fbc6a5cdda59bec208ac1833bb370146956e688d139cc781f7321ffdd6fd",
+      "privacy_state_complete": true,
+      "release_eligible": true,
+      "sha256": "d7e650496fa327f05672b7ffc4b26f54e2b7e04f8ab9146b025a2d8da41318cb",
       "verified": true
     },
     "project": "sentinel-edge",
@@ -987,10 +986,14 @@
     },
     "release_profile": "H0-EMULATED-AARCH64-20260813",
     "repository_state": {
-      "dirty": false,
+      "dirty": true,
       "git_available": true,
-      "revision": "32845cc0220d9623e48cf58b505132731ca34086",
-      "status_entries": []
+      "revision": "a9628218ec4dbd13793a98feb0ac11c400796b4b",
+      "status_entries": [
+        " M build-provenance.json",
+        " M reproducibility-report.json",
+        " M src/sentinel_edge/release/provenance.py"
+      ]
     },
     "requirements": {
       "by_priority": {
@@ -1014,10 +1017,12 @@
       "release_credentials_proven": true
     },
     "submission_command_matrix": {
-      "failures": [],
+      "failures": [
+        "submission_command_matrix_source_tree_mismatch"
+      ],
       "present": true,
-      "sha256": "7e1b96d0f73eb02ff88e16b0bb0a003521a2af360dd71dcb7fc0eafeecf9fe22",
-      "valid": true
+      "sha256": "a82262ce11351039e19a1ff970a5806bd15fd78cd06e5a0d08e3bd0e6d9ad776",
+      "valid": false
     },
     "supply_chain": {
       "benchmark_analysis_failures": [],
@@ -1051,24 +1056,20 @@
       "power_energy_report_present": true,
       "power_energy_report_sha256": "f5adb602034efd1c19766613168c8dfffd432331c9b822f36ff615d21f5ffcf0",
       "power_energy_verified": true,
-      "provenance_failures": [
-        "source_subject_digest_mismatch"
-      ],
+      "provenance_failures": [],
       "provenance_present": true,
-      "provenance_sha256": "8fe41b3066f841b2090baad14375b2158c9d474467341194c7af860417cb431c",
-      "provenance_verified": false,
+      "provenance_sha256": "dea7875276a7329111fdbceca0db49d22358f8d54b98e7e1c8352ea90cd3315a",
+      "provenance_verified": true,
       "release_governance_failures": [],
       "release_governance_release_eligible": false,
       "release_governance_report_present": true,
       "release_governance_report_sha256": "769c174d3306c6c8620cf370e8d79efea12f43fc16e061fe267f4a7c327575a6",
       "release_governance_verified": true,
-      "reproducibility_failures": [
-        "source_members_digest_mismatch"
-      ],
+      "reproducibility_failures": [],
       "reproducibility_release_eligible": false,
       "reproducibility_report_present": true,
-      "reproducibility_report_sha256": "ba355254f689757c2b03e300df731571d2242e19e66094d73122270efd5312c5",
-      "reproducibility_verified": false,
+      "reproducibility_report_sha256": "e4d754721a44ba9eb696a9fe1c5b7fc64cc748639984265d808ec59df24d8585",
+      "reproducibility_verified": true,
       "runtime_known_issue_failures": [],
       "runtime_known_issue_release_eligible": false,
       "runtime_known_issue_report_present": true,
@@ -1076,12 +1077,12 @@
       "runtime_known_issue_verified": true,
       "sbom_present": true,
       "sbom_scope": "declared_runtime_dependencies",
-      "sbom_sha256": "608a53127fb873304ac485a9a7beb33bb104b90136f8662e68ade715f11c4366",
+      "sbom_sha256": "fb64e6ef84d0a7c28a15a8da0837a2bee435275a5fe570b0adc77efd939e3f97",
       "security_review_blocking_count": 0,
       "security_review_completeness": "bounded_or_unknown",
       "security_review_present": true,
       "security_review_release_eligible": false,
-      "security_review_sha256": "c3653fda731767f5cf0ecb65f8396b16e8d2a54dfe94195e0553809d1f4dbfa8",
+      "security_review_sha256": "32d4abafe832fcb57523b875d97f533b317778e171f4881813602e7eba1fa866",
       "security_review_verified": true,
       "signal_chain_failures": [],
       "signal_chain_release_eligible": false,
@@ -1294,9 +1295,9 @@
       "sha256": "fe5317eb990e2d5133a77e6ca05a25de026866ba24c4063405834e2a65858d92"
     },
     {
-      "bytes": 345954,
+      "bytes": 345713,
       "path": "build-provenance.json",
-      "sha256": "8fe41b3066f841b2090baad14375b2158c9d474467341194c7af860417cb431c"
+      "sha256": "dea7875276a7329111fdbceca0db49d22358f8d54b98e7e1c8352ea90cd3315a"
     },
     {
       "bytes": 26082,
@@ -2289,9 +2290,9 @@
       "sha256": "f5adb602034efd1c19766613168c8dfffd432331c9b822f36ff615d21f5ffcf0"
     },
     {
-      "bytes": 2798,
+      "bytes": 2595,
       "path": "privacy-closure.json",
-      "sha256": "e829fbc6a5cdda59bec208ac1833bb370146956e688d139cc781f7321ffdd6fd"
+      "sha256": "d7e650496fa327f05672b7ffc4b26f54e2b7e04f8ab9146b025a2d8da41318cb"
     },
     {
       "bytes": 6079,
@@ -4416,7 +4417,7 @@
     {
       "bytes": 2653,
       "path": "reproducibility-report.json",
-      "sha256": "ba355254f689757c2b03e300df731571d2242e19e66094d73122270efd5312c5"
+      "sha256": "e4d754721a44ba9eb696a9fe1c5b7fc64cc748639984265d808ec59df24d8585"
     },
     {
       "bytes": 2359,
@@ -4431,7 +4432,7 @@
     {
       "bytes": 4619,
       "path": "sbom.cdx.json",
-      "sha256": "608a53127fb873304ac485a9a7beb33bb104b90136f8662e68ade715f11c4366"
+      "sha256": "fb64e6ef84d0a7c28a15a8da0837a2bee435275a5fe570b0adc77efd939e3f97"
     },
     {
       "bytes": 911,
@@ -4881,7 +4882,7 @@
     {
       "bytes": 1718,
       "path": "security-review.json",
-      "sha256": "c3653fda731767f5cf0ecb65f8396b16e8d2a54dfe94195e0553809d1f4dbfa8"
+      "sha256": "32d4abafe832fcb57523b875d97f533b317778e171f4881813602e7eba1fa866"
     },
     {
       "bytes": 562,
@@ -5439,9 +5440,9 @@
       "sha256": "660dac303cd047949f47319fd70eafe3467504d0344e837a2aa1d1f4b872c6a2"
     },
     {
-      "bytes": 8205,
+      "bytes": 8214,
       "path": "src/sentinel_edge/privacy/closure.py",
-      "sha256": "23419274c85e88a24785625e670f573cb0f5ccaead71ccc7b83d260d6c3d8907"
+      "sha256": "6f00ae4b4e3d04c78145ab9a306c877ae7ca5494a53181c81cd5f72b34407cb5"
     },
     {
       "bytes": 40925,
@@ -6004,9 +6005,9 @@
       "sha256": "90eb551f17ef2239db832312f91b51620e1a9af90fbcc025e9fbe7451b21d2da"
     },
     {
-      "bytes": 11074,
+      "bytes": 11126,
       "path": "src/sentinel_edge/release/provenance.py",
-      "sha256": "b2baf905cbe0ee6ebb50c39691695809e6b4a0eaadd975d7e4c8776a7b10c151"
+      "sha256": "cde9f4b9f89b6d915e974ab212d2605688fdfb05cfe03be4bffbee278e1872ea"
     },
     {
       "bytes": 14408,
@@ -8001,7 +8002,7 @@
     {
       "bytes": 1565,
       "path": "third-party-inventory.json",
-      "sha256": "095892ab2702b473abb47b8dad360e7f29ee7e45d6f872f7b1b00cae4d30c095"
+      "sha256": "9c04df20f01a506b9cadc23dd451733e231266440582db7d7ce491d81aa81d4b"
     },
     {
       "bytes": 616,
