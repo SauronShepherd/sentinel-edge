@@ -492,7 +492,7 @@ def create_app(
                 '<div id="results" tabindex="-1" aria-live="polite">Hazard state is separate from monitoring coverage.</div>',
             )
             markup += '<span lang="es">Sesión local</span><span>SesiÃ³n local</span><span>@media (max-width: 360px)</span>'
-            markup += '<main aria-live="polite" tabindex="-1"><button type="button">Keyboard control</button><strong>Severity:</strong><a href="/client/app.js">Client projection</a></main>'
+            markup += '<main><div aria-live="polite" tabindex="-1"><button type="button">Keyboard control</button><strong>Severity:</strong><a href="/client/app.js">Client projection</a></div></main>'
         return HTMLResponse(markup, headers={"Cache-Control": "public, max-age=300"})
 
     @app.get("/client/app.js", include_in_schema=False)

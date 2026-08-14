@@ -1,5 +1,15 @@
 # Sentinel Edge Hackathon Worklog
 
+## UIX mission-control shell alignment — judge-facing client
+
+Reworked the static Mission Control surface to match the supplied UIX direction: persistent product navigation, global search/actions, responsive split-view cards, four-hazard status, runtime health, site status, explicit emulated-Arm64/research disclosures, keyboard focus states, semantic table captions, reduced-motion support, and the full object navigation set. Preserved the API client’s legacy accessibility/security anchors and Component 4/5 authority wording.
+
+Changed paths: `src/sentinel_edge/clients/static/index.html`, `src/sentinel_edge/gateway/api.py`, `HACKATHON_WORKLOG.md`.
+
+Exact commands: `.venv\Scripts\python.exe -m pytest -q tests/test_accessibility_audit.py tests/test_client_security.py tests/test_web_security_policy.py`; `npm test --prefix modules/client-applications`; `.venv\Scripts\python.exe scripts/dev.py verify`.
+
+Receipt: focused UI/security suite (8 passed), client suite (3 passed), and offline verification passed.
+
 ## Globally ordered authority journal — REQ-AJL-001
 
 Added authority-journal positions with unique epoch/ordinal/sequence tuples and a predecessor chain for accepted mutations.
