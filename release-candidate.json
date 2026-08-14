@@ -1,10 +1,9 @@
 {
   "admission_blockers": [
-    "repository_dirty",
-    "submission_command_matrix_source_tree_mismatch"
+    "provenance_not_verified"
   ],
   "admission_reason": "development_candidate_only",
-  "candidate_id": "005afc439f61c1aa0050a2961faa1d39ac25357ef5bc6112cd83770fb1d0962e",
+  "candidate_id": "6aff459986952aca3e15f1e886fc5e1b0c766c85f18fcb0ab60542845708e910",
   "configuration": {
     "active": {
       "actor": "system-bootstrap",
@@ -93,7 +92,7 @@
     ],
     "last_known_good": null
   },
-  "generated_at": "2026-08-14T10:08:30.735206+00:00",
+  "generated_at": "2026-08-14T10:10:28.721467+00:00",
   "identity": {
     "active_configuration_digest": "157aff29c9f1951a8b2bfaa92767ff1f0c50735fa438912c7b068c01a65aa3c8",
     "active_contract": {
@@ -986,14 +985,10 @@
     },
     "release_profile": "H0-EMULATED-AARCH64-20260813",
     "repository_state": {
-      "dirty": true,
+      "dirty": false,
       "git_available": true,
-      "revision": "a9628218ec4dbd13793a98feb0ac11c400796b4b",
-      "status_entries": [
-        " M build-provenance.json",
-        " M reproducibility-report.json",
-        " M src/sentinel_edge/release/provenance.py"
-      ]
+      "revision": "e725b805261fcfbf34dacb26d9a8aaee7611e107",
+      "status_entries": []
     },
     "requirements": {
       "by_priority": {
@@ -1017,12 +1012,10 @@
       "release_credentials_proven": true
     },
     "submission_command_matrix": {
-      "failures": [
-        "submission_command_matrix_source_tree_mismatch"
-      ],
+      "failures": [],
       "present": true,
-      "sha256": "a82262ce11351039e19a1ff970a5806bd15fd78cd06e5a0d08e3bd0e6d9ad776",
-      "valid": false
+      "sha256": "689007dcc61273fdd7fbf4de769a07e7710d440cc7459f8fb49937fe1d8bfa13",
+      "valid": true
     },
     "supply_chain": {
       "benchmark_analysis_failures": [],
@@ -1056,10 +1049,12 @@
       "power_energy_report_present": true,
       "power_energy_report_sha256": "f5adb602034efd1c19766613168c8dfffd432331c9b822f36ff615d21f5ffcf0",
       "power_energy_verified": true,
-      "provenance_failures": [],
+      "provenance_failures": [
+        "source_subject_digest_mismatch"
+      ],
       "provenance_present": true,
       "provenance_sha256": "dea7875276a7329111fdbceca0db49d22358f8d54b98e7e1c8352ea90cd3315a",
-      "provenance_verified": true,
+      "provenance_verified": false,
       "release_governance_failures": [],
       "release_governance_release_eligible": false,
       "release_governance_report_present": true,
