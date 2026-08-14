@@ -17,8 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Provision pinned test runner
-        run: python -m pip install pytest==9.0.2
+      - name: Install project test dependencies
+        run: python -m pip install -e '.[test]'
       - name: Install shared packages
         run: python -m pip install -e contracts/sentinel-contracts -e sdk/sentinel-plugin-sdk -e sdk/sentinel-testkit
       - run: python scripts/dev.py gates
