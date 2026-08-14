@@ -156,6 +156,12 @@ After release admission, run `python scripts/dev.py package`. For an admitted ca
 
 After the exact final preflight/candidate is green: publish the repository, capture the real candidate screenshots/video, upload the sub-three-minute video, insert final URLs on Devpost and submit. Do not use the generated UI reference mockups as product evidence.
 
+### Submission video artifact
+
+The current local demo export is [`dist/SentinelEdge-3-minute-demo.mp4`](../dist/SentinelEdge-3-minute-demo.mp4). It is a 1920×1080 H.264/AAC video lasting approximately 2:54.8 and uses the supplied English voice-over. The sequence shows the real local UI across Overview/Mission Control, Incidents, AI Investigation, Benchmark Lab and Judge Proof, with opening and closing Sentinel Edge branding.
+
+The video is a visual walkthrough of the deterministic Arm64-emulated Judge environment. It does not claim physical Raspberry Pi measurements, live sensor measurements or production emergency-warning capability. Before public submission, copy the MP4 to the submission-media evidence location and bind its final checksum to the frozen candidate manifest.
+
 ## Complete public command catalogue
 
 `architecture/command-catalog.yaml` is the machine-readable authority. The additional focused maintenance/verification lanes are available as `python scripts/dev.py <command>`:

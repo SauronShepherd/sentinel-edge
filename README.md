@@ -132,6 +132,10 @@ This records the required local and Arm64 command matrix at:
 qualification/submission-command-matrix.json
 ```
 
+### Demo video
+
+The generated submission walkthrough is available at [`dist/SentinelEdge-3-minute-demo.mp4`](dist/SentinelEdge-3-minute-demo.mp4). It is a sub-three-minute, 1920×1080 walkthrough using the supplied voice-over and real local UI screens for Mission Control, incidents, AI Investigation, Benchmark Lab and Judge Proof. The UI header uses the transparent Sentinel Edge mark at `src/sentinel_edge/clients/static/logo-mark.png`; the backend serves it through `/client/logo-mark.png` so the logo is present in the captured application.
+
 Commit the resulting deterministic evidence/generator changes, verify the worktree is clean, then create the exact candidate:
 
 ```bash

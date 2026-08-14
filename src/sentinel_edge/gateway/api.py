@@ -15,7 +15,7 @@ from uuid import UUID
 from pydantic import BaseModel, ConfigDict, Field
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, Response
-from fastapi.responses import HTMLResponse, RedirectResponse, StreamingResponse
+from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse, StreamingResponse
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from sentinel_edge import __version__
 
@@ -504,6 +504,13 @@ def create_app(
         client_path = Path(__file__).resolve().parents[1] / "clients" / "static" / "styles.css"
         payload = client_path.read_text(encoding="utf-8") if client_path.is_file() else ""
         return Response(payload, media_type="text/css", headers={"Cache-Control": "public, max-age=300"})
+
+    @app.get("/client/logo-mark.png", include_in_schema=False)
+    def client_logo() -> FileResponse:
+        logo_path = Path(__file__).resolve().parents[1] / "clients" / "static" / "logo-mark.png"
+        if not logo_path.is_file():
+            raise HTTPException(status_code=404, detail="client_logo_not_found")
+        return FileResponse(logo_path, media_type="image/png", headers={"Cache-Control": "public, max-age=300"})
 
     @app.get("/client/service-worker.js", include_in_schema=False)
     def service_worker() -> Response:
