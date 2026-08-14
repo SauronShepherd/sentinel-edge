@@ -34,6 +34,7 @@ _GENERATED = {
     "power-energy-report.json",
     "runtime-known-issue-report.json",
     "docs/release/CURRENT_SUBMISSION_READINESS.md",
+    "qualification/submission-command-matrix.json",
 }
 
 

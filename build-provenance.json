@@ -4539,13 +4539,6 @@
           "uri": "qualification/source-readiness.json"
         },
         {
-          "bytes": 6135,
-          "digest": {
-            "sha256": "a82262ce11351039e19a1ff970a5806bd15fd78cd06e5a0d08e3bd0e6d9ad776"
-          },
-          "uri": "qualification/submission-command-matrix.json"
-        },
-        {
           "bytes": 803,
           "digest": {
             "sha256": "ab52b3132ded7fd9cafae810e5e65e1b8415ee87c16c5906553858e91dbd0bd9"
@@ -6842,9 +6835,9 @@
           "uri": "src/sentinel_edge/release/profile.py"
         },
         {
-          "bytes": 11126,
+          "bytes": 11178,
           "digest": {
-            "sha256": "cde9f4b9f89b6d915e974ab212d2605688fdfb05cfe03be4bffbee278e1872ea"
+            "sha256": "6b13f19fa9d2f83f18d297512639f6b204a0dd2905a76103ea1d6b079f638466"
           },
           "uri": "src/sentinel_edge/release/provenance.py"
         },
@@ -9682,9 +9675,9 @@
         }
       ],
       "metadata": {
-        "finishedOn": "2026-08-14T10:07:45.512385+00:00",
-        "invocationId": "f3271a022ca87bdc5c4fce3220ee95fd7832091d55a50ccfbd50680eada13f43",
-        "startedOn": "2026-08-14T10:07:45.512194+00:00"
+        "finishedOn": "2026-08-14T10:12:14.379002+00:00",
+        "invocationId": "e4b1d991d430c6d20f7e93344a70f08ac793bd513e2ec6671b2bd1cf5c15f989",
+        "startedOn": "2026-08-14T10:12:14.378918+00:00"
       }
     }
   },
@@ -9693,12 +9686,12 @@
     "alignment": "SLSA-v1-provenance-shape; no hermetic or reproducible-build claim",
     "schema": "sentinel-edge-build-provenance/1.0",
     "secret_scan_passed": true,
-    "subject_digest": "3a9ef70f46b56201ee84bae955291cc4d33188c468067992de707d1929477c3c"
+    "subject_digest": "abf3495209a5a7b2d01e13ccba6b275aa0e713a6ff7c4fcb9d2dd5774bb238a2"
   },
   "subject": [
     {
       "digest": {
-        "sha256": "3a9ef70f46b56201ee84bae955291cc4d33188c468067992de707d1929477c3c"
+        "sha256": "abf3495209a5a7b2d01e13ccba6b275aa0e713a6ff7c4fcb9d2dd5774bb238a2"
       },
       "name": "sentinel-edge-source-tree"
     }
