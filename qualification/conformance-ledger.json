@@ -15428,7 +15428,7 @@
   "source_digests": {
     "docs/contracts/sentinel-edge-full-scope-product-contract-v0.22.0.md": "46d9d2885146a56e60cd370aa6700b324514ec4b6818b3e013d855383033fb58",
     "docs/contracts/sentinel-edge-full-scope-technical-contract-v0.22.0.md": "728804322fbf8a05906cb06ebd87b1673430f0d5666d0d95b56668bf6de491cc",
-    "registries/evidence.yaml": "b324130c21499f9aa190193222d22996840e65882f9d42fd9ba94f695d3c2155",
+    "registries/evidence.yaml": "a32e7acf108dc9b4e08344e6fdd625a095c23f984a37f1d28c46166c15ea5034",
     "registries/requirements.yaml": "3e17d22c23e01b0723c61f60abc131b42517f406ff49e6a6d42ddd337e79e300",
     "registries/tasks.yaml": "fe7682a666dca1109b81e947a08fa8a9153c51c406e6af358c3529b1457a2dca",
     "registries/tests.yaml": "c36a3cb203e8ae292d7856c8b39c3cf69591f0fff9b55ce2081027e8b220dcfb"
