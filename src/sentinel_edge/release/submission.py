@@ -21,6 +21,7 @@ RELEASE_GENERATED_FILES = frozenset({
     "qualification/conformance-ledger.json",
     "qualification/release-acceptance-checklist.json",
     "qualification/uix-conformance.json",
+    "registries/evidence.yaml",
     "docs/release/CURRENT_SUBMISSION_READINESS.md",
 })
 _EXCLUDED_FILES = RELEASE_GENERATED_FILES

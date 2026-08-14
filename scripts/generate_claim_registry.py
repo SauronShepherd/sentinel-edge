@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 from sentinel_edge.domain.models import ClaimClass, ClaimRecord
@@ -111,8 +112,19 @@ def generate(root: Path) -> tuple[dict, str]:
 def write(root: Path, payload: dict, table: str) -> None:
     directory = root / "qualification"
     directory.mkdir(parents=True, exist_ok=True)
-    (directory / "claim-registry.json").write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
+    registry_path = directory / "claim-registry.json"
+    registry_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
     (directory / "claim-table.md").write_text(table, encoding="utf-8", newline="\n")
+    # This generated artifact is itself listed in the evidence registry. Keep
+    # that binding current whenever benchmark timing/output changes.
+    evidence_path = root / "registries/evidence.yaml"
+    evidence_text = evidence_path.read_text(encoding="utf-8")
+    digest = sha256(registry_path)
+    pattern = r"(id: EV-R00-CLAIM-REGISTRY-20260812\n(?:  .*\n)*?  sha256: )([0-9a-f]{64})"
+    updated, count = re.subn(pattern, rf"\g<1>{digest}", evidence_text, count=1)
+    if count != 1:
+        raise RuntimeError("evidence registry claim-registry binding is missing or malformed")
+    evidence_path.write_text(updated, encoding="utf-8", newline="\n")
 
 
 def main() -> int:
