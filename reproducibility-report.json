@@ -3,16 +3,16 @@
     {
       "artifact": "deterministic-source-bundle",
       "build_a": {
-        "bytes": 6648202,
+        "bytes": 6648254,
         "members": 1328,
-        "path": "C:\\Users\\ANGEL~1.ALV\\AppData\\Local\\Temp\\sentinel-repro-artifacts-3ho8l4ls\\source-bundle-a.zip",
-        "sha256": "0353de1e723ba7130b43567f59f860a4e0626484ba9bb01486d9fcd40f36b2ae"
+        "path": "C:\\Users\\ANGEL~1.ALV\\AppData\\Local\\Temp\\sentinel-repro-artifacts-7lcfjpbo\\source-bundle-a.zip",
+        "sha256": "0e6fca8af0038edd0717b6e3d2d912e9e37c672e42d8dac3810227d01161c647"
       },
       "build_b": {
-        "bytes": 6648202,
+        "bytes": 6648254,
         "members": 1328,
-        "path": "C:\\Users\\ANGEL~1.ALV\\AppData\\Local\\Temp\\sentinel-repro-artifacts-3ho8l4ls\\source-bundle-b.zip",
-        "sha256": "0353de1e723ba7130b43567f59f860a4e0626484ba9bb01486d9fcd40f36b2ae"
+        "path": "C:\\Users\\ANGEL~1.ALV\\AppData\\Local\\Temp\\sentinel-repro-artifacts-7lcfjpbo\\source-bundle-b.zip",
+        "sha256": "0e6fca8af0038edd0717b6e3d2d912e9e37c672e42d8dac3810227d01161c647"
       },
       "classification": "reproducible",
       "comparison": {
@@ -62,11 +62,11 @@
   },
   "project_version": "0.21.0",
   "release_eligible": false,
-  "report_digest": "c73d016f2cd700cc14616240e960e11d4994268448072c82eaf33d70242f8be1",
+  "report_digest": "24455dd7f9c2f6008c7a7c3c3e956d21d152d22484c0aef50564c879fb1e41c8",
   "schema": "sentinel-edge-reproducibility-report/1.0",
   "source_bundle_claim_valid": true,
   "source_date_epoch": 1700000000,
-  "source_members_digest": "2e65c4b9793ae94a9becf6b0f370c42160147a34e4def27e4d0dddee1fd927b8",
+  "source_members_digest": "deaf7c53b8c45058200984a0334ddc5a0e122f49317e676a27560944f287707e",
   "toolchain": {
     "archive_format": "zip-stored-canonical-v1",
     "implementation": "cpython",
