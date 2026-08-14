@@ -5,7 +5,7 @@
 ## Candidate
 
 - Candidate ID: `5e51beca6297ca4d0106dd28e8ef196045f5511ebc7b9b1e5b41bfdf0dc598a9`
-- Commit: `4c989f6c369436a35c751f1381609b04f8e6bac7`
+- Commit: `7ca5df2c57d79937cb65879dbe27f562abfd0b39`
 - Release profile: `H0-EMULATED-AARCH64-20260813`
 - Release admitted: `false`
 
@@ -46,19 +46,19 @@
 |---|---|---:|
 | `setup` | `pass` | `0` |
 | `doctor` | `pass` | `0` |
-| `verify` | `fail` | `1` |
+| `verify` | `pass` | `0` |
 | `demo` | `pass` | `0` |
 | `scenario` | `pass` | `0` |
-| `test-all` | `fail` | `1` |
-| `gates` | `fail` | `1` |
+| `test-all` | `pass` | `0` |
+| `gates` | `pass` | `0` |
 | `benchmark-replay` | `pass` | `0` |
 | `claims` | `pass` | `0` |
-| `arm64-setup` | `not_run` | `2` |
-| `arm64-doctor` | `not_run` | `2` |
-| `arm64-test` | `not_run` | `2` |
-| `arm64-demo` | `not_run` | `2` |
-| `arm64-scenario` | `not_run` | `2` |
-| `arm64-benchmark` | `not_run` | `2` |
+| `arm64-setup` | `pass` | `0` |
+| `arm64-doctor` | `pass` | `0` |
+| `arm64-test` | `pass` | `0` |
+| `arm64-demo` | `pass` | `0` |
+| `arm64-scenario` | `pass` | `0` |
+| `arm64-benchmark` | `pass` | `0` |
 
 ## B0/B1/O1 and claims
 
