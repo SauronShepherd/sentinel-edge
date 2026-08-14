@@ -3,16 +3,16 @@
     {
       "artifact": "deterministic-source-bundle",
       "build_a": {
-        "bytes": 6621198,
-        "members": 1311,
-        "path": "/tmp/sentinel-repro-artifacts-lckfn_ma/source-bundle-a.zip",
-        "sha256": "4913cc059ff2bbc3b83927aa6e438efad6511095c88401facc2a91d7f19fec7a"
+        "bytes": 6648174,
+        "members": 1328,
+        "path": "C:\\Users\\ANGEL~1.ALV\\AppData\\Local\\Temp\\sentinel-repro-artifacts-vgx40bye\\source-bundle-a.zip",
+        "sha256": "35b6fbd4f13a896765620db2d19a64b94fb2f01293323d6b6d576ef459aef6e9"
       },
       "build_b": {
-        "bytes": 6621198,
-        "members": 1311,
-        "path": "/tmp/sentinel-repro-artifacts-lckfn_ma/source-bundle-b.zip",
-        "sha256": "4913cc059ff2bbc3b83927aa6e438efad6511095c88401facc2a91d7f19fec7a"
+        "bytes": 6648174,
+        "members": 1328,
+        "path": "C:\\Users\\ANGEL~1.ALV\\AppData\\Local\\Temp\\sentinel-repro-artifacts-vgx40bye\\source-bundle-b.zip",
+        "sha256": "35b6fbd4f13a896765620db2d19a64b94fb2f01293323d6b6d576ef459aef6e9"
       },
       "classification": "reproducible",
       "comparison": {
@@ -47,7 +47,7 @@
     "complete": true,
     "path": "requirements-release.lock.json",
     "resolution_kind": "installed_exact_versions",
-    "sha256": "d78e6b472e979509331c5a13f7311f708e885789af5a87174f982ce0aa02d897"
+    "sha256": "bf3203865d839db0931b59e6928ae2dcc07025f5196e493f6cfba1ff2a6f4a39"
   },
   "limitations": [
     "The byte-exact claim applies only to the deterministic source bundle.",
@@ -62,14 +62,14 @@
   },
   "project_version": "0.21.0",
   "release_eligible": false,
-  "report_digest": "3f02c3e01402e875461c5f0f08915eae552533618c2c16c7378c9cf9f1be41c6",
+  "report_digest": "018ad350e25108c81a181abf18b257f100d54a8d1343d83b9f4a5ab2980aaecc",
   "schema": "sentinel-edge-reproducibility-report/1.0",
   "source_bundle_claim_valid": true,
   "source_date_epoch": 1700000000,
-  "source_members_digest": "ce8d014f3882cdf86f555a57944afddc6ff9ee4bc9c6ef9decf98420cfc59e60",
+  "source_members_digest": "0be70cfda78901201440b4385a54ad6df0f5494d3b76922183a9f4f0da1426a6",
   "toolchain": {
     "archive_format": "zip-stored-canonical-v1",
     "implementation": "cpython",
-    "python": "3.13.5"
+    "python": "3.13.14"
   }
 }

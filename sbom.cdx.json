@@ -2,11 +2,11 @@
   "bomFormat": "CycloneDX",
   "components": [
     {
-      "bom-ref": "pkg:pypi/cryptography@46.0.4",
+      "bom-ref": "pkg:pypi/cryptography@46.0.7",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "e5402c57fd93e77ef7f17e5a7916a3f09a3a18688aeb8cda1d7e5f7e7043c627"
+          "content": "5c9cd768eae4eea2bfd4a800247d3710e371afaa483a43bb2f17fe1fcaed9963"
         }
       ],
       "name": "cryptography",
@@ -16,16 +16,16 @@
           "value": "resolved"
         }
       ],
-      "purl": "pkg:pypi/cryptography@46.0.4",
+      "purl": "pkg:pypi/cryptography@46.0.7",
       "type": "library",
-      "version": "46.0.4"
+      "version": "46.0.7"
     },
     {
-      "bom-ref": "pkg:pypi/fastapi@0.128.2",
+      "bom-ref": "pkg:pypi/fastapi@0.141.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "8c271a70900368e040f70f21394af644d821de48806f712037b00d8f940b4f7b"
+          "content": "1fc01b3cde7cf888526a9b7b888be586fe44f0197e3eb35e2c2e65460fb09cc1"
         }
       ],
       "name": "fastapi",
@@ -35,16 +35,16 @@
           "value": "resolved"
         }
       ],
-      "purl": "pkg:pypi/fastapi@0.128.2",
+      "purl": "pkg:pypi/fastapi@0.141.1",
       "type": "library",
-      "version": "0.128.2"
+      "version": "0.141.1"
     },
     {
       "bom-ref": "pkg:pypi/packaging@25.0",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "d3a16aa967723b94c9de0e683681bfe056fed547755bced90e8f0ed85818f467"
+          "content": "187e5e74cd7fa8ce54dbadf7e3d7cdf584b2754452f4a198880ec23316e22bea"
         }
       ],
       "name": "packaging",
@@ -63,7 +63,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "56c05f211bd853e95f0556dc42ec9d5c28934dc4dafa344cbbcc9c1f3c04ba9d"
+          "content": "d669ebe9c5978c3d8185a45f7d724651ecd8873d3f5c4f16f4ac1a93d1f90b9f"
         }
       ],
       "name": "Pillow",
@@ -82,7 +82,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "b46c5c7ca93158354db63b5d36934527ff8c01fe30c82e396e838fa75a5d3d1b"
+          "content": "2e0b8d7872c396064997e5318d1ba0febc5fdde4c4b8370d344cd3f4d7509bea"
         }
       ],
       "name": "pydantic",
@@ -101,7 +101,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "fa4f4827ed2b6b8447c4c3e2d31dcb6c24ea1af4c207d04a5c7dca81da0a14d6"
+          "content": "878e9758640dce915ae0bb36aae966c0d6b59c850bc55656a8f53ed69d7bbd51"
         }
       ],
       "name": "PyYAML",
@@ -116,11 +116,11 @@
       "version": "6.0.3"
     },
     {
-      "bom-ref": "pkg:pypi/uvicorn@0.48.0",
+      "bom-ref": "pkg:pypi/uvicorn@0.52.1",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "130f5b169e4fa01b15dcccf4c2dd5d1f8e340f746f3affb3272c741bc481545d"
+          "content": "c75d006481f47007aad4bf6db4e9ca54475bcdb9c89af57108a9cc70615cadd7"
         }
       ],
       "name": "uvicorn",
@@ -130,21 +130,21 @@
           "value": "resolved"
         }
       ],
-      "purl": "pkg:pypi/uvicorn@0.48.0",
+      "purl": "pkg:pypi/uvicorn@0.52.1",
       "type": "library",
-      "version": "0.48.0"
+      "version": "0.52.1"
     }
   ],
   "dependencies": [
     {
       "dependsOn": [
-        "pkg:pypi/cryptography@46.0.4",
-        "pkg:pypi/fastapi@0.128.2",
+        "pkg:pypi/cryptography@46.0.7",
+        "pkg:pypi/fastapi@0.141.1",
         "pkg:pypi/packaging@25.0",
         "pkg:pypi/Pillow@12.3.0",
         "pkg:pypi/pydantic@2.13.4",
         "pkg:pypi/PyYAML@6.0.3",
-        "pkg:pypi/uvicorn@0.48.0"
+        "pkg:pypi/uvicorn@0.52.1"
       ],
       "ref": "pkg:pypi/sentinel-edge@0.21.0"
     }
@@ -173,9 +173,9 @@
         "value": "does-not-prove-dynamic-or-os-dependency-completeness"
       }
     ],
-    "timestamp": "2026-08-13T16:48:44.933548+00:00"
+    "timestamp": "2026-08-14T09:40:04.118738+00:00"
   },
-  "serialNumber": "urn:uuid:07b4c7ab-a561-5ff1-a40f-3825f1f2f1f3",
+  "serialNumber": "urn:uuid:179e5eb4-245e-52e9-938e-c4bc7b168b35",
   "specVersion": "1.7",
   "version": 1
 }

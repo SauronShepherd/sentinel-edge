@@ -17,6 +17,11 @@
   "resolution_kind": "installed_exact_versions",
   "resolved": [
     {
+      "name": "annotated-doc",
+      "state": "resolved",
+      "version": "0.0.5"
+    },
+    {
       "name": "annotated-types",
       "state": "resolved",
       "version": "0.8.0"
@@ -44,12 +49,12 @@
     {
       "name": "cryptography",
       "state": "resolved",
-      "version": "50.0.0"
+      "version": "46.0.7"
     },
     {
       "name": "fastapi",
       "state": "resolved",
-      "version": "0.116.1"
+      "version": "0.141.1"
     },
     {
       "name": "h11",
@@ -64,7 +69,7 @@
     {
       "name": "packaging",
       "state": "resolved",
-      "version": "26.2"
+      "version": "25.0"
     },
     {
       "name": "pillow",
@@ -94,7 +99,7 @@
     {
       "name": "starlette",
       "state": "resolved",
-      "version": "0.47.3"
+      "version": "1.3.1"
     },
     {
       "name": "typing-inspection",
@@ -109,7 +114,7 @@
     {
       "name": "uvicorn",
       "state": "resolved",
-      "version": "0.35.0"
+      "version": "0.52.1"
     }
   ],
   "schema": "sentinel-edge-release-lock/1.0"

@@ -4,8 +4,8 @@
 
 ## Candidate
 
-- Candidate ID: `5e51beca6297ca4d0106dd28e8ef196045f5511ebc7b9b1e5b41bfdf0dc598a9`
-- Commit: `7ca5df2c57d79937cb65879dbe27f562abfd0b39`
+- Candidate ID: `c9a9d08203091153b5294c9ea0486c410452d2af768482acab561d3c28d06b34`
+- Commit: `2f493d31b4a7f1580d24e1ebe4ae5f8c0607ae9c`
 - Release profile: `H0-EMULATED-AARCH64-20260813`
 - Release admitted: `false`
 
@@ -82,9 +82,9 @@ The Mission Control client exposes all four hazards together, monitoring coverag
 
 ## Exact blockers
 
-- `emulated_arm64_benchmark_missing`
-- `git_revision_unavailable`
-- `submission_command_matrix_missing`
+- `privacy_closure_not_release_eligible`
+- `provenance_not_verified`
+- `repository_dirty`
 
 ## Remaining manual submission actions (after technical blockers clear)
 

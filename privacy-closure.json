@@ -42,15 +42,17 @@
     "request_count": 0,
     "unresolved_request_ids": []
   },
-  "failures": [],
-  "generated_at": "2026-08-13T16:48:18.535263+00:00",
+  "failures": [
+    "repository_private_material_detected"
+  ],
+  "generated_at": "2026-08-14T09:40:09.498446+00:00",
   "limitations": [
     "lineage closure covers registered descendants and declared external recipients only",
     "secure erasure from flash remanence, filesystem journals, backups and controllers is not claimed",
     "protected local state lacks an approved at-rest encryption profile and must be empty at candidate freeze",
     "independent privacy assessment is not complete"
   ],
-  "privacy_state_complete": true,
+  "privacy_state_complete": false,
   "protected_local_state": {
     "active_grant_ids": [],
     "grant_count": 0,
@@ -60,14 +62,19 @@
     "release_eligible": false,
     "values_encrypted_at_rest": false
   },
-  "release_eligible": true,
-  "report_sha256": "71b5a22b420ec064ee5020e71aef83f56b0bdcc5481690af6eb9f0b6deac7cd1",
-  "repository_private_material_findings": [],
+  "release_eligible": false,
+  "report_sha256": "f01d3128828bc3d9b1f1a6ecc5b4b88ff1cc4dc17a605bd384135750f69c2bab",
+  "repository_private_material_findings": [
+    {
+      "category": "private_signing_key",
+      "path": ".venv/Lib/site-packages/cryptography/hazmat/primitives/serialization/ssh.py"
+    }
+  ],
   "schema": "sentinel-edge-privacy-closure/1.0",
   "secrets": {
     "by_state": {},
     "live_reference_keys": [],
-    "metadata_database_sha256": "2801d6d3da39ce65c549aba6570c3c9ea1396acf5e41c73e16f85c281c43d29c",
+    "metadata_database_sha256": "0ab48b25cba617ed3a4acca0161813b314c095ef63544bb4af60769eb1012977",
     "reference_count": 0,
     "secret_values_persisted": false
   }
