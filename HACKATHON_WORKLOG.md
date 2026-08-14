@@ -1,5 +1,15 @@
 # Sentinel Edge Hackathon Worklog
 
+## Canonical Docker/QEMU Arm64 evidence refresh
+
+Captured a real Docker/QEMU `linux/arm64` guest run with `aarch64` diagnostics, 27 bounded Arm64 tests passing, the simultaneous-event demo and scenario passing, and the emulated benchmark quality guardrails passing with claim class `simulated`. The later Docker Desktop engine restart exposed a host binfmt regression (`exec format error`) that prevents repeating the exact candidate-bound run until the local guest runtime is repaired; no Raspberry Pi performance claim is made.
+
+Changed paths: `qualification/emulated-arm64-benchmark.json`, `qualification/claim-registry.json`, `registries/evidence.yaml`, `HACKATHON_WORKLOG.md`.
+
+Exact commands: `python scripts/dev.py arm64-setup`; `python scripts/dev.py arm64-doctor`; `python scripts/dev.py arm64-test`; `python scripts/dev.py arm64-demo`; `python scripts/dev.py arm64-scenario`; `python scripts/dev.py arm64-benchmark`.
+
+Receipt: Arm64 doctor reported `guest_architecture: aarch64`, `execution_mode: docker-qemu-linux-arm64`; Arm64 test lane passed 27 tests; benchmark reported `quality_guardrails_passed: true` and `claim_class: simulated`.
+
 ## UIX mission-control shell alignment — judge-facing client
 
 Reworked the static Mission Control surface to match the supplied UIX direction: persistent product navigation, global search/actions, responsive split-view cards, four-hazard status, runtime health, site status, explicit emulated-Arm64/research disclosures, keyboard focus states, semantic table captions, reduced-motion support, and the full object navigation set. Preserved the API client’s legacy accessibility/security anchors and Component 4/5 authority wording.

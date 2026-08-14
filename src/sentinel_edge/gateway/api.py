@@ -101,7 +101,7 @@ _CLIENT_HTML = """<!doctype html>
   </section>
   <section aria-labelledby="incident-heading">
     <h2 id="incident-heading">Mission Control <span lang="es">/ Control de misión</span></h2>
-    <p class="muted">Hazard state is separate from monitoring coverage and system health.</p>
+    <p class="muted">Hazard state is separate from monitoring coverage. System health is reported independently.</p>
     <button id="refresh" type="button" disabled>Refresh incidents</button>
     <button id="live" type="button" disabled>Resume live projection</button>
     <div id="hazards" class="hazard-grid" aria-live="polite"></div>

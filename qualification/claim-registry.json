@@ -9,7 +9,7 @@
   "claims": [
     {
       "artifact_refs": [
-        "sha256:31e4f621dc1aded7b6ec2460c8e8548eceebc028ac081358c5f846eb832f810a",
+        "sha256:4b176de953e35537f43ec3332292e62ea7c6135bfbec92f31adb6d19fa67e37d",
         "sha256:a50ecd16c7e4cb548b97a13690c8d2b4c4f092eb6fa4ce848b91ad4b0acbcc70"
       ],
       "capability_hashes": [],
@@ -25,7 +25,7 @@
   "source_artifacts": [
     {
       "path": "qualification/emulated-arm64-benchmark.json",
-      "sha256": "31e4f621dc1aded7b6ec2460c8e8548eceebc028ac081358c5f846eb832f810a"
+      "sha256": "4b176de953e35537f43ec3332292e62ea7c6135bfbec92f31adb6d19fa67e37d"
     },
     {
       "path": "qualification/benchmark-identity-report.json",
