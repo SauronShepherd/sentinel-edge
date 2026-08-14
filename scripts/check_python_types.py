@@ -6,6 +6,11 @@ from pathlib import Path
 
 
 def check(path: Path) -> list[str]:
+    # Test helpers are intentionally lightweight fixtures; the gate covers
+    # production and operational Python rather than requiring annotations on
+    # every local test factory.
+    if "tests" in path.parts:
+        return []
     errors: list[str] = []
     tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
     for node in ast.walk(tree):

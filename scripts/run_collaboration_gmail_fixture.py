@@ -5,6 +5,7 @@ import json
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 from sentinel_edge.collaboration.gmail import GmailCollaborativeSignalConnector, GmailReceiptStore
 from sentinel_edge.collaboration.wire import decode_signal_email
@@ -15,7 +16,7 @@ class FakeGmail:
         self.messages = messages
         self.labels: list[tuple[str, tuple[str, ...], tuple[str, ...]]] = []
 
-    async def list_messages(self, query: str):
+    async def list_messages(self, query: str) -> list[dict[str, str]]:
         if query != 'subject:"Sentinel Collaborative Signal v1" newer_than:7d':
             raise AssertionError("unexpected Gmail fixture query")
         return [{"id": key} for key in sorted(self.messages)]
@@ -23,14 +24,14 @@ class FakeGmail:
     async def get_message(self, message_id: str) -> bytes:
         return self.messages[message_id]
 
-    async def modify_labels(self, message_id: str, *, add, remove) -> None:
+    async def modify_labels(self, message_id: str, *, add: tuple[str, ...], remove: tuple[str, ...]) -> None:
         self.labels.append((message_id, tuple(add), tuple(remove)))
 
 
 def load_fixture(name: str) -> bytes:
     return (Path("fixtures/collaboration/gmail") / name).read_bytes()
 
-async def exercise() -> dict:
+async def exercise() -> dict[str, Any]:
     now = datetime(2026, 8, 13, 12, 0, tzinfo=timezone.utc)
     valid_raw = load_fixture("valid-email.eml")
     invalid_raw = load_fixture("invalid-json.eml")

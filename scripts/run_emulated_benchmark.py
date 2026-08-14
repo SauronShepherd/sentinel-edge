@@ -8,6 +8,7 @@ import statistics
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
+from typing import Any, Callable
 from uuid import NAMESPACE_URL, uuid5
 
 from sentinel_edge.benchmark import DeterministicBenchmarkLab, load_benchmark_manifest
@@ -61,7 +62,7 @@ def measure_scheduler_overhead(manifest: dict, *, iterations: int = 50) -> dict:
     samples_us: list[float] = []
     decision_count = 0
 
-    def timed_call(function, *args, **kwargs):
+    def timed_call(function: Callable[..., Any], *args: Any, **kwargs: Any) -> Any:
         nonlocal decision_count
         before = time.process_time_ns()
         result = function(*args, **kwargs)
